@@ -6289,7 +6289,10 @@
     "notes": "Often associated with the Berlin Wall in historical contexts.",
     "added": "2026-04-05",
     "gender": "die",
-    "plural": "die Mauern"
+    "plural": "die Mauern",
+    "related": [
+      "die Wand"
+    ]
   },
   {
     "id": "die-wand",
@@ -6326,7 +6329,8 @@
     "gender": "die",
     "plural": "die Wände",
     "related": [
-      "Mauer"
+      "Mauer",
+      "die Mauer"
     ]
   }
 ]

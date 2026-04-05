@@ -305,23 +305,66 @@ def auto_detect_related(words: list, new_entry: dict) -> list:
 
 def link_related(words: list, new_entry: dict) -> int:
     """
-    After adding a new entry, update existing entries to include
-    the new word in their related lists. Returns count updated.
+    After adding a new entry, ensure all related links are bidirectional.
+    Uses the same signals as fix_related.py:
+      1. New entry's related list → link back from those words
+      2. Existing words whose related list mentions the new word
+      3. Shared family_root
+      4. Tags like 'similar to: X'
+    Returns count of existing entries updated.
     """
-    new_word = new_entry["word"]
-    new_id   = new_entry["id"]
-    should_link = {r.lower() for r in new_entry.get("related", [])}
-    should_link.add(new_word.lower())
+    new_word   = new_entry["word"]
+    new_id     = new_entry["id"]
+    new_norm   = normalise(new_word)
+    new_family = new_entry.get("family_root", "")
+    new_related_norms = {normalise(r) for r in new_entry.get("related", [])}
+
+    by_norm  = {normalise(w["word"]): w for w in words if w["id"] != new_id}
+    by_lower = {w["word"].lower(): w for w in words if w["id"] != new_id}
 
     updated = 0
     for w in words:
         if w["id"] == new_id:
             continue
-        if w["word"] in new_entry.get("related", []):
+
+        w_norm   = normalise(w["word"])
+        w_family = w.get("family_root", "")
+
+        should_link = False
+
+        # Signal 1: new entry's related list mentions this word
+        if w_norm in new_related_norms or w["word"].lower() in new_related_norms:
+            should_link = True
+
+        # Signal 2: this word's related list mentions the new entry
+        if new_norm in {normalise(r) for r in w.get("related", [])}:
+            should_link = True
+
+        # Signal 3: shared family_root
+        if new_family and w_family and new_family.lower() == w_family.lower():
+            if new_family.lower() != new_norm:  # don't link root to itself
+                should_link = True
+        if new_family and new_family.lower() != new_norm and normalise(new_family) == w_norm:
+            should_link = True
+        if w_family and w_family.lower() != w_norm and normalise(w_family) == new_norm:
+            should_link = True
+
+        # Signal 4: tags like 'similar to: X', 'verb family: X'
+        for tag in new_entry.get("tags", []):
+            if ":" in tag:
+                after = tag.split(":", 1)[1].strip().lower()
+                parts = [p.strip() for p in after.split(",")]
+                for p in parts:
+                    p_norm = re.sub(r"^(der|die|das|sich|ein|eine)\s+", "", p).strip()
+                    if p_norm and (p_norm == w_norm or p == w["word"].lower()):
+                        should_link = True
+
+        if should_link:
             existing = w.get("related", [])
             if new_word not in existing:
-                w["related"] = existing + [new_word]
+                w["related"] = sorted(set(existing) | {new_word})
                 updated += 1
+
     return updated
 
 # ── commands ───────────────────────────────────────────────────────────────────
