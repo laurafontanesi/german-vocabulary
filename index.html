@@ -637,6 +637,63 @@
     line-height: 1;
   }
   .practice-back:hover { color: var(--ink); }
+  .practice-summary-btn {
+    position: absolute;
+    top: 1rem; right: 3rem;
+    background: none; border: 1px solid var(--border);
+    border-radius: var(--border-radius-md);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px; color: var(--ink-muted);
+    padding: 3px 10px; cursor: pointer;
+    transition: all 0.12s;
+  }
+  .practice-summary-btn:hover { border-color: var(--ink-soft); color: var(--ink); }
+  /* summary overlay */
+  #summary-overlay {
+    display: none; position: fixed; inset: 0;
+    background: rgba(26,26,24,0.85);
+    z-index: 200; align-items: center; justify-content: center;
+  }
+  #summary-overlay.open { display: flex; }
+  .summary-box {
+    background: var(--paper-card); border-radius: 12px;
+    padding: 2rem; max-width: 480px; width: 90%;
+    max-height: 80vh; overflow-y: auto; position: relative;
+  }
+  .summary-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem; font-weight: 400;
+    margin-bottom: 0.25rem; color: var(--ink);
+  }
+  .summary-score {
+    font-family: var(--font-mono); font-size: 13px;
+    color: var(--ink-muted); margin-bottom: 1.25rem;
+  }
+  .summary-score strong { font-size: 15px; }
+  .summary-section { margin-bottom: 1rem; }
+  .summary-section-title {
+    font-size: 10px; font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--ink-muted); margin-bottom: 6px;
+    padding-bottom: 4px; border-bottom: 0.5px solid var(--border-soft);
+  }
+  .summary-item {
+    display: flex; justify-content: space-between;
+    align-items: baseline; gap: 8px;
+    padding: 5px 0; border-bottom: 0.5px solid var(--border-soft);
+    font-size: 13px;
+  }
+  .summary-item:last-child { border-bottom: none; }
+  .summary-item .word { font-family: 'Playfair Display', serif; color: var(--ink); }
+  .summary-item .answer { font-family: var(--font-mono); font-size: 12px; color: var(--ink-muted); }
+  .summary-close-btn {
+    width: 100%; margin-top: 1.25rem; padding: 9px;
+    background: var(--ink); color: var(--paper);
+    border: none; border-radius: 6px;
+    font-family: 'DM Sans', sans-serif; font-size: 14px;
+    cursor: pointer; transition: opacity 0.12s;
+  }
+  .summary-close-btn:hover { opacity: 0.85; }
 
   /* ── fill-in sentence ── */
   .practice-sentence {
@@ -791,6 +848,7 @@
 <div id="practice-overlay">
   <div class="practice-box">
     <button class="practice-back" onclick="backToLauncher()" title="Back">←</button>
+    <button class="practice-summary-btn" onclick="openSummary()">Summary</button>
     <button class="practice-close" onclick="closePractice()">✕</button>
     <div class="practice-prompt" id="practice-prompt"></div>
     <div class="practice-word" id="practice-word"></div>
@@ -807,6 +865,18 @@
       <div class="practice-score-bar"><div class="practice-score-fill" id="score-bar" style="width:0%"></div></div>
       <span id="score-label">0 / 0 &nbsp;·&nbsp; —</span>
     </div>
+  </div>
+</div>
+
+<!-- summary overlay -->
+<div id="summary-overlay">
+  <div class="summary-box">
+    <button class="practice-close" onclick="closeSummary()" style="position:absolute;top:1rem;right:1rem;">✕</button>
+    <div class="summary-title">Session Summary</div>
+    <div class="summary-score" id="summary-score"></div>
+    <div id="summary-correct-section" class="summary-section"></div>
+    <div id="summary-wrong-section" class="summary-section"></div>
+    <button class="summary-close-btn" onclick="closeSummary()">Back to practice</button>
   </div>
 </div>
 
@@ -1082,6 +1152,7 @@ let scoreCorrect = 0;
 let scoreTried = 0;
 let currentAnswer = ''; // for fill-in tasks
 let answered = false;  // true after answer has been checked
+let sessionLog = [];   // {word, correct, yourAnswer, correctAnswer}
 
 // ── article patterns to detect in sentences ──────────────────────────────────
 const ARTICLE_RE = /\b(der|die|das|ein|eine|einen|einem|einer|eines|den|dem|des)\b/gi;
@@ -1104,7 +1175,7 @@ function closePractice() {
 
 function startTask(mode) {
   practiceMode = mode;
-  scoreCorrect = 0; scoreTried = 0;
+  scoreCorrect = 0; scoreTried = 0; sessionLog = [];
   updateScore();
 
   if (mode === 'de-en' || mode === 'en-de') {
@@ -1272,6 +1343,7 @@ function checkAnswer() {
   }
 
   scoreTried++;
+  sessionLog.push({ word: w.word, type: w.type, correct, yourAnswer: input, correctAnswer });
   const fb = document.getElementById('practice-feedback');
   if (correct) {
     scoreCorrect++;
@@ -1330,6 +1402,37 @@ function nextWord() {
   loadPracticeWord();
 }
 
+function openSummary() {
+  const pct = scoreTried > 0 ? Math.round(scoreCorrect / scoreTried * 100) : 0;
+  const color = pct >= 70 ? '#1a5a1a' : pct >= 40 ? '#b5860d' : 'var(--accent)';
+  document.getElementById('summary-score').innerHTML =
+    `${scoreCorrect} / ${scoreTried} correct &nbsp;·&nbsp; <strong style="color:${color}">${scoreTried > 0 ? pct+'%' : '—'}</strong>`;
+
+  const correct = sessionLog.filter(e => e.correct);
+  const wrong   = sessionLog.filter(e => !e.correct);
+
+  const correctSection = document.getElementById('summary-correct-section');
+  if (correct.length) {
+    correctSection.innerHTML = `<div class="summary-section-title">✓ Correct (${correct.length})</div>` +
+      correct.map(e => `<div class="summary-item"><span class="word">${e.word}</span><span class="answer">${e.yourAnswer}</span></div>`).join('');
+  } else {
+    correctSection.innerHTML = '';
+  }
+
+  const wrongSection = document.getElementById('summary-wrong-section');
+  if (wrong.length) {
+    wrongSection.innerHTML = `<div class="summary-section-title">✗ To review (${wrong.length})</div>` +
+      wrong.map(e => `<div class="summary-item"><span class="word">${e.word}</span><span class="answer" style="color:var(--accent)">${e.yourAnswer} → ${e.correctAnswer}</span></div>`).join('');
+  } else {
+    wrongSection.innerHTML = '';
+  }
+
+  document.getElementById('summary-overlay').classList.add('open');
+}
+function closeSummary() {
+  document.getElementById('summary-overlay').classList.remove('open');
+}
+
 function updateScore() {
   const pct = scoreTried > 0 ? Math.round(scoreCorrect / scoreTried * 100) : 0;
   document.getElementById('score-label').innerHTML =
@@ -1344,6 +1447,9 @@ document.getElementById('practice-overlay').addEventListener('click', function(e
 });
 document.getElementById('launcher-overlay').addEventListener('click', function(e) {
   if (e.target === this) closeLauncher();
+});
+document.getElementById('summary-overlay').addEventListener('click', function(e) {
+  if (e.target === this) closeSummary();
 });
 </script>
 </body>
