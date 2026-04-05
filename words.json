@@ -66,7 +66,8 @@
     "family_root": "nehmen",
     "prefix": "mit-",
     "related": [
-      "nehmen"
+      "nehmen",
+      "teilnehmen"
     ],
     "definitions": [
       {
@@ -108,6 +109,7 @@
     "family_root": "nehmen",
     "prefix": "teil-",
     "related": [
+      "mitnehmen",
       "nehmen"
     ],
     "definitions": [
@@ -293,9 +295,10 @@
     "type": "adjective",
     "also_adverb": true,
     "related": [
+      "die Freude",
       "froh",
-      "sich freuen",
-      "die Freude"
+      "glücklich",
+      "sich freuen"
     ],
     "definitions": [
       {
@@ -467,7 +470,10 @@
     ],
     "register": "neutral",
     "notes": "More reflective/conscious than fühlen or spüren. das Empfinden (noun) = feeling, sentiment.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "related": [
+      "spüren"
+    ]
   },
   {
     "id": "spueren",
@@ -503,7 +509,10 @@
     ],
     "register": "neutral",
     "notes": "spüren = physical/instinctive sensation; empfinden = emotional/reflective feeling; fühlen = general feeling.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "related": [
+      "empfinden"
+    ]
   },
   {
     "id": "sich-freuen",
@@ -539,7 +548,12 @@
     ],
     "register": "neutral",
     "notes": "Key distinction: freuen über + AKK (glad about past/present) vs freuen auf + AKK (looking forward to future).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "related": [
+      "die Freude",
+      "froh",
+      "fröhlich"
+    ]
   },
   {
     "id": "die-freude",
@@ -571,7 +585,12 @@
     ],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "related": [
+      "froh",
+      "fröhlich",
+      "sich freuen"
+    ]
   },
   {
     "id": "gluecklich",
@@ -617,8 +636,9 @@
     "type": "adjective",
     "also_adverb": true,
     "related": [
-      "glücklich",
-      "die Trauer"
+      "deprimiert",
+      "die Trauer",
+      "glücklich"
     ],
     "definitions": [
       {
@@ -717,7 +737,10 @@
     ],
     "register": "neutral",
     "notes": "Always reflexive: sich fürchten vor + DAT. Synonym: Angst haben vor + DAT.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "related": [
+      "die Angst"
+    ]
   },
   {
     "id": "besorgt-sein",
@@ -822,7 +845,8 @@
     "tags": [],
     "register": "neutral",
     "notes": "die Überraschung (noun) = the surprise. 'Ich bin überrascht' = I am surprised (state). 'Das überrascht mich' = That surprises me (action).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "überraschen"
   },
   {
     "id": "deprimiert",
@@ -987,7 +1011,11 @@
     "tags": [],
     "register": "neutral",
     "notes": "hundemüde / todmüde = dead tired (very common intensifiers). Opposite: wach (awake), munter (lively).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "related": [
+      "munter",
+      "wach"
+    ]
   },
   {
     "id": "wach",
@@ -1199,7 +1227,9 @@
     ],
     "register": "neutral",
     "notes": "sich ausruhen = short rest; sich erholen = recover (implies longer recuperation or from illness/exhaustion).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "ausruhen",
+    "prefix": "aus-"
   },
   {
     "id": "sich-erholen",
@@ -1557,7 +1587,8 @@
     "tags": [],
     "register": "neutral",
     "notes": "'es gibt' (there is/are) is one of the most essential German expressions — always followed by accusative.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "geben"
   },
   {
     "id": "bekommen",
@@ -1650,7 +1681,8 @@
     "family_root": "holen",
     "prefix": "ab-",
     "related": [
-      "holen"
+      "holen",
+      "wiederholen"
     ],
     "definitions": [
       {
@@ -1692,6 +1724,7 @@
     "family_root": "holen",
     "prefix": "wieder-",
     "related": [
+      "abholen",
       "holen"
     ],
     "definitions": [
@@ -1815,9 +1848,10 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
-      "sprechen",
+      "behaupten",
+      "erzählen",
       "reden",
-      "erzählen"
+      "sprechen"
     ],
     "definitions": [
       {
@@ -2159,7 +2193,8 @@
     ],
     "register": "neutral",
     "notes": "der Vorschlag (noun) = the suggestion/proposal. Einen Vorschlag machen = to make a suggestion.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "schlagen"
   },
   {
     "id": "nutzen",
@@ -2275,7 +2310,8 @@
     ],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "geben"
   },
   {
     "id": "vorstellen",
@@ -2317,7 +2353,8 @@
     ],
     "register": "neutral",
     "notes": "Two distinct uses: sich (DAT) etw. vorstellen = to imagine; sich vorstellen = to introduce oneself; jmdn. vorstellen = to introduce sb.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "stellen"
   },
   {
     "id": "die-zeit",
@@ -2379,7 +2416,10 @@
     "tags": [],
     "register": "neutral",
     "notes": "gerade = right now (present) OR just now (very recent past). Very common in spoken German.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "related": [
+      "vorhin"
+    ]
   },
   {
     "id": "vorhin",
@@ -2420,9 +2460,10 @@
     "word": "vor Kurzem",
     "type": "adverb",
     "related": [
-      "vorhin",
+      "in letzter Zeit",
       "kürzlich",
-      "neulich"
+      "neulich",
+      "vorhin"
     ],
     "definitions": [
       {
@@ -3457,7 +3498,8 @@
     "type": "adjective",
     "also_adverb": true,
     "related": [
-      "einsam"
+      "einsam",
+      "einzig"
     ],
     "definitions": [
       {
@@ -3497,8 +3539,9 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
-      "wissen",
-      "kennenlernen"
+      "erfahren",
+      "kennenlernen",
+      "wissen"
     ],
     "definitions": [
       {
@@ -3538,6 +3581,7 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
+      "erfahren",
       "kennen"
     ],
     "definitions": [
@@ -3578,7 +3622,8 @@
     "reflexive": false,
     "prefix": "kennen-",
     "related": [
-      "kennen"
+      "kennen",
+      "treffen"
     ],
     "definitions": [
       {
@@ -3668,7 +3713,10 @@
     "tags": [],
     "register": "neutral",
     "notes": "unterschiedlich = different (within a group); verschieden = different (between objects); anders = different in a different way entirely.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "related": [
+      "verschieden"
+    ]
   },
   {
     "id": "heiraten",
@@ -3783,7 +3831,8 @@
     ],
     "register": "neutral",
     "notes": "auswandern = emigrate (leaving your country permanently); umziehen = to move (to a new home, within a country); einwandern = to immigrate.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "wandern"
   },
   {
     "id": "umziehen",
@@ -3796,7 +3845,9 @@
     "reflexive": false,
     "prefix": "um-",
     "related": [
-      "auswandern"
+      "auswandern",
+      "sich anziehen",
+      "ziehen"
     ],
     "definitions": [
       {
@@ -3828,7 +3879,8 @@
     ],
     "register": "neutral",
     "notes": "Two meanings: (1) umziehen = to move house; (2) sich umziehen = to change clothes. In Swiss German: zügeln.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "ziehen"
   },
   {
     "id": "erfahren",
@@ -4024,6 +4076,7 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
+      "das Treffen",
       "treffen"
     ],
     "definitions": [
@@ -4058,8 +4111,9 @@
     "gender": "das",
     "plural": "die Treffen",
     "related": [
-      "die Verabredung",
-      "der Termin"
+      "besuchen",
+      "der Termin",
+      "die Verabredung"
     ],
     "definitions": [
       {
@@ -4257,9 +4311,10 @@
     "reflexive": false,
     "preposition": "DAT",
     "related": [
-      "trauen",
+      "anvertrauen",
       "das Vertrauen",
-      "anvertrauen"
+      "sich trauen",
+      "trauen"
     ],
     "definitions": [
       {
@@ -4283,7 +4338,8 @@
     "tags": [],
     "register": "neutral",
     "notes": "Always dative: ich vertraue DIR (not dich). das Vertrauen (noun) = trust. jemandem vertrauen = general trust; jemandem trauen = similar but more colloquial.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "vertrauen"
   },
   {
     "id": "das-vertrauen",
@@ -4292,8 +4348,10 @@
     "gender": "das",
     "plural": null,
     "related": [
-      "vertrauen",
-      "trauen"
+      "anvertrauen",
+      "sich trauen",
+      "trauen",
+      "vertrauen"
     ],
     "definitions": [
       {
@@ -4329,6 +4387,7 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
+      "das Vertrauen",
       "vertrauen"
     ],
     "definitions": [
@@ -4353,7 +4412,9 @@
     "tags": [],
     "register": "neutral",
     "notes": "anvertrauen = to entrust someone with something valuable (physical or emotional). sich jemandem anvertrauen = to confide in someone.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "vertrauen",
+    "prefix": "an-"
   },
   {
     "id": "sich-trauen",
@@ -4365,6 +4426,7 @@
     "is_separable": false,
     "reflexive": true,
     "related": [
+      "das Vertrauen",
       "vertrauen"
     ],
     "definitions": [
@@ -4628,6 +4690,7 @@
     "prefix": "an-",
     "family_root": "lügen",
     "related": [
+      "die Lüge",
       "lügen"
     ],
     "definitions": [
@@ -4826,7 +4889,10 @@
     ],
     "register": "informal",
     "notes": "Very common in spoken German. genervt sein = to be annoyed/irritated. 'Das geht mir auf die Nerven' = same meaning, slightly more emphatic.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "related": [
+      "stören"
+    ]
   },
   {
     "id": "stoeren",
@@ -4929,7 +4995,8 @@
     "tags": [],
     "register": "neutral",
     "notes": "die Unterstützung (noun) = support. Unterstützung leisten/geben = to provide support.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "unterstützen"
   },
   {
     "id": "traeumen",
@@ -4998,7 +5065,8 @@
     "tags": [],
     "register": "neutral",
     "notes": "wie ein Stein schlafen = to sleep like a log. einschlafen (sep.) = to fall asleep. aufwachen (sep.) = to wake up.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "schlafen"
   },
   {
     "id": "aufwachen",
@@ -5039,7 +5107,8 @@
     ],
     "register": "neutral",
     "notes": "aufwachen (sein) = to wake up spontaneously; wecken = to wake someone else up. Takes sein as auxiliary.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "wachen"
   },
   {
     "id": "wecken",
@@ -5091,8 +5160,9 @@
     "prefix": "an-",
     "family_root": "ziehen",
     "related": [
-      "tragen",
       "ausziehen",
+      "tragen",
+      "umziehen",
       "ziehen"
     ],
     "definitions": [
@@ -5243,7 +5313,8 @@
     ],
     "register": "neutral",
     "notes": "Root of a productive family: aufräumen (tidy up), einräumen (put away), ausräumen (clear out), umräumen (rearrange).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "räumen"
   },
   {
     "id": "einraemen",
@@ -5367,7 +5438,8 @@
     ],
     "register": "neutral",
     "notes": "einkaufen gehen = to go shopping. der Einkauf = the shopping/purchase. die Einkaufsliste = shopping list.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "kaufen"
   },
   {
     "id": "kaufen",
@@ -5407,7 +5479,8 @@
     ],
     "register": "neutral",
     "notes": "kaufen = to buy (a specific item); einkaufen = to do the shopping (general activity). verkaufen = to sell (opposite).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "kaufen"
   },
   {
     "id": "verkaufen",
@@ -5923,7 +5996,8 @@
     ],
     "register": "neutral",
     "notes": "ankommen (sein) = to arrive. die Ankunft = the arrival. abfahren = to depart (opposite).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "kommen"
   },
   {
     "id": "aussteigen",
@@ -6014,7 +6088,8 @@
     "reflexive": false,
     "family_root": "ziehen",
     "related": [
-      "sich anziehen"
+      "sich anziehen",
+      "umziehen"
     ]
   }
 ]

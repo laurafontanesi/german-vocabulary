@@ -68,7 +68,7 @@ Return ONLY valid JSON, no explanation, no markdown, no code fences.
   "reflexive": true or false — only for verbs, else null,
   "preposition": "e.g. 'an + AKK' if the verb requires a fixed preposition, else null",
   "also_adverb": true or false — only for adjectives that double as adverbs, else null,
-  "family_root": "the root verb if this is a compound e.g. 'nehmen' for 'mitnehmen', else null",
+  "family_root": "the root verb — for compounds e.g. 'nehmen' for 'mitnehmen'; for root verbs use the word itself e.g. 'schlafen' for 'schlafen' (never null for verbs)",
   "prefix": "the prefix e.g. 'mit-' for 'mitnehmen', else null",
   "definitions": [
     {{"meaning": "primary English meaning", "note": "optional note e.g. 'used with an + AKK' or null"}},
@@ -279,6 +279,15 @@ def auto_detect_related(words: list, new_entry: dict) -> list:
         if w_norm in new_related_norms or w["word"].lower() in new_related_norms:
             found.add(w["word"])
 
+        # Signal 4: new entry's family_root matches this word directly (but not itself)
+        if new_family and new_family.lower() != new_word.lower() and (normalise(new_family) == w_norm or new_family.lower() == w["word"].lower()):
+            found.add(w["word"])
+
+        # Signal 5: this word's family_root matches the new entry's word
+        w_family = w.get("family_root", "")
+        if w_family and (normalise(w_family) == new_norm or w_family.lower() == new_word.lower()):
+            found.add(w["word"])
+
         # Signal 4: tags like 'similar to: X', 'verb family: X'
         for tag in new_entry.get("tags", []):
             if ":" in tag:
@@ -289,6 +298,9 @@ def auto_detect_related(words: list, new_entry: dict) -> list:
                     if p_norm and (p_norm == w_norm or p == w["word"].lower()):
                         found.add(w["word"])
 
+    # remove self-reference
+    found.discard(new_word)
+    found = {f for f in found if f.lower() != new_word.lower()}
     return sorted(found)
 
 def link_related(words: list, new_entry: dict) -> int:
