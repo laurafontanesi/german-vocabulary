@@ -6575,5 +6575,73 @@
     "notes": null,
     "added": "2026-04-05 20:43:54",
     "usage": "both"
+  },
+  {
+    "id": "seitdem",
+    "word": "seitdem",
+    "type": "prep/conj",
+    "definitions": [
+      {
+        "meaning": "since then, ever since",
+        "note": "as adverb referring to a point in time"
+      },
+      {
+        "meaning": "since, ever since",
+        "note": "as conjunction introducing a temporal clause"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er ist vor zwei Jahren weggezogen, und seitdem haben wir keinen Kontakt mehr.",
+        "en": "He moved away two years ago, and since then we haven't had any contact."
+      },
+      {
+        "de": "Seitdem sie den neuen Job hat, ist sie viel glücklicher.",
+        "en": "Ever since she got the new job, she has been much happier."
+      }
+    ],
+    "topics": [
+      "time",
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Can function both as a temporal adverb and as a subordinating conjunction introducing time clauses.",
+    "added": "2026-04-05 21:26:54",
+    "usage": "both"
+  },
+  {
+    "id": "waehrend",
+    "word": "während",
+    "type": "prep/conj",
+    "definitions": [
+      {
+        "meaning": "during",
+        "note": "as preposition, takes genitive case"
+      },
+      {
+        "meaning": "while",
+        "note": "as conjunction, introduces temporal clauses"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Während des Regens blieben wir zu Hause.",
+        "en": "During the rain we stayed at home."
+      },
+      {
+        "de": "Ich arbeite, während du schläfst.",
+        "en": "I work while you sleep."
+      }
+    ],
+    "topics": [
+      "time",
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "As preposition governs genitive case, as conjunction connects clauses temporally.",
+    "added": "2026-04-05 21:28:56",
+    "usage": "both"
   }
 ]
