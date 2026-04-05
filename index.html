@@ -1273,10 +1273,19 @@ function checkAnswer() {
   const defs = (w.definitions || []).map(d =>
     `<div class="def">${d.meaning}${d.note ? ' <span style="color:var(--ink-muted);font-style:italic;">— '+d.note+'</span>' : ''}</div>`
   ).join('');
-  const ex = w.examples && w.examples[0]
-    ? `<div class="ex-de">${w.examples[0].de}</div><div class="ex-en">${w.examples[0].en}</div>`
-    : '';
-  info.innerHTML = defs + (ex ? '<div style="margin-top:6px">'+ex+'</div>' : '');
+
+  // for fill-in tasks, show the original full sentence; otherwise show first example
+  let exHTML = '';
+  if ((practiceMode === 'conjugation' || practiceMode === 'articles') && currentAnswer) {
+    const task = practiceMode === 'conjugation' ? buildConjugationTask(w) : buildArticleTask(w);
+    if (task) {
+      exHTML = `<div class="ex-de">${task.sentence}</div><div class="ex-en">${task.translation}</div>`;
+    }
+  } else if (w.examples && w.examples[0]) {
+    exHTML = `<div class="ex-de">${w.examples[0].de}</div><div class="ex-en">${w.examples[0].en}</div>`;
+  }
+
+  info.innerHTML = defs + (exHTML ? '<div style="margin-top:6px">' + exHTML + '</div>' : '');
   info.classList.add('visible');
 
   document.getElementById('btn-next').style.display = 'inline-block';
