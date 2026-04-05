@@ -106,6 +106,28 @@ def find_connections(db: list) -> dict:
                         connections[w['id']].add(target['word'])
                         connections[target['id']].add(w['word'])
 
+    # ── Signal 4: negating/modifying prefix pairs ────────────────────────────
+    # e.g. unvernünftig ↔ vernünftig, missverständnis ↔ verständnis
+    # Only match if both words are the same type (or closely related types)
+    MODIFYING_PREFIXES = ['un', 'miss', 'ur', 'über', 'unter', 'wider', 'wieder']
+    ADJ_ADV_TYPES = {'adjective', 'adverb', 'adj/adv'}
+
+    for w in db:
+        bare = normalise(w['word'])
+        for pfx in MODIFYING_PREFIXES:
+            if bare.startswith(pfx) and len(bare) > len(pfx) + 2:
+                stem = bare[len(pfx):]
+                # look up the stem in the db
+                target = by_norm.get(stem)
+                if target and target['id'] != w['id']:
+                    # only link if same type or both adj/adv related types
+                    w_type = w.get('type', '')
+                    t_type = target.get('type', '')
+                    same_type = (w_type == t_type) or                                 (w_type in ADJ_ADV_TYPES and t_type in ADJ_ADV_TYPES) or                                 (w_type == 'noun' and t_type == 'noun')
+                    if same_type:
+                        connections[w['id']].add(target['word'])
+                        connections[target['id']].add(w['word'])
+
     return connections
 
 

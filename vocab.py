@@ -300,6 +300,23 @@ def auto_detect_related(words: list, new_entry: dict) -> list:
                     if p_norm and (p_norm == w_norm or p == w["word"].lower()):
                         found.add(w["word"])
 
+        # Signal 5: negating/modifying prefix pairs (un-, miss-, ur-, etc.)
+        MODIFYING_PREFIXES = ['un', 'miss', 'ur', 'über', 'unter', 'wider', 'wieder']
+        ADJ_ADV_TYPES = {'adjective', 'adverb', 'adj/adv'}
+        new_bare = normalise(new_word)
+        w_bare   = w_norm
+        for pfx in MODIFYING_PREFIXES:
+            # new word is the prefixed version of this existing word
+            if new_bare == pfx + w_bare and len(w_bare) > 2:
+                same_type = (new_entry.get('type') == w.get('type')) or                             (new_entry.get('type') in ADJ_ADV_TYPES and w.get('type') in ADJ_ADV_TYPES) or                             (new_entry.get('type') == 'noun' and w.get('type') == 'noun')
+                if same_type:
+                    found.add(w["word"])
+            # this existing word is the prefixed version of the new word
+            if w_bare == pfx + new_bare and len(new_bare) > 2:
+                same_type = (new_entry.get('type') == w.get('type')) or                             (new_entry.get('type') in ADJ_ADV_TYPES and w.get('type') in ADJ_ADV_TYPES) or                             (new_entry.get('type') == 'noun' and w.get('type') == 'noun')
+                if same_type:
+                    found.add(w["word"])
+
     # remove self-reference
     found.discard(new_word)
     found = {f for f in found if f.lower() != new_word.lower()}
