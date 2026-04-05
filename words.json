@@ -6255,5 +6255,78 @@
       "ankommen",
       "bekommen"
     ]
+  },
+  {
+    "id": "die-mauer",
+    "word": "die Mauer",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "wall",
+        "note": "typically a thick stone, brick, or concrete wall"
+      },
+      {
+        "meaning": "barrier",
+        "note": "figurative use for obstacles or divisions"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Berliner Mauer teilte die Stadt von 1961 bis 1989.",
+        "en": "The Berlin Wall divided the city from 1961 to 1989."
+      },
+      {
+        "de": "Er kletterte über die hohe Mauer des Gartens.",
+        "en": "He climbed over the high wall of the garden."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Often associated with the Berlin Wall in historical contexts.",
+    "added": "2026-04-05",
+    "gender": "die",
+    "plural": "die Mauern"
+  },
+  {
+    "id": "die-wand",
+    "word": "die Wand",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "wall (interior wall of a room or building)",
+        "note": null
+      },
+      {
+        "meaning": "steep face of a mountain or rock",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Bild hängt an der Wand.",
+        "en": "The picture hangs on the wall."
+      },
+      {
+        "de": "Die Bergsteiger kletterten die steile Wand hinauf.",
+        "en": "The mountain climbers climbed up the steep rock face."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Not to be confused with 'die Mauer' which refers to exterior walls or barriers.",
+    "added": "2026-04-05",
+    "gender": "die",
+    "plural": "die Wände",
+    "related": [
+      "Mauer"
+    ]
   }
 ]
