@@ -1108,8 +1108,10 @@ function startTask(mode) {
   updateScore();
 
   if (mode === 'de-en' || mode === 'en-de') {
-    practiceWords = allWords.filter(w => w.definitions && w.definitions.length > 0)
-                            .sort(() => Math.random() - 0.5);
+    practiceWords = allWords.filter(w =>
+      w.definitions && w.definitions.length > 0 &&
+      w.type !== 'expression' && w.type !== 'construction'
+    ).sort(() => Math.random() - 0.5);
   } else if (mode === 'conjugation') {
     // verbs with example sentences containing a conjugated form
     practiceWords = allWords.filter(w => {
@@ -1282,6 +1284,18 @@ function checkAnswer() {
 
   // show word info card
   const info = document.getElementById('practice-word-info');
+  // grammar line: article+plural for nouns, aux·past·participle for verbs
+  let grammarHTML = '';
+  if (w.type === 'noun' && w.gender) {
+    const plural = w.plural ? ` &nbsp;·&nbsp; Pl: ${w.plural}` : '';
+    grammarHTML = `<div style="font-family:var(--font-mono);font-size:12px;color:var(--ink-muted);margin-bottom:6px">${w.gender} ${w.word.replace(/^(der|die|das)\s+/i,'')}${plural}</div>`;
+  } else if (w.type === 'verb' && w.past_tense) {
+    const aux = w.auxiliary || '';
+    const pt  = w.past_tense || '';
+    const pp  = w.past_participle || '';
+    grammarHTML = `<div style="font-family:var(--font-mono);font-size:12px;color:var(--ink-muted);margin-bottom:6px">${aux} &nbsp;·&nbsp; ${pt} &nbsp;·&nbsp; ${pp}</div>`;
+  }
+
   const defs = (w.definitions || []).map(d =>
     `<div class="def">${d.meaning}${d.note ? ' <span style="color:var(--ink-muted);font-style:italic;">— '+d.note+'</span>' : ''}</div>`
   ).join('');
@@ -1297,7 +1311,7 @@ function checkAnswer() {
     exHTML = `<div class="ex-de">${w.examples[0].de}</div><div class="ex-en">${w.examples[0].en}</div>`;
   }
 
-  info.innerHTML = defs + (exHTML ? '<div style="margin-top:6px">' + exHTML + '</div>' : '');
+  info.innerHTML = grammarHTML + defs + (exHTML ? '<div style="margin-top:6px">' + exHTML + '</div>' : '');
   info.classList.add('visible');
 
   // swap Check → Next
