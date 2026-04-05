@@ -698,7 +698,6 @@
     "plural": "die Ängste",
     "related": [
       "sich fürchten",
-      "besorgt sein",
       "die Sorge"
     ],
     "definitions": [
@@ -768,46 +767,12 @@
     "family_root": "fürchten"
   },
   {
-    "id": "besorgt-sein",
-    "word": "besorgt sein",
-    "type": "expression",
-    "related": [
-      "die Sorge",
-      "die Angst"
-    ],
-    "definitions": [
-      {
-        "meaning": "to be worried, to be concerned (about someone/something)",
-        "note": "besorgt um + AKK"
-      }
-    ],
-    "examples": [
-      {
-        "de": "Ich bin sehr besorgt um dich.",
-        "en": "I am very worried about you."
-      },
-      {
-        "de": "Die Eltern waren besorgt, als das Kind nicht nach Hause kam.",
-        "en": "The parents were worried when the child didn't come home."
-      }
-    ],
-    "topics": [
-      "emotions",
-      "people & relationships"
-    ],
-    "tags": [],
-    "register": "neutral",
-    "notes": "besorgt um + AKK = worried about someone; besorgt über + AKK = concerned about a situation.",
-    "added": "2026-04-05"
-  },
-  {
     "id": "die-sorge",
     "word": "die Sorge",
     "type": "noun",
     "gender": "die",
     "plural": "die Sorgen",
     "related": [
-      "besorgt sein",
       "die Angst",
       "sich sorgen"
     ],
