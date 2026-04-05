@@ -6648,5 +6648,44 @@
     "notes": "As preposition governs genitive case, as conjunction connects clauses temporally.",
     "added": "2026-04-05 21:28:56",
     "usage": "both"
+  },
+  {
+    "id": "die-geduld",
+    "word": "die Geduld",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "patience",
+        "note": null
+      },
+      {
+        "meaning": "tolerance, forbearance",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich brauche viel Geduld mit den Kindern.",
+        "en": "I need a lot of patience with the children."
+      },
+      {
+        "de": "Seine Geduld ist am Ende.",
+        "en": "His patience is at an end."
+      },
+      {
+        "de": "Die Malerei verlangt Zeit und Geduld.",
+        "en": "Painting requires time and patience."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "This noun has no plural form as it represents an abstract concept.",
+    "added": "2026-04-05 22:03:54",
+    "gender": "die",
+    "plural": null
   }
 ]
