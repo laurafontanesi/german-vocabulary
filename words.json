@@ -6452,8 +6452,8 @@
     "plural": "die Ereignisse"
   },
   {
-    "id": "erweisen",
-    "word": "erweisen",
+    "id": "sich-erweisen",
+    "word": "sich erweisen",
     "type": "verb",
     "definitions": [
       {
@@ -6534,7 +6534,7 @@
     "reflexive": false,
     "family_root": "weisen",
     "related": [
-      "erweisen"
+      "sich erweisen"
     ]
   },
   {

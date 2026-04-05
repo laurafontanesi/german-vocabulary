@@ -20,7 +20,7 @@ import os
 import re
 import urllib.request
 import urllib.error
-from datetime import date
+from datetime import datetime
 
 DB_PATH  = os.path.join(os.path.dirname(__file__), "words.json")
 ENV_PATH = os.path.join(os.path.dirname(__file__), ".env")
@@ -59,7 +59,7 @@ Please analyse this word and return a JSON object with the following fields. Be 
 Return ONLY valid JSON, no explanation, no markdown, no code fences.{type_hint}
 
 {{
-  "word": "the word in its canonical form (e.g. with gender for nouns: 'die Sehnsucht', infinitive for verbs: 'erinnern')",
+  "word": "the word in its canonical form (e.g. with gender for nouns: 'die Sehnsucht', infinitive for verbs: 'erinnern'; reflexive verbs MUST include 'sich': 'sich erinnern')",
   "type": "one of: noun, verb, adjective, adverb, expression, construction, other",
   "gender": "der/die/das — only for nouns, else null",
   "plural": "plural form with article e.g. 'die Sehnsüchte' — only for nouns, else null",
@@ -486,6 +486,16 @@ def cmd_add(args):
         if use_can.lower() == "y":
             word = canonical
 
+    # if reflexive verb, auto-suggest 'sich' prefix
+    if word_type == 'verb':
+        is_reflexive = s.get('reflexive', False) if suggestion else False
+        if is_reflexive and not word.lower().startswith('sich '):
+            suggested = 'sich ' + word
+            print(f"  Reflexive verb — canonical form should be '{suggested}'")
+            use_sich = ask("  Add 'sich' prefix? (y/n)", "y")
+            if use_sich.lower() == 'y':
+                word = suggested
+
     word_id = make_id(word)
 
     entry = {
@@ -498,7 +508,7 @@ def cmd_add(args):
         "tags":        [],
         "register":    "neutral",
         "notes":       None,
-        "added":       str(date.today())
+        "added":       datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     }
 
     # ── type-specific fields ──────────────────────────────────────────────────
