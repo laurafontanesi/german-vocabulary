@@ -1054,7 +1054,8 @@ function applyFilters() {
     } else if (sortMode === 'type') {
       return a.type.localeCompare(b.type) || a.word.localeCompare(b.word, 'de');
     } else {
-      return (b.added || '').localeCompare(a.added || '');
+      const dateDiff = (b.added || '').localeCompare(a.added || '');
+      return dateDiff !== 0 ? dateDiff : a.word.localeCompare(b.word, 'de');
     }
   });
 
