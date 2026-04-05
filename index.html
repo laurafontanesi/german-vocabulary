@@ -775,6 +775,30 @@ function setSort(mode, btn) {
 }
 
 // ── main filter + render ───────────────────────────────────────────────────────
+function scoreMatch(w, q) {
+  if (!q) return 1;
+  const wordBare = w.word.replace(/^(der|die|das|eine?|sich)\s+/i, '').toLowerCase();
+  const wordLow  = w.word.toLowerCase();
+  const defs     = (w.definitions || []).map(d => d.meaning.toLowerCase()).join(' ');
+  const notes    = (w.notes || '').toLowerCase();
+  const examples = (w.examples || []).flatMap(e => [e.de, e.en]).join(' ').toLowerCase();
+  const tags     = (w.tags || []).join(' ').toLowerCase();
+  const related  = (w.related || []).join(' ').toLowerCase();
+  const topics   = (w.topics || []).join(' ').toLowerCase();
+
+  // Score 5: exact word match (bare, no article)
+  if (wordBare === q || wordLow === q) return 5;
+  // Score 4: word starts with query
+  if (wordBare.startsWith(q) || wordLow.startsWith(q)) return 4;
+  // Score 3: word contains query
+  if (wordBare.includes(q) || wordLow.includes(q)) return 3;
+  // Score 2: definition contains query
+  if (defs.includes(q)) return 2;
+  // Score 1: notes, examples, tags, related, topics contain query
+  if (notes.includes(q) || examples.includes(q) || tags.includes(q) || related.includes(q) || topics.includes(q)) return 1;
+  return 0;
+}
+
 function applyFilters() {
   const q = document.getElementById('search').value.toLowerCase().trim();
   filtered = allWords.filter(w => {
@@ -784,22 +808,18 @@ function applyFilters() {
       const first = w.word.replace(/^(der|die|das|eine?|sich)\s+/i,'')[0].toUpperCase();
       if (first !== activeAlpha) return false;
     }
-    if (q) {
-      const haystack = [
-        w.word,
-        ...(w.definitions || []).map(d => d.meaning),
-        ...(w.examples || []).flatMap(e => [e.de, e.en]),
-        ...(w.topics || []),
-        ...(w.tags || []),
-        w.notes || ''
-      ].join(' ').toLowerCase();
-      if (!haystack.includes(q)) return false;
-    }
+    if (q) return scoreMatch(w, q) > 0;
     return true;
   });
 
-  // sort
+  // sort — when searching, rank by relevance first; otherwise use sortMode
   filtered.sort((a, b) => {
+    if (q) {
+      const scoreDiff = scoreMatch(b, q) - scoreMatch(a, q);
+      if (scoreDiff !== 0) return scoreDiff;
+      // within same score, sort alphabetically
+      return a.word.localeCompare(b.word, 'de');
+    }
     if (sortMode === 'alpha') {
       return a.word.localeCompare(b.word, 'de');
     } else if (sortMode === 'type') {
