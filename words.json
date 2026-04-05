@@ -2318,5 +2318,822 @@
     "register": "neutral",
     "notes": "Two distinct uses: sich (DAT) etw. vorstellen = to imagine; sich vorstellen = to introduce oneself; jmdn. vorstellen = to introduce sb.",
     "added": "2026-04-05"
+  },
+  {
+    "id": "die-zeit",
+    "word": "die Zeit",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Zeiten",
+    "definitions": [
+      {
+        "meaning": "time",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Zeit vergeht wahnsinnig schnell.",
+        "en": "Time goes by incredibly fast."
+      },
+      {
+        "de": "Ich habe keine Zeit.",
+        "en": "I don't have time."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-05"
+  },
+  {
+    "id": "gerade",
+    "word": "gerade",
+    "type": "adverb",
+    "definitions": [
+      {
+        "meaning": "right now, just now, at this very moment",
+        "note": null
+      },
+      {
+        "meaning": "just (very recently)",
+        "note": "e.g. Ich bin gerade zurückgekommen = I just got back"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Was machst du gerade?",
+        "en": "What are you doing right now?"
+      },
+      {
+        "de": "Ich bin gerade zurückgekommen.",
+        "en": "I just got back."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "gerade = right now (present) OR just now (very recent past). Very common in spoken German.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "vorhin",
+    "word": "vorhin",
+    "type": "adverb",
+    "related": [
+      "gerade",
+      "vor Kurzem"
+    ],
+    "definitions": [
+      {
+        "meaning": "a little while ago, just before",
+        "note": "refers to something that happened earlier in the same day"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Meine Mutter hat vorhin angerufen.",
+        "en": "My mother called a little while ago."
+      },
+      {
+        "de": "Wie ich vorhin gesagt habe...",
+        "en": "As I said a moment ago..."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [
+      "similar to: gerade, vor Kurzem"
+    ],
+    "register": "neutral",
+    "notes": "vorhin = earlier today/a short while ago. vor Kurzem = recently (could be days). gerade = just this moment.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "vor-kurzem",
+    "word": "vor Kurzem",
+    "type": "adverb",
+    "related": [
+      "vorhin",
+      "kürzlich",
+      "neulich"
+    ],
+    "definitions": [
+      {
+        "meaning": "recently, not long ago",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Vor Kurzem habe ich meinen alten Freund im Supermarkt getroffen.",
+        "en": "Recently I ran into my old friend at the supermarket."
+      },
+      {
+        "de": "Das haben wir erst vor Kurzem besprochen.",
+        "en": "We only discussed that recently."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [
+      "similar to: kürzlich, neulich, vorhin"
+    ],
+    "register": "neutral",
+    "notes": "vor Kurzem / kürzlich / neulich are all roughly 'recently' — all refer to a defined point in the recent past. Interchangeable in most contexts.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "bald",
+    "word": "bald",
+    "type": "adverb",
+    "related": [
+      "demnächst"
+    ],
+    "definitions": [
+      {
+        "meaning": "soon",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich muss bald gehen.",
+        "en": "I have to leave soon."
+      },
+      {
+        "de": "Bis bald!",
+        "en": "See you soon!"
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "'Bis bald!' = See you soon! Very common farewell. demnächst = soon/in the near future (slightly more formal).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "staendig",
+    "word": "ständig",
+    "type": "adverb",
+    "definitions": [
+      {
+        "meaning": "constantly, all the time",
+        "note": "usually implies irritation or complaint"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie kommt ständig zu spät.",
+        "en": "She's constantly late."
+      },
+      {
+        "de": "Er unterbricht mich ständig.",
+        "en": "He's always interrupting me."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "ständig carries a negative/irritated connotation — use immer for neutral 'always'. 'Das ständige X nervt mich' = I'm sick of the constant X.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "schliesslich",
+    "word": "schließlich",
+    "type": "adverb",
+    "related": [
+      "endlich"
+    ],
+    "definitions": [
+      {
+        "meaning": "finally, eventually, in the end",
+        "note": null
+      },
+      {
+        "meaning": "after all",
+        "note": "used to justify something — 'after all, it makes sense because...'"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich testete das Produkt, bevor ich es schließlich kaufte.",
+        "en": "I tested the product before eventually buying it."
+      },
+      {
+        "de": "Schließlich ist er dein Bruder.",
+        "en": "After all, he is your brother."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [
+      "similar to: endlich"
+    ],
+    "register": "neutral",
+    "notes": "schließlich = eventually/after all (neutral); endlich = finally (implies long wait and relief). 'Endlich!' = At last! — schließlich doesn't carry that emotion.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "endlich",
+    "word": "endlich",
+    "type": "adverb",
+    "related": [
+      "schließlich"
+    ],
+    "definitions": [
+      {
+        "meaning": "finally, at last",
+        "note": "implies impatience or relief after a long wait"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe zwei Stunden gewartet, bis der Bus endlich kam.",
+        "en": "I waited two hours until the bus finally came."
+      },
+      {
+        "de": "Endlich bist du da!",
+        "en": "You're finally here!"
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [
+      "similar to: schließlich"
+    ],
+    "register": "neutral",
+    "notes": "endlich = finally (with relief/impatience); schließlich = eventually/after all (neutral). 'Endlich!' alone = At last! — very expressive.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "gleichzeitig",
+    "word": "gleichzeitig",
+    "type": "adverb",
+    "definitions": [
+      {
+        "meaning": "at the same time, simultaneously",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie sprechen alle gleichzeitig.",
+        "en": "They are all speaking at the same time."
+      },
+      {
+        "de": "Ich kann nicht zwei Dinge gleichzeitig tun.",
+        "en": "I can't do two things at the same time."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-05"
+  },
+  {
+    "id": "immer-noch",
+    "word": "immer noch",
+    "type": "adverb",
+    "related": [
+      "noch",
+      "immer"
+    ],
+    "definitions": [
+      {
+        "meaning": "still (implying impatience or surprise that something hasn't changed)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Problem ist immer noch nicht gelöst.",
+        "en": "The problem still hasn't been solved."
+      },
+      {
+        "de": "Schläfst du immer noch?",
+        "en": "Are you still sleeping?"
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [
+      "similar to: noch"
+    ],
+    "register": "neutral",
+    "notes": "immer noch = still (with slight impatience); noch = still (neutral). 'Noch nicht' = not yet. 'Immer noch nicht' = still not (stronger frustration).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "noch",
+    "word": "noch",
+    "type": "adverb",
+    "related": [
+      "immer noch",
+      "schon"
+    ],
+    "definitions": [
+      {
+        "meaning": "still, yet",
+        "note": null
+      },
+      {
+        "meaning": "another, more",
+        "note": "e.g. noch ein Bier = another beer"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bin noch nicht fertig.",
+        "en": "I'm not finished yet."
+      },
+      {
+        "de": "Möchtest du noch etwas Kaffee?",
+        "en": "Would you like some more coffee?"
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "noch nicht = not yet. noch ein/eine = another/one more. Very versatile little word.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "frueher",
+    "word": "früher",
+    "type": "adverb",
+    "related": [
+      "damals",
+      "später"
+    ],
+    "definitions": [
+      {
+        "meaning": "earlier, before",
+        "note": "earlier in the day or in a sequence"
+      },
+      {
+        "meaning": "formerly, in the past",
+        "note": "referring to a past period in general"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Früher bin ich jeden Tag gelaufen.",
+        "en": "I used to go running every day."
+      },
+      {
+        "de": "Früher am Tag hatten wir darüber gesprochen.",
+        "en": "Earlier in the day we had talked about it."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [
+      "similar to: damals"
+    ],
+    "register": "neutral",
+    "notes": "früher = formerly/used to (general past habit); damals = back then (specific past period). 'Früher war alles besser' = Things were better in the old days.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "damals",
+    "word": "damals",
+    "type": "adverb",
+    "related": [
+      "früher"
+    ],
+    "definitions": [
+      {
+        "meaning": "back then, at that time",
+        "note": "refers to a specific past period already mentioned"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Damals waren lange Röcke in Mode.",
+        "en": "Back then, long skirts were in fashion."
+      },
+      {
+        "de": "Wir waren damals sehr jung.",
+        "en": "We were very young back then."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [
+      "similar to: früher"
+    ],
+    "register": "neutral",
+    "notes": "damals refers to a specific past moment or era already in context; früher = in former times (more general). Already in db as adverb — check.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "seitdem",
+    "word": "seitdem",
+    "type": "adverb",
+    "definitions": [
+      {
+        "meaning": "since then, ever since",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir haben uns damals gestritten und seitdem nicht mehr gesprochen.",
+        "en": "We argued back then and haven't spoken since."
+      },
+      {
+        "de": "Seitdem ist alles anders.",
+        "en": "Everything has been different since then."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "seitdem (adverb) = since then. seit (preposition) + DAT = since [a point in time]. seit + Präsens = have been doing something for [duration].",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "puenktlich",
+    "word": "pünktlich",
+    "type": "adjective",
+    "also_adverb": true,
+    "related": [
+      "unpünktlich"
+    ],
+    "definitions": [
+      {
+        "meaning": "punctual, on time",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Zug ist pünktlich angekommen.",
+        "en": "The train arrived on time."
+      },
+      {
+        "de": "Sie ist immer pünktlich.",
+        "en": "She is always punctual."
+      }
+    ],
+    "topics": [
+      "time",
+      "daily life"
+    ],
+    "tags": [
+      "also adverb"
+    ],
+    "register": "neutral",
+    "notes": "Punctuality is culturally very important in German-speaking countries. unpünktlich = late/not punctual.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "fertig",
+    "word": "fertig",
+    "type": "adjective",
+    "also_adverb": true,
+    "related": [
+      "bereit"
+    ],
+    "definitions": [
+      {
+        "meaning": "finished, done",
+        "note": "something has been completed"
+      },
+      {
+        "meaning": "exhausted, worn out",
+        "note": "informal — ich bin fertig = I'm done/exhausted"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Essen ist fertig.",
+        "en": "The food is ready (done cooking)."
+      },
+      {
+        "de": "Ich bin fertig mit der Arbeit.",
+        "en": "I'm done with the work."
+      }
+    ],
+    "topics": [
+      "time",
+      "daily life"
+    ],
+    "tags": [
+      "similar to: bereit"
+    ],
+    "register": "neutral",
+    "notes": "fertig = finished/done (a process is complete); bereit = ready (prepared to do something). 'Das Essen ist fertig' (cooked) vs 'Das Essen ist bereit' (ready to eat).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "bereit",
+    "word": "bereit",
+    "type": "adjective",
+    "related": [
+      "fertig"
+    ],
+    "definitions": [
+      {
+        "meaning": "ready, prepared",
+        "note": "ready to do something or for something to happen"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Bist du bereit? Wir können gehen.",
+        "en": "Are you ready? We can go."
+      },
+      {
+        "de": "Ich bin bereit, das Risiko einzugehen.",
+        "en": "I am prepared to take the risk."
+      }
+    ],
+    "topics": [
+      "time",
+      "daily life"
+    ],
+    "tags": [
+      "similar to: fertig"
+    ],
+    "register": "neutral",
+    "notes": "bereit = ready/prepared (for an upcoming action); fertig = finished (a process is complete). Classic confusion for learners.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "während",
+    "word": "während",
+    "type": "construction",
+    "definitions": [
+      {
+        "meaning": "while, during",
+        "note": "as conjunction: + subordinate clause (verb at end); as preposition: + Genitiv"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Während der Zugfahrt habe ich ein Buch gelesen.",
+        "en": "During the train journey I read a book."
+      },
+      {
+        "de": "Ich höre Musik, während ich koche.",
+        "en": "I listen to music while I cook."
+      }
+    ],
+    "topics": [
+      "grammar & structure",
+      "time"
+    ],
+    "tags": [
+      "sentence structure"
+    ],
+    "register": "neutral",
+    "notes": "Two uses: (1) preposition + Genitiv: während der Fahrt; (2) conjunction + subordinate clause: während ich koche (verb at end).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "die-gewohnheit",
+    "word": "die Gewohnheit",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Gewohnheiten",
+    "definitions": [
+      {
+        "meaning": "habit, custom, routine",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Es ist eine schlechte Gewohnheit, zu spät aufzustehen.",
+        "en": "It's a bad habit to get up late."
+      },
+      {
+        "de": "Alte Gewohnheiten sind schwer abzulegen.",
+        "en": "Old habits are hard to break."
+      }
+    ],
+    "topics": [
+      "time",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "gewohnt sein = to be used to. Ich bin es gewohnt, früh aufzustehen = I'm used to getting up early.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "meistens",
+    "word": "meistens",
+    "type": "adverb",
+    "related": [
+      "normalerweise",
+      "gewöhnlich",
+      "manchmal",
+      "selten"
+    ],
+    "definitions": [
+      {
+        "meaning": "mostly, usually, most of the time",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich frühstücke meistens um 7:30 Uhr.",
+        "en": "I usually have breakfast at 7:30."
+      },
+      {
+        "de": "Meistens fahre ich mit dem Fahrrad zur Arbeit.",
+        "en": "Most of the time I cycle to work."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [
+      "similar to: normalerweise, gewöhnlich"
+    ],
+    "register": "neutral",
+    "notes": "meistens ≈ normalerweise ≈ gewöhnlich — all mean 'usually'. Frequency scale: immer > meistens > oft > manchmal > selten > nie.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "ehemalig",
+    "word": "ehemalig",
+    "type": "adjective",
+    "definitions": [
+      {
+        "meaning": "former, ex-, previous",
+        "note": "used before nouns to indicate a past role or status"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Mein ehemaliger Lehrer hat mich sehr geprägt.",
+        "en": "My former teacher had a big influence on me."
+      },
+      {
+        "de": "Das ist die ehemalige Botschaft.",
+        "en": "That is the former embassy."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "ehemalig = former (used attributively before nouns). For people: also 'Ex-' as prefix (Ex-Freund, Ex-Chef). die Ehe = marriage — the word root is unrelated.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "stundenlang",
+    "word": "stundenlang",
+    "type": "adverb",
+    "related": [
+      "tagelang",
+      "wochenlang",
+      "jahrelang"
+    ],
+    "definitions": [
+      {
+        "meaning": "for hours",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir haben stundenlang geredet.",
+        "en": "We talked for hours."
+      },
+      {
+        "de": "Ich habe stundenlang auf sie gewartet.",
+        "en": "I waited for her for hours."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "German forms these duration adverbs very productively: stundenlang, tagelang, wochenlang, monatelang, jahrelang. Pattern: [time unit] + lang.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "die-gelegenheit",
+    "word": "die Gelegenheit",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Gelegenheiten",
+    "definitions": [
+      {
+        "meaning": "opportunity, occasion, chance",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sobald sich die Gelegenheit bietet, möchte ich das wiederholen.",
+        "en": "As soon as the opportunity presents itself, I'd like to do that again."
+      },
+      {
+        "de": "Das ist eine einmalige Gelegenheit.",
+        "en": "This is a unique opportunity."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "eine Gelegenheit nutzen = to take/use an opportunity. bei Gelegenheit = when the occasion arises.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "zeitgenössisch",
+    "word": "zeitgenössisch",
+    "type": "adjective",
+    "definitions": [
+      {
+        "meaning": "contemporary, modern (of the same era)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bevorzuge zeitgenössische Literatur gegenüber klassischer.",
+        "en": "I prefer contemporary literature over classical."
+      },
+      {
+        "de": "Das Museum zeigt zeitgenössische Kunst.",
+        "en": "The museum shows contemporary art."
+      }
+    ],
+    "topics": [
+      "time",
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Zeitgenosse / die Zeitgenossin = a contemporary (person living in the same era). Er war ein Zeitgenosse Goethes.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "in-letzter-zeit",
+    "word": "in letzter Zeit",
+    "type": "expression",
+    "related": [
+      "vor Kurzem",
+      "neuerdings"
+    ],
+    "definitions": [
+      {
+        "meaning": "lately, recently, in recent times",
+        "note": "refers to an ongoing recent period, not a single point"
+      }
+    ],
+    "examples": [
+      {
+        "de": "In letzter Zeit habe ich wenig gelesen.",
+        "en": "Lately I haven't been reading much."
+      },
+      {
+        "de": "Wie geht es dir? In letzter Zeit habe ich nichts von dir gehört.",
+        "en": "How are you? I haven't heard from you lately."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [
+      "similar to: vor Kurzem"
+    ],
+    "register": "neutral",
+    "notes": "in letzter Zeit = lately (ongoing period); vor Kurzem = recently (specific point). 'In letzter Zeit schlafe ich schlecht' = I've been sleeping badly lately.",
+    "added": "2026-04-05"
   }
 ]
