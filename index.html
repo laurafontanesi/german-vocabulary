@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laura's Wörterbuch</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a18;
+    --ink-soft: #4a4a44;
+    --ink-muted: #8a8a80;
+    --paper: #f7f5f0;
+    --paper-warm: #efe9de;
+    --paper-card: #fdfcf8;
+    --accent: #c0392b;
+    --accent-soft: #e8d5d0;
+    --gold: #b5860d;
+    --gold-soft: #f0e6c4;
+    --teal: #2c6e6a;
+    --teal-soft: #d4eae8;
+    --border: #d8d0c4;
+    --border-soft: #ece6da;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    min-height: 100vh;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* ── header ── */
+  header {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 2.5rem 2rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: 'Wörterbuch';
+    position: absolute;
+    right: -1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Playfair Display', serif;
+    font-size: 8rem;
+    opacity: 0.05;
+    white-space: nowrap;
+    pointer-events: none;
+    color: var(--paper);
+  }
+  .header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+  }
+  header h1 span {
+    display: block;
+    font-size: 0.9rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    color: #aaa;
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  #stats {
+    font-size: 0.78rem;
+    color: #888;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    text-align: right;
+  }
+  #stats strong { color: var(--paper-warm); font-weight: 500; }
+
+  /* ── layout ── */
+  .layout {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem 4rem;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  /* ── sidebar ── */
+  .sidebar { position: sticky; top: 1.5rem; }
+
+  .search-wrap {
+    position: relative;
+    margin-bottom: 1.25rem;
+  }
+  .search-wrap svg {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--ink-muted);
+    pointer-events: none;
+  }
+  #search {
+    width: 100%;
+    padding: 8px 10px 8px 34px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    background: var(--paper-card);
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  #search:focus { border-color: var(--ink-soft); }
+  #search::placeholder { color: var(--ink-muted); }
+
+  .filter-section { margin-bottom: 1.5rem; }
+  .filter-label {
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink-muted);
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border-soft);
+  }
+  .filter-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 5px 8px;
+    border: none;
+    background: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.12s;
+    margin-bottom: 1px;
+  }
+  .filter-btn:hover { background: var(--paper-warm); color: var(--ink); }
+  .filter-btn.active {
+    background: var(--ink);
+    color: var(--paper);
+    font-weight: 500;
+  }
+  .filter-btn .count {
+    float: right;
+    font-size: 11px;
+    opacity: 0.55;
+    font-family: 'DM Mono', monospace;
+    margin-top: 2px;
+  }
+
+  .alpha-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3px;
+  }
+  .alpha-btn {
+    padding: 4px 2px;
+    border: 1px solid var(--border-soft);
+    background: var(--paper-card);
+    border-radius: 4px;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-soft);
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.12s;
+  }
+  .alpha-btn:hover { border-color: var(--ink-soft); color: var(--ink); }
+  .alpha-btn.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .alpha-btn.disabled { opacity: 0.3; cursor: default; pointer-events: none; }
+
+  .clear-btn {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 7px;
+    border: 1px solid var(--border);
+    background: none;
+    border-radius: 6px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: var(--ink-muted);
+    cursor: pointer;
+    transition: all 0.12s;
+  }
+  .clear-btn:hover { border-color: var(--ink-soft); color: var(--ink); }
+
+  /* ── main content ── */
+  .main { min-width: 0; }
+
+  .results-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .results-count {
+    font-size: 13px;
+    color: var(--ink-muted);
+    font-family: 'DM Mono', monospace;
+  }
+  .sort-wrap { display: flex; gap: 6px; }
+  .sort-btn {
+    padding: 4px 10px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--paper-card);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    color: var(--ink-soft);
+    cursor: pointer;
+    transition: all 0.12s;
+  }
+  .sort-btn:hover { color: var(--ink); border-color: var(--ink-soft); }
+  .sort-btn.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+  /* ── word cards ── */
+  #word-list { display: flex; flex-direction: column; gap: 10px; }
+
+  .word-card {
+    background: var(--paper-card);
+    border: 1px solid var(--border-soft);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.15s, box-shadow 0.15s;
+    cursor: pointer;
+  }
+  .word-card:hover { border-color: var(--border); box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .word-card.open { border-color: var(--border); }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    flex-wrap: wrap;
+  }
+  .card-word {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--ink);
+    flex: 1;
+    min-width: 120px;
+  }
+  .card-word em { font-style: italic; color: var(--ink-soft); font-size: 0.95em; }
+
+  .type-badge {
+    font-size: 10.5px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-family: 'DM Sans', sans-serif;
+    white-space: nowrap;
+  }
+  .type-verb     { background: #dce8f5; color: #1a4a72; }
+  .type-noun     { background: var(--gold-soft); color: #7a5800; }
+  .type-adjective { background: var(--teal-soft); color: #1a4a47; }
+  .type-adverb   { background: #e8e0f5; color: #3a2a6a; }
+  .type-expression { background: var(--accent-soft); color: #7a1a10; }
+  .type-construction { background: #e8f0e0; color: #2a4a1a; }
+  .type-other    { background: var(--paper-warm); color: var(--ink-soft); }
+
+  .card-preview {
+    font-size: 13px;
+    color: var(--ink-muted);
+    flex: 2;
+    min-width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .card-chevron {
+    color: var(--ink-muted);
+    font-size: 11px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+  }
+  .word-card.open .card-chevron { transform: rotate(180deg); }
+
+  .card-body {
+    display: none;
+    padding: 0 16px 16px;
+    border-top: 1px solid var(--border-soft);
+    margin-top: 0;
+  }
+  .word-card.open .card-body { display: block; }
+
+  /* card body internals */
+  .grammar-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding: 10px 0 12px;
+  }
+  .grammar-pill {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    padding: 3px 8px;
+    background: var(--paper-warm);
+    border-radius: 4px;
+    color: var(--ink-soft);
+  }
+  .grammar-pill.highlight { background: var(--accent-soft); color: var(--accent); }
+
+  .section-head {
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink-muted);
+    margin: 12px 0 6px;
+  }
+
+  .def-list { list-style: none; }
+  .def-list li {
+    padding: 6px 0;
+    border-bottom: 1px solid var(--border-soft);
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+  }
+  .def-list li:last-child { border-bottom: none; }
+  .def-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-muted);
+    flex-shrink: 0;
+    width: 16px;
+  }
+  .def-note {
+    font-size: 12px;
+    color: var(--ink-muted);
+    font-style: italic;
+    margin-left: 4px;
+  }
+
+  .example-list { display: flex; flex-direction: column; gap: 6px; }
+  .example-item {
+    padding: 8px 12px;
+    border-left: 2px solid var(--border);
+    background: var(--paper);
+    border-radius: 0 4px 4px 0;
+  }
+  .example-de {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 13.5px;
+    color: var(--ink);
+    margin-bottom: 2px;
+  }
+  .example-en {
+    font-size: 12.5px;
+    color: var(--ink-muted);
+  }
+
+  .tags-row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 4px; }
+  .tag {
+    font-size: 11px;
+    padding: 2px 8px;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    color: var(--ink-muted);
+  }
+
+  .related-row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 4px; }
+  .related-chip {
+    font-size: 12px;
+    padding: 3px 9px;
+    background: var(--paper-warm);
+    border-radius: 4px;
+    color: var(--teal);
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.12s;
+    font-family: 'DM Mono', monospace;
+  }
+  .related-chip:hover { border-color: var(--teal); background: var(--teal-soft); }
+
+  .notes-box {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: var(--gold-soft);
+    border-radius: 4px;
+    font-size: 12.5px;
+    color: #6a4a00;
+    border-left: 2px solid var(--gold);
+  }
+  .notes-box::before { content: '✎  '; }
+
+  /* ── empty state ── */
+  .empty {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--ink-muted);
+  }
+  .empty-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--ink-soft);
+  }
+
+  /* ── practice mode ── */
+  #practice-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(26,26,24,0.85);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+  }
+  #practice-overlay.open { display: flex; }
+  .practice-box {
+    background: var(--paper-card);
+    border-radius: 12px;
+    padding: 2.5rem;
+    max-width: 540px;
+    width: 90%;
+    position: relative;
+  }
+  .practice-close {
+    position: absolute;
+    top: 1rem; right: 1rem;
+    background: none; border: none;
+    font-size: 1.2rem; cursor: pointer;
+    color: var(--ink-muted);
+  }
+  .practice-mode-tabs {
+    display: flex; gap: 8px; margin-bottom: 1.5rem;
+  }
+  .practice-mode-tab {
+    padding: 6px 14px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    background: var(--paper);
+    color: var(--ink-soft);
+    transition: all 0.12s;
+  }
+  .practice-mode-tab.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .practice-prompt {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-muted);
+    margin-bottom: 0.5rem;
+  }
+  .practice-word {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: var(--ink);
+    min-height: 3rem;
+  }
+  #practice-input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 6px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    background: var(--paper);
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.15s;
+    margin-bottom: 10px;
+  }
+  #practice-input:focus { border-color: var(--ink-soft); }
+  .practice-submit {
+    width: 100%;
+    padding: 10px;
+    background: var(--ink);
+    color: var(--paper);
+    border: none;
+    border-radius: 6px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.12s;
+  }
+  .practice-submit:hover { opacity: 0.85; }
+  .practice-feedback {
+    margin-top: 1rem;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    display: none;
+  }
+  .practice-feedback.correct { background: #e0f0e0; color: #1a5a1a; display: block; }
+  .practice-feedback.wrong { background: var(--accent-soft); color: var(--accent); display: block; }
+  .practice-score {
+    display: flex; justify-content: space-between;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-muted);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-soft);
+  }
+  .practice-btn-row {
+    display: flex; gap: 8px; margin-top: 10px;
+  }
+  .practice-next {
+    flex: 1; padding: 8px;
+    border: 1px solid var(--border);
+    background: var(--paper);
+    border-radius: 6px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    color: var(--ink-soft);
+    transition: all 0.12s;
+    display: none;
+  }
+  .practice-next:hover { border-color: var(--ink-soft); color: var(--ink); }
+
+  /* ── practice launch btn ── */
+  .practice-launch {
+    padding: 7px 16px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.12s;
+    letter-spacing: 0.02em;
+  }
+  .practice-launch:hover { opacity: 0.88; }
+
+  /* ── responsive ── */
+  @media (max-width: 720px) {
+    .layout { grid-template-columns: 1fr; padding: 1rem; }
+    .sidebar { position: static; }
+    header { padding: 1.5rem 1rem 1.2rem; }
+    header h1 { font-size: 1.6rem; }
+    header::before { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <h1><span>Laura's</span>Wörterbuch</h1>
+    <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+      <div id="stats"></div>
+      <button class="practice-launch" onclick="openPractice()">Practice ↗</button>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+  <!-- sidebar -->
+  <aside class="sidebar">
+    <div class="search-wrap">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="search" placeholder="Search words…" oninput="applyFilters()">
+    </div>
+
+    <div class="filter-section">
+      <div class="filter-label">Word type</div>
+      <div id="type-filters"></div>
+    </div>
+
+    <div class="filter-section">
+      <div class="filter-label">Topic</div>
+      <div id="topic-filters"></div>
+    </div>
+
+    <div class="filter-section">
+      <div class="filter-label">Alphabetical</div>
+      <div class="alpha-grid" id="alpha-grid"></div>
+    </div>
+
+    <button class="clear-btn" onclick="clearFilters()">Clear all filters</button>
+  </aside>
+
+  <!-- main -->
+  <main class="main">
+    <div class="results-bar">
+      <div class="results-count" id="results-count"></div>
+      <div class="sort-wrap">
+        <button class="sort-btn active" onclick="setSort('alpha',this)">A → Z</button>
+        <button class="sort-btn" onclick="setSort('type',this)">By type</button>
+        <button class="sort-btn" onclick="setSort('newest',this)">Newest</button>
+      </div>
+    </div>
+    <div id="word-list"></div>
+  </main>
+</div>
+
+<!-- practice overlay -->
+<div id="practice-overlay">
+  <div class="practice-box">
+    <button class="practice-close" onclick="closePractice()">✕</button>
+    <div class="practice-mode-tabs">
+      <button class="practice-mode-tab active" onclick="setPracticeMode('de-en',this)">DE → EN</button>
+      <button class="practice-mode-tab" onclick="setPracticeMode('en-de',this)">EN → DE</button>
+    </div>
+    <div class="practice-prompt" id="practice-prompt">Translate into English:</div>
+    <div class="practice-word" id="practice-word"></div>
+    <input type="text" id="practice-input" placeholder="Your answer…" onkeydown="if(event.key==='Enter')checkAnswer()">
+    <button class="practice-submit" onclick="checkAnswer()">Check</button>
+    <div class="practice-feedback" id="practice-feedback"></div>
+    <div class="practice-btn-row">
+      <button class="practice-next" id="btn-next" onclick="nextWord()">Next word →</button>
+      <button class="practice-next" id="btn-skip" onclick="nextWord()" style="display:none">Skip →</button>
+    </div>
+    <div class="practice-score">
+      <span id="score-correct">✓ 0 correct</span>
+      <span id="score-tried">0 tried</span>
+      <span id="score-skip">0 skipped</span>
+    </div>
+  </div>
+</div>
+
+<script>
+let allWords = [];
+let filtered = [];
+let activeType = null;
+let activeTopic = null;
+let activeAlpha = null;
+let sortMode = 'alpha';
+
+// practice state
+let practiceMode = 'de-en';
+let practiceWords = [];
+let practiceIndex = 0;
+let scoreCorrect = 0;
+let scoreTried = 0;
+let scoreSkip = 0;
+
+// ── load data ──────────────────────────────────────────────────────────────────
+fetch('words.json')
+  .then(r => r.json())
+  .then(data => {
+    allWords = data;
+    buildSidebar();
+    applyFilters();
+    updateStats();
+  })
+  .catch(() => {
+    document.getElementById('word-list').innerHTML =
+      '<div class="empty"><div class="empty-title">Could not load words.json</div><p>Make sure the file is in the same folder as index.html.</p></div>';
+  });
+
+// ── stats ──────────────────────────────────────────────────────────────────────
+function updateStats() {
+  const types = [...new Set(allWords.map(w => w.type))].length;
+  const topics = [...new Set(allWords.flatMap(w => w.topics || []))].length;
+  document.getElementById('stats').innerHTML =
+    `<strong>${allWords.length}</strong> words &nbsp;·&nbsp; <strong>${types}</strong> types &nbsp;·&nbsp; <strong>${topics}</strong> topics`;
+}
+
+// ── sidebar builders ───────────────────────────────────────────────────────────
+function buildSidebar() {
+  // types
+  const typeCounts = {};
+  allWords.forEach(w => { typeCounts[w.type] = (typeCounts[w.type] || 0) + 1; });
+  const typeEl = document.getElementById('type-filters');
+  typeEl.innerHTML = '';
+  Object.entries(typeCounts).sort().forEach(([type, count]) => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-btn';
+    btn.innerHTML = `${type} <span class="count">${count}</span>`;
+    btn.onclick = () => toggleType(type, btn);
+    typeEl.appendChild(btn);
+  });
+
+  // topics
+  const topicCounts = {};
+  allWords.forEach(w => (w.topics || []).forEach(t => { topicCounts[t] = (topicCounts[t] || 0) + 1; }));
+  const topicEl = document.getElementById('topic-filters');
+  topicEl.innerHTML = '';
+  Object.entries(topicCounts).sort().forEach(([topic, count]) => {
+    const btn = document.createElement('button');
+    btn.className = 'filter-btn';
+    btn.innerHTML = `${topic} <span class="count">${count}</span>`;
+    btn.onclick = () => toggleTopic(topic, btn);
+    topicEl.appendChild(btn);
+  });
+
+  // alphabet
+  const letters = [...new Set(allWords.map(w => w.word.replace(/^(der|die|das|eine?|sich)\s+/i,'')[0].toUpperCase()))].sort();
+  const alphaEl = document.getElementById('alpha-grid');
+  alphaEl.innerHTML = '';
+  'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach(letter => {
+    const btn = document.createElement('button');
+    btn.className = 'alpha-btn' + (letters.includes(letter) ? '' : ' disabled');
+    btn.textContent = letter;
+    if (letters.includes(letter)) btn.onclick = () => toggleAlpha(letter, btn);
+    alphaEl.appendChild(btn);
+  });
+}
+
+// ── filter toggles ─────────────────────────────────────────────────────────────
+function toggleType(type, btn) {
+  activeType = activeType === type ? null : type;
+  document.querySelectorAll('#type-filters .filter-btn').forEach(b => b.classList.remove('active'));
+  if (activeType) btn.classList.add('active');
+  applyFilters();
+}
+function toggleTopic(topic, btn) {
+  activeTopic = activeTopic === topic ? null : topic;
+  document.querySelectorAll('#topic-filters .filter-btn').forEach(b => b.classList.remove('active'));
+  if (activeTopic) btn.classList.add('active');
+  applyFilters();
+}
+function toggleAlpha(letter, btn) {
+  activeAlpha = activeAlpha === letter ? null : letter;
+  document.querySelectorAll('.alpha-btn').forEach(b => b.classList.remove('active'));
+  if (activeAlpha) btn.classList.add('active');
+  applyFilters();
+}
+function clearFilters() {
+  activeType = activeTopic = activeAlpha = null;
+  document.getElementById('search').value = '';
+  document.querySelectorAll('.filter-btn, .alpha-btn').forEach(b => b.classList.remove('active'));
+  applyFilters();
+}
+function setSort(mode, btn) {
+  sortMode = mode;
+  document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  applyFilters();
+}
+
+// ── main filter + render ───────────────────────────────────────────────────────
+function applyFilters() {
+  const q = document.getElementById('search').value.toLowerCase().trim();
+  filtered = allWords.filter(w => {
+    if (activeType && w.type !== activeType) return false;
+    if (activeTopic && !(w.topics || []).includes(activeTopic)) return false;
+    if (activeAlpha) {
+      const first = w.word.replace(/^(der|die|das|eine?|sich)\s+/i,'')[0].toUpperCase();
+      if (first !== activeAlpha) return false;
+    }
+    if (q) {
+      const haystack = [
+        w.word,
+        ...(w.definitions || []).map(d => d.meaning),
+        ...(w.examples || []).flatMap(e => [e.de, e.en]),
+        ...(w.topics || []),
+        ...(w.tags || []),
+        w.notes || ''
+      ].join(' ').toLowerCase();
+      if (!haystack.includes(q)) return false;
+    }
+    return true;
+  });
+
+  // sort
+  filtered.sort((a, b) => {
+    if (sortMode === 'alpha') {
+      return a.word.localeCompare(b.word, 'de');
+    } else if (sortMode === 'type') {
+      return a.type.localeCompare(b.type) || a.word.localeCompare(b.word, 'de');
+    } else {
+      return (b.added || '').localeCompare(a.added || '');
+    }
+  });
+
+  renderWords();
+  document.getElementById('results-count').textContent =
+    `${filtered.length} of ${allWords.length} entries`;
+}
+
+// ── render ─────────────────────────────────────────────────────────────────────
+function renderWords() {
+  const el = document.getElementById('word-list');
+  if (!filtered.length) {
+    el.innerHTML = '<div class="empty"><div class="empty-title">Keine Wörter gefunden</div><p>Try a different search or clear the filters.</p></div>';
+    return;
+  }
+  el.innerHTML = filtered.map(w => cardHTML(w)).join('');
+}
+
+function cardHTML(w) {
+  const preview = (w.definitions || []).map(d => d.meaning).join(' · ');
+  const grammarPills = buildGrammarPills(w);
+  const defs = (w.definitions || []).map((d, i) =>
+    `<li><span class="def-num">${i+1}.</span><span>${d.meaning}${d.note ? `<span class="def-note">(${d.note})</span>` : ''}</span></li>`
+  ).join('');
+  const examples = (w.examples || []).map(e =>
+    `<div class="example-item"><div class="example-de">${e.de}</div><div class="example-en">${e.en}</div></div>`
+  ).join('');
+  const topics = (w.topics || []).map(t => `<span class="tag">${t}</span>`).join('');
+  const tags = (w.tags || []).map(t => `<span class="tag">${t}</span>`).join('');
+  const related = (w.related || []).map(r =>
+    `<span class="related-chip" onclick="searchRelated('${r}',event)">${r}</span>`
+  ).join('');
+  const notes = w.notes ? `<div class="notes-box">${w.notes}</div>` : '';
+
+  return `<div class="word-card" id="card-${w.id}" onclick="toggleCard('${w.id}',event)">
+    <div class="card-header">
+      <div class="card-word">${formatWord(w)}</div>
+      <span class="type-badge type-${w.type}">${w.type}</span>
+      <div class="card-preview">${preview}</div>
+      <span class="card-chevron">▼</span>
+    </div>
+    <div class="card-body">
+      ${grammarPills ? `<div class="grammar-row">${grammarPills}</div>` : ''}
+      ${defs ? `<div class="section-head">Meaning</div><ul class="def-list">${defs}</ul>` : ''}
+      ${examples ? `<div class="section-head">Examples</div><div class="example-list">${examples}</div>` : ''}
+      ${topics || tags ? `<div class="section-head">Topics & tags</div><div class="tags-row">${topics}${tags}</div>` : ''}
+      ${related ? `<div class="section-head">Related words</div><div class="related-row">${related}</div>` : ''}
+      ${notes}
+    </div>
+  </div>`;
+}
+
+function formatWord(w) {
+  if (w.type === 'noun' && w.gender) return `<em>${w.gender}</em> ${w.word.replace(/^(der|die|das)\s+/i,'')}`;
+  return w.word;
+}
+
+function buildGrammarPills(w) {
+  const pills = [];
+  if (w.type === 'noun') {
+    if (w.plural) pills.push(`Pl: ${w.plural}`);
+  }
+  if (w.type === 'verb') {
+    if (w.past_tense) pills.push(w.past_tense);
+    if (w.past_participle) pills.push(w.past_participle);
+    if (w.auxiliary) pills.push(`<span class="grammar-pill highlight">${w.auxiliary}</span>`);
+    if (w.is_separable) pills.push('separable');
+    if (w.reflexive) pills.push('reflexive');
+    if (w.preposition) pills.push(w.preposition);
+    if (w.family_root && w.family_root !== w.word) pills.push(`family: ${w.family_root}`);
+  }
+  if (w.also_adverb) pills.push('also adverb');
+  if (w.register && w.register !== 'neutral') pills.push(w.register);
+  return pills.map(p => p.startsWith('<') ? p : `<span class="grammar-pill">${p}</span>`).join('');
+}
+
+function toggleCard(id, event) {
+  if (event.target.classList.contains('related-chip')) return;
+  const card = document.getElementById('card-' + id);
+  card.classList.toggle('open');
+}
+
+function searchRelated(word, event) {
+  event.stopPropagation();
+  document.getElementById('search').value = word;
+  applyFilters();
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+// ── practice ───────────────────────────────────────────────────────────────────
+function openPractice() {
+  practiceWords = allWords.filter(w => w.definitions && w.definitions.length > 0);
+  practiceWords = practiceWords.sort(() => Math.random() - 0.5);
+  practiceIndex = 0; scoreCorrect = 0; scoreTried = 0; scoreSkip = 0;
+  updateScore();
+  loadPracticeWord();
+  document.getElementById('practice-overlay').classList.add('open');
+}
+function closePractice() {
+  document.getElementById('practice-overlay').classList.remove('open');
+}
+function setPracticeMode(mode, btn) {
+  practiceMode = mode;
+  document.querySelectorAll('.practice-mode-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('practice-prompt').textContent =
+    mode === 'de-en' ? 'Translate into English:' : 'Translate into German:';
+  loadPracticeWord();
+}
+function loadPracticeWord() {
+  if (!practiceWords.length) return;
+  const w = practiceWords[practiceIndex % practiceWords.length];
+  if (practiceMode === 'de-en') {
+    document.getElementById('practice-word').textContent = w.word;
+  } else {
+    const def = w.definitions[0].meaning;
+    document.getElementById('practice-word').textContent = def;
+  }
+  document.getElementById('practice-input').value = '';
+  document.getElementById('practice-feedback').className = 'practice-feedback';
+  document.getElementById('practice-feedback').textContent = '';
+  document.getElementById('btn-next').style.display = 'none';
+  document.getElementById('btn-skip').style.display = 'inline-block';
+  document.getElementById('practice-input').focus();
+}
+function checkAnswer() {
+  const w = practiceWords[practiceIndex % practiceWords.length];
+  const input = document.getElementById('practice-input').value.trim().toLowerCase();
+  if (!input) return;
+
+  let correct = false;
+  if (practiceMode === 'de-en') {
+    const answers = w.definitions.map(d => d.meaning.toLowerCase());
+    correct = answers.some(a => input === a || a.includes(input) || input.includes(a.split(',')[0].trim()));
+  } else {
+    correct = input === w.word.toLowerCase() ||
+      w.word.toLowerCase().includes(input) ||
+      input.includes(w.word.toLowerCase().replace(/^(der|die|das|sich)\s+/i,''));
+  }
+
+  scoreTried++;
+  const fb = document.getElementById('practice-feedback');
+  if (correct) {
+    scoreCorrect++;
+    fb.className = 'practice-feedback correct';
+    fb.textContent = '✓ Correct!';
+  } else {
+    fb.className = 'practice-feedback wrong';
+    const answer = practiceMode === 'de-en' ? w.definitions[0].meaning : w.word;
+    fb.textContent = `✗ The answer was: ${answer}`;
+  }
+  document.getElementById('btn-next').style.display = 'inline-block';
+  document.getElementById('btn-skip').style.display = 'none';
+  updateScore();
+}
+function nextWord() {
+  practiceIndex++;
+  if (practiceIndex >= practiceWords.length) {
+    practiceWords = practiceWords.sort(() => Math.random() - 0.5);
+    practiceIndex = 0;
+  }
+  loadPracticeWord();
+}
+function updateScore() {
+  document.getElementById('score-correct').textContent = `✓ ${scoreCorrect} correct`;
+  document.getElementById('score-tried').textContent = `${scoreTried} tried`;
+}
+
+// close overlay on bg click
+document.getElementById('practice-overlay').addEventListener('click', function(e) {
+  if (e.target === this) closePractice();
+});
+</script>
+</body>
+</html>
