@@ -6696,5 +6696,49 @@
     "added": "2026-04-05 22:03:54",
     "gender": "die",
     "plural": null
+  },
+  {
+    "id": "sich-entspannen",
+    "word": "sich entspannen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to relax, to unwind",
+        "note": null
+      },
+      {
+        "meaning": "to ease tension, to become less tense",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nach der Arbeit möchte ich mich nur noch entspannen.",
+        "en": "After work I just want to relax."
+      },
+      {
+        "de": "Die Situation hat sich entspannt.",
+        "en": "The situation has eased."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-05 22:18:26",
+    "auxiliary": "haben",
+    "past_tense": "entspannte",
+    "past_participle": "entspannt",
+    "is_separable": false,
+    "reflexive": true,
+    "family_root": "spannen",
+    "prefix": "ent-",
+    "related": [
+      "entspannt",
+      "gespannt"
+    ]
   }
 ]
