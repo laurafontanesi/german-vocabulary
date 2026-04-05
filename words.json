@@ -4665,46 +4665,6 @@
     "added": "2026-04-05"
   },
   {
-    "id": "rechnen-mit",
-    "word": "rechnen mit",
-    "type": "verb",
-    "auxiliary": "haben",
-    "past_tense": "rechnete mit",
-    "past_participle": "gerechnet",
-    "is_separable": false,
-    "reflexive": false,
-    "preposition": "mit + DAT",
-    "related": [
-      "zählen auf"
-    ],
-    "definitions": [
-      {
-        "meaning": "to count on, to rely on, to expect",
-        "note": "mit + DAT"
-      }
-    ],
-    "examples": [
-      {
-        "de": "Ich kann immer mit dir rechnen.",
-        "en": "I can always count on you."
-      },
-      {
-        "de": "Damit hatte ich nicht gerechnet.",
-        "en": "I hadn't expected that."
-      }
-    ],
-    "topics": [
-      "people & relationships"
-    ],
-    "tags": [
-      "similar to: zählen auf"
-    ],
-    "register": "neutral",
-    "notes": "rechnen mit = to count on / to expect (something might happen). zählen auf = to count on (more about relying on a person).",
-    "added": "2026-04-05",
-    "family_root": "rechnen"
-  },
-  {
     "id": "zaehlen-auf",
     "word": "zählen auf",
     "type": "verb",
@@ -4714,9 +4674,7 @@
     "is_separable": false,
     "reflexive": false,
     "preposition": "auf + AKK",
-    "related": [
-      "rechnen mit"
-    ],
+    "related": [],
     "definitions": [
       {
         "meaning": "to count on, to rely on (a person)",
