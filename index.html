@@ -628,6 +628,48 @@
   .launcher-card-icon { font-size: 1.4rem; margin-bottom: 0.4rem; }
   .launcher-card-title { font-size: 14px; font-weight: 500; color: var(--ink); margin-bottom: 2px; }
   .launcher-card-desc { font-size: 12px; color: var(--ink-muted); }
+  .launcher-card.selected { border-color: var(--accent); background: var(--accent-soft); }
+  .launcher-step { display: none; }
+  .launcher-step.active { display: block; }
+  .launcher-priority-row {
+    display: flex; gap: 8px; margin-bottom: 1rem;
+  }
+  .priority-btn {
+    flex: 1; padding: 8px 6px;
+    border: 1px solid var(--border); border-radius: var(--border-radius-md);
+    background: var(--paper); cursor: pointer; font-family: 'DM Sans', sans-serif;
+    font-size: 12px; color: var(--ink-soft); text-align: center;
+    transition: all 0.12s;
+  }
+  .priority-btn:hover { border-color: var(--ink-soft); color: var(--ink); }
+  .priority-btn.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .topic-grid {
+    display: flex; flex-wrap: wrap; gap: 6px;
+    margin-bottom: 1rem; max-height: 160px; overflow-y: auto;
+  }
+  .topic-toggle {
+    padding: 4px 10px; font-size: 12px;
+    border: 1px solid var(--border); border-radius: 20px;
+    background: var(--paper); cursor: pointer;
+    font-family: 'DM Sans', sans-serif; color: var(--ink-soft);
+    transition: all 0.12s;
+  }
+  .topic-toggle:hover { border-color: var(--ink-soft); color: var(--ink); }
+  .topic-toggle.active { background: var(--accent); color: white; border-color: var(--accent); }
+  .launcher-start-btn {
+    width: 100%; padding: 10px;
+    background: var(--ink); color: var(--paper);
+    border: none; border-radius: 6px;
+    font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500;
+    cursor: pointer; transition: opacity 0.12s;
+  }
+  .launcher-start-btn:hover { opacity: 0.85; }
+  .launcher-back-btn {
+    background: none; border: none; font-size: 18px;
+    cursor: pointer; color: var(--ink-muted); padding: 0;
+    margin-bottom: 0.75rem; display: block;
+  }
+  .launcher-back-btn:hover { color: var(--ink); }
 
   /* ── back button in practice ── */
   .practice-back {
@@ -642,15 +684,14 @@
   .practice-summary-btn {
     position: absolute;
     top: 1rem; right: 3rem;
-    background: var(--accent-soft); border: 1px solid var(--accent);
+    background: none; border: 1px solid var(--border);
     border-radius: var(--border-radius-md);
     font-family: 'DM Sans', sans-serif;
-    font-size: 12px; color: var(--accent);
-    font-weight: 500;
-    padding: 4px 12px; cursor: pointer;
+    font-size: 12px; color: var(--ink-muted);
+    padding: 3px 10px; cursor: pointer;
     transition: all 0.12s;
   }
-  .practice-summary-btn:hover { background: var(--accent); color: white; }
+  .practice-summary-btn:hover { border-color: var(--ink-soft); color: var(--ink); }
   /* summary overlay */
   #summary-overlay {
     display: none; position: fixed; inset: 0;
@@ -820,29 +861,50 @@
 <div id="launcher-overlay">
   <div class="launcher-box">
     <button class="practice-close" onclick="closeLauncher()">✕</button>
-    <div class="launcher-title">Practice</div>
-    <div class="launcher-subtitle">Choose a task</div>
-    <div class="launcher-grid">
-      <button class="launcher-card" onclick="startTask('de-en')">
-        <div class="launcher-card-icon">🇩🇪</div>
-        <div class="launcher-card-title">DE → EN</div>
-        <div class="launcher-card-desc">Translate German to English</div>
-      </button>
-      <button class="launcher-card" onclick="startTask('en-de')">
-        <div class="launcher-card-icon">🇬🇧</div>
-        <div class="launcher-card-title">EN → DE</div>
-        <div class="launcher-card-desc">Translate English to German</div>
-      </button>
-      <button class="launcher-card" onclick="startTask('conjugation')">
-        <div class="launcher-card-icon">🔀</div>
-        <div class="launcher-card-title">Conjugation</div>
-        <div class="launcher-card-desc">Fill in the verb form</div>
-      </button>
-      <button class="launcher-card" onclick="startTask('articles')">
-        <div class="launcher-card-icon">📖</div>
-        <div class="launcher-card-title">Articles</div>
-        <div class="launcher-card-desc">Fill in the right article</div>
-      </button>
+
+    <!-- Step 1: choose task -->
+    <div class="launcher-step active" id="launcher-step1">
+      <div class="launcher-title">Practice</div>
+      <div class="launcher-subtitle">Choose a task</div>
+      <div class="launcher-grid">
+        <button class="launcher-card" onclick="selectTask('de-en', this)">
+          <div class="launcher-card-icon">🇩🇪</div>
+          <div class="launcher-card-title">DE → EN</div>
+          <div class="launcher-card-desc">Translate German to English</div>
+        </button>
+        <button class="launcher-card" onclick="selectTask('en-de', this)">
+          <div class="launcher-card-icon">🇬🇧</div>
+          <div class="launcher-card-title">EN → DE</div>
+          <div class="launcher-card-desc">Translate English to German</div>
+        </button>
+        <button class="launcher-card" onclick="selectTask('conjugation', this)">
+          <div class="launcher-card-icon">🔀</div>
+          <div class="launcher-card-title">Conjugation</div>
+          <div class="launcher-card-desc">Fill in the verb form</div>
+        </button>
+        <button class="launcher-card" onclick="selectTask('articles', this)">
+          <div class="launcher-card-icon">📖</div>
+          <div class="launcher-card-title">Articles</div>
+          <div class="launcher-card-desc">Fill in the right article</div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Step 2: choose priority -->
+    <div class="launcher-step" id="launcher-step2">
+      <button class="launcher-back-btn" onclick="goToStep1()">← Back</button>
+      <div class="launcher-title" id="step2-title">Practice</div>
+      <div class="launcher-subtitle">How do you want to practice?</div>
+      <div class="launcher-priority-row">
+        <button class="priority-btn active" id="priority-random" onclick="setPriority('random', this)">🔀 Random</button>
+        <button class="priority-btn" id="priority-recent" onclick="setPriority('recent', this)">🕐 Recent first</button>
+        <button class="priority-btn" id="priority-topic" onclick="setPriority('topic', this)">📚 By topic</button>
+      </div>
+      <div id="topic-selector" style="display:none">
+        <div class="launcher-subtitle" style="margin-bottom:6px">Select topics:</div>
+        <div class="topic-grid" id="topic-toggle-grid"></div>
+      </div>
+      <button class="launcher-start-btn" onclick="startTask()">Start →</button>
     </div>
   </div>
 </div>
@@ -1166,7 +1228,13 @@ let sessionLog = [];   // {word, correct, yourAnswer, correctAnswer}
 const ARTICLE_RE = /\b(der|die|das|ein|eine|einen|einem|einer|eines|den|dem|des)\b/gi;
 
 // ── launcher ──────────────────────────────────────────────────────────────────
+let selectedTask = 'de-en';
+let selectedPriority = 'random';
+let selectedTopics = new Set();
+
 function openPractice() {
+  // reset to step 1
+  goToStep1();
   document.getElementById('launcher-overlay').classList.add('open');
 }
 function closeLauncher() {
@@ -1174,6 +1242,7 @@ function closeLauncher() {
 }
 function backToLauncher() {
   document.getElementById('practice-overlay').classList.remove('open');
+  goToStep1();
   document.getElementById('launcher-overlay').classList.add('open');
 }
 function closePractice() {
@@ -1181,30 +1250,86 @@ function closePractice() {
   document.getElementById('launcher-overlay').classList.remove('open');
 }
 
-function startTask(mode) {
+function goToStep1() {
+  document.getElementById('launcher-step1').classList.add('active');
+  document.getElementById('launcher-step2').classList.remove('active');
+}
+
+function selectTask(mode, btn) {
+  selectedTask = mode;
+  const taskNames = {'de-en':'DE → EN','en-de':'EN → DE','conjugation':'Conjugation','articles':'Articles'};
+  document.getElementById('step2-title').textContent = taskNames[mode] || mode;
+
+  // build topic toggles from allWords filtered by task
+  const grid = document.getElementById('topic-toggle-grid');
+  grid.innerHTML = '';
+  const topicCounts = {};
+  allWords.forEach(w => {
+    // only count topics relevant to this task
+    if (mode === 'conjugation' && w.type !== 'verb') return;
+    if (mode === 'articles' && w.type !== 'noun') return;
+    (w.topics || []).forEach(t => { topicCounts[t] = (topicCounts[t] || 0) + 1; });
+  });
+  selectedTopics = new Set();
+  Object.entries(topicCounts).sort().forEach(([topic, count]) => {
+    const btn = document.createElement('button');
+    btn.className = 'topic-toggle';
+    btn.textContent = `${topic} (${count})`;
+    btn.onclick = () => {
+      btn.classList.toggle('active');
+      if (selectedTopics.has(topic)) selectedTopics.delete(topic);
+      else selectedTopics.add(topic);
+    };
+    grid.appendChild(btn);
+  });
+
+  // reset priority
+  setPriority('random', document.getElementById('priority-random'));
+
+  // go to step 2
+  document.getElementById('launcher-step1').classList.remove('active');
+  document.getElementById('launcher-step2').classList.add('active');
+}
+
+function setPriority(priority, btn) {
+  selectedPriority = priority;
+  document.querySelectorAll('.priority-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('topic-selector').style.display = priority === 'topic' ? 'block' : 'none';
+}
+
+function startTask() {
+  const mode = selectedTask;
   practiceMode = mode;
   scoreCorrect = 0; scoreTried = 0; sessionLog = [];
   updateScore();
 
+  // base filter per task
+  let words;
   if (mode === 'de-en' || mode === 'en-de') {
-    practiceWords = allWords.filter(w =>
+    words = allWords.filter(w =>
       w.definitions && w.definitions.length > 0 &&
       w.type !== 'expression' && w.type !== 'construction'
-    ).sort(() => Math.random() - 0.5);
+    );
   } else if (mode === 'conjugation') {
-    // verbs with example sentences containing a conjugated form
-    practiceWords = allWords.filter(w => {
-      if (w.type !== 'verb') return false;
-      return buildConjugationTask(w) !== null;
-    }).sort(() => Math.random() - 0.5);
+    words = allWords.filter(w => w.type === 'verb' && buildConjugationTask(w) !== null);
   } else if (mode === 'articles') {
-    // nouns with gender AND example sentences containing a detectable article
-    practiceWords = allWords.filter(w => {
-      if (w.type !== 'noun' || !w.gender) return false;
-      return buildArticleTask(w) !== null;
-    }).sort(() => Math.random() - 0.5);
+    words = allWords.filter(w => w.type === 'noun' && w.gender && buildArticleTask(w) !== null);
   }
 
+  // apply topic filter
+  if (selectedPriority === 'topic' && selectedTopics.size > 0) {
+    words = words.filter(w => (w.topics || []).some(t => selectedTopics.has(t)));
+  }
+
+  // apply sort/priority
+  if (selectedPriority === 'recent') {
+    words = words.slice().sort((a, b) => (b.added || '').localeCompare(a.added || ''));
+  } else {
+    words = words.slice().sort(() => Math.random() - 0.5);
+  }
+
+  practiceWords = words;
   practiceIndex = 0;
   document.getElementById('launcher-overlay').classList.remove('open');
   document.getElementById('practice-overlay').classList.add('open');
