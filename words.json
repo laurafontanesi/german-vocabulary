@@ -473,7 +473,8 @@
     "added": "2026-04-05",
     "related": [
       "spüren"
-    ]
+    ],
+    "family_root": "empfinden"
   },
   {
     "id": "spueren",
@@ -512,7 +513,8 @@
     "added": "2026-04-05",
     "related": [
       "empfinden"
-    ]
+    ],
+    "family_root": "spüren"
   },
   {
     "id": "sich-freuen",
@@ -553,7 +555,8 @@
       "die Freude",
       "froh",
       "fröhlich"
-    ]
+    ],
+    "family_root": "freuen"
   },
   {
     "id": "die-freude",
@@ -740,7 +743,8 @@
     "added": "2026-04-05",
     "related": [
       "die Angst"
-    ]
+    ],
+    "family_root": "fürchten"
   },
   {
     "id": "besorgt-sein",
@@ -1384,7 +1388,8 @@
     "tags": [],
     "register": "neutral",
     "notes": "Takes sein as auxiliary. Very versatile: bleiben + adjective = to stay/remain [adjective].",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "bleiben"
   },
   {
     "id": "aendern",
@@ -1423,7 +1428,8 @@
     ],
     "register": "neutral",
     "notes": "ändern = to change something (transitive); sich verändern = to change/transform (intransitive, about a person or situation).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "ändern"
   },
   {
     "id": "sich-veraendern",
@@ -1463,7 +1469,9 @@
     ],
     "register": "neutral",
     "notes": "sich verändern = to change (intransitive); ändern = to change something (transitive). Common source of confusion.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "ändern",
+    "prefix": "ver-"
   },
   {
     "id": "waehlen",
@@ -1509,7 +1517,8 @@
     ],
     "register": "neutral",
     "notes": "wählen covers both 'to choose' and 'to vote'. die Wahl = both the choice and the election.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "wählen"
   },
   {
     "id": "sich-entscheiden",
@@ -1550,7 +1559,8 @@
     ],
     "register": "neutral",
     "notes": "die Entscheidung treffen = to make a decision (formal). sich entscheiden für + AKK = to decide in favour of.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "entscheiden"
   },
   {
     "id": "geben",
@@ -1603,6 +1613,7 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
+      "ankommen",
       "erhalten"
     ],
     "definitions": [
@@ -1630,7 +1641,9 @@
     ],
     "register": "neutral",
     "notes": "False friend! bekommen ≠ 'to become' (= werden). bekommen = to receive/get. erhalten = same but more formal.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "kommen",
+    "prefix": "be-"
   },
   {
     "id": "holen",
@@ -1794,7 +1807,8 @@
     ],
     "register": "neutral",
     "notes": "glauben = believe/think (less certain); denken = think (more neutral); meinen = think/be of the opinion (more assertive).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "glauben"
   },
   {
     "id": "denken",
@@ -1839,7 +1853,8 @@
     ],
     "register": "neutral",
     "notes": "denken an + AKK = to think of/about someone. denken über + AKK = to think about a topic.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "denken"
   },
   {
     "id": "sagen",
@@ -1880,7 +1895,8 @@
     ],
     "register": "neutral",
     "notes": "sagen = to say/tell (content of speech); sprechen = to speak (act of speaking); reden = to talk/chat (more informal, ongoing).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "sagen"
   },
   {
     "id": "sprechen",
@@ -1919,7 +1935,8 @@
     ],
     "register": "neutral",
     "notes": "sprechen = to speak (more formal/neutral); reden = to talk/chat (more informal). Both can be used for conversations.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "sprechen"
   },
   {
     "id": "reden",
@@ -1959,7 +1976,8 @@
     ],
     "register": "informal",
     "notes": "reden = talk/chat (informal, conversational); sprechen = speak (more formal). 'Wir müssen reden' is a very common phrase.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "reden"
   },
   {
     "id": "scheinen",
@@ -2002,7 +2020,8 @@
     ],
     "register": "neutral",
     "notes": "scheinen + zu + Infinitiv (same subject): Er scheint müde zu sein. scheinen + dass (different subject): Es scheint, dass er müde ist.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "scheinen"
   },
   {
     "id": "aussehen",
@@ -2081,7 +2100,8 @@
     "tags": [],
     "register": "neutral",
     "notes": "nicht brauchen + zu + Infinitiv = don't have to (alternative to nicht müssen). Very common in spoken German.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "brauchen"
   },
   {
     "id": "lassen",
@@ -2122,7 +2142,8 @@
     "tags": [],
     "register": "neutral",
     "notes": "lassen + Infinitiv has two uses: (1) to let/allow sb. to do sth.; (2) to have/get sth. done. Context makes it clear.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "lassen"
   },
   {
     "id": "behaupten",
@@ -2159,7 +2180,8 @@
     "tags": [],
     "register": "neutral",
     "notes": "behaupten implies asserting something without justification — slightly sceptical connotation. Often followed by Konjunktiv I in reported speech.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "behaupten"
   },
   {
     "id": "vorschlagen",
@@ -2235,7 +2257,8 @@
     ],
     "register": "neutral",
     "notes": "nutzen = use in abstract/general sense; benutzen = use in practical/physical sense. In everyday speech often interchangeable.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "nutzen"
   },
   {
     "id": "benutzen",
@@ -2273,7 +2296,9 @@
     ],
     "register": "neutral",
     "notes": "benutzen = concrete/practical use of a tool or object; nutzen = more abstract. Both are very common.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "nutzen",
+    "prefix": "be-"
   },
   {
     "id": "zugeben",
@@ -3573,7 +3598,8 @@
     ],
     "register": "neutral",
     "notes": "kennen = to know (people, places, things — familiarity); wissen = to know (facts, information). Classic distinction for learners.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "kennen"
   },
   {
     "id": "wissen",
@@ -3613,7 +3639,8 @@
     ],
     "register": "neutral",
     "notes": "wissen = to know facts (ich weiß, dass...); kennen = to know people/places. Irregular present: ich weiß, du weißt, er weiß, wir wissen.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "wissen"
   },
   {
     "id": "kennenlernen",
@@ -3654,7 +3681,8 @@
     ],
     "register": "neutral",
     "notes": "kennenlernen = to meet and get to know someone (first encounter leading to familiarity). Different from treffen = to meet up with someone you already know.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "kennen"
   },
   {
     "id": "einzig",
@@ -3760,7 +3788,8 @@
     ],
     "register": "neutral",
     "notes": "heiraten = to get married (process/event); verheiratet sein = to be married (state). 'Seit wann sind Sie verheiratet?' vs 'Wann haben Sie geheiratet?'",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "heiraten"
   },
   {
     "id": "die-ehe",
@@ -3897,8 +3926,9 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
-      "wissen",
-      "kennen"
+      "fahren",
+      "kennen",
+      "wissen"
     ],
     "definitions": [
       {
@@ -3922,7 +3952,9 @@
     "tags": [],
     "register": "neutral",
     "notes": "erfahren = to find out (receiving news). Also an adjective: erfahren = experienced. Die Erfahrung = experience.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "fahren",
+    "prefix": "er-"
   },
   {
     "id": "verschieden",
@@ -4069,7 +4101,8 @@
     ],
     "register": "neutral",
     "notes": "treffen = to meet someone you already know; kennenlernen = to meet for the first time. treffen auf + AKK = to encounter by chance.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "treffen"
   },
   {
     "id": "besuchen",
@@ -4107,7 +4140,9 @@
     "tags": [],
     "register": "neutral",
     "notes": "besuchen = to visit (people or places). Also: die Schule/Uni besuchen = to attend school/university.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "suchen",
+    "prefix": "be-"
   },
   {
     "id": "das-treffen",
@@ -4460,7 +4495,8 @@
     ],
     "register": "neutral",
     "notes": "sich trauen = to dare (requires courage). Different from vertrauen (to trust). Also used colloquially: 'Trau dich!' = Go for it! / Don't be shy!",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "trauen"
   },
   {
     "id": "die-verantwortung",
@@ -4533,7 +4569,8 @@
     ],
     "register": "neutral",
     "notes": "rechnen mit = to count on / to expect (something might happen). zählen auf = to count on (more about relying on a person).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "rechnen"
   },
   {
     "id": "zaehlen-auf",
@@ -4572,7 +4609,8 @@
     ],
     "register": "neutral",
     "notes": "zählen auf + AKK = to count on a person (emphasis on reliability). rechnen mit + DAT = to count on / to expect (broader use).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "zählen"
   },
   {
     "id": "sich-verstehen",
@@ -4610,7 +4648,9 @@
     ],
     "register": "neutral",
     "notes": "sich verstehen = to get along (mutual understanding); miteinander auskommen = to get by/manage together (more about coexisting). Both are common.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "stehen",
+    "prefix": "ver-"
   },
   {
     "id": "luegen",
@@ -4859,7 +4899,8 @@
     ],
     "register": "neutral",
     "notes": "sich beschweren über + AKK = to complain about something. More formal/official than meckern (to grumble, informal).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "beschweren"
   },
   {
     "id": "nerven",
@@ -4898,7 +4939,8 @@
     "added": "2026-04-05",
     "related": [
       "stören"
-    ]
+    ],
+    "family_root": "nerven"
   },
   {
     "id": "stoeren",
@@ -4937,7 +4979,8 @@
     ],
     "register": "neutral",
     "notes": "stören = to disturb/bother (more neutral); nerven = to annoy/get on nerves (more emotional). 'Bitte nicht stören' = Do not disturb.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "stören"
   },
   {
     "id": "die-stimmung",
@@ -5037,7 +5080,8 @@
     "tags": [],
     "register": "neutral",
     "notes": "träumen von + DAT = to dream of (wishes); träumen von + DAT (at night) = to dream about. 'Träume süß!' = Sweet dreams! (very common goodnight phrase).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "träumen"
   },
   {
     "id": "schlafen",
@@ -5152,7 +5196,8 @@
     ],
     "register": "neutral",
     "notes": "wecken = to wake someone up (transitive); aufwachen = to wake up oneself (intransitive). der Wecker = alarm clock.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "wecken"
   },
   {
     "id": "sich-anziehen",
@@ -5240,7 +5285,8 @@
     ],
     "register": "neutral",
     "notes": "tragen = to wear (state/ongoing); sich anziehen = to get dressed (action/process). Also: to carry (physically) and to bear (responsibility).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "tragen"
   },
   {
     "id": "kochen",
@@ -5277,7 +5323,8 @@
     "tags": [],
     "register": "neutral",
     "notes": "kochen = both to cook and to boil. der Koch / die Köchin = cook/chef. die Küche = kitchen.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "kochen"
   },
   {
     "id": "aufraemen",
@@ -5417,8 +5464,7 @@
     "reflexive": false,
     "prefix": "ein-",
     "related": [
-      "kaufen",
-      "verkaufen"
+      "kaufen"
     ],
     "definitions": [
       {
@@ -5499,7 +5545,6 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
-      "einkaufen",
       "kaufen"
     ],
     "definitions": [
@@ -5524,9 +5569,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "'Zu verkaufen' = for sale (on signs). der Verkäufer / die Verkäuferin = salesperson.",
-    "added": "2026-04-05",
-    "family_root": "kaufen",
-    "prefix": "ver-"
+    "added": "2026-04-05"
   },
   {
     "id": "bestellen",
@@ -5560,7 +5603,8 @@
     "tags": [],
     "register": "neutral",
     "notes": "Used both in restaurants and for online/mail orders. die Bestellung = the order.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "bestellen"
   },
   {
     "id": "drucken",
@@ -5597,7 +5641,8 @@
     "tags": [],
     "register": "neutral",
     "notes": "drücken = to push/press (a button or person). die Tür drücken = push the door (vs ziehen = pull). Also: die Daumen drücken = fingers crossed.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "drücken"
   },
   {
     "id": "oeffnen-schliessen",
@@ -5663,7 +5708,8 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "renovieren"
   },
   {
     "id": "mieten",
@@ -5702,7 +5748,8 @@
     ],
     "register": "neutral",
     "notes": "mieten = to rent (as tenant); vermieten = to rent out (as landlord). der Mieter = tenant; der Vermieter = landlord.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "mieten"
   },
   {
     "id": "vermieten",
@@ -5741,7 +5788,8 @@
     ],
     "register": "neutral",
     "notes": "'Zu vermieten' = to let/for rent (on signs). Opposite of mieten.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "vermieten"
   },
   {
     "id": "schwitzen",
@@ -5775,7 +5823,8 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "schwitzen"
   },
   {
     "id": "frühstücken",
@@ -5808,7 +5857,8 @@
     "tags": [],
     "register": "neutral",
     "notes": "das Frühstück = breakfast. Frühstück machen/zubereiten = to prepare breakfast.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "frühstücken"
   },
   {
     "id": "lesen",
@@ -5923,7 +5973,8 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "schreiben"
   },
   {
     "id": "fahren",
@@ -5935,9 +5986,10 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
-      "losfahren",
       "abfahren",
-      "ankommen"
+      "ankommen",
+      "erfahren",
+      "losfahren"
     ],
     "definitions": [
       {
@@ -5964,7 +6016,8 @@
     ],
     "register": "neutral",
     "notes": "fahren = to travel by vehicle; gehen = to go on foot. Takes sein. Rad fahren = to cycle. Auto fahren = to drive a car.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "fahren"
   },
   {
     "id": "ankommen",
@@ -5978,8 +6031,9 @@
     "prefix": "an-",
     "related": [
       "abfahren",
-      "fahren",
-      "abreisen"
+      "abreisen",
+      "bekommen",
+      "fahren"
     ],
     "definitions": [
       {
