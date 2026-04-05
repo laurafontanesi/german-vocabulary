@@ -6530,5 +6530,38 @@
     "related": [
       "erweisen"
     ]
+  },
+  {
+    "id": "erwiesen",
+    "word": "erwiesen",
+    "type": "adjective",
+    "definitions": [
+      {
+        "meaning": "proven",
+        "note": null
+      },
+      {
+        "meaning": "established",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Es ist ein erwiesener Fakt, dass Rauchen schädlich ist.",
+        "en": "It is a proven fact that smoking is harmful."
+      },
+      {
+        "de": "Seine Unschuld ist erwiesen.",
+        "en": "His innocence is proven."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "Often used in legal, scientific, or formal contexts to indicate something has been definitively demonstrated.",
+    "added": "2026-04-05 20:12:44",
+    "also_adverb": true
   }
 ]
