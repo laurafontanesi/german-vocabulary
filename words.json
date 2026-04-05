@@ -4931,45 +4931,995 @@
     "added": "2026-04-05"
   },
   {
-    "id": "hoeren",
-    "word": "hören",
+    "id": "traeumen",
+    "word": "träumen",
     "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "träumte",
+    "past_participle": "geträumt",
+    "is_separable": false,
+    "reflexive": false,
+    "preposition": "von + DAT",
     "definitions": [
       {
-        "meaning": "to hear",
-        "note": null
+        "meaning": "to dream",
+        "note": "träumen von + DAT = to dream of/about"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich träume davon, einen Hund zu haben.",
+        "en": "I dream of having a dog."
       },
       {
-        "meaning": "to listen to",
+        "de": "Träume süß!",
+        "en": "Sweet dreams!"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "träumen von + DAT = to dream of (wishes); träumen von + DAT (at night) = to dream about. 'Träume süß!' = Sweet dreams! (very common goodnight phrase).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "schlafen",
+    "word": "schlafen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "schlief",
+    "past_participle": "geschlafen",
+    "is_separable": false,
+    "reflexive": false,
+    "definitions": [
+      {
+        "meaning": "to sleep",
         "note": null
       }
     ],
     "examples": [
       {
-        "de": "Ich kann dich nicht hören.",
-        "en": "I can't hear you."
+        "de": "Ich habe letzte Nacht wie ein Stein geschlafen.",
+        "en": "I slept like a log last night."
       },
       {
-        "de": "Sie hört gerne Musik.",
-        "en": "She likes to listen to music."
+        "de": "Wie lange hast du geschlafen?",
+        "en": "How long did you sleep?"
       }
     ],
     "topics": [
-      "body & mind",
-      "language & communication"
+      "daily life",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "wie ein Stein schlafen = to sleep like a log. einschlafen (sep.) = to fall asleep. aufwachen (sep.) = to wake up.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "aufwachen",
+    "word": "aufwachen",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "wachte auf",
+    "past_participle": "aufgewacht",
+    "is_separable": true,
+    "reflexive": false,
+    "prefix": "auf-",
+    "related": [
+      "wecken",
+      "einschlafen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to wake up (by oneself)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich wache jeden Morgen um 7 Uhr auf.",
+        "en": "I wake up every morning at 7 o'clock."
+      },
+      {
+        "de": "Ich bin mitten in der Nacht aufgewacht.",
+        "en": "I woke up in the middle of the night."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "separable",
+      "similar to: wecken"
+    ],
+    "register": "neutral",
+    "notes": "aufwachen (sein) = to wake up spontaneously; wecken = to wake someone else up. Takes sein as auxiliary.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "wecken",
+    "word": "wecken",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "weckte",
+    "past_participle": "geweckt",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "aufwachen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to wake someone up, to rouse",
+        "note": "transitive — you wake someone else"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Meine Katze weckt mich jeden Morgen um 6 Uhr.",
+        "en": "My cat wakes me up every morning at 6."
+      },
+      {
+        "de": "Kannst du mich um 8 Uhr wecken?",
+        "en": "Can you wake me up at 8?"
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "similar to: aufwachen"
+    ],
+    "register": "neutral",
+    "notes": "wecken = to wake someone up (transitive); aufwachen = to wake up oneself (intransitive). der Wecker = alarm clock.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "sich-anziehen",
+    "word": "sich anziehen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "zog sich an",
+    "past_participle": "angezogen",
+    "is_separable": true,
+    "reflexive": true,
+    "prefix": "an-",
+    "family_root": "ziehen",
+    "related": [
+      "tragen",
+      "ausziehen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to get dressed, to put on clothes (process)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich ziehe mich schnell an und komme.",
+        "en": "I'll get dressed quickly and come."
+      },
+      {
+        "de": "Im Keller ist es kalt, also habe ich eine Jacke angezogen.",
+        "en": "It's cold in the basement, so I put on a jacket."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "separable",
+      "reflexive",
+      "similar to: tragen",
+      "verb family: ziehen"
+    ],
+    "register": "neutral",
+    "notes": "sich anziehen = to get dressed (process); tragen = to wear (state). ausziehen = to take off / undress (opposite). umziehen = to change clothes.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "tragen",
+    "word": "tragen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "trug",
+    "past_participle": "getragen",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "sich anziehen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to wear (clothing — ongoing state)",
+        "note": null
+      },
+      {
+        "meaning": "to carry, to bear",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wenn es kalt ist, trage ich immer eine Jacke.",
+        "en": "When it's cold I always wear a jacket."
+      },
+      {
+        "de": "Er trägt eine schwere Tasche.",
+        "en": "He is carrying a heavy bag."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "similar to: sich anziehen"
+    ],
+    "register": "neutral",
+    "notes": "tragen = to wear (state/ongoing); sich anziehen = to get dressed (action/process). Also: to carry (physically) and to bear (responsibility).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "kochen",
+    "word": "kochen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "kochte",
+    "past_participle": "gekocht",
+    "is_separable": false,
+    "reflexive": false,
+    "definitions": [
+      {
+        "meaning": "to cook",
+        "note": null
+      },
+      {
+        "meaning": "to boil",
+        "note": "Das Wasser kocht = the water is boiling"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich koche jeden Abend zu Hause.",
+        "en": "I cook at home every evening."
+      },
+      {
+        "de": "Das Wasser kocht — mach den Herd aus.",
+        "en": "The water is boiling — turn off the stove."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "kochen = both to cook and to boil. der Koch / die Köchin = cook/chef. die Küche = kitchen.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "aufraemen",
+    "word": "aufräumen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "räumte auf",
+    "past_participle": "aufgeräumt",
+    "is_separable": true,
+    "reflexive": false,
+    "prefix": "auf-",
+    "related": [
+      "umräumen",
+      "einräumen",
+      "ausräumen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to tidy up, to clear up",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Kannst du bitte dein Zimmer aufräumen?",
+        "en": "Can you please tidy up your room?"
+      },
+      {
+        "de": "Ich räume die Küche auf.",
+        "en": "I'm tidying up the kitchen."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "separable",
+      "verb family: räumen"
+    ],
+    "register": "neutral",
+    "notes": "Root of a productive family: aufräumen (tidy up), einräumen (put away), ausräumen (clear out), umräumen (rearrange).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "einraemen",
+    "word": "einräumen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "räumte ein",
+    "past_participle": "eingeräumt",
+    "is_separable": true,
+    "reflexive": false,
+    "prefix": "ein-",
+    "family_root": "räumen",
+    "related": [
+      "aufräumen",
+      "ausräumen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to put away, to stock (shelves or cupboards)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich räume das Geschirr in den Schrank ein.",
+        "en": "I'm putting the dishes away in the cupboard."
+      },
+      {
+        "de": "Kannst du die Spülmaschine einräumen?",
+        "en": "Can you load the dishwasher?"
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "separable",
+      "verb family: räumen"
+    ],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-05"
+  },
+  {
+    "id": "ausraemen",
+    "word": "ausräumen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "räumte aus",
+    "past_participle": "ausgeräumt",
+    "is_separable": true,
+    "reflexive": false,
+    "prefix": "aus-",
+    "family_root": "räumen",
+    "related": [
+      "aufräumen",
+      "einräumen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to clear out, to empty (a room, cupboard, dishwasher)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich räume die Spülmaschine aus.",
+        "en": "I'm unloading the dishwasher."
+      },
+      {
+        "de": "Wir haben den Keller ausgeräumt.",
+        "en": "We cleared out the basement."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "separable",
+      "verb family: räumen"
+    ],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-05"
+  },
+  {
+    "id": "einkaufen",
+    "word": "einkaufen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "kaufte ein",
+    "past_participle": "eingekauft",
+    "is_separable": true,
+    "reflexive": false,
+    "prefix": "ein-",
+    "related": [
+      "kaufen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to go shopping, to do the shopping",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich gehe heute Nachmittag einkaufen.",
+        "en": "I'm going shopping this afternoon."
+      },
+      {
+        "de": "Hast du schon eingekauft?",
+        "en": "Have you done the shopping yet?"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "money & shopping"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": "einkaufen gehen = to go shopping. der Einkauf = the shopping/purchase. die Einkaufsliste = shopping list.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "kaufen",
+    "word": "kaufen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "kaufte",
+    "past_participle": "gekauft",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "einkaufen",
+      "verkaufen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to buy, to purchase",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe mir ein neues Fahrrad gekauft.",
+        "en": "I bought myself a new bike."
+      },
+      {
+        "de": "Wo kann ich das kaufen?",
+        "en": "Where can I buy that?"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "money & shopping"
+    ],
+    "tags": [
+      "similar to: einkaufen"
+    ],
+    "register": "neutral",
+    "notes": "kaufen = to buy (a specific item); einkaufen = to do the shopping (general activity). verkaufen = to sell (opposite).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "verkaufen",
+    "word": "verkaufen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "verkaufte",
+    "past_participle": "verkauft",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "kaufen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to sell",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er verkauft sein Auto.",
+        "en": "He is selling his car."
+      },
+      {
+        "de": "Zu verkaufen (= for sale)",
+        "en": "For sale."
+      }
+    ],
+    "topics": [
+      "money & shopping"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "'Zu verkaufen' = for sale (on signs). der Verkäufer / die Verkäuferin = salesperson.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "bestellen",
+    "word": "bestellen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "bestellte",
+    "past_participle": "bestellt",
+    "is_separable": false,
+    "reflexive": false,
+    "definitions": [
+      {
+        "meaning": "to order (food, goods)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe schon bestellt.",
+        "en": "I've already ordered."
+      },
+      {
+        "de": "Kann ich bitte bestellen?",
+        "en": "Can I order please?"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "money & shopping"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Used both in restaurants and for online/mail orders. die Bestellung = the order.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "drucken",
+    "word": "drücken",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "drückte",
+    "past_participle": "gedrückt",
+    "is_separable": false,
+    "reflexive": false,
+    "definitions": [
+      {
+        "meaning": "to press, to push (a button)",
+        "note": null
+      },
+      {
+        "meaning": "to squeeze, to hug",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Drück bitte auf den Knopf.",
+        "en": "Please press the button."
+      },
+      {
+        "de": "Ich drücke dich ganz fest.",
+        "en": "I'm giving you a big squeeze."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "drücken = to push/press (a button or person). die Tür drücken = push the door (vs ziehen = pull). Also: die Daumen drücken = fingers crossed.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "oeffnen-schliessen",
+    "word": "öffnen / schließen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "öffnete / schloss",
+    "past_participle": "geöffnet / geschlossen",
+    "is_separable": false,
+    "reflexive": false,
+    "definitions": [
+      {
+        "meaning": "to open / to close",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Kannst du bitte das Fenster öffnen?",
+        "en": "Can you please open the window?"
+      },
+      {
+        "de": "Das Geschäft schließt um 20 Uhr.",
+        "en": "The shop closes at 8pm."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "öffnen = to open (formal/general); aufmachen = to open (more colloquial). schließen = to close (formal); zumachen = to close (colloquial).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "renovieren",
+    "word": "renovieren",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "renovierte",
+    "past_participle": "renoviert",
+    "is_separable": false,
+    "reflexive": false,
+    "definitions": [
+      {
+        "meaning": "to renovate, to do up",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir renovieren gerade unsere Wohnung.",
+        "en": "We are currently renovating our flat."
+      },
+      {
+        "de": "Das Haus wurde vollständig renoviert.",
+        "en": "The house was completely renovated."
+      }
+    ],
+    "topics": [
+      "daily life"
     ],
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "mieten",
+    "word": "mieten",
+    "type": "verb",
     "auxiliary": "haben",
-    "past_tense": "hörte",
-    "past_participle": "gehört",
+    "past_tense": "mietete",
+    "past_participle": "gemietet",
     "is_separable": false,
     "reflexive": false,
-    "family_root": "hören",
     "related": [
-      "aufhören"
-    ]
+      "vermieten"
+    ],
+    "definitions": [
+      {
+        "meaning": "to rent (as a tenant)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich miete eine kleine Wohnung in der Innenstadt.",
+        "en": "I rent a small flat in the city centre."
+      },
+      {
+        "de": "Wir haben ein Auto für das Wochenende gemietet.",
+        "en": "We rented a car for the weekend."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "money & shopping"
+    ],
+    "tags": [
+      "similar to: vermieten"
+    ],
+    "register": "neutral",
+    "notes": "mieten = to rent (as tenant); vermieten = to rent out (as landlord). der Mieter = tenant; der Vermieter = landlord.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "vermieten",
+    "word": "vermieten",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "vermietete",
+    "past_participle": "vermietet",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "mieten"
+    ],
+    "definitions": [
+      {
+        "meaning": "to rent out, to let (as a landlord)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie vermietet zwei Zimmer in ihrer Wohnung.",
+        "en": "She rents out two rooms in her flat."
+      },
+      {
+        "de": "Zu vermieten.",
+        "en": "To let / for rent."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "money & shopping"
+    ],
+    "tags": [
+      "similar to: mieten"
+    ],
+    "register": "neutral",
+    "notes": "'Zu vermieten' = to let/for rent (on signs). Opposite of mieten.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "schwitzen",
+    "word": "schwitzen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "schwitzte",
+    "past_participle": "geschwitzt",
+    "is_separable": false,
+    "reflexive": false,
+    "definitions": [
+      {
+        "meaning": "to sweat, to perspire",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Schwitzt du vom Fahrradfahren?",
+        "en": "Are you sweating from cycling?"
+      },
+      {
+        "de": "Bei dieser Hitze schwitzt man sofort.",
+        "en": "In this heat you start sweating immediately."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-05"
+  },
+  {
+    "id": "frühstücken",
+    "word": "frühstücken",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "frühstückte",
+    "past_participle": "gefrühstückt",
+    "is_separable": false,
+    "reflexive": false,
+    "definitions": [
+      {
+        "meaning": "to have breakfast",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich frühstücke jeden Morgen um 7:30 Uhr.",
+        "en": "I have breakfast every morning at 7:30."
+      },
+      {
+        "de": "Hast du schon gefrühstückt?",
+        "en": "Have you had breakfast yet?"
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das Frühstück = breakfast. Frühstück machen/zubereiten = to prepare breakfast.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "lesen",
+    "word": "lesen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "las",
+    "past_participle": "gelesen",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "vorlesen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to read",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich lese jeden Abend vor dem Schlafen.",
+        "en": "I read every evening before sleeping."
+      },
+      {
+        "de": "Hast du dieses Buch schon gelesen?",
+        "en": "Have you read this book already?"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "vorlesen (sep.) = to read aloud. Ich lese gerade... = I'm currently reading...",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "vorlesen",
+    "word": "vorlesen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "las vor",
+    "past_participle": "vorgelesen",
+    "is_separable": true,
+    "reflexive": false,
+    "prefix": "vor-",
+    "family_root": "lesen",
+    "related": [
+      "lesen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to read aloud (to someone)",
+        "note": "jmdm. vorlesen = to read to someone"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Kannst du mir das bitte vorlesen?",
+        "en": "Can you please read that out to me?"
+      },
+      {
+        "de": "Sie liest ihren Kindern jeden Abend vor.",
+        "en": "She reads to her children every evening."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [
+      "separable",
+      "verb family: lesen"
+    ],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-05"
+  },
+  {
+    "id": "schreiben",
+    "word": "schreiben",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "schrieb",
+    "past_participle": "geschrieben",
+    "is_separable": false,
+    "reflexive": false,
+    "definitions": [
+      {
+        "meaning": "to write",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich schreibe gerade eine E-Mail.",
+        "en": "I'm writing an email right now."
+      },
+      {
+        "de": "Er hat mir eine lange Nachricht geschrieben.",
+        "en": "He wrote me a long message."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-05"
+  },
+  {
+    "id": "fahren",
+    "word": "fahren",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "fuhr",
+    "past_participle": "gefahren",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "losfahren",
+      "abfahren",
+      "ankommen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to drive, to travel (by vehicle)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich fahre mit dem Fahrrad ins Büro.",
+        "en": "I cycle to the office."
+      },
+      {
+        "de": "Wir fahren nächste Woche nach Italien.",
+        "en": "We're driving to Italy next week."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [
+      "similar to: gehen"
+    ],
+    "register": "neutral",
+    "notes": "fahren = to travel by vehicle; gehen = to go on foot. Takes sein. Rad fahren = to cycle. Auto fahren = to drive a car.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "ankommen",
+    "word": "ankommen",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "kam an",
+    "past_participle": "angekommen",
+    "is_separable": true,
+    "reflexive": false,
+    "prefix": "an-",
+    "related": [
+      "abfahren",
+      "fahren",
+      "abreisen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to arrive",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wann kommt der Zug an?",
+        "en": "When does the train arrive?"
+      },
+      {
+        "de": "Ich bin gestern spät angekommen.",
+        "en": "I arrived late yesterday."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "daily life"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": "ankommen (sein) = to arrive. die Ankunft = the arrival. abfahren = to depart (opposite).",
+    "added": "2026-04-05"
   }
 ]
