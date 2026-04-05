@@ -1202,6 +1202,7 @@ function loadPracticeWord() {
   document.getElementById('practice-input').disabled = false;
   document.getElementById('practice-feedback').className = 'practice-feedback';
   document.getElementById('practice-feedback').textContent = '';
+  document.querySelector('.practice-submit').style.display = 'block';
   document.getElementById('btn-next').style.display = 'none';
   document.getElementById('btn-skip').style.display = 'inline-block';
   document.getElementById('practice-word-info').classList.remove('visible');
@@ -1299,6 +1300,8 @@ function checkAnswer() {
   info.innerHTML = defs + (exHTML ? '<div style="margin-top:6px">' + exHTML + '</div>' : '');
   info.classList.add('visible');
 
+  // swap Check → Next
+  document.querySelector('.practice-submit').style.display = 'none';
   document.getElementById('btn-next').style.display = 'inline-block';
   document.getElementById('btn-skip').style.display = 'none';
   updateScore();
