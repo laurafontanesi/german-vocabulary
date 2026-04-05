@@ -235,6 +235,66 @@ def print_entry(w: dict):
     print()
 
 
+
+# ── related word linking ───────────────────────────────────────────────────────
+
+def normalise(word: str) -> str:
+    """Normalise a word for fuzzy matching — lowercase, strip gender/articles."""
+    w = word.lower().strip()
+    # strip leading articles/pronouns
+    w = re.sub(r'^(der|die|das|sich|ein|eine)\s+', '', w)
+    return w.strip()
+
+def link_related(words: list, new_entry: dict) -> int:
+    """
+    After adding a new entry, auto-link related words bidirectionally.
+    Returns number of existing entries updated.
+    """
+    new_word  = new_entry["word"]
+    new_norm  = normalise(new_word)
+    new_id    = new_entry["id"]
+    new_related = [normalise(r) for r in new_entry.get("related", [])]
+
+    updated = 0
+    for w in words:
+        if w["id"] == new_id:
+            continue  # skip the new entry itself
+
+        w_norm = normalise(w["word"])
+        w_related_norms = [normalise(r) for r in w.get("related", [])]
+
+        should_link = False
+
+        # Case 1: new entry lists this word as related
+        if w_norm in new_related or w["word"].lower() in new_related:
+            should_link = True
+
+        # Case 2: this existing word lists the new word as related
+        if new_norm in w_related_norms or new_word.lower() in w_related_norms:
+            should_link = True
+
+        if should_link:
+            existing = w.get("related", [])
+            if new_word not in existing:
+                w["related"] = existing + [new_word]
+                updated += 1
+
+    # Also ensure new entry's related list only contains words that exist
+    existing_words = {normalise(w["word"]) for w in words}
+    existing_words_raw = {w["word"].lower() for w in words}
+    valid_related = []
+    invalid_related = []
+    for r in new_entry.get("related", []):
+        if normalise(r) in existing_words or r.lower() in existing_words_raw:
+            valid_related.append(r)
+        else:
+            invalid_related.append(r)
+    if invalid_related:
+        print(f"  ⚑ Related words not found in database (kept anyway): {', '.join(invalid_related)}")
+    new_entry["related"] = new_entry.get("related", [])  # keep all, just warn
+
+    return updated
+
 # ── commands ───────────────────────────────────────────────────────────────────
 
 def cmd_list(args):
@@ -527,6 +587,12 @@ def cmd_add(args):
         return
 
     words.append(entry)
+
+    # ── auto-link related words ───────────────────────────────────────────────
+    n_linked = link_related(words, entry)
+    if n_linked > 0:
+        print(f"  Auto-linked '{word}' to {n_linked} existing entry/entries.")
+
     save(words)
     print(f"  '{word}' added successfully!\n")
 
