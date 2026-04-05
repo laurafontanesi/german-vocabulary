@@ -1588,7 +1588,10 @@
     "register": "neutral",
     "notes": "'es gibt' (there is/are) is one of the most essential German expressions — always followed by accusative.",
     "added": "2026-04-05",
-    "family_root": "geben"
+    "family_root": "geben",
+    "related": [
+      "zugeben"
+    ]
   },
   {
     "id": "bekommen",
@@ -2283,7 +2286,8 @@
     "reflexive": false,
     "prefix": "zu-",
     "related": [
-      "behaupten"
+      "behaupten",
+      "geben"
     ],
     "definitions": [
       {
@@ -3622,6 +3626,7 @@
     "reflexive": false,
     "prefix": "kennen-",
     "related": [
+      "das Treffen",
       "kennen",
       "treffen"
     ],
@@ -4113,7 +4118,8 @@
     "related": [
       "besuchen",
       "der Termin",
-      "die Verabredung"
+      "die Verabredung",
+      "kennenlernen"
     ],
     "definitions": [
       {
@@ -5411,7 +5417,8 @@
     "reflexive": false,
     "prefix": "ein-",
     "related": [
-      "kaufen"
+      "kaufen",
+      "verkaufen"
     ],
     "definitions": [
       {
@@ -5492,6 +5499,7 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
+      "einkaufen",
       "kaufen"
     ],
     "definitions": [
@@ -5516,7 +5524,9 @@
     "tags": [],
     "register": "neutral",
     "notes": "'Zu verkaufen' = for sale (on signs). der Verkäufer / die Verkäuferin = salesperson.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "kaufen",
+    "prefix": "ver-"
   },
   {
     "id": "bestellen",
