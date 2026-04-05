@@ -6332,5 +6332,78 @@
       "Mauer",
       "die Mauer"
     ]
+  },
+  {
+    "id": "unvernuenftig",
+    "word": "unvernünftig",
+    "type": "adjective",
+    "definitions": [
+      {
+        "meaning": "unreasonable, irrational",
+        "note": null
+      },
+      {
+        "meaning": "foolish, senseless",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Es wäre unvernünftig, bei diesem Wetter ohne Jacke rauszugehen.",
+        "en": "It would be unreasonable to go out without a jacket in this weather."
+      },
+      {
+        "de": "Ihre Angst vor Spinnen ist völlig unvernünftig.",
+        "en": "Her fear of spiders is completely irrational."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-05",
+    "also_adverb": true,
+    "related": [
+      "vernünftig"
+    ]
+  },
+  {
+    "id": "vernuenftig",
+    "word": "vernünftig",
+    "type": "adjective",
+    "definitions": [
+      {
+        "meaning": "reasonable, sensible, rational",
+        "note": null
+      },
+      {
+        "meaning": "moderate, fair (in amount or price)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist eine vernünftige Entscheidung.",
+        "en": "That is a reasonable decision."
+      },
+      {
+        "de": "Der Pullover kostet einen vernünftigen Preis.",
+        "en": "The sweater costs a reasonable price."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-05",
+    "also_adverb": true,
+    "related": [
+      "unvernünftig"
+    ]
   }
 ]
