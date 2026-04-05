@@ -795,7 +795,7 @@
     <div class="practice-prompt" id="practice-prompt"></div>
     <div class="practice-word" id="practice-word"></div>
     <div class="practice-sentence" id="practice-sentence" style="display:none"></div>
-    <input type="text" id="practice-input" placeholder="Your answer…" onkeydown="if(event.key==='Enter')checkAnswer()">
+    <input type="text" id="practice-input" placeholder="Your answer…" onkeydown="handleEnter(event)">
     <button class="practice-submit" onclick="checkAnswer()">Check</button>
     <div class="practice-feedback" id="practice-feedback"></div>
     <div class="practice-btn-row">
@@ -1081,6 +1081,7 @@ let practiceIndex = 0;
 let scoreCorrect = 0;
 let scoreTried = 0;
 let currentAnswer = ''; // for fill-in tasks
+let answered = false;  // true after answer has been checked
 
 // ── article patterns to detect in sentences ──────────────────────────────────
 const ARTICLE_RE = /\b(der|die|das|ein|eine|einen|einem|einer|eines|den|dem|des)\b/gi;
@@ -1196,7 +1197,9 @@ function loadPracticeWord() {
   const promptEl   = document.getElementById('practice-prompt');
 
   // reset UI
+  answered = false;
   document.getElementById('practice-input').value = '';
+  document.getElementById('practice-input').disabled = false;
   document.getElementById('practice-feedback').className = 'practice-feedback';
   document.getElementById('practice-feedback').textContent = '';
   document.getElementById('btn-next').style.display = 'none';
@@ -1234,10 +1237,18 @@ function loadPracticeWord() {
 }
 
 // ── check answer ──────────────────────────────────────────────────────────────
+function handleEnter(event) {
+  if (event.key !== 'Enter') return;
+  if (answered) { nextWord(); } else { checkAnswer(); }
+}
+
 function checkAnswer() {
+  if (answered) return;  // already checked, Enter should go to next word
   const w = practiceWords[practiceIndex % practiceWords.length];
   const input = document.getElementById('practice-input').value.trim().toLowerCase();
   if (!input) return;
+  answered = true;
+  document.getElementById('practice-input').disabled = true;
 
   let correct = false;
   let correctAnswer = '';
