@@ -78,7 +78,7 @@ Return ONLY valid JSON, no explanation, no markdown, no code fences.
     {{"de": "A natural German example sentence", "en": "English translation"}},
     {{"de": "A second example showing a different use", "en": "English translation"}}
   ],
-  "topics": ["suggested topic from: useful verbs, everyday actions, states, characters, emotions, work, grammar, time, weather, places, travel, food, money, culture, various"],
+  "topics": ["suggested topic from: daily life, emotions, people & relationships, body & mind, work & academia, nature & weather, travel & places, time, language & communication, money & shopping, culture & arts, society & politics, grammar & structure, various"],
   "register": "neutral, formal, informal, or Swiss German",
   "notes": "one sentence max — only if there is something genuinely important to note, e.g. easy confusion with another word, or null"
 }}

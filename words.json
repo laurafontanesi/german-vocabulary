@@ -10,45 +10,17 @@
     "reflexive": false,
     "family_root": "nehmen",
     "prefix": null,
-    "related": [
-      "mitnehmen",
-      "teilnehmen",
-      "abnehmen",
-      "zunehmen",
-      "uebernehmen",
-      "einnehmen",
-      "hinnehmen",
-      "festnehmen",
-      "wegnehmen",
-      "zuruecknehmen",
-      "benehmen",
-      "unternehmen"
-    ],
+    "related": ["mitnehmen", "teilnehmen", "abnehmen", "zunehmen", "übernehmen", "einnehmen", "hinnehmen", "festnehmen", "wegnehmen", "zurücknehmen", "benehmen", "unternehmen"],
     "definitions": [
-      {
-        "meaning": "to take, to get",
-        "note": null
-      },
-      {
-        "meaning": "to accept, to receive",
-        "note": null
-      }
+      { "meaning": "to take, to get", "note": null },
+      { "meaning": "to accept, to receive", "note": null }
     ],
     "examples": [
-      {
-        "de": "Kann ich noch ein Stück Kuchen nehmen?",
-        "en": "Can I have another piece of cake?"
-      },
-      {
-        "de": "Nehmen Sie bitte Platz.",
-        "en": "Please take a seat."
-      }
+      { "de": "Kann ich noch ein Stück Kuchen nehmen?", "en": "Can I have another piece of cake?" },
+      { "de": "Nehmen Sie bitte Platz.", "en": "Please take a seat." }
     ],
-    "topics": [
-      "useful verbs",
-      "everyday actions"
-    ],
-    "tags": [],
+    "topics": ["daily life"],
+    "tags": ["verb family: nehmen"],
     "register": "neutral",
     "notes": "Root of a very large verb family — learn the compounds gradually.",
     "added": "2024-01-01"
@@ -64,30 +36,16 @@
     "reflexive": false,
     "family_root": "nehmen",
     "prefix": "mit-",
-    "related": [
-      "nehmen"
-    ],
+    "related": ["nehmen"],
     "definitions": [
-      {
-        "meaning": "to take along, to bring with",
-        "note": null
-      }
+      { "meaning": "to take along, to bring with", "note": null }
     ],
     "examples": [
-      {
-        "de": "Ich nehme einen Regenschirm mit, nur für alle Fälle.",
-        "en": "I'll take an umbrella along, just in case."
-      },
-      {
-        "de": "Ich habe mein Fahrrad mitgebracht.",
-        "en": "I brought my bike along."
-      }
+      { "de": "Ich nehme einen Regenschirm mit, nur für alle Fälle.", "en": "I'll take an umbrella along, just in case." },
+      { "de": "Ich habe mein Fahrrad mitgebracht.", "en": "I brought my bike along." }
     ],
-    "topics": [
-      "useful verbs",
-      "everyday actions"
-    ],
-    "tags": [],
+    "topics": ["daily life"],
+    "tags": ["separable", "verb family: nehmen"],
     "register": "neutral",
     "notes": null,
     "added": "2024-01-01"
@@ -104,26 +62,15 @@
     "preposition": "an + DAT",
     "family_root": "nehmen",
     "prefix": "teil-",
-    "related": [
-      "nehmen"
-    ],
+    "related": ["nehmen"],
     "definitions": [
-      {
-        "meaning": "to participate, to take part in",
-        "note": "always used with 'an + DAT'"
-      }
+      { "meaning": "to participate, to take part in", "note": "always used with 'an + DAT'" }
     ],
     "examples": [
-      {
-        "de": "Ich habe an einer Konferenz über Neurowissenschaften teilgenommen.",
-        "en": "I participated in a conference on neuroscience."
-      }
+      { "de": "Ich habe an einer Konferenz über Neurowissenschaften teilgenommen.", "en": "I participated in a conference on neuroscience." }
     ],
-    "topics": [
-      "useful verbs",
-      "work"
-    ],
-    "tags": [],
+    "topics": ["work & academia"],
+    "tags": ["separable", "verb family: nehmen"],
     "register": "neutral",
     "notes": null,
     "added": "2024-01-01"
@@ -134,35 +81,16 @@
     "type": "noun",
     "gender": "die",
     "plural": "die Erinnerungen",
-    "related": [
-      "sich erinnern",
-      "das Gedächtnis",
-      "sich merken",
-      "sich einprägen"
-    ],
+    "related": ["sich erinnern", "das Gedächtnis", "sich merken", "sich einprägen"],
     "definitions": [
-      {
-        "meaning": "memory, recollection (a specific memory)",
-        "note": null
-      }
+      { "meaning": "memory, recollection (a specific memory)", "note": null }
     ],
     "examples": [
-      {
-        "de": "Meine Großmutter erinnert sich oft an ihre Kindheit.",
-        "en": "My grandmother often thinks back to her childhood."
-      },
-      {
-        "de": "Das sind schöne Erinnerungen.",
-        "en": "Those are beautiful memories."
-      }
+      { "de": "Meine Großmutter erinnert sich oft an ihre Kindheit.", "en": "My grandmother often thinks back to her childhood." },
+      { "de": "Das sind schöne Erinnerungen.", "en": "Those are beautiful memories." }
     ],
-    "topics": [
-      "states",
-      "everyday actions"
-    ],
-    "tags": [
-      "memory"
-    ],
+    "topics": ["body & mind"],
+    "tags": ["similar to: das Gedächtnis"],
     "register": "neutral",
     "notes": "das Gedächtnis = memory as a faculty/ability; die Erinnerung = a specific memory or recollection.",
     "added": "2024-01-01"
@@ -173,34 +101,16 @@
     "type": "noun",
     "gender": "das",
     "plural": "die Gedächtnisse",
-    "related": [
-      "die Erinnerung",
-      "sich erinnern",
-      "sich merken"
-    ],
+    "related": ["die Erinnerung", "sich erinnern", "sich merken"],
     "definitions": [
-      {
-        "meaning": "memory (as a faculty or ability)",
-        "note": null
-      }
+      { "meaning": "memory (as a faculty or ability)", "note": null }
     ],
     "examples": [
-      {
-        "de": "Sie hat ein ausgezeichnetes Gedächtnis.",
-        "en": "She has an excellent memory."
-      },
-      {
-        "de": "Ich muss mir das ins Gedächtnis einprägen.",
-        "en": "I need to memorise that."
-      }
+      { "de": "Sie hat ein ausgezeichnetes Gedächtnis.", "en": "She has an excellent memory." },
+      { "de": "Ich muss mir das ins Gedächtnis einprägen.", "en": "I need to memorise that." }
     ],
-    "topics": [
-      "states",
-      "work"
-    ],
-    "tags": [
-      "memory"
-    ],
+    "topics": ["body & mind"],
+    "tags": ["similar to: die Erinnerung"],
     "register": "neutral",
     "notes": "das Gedächtnis = memory as a faculty; die Erinnerung = a specific memory. Don't confuse!",
     "added": "2024-01-01"
@@ -210,38 +120,18 @@
     "word": "ernst",
     "type": "adjective",
     "also_adverb": true,
-    "related": [
-      "der Ernst"
-    ],
+    "related": ["der Ernst"],
     "definitions": [
-      {
-        "meaning": "(adj) serious, grave",
-        "note": "describes a person or situation"
-      },
-      {
-        "meaning": "(adv) seriously, in earnest",
-        "note": "used after verbs like 'meinen', 'nehmen'"
-      }
+      { "meaning": "serious, grave", "note": "describes a person or situation" },
+      { "meaning": "seriously, in earnest", "note": "when used as adverb, e.g. after 'meinen' or 'nehmen'" }
     ],
     "examples": [
-      {
-        "de": "Er ist ein ernster Typ.",
-        "en": "He is a serious guy."
-      },
-      {
-        "de": "Ich meine das ernst.",
-        "en": "I mean that seriously."
-      },
-      {
-        "de": "Deine ernsten Worte machen mich nachdenklich.",
-        "en": "Your serious words make me think."
-      }
+      { "de": "Er ist ein ernster Typ.", "en": "He is a serious guy." },
+      { "de": "Ich meine das ernst.", "en": "I mean that seriously." },
+      { "de": "Deine ernsten Worte machen mich nachdenklich.", "en": "Your serious words make me think." }
     ],
-    "topics": [
-      "states",
-      "characters"
-    ],
-    "tags": [],
+    "topics": ["emotions", "people & relationships"],
+    "tags": ["also adverb"],
     "register": "neutral",
     "notes": "der Ernst (noun, singular only) = seriousness. E.g.: Er sagte es mit großem Ernst.",
     "added": "2024-01-01"
@@ -250,36 +140,16 @@
     "id": "froh",
     "word": "froh",
     "type": "adjective",
-    "related": [
-      "fröhlich",
-      "sich freuen",
-      "die Freude",
-      "glücklich"
-    ],
+    "related": ["fröhlich", "sich freuen", "die Freude", "glücklich"],
     "definitions": [
-      {
-        "meaning": "glad, happy (inner feeling, not necessarily visible)",
-        "note": null
-      }
+      { "meaning": "glad, happy (inner feeling, not necessarily visible)", "note": null }
     ],
     "examples": [
-      {
-        "de": "Ich bin froh, dass du hier bist.",
-        "en": "I'm glad you are here."
-      },
-      {
-        "de": "Frohe Weihnachten!",
-        "en": "Merry Christmas!"
-      }
+      { "de": "Ich bin froh, dass du hier bist.", "en": "I'm glad you are here." },
+      { "de": "Frohe Weihnachten!", "en": "Merry Christmas!" }
     ],
-    "topics": [
-      "states",
-      "characters"
-    ],
-    "tags": [
-      "emotions",
-      "similar words"
-    ],
+    "topics": ["emotions"],
+    "tags": ["similar to: fröhlich"],
     "register": "neutral",
     "notes": "froh = inner feeling; fröhlich = outwardly shown happiness. Important distinction!",
     "added": "2024-01-01"
@@ -289,31 +159,15 @@
     "word": "fröhlich",
     "type": "adjective",
     "also_adverb": true,
-    "related": [
-      "froh",
-      "sich freuen",
-      "die Freude"
-    ],
+    "related": ["froh", "sich freuen", "die Freude"],
     "definitions": [
-      {
-        "meaning": "cheerful, merry (happiness shown outwardly)",
-        "note": null
-      }
+      { "meaning": "cheerful, merry (happiness shown outwardly)", "note": null }
     ],
     "examples": [
-      {
-        "de": "Er ist eine fröhliche Person.",
-        "en": "He is a cheerful person."
-      }
+      { "de": "Er ist eine fröhliche Person.", "en": "He is a cheerful person." }
     ],
-    "topics": [
-      "states",
-      "characters"
-    ],
-    "tags": [
-      "emotions",
-      "similar words"
-    ],
+    "topics": ["emotions"],
+    "tags": ["also adverb", "similar to: froh"],
     "register": "neutral",
     "notes": "froh = inner feeling; fröhlich = outwardly shown. Same distinction as 'content' vs 'cheerful' in English.",
     "added": "2024-01-01"
@@ -322,34 +176,16 @@
     "id": "einen-kater-haben",
     "word": "einen Kater haben",
     "type": "expression",
-    "related": [
-      "der Muskelkater",
-      "angesäuselt sein"
-    ],
+    "related": ["der Muskelkater", "angesäuselt sein"],
     "definitions": [
-      {
-        "meaning": "to have a hangover",
-        "note": "literal: to have a tomcat"
-      }
+      { "meaning": "to have a hangover", "note": "literal: to have a tomcat" }
     ],
     "examples": [
-      {
-        "de": "Ich habe heute einen fürchterlichen Kater.",
-        "en": "I have a terrible hangover today."
-      },
-      {
-        "de": "Ich bin heute ganz verkatert.",
-        "en": "I'm completely hungover today."
-      }
+      { "de": "Ich habe heute einen fürchterlichen Kater.", "en": "I have a terrible hangover today." },
+      { "de": "Ich bin heute ganz verkatert.", "en": "I'm completely hungover today." }
     ],
-    "topics": [
-      "expressions",
-      "states"
-    ],
-    "tags": [
-      "idioms",
-      "animals"
-    ],
+    "topics": ["daily life", "emotions"],
+    "tags": ["idiom"],
     "register": "informal",
     "notes": "verkatert = adjective form (completely hungover). Der Kater also means tomcat — hence the idiom.",
     "added": "2024-01-01"
@@ -358,35 +194,16 @@
     "id": "je-desto",
     "word": "je … desto …",
     "type": "construction",
-    "related": [
-      "deshalb",
-      "trotzdem",
-      "also"
-    ],
+    "related": ["deshalb", "trotzdem", "also"],
     "definitions": [
-      {
-        "meaning": "the more … the more … / the [comparative], the [comparative]",
-        "note": null
-      }
+      { "meaning": "the more … the more … / the [comparative], the [comparative]", "note": null }
     ],
     "examples": [
-      {
-        "de": "Je früher ich meinen Artikel abgebe, desto besser.",
-        "en": "The sooner I hand in my article, the better."
-      },
-      {
-        "de": "Je mehr gute Kunst Menschen aufnehmen, desto genauer lernen sie sehen.",
-        "en": "The more high-quality art people absorb, the more precisely they learn to see."
-      }
+      { "de": "Je früher ich meinen Artikel abgebe, desto besser.", "en": "The sooner I hand in my article, the better." },
+      { "de": "Je mehr gute Kunst Menschen aufnehmen, desto genauer lernen sie sehen.", "en": "The more high-quality art people absorb, the more precisely they learn to see." }
     ],
-    "topics": [
-      "grammar",
-      "expressions"
-    ],
-    "tags": [
-      "comparatives",
-      "sentence structure"
-    ],
+    "topics": ["grammar & structure"],
+    "tags": ["comparatives", "sentence structure"],
     "register": "neutral",
     "notes": "Pattern: je + comparative + verb-final clause, desto + comparative + main clause.",
     "added": "2024-01-01"
@@ -395,40 +212,25 @@
     "id": "aufhoeren",
     "word": "aufhören",
     "type": "verb",
-    "definitions": [
-      {
-        "meaning": "to stop, to cease",
-        "note": null
-      },
-      {
-        "meaning": "to quit, to give up",
-        "note": "when referring to habits or activities"
-      }
-    ],
-    "examples": [
-      {
-        "de": "Es hat aufgehört zu regnen.",
-        "en": "It has stopped raining."
-      },
-      {
-        "de": "Ich höre mit dem Rauchen auf.",
-        "en": "I'm quitting smoking."
-      }
-    ],
-    "topics": [
-      "useful verbs",
-      "everyday actions"
-    ],
-    "tags": [],
-    "register": "neutral",
-    "notes": "Often used with 'mit' + dative when specifying what you're stopping or quitting.",
-    "added": "2026-04-05",
     "auxiliary": "haben",
     "past_tense": "hörte auf",
     "past_participle": "aufgehört",
     "is_separable": true,
     "reflexive": false,
     "family_root": "hören",
-    "prefix": "auf-"
+    "prefix": "auf-",
+    "definitions": [
+      { "meaning": "to stop, to cease", "note": null },
+      { "meaning": "to quit, to give up", "note": "when referring to habits or activities" }
+    ],
+    "examples": [
+      { "de": "Es hat aufgehört zu regnen.", "en": "It has stopped raining." },
+      { "de": "Ich höre mit dem Rauchen auf.", "en": "I'm quitting smoking." }
+    ],
+    "topics": ["daily life"],
+    "tags": ["separable", "verb family: hören"],
+    "register": "neutral",
+    "notes": "Often used with 'mit' + dative when specifying what you're stopping or quitting.",
+    "added": "2026-04-05"
   }
 ]
