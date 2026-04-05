@@ -52,6 +52,9 @@ python vocab.py add
 # Add without AI (fully manual)
 python vocab.py add --manual
 
+# Edit an existing entry (definitions, examples, notes, grammar fields…)
+python vocab.py edit "die Erinnerung"
+
 # List all words
 python vocab.py list
 

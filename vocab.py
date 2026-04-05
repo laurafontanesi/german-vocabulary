@@ -8,6 +8,7 @@ Usage:
   python vocab.py show nehmen           show full entry for a word
   python vocab.py add                   add a new word (AI-assisted)
   python vocab.py add --manual          add a word without AI
+  python vocab.py edit nehmen           edit an existing entry
   python vocab.py delete nehmen         delete a word
   python vocab.py topics                show all topics
   python vocab.py family nehmen         show a verb family
@@ -19,7 +20,7 @@ import os
 import re
 import urllib.request
 import urllib.error
-from datetime import datetime
+from datetime import date
 
 DB_PATH  = os.path.join(os.path.dirname(__file__), "words.json")
 ENV_PATH = os.path.join(os.path.dirname(__file__), ".env")
@@ -496,7 +497,7 @@ def cmd_add(args):
         "tags":        [],
         "register":    "neutral",
         "notes":       None,
-        "added":       datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        "added":       str(date.today())
     }
 
     # ── type-specific fields ──────────────────────────────────────────────────
@@ -683,6 +684,167 @@ def cmd_add(args):
     print(f"  '{word}' added successfully!\n")
 
 
+def cmd_edit(args):
+    if not args:
+        print("  Usage: python vocab.py edit <word>")
+        return
+    words = load()
+    query = " ".join(args)
+    w = find(words, query)
+    if not w:
+        print(f"  X '{query}' not found.")
+        return
+
+    print_entry(w)
+    print("  What would you like to edit?\n")
+    print("    1) definitions")
+    print("    2) examples")
+    print("    3) notes")
+    print("    4) topics")
+    print("    5) tags")
+    print("    6) related words")
+    print("    7) register")
+    if w["type"] == "noun":
+        print("    8) gender / plural")
+    elif w["type"] == "verb":
+        print("    8) verb forms (past tense, participle, auxiliary…)")
+    elif w["type"] == "adjective":
+        print("    8) also_adverb")
+    print("    9) word type")
+    print("    0) cancel")
+    print()
+
+    choice = ask("Choose").strip()
+
+    if choice == "0" or not choice:
+        print("  Cancelled.")
+        return
+
+    elif choice == "1":
+        print(f"\n  Current definitions:")
+        for i, d in enumerate(w.get("definitions", []), 1):
+            note = f" ({d['note']})" if d.get("note") else ""
+            print(f"    {i}. {d['meaning']}{note}")
+        print("\n  Options: [add / replace / remove]")
+        action = ask("Action", "add").lower()
+        if action == "add":
+            meaning = ask("New meaning")
+            if meaning:
+                note = ask("Note (or Enter to skip)")
+                w.setdefault("definitions", []).append({"meaning": meaning, "note": note or None})
+        elif action == "replace":
+            idx = ask("Replace which number?")
+            if idx.isdigit() and 1 <= int(idx) <= len(w.get("definitions", [])):
+                i = int(idx) - 1
+                meaning = ask("New meaning", w["definitions"][i]["meaning"])
+                note = ask("Note (or Enter to skip)", w["definitions"][i].get("note") or "")
+                w["definitions"][i] = {"meaning": meaning, "note": note or None}
+        elif action == "remove":
+            idx = ask("Remove which number?")
+            if idx.isdigit() and 1 <= int(idx) <= len(w.get("definitions", [])):
+                removed = w["definitions"].pop(int(idx) - 1)
+                print(f"  Removed: {removed['meaning']}")
+
+    elif choice == "2":
+        print(f"\n  Current examples:")
+        for i, e in enumerate(w.get("examples", []), 1):
+            print(f"    {i}. {e['de']}")
+            print(f"       {e['en']}")
+        print("\n  Options: [add / replace / remove]")
+        action = ask("Action", "add").lower()
+        if action == "add":
+            de = ask("German sentence")
+            if de:
+                en = ask("English translation")
+                w.setdefault("examples", []).append({"de": de, "en": en})
+        elif action == "replace":
+            idx = ask("Replace which number?")
+            if idx.isdigit() and 1 <= int(idx) <= len(w.get("examples", [])):
+                i = int(idx) - 1
+                de = ask("German sentence", w["examples"][i]["de"])
+                en = ask("English translation", w["examples"][i]["en"])
+                w["examples"][i] = {"de": de, "en": en}
+        elif action == "remove":
+            idx = ask("Remove which number?")
+            if idx.isdigit() and 1 <= int(idx) <= len(w.get("examples", [])):
+                removed = w["examples"].pop(int(idx) - 1)
+                print(f"  Removed: {removed['de']}")
+
+    elif choice == "3":
+        current = w.get("notes") or ""
+        print(f"\n  Current note: {current or '—'}")
+        new_note = ask("New note (or Enter to clear)")
+        w["notes"] = new_note if new_note else None
+
+    elif choice == "4":
+        current = ", ".join(w.get("topics", []))
+        print(f"\n  Current topics: {current or '—'}")
+        new_topics = ask("New topics (comma-separated)", current)
+        w["topics"] = [t.strip() for t in new_topics.split(",") if t.strip()]
+
+    elif choice == "5":
+        current = ", ".join(w.get("tags", []))
+        print(f"\n  Current tags: {current or '—'}")
+        new_tags = ask("New tags (comma-separated)", current)
+        w["tags"] = [t.strip() for t in new_tags.split(",") if t.strip()]
+
+    elif choice == "6":
+        current = ", ".join(w.get("related", []))
+        print(f"\n  Current related: {current or '—'}")
+        new_related = ask("New related words (comma-separated)", current)
+        w["related"] = [r.strip() for r in new_related.split(",") if r.strip()]
+        # re-run bidirectional linking
+        n_linked = link_related(words, w)
+        if n_linked > 0:
+            print(f"  Auto-linked to {n_linked} existing entry/entries.")
+
+    elif choice == "7":
+        current = w.get("register", "neutral")
+        w["register"] = ask_choice("Register", REGISTERS, current)
+
+    elif choice == "8":
+        if w["type"] == "noun":
+            w["gender"] = ask_choice("Gender", GENDERS, w.get("gender", ""))
+            w["plural"] = ask("Plural form", w.get("plural", "") or "")
+        elif w["type"] == "verb":
+            w["auxiliary"]       = ask_choice("Auxiliary", ["haben", "sein"], w.get("auxiliary", "haben"))
+            w["past_tense"]      = ask("Past tense", w.get("past_tense", "") or "")
+            w["past_participle"] = ask("Past participle", w.get("past_participle", "") or "")
+            sep = ask("Separable? (y/n)", "y" if w.get("is_separable") else "n")
+            w["is_separable"] = sep.lower() == "y"
+            ref = ask("Reflexive? (y/n)", "y" if w.get("reflexive") else "n")
+            w["reflexive"] = ref.lower() == "y"
+            w["preposition"] = ask("Preposition + case (or Enter to clear)", w.get("preposition", "") or "") or None
+            w["family_root"]    = ask("Family root", w.get("family_root", "") or "")
+            w["prefix"]         = ask("Prefix (or Enter to clear)", w.get("prefix", "") or "") or None
+        elif w["type"] == "adjective":
+            adv = ask("Also adverb? (y/n)", "y" if w.get("also_adverb") else "n")
+            w["also_adverb"] = adv.lower() == "y"
+
+    elif choice == "9":
+        w["type"] = ask_choice("Word type", WORD_TYPES, w.get("type", "other"))
+
+    else:
+        print("  Invalid choice.")
+        return
+
+    print()
+    print_entry(w)
+    confirm = ask("Save changes? (y/n)", "y")
+    if confirm.lower() != "y":
+        print("  Cancelled.")
+        return
+
+    # update in list
+    for i, entry in enumerate(words):
+        if entry["id"] == w["id"]:
+            words[i] = w
+            break
+
+    save(words)
+    print(f"  '{w['word']}' updated.\n")
+
+
 def cmd_delete(args):
     if not args:
         print("  Usage: python vocab.py delete <word>")
@@ -711,6 +873,7 @@ COMMANDS = {
     "list":   cmd_list,
     "show":   cmd_show,
     "add":    cmd_add,
+    "edit":   cmd_edit,
     "delete": cmd_delete,
     "topics": cmd_topics,
     "family": cmd_family,
