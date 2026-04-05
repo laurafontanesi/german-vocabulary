@@ -536,6 +536,128 @@
   .practice-feedback.correct { background: #e0f0e0; color: #1a5a1a; display: block; }
   .practice-feedback.wrong { background: var(--accent-soft); color: var(--accent); display: block; }
   .practice-score {
+    display: flex; justify-content: space-between;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-muted);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-soft);
+  }
+  .practice-btn-row {
+    display: flex; gap: 8px; margin-top: 10px;
+  }
+  .practice-next {
+    flex: 1; padding: 8px;
+    border: 1px solid var(--border);
+    background: var(--paper);
+    border-radius: 6px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    color: var(--ink-soft);
+    transition: all 0.12s;
+    display: none;
+  }
+  .practice-next:hover { border-color: var(--ink-soft); color: var(--ink); }
+
+  /* ── practice launch btn ── */
+  .practice-launch {
+    padding: 7px 16px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.12s;
+    letter-spacing: 0.02em;
+  }
+  .practice-launch:hover { opacity: 0.88; }
+
+  /* ── launcher overlay ── */
+  #launcher-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(26,26,24,0.85);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+  }
+  #launcher-overlay.open { display: flex; }
+  .launcher-box {
+    background: var(--paper-card);
+    border-radius: 12px;
+    padding: 2rem 2rem 1.5rem;
+    max-width: 420px;
+    width: 90%;
+    position: relative;
+  }
+  .launcher-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 0.4rem;
+    color: var(--ink);
+  }
+  .launcher-subtitle {
+    font-size: 12px;
+    color: var(--ink-muted);
+    margin-bottom: 1.25rem;
+  }
+  .launcher-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .launcher-card {
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius-lg);
+    background: var(--paper);
+    cursor: pointer;
+    transition: all 0.15s;
+    text-align: left;
+  }
+  .launcher-card:hover { border-color: var(--ink-soft); background: var(--paper-warm); }
+  .launcher-card-icon { font-size: 1.4rem; margin-bottom: 0.4rem; }
+  .launcher-card-title { font-size: 14px; font-weight: 500; color: var(--ink); margin-bottom: 2px; }
+  .launcher-card-desc { font-size: 12px; color: var(--ink-muted); }
+
+  /* ── back button in practice ── */
+  .practice-back {
+    position: absolute;
+    top: 1rem; left: 1rem;
+    background: none; border: none;
+    font-size: 18px; cursor: pointer;
+    color: var(--ink-muted);
+    line-height: 1;
+  }
+  .practice-back:hover { color: var(--ink); }
+
+  /* ── fill-in sentence ── */
+  .practice-sentence {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--ink);
+    margin-bottom: 1.25rem;
+    min-height: 2.5rem;
+  }
+  .practice-sentence .blank {
+    display: inline-block;
+    min-width: 80px;
+    border-bottom: 2px solid var(--ink);
+    color: transparent;
+    vertical-align: bottom;
+  }
+
+  /* ── score bar ── */
+  .practice-score {
     font-family: 'DM Mono', monospace;
     font-size: 12px;
     color: var(--ink-muted);
@@ -569,38 +691,6 @@
   .practice-word-info .def { color: var(--ink); margin-bottom: 4px; }
   .practice-word-info .ex-de { font-style: italic; color: var(--ink-soft); font-family: 'Playfair Display', serif; font-size: 13px; }
   .practice-word-info .ex-en { color: var(--ink-muted); font-size: 12px; margin-top: 2px; }
-  .practice-btn-row {
-    display: flex; gap: 8px; margin-top: 10px;
-  }
-  .practice-next {
-    flex: 1; padding: 8px;
-    border: 1px solid var(--border);
-    background: var(--paper);
-    border-radius: 6px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 13px;
-    cursor: pointer;
-    color: var(--ink-soft);
-    transition: all 0.12s;
-    display: none;
-  }
-  .practice-next:hover { border-color: var(--ink-soft); color: var(--ink); }
-
-  /* ── practice launch btn ── */
-  .practice-launch {
-    padding: 7px 16px;
-    background: var(--accent);
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: opacity 0.12s;
-    letter-spacing: 0.02em;
-  }
-  .practice-launch:hover { opacity: 0.88; }
 
   /* ── responsive ── */
   @media (max-width: 720px) {
@@ -666,21 +756,50 @@
   </main>
 </div>
 
+<!-- launcher overlay -->
+<div id="launcher-overlay">
+  <div class="launcher-box">
+    <button class="practice-close" onclick="closeLauncher()">✕</button>
+    <div class="launcher-title">Practice</div>
+    <div class="launcher-subtitle">Choose a task</div>
+    <div class="launcher-grid">
+      <button class="launcher-card" onclick="startTask('de-en')">
+        <div class="launcher-card-icon">🇩🇪</div>
+        <div class="launcher-card-title">DE → EN</div>
+        <div class="launcher-card-desc">Translate German to English</div>
+      </button>
+      <button class="launcher-card" onclick="startTask('en-de')">
+        <div class="launcher-card-icon">🇬🇧</div>
+        <div class="launcher-card-title">EN → DE</div>
+        <div class="launcher-card-desc">Translate English to German</div>
+      </button>
+      <button class="launcher-card" onclick="startTask('conjugation')">
+        <div class="launcher-card-icon">🔀</div>
+        <div class="launcher-card-title">Conjugation</div>
+        <div class="launcher-card-desc">Fill in the verb form</div>
+      </button>
+      <button class="launcher-card" onclick="startTask('articles')">
+        <div class="launcher-card-icon">📖</div>
+        <div class="launcher-card-title">Articles</div>
+        <div class="launcher-card-desc">Fill in the right article</div>
+      </button>
+    </div>
+  </div>
+</div>
+
 <!-- practice overlay -->
 <div id="practice-overlay">
   <div class="practice-box">
+    <button class="practice-back" onclick="backToLauncher()" title="Back">←</button>
     <button class="practice-close" onclick="closePractice()">✕</button>
-    <div class="practice-mode-tabs">
-      <button class="practice-mode-tab active" onclick="setPracticeMode('de-en',this)">DE → EN</button>
-      <button class="practice-mode-tab" onclick="setPracticeMode('en-de',this)">EN → DE</button>
-    </div>
-    <div class="practice-prompt" id="practice-prompt">Translate into English:</div>
+    <div class="practice-prompt" id="practice-prompt"></div>
     <div class="practice-word" id="practice-word"></div>
+    <div class="practice-sentence" id="practice-sentence" style="display:none"></div>
     <input type="text" id="practice-input" placeholder="Your answer…" onkeydown="if(event.key==='Enter')checkAnswer()">
     <button class="practice-submit" onclick="checkAnswer()">Check</button>
     <div class="practice-feedback" id="practice-feedback"></div>
     <div class="practice-btn-row">
-      <button class="practice-next" id="btn-next" onclick="nextWord()">Next word →</button>
+      <button class="practice-next" id="btn-next" onclick="nextWord()">Next →</button>
       <button class="practice-next" id="btn-skip" onclick="nextWord()" style="display:none">Skip →</button>
     </div>
     <div class="practice-word-info" id="practice-word-info"></div>
@@ -700,12 +819,6 @@ let activeAlpha = null;
 let sortMode = 'alpha';
 
 // practice state
-let practiceMode = 'de-en';
-let practiceWords = [];
-let practiceIndex = 0;
-let scoreCorrect = 0;
-let scoreTried = 0;
-let scoreSkip = 0;
 
 // ── load data ──────────────────────────────────────────────────────────────────
 fetch('words.json')
@@ -962,55 +1075,186 @@ function searchRelated(word, event) {
 }
 
 // ── practice ───────────────────────────────────────────────────────────────────
+let practiceMode = 'de-en';
+let practiceWords = [];
+let practiceIndex = 0;
+let scoreCorrect = 0;
+let scoreTried = 0;
+let currentAnswer = ''; // for fill-in tasks
+
+// ── article patterns to detect in sentences ──────────────────────────────────
+const ARTICLE_RE = /\b(der|die|das|ein|eine|einen|einem|einer|eines|den|dem|des)\b/gi;
+
+// ── launcher ──────────────────────────────────────────────────────────────────
 function openPractice() {
-  practiceWords = allWords.filter(w => w.definitions && w.definitions.length > 0);
-  practiceWords = practiceWords.sort(() => Math.random() - 0.5);
-  practiceIndex = 0; scoreCorrect = 0; scoreTried = 0; scoreSkip = 0;
-  updateScore();
-  loadPracticeWord();
-  document.getElementById('practice-overlay').classList.add('open');
+  document.getElementById('launcher-overlay').classList.add('open');
+}
+function closeLauncher() {
+  document.getElementById('launcher-overlay').classList.remove('open');
+}
+function backToLauncher() {
+  document.getElementById('practice-overlay').classList.remove('open');
+  document.getElementById('launcher-overlay').classList.add('open');
 }
 function closePractice() {
   document.getElementById('practice-overlay').classList.remove('open');
+  document.getElementById('launcher-overlay').classList.remove('open');
 }
-function setPracticeMode(mode, btn) {
+
+function startTask(mode) {
   practiceMode = mode;
-  document.querySelectorAll('.practice-mode-tab').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
-  document.getElementById('practice-prompt').textContent =
-    mode === 'de-en' ? 'Translate into English:' : 'Translate into German:';
+  scoreCorrect = 0; scoreTried = 0;
+  updateScore();
+
+  if (mode === 'de-en' || mode === 'en-de') {
+    practiceWords = allWords.filter(w => w.definitions && w.definitions.length > 0)
+                            .sort(() => Math.random() - 0.5);
+  } else if (mode === 'conjugation') {
+    // verbs with example sentences containing a conjugated form
+    practiceWords = allWords.filter(w => {
+      if (w.type !== 'verb') return false;
+      return buildConjugationTask(w) !== null;
+    }).sort(() => Math.random() - 0.5);
+  } else if (mode === 'articles') {
+    // nouns with gender AND example sentences containing a detectable article
+    practiceWords = allWords.filter(w => {
+      if (w.type !== 'noun' || !w.gender) return false;
+      return buildArticleTask(w) !== null;
+    }).sort(() => Math.random() - 0.5);
+  }
+
+  practiceIndex = 0;
+  document.getElementById('launcher-overlay').classList.remove('open');
+  document.getElementById('practice-overlay').classList.add('open');
   loadPracticeWord();
 }
-function loadPracticeWord() {
-  if (!practiceWords.length) return;
-  const w = practiceWords[practiceIndex % practiceWords.length];
-  if (practiceMode === 'de-en') {
-    document.getElementById('practice-word').textContent = w.word;
-  } else {
-    const def = w.definitions[0].meaning;
-    document.getElementById('practice-word').textContent = def;
+
+// ── task builders ─────────────────────────────────────────────────────────────
+function buildConjugationTask(w) {
+  // find an example sentence that contains a form of the verb
+  // the "answer" is the token(s) in the sentence that differ from the infinitive
+  const infinitive = w.word.replace(/^sich\s+/i, '').toLowerCase();
+  for (const ex of (w.examples || [])) {
+    const sentence = ex.de;
+    // look for past participle or separable forms
+    const targets = [];
+    if (w.past_participle) targets.push(w.past_participle.toLowerCase());
+    if (w.past_tense) {
+      // separable past tense like "nahm mit" — just the first token
+      targets.push(w.past_tense.toLowerCase().split(' ')[0]);
+    }
+    for (const t of targets) {
+      const re = new RegExp('\\b(' + escapeRegex(t) + ')\\b', 'i');
+      if (re.test(sentence)) {
+        const blanked = sentence.replace(re, '___');
+        return { sentence, blanked, answer: t, translation: ex.en };
+      }
+    }
+    // also check if infinitive stem appears conjugated (regular verbs)
+    const stem = infinitive.replace(/(en|n)$/, '');
+    if (stem.length >= 3) {
+      const re = new RegExp('\\b(' + escapeRegex(stem) + '\\w*)\\b', 'i');
+      const m = sentence.match(re);
+      if (m && m[1].toLowerCase() !== infinitive) {
+        const blanked = sentence.replace(re, '___');
+        return { sentence, blanked, answer: m[1].toLowerCase(), translation: ex.en };
+      }
+    }
   }
+  return null;
+}
+
+function buildArticleTask(w) {
+  for (const ex of (w.examples || [])) {
+    const sentence = ex.de;
+    // find an article in the sentence
+    const m = sentence.match(ARTICLE_RE);
+    if (!m) continue;
+    // pick the first article occurrence
+    const article = m[0];
+    const re = new RegExp('\\b' + escapeRegex(article) + '\\b');
+    const blanked = sentence.replace(re, '___');
+    if (blanked === sentence) continue; // no replacement happened
+    return { sentence, blanked, answer: article.toLowerCase(), translation: ex.en };
+  }
+  return null;
+}
+
+function escapeRegex(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+// ── load word ─────────────────────────────────────────────────────────────────
+function loadPracticeWord() {
+  if (!practiceWords.length) {
+    document.getElementById('practice-word').textContent = 'No words available for this task.';
+    return;
+  }
+  const w = practiceWords[practiceIndex % practiceWords.length];
+  const wordEl     = document.getElementById('practice-word');
+  const sentenceEl = document.getElementById('practice-sentence');
+  const promptEl   = document.getElementById('practice-prompt');
+
+  // reset UI
   document.getElementById('practice-input').value = '';
   document.getElementById('practice-feedback').className = 'practice-feedback';
   document.getElementById('practice-feedback').textContent = '';
   document.getElementById('btn-next').style.display = 'none';
   document.getElementById('btn-skip').style.display = 'inline-block';
   document.getElementById('practice-word-info').classList.remove('visible');
+  sentenceEl.style.display = 'none';
+  wordEl.style.display = 'block';
+  currentAnswer = '';
+
+  if (practiceMode === 'de-en') {
+    promptEl.textContent = 'Translate into English:';
+    wordEl.textContent = w.word;
+  } else if (practiceMode === 'en-de') {
+    promptEl.textContent = 'Translate into German:';
+    wordEl.textContent = w.definitions[0].meaning;
+  } else if (practiceMode === 'conjugation') {
+    const task = buildConjugationTask(w);
+    promptEl.textContent = 'Fill in the correct form:';
+    wordEl.textContent = w.word;
+    sentenceEl.innerHTML = task.blanked.replace('___', '<span class="blank">___</span>');
+    sentenceEl.style.display = 'block';
+    currentAnswer = task.answer;
+  } else if (practiceMode === 'articles') {
+    const task = buildArticleTask(w);
+    promptEl.textContent = 'Fill in the correct article:';
+    // show noun without article as prompt
+    const bare = w.word.replace(/^(der|die|das)\s+/i, '');
+    wordEl.textContent = '___ ' + bare;
+    sentenceEl.innerHTML = task.blanked.replace('___', '<span class="blank">___</span>');
+    sentenceEl.style.display = 'block';
+    currentAnswer = task.answer;
+  }
+
   document.getElementById('practice-input').focus();
 }
+
+// ── check answer ──────────────────────────────────────────────────────────────
 function checkAnswer() {
   const w = practiceWords[practiceIndex % practiceWords.length];
   const input = document.getElementById('practice-input').value.trim().toLowerCase();
   if (!input) return;
 
   let correct = false;
+  let correctAnswer = '';
+
   if (practiceMode === 'de-en') {
     const answers = w.definitions.map(d => d.meaning.toLowerCase());
     correct = answers.some(a => input === a || a.includes(input) || input.includes(a.split(',')[0].trim()));
-  } else {
+    correctAnswer = w.definitions[0].meaning;
+  } else if (practiceMode === 'en-de') {
     correct = input === w.word.toLowerCase() ||
       w.word.toLowerCase().includes(input) ||
       input.includes(w.word.toLowerCase().replace(/^(der|die|das|sich)\s+/i,''));
+    correctAnswer = w.word;
+  } else {
+    // conjugation or articles — exact match only
+    correct = input === currentAnswer;
+    correctAnswer = currentAnswer;
   }
 
   scoreTried++;
@@ -1021,23 +1265,25 @@ function checkAnswer() {
     fb.textContent = '✓ Correct!';
   } else {
     fb.className = 'practice-feedback wrong';
-    const answer = practiceMode === 'de-en' ? w.definitions[0].meaning : w.word;
-    fb.textContent = `✗ The answer was: ${answer}`;
+    fb.textContent = `✗ The answer was: ${correctAnswer}`;
   }
-  document.getElementById('btn-next').style.display = 'inline-block';
-  document.getElementById('btn-skip').style.display = 'none';
 
-  // show word info panel
+  // show word info card
   const info = document.getElementById('practice-word-info');
-  const defs = (w.definitions || []).map(d => `<div class="def">${d.meaning}${d.note ? ' <span style="color:var(--ink-muted);font-style:italic;">— '+d.note+'</span>' : ''}</div>`).join('');
-  const ex   = w.examples && w.examples[0]
+  const defs = (w.definitions || []).map(d =>
+    `<div class="def">${d.meaning}${d.note ? ' <span style="color:var(--ink-muted);font-style:italic;">— '+d.note+'</span>' : ''}</div>`
+  ).join('');
+  const ex = w.examples && w.examples[0]
     ? `<div class="ex-de">${w.examples[0].de}</div><div class="ex-en">${w.examples[0].en}</div>`
     : '';
   info.innerHTML = defs + (ex ? '<div style="margin-top:6px">'+ex+'</div>' : '');
   info.classList.add('visible');
 
+  document.getElementById('btn-next').style.display = 'inline-block';
+  document.getElementById('btn-skip').style.display = 'none';
   updateScore();
 }
+
 function nextWord() {
   practiceIndex++;
   if (practiceIndex >= practiceWords.length) {
@@ -1046,18 +1292,21 @@ function nextWord() {
   }
   loadPracticeWord();
 }
+
 function updateScore() {
   const pct = scoreTried > 0 ? Math.round(scoreCorrect / scoreTried * 100) : 0;
-  const bar = scoreTried > 0 ? pct : 0;
   document.getElementById('score-label').innerHTML =
-    `${scoreCorrect} / ${scoreTried} correct &nbsp;·&nbsp; <strong style="color:${pct>=70?'#1a5a1a':pct>=40?'#b5860d':'#c0392b'}">${scoreTried > 0 ? pct + '%' : '—'}</strong>`;
-  document.getElementById('score-bar').style.width = bar + '%';
+    `${scoreCorrect} / ${scoreTried} correct &nbsp;·&nbsp; <strong style="color:${pct>=70?'#1a5a1a':pct>=40?'#b5860d':'var(--accent)'}">${scoreTried > 0 ? pct+'%' : '—'}</strong>`;
+  document.getElementById('score-bar').style.width = (scoreTried > 0 ? pct : 0) + '%';
   document.getElementById('score-bar').style.background = pct>=70 ? '#1a5a1a' : pct>=40 ? 'var(--gold)' : 'var(--accent)';
 }
 
-// close overlay on bg click
+// close overlays on bg click
 document.getElementById('practice-overlay').addEventListener('click', function(e) {
   if (e.target === this) closePractice();
+});
+document.getElementById('launcher-overlay').addEventListener('click', function(e) {
+  if (e.target === this) closeLauncher();
 });
 </script>
 </body>
