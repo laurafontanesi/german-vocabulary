@@ -536,7 +536,6 @@
   .practice-feedback.correct { background: #e0f0e0; color: #1a5a1a; display: block; }
   .practice-feedback.wrong { background: var(--accent-soft); color: var(--accent); display: block; }
   .practice-score {
-    display: flex; justify-content: space-between;
     font-family: 'DM Mono', monospace;
     font-size: 12px;
     color: var(--ink-muted);
@@ -544,6 +543,32 @@
     padding-top: 1rem;
     border-top: 1px solid var(--border-soft);
   }
+  .practice-score-bar {
+    height: 4px;
+    background: var(--border-soft);
+    border-radius: 2px;
+    margin-bottom: 6px;
+    overflow: hidden;
+  }
+  .practice-score-fill {
+    height: 100%;
+    background: #1a5a1a;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+  }
+  .practice-word-info {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: var(--paper);
+    border-radius: var(--border-radius-md);
+    border: 0.5px solid var(--border-soft);
+    font-size: 13px;
+    display: none;
+  }
+  .practice-word-info.visible { display: block; }
+  .practice-word-info .def { color: var(--ink); margin-bottom: 4px; }
+  .practice-word-info .ex-de { font-style: italic; color: var(--ink-soft); font-family: 'Playfair Display', serif; font-size: 13px; }
+  .practice-word-info .ex-en { color: var(--ink-muted); font-size: 12px; margin-top: 2px; }
   .practice-btn-row {
     display: flex; gap: 8px; margin-top: 10px;
   }
@@ -658,10 +683,10 @@
       <button class="practice-next" id="btn-next" onclick="nextWord()">Next word →</button>
       <button class="practice-next" id="btn-skip" onclick="nextWord()" style="display:none">Skip →</button>
     </div>
+    <div class="practice-word-info" id="practice-word-info"></div>
     <div class="practice-score">
-      <span id="score-correct">✓ 0 correct</span>
-      <span id="score-tried">0 tried</span>
-      <span id="score-skip">0 skipped</span>
+      <div class="practice-score-bar"><div class="practice-score-fill" id="score-bar" style="width:0%"></div></div>
+      <span id="score-label">0 / 0 &nbsp;·&nbsp; —</span>
     </div>
   </div>
 </div>
@@ -931,31 +956,9 @@ function toggleCard(id, event) {
 
 function searchRelated(word, event) {
   event.stopPropagation();
-
-  // clear ALL filters so the word is always visible regardless of type/topic
-  activeType   = null;
-  activeTopic  = null;
-  activeAlpha  = null;
-  document.querySelectorAll('.filter-btn, .alpha-btn').forEach(b => b.classList.remove('active'));
-
-  // set search to exact word
   document.getElementById('search').value = word;
   applyFilters();
-
-  // find and open the matching card
-  setTimeout(() => {
-    const cards = document.querySelectorAll('.word-card');
-    const match = [...cards].find(c => {
-      const title = c.querySelector('.card-word');
-      return title && title.textContent.trim().toLowerCase() === word.toLowerCase();
-    });
-    if (match) {
-      match.classList.add('open');
-      match.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    } else if (cards.length === 1) {
-      cards[0].classList.add('open');
-    }
-  }, 50);
+  window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
 // ── practice ───────────────────────────────────────────────────────────────────
@@ -992,6 +995,7 @@ function loadPracticeWord() {
   document.getElementById('practice-feedback').textContent = '';
   document.getElementById('btn-next').style.display = 'none';
   document.getElementById('btn-skip').style.display = 'inline-block';
+  document.getElementById('practice-word-info').classList.remove('visible');
   document.getElementById('practice-input').focus();
 }
 function checkAnswer() {
@@ -1022,6 +1026,16 @@ function checkAnswer() {
   }
   document.getElementById('btn-next').style.display = 'inline-block';
   document.getElementById('btn-skip').style.display = 'none';
+
+  // show word info panel
+  const info = document.getElementById('practice-word-info');
+  const defs = (w.definitions || []).map(d => `<div class="def">${d.meaning}${d.note ? ' <span style="color:var(--ink-muted);font-style:italic;">— '+d.note+'</span>' : ''}</div>`).join('');
+  const ex   = w.examples && w.examples[0]
+    ? `<div class="ex-de">${w.examples[0].de}</div><div class="ex-en">${w.examples[0].en}</div>`
+    : '';
+  info.innerHTML = defs + (ex ? '<div style="margin-top:6px">'+ex+'</div>' : '');
+  info.classList.add('visible');
+
   updateScore();
 }
 function nextWord() {
@@ -1033,8 +1047,12 @@ function nextWord() {
   loadPracticeWord();
 }
 function updateScore() {
-  document.getElementById('score-correct').textContent = `✓ ${scoreCorrect} correct`;
-  document.getElementById('score-tried').textContent = `${scoreTried} tried`;
+  const pct = scoreTried > 0 ? Math.round(scoreCorrect / scoreTried * 100) : 0;
+  const bar = scoreTried > 0 ? pct : 0;
+  document.getElementById('score-label').innerHTML =
+    `${scoreCorrect} / ${scoreTried} correct &nbsp;·&nbsp; <strong style="color:${pct>=70?'#1a5a1a':pct>=40?'#b5860d':'#c0392b'}">${scoreTried > 0 ? pct + '%' : '—'}</strong>`;
+  document.getElementById('score-bar').style.width = bar + '%';
+  document.getElementById('score-bar').style.background = pct>=70 ? '#1a5a1a' : pct>=40 ? 'var(--gold)' : 'var(--accent)';
 }
 
 // close overlay on bg click
