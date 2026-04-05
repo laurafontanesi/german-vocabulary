@@ -3135,5 +3135,839 @@
     "register": "neutral",
     "notes": "in letzter Zeit = lately (ongoing period); vor Kurzem = recently (specific point). 'In letzter Zeit schlafe ich schlecht' = I've been sleeping badly lately.",
     "added": "2026-04-05"
+  },
+  {
+    "id": "zwar-aber",
+    "word": "zwar … aber …",
+    "type": "construction",
+    "definitions": [
+      {
+        "meaning": "it's true that … but … / although … nevertheless …",
+        "note": "concession structure — acknowledges one thing then contrasts it"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe zwar wenig geschlafen, aber ich habe viel Energie.",
+        "en": "I haven't slept much, but I have lots of energy."
+      },
+      {
+        "de": "Das ist zwar teuer, aber es lohnt sich.",
+        "en": "It's true that it's expensive, but it's worth it."
+      }
+    ],
+    "topics": [
+      "grammar & structure"
+    ],
+    "tags": [
+      "sentence structure",
+      "concession"
+    ],
+    "register": "neutral",
+    "notes": "zwar signals a concession, aber introduces the contrast. The zwar clause admits something, the aber clause is the real point.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "ich-verstehe-nur-bahnhof",
+    "word": "ich verstehe nur Bahnhof",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "I don't understand a word (lit. I only understand 'train station')",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Vortrag war so kompliziert — ich habe nur Bahnhof verstanden.",
+        "en": "The lecture was so complicated — I didn't understand a word."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [
+      "idiom"
+    ],
+    "register": "informal",
+    "notes": "Equivalent of 'it's all Greek to me'. Origin: WWI soldiers overwhelmed with information only retained 'Bahnhof' (the way home).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "das-kommt-mir-spanisch-vor",
+    "word": "das kommt mir spanisch vor",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "that seems strange/suspicious to me (lit. that seems Spanish to me)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er kommt jeden Tag zu spät — das kommt mir irgendwie spanisch vor.",
+        "en": "He's late every day — something seems fishy to me."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "idiom"
+    ],
+    "register": "informal",
+    "notes": "German equivalent of 'it's all Greek to me' or 'something smells fishy'. Interestingly uses 'Spanish' as the foreign/strange language.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "fuer-die-katz",
+    "word": "das war für die Katz",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "that was pointless, a waste of time (lit. that was for the cat)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe zwei Stunden gewartet und niemand kam — das war für die Katz!",
+        "en": "I waited two hours and nobody came — what a waste!"
+      },
+      {
+        "de": "Die ganze Vorbereitung war für die Katz.",
+        "en": "All that preparation was for nothing."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "emotions"
+    ],
+    "tags": [
+      "idiom"
+    ],
+    "register": "informal",
+    "notes": "In Swiss German: 'für die Füchse'. Means effort that leads to nothing. Similar to English 'down the drain'.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "die-katze-aus-dem-sack-lassen",
+    "word": "die Katze aus dem Sack lassen",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "to let the cat out of the bag, to reveal a secret",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Na, lass endlich die Katze aus dem Sack — was ist das Geheimnis?",
+        "en": "Come on, let the cat out of the bag — what's the secret?"
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [
+      "idiom"
+    ],
+    "register": "informal",
+    "notes": "Same idiom exists in English! To reveal something that was meant to be kept secret.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "hals-und-beinbruch",
+    "word": "Hals- und Beinbruch!",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "break a leg! / good luck! (lit. neck and leg fracture)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Du hast morgen ein Vorstellungsgespräch? Hals- und Beinbruch!",
+        "en": "You have a job interview tomorrow? Break a leg!"
+      },
+      {
+        "de": "Toi toi toi für die Prüfung!",
+        "en": "Good luck with the exam!"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [
+      "idiom"
+    ],
+    "register": "informal",
+    "notes": "Used before performances, exams, interviews. 'Toi toi toi' (knocking on wood three times) is an equivalent. Both are very common.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "ich-druecke-die-daumen",
+    "word": "ich drücke dir die Daumen",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "I'm keeping my fingers crossed for you (lit. I'm pressing my thumbs for you)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich drücke dir die Daumen für die Prüfung!",
+        "en": "I'm keeping my fingers crossed for your exam!"
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [
+      "idiom"
+    ],
+    "register": "informal",
+    "notes": "Germans press thumbs, not cross fingers! Same meaning as 'fingers crossed'. Also: 'Daumen drücken' as a noun phrase.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "nicht-alle-tassen-im-schrank",
+    "word": "nicht alle Tassen im Schrank haben",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "to be not quite right in the head, to have a screw loose (lit. not to have all cups in the cupboard)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er fährt bei diesem Wetter Motorrad? Der hat doch nicht alle Tassen im Schrank!",
+        "en": "He's riding his motorbike in this weather? He must have a screw loose!"
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [
+      "idiom"
+    ],
+    "register": "informal",
+    "notes": "Affectionately or critically used to say someone is eccentric or crazy. One of the most vivid German idioms.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "sich-aus-dem-staub-machen",
+    "word": "sich aus dem Staub machen",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "to make oneself scarce, to sneak away, to do a runner (lit. to make oneself out of the dust)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Bevor die Rechnung kam, hat er sich aus dem Staub gemacht.",
+        "en": "Before the bill arrived, he snuck away."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "idiom"
+    ],
+    "register": "informal",
+    "notes": "Der Staub = the dust. To leave quietly and quickly, often to avoid something unpleasant.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "warmherzig",
+    "word": "warmherzig",
+    "type": "adjective",
+    "related": [
+      "kaltherzig",
+      "hartherzig"
+    ],
+    "definitions": [
+      {
+        "meaning": "warm-hearted, kind-hearted",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie ist eine warmherzige und großzügige Person.",
+        "en": "She is a warm-hearted and generous person."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "emotions"
+    ],
+    "tags": [
+      "similar to: kaltherzig"
+    ],
+    "register": "neutral",
+    "notes": "kaltherzig / hartherzig = cold-hearted (opposite). German compounds hearts and temperatures very productively.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "einsam",
+    "word": "einsam",
+    "type": "adjective",
+    "related": [
+      "allein",
+      "die Einsamkeit"
+    ],
+    "definitions": [
+      {
+        "meaning": "lonely, lonesome",
+        "note": "emotional state of feeling alone"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie fühlt sich einsam, obwohl sie viele Freunde hat.",
+        "en": "She feels lonely even though she has many friends."
+      },
+      {
+        "de": "Eine einsame Insel.",
+        "en": "A remote, deserted island."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "people & relationships"
+    ],
+    "tags": [
+      "similar to: allein"
+    ],
+    "register": "neutral",
+    "notes": "einsam = lonely (emotional state); allein = alone (physical state). You can be allein without being einsam, and vice versa.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "allein",
+    "word": "allein",
+    "type": "adjective",
+    "also_adverb": true,
+    "related": [
+      "einsam"
+    ],
+    "definitions": [
+      {
+        "meaning": "alone, by oneself",
+        "note": "physical state of being without others"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich lebe allein in einer kleinen Wohnung.",
+        "en": "I live alone in a small flat."
+      },
+      {
+        "de": "Besser allein als in schlechter Gesellschaft.",
+        "en": "Better alone than in bad company."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "people & relationships"
+    ],
+    "tags": [
+      "also adverb",
+      "similar to: einsam"
+    ],
+    "register": "neutral",
+    "notes": "allein = alone (physical); einsam = lonely (emotional). 'Ich mag das Alleinsein' = I like being by myself (neutral/positive).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "kennen",
+    "word": "kennen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "kannte",
+    "past_participle": "gekannt",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "wissen",
+      "kennenlernen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to know (a person, place or thing)",
+        "note": "familiarity through experience"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Kennst du meine Schwester?",
+        "en": "Do you know my sister?"
+      },
+      {
+        "de": "Ich kenne Basel gut — ich wohne seit Jahren hier.",
+        "en": "I know Basel well — I've been living here for years."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "language & communication"
+    ],
+    "tags": [
+      "false friend",
+      "similar to: wissen"
+    ],
+    "register": "neutral",
+    "notes": "kennen = to know (people, places, things — familiarity); wissen = to know (facts, information). Classic distinction for learners.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "wissen",
+    "word": "wissen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "wusste",
+    "past_participle": "gewusst",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "kennen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to know (a fact, information)",
+        "note": "followed by a subordinate clause or a fact"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich weiß nicht, wo er wohnt.",
+        "en": "I don't know where he lives."
+      },
+      {
+        "de": "Weißt du, wann der Zug abfährt?",
+        "en": "Do you know when the train leaves?"
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [
+      "false friend",
+      "similar to: kennen"
+    ],
+    "register": "neutral",
+    "notes": "wissen = to know facts (ich weiß, dass...); kennen = to know people/places. Irregular present: ich weiß, du weißt, er weiß, wir wissen.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "kennenlernen",
+    "word": "kennenlernen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "lernte kennen",
+    "past_participle": "kennengelernt",
+    "is_separable": true,
+    "reflexive": false,
+    "prefix": "kennen-",
+    "related": [
+      "kennen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to meet (for the first time), to get to know",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wo habt ihr euch kennengelernt?",
+        "en": "Where did you meet (for the first time)?"
+      },
+      {
+        "de": "Ich habe viele interessante Menschen auf der Konferenz kennengelernt.",
+        "en": "I got to know many interesting people at the conference."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": "kennenlernen = to meet and get to know someone (first encounter leading to familiarity). Different from treffen = to meet up with someone you already know.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "einzig",
+    "word": "einzig",
+    "type": "adjective",
+    "related": [
+      "einig",
+      "allein"
+    ],
+    "definitions": [
+      {
+        "meaning": "only, sole, single",
+        "note": "used before a noun: the only one"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist die einzige Möglichkeit.",
+        "en": "That is the only possibility."
+      },
+      {
+        "de": "Sie ist meine einzige Schwester.",
+        "en": "She is my only sister."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "similar to: einig"
+    ],
+    "register": "neutral",
+    "notes": "einzig = only/sole (the one and only); einig = united/agreed; einsam = lonely. Three similar-looking words with very different meanings!",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "der-unterschied",
+    "word": "der Unterschied",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Unterschiede",
+    "definitions": [
+      {
+        "meaning": "the difference",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Was ist der Unterschied zwischen fertig und bereit?",
+        "en": "What's the difference between fertig and bereit?"
+      },
+      {
+        "de": "Es gibt einen großen Unterschied zwischen den beiden.",
+        "en": "There is a big difference between the two."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "unterschiedlich = different (within a group); verschieden = different (between objects); anders = different in a different way entirely.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "heiraten",
+    "word": "heiraten",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "heiratete",
+    "past_participle": "geheiratet",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "verheiratet sein",
+      "die Ehe"
+    ],
+    "definitions": [
+      {
+        "meaning": "to get married, to marry someone",
+        "note": "the act/process of marrying"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie haben vor zehn Jahren geheiratet.",
+        "en": "They got married ten years ago."
+      },
+      {
+        "de": "Er hat sie letzten Sommer geheiratet.",
+        "en": "He married her last summer."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [
+      "similar to: verheiratet sein"
+    ],
+    "register": "neutral",
+    "notes": "heiraten = to get married (process/event); verheiratet sein = to be married (state). 'Seit wann sind Sie verheiratet?' vs 'Wann haben Sie geheiratet?'",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "die-ehe",
+    "word": "die Ehe",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Ehen",
+    "related": [
+      "heiraten",
+      "das Ehepaar"
+    ],
+    "definitions": [
+      {
+        "meaning": "marriage (the institution or relationship)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie führen eine glückliche Ehe.",
+        "en": "They have a happy marriage."
+      },
+      {
+        "de": "Die Ehe ist eine lebenslange Verpflichtung.",
+        "en": "Marriage is a lifelong commitment."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das Ehepaar = married couple. ehemalig (former) shares the same spelling but has a completely different etymology — not related to Ehe.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "auswandern",
+    "word": "auswandern",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "wanderte aus",
+    "past_participle": "ausgewandert",
+    "is_separable": true,
+    "reflexive": false,
+    "prefix": "aus-",
+    "related": [
+      "umziehen",
+      "einwandern"
+    ],
+    "definitions": [
+      {
+        "meaning": "to emigrate, to move abroad permanently",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Viele Deutsche sind im 19. Jahrhundert nach Amerika ausgewandert.",
+        "en": "Many Germans emigrated to America in the 19th century."
+      },
+      {
+        "de": "Sie möchte nach Kanada auswandern.",
+        "en": "She wants to emigrate to Canada."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "people & relationships"
+    ],
+    "tags": [
+      "separable",
+      "similar to: umziehen"
+    ],
+    "register": "neutral",
+    "notes": "auswandern = emigrate (leaving your country permanently); umziehen = to move (to a new home, within a country); einwandern = to immigrate.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "umziehen",
+    "word": "umziehen",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "zog um",
+    "past_participle": "umgezogen",
+    "is_separable": true,
+    "reflexive": false,
+    "prefix": "um-",
+    "related": [
+      "auswandern"
+    ],
+    "definitions": [
+      {
+        "meaning": "to move (house), to relocate",
+        "note": null
+      },
+      {
+        "meaning": "to get changed (clothes)",
+        "note": "sich umziehen = to change one's clothes"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bin letztes Jahr nach Basel umgezogen.",
+        "en": "I moved to Basel last year."
+      },
+      {
+        "de": "Ich muss mich noch umziehen, bevor wir gehen.",
+        "en": "I still need to get changed before we go."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [
+      "separable",
+      "similar to: auswandern"
+    ],
+    "register": "neutral",
+    "notes": "Two meanings: (1) umziehen = to move house; (2) sich umziehen = to change clothes. In Swiss German: zügeln.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "erfahren",
+    "word": "erfahren",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "erfuhr",
+    "past_participle": "erfahren",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "wissen",
+      "kennen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to find out, to learn (news or information)",
+        "note": "implies receiving information from an external source"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe gerade erfahren, dass sie gekündigt hat.",
+        "en": "I just found out that she resigned."
+      },
+      {
+        "de": "Wie hast du das erfahren?",
+        "en": "How did you find out about that?"
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "erfahren = to find out (receiving news). Also an adjective: erfahren = experienced. Die Erfahrung = experience.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "verschieden",
+    "word": "verschieden",
+    "type": "adjective",
+    "also_adverb": true,
+    "related": [
+      "unterschiedlich",
+      "anders",
+      "der Unterschied"
+    ],
+    "definitions": [
+      {
+        "meaning": "different, various, several",
+        "note": "between distinct objects or things"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir haben verschiedene Meinungen zu diesem Thema.",
+        "en": "We have different opinions on this topic."
+      },
+      {
+        "de": "Das sind aus verschiedenen Gründen schwierig.",
+        "en": "Those are difficult for various reasons."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [
+      "similar to: unterschiedlich, anders"
+    ],
+    "register": "neutral",
+    "notes": "verschieden = different/various (between objects); unterschiedlich = varying (within a group); anders = different in kind. Three overlapping but distinct words.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "sauheiß-saukalt",
+    "word": "saukalt / sauheiß",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "freezing cold / boiling hot (lit. pig-cold / pig-hot)",
+        "note": "intensifier using 'Sau' (sow/pig)"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Heute ist es draußen saukalt — zieh eine Jacke an!",
+        "en": "It's freezing cold outside today — put a jacket on!"
+      },
+      {
+        "de": "Im August ist es hier sauheiß.",
+        "en": "In August it's boiling hot here."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "daily life"
+    ],
+    "tags": [
+      "informal",
+      "intensifier"
+    ],
+    "register": "informal",
+    "notes": "'Sau-' as a prefix is a very productive intensifier in colloquial German: saukalt, sauheiß, sauteuer, saugut, saublöd. Roughly equivalent to 'bloody' in British English.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "großzügig",
+    "word": "großzügig",
+    "type": "adjective",
+    "also_adverb": true,
+    "related": [
+      "geizig"
+    ],
+    "definitions": [
+      {
+        "meaning": "generous, magnanimous",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist sehr großzügig von dir!",
+        "en": "That's very generous of you!"
+      },
+      {
+        "de": "Er hat großzügig gespendet.",
+        "en": "He donated generously."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "emotions"
+    ],
+    "tags": [
+      "also adverb"
+    ],
+    "register": "neutral",
+    "notes": "geizig = stingy/miserly (opposite). großzügig also means 'broad/spacious' in a physical sense (eine großzügige Wohnung = a spacious flat).",
+    "added": "2026-04-05"
   }
 ]
