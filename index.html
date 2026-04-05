@@ -297,7 +297,8 @@
   .type-noun     { background: var(--gold-soft); color: #7a5800; }
   .type-adjective { background: var(--teal-soft); color: #1a4a47; }
   .type-adverb   { background: #e8e0f5; color: #3a2a6a; }
-  .type-adjadv   { background: #e0f0e8; color: #1a5a2a; }
+  .type-adjadv   { background: var(--teal-soft); color: #1a4a47; }
+  .type-prepconj { background: #fde8d0; color: #7a3a0a; }
   .type-expression { background: var(--accent-soft); color: #7a1a10; }
   .type-construction { background: #e8f0e0; color: #2a4a1a; }
   .type-other    { background: var(--paper-warm); color: var(--ink-soft); }
@@ -920,8 +921,7 @@ function buildSidebar() {
   allWords.forEach(w => { typeCounts[w.type] = (typeCounts[w.type] || 0) + 1; });
   const typeEl = document.getElementById('type-filters');
   typeEl.innerHTML = '';
-  // sort adj/adv to top alongside noun/verb
-  const typeOrder = ['verb','noun','adj/adv','adverb','adjective','expression','construction','other'];
+  const typeOrder = ['verb','noun','adj/adv','prep/conj','expression','construction','other','adjective','adverb'];
   Object.entries(typeCounts).sort((a,b) => {
     const ai = typeOrder.indexOf(a[0]), bi = typeOrder.indexOf(b[0]);
     return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
@@ -1081,8 +1081,6 @@ function renderWords() {
 }
 
 function cardHTML(w) {
-  const typeClass = w.type === 'adj/adv' ? 'adjadv' : w.type;
-  const typeLabel = w.type === 'adj/adv' && w.usage ? `adj/adv — ${w.usage}` : w.type;
   const preview = (w.definitions || []).map(d => d.meaning).join(' · ');
   const grammarPills = buildGrammarPills(w);
   const defs = (w.definitions || []).map((d, i) =>
@@ -1101,7 +1099,7 @@ function cardHTML(w) {
   return `<div class="word-card" id="card-${w.id}" onclick="toggleCard('${w.id}',event)">
     <div class="card-header">
       <div class="card-word">${formatWord(w)}</div>
-      <span class="type-badge type-${typeClass}">${typeLabel}</span>
+      <span class="type-badge type-${w.type === 'adj/adv' ? 'adjadv' : w.type === 'prep/conj' ? 'prepconj' : w.type}">${w.type === 'adj/adv' && w.usage ? 'adj/adv — ' + w.usage : w.type === 'prep/conj' && w.usage ? 'prep/conj — ' + w.usage : w.type}</span>
       <div class="card-preview">${preview}</div>
       <span class="card-chevron">▼</span>
     </div>
@@ -1135,7 +1133,7 @@ function buildGrammarPills(w) {
     if (w.preposition) pills.push(w.preposition);
     if (w.family_root && w.family_root !== w.word) pills.push(`family: ${w.family_root}`);
   }
-  if (w.type === 'adj/adv' && w.usage) pills.push(w.usage);
+  if (w.usage) pills.push(w.usage);
   if (w.register && w.register !== 'neutral') pills.push(w.register);
   return pills.map(p => p.startsWith('<') ? p : `<span class="grammar-pill">${p}</span>`).join('');
 }
