@@ -25,7 +25,7 @@ from datetime import datetime
 DB_PATH  = os.path.join(os.path.dirname(__file__), "words.json")
 ENV_PATH = os.path.join(os.path.dirname(__file__), ".env")
 
-WORD_TYPES = ["noun", "verb", "adjective", "adverb", "expression", "construction", "other"]
+WORD_TYPES = ["noun", "verb", "adj/adv", "expression", "construction", "other"]
 GENDERS    = ["der", "die", "das"]
 REGISTERS  = ["neutral", "formal", "informal", "Swiss German"]
 
@@ -60,7 +60,8 @@ Return ONLY valid JSON, no explanation, no markdown, no code fences.{type_hint}
 
 {{
   "word": "the word in its canonical form (e.g. with gender for nouns: 'die Sehnsucht', infinitive for verbs: 'erinnern')",
-  "type": "one of: noun, verb, adjective, adverb, expression, construction, other",
+  "type": "one of: noun, verb, adj/adv, expression, construction, other",
+  "usage": "only for adj/adv type: adjective only, adverb only, or both — else null",
   "gender": "der/die/das — only for nouns, else null",
   "plural": "plural form with article e.g. 'die Sehnsüchte' — only for nouns, else null",
   "auxiliary": "haben or sein — only for verbs, else null",
@@ -69,7 +70,7 @@ Return ONLY valid JSON, no explanation, no markdown, no code fences.{type_hint}
   "is_separable": true or false — only for verbs, else null,
   "reflexive": true or false — only for verbs, else null,
   "preposition": "e.g. 'an + AKK' if the verb requires a fixed preposition, else null",
-  "also_adverb": true or false — only for adjectives that double as adverbs, else null,
+  "also_adverb": null,
   "family_root": "the root verb — for compounds e.g. 'nehmen' for 'mitnehmen'; for root verbs use the word itself e.g. 'schlafen' for 'schlafen' (never null for verbs)",
   "prefix": "the prefix e.g. 'mit-' for 'mitnehmen', else null",
   "definitions": [
@@ -210,8 +211,8 @@ def print_entry(w: dict):
         if w.get("family_root") and w["family_root"] != w["word"]:
             print(f"  │  family: {w['family_root']}  (prefix: {w.get('prefix','')})")
 
-    if w.get("also_adverb"):
-        print(f"  │  * also used as adverb")
+    if w.get("usage"):
+        print(f"  │  usage: {w['usage']}")
     if w.get("register") and w["register"] != "neutral":
         print(f"  │  register: {w['register']}")
 
@@ -546,11 +547,12 @@ def cmd_add(args):
             else:
                 entry["family_root"] = word
 
-    elif word_type == "adjective":
+    elif word_type == "adj/adv":
+        USAGE_OPTIONS = ["both", "adjective only", "adverb only"]
         if suggestion:
-            entry["also_adverb"] = confirm_or_edit("Also adverb?", s.get("also_adverb", False))
+            entry["usage"] = confirm_or_edit("Usage", s.get("usage", "both"), USAGE_OPTIONS)
         else:
-            entry["also_adverb"] = ask("Also used as adverb? (y/n)", "n").lower() == "y"
+            entry["usage"] = ask_choice("Usage", USAGE_OPTIONS, "both")
 
     # ── definitions ───────────────────────────────────────────────────────────
     if suggestion and s.get("definitions"):
@@ -709,8 +711,8 @@ def cmd_edit(args):
         print("    8) gender / plural")
     elif w["type"] == "verb":
         print("    8) verb forms (past tense, participle, auxiliary…)")
-    elif w["type"] == "adjective":
-        print("    8) also_adverb")
+    elif w["type"] == "adj/adv":
+        print("    8) usage (adjective only / adverb only / both)")
     print("    9) word type")
     print("    0) cancel")
     print()
@@ -818,9 +820,9 @@ def cmd_edit(args):
             w["preposition"] = ask("Preposition + case (or Enter to clear)", w.get("preposition", "") or "") or None
             w["family_root"]    = ask("Family root", w.get("family_root", "") or "")
             w["prefix"]         = ask("Prefix (or Enter to clear)", w.get("prefix", "") or "") or None
-        elif w["type"] == "adjective":
-            adv = ask("Also adverb? (y/n)", "y" if w.get("also_adverb") else "n")
-            w["also_adverb"] = adv.lower() == "y"
+        elif w["type"] == "adj/adv":
+            USAGE_OPTIONS = ["both", "adjective only", "adverb only"]
+            w["usage"] = ask_choice("Usage", USAGE_OPTIONS, w.get("usage", "both"))
 
     elif choice == "9":
         w["type"] = ask_choice("Word type", WORD_TYPES, w.get("type", "other"))

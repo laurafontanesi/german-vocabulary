@@ -107,7 +107,7 @@ Each entry in `words.json` is a JSON object. All entries share these fields:
 |---|---|---|
 | `id` | string | URL-safe identifier (auto-generated) |
 | `word` | string | The German word in canonical form |
-| `type` | string | `noun`, `verb`, `adjective`, `adverb`, `expression`, `construction`, `other` |
+| `type` | string | `noun`, `verb`, `adj/adv`, `expression`, `construction`, `other` |
 | `definitions` | list | `[{meaning, note}]` — always in English |
 | `examples` | list | `[{de, en}]` — German sentence + translation |
 | `topics` | list | Thematic categories (see below) |
@@ -137,11 +137,11 @@ Each entry in `words.json` is a JSON object. All entries share these fields:
 | `family_root` | Root verb (e.g. `nehmen` for `mitnehmen`) |
 | `prefix` | Separable prefix e.g. `mit-` |
 
-**Extra fields for adjectives:**
+**Extra fields for adj/adv:**
 
 | Field | Description |
 |---|---|
-| `also_adverb` | `true` if the adjective doubles as an adverb |
+| `usage` | `both`, `adjective only`, or `adverb only` |
 
 ### Topics
 

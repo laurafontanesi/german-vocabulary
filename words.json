@@ -213,8 +213,7 @@
   {
     "id": "ernst",
     "word": "ernst",
-    "type": "adjective",
-    "also_adverb": true,
+    "type": "adj/adv",
     "related": [
       "der Ernst"
     ],
@@ -251,12 +250,13 @@
     ],
     "register": "neutral",
     "notes": "der Ernst (noun, singular only) = seriousness. E.g.: Er sagte es mit großem Ernst.",
-    "added": "2024-01-01"
+    "added": "2024-01-01",
+    "usage": "both"
   },
   {
     "id": "froh",
     "word": "froh",
-    "type": "adjective",
+    "type": "adj/adv",
     "related": [
       "fröhlich",
       "sich freuen",
@@ -277,6 +277,11 @@
       {
         "de": "Frohe Weihnachten!",
         "en": "Merry Christmas!"
+      },
+      {
+        "de": "Ich bin froh, dass alles gut ausgegangen ist.",
+        "en": "I'm glad everything turned out well.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -287,13 +292,13 @@
     ],
     "register": "neutral",
     "notes": "froh = inner feeling; fröhlich = outwardly shown happiness. Important distinction!",
-    "added": "2024-01-01"
+    "added": "2024-01-01",
+    "usage": "both"
   },
   {
     "id": "froehlich",
     "word": "fröhlich",
-    "type": "adjective",
-    "also_adverb": true,
+    "type": "adj/adv",
     "related": [
       "die Freude",
       "froh",
@@ -310,6 +315,11 @@
       {
         "de": "Er ist eine fröhliche Person.",
         "en": "He is a cheerful person."
+      },
+      {
+        "de": "Sie lachte fröhlich und winkte uns zu.",
+        "en": "She laughed cheerfully and waved at us.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -321,7 +331,8 @@
     ],
     "register": "neutral",
     "notes": "froh = inner feeling; fröhlich = outwardly shown. Same distinction as 'content' vs 'cheerful' in English.",
-    "added": "2024-01-01"
+    "added": "2024-01-01",
+    "usage": "both"
   },
   {
     "id": "einen-kater-haben",
@@ -598,8 +609,7 @@
   {
     "id": "gluecklich",
     "word": "glücklich",
-    "type": "adjective",
-    "also_adverb": true,
+    "type": "adj/adv",
     "related": [
       "froh",
       "fröhlich",
@@ -620,6 +630,11 @@
       {
         "de": "Ich bin glücklich, hier zu sein.",
         "en": "I am happy to be here."
+      },
+      {
+        "de": "Sie lächelte glücklich, als sie die Nachricht hörte.",
+        "en": "She smiled happily when she heard the news.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -631,13 +646,13 @@
     ],
     "register": "neutral",
     "notes": "glücklich = deeper, more lasting happiness; froh = momentary gladness. Glück haben = to be lucky.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "traurig",
     "word": "traurig",
-    "type": "adjective",
-    "also_adverb": true,
+    "type": "adj/adv",
     "related": [
       "deprimiert",
       "die Trauer",
@@ -657,6 +672,11 @@
       {
         "de": "Das ist eine traurige Geschichte.",
         "en": "That is a sad story."
+      },
+      {
+        "de": "Er schaute sie traurig an.",
+        "en": "He looked at her sadly.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -667,7 +687,8 @@
     ],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "die-angst",
@@ -855,7 +876,7 @@
   {
     "id": "deprimiert",
     "word": "deprimiert",
-    "type": "adjective",
+    "type": "adj/adv",
     "related": [
       "depressiv",
       "traurig"
@@ -874,6 +895,11 @@
       {
         "de": "Das Wetter macht mich deprimiert.",
         "en": "The weather is making me feel depressed."
+      },
+      {
+        "de": "Er wirkte deprimiert und sagte kaum etwas.",
+        "en": "He seemed depressed and barely said anything.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -885,13 +911,13 @@
     ],
     "register": "neutral",
     "notes": "deprimiert = temporarily down/depressed (state); depressiv = clinically depressive (character trait). Important distinction.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "beeindruckend",
     "word": "beeindruckend",
-    "type": "adjective",
-    "also_adverb": true,
+    "type": "adj/adv",
     "related": [
       "beeindrucken"
     ],
@@ -909,6 +935,11 @@
       {
         "de": "Die Aussicht vom Gipfel war beeindruckend.",
         "en": "The view from the summit was impressive."
+      },
+      {
+        "de": "Sie hat beeindruckend gespielt heute Abend.",
+        "en": "She played impressively this evening.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -919,12 +950,13 @@
     ],
     "register": "neutral",
     "notes": "beeindrucken (verb) = to impress. Ich bin beeindruckt = I am impressed.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "gelaengweilt",
     "word": "gelangweilt",
-    "type": "adjective",
+    "type": "adj/adv",
     "related": [
       "langweilig"
     ],
@@ -942,6 +974,11 @@
       {
         "de": "Er sitzt gelangweilt in der Ecke.",
         "en": "He is sitting bored in the corner."
+      },
+      {
+        "de": "Er starrte gelangweilt aus dem Fenster.",
+        "en": "He stared out of the window, bored.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -952,13 +989,13 @@
     ],
     "register": "neutral",
     "notes": "gelangweilt = bored (person's feeling); langweilig = boring (quality of a thing or person). 'Ich bin gelangweilt' vs 'Der Film ist langweilig'.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "langweilig",
     "word": "langweilig",
-    "type": "adjective",
-    "also_adverb": true,
+    "type": "adj/adv",
     "related": [
       "gelangweilt"
     ],
@@ -976,6 +1013,11 @@
       {
         "de": "Er ist ein langweiliger Mensch.",
         "en": "He is a dull person."
+      },
+      {
+        "de": "Der Vortrag zog sich langweilig hin.",
+        "en": "The lecture dragged on boringly.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -986,13 +1028,13 @@
     ],
     "register": "neutral",
     "notes": "langweilig = boring (quality of something); gelangweilt = bored (how a person feels). Common mistake to confuse these.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "muede",
     "word": "müde",
-    "type": "adjective",
-    "also_adverb": true,
+    "type": "adj/adv",
     "definitions": [
       {
         "meaning": "tired, weary",
@@ -1007,6 +1049,11 @@
       {
         "de": "Sie sah müde aus nach der langen Reise.",
         "en": "She looked tired after the long journey."
+      },
+      {
+        "de": "Sie blinzelte müde und gähnte.",
+        "en": "She blinked tiredly and yawned.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -1019,12 +1066,13 @@
     "related": [
       "munter",
       "wach"
-    ]
+    ],
+    "usage": "both"
   },
   {
     "id": "wach",
     "word": "wach",
-    "type": "adjective",
+    "type": "adj/adv",
     "related": [
       "munter",
       "müde"
@@ -1043,6 +1091,11 @@
       {
         "de": "Der Kaffee hat mich wach gemacht.",
         "en": "The coffee woke me up."
+      },
+      {
+        "de": "Er reagierte wach und aufmerksam auf jede Frage.",
+        "en": "He responded alertly and attentively to every question.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -1053,13 +1106,13 @@
     ],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "munter",
     "word": "munter",
-    "type": "adjective",
-    "also_adverb": true,
+    "type": "adj/adv",
     "related": [
       "wach",
       "müde"
@@ -1078,6 +1131,11 @@
       {
         "de": "Die Kinder waren morgens immer munter.",
         "en": "The children were always lively in the mornings."
+      },
+      {
+        "de": "Die Kinder plauderten munter drauflos.",
+        "en": "The children chatted away cheerfully.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -1089,13 +1147,13 @@
     ],
     "register": "neutral",
     "notes": "munter implies both being awake AND in good spirits — wach is just awake.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "neugierig",
     "word": "neugierig",
-    "type": "adjective",
-    "also_adverb": true,
+    "type": "adj/adv",
     "definitions": [
       {
         "meaning": "curious, nosy",
@@ -1110,6 +1168,11 @@
       {
         "de": "Kinder sind von Natur aus neugierig.",
         "en": "Children are naturally curious."
+      },
+      {
+        "de": "Sie schaute neugierig um die Ecke.",
+        "en": "She peered curiously around the corner.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -1119,12 +1182,13 @@
     "tags": [],
     "register": "neutral",
     "notes": "neugierig auf + AKK = curious about. Can also mean nosy in a negative sense depending on context.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "gespannt",
     "word": "gespannt",
-    "type": "adjective",
+    "type": "adj/adv",
     "related": [
       "sich entspannen",
       "entspannt"
@@ -1143,6 +1207,11 @@
       {
         "de": "Das Publikum war gespannt.",
         "en": "The audience was on the edge of their seats."
+      },
+      {
+        "de": "Alle warteten gespannt auf das Ergebnis.",
+        "en": "Everyone waited eagerly for the result.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -1153,13 +1222,13 @@
     ],
     "register": "neutral",
     "notes": "gespannt = excited/tense with anticipation (positive); entspannt = relaxed (opposite). 'Ich bin gespannt!' = I can't wait! / I'm curious!",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "entspannt",
     "word": "entspannt",
-    "type": "adjective",
-    "also_adverb": true,
+    "type": "adj/adv",
     "related": [
       "sich entspannen",
       "gespannt"
@@ -1190,7 +1259,8 @@
     ],
     "register": "neutral",
     "notes": "sich entspannen (verb) = to relax. Opposite: gespannt (tense/eager) or gestresst (stressed).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "sich-ausruhen",
@@ -1277,8 +1347,7 @@
   {
     "id": "verrueckt",
     "word": "verrückt",
-    "type": "adjective",
-    "also_adverb": true,
+    "type": "adj/adv",
     "related": [
       "wahnsinnig",
       "doof"
@@ -1312,13 +1381,13 @@
     ],
     "register": "informal",
     "notes": "Can be affectionate/playful or critical depending on context. Also used as intensifier: 'verrückt schnell' = insanely fast.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "wahnsinnig",
     "word": "wahnsinnig",
-    "type": "adjective",
-    "also_adverb": true,
+    "type": "adj/adv",
     "related": [
       "verrückt"
     ],
@@ -1351,7 +1420,8 @@
     ],
     "register": "informal",
     "notes": "As an intensifier (wahnsinnig + adjective) it is extremely common in spoken German — similar to 'insanely' in English.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "bleiben",
@@ -2419,7 +2489,7 @@
   {
     "id": "gerade",
     "word": "gerade",
-    "type": "adverb",
+    "type": "adj/adv",
     "definitions": [
       {
         "meaning": "right now, just now, at this very moment",
@@ -2438,6 +2508,11 @@
       {
         "de": "Ich bin gerade zurückgekommen.",
         "en": "I just got back."
+      },
+      {
+        "de": "Die Linie ist gerade, nicht schief.",
+        "en": "The line is straight, not crooked.",
+        "usage": "adjective"
       }
     ],
     "topics": [
@@ -2449,12 +2524,13 @@
     "added": "2026-04-05",
     "related": [
       "vorhin"
-    ]
+    ],
+    "usage": "both"
   },
   {
     "id": "vorhin",
     "word": "vorhin",
-    "type": "adverb",
+    "type": "adj/adv",
     "related": [
       "gerade",
       "vor Kurzem"
@@ -2483,12 +2559,13 @@
     ],
     "register": "neutral",
     "notes": "vorhin = earlier today/a short while ago. vor Kurzem = recently (could be days). gerade = just this moment.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "adverb only"
   },
   {
     "id": "vor-kurzem",
     "word": "vor Kurzem",
-    "type": "adverb",
+    "type": "adj/adv",
     "related": [
       "in letzter Zeit",
       "kürzlich",
@@ -2519,12 +2596,13 @@
     ],
     "register": "neutral",
     "notes": "vor Kurzem / kürzlich / neulich are all roughly 'recently' — all refer to a defined point in the recent past. Interchangeable in most contexts.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "adverb only"
   },
   {
     "id": "bald",
     "word": "bald",
-    "type": "adverb",
+    "type": "adj/adv",
     "related": [
       "demnächst"
     ],
@@ -2550,12 +2628,13 @@
     "tags": [],
     "register": "neutral",
     "notes": "'Bis bald!' = See you soon! Very common farewell. demnächst = soon/in the near future (slightly more formal).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "adverb only"
   },
   {
     "id": "staendig",
     "word": "ständig",
-    "type": "adverb",
+    "type": "adj/adv",
     "definitions": [
       {
         "meaning": "constantly, all the time",
@@ -2570,6 +2649,11 @@
       {
         "de": "Er unterbricht mich ständig.",
         "en": "He's always interrupting me."
+      },
+      {
+        "de": "Das ständige Lärmen nervt mich.",
+        "en": "The constant noise annoys me.",
+        "usage": "adjective"
       }
     ],
     "topics": [
@@ -2578,12 +2662,13 @@
     "tags": [],
     "register": "neutral",
     "notes": "ständig carries a negative/irritated connotation — use immer for neutral 'always'. 'Das ständige X nervt mich' = I'm sick of the constant X.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "schliesslich",
     "word": "schließlich",
-    "type": "adverb",
+    "type": "adj/adv",
     "related": [
       "endlich"
     ],
@@ -2605,6 +2690,11 @@
       {
         "de": "Schließlich ist er dein Bruder.",
         "en": "After all, he is your brother."
+      },
+      {
+        "de": "Das ist der schließliche Beweis.",
+        "en": "That is the final proof.",
+        "usage": "adjective"
       }
     ],
     "topics": [
@@ -2615,12 +2705,13 @@
     ],
     "register": "neutral",
     "notes": "schließlich = eventually/after all (neutral); endlich = finally (implies long wait and relief). 'Endlich!' = At last! — schließlich doesn't carry that emotion.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "endlich",
     "word": "endlich",
-    "type": "adverb",
+    "type": "adj/adv",
     "related": [
       "schließlich"
     ],
@@ -2638,6 +2729,11 @@
       {
         "de": "Endlich bist du da!",
         "en": "You're finally here!"
+      },
+      {
+        "de": "Das ist die endliche Lösung des Problems.",
+        "en": "That is the definitive solution to the problem.",
+        "usage": "adjective"
       }
     ],
     "topics": [
@@ -2648,12 +2744,13 @@
     ],
     "register": "neutral",
     "notes": "endlich = finally (with relief/impatience); schließlich = eventually/after all (neutral). 'Endlich!' alone = At last! — very expressive.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "gleichzeitig",
     "word": "gleichzeitig",
-    "type": "adverb",
+    "type": "adj/adv",
     "definitions": [
       {
         "meaning": "at the same time, simultaneously",
@@ -2668,6 +2765,11 @@
       {
         "de": "Ich kann nicht zwei Dinge gleichzeitig tun.",
         "en": "I can't do two things at the same time."
+      },
+      {
+        "de": "Die gleichzeitigen Ereignisse überraschten alle.",
+        "en": "The simultaneous events surprised everyone.",
+        "usage": "adjective"
       }
     ],
     "topics": [
@@ -2676,12 +2778,13 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "immer-noch",
     "word": "immer noch",
-    "type": "adverb",
+    "type": "adj/adv",
     "related": [
       "noch",
       "immer"
@@ -2710,12 +2813,13 @@
     ],
     "register": "neutral",
     "notes": "immer noch = still (with slight impatience); noch = still (neutral). 'Noch nicht' = not yet. 'Immer noch nicht' = still not (stronger frustration).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "adverb only"
   },
   {
     "id": "noch",
     "word": "noch",
-    "type": "adverb",
+    "type": "adj/adv",
     "related": [
       "immer noch",
       "schon"
@@ -2746,12 +2850,13 @@
     "tags": [],
     "register": "neutral",
     "notes": "noch nicht = not yet. noch ein/eine = another/one more. Very versatile little word.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "adverb only"
   },
   {
     "id": "frueher",
     "word": "früher",
-    "type": "adverb",
+    "type": "adj/adv",
     "related": [
       "damals",
       "später"
@@ -2774,6 +2879,11 @@
       {
         "de": "Früher am Tag hatten wir darüber gesprochen.",
         "en": "Earlier in the day we had talked about it."
+      },
+      {
+        "de": "In früheren Zeiten war das anders.",
+        "en": "In earlier times things were different.",
+        "usage": "adjective"
       }
     ],
     "topics": [
@@ -2784,12 +2894,13 @@
     ],
     "register": "neutral",
     "notes": "früher = formerly/used to (general past habit); damals = back then (specific past period). 'Früher war alles besser' = Things were better in the old days.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "damals",
     "word": "damals",
-    "type": "adverb",
+    "type": "adj/adv",
     "related": [
       "früher"
     ],
@@ -2817,12 +2928,13 @@
     ],
     "register": "neutral",
     "notes": "damals refers to a specific past moment or era already in context; früher = in former times (more general). Already in db as adverb — check.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "adverb only"
   },
   {
     "id": "seitdem",
     "word": "seitdem",
-    "type": "adverb",
+    "type": "adj/adv",
     "definitions": [
       {
         "meaning": "since then, ever since",
@@ -2845,13 +2957,13 @@
     "tags": [],
     "register": "neutral",
     "notes": "seitdem (adverb) = since then. seit (preposition) + DAT = since [a point in time]. seit + Präsens = have been doing something for [duration].",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "adverb only"
   },
   {
     "id": "puenktlich",
     "word": "pünktlich",
-    "type": "adjective",
-    "also_adverb": true,
+    "type": "adj/adv",
     "related": [
       "unpünktlich"
     ],
@@ -2880,13 +2992,13 @@
     ],
     "register": "neutral",
     "notes": "Punctuality is culturally very important in German-speaking countries. unpünktlich = late/not punctual.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "fertig",
     "word": "fertig",
-    "type": "adjective",
-    "also_adverb": true,
+    "type": "adj/adv",
     "related": [
       "bereit"
     ],
@@ -2908,6 +3020,11 @@
       {
         "de": "Ich bin fertig mit der Arbeit.",
         "en": "I'm done with the work."
+      },
+      {
+        "de": "Er hat die Arbeit fertig gemacht.",
+        "en": "He finished the work.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -2919,12 +3036,13 @@
     ],
     "register": "neutral",
     "notes": "fertig = finished/done (a process is complete); bereit = ready (prepared to do something). 'Das Essen ist fertig' (cooked) vs 'Das Essen ist bereit' (ready to eat).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "bereit",
     "word": "bereit",
-    "type": "adjective",
+    "type": "adj/adv",
     "related": [
       "fertig"
     ],
@@ -2942,6 +3060,11 @@
       {
         "de": "Ich bin bereit, das Risiko einzugehen.",
         "en": "I am prepared to take the risk."
+      },
+      {
+        "de": "Sie erklärte sich bereit, das Projekt zu übernehmen.",
+        "en": "She declared herself ready to take on the project.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -2953,7 +3076,8 @@
     ],
     "register": "neutral",
     "notes": "bereit = ready/prepared (for an upcoming action); fertig = finished (a process is complete). Classic confusion for learners.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "während",
@@ -3020,7 +3144,7 @@
   {
     "id": "meistens",
     "word": "meistens",
-    "type": "adverb",
+    "type": "adj/adv",
     "related": [
       "normalerweise",
       "gewöhnlich",
@@ -3051,12 +3175,13 @@
     ],
     "register": "neutral",
     "notes": "meistens ≈ normalerweise ≈ gewöhnlich — all mean 'usually'. Frequency scale: immer > meistens > oft > manchmal > selten > nie.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "adverb only"
   },
   {
     "id": "ehemalig",
     "word": "ehemalig",
-    "type": "adjective",
+    "type": "adj/adv",
     "definitions": [
       {
         "meaning": "former, ex-, previous",
@@ -3079,12 +3204,13 @@
     "tags": [],
     "register": "neutral",
     "notes": "ehemalig = former (used attributively before nouns). For people: also 'Ex-' as prefix (Ex-Freund, Ex-Chef). die Ehe = marriage — the word root is unrelated.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "adjective only"
   },
   {
     "id": "stundenlang",
     "word": "stundenlang",
-    "type": "adverb",
+    "type": "adj/adv",
     "related": [
       "tagelang",
       "wochenlang",
@@ -3104,6 +3230,11 @@
       {
         "de": "Ich habe stundenlang auf sie gewartet.",
         "en": "I waited for her for hours."
+      },
+      {
+        "de": "Nach dem stundenlangen Warten war sie erschöpft.",
+        "en": "After the hours-long wait she was exhausted.",
+        "usage": "adjective"
       }
     ],
     "topics": [
@@ -3112,7 +3243,8 @@
     "tags": [],
     "register": "neutral",
     "notes": "German forms these duration adverbs very productively: stundenlang, tagelang, wochenlang, monatelang, jahrelang. Pattern: [time unit] + lang.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "die-gelegenheit",
@@ -3147,7 +3279,7 @@
   {
     "id": "zeitgenössisch",
     "word": "zeitgenössisch",
-    "type": "adjective",
+    "type": "adj/adv",
     "definitions": [
       {
         "meaning": "contemporary, modern (of the same era)",
@@ -3162,6 +3294,11 @@
       {
         "de": "Das Museum zeigt zeitgenössische Kunst.",
         "en": "The museum shows contemporary art."
+      },
+      {
+        "de": "Das Stück wurde zeitgenössisch inszeniert.",
+        "en": "The piece was staged in a contemporary way.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -3171,7 +3308,8 @@
     "tags": [],
     "register": "neutral",
     "notes": "der Zeitgenosse / die Zeitgenossin = a contemporary (person living in the same era). Er war ein Zeitgenosse Goethes.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "in-letzter-zeit",
@@ -3459,7 +3597,7 @@
   {
     "id": "warmherzig",
     "word": "warmherzig",
-    "type": "adjective",
+    "type": "adj/adv",
     "related": [
       "kaltherzig",
       "hartherzig"
@@ -3474,6 +3612,11 @@
       {
         "de": "Sie ist eine warmherzige und großzügige Person.",
         "en": "She is a warm-hearted and generous person."
+      },
+      {
+        "de": "Sie begrüßte uns warmherzig an der Tür.",
+        "en": "She greeted us warmly at the door.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -3485,12 +3628,13 @@
     ],
     "register": "neutral",
     "notes": "kaltherzig / hartherzig = cold-hearted (opposite). German compounds hearts and temperatures very productively.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "einsam",
     "word": "einsam",
-    "type": "adjective",
+    "type": "adj/adv",
     "related": [
       "allein",
       "die Einsamkeit"
@@ -3509,6 +3653,11 @@
       {
         "de": "Eine einsame Insel.",
         "en": "A remote, deserted island."
+      },
+      {
+        "de": "Er saß einsam auf der Bank im Park.",
+        "en": "He sat alone on the bench in the park.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -3520,13 +3669,13 @@
     ],
     "register": "neutral",
     "notes": "einsam = lonely (emotional state); allein = alone (physical state). You can be allein without being einsam, and vice versa.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "allein",
     "word": "allein",
-    "type": "adjective",
-    "also_adverb": true,
+    "type": "adj/adv",
     "related": [
       "einsam",
       "einzig"
@@ -3545,6 +3694,11 @@
       {
         "de": "Besser allein als in schlechter Gesellschaft.",
         "en": "Better alone than in bad company."
+      },
+      {
+        "de": "Sie hat das Problem allein gelöst.",
+        "en": "She solved the problem on her own.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -3557,7 +3711,8 @@
     ],
     "register": "neutral",
     "notes": "allein = alone (physical); einsam = lonely (emotional). 'Ich mag das Alleinsein' = I like being by myself (neutral/positive).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "kennen",
@@ -3688,7 +3843,7 @@
   {
     "id": "einzig",
     "word": "einzig",
-    "type": "adjective",
+    "type": "adj/adv",
     "related": [
       "einig",
       "allein"
@@ -3707,6 +3862,11 @@
       {
         "de": "Sie ist meine einzige Schwester.",
         "en": "She is my only sister."
+      },
+      {
+        "de": "Er war einzig und allein für diesen Fehler verantwortlich.",
+        "en": "He alone was responsible for this mistake.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -3717,7 +3877,8 @@
     ],
     "register": "neutral",
     "notes": "einzig = only/sole (the one and only); einig = united/agreed; einsam = lonely. Three similar-looking words with very different meanings!",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "der-unterschied",
@@ -3960,8 +4121,7 @@
   {
     "id": "verschieden",
     "word": "verschieden",
-    "type": "adjective",
-    "also_adverb": true,
+    "type": "adj/adv",
     "related": [
       "unterschiedlich",
       "anders",
@@ -3981,6 +4141,11 @@
       {
         "de": "Das sind aus verschiedenen Gründen schwierig.",
         "en": "Those are difficult for various reasons."
+      },
+      {
+        "de": "Die beiden Schwestern denken verschieden darüber.",
+        "en": "The two sisters think differently about it.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -3991,7 +4156,8 @@
     ],
     "register": "neutral",
     "notes": "verschieden = different/various (between objects); unterschiedlich = varying (within a group); anders = different in kind. Three overlapping but distinct words.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "sauheiß-saukalt",
@@ -4028,8 +4194,7 @@
   {
     "id": "großzügig",
     "word": "großzügig",
-    "type": "adjective",
-    "also_adverb": true,
+    "type": "adj/adv",
     "related": [
       "geizig"
     ],
@@ -4058,7 +4223,8 @@
     ],
     "register": "neutral",
     "notes": "geizig = stingy/miserly (opposite). großzügig also means 'broad/spacious' in a physical sense (eine großzügige Wohnung = a spacious flat).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "treffen",
@@ -4806,8 +4972,7 @@
   {
     "id": "zufaellig",
     "word": "zufällig",
-    "type": "adjective",
-    "also_adverb": true,
+    "type": "adj/adv",
     "definitions": [
       {
         "meaning": "by chance, coincidentally, accidentally",
@@ -4833,13 +4998,13 @@
     ],
     "register": "neutral",
     "notes": "Very useful word! 'Bist du zufällig...?' = Do you happen to...? A polite way to ask something without being presumptuous.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "gegenseitig",
     "word": "gegenseitig",
-    "type": "adjective",
-    "also_adverb": true,
+    "type": "adj/adv",
     "definitions": [
       {
         "meaning": "mutual, reciprocal",
@@ -4864,7 +5029,8 @@
     ],
     "register": "neutral",
     "notes": "gegenseitig = mutual/reciprocal. sich gegenseitig helfen = to help each other. A very useful word for talking about relationships.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "usage": "both"
   },
   {
     "id": "sich-beschweren",
@@ -6336,7 +6502,7 @@
   {
     "id": "unvernuenftig",
     "word": "unvernünftig",
-    "type": "adjective",
+    "type": "adj/adv",
     "definitions": [
       {
         "meaning": "unreasonable, irrational",
@@ -6355,6 +6521,11 @@
       {
         "de": "Ihre Angst vor Spinnen ist völlig unvernünftig.",
         "en": "Her fear of spiders is completely irrational."
+      },
+      {
+        "de": "Er hat sich unvernünftig verhalten.",
+        "en": "He behaved unreasonably.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -6365,15 +6536,15 @@
     "register": "neutral",
     "notes": null,
     "added": "2026-04-05 19:04:00",
-    "also_adverb": true,
     "related": [
       "vernünftig"
-    ]
+    ],
+    "usage": "both"
   },
   {
     "id": "vernuenftig",
     "word": "vernünftig",
-    "type": "adjective",
+    "type": "adj/adv",
     "definitions": [
       {
         "meaning": "reasonable, sensible, rational",
@@ -6392,6 +6563,11 @@
       {
         "de": "Der Pullover kostet einen vernünftigen Preis.",
         "en": "The sweater costs a reasonable price."
+      },
+      {
+        "de": "Sie hat vernünftig gehandelt.",
+        "en": "She acted reasonably.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -6401,10 +6577,10 @@
     "register": "neutral",
     "notes": null,
     "added": "2026-04-05 19:05:00",
-    "also_adverb": true,
     "related": [
       "unvernünftig"
-    ]
+    ],
+    "usage": "both"
   },
   {
     "id": "das-ereignis",
@@ -6534,7 +6710,7 @@
   {
     "id": "erwiesen",
     "word": "erwiesen",
-    "type": "adjective",
+    "type": "adj/adv",
     "definitions": [
       {
         "meaning": "proven",
@@ -6553,6 +6729,11 @@
       {
         "de": "Seine Unschuld ist erwiesen.",
         "en": "His innocence is proven."
+      },
+      {
+        "de": "Es ist erwiesen, dass Sport gut für die Gesundheit ist.",
+        "en": "It is proven that exercise is good for health.",
+        "usage": "adverb"
       }
     ],
     "topics": [
@@ -6562,6 +6743,6 @@
     "register": "formal",
     "notes": "Often used in legal, scientific, or formal contexts to indicate something has been definitively demonstrated.",
     "added": "2026-04-05 20:12:44",
-    "also_adverb": true
+    "usage": "both"
   }
 ]
