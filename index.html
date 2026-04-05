@@ -642,14 +642,15 @@
   .practice-summary-btn {
     position: absolute;
     top: 1rem; right: 3rem;
-    background: none; border: 1px solid var(--border);
+    background: var(--accent-soft); border: 1px solid var(--accent);
     border-radius: var(--border-radius-md);
     font-family: 'DM Sans', sans-serif;
-    font-size: 12px; color: var(--ink-muted);
-    padding: 3px 10px; cursor: pointer;
+    font-size: 12px; color: var(--accent);
+    font-weight: 500;
+    padding: 4px 12px; cursor: pointer;
     transition: all 0.12s;
   }
-  .practice-summary-btn:hover { border-color: var(--ink-soft); color: var(--ink); }
+  .practice-summary-btn:hover { background: var(--accent); color: white; }
   /* summary overlay */
   #summary-overlay {
     display: none; position: fixed; inset: 0;
@@ -1134,7 +1135,6 @@ function buildGrammarPills(w) {
     if (w.family_root && w.family_root !== w.word) pills.push(`family: ${w.family_root}`);
   }
   if (w.usage) pills.push(w.usage);
-  if (w.derived_from) pills.push(`from: ${w.derived_from}`);
   if (w.register && w.register !== 'neutral') pills.push(w.register);
   return pills.map(p => p.startsWith('<') ? p : `<span class="grammar-pill">${p}</span>`).join('');
 }
