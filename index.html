@@ -631,7 +631,7 @@
     <div class="results-bar">
       <div class="results-count" id="results-count"></div>
       <div class="sort-wrap">
-        <button class="sort-btn relevance" id="btn-relevance">Relevance</button>
+        <button class="sort-btn relevance" id="btn-relevance" onclick="setRelevance()">Relevance</button>
         <button class="sort-btn active" id="btn-alpha" onclick="setSort('alpha',this)">A → Z</button>
         <button class="sort-btn" id="btn-type" onclick="setSort('type',this)">By type</button>
         <button class="sort-btn" id="btn-newest" onclick="setSort('newest',this)">Newest</button>
@@ -673,6 +673,7 @@ let activeType = null;
 let activeTopic = null;
 let activeAlpha = null;
 let sortMode = 'alpha';
+let userSortOverride = false;
 
 // practice state
 let practiceMode = 'de-en';
@@ -772,8 +773,16 @@ function clearFilters() {
 }
 function setSort(mode, btn) {
   sortMode = mode;
+  userSortOverride = true;
   document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
+  applyFilters();
+}
+
+function setRelevance() {
+  userSortOverride = false;
+  document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('btn-relevance').classList.add('active');
   applyFilters();
 }
 
@@ -810,12 +819,15 @@ function applyFilters() {
   const sortBtns = ['btn-alpha','btn-type','btn-newest'].map(id => document.getElementById(id));
   if (q) {
     relBtn.classList.add('visible');
-    // only auto-select relevance if no other sort button is active
-    const anyActive = sortBtns.some(b => b.classList.contains('active'));
-    if (!anyActive) relBtn.classList.add('active');
+    // auto-select relevance only if no user override is active
+    if (!userSortOverride) {
+      sortBtns.forEach(b => b.classList.remove('active'));
+      relBtn.classList.add('active');
+    }
   } else {
     relBtn.classList.remove('visible');
     relBtn.classList.remove('active');
+    userSortOverride = false;
     // restore active state on correct sort button
     const modeMap = { alpha: 'btn-alpha', type: 'btn-type', newest: 'btn-newest' };
     sortBtns.forEach(b => b.classList.remove('active'));
