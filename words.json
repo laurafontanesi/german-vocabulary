@@ -5736,39 +5736,6 @@
     "family_root": "drücken"
   },
   {
-    "id": "oeffnen-schliessen",
-    "word": "öffnen / schließen",
-    "type": "verb",
-    "auxiliary": "haben",
-    "past_tense": "öffnete / schloss",
-    "past_participle": "geöffnet / geschlossen",
-    "is_separable": false,
-    "reflexive": false,
-    "definitions": [
-      {
-        "meaning": "to open / to close",
-        "note": null
-      }
-    ],
-    "examples": [
-      {
-        "de": "Kannst du bitte das Fenster öffnen?",
-        "en": "Can you please open the window?"
-      },
-      {
-        "de": "Das Geschäft schließt um 20 Uhr.",
-        "en": "The shop closes at 8pm."
-      }
-    ],
-    "topics": [
-      "daily life"
-    ],
-    "tags": [],
-    "register": "neutral",
-    "notes": "öffnen = to open (formal/general); aufmachen = to open (more colloquial). schließen = to close (formal); zumachen = to close (colloquial).",
-    "added": "2026-04-05"
-  },
-  {
     "id": "renovieren",
     "word": "renovieren",
     "type": "verb",
