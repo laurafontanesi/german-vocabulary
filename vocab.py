@@ -19,7 +19,7 @@ import os
 import re
 import urllib.request
 import urllib.error
-from datetime import date
+from datetime import datetime
 
 DB_PATH  = os.path.join(os.path.dirname(__file__), "words.json")
 ENV_PATH = os.path.join(os.path.dirname(__file__), ".env")
@@ -496,7 +496,7 @@ def cmd_add(args):
         "tags":        [],
         "register":    "neutral",
         "notes":       None,
-        "added":       str(date.today())
+        "added":       datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     }
 
     # ── type-specific fields ──────────────────────────────────────────────────
