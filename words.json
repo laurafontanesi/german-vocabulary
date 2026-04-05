@@ -2897,35 +2897,6 @@
     "usage": "adverb only"
   },
   {
-    "id": "seitdem",
-    "word": "seitdem",
-    "type": "adj/adv",
-    "definitions": [
-      {
-        "meaning": "since then, ever since",
-        "note": null
-      }
-    ],
-    "examples": [
-      {
-        "de": "Wir haben uns damals gestritten und seitdem nicht mehr gesprochen.",
-        "en": "We argued back then and haven't spoken since."
-      },
-      {
-        "de": "Seitdem ist alles anders.",
-        "en": "Everything has been different since then."
-      }
-    ],
-    "topics": [
-      "time"
-    ],
-    "tags": [],
-    "register": "neutral",
-    "notes": "seitdem (adverb) = since then. seit (preposition) + DAT = since [a point in time]. seit + Präsens = have been doing something for [duration].",
-    "added": "2026-04-05",
-    "usage": "adverb only"
-  },
-  {
     "id": "puenktlich",
     "word": "pünktlich",
     "type": "adj/adv",
@@ -3043,37 +3014,6 @@
     "notes": "bereit = ready/prepared (for an upcoming action); fertig = finished (a process is complete). Classic confusion for learners.",
     "added": "2026-04-05",
     "usage": "both"
-  },
-  {
-    "id": "während",
-    "word": "während",
-    "type": "construction",
-    "definitions": [
-      {
-        "meaning": "while, during",
-        "note": "as conjunction: + subordinate clause (verb at end); as preposition: + Genitiv"
-      }
-    ],
-    "examples": [
-      {
-        "de": "Während der Zugfahrt habe ich ein Buch gelesen.",
-        "en": "During the train journey I read a book."
-      },
-      {
-        "de": "Ich höre Musik, während ich koche.",
-        "en": "I listen to music while I cook."
-      }
-    ],
-    "topics": [
-      "grammar & structure",
-      "time"
-    ],
-    "tags": [
-      "sentence structure"
-    ],
-    "register": "neutral",
-    "notes": "Two uses: (1) preposition + Genitiv: während der Fahrt; (2) conjunction + subordinate clause: während ich koche (verb at end).",
-    "added": "2026-04-05"
   },
   {
     "id": "die-gewohnheit",
