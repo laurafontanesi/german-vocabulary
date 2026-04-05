@@ -249,6 +249,8 @@
   }
   .sort-btn:hover { color: var(--ink); border-color: var(--ink-soft); }
   .sort-btn.active { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .sort-btn.relevance { background: var(--accent); color: white; border-color: var(--accent); display: none; }
+  .sort-btn.relevance.visible { display: inline-block; }
 
   /* ── word cards ── */
   #word-list { display: flex; flex-direction: column; gap: 10px; }
@@ -629,9 +631,10 @@
     <div class="results-bar">
       <div class="results-count" id="results-count"></div>
       <div class="sort-wrap">
-        <button class="sort-btn active" onclick="setSort('alpha',this)">A → Z</button>
-        <button class="sort-btn" onclick="setSort('type',this)">By type</button>
-        <button class="sort-btn" onclick="setSort('newest',this)">Newest</button>
+        <button class="sort-btn relevance" id="btn-relevance">Relevance</button>
+        <button class="sort-btn active" id="btn-alpha" onclick="setSort('alpha',this)">A → Z</button>
+        <button class="sort-btn" id="btn-type" onclick="setSort('type',this)">By type</button>
+        <button class="sort-btn" id="btn-newest" onclick="setSort('newest',this)">Newest</button>
       </div>
     </div>
     <div id="word-list"></div>
@@ -801,6 +804,24 @@ function scoreMatch(w, q) {
 
 function applyFilters() {
   const q = document.getElementById('search').value.toLowerCase().trim();
+
+  // show/hide relevance button and mute/unmute sort buttons
+  const relBtn = document.getElementById('btn-relevance');
+  const sortBtns = ['btn-alpha','btn-type','btn-newest'].map(id => document.getElementById(id));
+  if (q) {
+    relBtn.classList.add('visible');
+    // only auto-select relevance if no other sort button is active
+    const anyActive = sortBtns.some(b => b.classList.contains('active'));
+    if (!anyActive) relBtn.classList.add('active');
+  } else {
+    relBtn.classList.remove('visible');
+    relBtn.classList.remove('active');
+    // restore active state on correct sort button
+    const modeMap = { alpha: 'btn-alpha', type: 'btn-type', newest: 'btn-newest' };
+    sortBtns.forEach(b => b.classList.remove('active'));
+    const activeId = modeMap[sortMode];
+    if (activeId) document.getElementById(activeId).classList.add('active');
+  }
   filtered = allWords.filter(w => {
     if (activeType && w.type !== activeType) return false;
     if (activeTopic && !(w.topics || []).includes(activeTopic)) return false;
@@ -812,12 +833,12 @@ function applyFilters() {
     return true;
   });
 
-  // sort — when searching, rank by relevance first; otherwise use sortMode
+  // sort — relevance when searching (unless user picked a different sort), otherwise sortMode
+  const useRelevance = q && document.getElementById('btn-relevance').classList.contains('active');
   filtered.sort((a, b) => {
-    if (q) {
+    if (useRelevance) {
       const scoreDiff = scoreMatch(b, q) - scoreMatch(a, q);
       if (scoreDiff !== 0) return scoreDiff;
-      // within same score, sort alphabetically
       return a.word.localeCompare(b.word, 'de');
     }
     if (sortMode === 'alpha') {
