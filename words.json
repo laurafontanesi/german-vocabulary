@@ -6744,5 +6744,38 @@
     "notes": "Often used in legal, scientific, or formal contexts to indicate something has been definitively demonstrated.",
     "added": "2026-04-05 20:12:44",
     "usage": "both"
+  },
+  {
+    "id": "rasch",
+    "word": "rasch",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "quick, fast, rapid",
+        "note": null
+      },
+      {
+        "meaning": "swift, speedy",
+        "note": "often used to emphasize urgency"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er ging rasch nach Hause.",
+        "en": "He went home quickly."
+      },
+      {
+        "de": "Das war eine rasche Entscheidung.",
+        "en": "That was a quick decision."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-05 20:43:54",
+    "usage": "both"
   }
 ]
