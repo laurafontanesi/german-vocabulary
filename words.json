@@ -1614,7 +1614,8 @@
     "reflexive": false,
     "related": [
       "ankommen",
-      "erhalten"
+      "erhalten",
+      "kommen"
     ],
     "definitions": [
       {
@@ -4622,7 +4623,8 @@
     "is_separable": false,
     "reflexive": true,
     "related": [
-      "auskommen mit"
+      "auskommen mit",
+      "stehen"
     ],
     "definitions": [
       {
@@ -6033,7 +6035,8 @@
       "abfahren",
       "abreisen",
       "bekommen",
-      "fahren"
+      "fahren",
+      "kommen"
     ],
     "definitions": [
       {
@@ -6154,6 +6157,103 @@
     "related": [
       "sich anziehen",
       "umziehen"
+    ]
+  },
+  {
+    "id": "stehen",
+    "word": "stehen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to stand",
+        "note": null
+      },
+      {
+        "meaning": "to be located, to be situated",
+        "note": null
+      },
+      {
+        "meaning": "to be written, to say",
+        "note": "used for text in books, signs, etc."
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er steht vor der Tür.",
+        "en": "He is standing in front of the door."
+      },
+      {
+        "de": "Das Buch steht im Regal.",
+        "en": "The book is on the shelf."
+      },
+      {
+        "de": "Was steht in dem Brief?",
+        "en": "What does the letter say?"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Uses 'haben' as auxiliary despite being a position verb, unlike most other position verbs which use 'sein'.",
+    "added": "2026-04-05",
+    "auxiliary": "haben",
+    "past_tense": "stand",
+    "past_participle": "gestanden",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "stehen",
+    "related": [
+      "sich verstehen"
+    ]
+  },
+  {
+    "id": "kommen",
+    "word": "kommen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to come",
+        "note": null
+      },
+      {
+        "meaning": "to arrive",
+        "note": null
+      },
+      {
+        "meaning": "to get to",
+        "note": "often used with prepositions indicating direction or destination"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich komme morgen zu dir.",
+        "en": "I'm coming to you tomorrow."
+      },
+      {
+        "de": "Der Zug kommt um 15:30 am Bahnhof an.",
+        "en": "The train arrives at the station at 3:30 PM."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "One of the most fundamental German verbs with many compound variations and idiomatic uses.",
+    "added": "2026-04-05",
+    "auxiliary": "sein",
+    "past_tense": "kam",
+    "past_participle": "gekommen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "kommen",
+    "related": [
+      "ankommen",
+      "bekommen"
     ]
   }
 ]
