@@ -6460,7 +6460,8 @@
     "family_root": "weisen",
     "prefix": "er-",
     "related": [
-      "weisen"
+      "weisen",
+      "erwiesen"
     ]
   },
   {
@@ -6502,7 +6503,8 @@
     "reflexive": false,
     "family_root": "weisen",
     "related": [
-      "sich erweisen"
+      "sich erweisen",
+      "erwiesen"
     ]
   },
   {
@@ -6541,7 +6543,10 @@
     "register": "formal",
     "notes": "Often used in legal, scientific, or formal contexts to indicate something has been definitively demonstrated.",
     "added": "2026-04-05 20:12:44",
-    "usage": "both"
+    "usage": "both",
+    "related": [
+      "sich erweisen"
+    ]
   },
   {
     "id": "rasch",
