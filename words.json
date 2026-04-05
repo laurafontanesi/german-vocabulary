@@ -6444,5 +6444,91 @@
     "added": "2026-04-05 19:06:00",
     "gender": "das",
     "plural": "die Ereignisse"
+  },
+  {
+    "id": "erweisen",
+    "word": "erweisen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to prove to be, to turn out to be",
+        "note": "used reflexively with 'als'"
+      },
+      {
+        "meaning": "to show, to render, to do",
+        "note": "formal, often in fixed expressions like 'einen Dienst erweisen'"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Verdacht erwies sich als unbegründet.",
+        "en": "The suspicion proved to be unfounded."
+      },
+      {
+        "de": "Er hat mir einen großen Dienst erwiesen.",
+        "en": "He did me a great service."
+      }
+    ],
+    "topics": [
+      "grammar & structure",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "Most commonly used reflexively with 'sich erweisen als' meaning 'to prove to be'.",
+    "added": "2026-04-05",
+    "auxiliary": "haben",
+    "past_tense": "erwies",
+    "past_participle": "erwiesen",
+    "is_separable": false,
+    "reflexive": true,
+    "preposition": "als + NOM",
+    "family_root": "weisen",
+    "prefix": "er-",
+    "related": [
+      "weisen"
+    ]
+  },
+  {
+    "id": "weisen",
+    "word": "weisen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to point, to direct",
+        "note": null
+      },
+      {
+        "meaning": "to show the way, to guide",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er wies mit dem Finger auf das Gebäude.",
+        "en": "He pointed with his finger at the building."
+      },
+      {
+        "de": "Der Wegweiser wies uns in die richtige Richtung.",
+        "en": "The signpost directed us in the right direction."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Often confused with 'wissen' (to know) due to similar past tense forms.",
+    "added": "2026-04-05",
+    "auxiliary": "haben",
+    "past_tense": "wies",
+    "past_participle": "gewiesen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "weisen",
+    "related": [
+      "erweisen"
+    ]
   }
 ]
