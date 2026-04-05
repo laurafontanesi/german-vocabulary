@@ -6097,7 +6097,7 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05",
+    "added": "2026-04-05 19:00:00",
     "auxiliary": "sein",
     "past_tense": "stieg aus",
     "past_participle": "ausgestiegen",
@@ -6147,7 +6147,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "Takes auxiliary sein when meaning to move residence, otherwise uses haben.",
-    "added": "2026-04-05",
+    "added": "2026-04-05 19:01:00",
     "auxiliary": "haben",
     "past_tense": "zog",
     "past_participle": "gezogen",
@@ -6198,7 +6198,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "Uses 'haben' as auxiliary despite being a position verb, unlike most other position verbs which use 'sein'.",
-    "added": "2026-04-05",
+    "added": "2026-04-05 19:02:00",
     "auxiliary": "haben",
     "past_tense": "stand",
     "past_participle": "gestanden",
@@ -6244,7 +6244,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "One of the most fundamental German verbs with many compound variations and idiomatic uses.",
-    "added": "2026-04-05",
+    "added": "2026-04-05 19:03:00",
     "auxiliary": "sein",
     "past_tense": "kam",
     "past_participle": "gekommen",
@@ -6364,7 +6364,7 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05",
+    "added": "2026-04-05 19:04:00",
     "also_adverb": true,
     "related": [
       "vernünftig"
@@ -6400,7 +6400,7 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05",
+    "added": "2026-04-05 19:05:00",
     "also_adverb": true,
     "related": [
       "unvernünftig"
@@ -6441,7 +6441,7 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05",
+    "added": "2026-04-05 19:06:00",
     "gender": "das",
     "plural": "die Ereignisse"
   }
