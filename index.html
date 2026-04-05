@@ -1199,7 +1199,7 @@ function loadPracticeWord() {
   // reset UI
   answered = false;
   document.getElementById('practice-input').value = '';
-  document.getElementById('practice-input').disabled = false;
+  document.getElementById('practice-input').readOnly = false;
   document.getElementById('practice-feedback').className = 'practice-feedback';
   document.getElementById('practice-feedback').textContent = '';
   document.querySelector('.practice-submit').style.display = 'block';
@@ -1249,7 +1249,7 @@ function checkAnswer() {
   const input = document.getElementById('practice-input').value.trim().toLowerCase();
   if (!input) return;
   answered = true;
-  document.getElementById('practice-input').disabled = true;
+  document.getElementById('practice-input').readOnly = true;
 
   let correct = false;
   let correctAnswer = '';
