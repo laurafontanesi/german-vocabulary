@@ -20,7 +20,7 @@ import os
 import re
 import urllib.request
 import urllib.error
-from datetime import datetime
+from datetime import date
 
 DB_PATH  = os.path.join(os.path.dirname(__file__), "words.json")
 ENV_PATH = os.path.join(os.path.dirname(__file__), ".env")
@@ -46,16 +46,17 @@ def load_api_key() -> str | None:
 
 # ── AI enrichment ──────────────────────────────────────────────────────────────
 
-def ai_enrich(word: str, api_key: str) -> dict | None:
+def ai_enrich(word: str, api_key: str, word_type: str = None) -> dict | None:
     """
     Call Claude API to get structured info about a German word.
     Returns a dict with suggested fields, or None on failure.
     """
+    type_hint = f"\n\nIMPORTANT: Treat this word strictly as a {word_type}. Fill in all fields accordingly." if word_type else ""
     prompt = f"""You are a German language expert. I am learning German and want to add the word "{word}" to my vocabulary database.
 
 Please analyse this word and return a JSON object with the following fields. Be precise and use only English for definitions and translations (never Italian or German in the meaning field).
 
-Return ONLY valid JSON, no explanation, no markdown, no code fences.
+Return ONLY valid JSON, no explanation, no markdown, no code fences.{type_hint}
 
 {{
   "word": "the word in its canonical form (e.g. with gender for nouns: 'die Sehnsucht', infinitive for verbs: 'erinnern')",
@@ -84,7 +85,7 @@ Return ONLY valid JSON, no explanation, no markdown, no code fences.
   "notes": "one sentence max — only if there is something genuinely important to note, e.g. easy confusion with another word, or null"
 }}
 
-Word to analyse: {word}"""
+Word to analyse: {word}{type_hint}"""
 
     payload = json.dumps({
         "model": "claude-sonnet-4-20250514",
@@ -457,12 +458,18 @@ def cmd_add(args):
         print(f"\n  X '{word}' already exists. Use 'show' to view it.")
         return
 
+    # ── ask word type FIRST so AI gets the right context ─────────────────────
+    print()
+    word_type = ask_choice("Word type", WORD_TYPES)
+
     # ── AI enrichment ─────────────────────────────────────────────────────────
     suggestion = None
     if not manual and api_key:
-        print(f"\n  Looking up '{word}' with AI...\n")
-        suggestion = ai_enrich(word, api_key)
+        print(f"\n  Looking up '{word}' as {word_type} with AI...\n")
+        suggestion = ai_enrich(word, api_key, word_type=word_type)
         if suggestion:
+            # override type from AI with what the user chose
+            suggestion["type"] = word_type
             print("  AI suggestions ready. Press Enter to accept each, or type to override.\n")
         else:
             print("  AI lookup failed — falling back to manual entry.\n")
@@ -471,7 +478,7 @@ def cmd_add(args):
 
     s = suggestion or {}
 
-    # canonical word form
+    # canonical word form — AI may suggest a better form for the chosen type
     canonical = s.get("word", word)
     if canonical and canonical != word:
         print(f"  AI suggests canonical form: {canonical}")
@@ -479,13 +486,7 @@ def cmd_add(args):
         if use_can.lower() == "y":
             word = canonical
 
-    word_id   = make_id(word)
-    word_type = s.get("type", "other")
-
-    if suggestion:
-        word_type = confirm_or_edit("Type", word_type, WORD_TYPES)
-    else:
-        word_type = ask_choice("Word type", WORD_TYPES)
+    word_id = make_id(word)
 
     entry = {
         "id":          word_id,
@@ -497,7 +498,7 @@ def cmd_add(args):
         "tags":        [],
         "register":    "neutral",
         "notes":       None,
-        "added":       datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        "added":       str(date.today())
     }
 
     # ── type-specific fields ──────────────────────────────────────────────────
