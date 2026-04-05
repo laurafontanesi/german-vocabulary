@@ -20,7 +20,7 @@ import os
 import re
 import urllib.request
 import urllib.error
-from datetime import datetimetimetime
+from datetime import datetime
 
 DB_PATH  = os.path.join(os.path.dirname(__file__), "words.json")
 ENV_PATH = os.path.join(os.path.dirname(__file__), ".env")
@@ -300,6 +300,19 @@ def auto_detect_related(words: list, new_entry: dict) -> list:
                     p_norm = re.sub(r"^(der|die|das|sich|ein|eine)\s+", "", p).strip()
                     if p_norm and (p_norm == w_norm or p == w["word"].lower()):
                         found.add(w["word"])
+
+        # Signal 5: derived_from field
+        derived = new_entry.get("derived_from", "")
+        if derived:
+            derived_norm = re.sub(r"^(der|die|das|sich|ein|eine)\s+", "", derived.lower()).strip()
+            if derived_norm == w_norm or derived.lower() == w["word"].lower():
+                found.add(w["word"])
+        # reverse: this word's derived_from points to new entry
+        w_derived = w.get("derived_from", "")
+        if w_derived:
+            w_derived_norm = re.sub(r"^(der|die|das|sich|ein|eine)\s+", "", w_derived.lower()).strip()
+            if w_derived_norm == new_norm or w_derived.lower() == new_word.lower():
+                found.add(w["word"])
 
     # remove self-reference
     found.discard(new_word)

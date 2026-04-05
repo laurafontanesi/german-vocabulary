@@ -128,6 +128,17 @@ def find_connections(db: list) -> dict:
                         connections[w['id']].add(target['word'])
                         connections[target['id']].add(w['word'])
 
+    # ── Signal 5: derived_from field ─────────────────────────────────────────
+    # e.g. erwiesen (derived_from: sich erweisen) links to sich erweisen
+    for w in db:
+        derived = w.get('derived_from')
+        if not derived:
+            continue
+        target = find_entry(derived)
+        if target and target['id'] != w['id']:
+            connections[w['id']].add(target['word'])
+            connections[target['id']].add(w['word'])
+
     return connections
 
 

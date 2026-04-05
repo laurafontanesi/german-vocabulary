@@ -877,7 +877,8 @@
     "register": "neutral",
     "notes": "deprimiert = temporarily down/depressed (state); depressiv = clinically depressive (character trait). Important distinction.",
     "added": "2026-04-05",
-    "usage": "both"
+    "usage": "both",
+    "derived_from": "deprimieren"
   },
   {
     "id": "beeindruckend",
@@ -916,7 +917,8 @@
     "register": "neutral",
     "notes": "beeindrucken (verb) = to impress. Ich bin beeindruckt = I am impressed.",
     "added": "2026-04-05",
-    "usage": "both"
+    "usage": "both",
+    "derived_from": "beeindrucken"
   },
   {
     "id": "gelaengweilt",
@@ -955,7 +957,8 @@
     "register": "neutral",
     "notes": "gelangweilt = bored (person's feeling); langweilig = boring (quality of a thing or person). 'Ich bin gelangweilt' vs 'Der Film ist langweilig'.",
     "added": "2026-04-05",
-    "usage": "both"
+    "usage": "both",
+    "derived_from": "langweilen"
   },
   {
     "id": "langweilig",
@@ -994,7 +997,8 @@
     "register": "neutral",
     "notes": "langweilig = boring (quality of something); gelangweilt = bored (how a person feels). Common mistake to confuse these.",
     "added": "2026-04-05",
-    "usage": "both"
+    "usage": "both",
+    "derived_from": "langweilen"
   },
   {
     "id": "muede",
@@ -1188,7 +1192,8 @@
     "register": "neutral",
     "notes": "gespannt = excited/tense with anticipation (positive); entspannt = relaxed (opposite). 'Ich bin gespannt!' = I can't wait! / I'm curious!",
     "added": "2026-04-05",
-    "usage": "both"
+    "usage": "both",
+    "derived_from": "spannen"
   },
   {
     "id": "entspannt",
@@ -1225,7 +1230,8 @@
     "register": "neutral",
     "notes": "sich entspannen (verb) = to relax. Opposite: gespannt (tense/eager) or gestresst (stressed).",
     "added": "2026-04-05",
-    "usage": "both"
+    "usage": "both",
+    "derived_from": "entspannen"
   },
   {
     "id": "sich-ausruhen",
@@ -4062,7 +4068,8 @@
     "register": "neutral",
     "notes": "verschieden = different/various (between objects); unterschiedlich = varying (within a group); anders = different in kind. Three overlapping but distinct words.",
     "added": "2026-04-05",
-    "usage": "both"
+    "usage": "both",
+    "derived_from": "scheiden"
   },
   {
     "id": "großzügig",
@@ -6545,8 +6552,10 @@
     "added": "2026-04-05 20:12:44",
     "usage": "both",
     "related": [
-      "sich erweisen"
-    ]
+      "sich erweisen",
+      "weisen"
+    ],
+    "derived_from": "sich erweisen"
   },
   {
     "id": "rasch",

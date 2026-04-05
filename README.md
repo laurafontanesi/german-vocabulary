@@ -107,7 +107,7 @@ Each entry in `words.json` is a JSON object. All entries share these fields:
 |---|---|---|
 | `id` | string | URL-safe identifier (auto-generated) |
 | `word` | string | The German word in canonical form |
-| `type` | string | `noun`, `verb`, `adj/adv`, `expression`, `construction`, `other` |
+| `type` | string | `noun`, `verb`, `adj/adv`, `prep/conj`, `expression`, `construction`, `other` |
 | `definitions` | list | `[{meaning, note}]` — always in English |
 | `examples` | list | `[{de, en}]` — German sentence + translation |
 | `topics` | list | Thematic categories (see below) |
@@ -142,6 +142,13 @@ Each entry in `words.json` is a JSON object. All entries share these fields:
 | Field | Description |
 |---|---|
 | `usage` | `both`, `adjective only`, or `adverb only` |
+| `derived_from` | source verb for participle-adjectives e.g. `entspannen` for *entspannt* |
+
+**Extra fields for prep/conj:**
+
+| Field | Description |
+|---|---|
+| `usage` | `both`, `preposition only`, or `conjunction only` |
 
 ### Topics
 
@@ -177,9 +184,11 @@ python fix_related.py --db words.json
 ```
 
 The script detects connections via:
-1. Shared `family_root` (verb family members)
+1. Shared `family_root` (verb family members, including cross-type)
 2. Existing `related` lists → makes them bidirectional
 3. Tags like `similar to: X` or `verb family: X`
+4. Negating/modifying prefix pairs (`un-`, `miss-`, `über-` etc.)
+5. `derived_from` field (participle-adjectives linked to their source verb)
 
 Safe to run multiple times — never duplicates links.
 
