@@ -1318,5 +1318,1005 @@
     "register": "informal",
     "notes": "As an intensifier (wahnsinnig + adjective) it is extremely common in spoken German — similar to 'insanely' in English.",
     "added": "2026-04-05"
+  },
+  {
+    "id": "bleiben",
+    "word": "bleiben",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "blieb",
+    "past_participle": "geblieben",
+    "is_separable": false,
+    "reflexive": false,
+    "definitions": [
+      {
+        "meaning": "to stay, to remain",
+        "note": null
+      },
+      {
+        "meaning": "to keep, to last",
+        "note": "e.g. gesund bleiben = to stay healthy"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bin den ganzen Tag zu Hause geblieben.",
+        "en": "I stayed home all day."
+      },
+      {
+        "de": "Bleib ruhig — alles wird gut.",
+        "en": "Stay calm — everything will be fine."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Takes sein as auxiliary. Very versatile: bleiben + adjective = to stay/remain [adjective].",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "aendern",
+    "word": "ändern",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "änderte",
+    "past_participle": "geändert",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "sich verändern",
+      "der Wechsel"
+    ],
+    "definitions": [
+      {
+        "meaning": "to change, to alter (something)",
+        "note": "transitive — you change something external"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich muss meinen Plan ändern.",
+        "en": "I need to change my plan."
+      },
+      {
+        "de": "Das ändert nichts an der Situation.",
+        "en": "That doesn't change anything about the situation."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "similar to: sich verändern"
+    ],
+    "register": "neutral",
+    "notes": "ändern = to change something (transitive); sich verändern = to change/transform (intransitive, about a person or situation).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "sich-veraendern",
+    "word": "sich verändern",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "veränderte sich",
+    "past_participle": "verändert",
+    "is_separable": false,
+    "reflexive": true,
+    "related": [
+      "ändern"
+    ],
+    "definitions": [
+      {
+        "meaning": "to change, to transform (oneself or a situation)",
+        "note": "intransitive — a person or situation changes"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Situation hat sich überhaupt nicht verändert.",
+        "en": "The situation hasn't changed at all."
+      },
+      {
+        "de": "Er hat sich sehr verändert seit der Uni.",
+        "en": "He has changed a lot since university."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "people & relationships"
+    ],
+    "tags": [
+      "reflexive",
+      "similar to: ändern"
+    ],
+    "register": "neutral",
+    "notes": "sich verändern = to change (intransitive); ändern = to change something (transitive). Common source of confusion.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "waehlen",
+    "word": "wählen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "wählte",
+    "past_participle": "gewählt",
+    "is_separable": false,
+    "reflexive": false,
+    "preposition": "zwischen + DAT",
+    "related": [
+      "auswählen",
+      "sich entscheiden",
+      "die Wahl"
+    ],
+    "definitions": [
+      {
+        "meaning": "to choose, to select",
+        "note": null
+      },
+      {
+        "meaning": "to vote, to elect",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie können zwischen dem blauen und dem grünen Mantel wählen.",
+        "en": "You can choose between the blue and the green coat."
+      },
+      {
+        "de": "Nächsten Monat wird gewählt.",
+        "en": "Next month there will be an election."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "society & politics"
+    ],
+    "tags": [
+      "similar to: auswählen, sich entscheiden"
+    ],
+    "register": "neutral",
+    "notes": "wählen covers both 'to choose' and 'to vote'. die Wahl = both the choice and the election.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "sich-entscheiden",
+    "word": "sich entscheiden",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "entschied sich",
+    "past_participle": "entschieden",
+    "is_separable": false,
+    "reflexive": true,
+    "preposition": "für + AKK",
+    "related": [
+      "wählen",
+      "die Entscheidung"
+    ],
+    "definitions": [
+      {
+        "meaning": "to decide, to make up one's mind",
+        "note": "für + AKK = to decide in favour of something"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe mich für den roten Wein entschieden.",
+        "en": "I decided on the red wine."
+      },
+      {
+        "de": "Hast du dich schon entschieden?",
+        "en": "Have you made up your mind yet?"
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "reflexive",
+      "similar to: wählen"
+    ],
+    "register": "neutral",
+    "notes": "die Entscheidung treffen = to make a decision (formal). sich entscheiden für + AKK = to decide in favour of.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "geben",
+    "word": "geben",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "gab",
+    "past_participle": "gegeben",
+    "is_separable": false,
+    "reflexive": false,
+    "definitions": [
+      {
+        "meaning": "to give",
+        "note": null
+      },
+      {
+        "meaning": "there is / there are",
+        "note": "es gibt + AKK = there is/are (very common construction)"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Kannst du mir bitte das Salz geben?",
+        "en": "Can you please pass me the salt?"
+      },
+      {
+        "de": "Es gibt heute keine Sonne.",
+        "en": "There is no sun today."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "'es gibt' (there is/are) is one of the most essential German expressions — always followed by accusative.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "bekommen",
+    "word": "bekommen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "bekam",
+    "past_participle": "bekommen",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "erhalten"
+    ],
+    "definitions": [
+      {
+        "meaning": "to get, to receive",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe viele Geschenke zu meinem Geburtstag bekommen.",
+        "en": "I got lots of presents for my birthday."
+      },
+      {
+        "de": "Hast du meine Nachricht bekommen?",
+        "en": "Did you get my message?"
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "false friend",
+      "similar to: erhalten"
+    ],
+    "register": "neutral",
+    "notes": "False friend! bekommen ≠ 'to become' (= werden). bekommen = to receive/get. erhalten = same but more formal.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "holen",
+    "word": "holen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "holte",
+    "past_participle": "geholt",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "abholen",
+      "wiederholen"
+    ],
+    "family_root": "holen",
+    "definitions": [
+      {
+        "meaning": "to fetch, to get, to go and get",
+        "note": "implies going somewhere to retrieve something"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich muss einen Schirm holen, weil es regnet.",
+        "en": "I need to go and get an umbrella because it's raining."
+      },
+      {
+        "de": "Kannst du mir bitte ein Glas Wasser holen?",
+        "en": "Can you get me a glass of water please?"
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "verb family: holen"
+    ],
+    "register": "neutral",
+    "notes": "holen implies going to retrieve something. Root of a small family: abholen, wiederholen, überholen.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "abholen",
+    "word": "abholen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "holte ab",
+    "past_participle": "abgeholt",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "holen",
+    "prefix": "ab-",
+    "related": [
+      "holen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to pick up (a person or thing)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Kannst du mich bitte vom Bahnhof abholen?",
+        "en": "Can you please pick me up from the station?"
+      },
+      {
+        "de": "Ich hole das Paket von der Post ab.",
+        "en": "I'm picking up the package from the post office."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [
+      "separable",
+      "verb family: holen"
+    ],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-05"
+  },
+  {
+    "id": "wiederholen",
+    "word": "wiederholen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "wiederholte",
+    "past_participle": "wiederholt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "holen",
+    "prefix": "wieder-",
+    "related": [
+      "holen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to repeat, to revise",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Kannst du das bitte wiederholen? Ich habe es nicht verstanden.",
+        "en": "Can you please repeat that? I didn't understand."
+      },
+      {
+        "de": "Ich muss die Vokabeln wiederholen.",
+        "en": "I need to revise the vocabulary."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "work & academia"
+    ],
+    "tags": [
+      "verb family: holen"
+    ],
+    "register": "neutral",
+    "notes": "Note: NOT separable (wiederholen), unlike abholen. Die Wiederholung = repetition/revision.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "glauben",
+    "word": "glauben",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "glaubte",
+    "past_participle": "geglaubt",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "denken",
+      "meinen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to believe, to think",
+        "note": "softer than 'denken' — implies less certainty"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich glaube, dass es morgen regnen wird.",
+        "en": "I think it will rain tomorrow."
+      },
+      {
+        "de": "Das glaube ich nicht!",
+        "en": "I don't believe that!"
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [
+      "similar to: denken, meinen"
+    ],
+    "register": "neutral",
+    "notes": "glauben = believe/think (less certain); denken = think (more neutral); meinen = think/be of the opinion (more assertive).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "denken",
+    "word": "denken",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "dachte",
+    "past_participle": "gedacht",
+    "is_separable": false,
+    "reflexive": false,
+    "preposition": "an + AKK",
+    "related": [
+      "glauben",
+      "meinen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to think",
+        "note": null
+      },
+      {
+        "meaning": "to think of, to remember",
+        "note": "denken an + AKK = to think of someone/something"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich denke an dich.",
+        "en": "I'm thinking of you."
+      },
+      {
+        "de": "Ich muss daran denken, das Fenster zu schließen.",
+        "en": "I must remember to close the window."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "body & mind"
+    ],
+    "tags": [
+      "similar to: glauben, meinen"
+    ],
+    "register": "neutral",
+    "notes": "denken an + AKK = to think of/about someone. denken über + AKK = to think about a topic.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "sagen",
+    "word": "sagen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "sagte",
+    "past_participle": "gesagt",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "sprechen",
+      "reden",
+      "erzählen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to say, to tell",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Was hast du gerade gesagt?",
+        "en": "What did you just say?"
+      },
+      {
+        "de": "Sag mir die Wahrheit.",
+        "en": "Tell me the truth."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [
+      "similar to: sprechen, reden"
+    ],
+    "register": "neutral",
+    "notes": "sagen = to say/tell (content of speech); sprechen = to speak (act of speaking); reden = to talk/chat (more informal, ongoing).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "sprechen",
+    "word": "sprechen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "sprach",
+    "past_participle": "gesprochen",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "sagen",
+      "reden"
+    ],
+    "definitions": [
+      {
+        "meaning": "to speak, to talk",
+        "note": "more formal than reden"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie spricht sowohl Italienisch als auch Englisch.",
+        "en": "She speaks both Italian and English."
+      },
+      {
+        "de": "Kann ich bitte mit dem Manager sprechen?",
+        "en": "Can I speak to the manager please?"
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [
+      "similar to: sagen, reden"
+    ],
+    "register": "neutral",
+    "notes": "sprechen = to speak (more formal/neutral); reden = to talk/chat (more informal). Both can be used for conversations.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "reden",
+    "word": "reden",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "redete",
+    "past_participle": "geredet",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "sprechen",
+      "sagen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to talk, to chat, to speak",
+        "note": "more informal than sprechen"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nach dem Abendessen haben wir stundenlang geredet.",
+        "en": "After dinner we talked for hours."
+      },
+      {
+        "de": "Wir müssen reden.",
+        "en": "We need to talk."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "people & relationships"
+    ],
+    "tags": [
+      "similar to: sprechen, sagen"
+    ],
+    "register": "informal",
+    "notes": "reden = talk/chat (informal, conversational); sprechen = speak (more formal). 'Wir müssen reden' is a very common phrase.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "scheinen",
+    "word": "scheinen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "schien",
+    "past_participle": "geschienen",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "aussehen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to seem, to appear",
+        "note": null
+      },
+      {
+        "meaning": "to shine",
+        "note": "said of the sun or light"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Es scheint mir, dass er nicht kommen wird.",
+        "en": "It seems to me that he won't come."
+      },
+      {
+        "de": "Die Sonne scheint.",
+        "en": "The sun is shining."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "nature & weather"
+    ],
+    "tags": [
+      "similar to: aussehen"
+    ],
+    "register": "neutral",
+    "notes": "scheinen + zu + Infinitiv (same subject): Er scheint müde zu sein. scheinen + dass (different subject): Es scheint, dass er müde ist.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "aussehen",
+    "word": "aussehen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "sah aus",
+    "past_participle": "ausgesehen",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "sehen",
+    "prefix": "aus-",
+    "related": [
+      "scheinen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to look, to appear (visually)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Du siehst heute gut aus!",
+        "en": "You look great today!"
+      },
+      {
+        "de": "Er sieht aus, als ob er nicht geschlafen hätte.",
+        "en": "He looks as if he hasn't slept."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "emotions"
+    ],
+    "tags": [
+      "separable",
+      "similar to: scheinen"
+    ],
+    "register": "neutral",
+    "notes": "aussehen wie + noun: Er sieht aus wie ein Gespenst. aussehen als ob + verb: Er sieht aus, als ob... Both patterns are very common.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "brauchen",
+    "word": "brauchen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "brauchte",
+    "past_participle": "gebraucht",
+    "is_separable": false,
+    "reflexive": false,
+    "definitions": [
+      {
+        "meaning": "to need, to require",
+        "note": null
+      },
+      {
+        "meaning": "don't have to",
+        "note": "nicht brauchen + zu + Infinitiv = don't need to / don't have to"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie brauchen kein Ticket — das Konzert ist kostenlos.",
+        "en": "You don't need a ticket — the concert is free."
+      },
+      {
+        "de": "Du brauchst dir keine Sorgen zu machen.",
+        "en": "You don't need to worry."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "nicht brauchen + zu + Infinitiv = don't have to (alternative to nicht müssen). Very common in spoken German.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "lassen",
+    "word": "lassen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "ließ",
+    "past_participle": "gelassen",
+    "is_separable": false,
+    "reflexive": false,
+    "definitions": [
+      {
+        "meaning": "to let, to allow",
+        "note": null
+      },
+      {
+        "meaning": "to have something done",
+        "note": "lassen + Infinitiv = to have/get something done by someone else"
+      },
+      {
+        "meaning": "to leave (something somewhere)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Firma lässt die Mitarbeiter selbst entscheiden.",
+        "en": "The company lets the employees decide for themselves."
+      },
+      {
+        "de": "Ich lasse mein Fahrrad reparieren.",
+        "en": "I'm having my bike repaired."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "lassen + Infinitiv has two uses: (1) to let/allow sb. to do sth.; (2) to have/get sth. done. Context makes it clear.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "behaupten",
+    "word": "behaupten",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "behauptete",
+    "past_participle": "behauptet",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "sagen",
+      "zugeben"
+    ],
+    "definitions": [
+      {
+        "meaning": "to claim, to assert",
+        "note": "implies stating something without proof"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er behauptet, die Erde sei flach.",
+        "en": "He claims the earth is flat."
+      },
+      {
+        "de": "Sie behauptet, es nicht gewusst zu haben.",
+        "en": "She claims she didn't know about it."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "behaupten implies asserting something without justification — slightly sceptical connotation. Often followed by Konjunktiv I in reported speech.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "vorschlagen",
+    "word": "vorschlagen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "schlug vor",
+    "past_participle": "vorgeschlagen",
+    "is_separable": true,
+    "reflexive": false,
+    "prefix": "vor-",
+    "definitions": [
+      {
+        "meaning": "to suggest, to propose",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich schlage vor, dass wir eine Pause machen.",
+        "en": "I suggest we take a break."
+      },
+      {
+        "de": "Er hat einen Kompromiss vorgeschlagen.",
+        "en": "He proposed a compromise."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "work & academia"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": "der Vorschlag (noun) = the suggestion/proposal. Einen Vorschlag machen = to make a suggestion.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "nutzen",
+    "word": "nutzen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "nutzte",
+    "past_participle": "genutzt",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "benutzen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to use, to make use of",
+        "note": "abstract or general use"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich nutze jede Gelegenheit, Deutsch zu sprechen.",
+        "en": "I make use of every opportunity to speak German."
+      },
+      {
+        "de": "Wie nutzt du deine Freizeit?",
+        "en": "How do you use your free time?"
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "similar to: benutzen"
+    ],
+    "register": "neutral",
+    "notes": "nutzen = use in abstract/general sense; benutzen = use in practical/physical sense. In everyday speech often interchangeable.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "benutzen",
+    "word": "benutzen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "benutzte",
+    "past_participle": "benutzt",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "nutzen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to use (something physically or practically)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Benutzt du lieber den Zug oder das Auto?",
+        "en": "Do you prefer to use the train or the car?"
+      },
+      {
+        "de": "Darf ich dein Telefon benutzen?",
+        "en": "May I use your phone?"
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "similar to: nutzen"
+    ],
+    "register": "neutral",
+    "notes": "benutzen = concrete/practical use of a tool or object; nutzen = more abstract. Both are very common.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "zugeben",
+    "word": "zugeben",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "gab zu",
+    "past_participle": "zugegeben",
+    "is_separable": true,
+    "reflexive": false,
+    "prefix": "zu-",
+    "related": [
+      "behaupten"
+    ],
+    "definitions": [
+      {
+        "meaning": "to admit, to confess, to acknowledge",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er wollte seinen Fehler nicht zugeben.",
+        "en": "He didn't want to admit his mistake."
+      },
+      {
+        "de": "Ich gebe zu, dass ich falsch lag.",
+        "en": "I admit that I was wrong."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "people & relationships"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-05"
+  },
+  {
+    "id": "vorstellen",
+    "word": "sich vorstellen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "stellte sich vor",
+    "past_participle": "vorgestellt",
+    "is_separable": true,
+    "reflexive": true,
+    "prefix": "vor-",
+    "definitions": [
+      {
+        "meaning": "to imagine, to picture",
+        "note": "sich (DAT) etw. vorstellen = to imagine something"
+      },
+      {
+        "meaning": "to introduce oneself",
+        "note": "jmdn. vorstellen = to introduce someone to someone else"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich kann mir vorstellen, dass das schwierig war.",
+        "en": "I can imagine that was difficult."
+      },
+      {
+        "de": "Darf ich mich vorstellen? Ich heiße Laura.",
+        "en": "May I introduce myself? My name is Laura."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "people & relationships"
+    ],
+    "tags": [
+      "separable",
+      "reflexive"
+    ],
+    "register": "neutral",
+    "notes": "Two distinct uses: sich (DAT) etw. vorstellen = to imagine; sich vorstellen = to introduce oneself; jmdn. vorstellen = to introduce sb.",
+    "added": "2026-04-05"
   }
 ]
