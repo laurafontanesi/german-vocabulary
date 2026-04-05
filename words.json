@@ -66,8 +66,7 @@
     "family_root": "nehmen",
     "prefix": "mit-",
     "related": [
-      "nehmen",
-      "teilnehmen"
+      "nehmen"
     ],
     "definitions": [
       {
@@ -109,7 +108,6 @@
     "family_root": "nehmen",
     "prefix": "teil-",
     "related": [
-      "mitnehmen",
       "nehmen"
     ],
     "definitions": [
@@ -295,10 +293,9 @@
     "type": "adjective",
     "also_adverb": true,
     "related": [
-      "die Freude",
       "froh",
-      "glücklich",
-      "sich freuen"
+      "sich freuen",
+      "die Freude"
     ],
     "definitions": [
       {
@@ -470,10 +467,7 @@
     ],
     "register": "neutral",
     "notes": "More reflective/conscious than fühlen or spüren. das Empfinden (noun) = feeling, sentiment.",
-    "added": "2026-04-05",
-    "related": [
-      "spüren"
-    ]
+    "added": "2026-04-05"
   },
   {
     "id": "spueren",
@@ -509,10 +503,7 @@
     ],
     "register": "neutral",
     "notes": "spüren = physical/instinctive sensation; empfinden = emotional/reflective feeling; fühlen = general feeling.",
-    "added": "2026-04-05",
-    "related": [
-      "empfinden"
-    ]
+    "added": "2026-04-05"
   },
   {
     "id": "sich-freuen",
@@ -548,12 +539,7 @@
     ],
     "register": "neutral",
     "notes": "Key distinction: freuen über + AKK (glad about past/present) vs freuen auf + AKK (looking forward to future).",
-    "added": "2026-04-05",
-    "related": [
-      "die Freude",
-      "froh",
-      "fröhlich"
-    ]
+    "added": "2026-04-05"
   },
   {
     "id": "die-freude",
@@ -585,12 +571,7 @@
     ],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05",
-    "related": [
-      "froh",
-      "fröhlich",
-      "sich freuen"
-    ]
+    "added": "2026-04-05"
   },
   {
     "id": "gluecklich",
@@ -636,9 +617,8 @@
     "type": "adjective",
     "also_adverb": true,
     "related": [
-      "deprimiert",
-      "die Trauer",
-      "glücklich"
+      "glücklich",
+      "die Trauer"
     ],
     "definitions": [
       {
@@ -737,10 +717,7 @@
     ],
     "register": "neutral",
     "notes": "Always reflexive: sich fürchten vor + DAT. Synonym: Angst haben vor + DAT.",
-    "added": "2026-04-05",
-    "related": [
-      "die Angst"
-    ]
+    "added": "2026-04-05"
   },
   {
     "id": "besorgt-sein",
@@ -1010,11 +987,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "hundemüde / todmüde = dead tired (very common intensifiers). Opposite: wach (awake), munter (lively).",
-    "added": "2026-04-05",
-    "related": [
-      "munter",
-      "wach"
-    ]
+    "added": "2026-04-05"
   },
   {
     "id": "wach",
@@ -1677,8 +1650,7 @@
     "family_root": "holen",
     "prefix": "ab-",
     "related": [
-      "holen",
-      "wiederholen"
+      "holen"
     ],
     "definitions": [
       {
@@ -1720,7 +1692,6 @@
     "family_root": "holen",
     "prefix": "wieder-",
     "related": [
-      "abholen",
       "holen"
     ],
     "definitions": [
@@ -1844,10 +1815,9 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
-      "behaupten",
-      "erzählen",
+      "sprechen",
       "reden",
-      "sprechen"
+      "erzählen"
     ],
     "definitions": [
       {
@@ -2409,10 +2379,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "gerade = right now (present) OR just now (very recent past). Very common in spoken German.",
-    "added": "2026-04-05",
-    "related": [
-      "vorhin"
-    ]
+    "added": "2026-04-05"
   },
   {
     "id": "vorhin",
@@ -2453,10 +2420,9 @@
     "word": "vor Kurzem",
     "type": "adverb",
     "related": [
-      "in letzter Zeit",
+      "vorhin",
       "kürzlich",
-      "neulich",
-      "vorhin"
+      "neulich"
     ],
     "definitions": [
       {
@@ -3491,8 +3457,7 @@
     "type": "adjective",
     "also_adverb": true,
     "related": [
-      "einsam",
-      "einzig"
+      "einsam"
     ],
     "definitions": [
       {
@@ -3532,9 +3497,8 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
-      "erfahren",
-      "kennenlernen",
-      "wissen"
+      "wissen",
+      "kennenlernen"
     ],
     "definitions": [
       {
@@ -3574,7 +3538,6 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
-      "erfahren",
       "kennen"
     ],
     "definitions": [
@@ -3615,8 +3578,7 @@
     "reflexive": false,
     "prefix": "kennen-",
     "related": [
-      "kennen",
-      "treffen"
+      "kennen"
     ],
     "definitions": [
       {
@@ -3706,10 +3668,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "unterschiedlich = different (within a group); verschieden = different (between objects); anders = different in a different way entirely.",
-    "added": "2026-04-05",
-    "related": [
-      "verschieden"
-    ]
+    "added": "2026-04-05"
   },
   {
     "id": "heiraten",
@@ -4065,7 +4024,6 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
-      "das Treffen",
       "treffen"
     ],
     "definitions": [
@@ -4100,9 +4058,8 @@
     "gender": "das",
     "plural": "die Treffen",
     "related": [
-      "besuchen",
-      "der Termin",
-      "die Verabredung"
+      "die Verabredung",
+      "der Termin"
     ],
     "definitions": [
       {
@@ -4300,10 +4257,9 @@
     "reflexive": false,
     "preposition": "DAT",
     "related": [
-      "anvertrauen",
+      "trauen",
       "das Vertrauen",
-      "sich trauen",
-      "trauen"
+      "anvertrauen"
     ],
     "definitions": [
       {
@@ -4336,10 +4292,8 @@
     "gender": "das",
     "plural": null,
     "related": [
-      "anvertrauen",
-      "sich trauen",
-      "trauen",
-      "vertrauen"
+      "vertrauen",
+      "trauen"
     ],
     "definitions": [
       {
@@ -4375,7 +4329,6 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
-      "das Vertrauen",
       "vertrauen"
     ],
     "definitions": [
@@ -4412,7 +4365,6 @@
     "is_separable": false,
     "reflexive": true,
     "related": [
-      "das Vertrauen",
       "vertrauen"
     ],
     "definitions": [
@@ -4627,7 +4579,8 @@
     "tags": [],
     "register": "neutral",
     "notes": "'Lügen haben kurze Beine' is a very common proverb meaning lies will always be found out. anlügen = to lie TO someone specifically.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "lügen"
   },
   {
     "id": "die-luege",
@@ -4675,7 +4628,6 @@
     "prefix": "an-",
     "family_root": "lügen",
     "related": [
-      "die Lüge",
       "lügen"
     ],
     "definitions": [
@@ -4874,10 +4826,7 @@
     ],
     "register": "informal",
     "notes": "Very common in spoken German. genervt sein = to be annoyed/irritated. 'Das geht mir auf die Nerven' = same meaning, slightly more emphatic.",
-    "added": "2026-04-05",
-    "related": [
-      "stören"
-    ]
+    "added": "2026-04-05"
   },
   {
     "id": "stoeren",
@@ -5143,7 +5092,8 @@
     "family_root": "ziehen",
     "related": [
       "tragen",
-      "ausziehen"
+      "ausziehen",
+      "ziehen"
     ],
     "definitions": [
       {
@@ -5812,7 +5762,8 @@
     "tags": [],
     "register": "neutral",
     "notes": "vorlesen (sep.) = to read aloud. Ich lese gerade... = I'm currently reading...",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "family_root": "lesen"
   },
   {
     "id": "vorlesen",
@@ -6015,5 +5966,55 @@
     "family_root": "steigen",
     "prefix": "aus-",
     "related": []
+  },
+  {
+    "id": "ziehen",
+    "word": "ziehen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to pull, to draw",
+        "note": null
+      },
+      {
+        "meaning": "to move (to a new place)",
+        "note": "takes auxiliary sein when meaning to move residence"
+      },
+      {
+        "meaning": "to drag",
+        "note": null
+      },
+      {
+        "meaning": "to attract",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich ziehe den Koffer hinter mir her.",
+        "en": "I pull the suitcase behind me."
+      },
+      {
+        "de": "Wir ziehen nächstes Jahr nach Berlin.",
+        "en": "We're moving to Berlin next year."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Takes auxiliary sein when meaning to move residence, otherwise uses haben.",
+    "added": "2026-04-05",
+    "auxiliary": "haben",
+    "past_tense": "zog",
+    "past_participle": "gezogen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "ziehen",
+    "related": [
+      "sich anziehen"
+    ]
   }
 ]
