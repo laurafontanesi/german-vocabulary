@@ -80,8 +80,8 @@
         "en": "I'll take an umbrella along, just in case."
       },
       {
-        "de": "Ich habe mein Fahrrad mitgenommen.",
-        "en": "I took my bike along."
+        "de": "Ich habe mein Fahrrad mitgebracht.",
+        "en": "I brought my bike along."
       }
     ],
     "topics": [
@@ -307,10 +307,6 @@
       {
         "de": "Er ist eine fröhliche Person.",
         "en": "He is a cheerful person."
-      },
-      {
-        "de": "Sie lachte fröhlich und winkte uns zu.",
-        "en": "She laughed cheerfully and waved at us."
       }
     ],
     "topics": [
@@ -349,7 +345,8 @@
       }
     ],
     "topics": [
-      "daily life"
+      "daily life",
+      "emotions"
     ],
     "tags": [
       "idiom"
@@ -434,6 +431,892 @@
     ],
     "register": "neutral",
     "notes": "Often used with 'mit' + dative when specifying what you're stopping or quitting.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "empfinden",
+    "word": "empfinden",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "empfand",
+    "past_participle": "empfunden",
+    "is_separable": false,
+    "reflexive": false,
+    "definitions": [
+      {
+        "meaning": "to feel, to sense (an emotion or sensation)",
+        "note": "more conscious and reflective than 'fühlen'"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich empfinde große Dankbarkeit für deine Hilfe.",
+        "en": "I feel a great sense of gratitude for your help."
+      },
+      {
+        "de": "Er empfand Schmerz, aber zeigte es nicht.",
+        "en": "He felt pain but didn't show it."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "body & mind"
+    ],
+    "tags": [
+      "similar to: fühlen, spüren"
+    ],
+    "register": "neutral",
+    "notes": "More reflective/conscious than fühlen or spüren. das Empfinden (noun) = feeling, sentiment.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "spueren",
+    "word": "spüren",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "spürte",
+    "past_participle": "gespürt",
+    "is_separable": false,
+    "reflexive": false,
+    "definitions": [
+      {
+        "meaning": "to feel, to sense (physically or intuitively)",
+        "note": "physical or instinctive sensation"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er spürte die Kälte, als er aus der Tür trat.",
+        "en": "He felt the cold as he stepped out the door."
+      },
+      {
+        "de": "Ich spüre, dass etwas nicht stimmt.",
+        "en": "I can sense that something is wrong."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "body & mind"
+    ],
+    "tags": [
+      "similar to: fühlen, empfinden"
+    ],
+    "register": "neutral",
+    "notes": "spüren = physical/instinctive sensation; empfinden = emotional/reflective feeling; fühlen = general feeling.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "sich-freuen",
+    "word": "sich freuen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "freute sich",
+    "past_participle": "gefreut",
+    "is_separable": false,
+    "reflexive": true,
+    "definitions": [
+      {
+        "meaning": "to be happy, to be glad (about something)",
+        "note": "freuen über + AKK = glad about something that happened; freuen auf + AKK = looking forward to something"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe mich über die Blumen sehr gefreut.",
+        "en": "I was really happy about the flowers."
+      },
+      {
+        "de": "Ich freue mich auf die Ferien.",
+        "en": "I'm looking forward to the holidays."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [
+      "reflexive",
+      "similar to: froh, fröhlich"
+    ],
+    "register": "neutral",
+    "notes": "Key distinction: freuen über + AKK (glad about past/present) vs freuen auf + AKK (looking forward to future).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "die-freude",
+    "word": "die Freude",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Freuden",
+    "definitions": [
+      {
+        "meaning": "joy, delight, pleasure",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Kind strahlte vor Freude.",
+        "en": "The child beamed with joy."
+      },
+      {
+        "de": "Es ist mir eine Freude, Ihnen zu helfen.",
+        "en": "It is a pleasure to help you."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [
+      "related to: sich freuen, froh, fröhlich"
+    ],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-05"
+  },
+  {
+    "id": "gluecklich",
+    "word": "glücklich",
+    "type": "adjective",
+    "also_adverb": true,
+    "related": [
+      "froh",
+      "fröhlich",
+      "traurig",
+      "das Glück"
+    ],
+    "definitions": [
+      {
+        "meaning": "happy, fortunate, lucky",
+        "note": "deeper sense of happiness or contentment than froh"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie führen ein glückliches Leben.",
+        "en": "They lead a happy life."
+      },
+      {
+        "de": "Ich bin glücklich, hier zu sein.",
+        "en": "I am happy to be here."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [
+      "also adverb",
+      "similar to: froh"
+    ],
+    "register": "neutral",
+    "notes": "glücklich = deeper, more lasting happiness; froh = momentary gladness. Glück haben = to be lucky.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "traurig",
+    "word": "traurig",
+    "type": "adjective",
+    "also_adverb": true,
+    "related": [
+      "glücklich",
+      "die Trauer"
+    ],
+    "definitions": [
+      {
+        "meaning": "sad, sorrowful",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie war sehr traurig, als er gegangen ist.",
+        "en": "She was very sad when he left."
+      },
+      {
+        "de": "Das ist eine traurige Geschichte.",
+        "en": "That is a sad story."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [
+      "also adverb"
+    ],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-05"
+  },
+  {
+    "id": "die-angst",
+    "word": "die Angst",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Ängste",
+    "related": [
+      "sich fürchten",
+      "besorgt sein",
+      "die Sorge"
+    ],
+    "definitions": [
+      {
+        "meaning": "fear, anxiety",
+        "note": "Angst vor + DAT = fear of something/someone"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe Angst vor Spinnen.",
+        "en": "I'm afraid of spiders."
+      },
+      {
+        "de": "Sie hatte Angst, allein zu sein.",
+        "en": "She was afraid of being alone."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [
+      "similar to: die Furcht, die Sorge"
+    ],
+    "register": "neutral",
+    "notes": "die Angst = general fear/anxiety; die Furcht = more acute, specific fear; die Sorge = worry about someone/something.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "sich-fuerchten",
+    "word": "sich fürchten",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "fürchtete sich",
+    "past_participle": "gefürchtet",
+    "is_separable": false,
+    "reflexive": true,
+    "preposition": "vor + DAT",
+    "definitions": [
+      {
+        "meaning": "to be afraid of, to fear",
+        "note": "always used with vor + DAT"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Kind fürchtet sich vor der Dunkelheit.",
+        "en": "The child is afraid of the dark."
+      },
+      {
+        "de": "Man braucht sich vor der Zukunft nicht zu fürchten.",
+        "en": "You don't have to be afraid of the future."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [
+      "reflexive"
+    ],
+    "register": "neutral",
+    "notes": "Always reflexive: sich fürchten vor + DAT. Synonym: Angst haben vor + DAT.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "besorgt-sein",
+    "word": "besorgt sein",
+    "type": "expression",
+    "related": [
+      "die Sorge",
+      "die Angst"
+    ],
+    "definitions": [
+      {
+        "meaning": "to be worried, to be concerned (about someone/something)",
+        "note": "besorgt um + AKK"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bin sehr besorgt um dich.",
+        "en": "I am very worried about you."
+      },
+      {
+        "de": "Die Eltern waren besorgt, als das Kind nicht nach Hause kam.",
+        "en": "The parents were worried when the child didn't come home."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "besorgt um + AKK = worried about someone; besorgt über + AKK = concerned about a situation.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "die-sorge",
+    "word": "die Sorge",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Sorgen",
+    "related": [
+      "besorgt sein",
+      "die Angst",
+      "sich sorgen"
+    ],
+    "definitions": [
+      {
+        "meaning": "worry, concern",
+        "note": null
+      },
+      {
+        "meaning": "care, responsibility",
+        "note": "in the sense of looking after someone"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich mache mir Sorgen um ihn.",
+        "en": "I'm worried about him."
+      },
+      {
+        "de": "Keine Sorge! Das schaffen wir.",
+        "en": "Don't worry! We'll manage."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Sich Sorgen machen um + AKK = to worry about. 'Keine Sorge!' = Don't worry! (very common expression).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "ueberraschen",
+    "word": "überraschen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "überraschte",
+    "past_participle": "überrascht",
+    "is_separable": false,
+    "reflexive": false,
+    "definitions": [
+      {
+        "meaning": "to surprise",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich war von deinem Anruf überrascht.",
+        "en": "I was surprised by your call."
+      },
+      {
+        "de": "Er überraschte seine Frau mit einem Blumenstrauß.",
+        "en": "He surprised his wife with a bouquet of flowers."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Überraschung (noun) = the surprise. 'Ich bin überrascht' = I am surprised (state). 'Das überrascht mich' = That surprises me (action).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "deprimiert",
+    "word": "deprimiert",
+    "type": "adjective",
+    "related": [
+      "depressiv",
+      "traurig"
+    ],
+    "definitions": [
+      {
+        "meaning": "depressed, down (temporary state)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bin heute ein bisschen deprimiert.",
+        "en": "I'm feeling a bit down today."
+      },
+      {
+        "de": "Das Wetter macht mich deprimiert.",
+        "en": "The weather is making me feel depressed."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "body & mind"
+    ],
+    "tags": [
+      "similar to: depressiv"
+    ],
+    "register": "neutral",
+    "notes": "deprimiert = temporarily down/depressed (state); depressiv = clinically depressive (character trait). Important distinction.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "beeindruckend",
+    "word": "beeindruckend",
+    "type": "adjective",
+    "also_adverb": true,
+    "related": [
+      "beeindrucken"
+    ],
+    "definitions": [
+      {
+        "meaning": "impressive, striking",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie ist eine beeindruckende Person.",
+        "en": "She is an impressive person."
+      },
+      {
+        "de": "Die Aussicht vom Gipfel war beeindruckend.",
+        "en": "The view from the summit was impressive."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [
+      "also adverb"
+    ],
+    "register": "neutral",
+    "notes": "beeindrucken (verb) = to impress. Ich bin beeindruckt = I am impressed.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "gelaengweilt",
+    "word": "gelangweilt",
+    "type": "adjective",
+    "related": [
+      "langweilig"
+    ],
+    "definitions": [
+      {
+        "meaning": "bored (describes how a person feels)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Kinder sahen gelangweilt aus.",
+        "en": "The children looked bored."
+      },
+      {
+        "de": "Er sitzt gelangweilt in der Ecke.",
+        "en": "He is sitting bored in the corner."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [
+      "similar to: langweilig"
+    ],
+    "register": "neutral",
+    "notes": "gelangweilt = bored (person's feeling); langweilig = boring (quality of a thing or person). 'Ich bin gelangweilt' vs 'Der Film ist langweilig'.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "langweilig",
+    "word": "langweilig",
+    "type": "adjective",
+    "also_adverb": true,
+    "related": [
+      "gelangweilt"
+    ],
+    "definitions": [
+      {
+        "meaning": "boring, dull (describes a thing, situation or person)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Film war total langweilig.",
+        "en": "The film was totally boring."
+      },
+      {
+        "de": "Er ist ein langweiliger Mensch.",
+        "en": "He is a dull person."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [
+      "similar to: gelangweilt"
+    ],
+    "register": "neutral",
+    "notes": "langweilig = boring (quality of something); gelangweilt = bored (how a person feels). Common mistake to confuse these.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "muede",
+    "word": "müde",
+    "type": "adjective",
+    "also_adverb": true,
+    "definitions": [
+      {
+        "meaning": "tired, weary",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bin hundemüde — ich gehe jetzt schlafen.",
+        "en": "I'm dog-tired — I'm going to sleep now."
+      },
+      {
+        "de": "Sie sah müde aus nach der langen Reise.",
+        "en": "She looked tired after the long journey."
+      }
+    ],
+    "topics": [
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "hundemüde / todmüde = dead tired (very common intensifiers). Opposite: wach (awake), munter (lively).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "wach",
+    "word": "wach",
+    "type": "adjective",
+    "related": [
+      "munter",
+      "müde"
+    ],
+    "definitions": [
+      {
+        "meaning": "awake, alert",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bin um 6 Uhr aufgewacht und jetzt bin ich gut wach.",
+        "en": "I woke up at 6 and I'm fully awake now."
+      },
+      {
+        "de": "Der Kaffee hat mich wach gemacht.",
+        "en": "The coffee woke me up."
+      }
+    ],
+    "topics": [
+      "body & mind"
+    ],
+    "tags": [
+      "similar to: munter"
+    ],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-05"
+  },
+  {
+    "id": "munter",
+    "word": "munter",
+    "type": "adjective",
+    "also_adverb": true,
+    "related": [
+      "wach",
+      "müde"
+    ],
+    "definitions": [
+      {
+        "meaning": "lively, bright, cheerful and alert",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie fühlt sich frisch und munter.",
+        "en": "She feels fresh and lively."
+      },
+      {
+        "de": "Die Kinder waren morgens immer munter.",
+        "en": "The children were always lively in the mornings."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "emotions"
+    ],
+    "tags": [
+      "similar to: wach"
+    ],
+    "register": "neutral",
+    "notes": "munter implies both being awake AND in good spirits — wach is just awake.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "neugierig",
+    "word": "neugierig",
+    "type": "adjective",
+    "also_adverb": true,
+    "definitions": [
+      {
+        "meaning": "curious, nosy",
+        "note": "neugierig auf + AKK = curious about something"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bin sehr neugierig auf diese Geschichte.",
+        "en": "I'm very curious about this story."
+      },
+      {
+        "de": "Kinder sind von Natur aus neugierig.",
+        "en": "Children are naturally curious."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "neugierig auf + AKK = curious about. Can also mean nosy in a negative sense depending on context.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "gespannt",
+    "word": "gespannt",
+    "type": "adjective",
+    "related": [
+      "sich entspannen",
+      "entspannt"
+    ],
+    "definitions": [
+      {
+        "meaning": "excited, eager, tense with anticipation",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bin sehr gespannt auf das Ergebnis.",
+        "en": "I'm very eager to see the result."
+      },
+      {
+        "de": "Das Publikum war gespannt.",
+        "en": "The audience was on the edge of their seats."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [
+      "similar to: entspannt"
+    ],
+    "register": "neutral",
+    "notes": "gespannt = excited/tense with anticipation (positive); entspannt = relaxed (opposite). 'Ich bin gespannt!' = I can't wait! / I'm curious!",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "entspannt",
+    "word": "entspannt",
+    "type": "adjective",
+    "also_adverb": true,
+    "related": [
+      "sich entspannen",
+      "gespannt"
+    ],
+    "definitions": [
+      {
+        "meaning": "relaxed, at ease",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nach dem Urlaub fühle ich mich sehr entspannt.",
+        "en": "After the holiday I feel very relaxed."
+      },
+      {
+        "de": "Sie geht entspannt mit Stress um.",
+        "en": "She deals with stress in a relaxed way."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "body & mind"
+    ],
+    "tags": [
+      "also adverb",
+      "similar to: gespannt"
+    ],
+    "register": "neutral",
+    "notes": "sich entspannen (verb) = to relax. Opposite: gespannt (tense/eager) or gestresst (stressed).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "sich-ausruhen",
+    "word": "sich ausruhen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "ruhte aus",
+    "past_participle": "ausgeruht",
+    "is_separable": true,
+    "reflexive": true,
+    "related": [
+      "sich erholen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to rest, to take a break",
+        "note": "short rest to recover energy"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nach der Wanderung musste ich mich ausruhen.",
+        "en": "After the hike I had to rest."
+      },
+      {
+        "de": "Ruh dich ein bisschen aus!",
+        "en": "Take a little rest!"
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "daily life"
+    ],
+    "tags": [
+      "reflexive",
+      "separable",
+      "similar to: sich erholen"
+    ],
+    "register": "neutral",
+    "notes": "sich ausruhen = short rest; sich erholen = recover (implies longer recuperation or from illness/exhaustion).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "sich-erholen",
+    "word": "sich erholen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "erholte sich",
+    "past_participle": "erholt",
+    "is_separable": false,
+    "reflexive": true,
+    "preposition": "von + DAT",
+    "related": [
+      "sich ausruhen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to recover, to recuperate",
+        "note": "von + DAT = to recover from something"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich erhole mich von der Arbeit.",
+        "en": "I'm recovering from work."
+      },
+      {
+        "de": "Nach ihrem Workout erholt sie sich eine Stunde lang.",
+        "en": "After her workout she recovers for an hour."
+      }
+    ],
+    "topics": [
+      "body & mind"
+    ],
+    "tags": [
+      "reflexive"
+    ],
+    "register": "neutral",
+    "notes": "sich erholen von + DAT. Implies fuller recovery than sich ausruhen. Also used for holiday recovery: 'Im Urlaub erholt man sich.'",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "verrueckt",
+    "word": "verrückt",
+    "type": "adjective",
+    "also_adverb": true,
+    "related": [
+      "wahnsinnig",
+      "doof"
+    ],
+    "definitions": [
+      {
+        "meaning": "crazy, mad",
+        "note": null
+      },
+      {
+        "meaning": "incredible, unbelievable",
+        "note": "informal intensifier"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Du bist wohl verrückt!",
+        "en": "You must be crazy!"
+      },
+      {
+        "de": "Die Zeit vergeht verrückt schnell.",
+        "en": "Time goes by incredibly fast."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [
+      "also adverb",
+      "informal"
+    ],
+    "register": "informal",
+    "notes": "Can be affectionate/playful or critical depending on context. Also used as intensifier: 'verrückt schnell' = insanely fast.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "wahnsinnig",
+    "word": "wahnsinnig",
+    "type": "adjective",
+    "also_adverb": true,
+    "related": [
+      "verrückt"
+    ],
+    "definitions": [
+      {
+        "meaning": "insane, mad",
+        "note": null
+      },
+      {
+        "meaning": "incredibly, insanely",
+        "note": "very common informal intensifier"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist wahnsinnig interessant.",
+        "en": "That is incredibly interesting."
+      },
+      {
+        "de": "Er wurde wahnsinnig vor Sorge.",
+        "en": "He went mad with worry."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [
+      "also adverb",
+      "informal"
+    ],
+    "register": "informal",
+    "notes": "As an intensifier (wahnsinnig + adjective) it is extremely common in spoken German — similar to 'insanely' in English.",
     "added": "2026-04-05"
   }
 ]
