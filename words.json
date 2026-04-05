@@ -6405,5 +6405,44 @@
     "related": [
       "unvernünftig"
     ]
+  },
+  {
+    "id": "das-ereignis",
+    "word": "das Ereignis",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "event",
+        "note": null
+      },
+      {
+        "meaning": "occurrence",
+        "note": null
+      },
+      {
+        "meaning": "incident",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das war ein wichtiges Ereignis in der Geschichte.",
+        "en": "That was an important event in history."
+      },
+      {
+        "de": "Nach diesem Ereignis hat sich alles verändert.",
+        "en": "After this incident, everything changed."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-05",
+    "gender": "das",
+    "plural": "die Ereignisse"
   }
 ]
