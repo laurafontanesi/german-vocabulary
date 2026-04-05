@@ -239,60 +239,77 @@ def print_entry(w: dict):
 # ── related word linking ───────────────────────────────────────────────────────
 
 def normalise(word: str) -> str:
-    """Normalise a word for fuzzy matching — lowercase, strip gender/articles."""
     w = word.lower().strip()
-    # strip leading articles/pronouns
-    w = re.sub(r'^(der|die|das|sich|ein|eine)\s+', '', w)
+    w = re.sub(r"^(der|die|das|sich|ein|eine|einen|einem)\s+", "", w)
     return w.strip()
+
+def auto_detect_related(words: list, new_entry: dict) -> list:
+    """
+    Scan the database and return a list of words that should be related
+    to the new entry, based on:
+      1. Shared family_root
+      2. New entry listed in existing word's related list
+      3. Tags like 'similar to: X' or 'verb family: X'
+    """
+    new_word = new_entry["word"]
+    new_norm = normalise(new_word)
+    new_id   = new_entry["id"]
+    new_family = new_entry.get("family_root", "")
+    new_related_norms = {normalise(r) for r in new_entry.get("related", [])}
+
+    by_norm  = {normalise(w["word"]): w for w in words if w["id"] != new_id}
+    by_lower = {w["word"].lower(): w for w in words if w["id"] != new_id}
+
+    found = set()
+
+    for w in words:
+        if w["id"] == new_id:
+            continue
+        w_norm = normalise(w["word"])
+
+        # Signal 1: shared family_root
+        if new_family and w.get("family_root") == new_family:
+            found.add(w["word"])
+
+        # Signal 2: existing entry has new word in its related list
+        if new_norm in {normalise(r) for r in w.get("related", [])}:
+            found.add(w["word"])
+
+        # Signal 3: new entry's related list mentions this existing word
+        if w_norm in new_related_norms or w["word"].lower() in new_related_norms:
+            found.add(w["word"])
+
+        # Signal 4: tags like 'similar to: X', 'verb family: X'
+        for tag in new_entry.get("tags", []):
+            if ":" in tag:
+                after = tag.split(":", 1)[1].strip().lower()
+                parts = [p.strip() for p in after.split(",")]
+                for p in parts:
+                    p_norm = re.sub(r"^(der|die|das|sich|ein|eine)\s+", "", p).strip()
+                    if p_norm and (p_norm == w_norm or p == w["word"].lower()):
+                        found.add(w["word"])
+
+    return sorted(found)
 
 def link_related(words: list, new_entry: dict) -> int:
     """
-    After adding a new entry, auto-link related words bidirectionally.
-    Returns number of existing entries updated.
+    After adding a new entry, update existing entries to include
+    the new word in their related lists. Returns count updated.
     """
-    new_word  = new_entry["word"]
-    new_norm  = normalise(new_word)
-    new_id    = new_entry["id"]
-    new_related = [normalise(r) for r in new_entry.get("related", [])]
+    new_word = new_entry["word"]
+    new_id   = new_entry["id"]
+    should_link = {r.lower() for r in new_entry.get("related", [])}
+    should_link.add(new_word.lower())
 
     updated = 0
     for w in words:
         if w["id"] == new_id:
-            continue  # skip the new entry itself
-
-        w_norm = normalise(w["word"])
-        w_related_norms = [normalise(r) for r in w.get("related", [])]
-
-        should_link = False
-
-        # Case 1: new entry lists this word as related
-        if w_norm in new_related or w["word"].lower() in new_related:
-            should_link = True
-
-        # Case 2: this existing word lists the new word as related
-        if new_norm in w_related_norms or new_word.lower() in w_related_norms:
-            should_link = True
-
-        if should_link:
+            continue
+        if w["word"] in new_entry.get("related", []):
             existing = w.get("related", [])
             if new_word not in existing:
                 w["related"] = existing + [new_word]
                 updated += 1
-
-    # Also ensure new entry's related list only contains words that exist
-    existing_words = {normalise(w["word"]) for w in words}
-    existing_words_raw = {w["word"].lower() for w in words}
-    valid_related = []
-    invalid_related = []
-    for r in new_entry.get("related", []):
-        if normalise(r) in existing_words or r.lower() in existing_words_raw:
-            valid_related.append(r)
-        else:
-            invalid_related.append(r)
-    if invalid_related:
-        print(f"  ⚑ Related words not found in database (kept anyway): {', '.join(invalid_related)}")
-    new_entry["related"] = new_entry.get("related", [])  # keep all, just warn
-
     return updated
 
 # ── commands ───────────────────────────────────────────────────────────────────
@@ -574,9 +591,23 @@ def cmd_add(args):
         if n:
             entry["notes"] = n
 
-    related = ask_list("Related words (synonyms, family members)")
-    if related:
-        entry["related"] = related
+    # ── auto-detect related words from existing database ─────────────────────
+    detected = auto_detect_related(words, entry)
+    ai_related = entry.get("related", [])
+    merged = sorted(set(detected) | set(ai_related))
+
+    if merged:
+        print(f"  Auto-detected related words: {", ".join(merged)}")
+        extra = ask("  Add more? (comma-separated, or Enter to keep)")
+        if extra:
+            for e in [e.strip() for e in extra.split(",") if e.strip()]:
+                if e not in merged:
+                    merged.append(e)
+        entry["related"] = merged
+    else:
+        extra = ask_list("Related words (or Enter to skip)")
+        if extra:
+            entry["related"] = extra
 
     # ── preview & save ────────────────────────────────────────────────────────
     print()

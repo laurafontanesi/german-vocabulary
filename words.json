@@ -66,7 +66,8 @@
     "family_root": "nehmen",
     "prefix": "mit-",
     "related": [
-      "nehmen"
+      "nehmen",
+      "teilnehmen"
     ],
     "definitions": [
       {
@@ -108,6 +109,7 @@
     "family_root": "nehmen",
     "prefix": "teil-",
     "related": [
+      "mitnehmen",
       "nehmen"
     ],
     "definitions": [
@@ -293,9 +295,10 @@
     "type": "adjective",
     "also_adverb": true,
     "related": [
+      "die Freude",
       "froh",
-      "sich freuen",
-      "die Freude"
+      "glücklich",
+      "sich freuen"
     ],
     "definitions": [
       {
@@ -467,7 +470,10 @@
     ],
     "register": "neutral",
     "notes": "More reflective/conscious than fühlen or spüren. das Empfinden (noun) = feeling, sentiment.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "related": [
+      "spüren"
+    ]
   },
   {
     "id": "spueren",
@@ -503,7 +509,10 @@
     ],
     "register": "neutral",
     "notes": "spüren = physical/instinctive sensation; empfinden = emotional/reflective feeling; fühlen = general feeling.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "related": [
+      "empfinden"
+    ]
   },
   {
     "id": "sich-freuen",
@@ -539,7 +548,12 @@
     ],
     "register": "neutral",
     "notes": "Key distinction: freuen über + AKK (glad about past/present) vs freuen auf + AKK (looking forward to future).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "related": [
+      "die Freude",
+      "froh",
+      "fröhlich"
+    ]
   },
   {
     "id": "die-freude",
@@ -571,7 +585,12 @@
     ],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "related": [
+      "froh",
+      "fröhlich",
+      "sich freuen"
+    ]
   },
   {
     "id": "gluecklich",
@@ -617,8 +636,9 @@
     "type": "adjective",
     "also_adverb": true,
     "related": [
-      "glücklich",
-      "die Trauer"
+      "deprimiert",
+      "die Trauer",
+      "glücklich"
     ],
     "definitions": [
       {
@@ -717,7 +737,10 @@
     ],
     "register": "neutral",
     "notes": "Always reflexive: sich fürchten vor + DAT. Synonym: Angst haben vor + DAT.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "related": [
+      "die Angst"
+    ]
   },
   {
     "id": "besorgt-sein",
@@ -987,7 +1010,11 @@
     "tags": [],
     "register": "neutral",
     "notes": "hundemüde / todmüde = dead tired (very common intensifiers). Opposite: wach (awake), munter (lively).",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "related": [
+      "munter",
+      "wach"
+    ]
   },
   {
     "id": "wach",
@@ -1650,7 +1677,8 @@
     "family_root": "holen",
     "prefix": "ab-",
     "related": [
-      "holen"
+      "holen",
+      "wiederholen"
     ],
     "definitions": [
       {
@@ -1692,6 +1720,7 @@
     "family_root": "holen",
     "prefix": "wieder-",
     "related": [
+      "abholen",
       "holen"
     ],
     "definitions": [
@@ -1815,9 +1844,10 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
-      "sprechen",
+      "behaupten",
+      "erzählen",
       "reden",
-      "erzählen"
+      "sprechen"
     ],
     "definitions": [
       {
@@ -2379,7 +2409,10 @@
     "tags": [],
     "register": "neutral",
     "notes": "gerade = right now (present) OR just now (very recent past). Very common in spoken German.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "related": [
+      "vorhin"
+    ]
   },
   {
     "id": "vorhin",
@@ -2420,9 +2453,10 @@
     "word": "vor Kurzem",
     "type": "adverb",
     "related": [
-      "vorhin",
+      "in letzter Zeit",
       "kürzlich",
-      "neulich"
+      "neulich",
+      "vorhin"
     ],
     "definitions": [
       {
@@ -3457,7 +3491,8 @@
     "type": "adjective",
     "also_adverb": true,
     "related": [
-      "einsam"
+      "einsam",
+      "einzig"
     ],
     "definitions": [
       {
@@ -3497,8 +3532,9 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
-      "wissen",
-      "kennenlernen"
+      "erfahren",
+      "kennenlernen",
+      "wissen"
     ],
     "definitions": [
       {
@@ -3538,6 +3574,7 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
+      "erfahren",
       "kennen"
     ],
     "definitions": [
@@ -3578,7 +3615,8 @@
     "reflexive": false,
     "prefix": "kennen-",
     "related": [
-      "kennen"
+      "kennen",
+      "treffen"
     ],
     "definitions": [
       {
@@ -3668,7 +3706,10 @@
     "tags": [],
     "register": "neutral",
     "notes": "unterschiedlich = different (within a group); verschieden = different (between objects); anders = different in a different way entirely.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "related": [
+      "verschieden"
+    ]
   },
   {
     "id": "heiraten",
@@ -4024,6 +4065,7 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
+      "das Treffen",
       "treffen"
     ],
     "definitions": [
@@ -4058,8 +4100,9 @@
     "gender": "das",
     "plural": "die Treffen",
     "related": [
-      "die Verabredung",
-      "der Termin"
+      "besuchen",
+      "der Termin",
+      "die Verabredung"
     ],
     "definitions": [
       {
@@ -4257,9 +4300,10 @@
     "reflexive": false,
     "preposition": "DAT",
     "related": [
-      "trauen",
+      "anvertrauen",
       "das Vertrauen",
-      "anvertrauen"
+      "sich trauen",
+      "trauen"
     ],
     "definitions": [
       {
@@ -4292,8 +4336,10 @@
     "gender": "das",
     "plural": null,
     "related": [
-      "vertrauen",
-      "trauen"
+      "anvertrauen",
+      "sich trauen",
+      "trauen",
+      "vertrauen"
     ],
     "definitions": [
       {
@@ -4329,6 +4375,7 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
+      "das Vertrauen",
       "vertrauen"
     ],
     "definitions": [
@@ -4365,6 +4412,7 @@
     "is_separable": false,
     "reflexive": true,
     "related": [
+      "das Vertrauen",
       "vertrauen"
     ],
     "definitions": [
@@ -4627,6 +4675,7 @@
     "prefix": "an-",
     "family_root": "lügen",
     "related": [
+      "die Lüge",
       "lügen"
     ],
     "definitions": [
@@ -4825,7 +4874,10 @@
     ],
     "register": "informal",
     "notes": "Very common in spoken German. genervt sein = to be annoyed/irritated. 'Das geht mir auf die Nerven' = same meaning, slightly more emphatic.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "related": [
+      "stören"
+    ]
   },
   {
     "id": "stoeren",
@@ -5921,5 +5973,47 @@
     "register": "neutral",
     "notes": "ankommen (sein) = to arrive. die Ankunft = the arrival. abfahren = to depart (opposite).",
     "added": "2026-04-05"
+  },
+  {
+    "id": "aussteigen",
+    "word": "aussteigen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to get out of, to exit (a vehicle)",
+        "note": "used with aus + DAT"
+      },
+      {
+        "meaning": "to drop out of, to quit (a situation, lifestyle, or commitment)",
+        "note": "figurative use"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich steige an der nächsten Haltestelle aus.",
+        "en": "I'm getting off at the next stop."
+      },
+      {
+        "de": "Er ist aus dem Geschäft ausgestiegen.",
+        "en": "He dropped out of the business."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-05",
+    "auxiliary": "sein",
+    "past_tense": "stieg aus",
+    "past_participle": "ausgestiegen",
+    "is_separable": true,
+    "reflexive": false,
+    "preposition": "aus + DAT",
+    "family_root": "steigen",
+    "prefix": "aus-",
+    "related": []
   }
 ]
