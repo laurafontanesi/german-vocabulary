@@ -4065,38 +4065,6 @@
     "usage": "both"
   },
   {
-    "id": "sauheiß-saukalt",
-    "word": "saukalt / sauheiß",
-    "type": "expression",
-    "definitions": [
-      {
-        "meaning": "freezing cold / boiling hot (lit. pig-cold / pig-hot)",
-        "note": "intensifier using 'Sau' (sow/pig)"
-      }
-    ],
-    "examples": [
-      {
-        "de": "Heute ist es draußen saukalt — zieh eine Jacke an!",
-        "en": "It's freezing cold outside today — put a jacket on!"
-      },
-      {
-        "de": "Im August ist es hier sauheiß.",
-        "en": "In August it's boiling hot here."
-      }
-    ],
-    "topics": [
-      "nature & weather",
-      "daily life"
-    ],
-    "tags": [
-      "informal",
-      "intensifier"
-    ],
-    "register": "informal",
-    "notes": "'Sau-' as a prefix is a very productive intensifier in colloquial German: saukalt, sauheiß, sauteuer, saugut, saublöd. Roughly equivalent to 'bloody' in British English.",
-    "added": "2026-04-05"
-  },
-  {
     "id": "großzügig",
     "word": "großzügig",
     "type": "adj/adv",
