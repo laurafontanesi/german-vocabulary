@@ -931,37 +931,9 @@ function toggleCard(id, event) {
 
 function searchRelated(word, event) {
   event.stopPropagation();
-
-  // clear all filters so the word is always visible
-  activeType   = null;
-  activeTopic  = null;
-  activeAlpha  = null;
-  userSortOverride = false;
-  document.querySelectorAll('.filter-btn, .alpha-btn').forEach(b => b.classList.remove('active'));
-
-  // set search to exact word
   document.getElementById('search').value = word;
   applyFilters();
-
-  // open the card if there is exactly one result
-  setTimeout(() => {
-    const cards = document.querySelectorAll('.word-card');
-    if (cards.length === 1) {
-      cards[0].classList.add('open');
-    } else {
-      // find and open the card whose word matches exactly
-      const match = [...cards].find(c => {
-        const title = c.querySelector('.card-word');
-        return title && title.textContent.trim().toLowerCase() === word.toLowerCase();
-      });
-      if (match) {
-        match.classList.add('open');
-        match.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      } else {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
-    }
-  }, 50);
+  window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
 // ── practice ───────────────────────────────────────────────────────────────────
