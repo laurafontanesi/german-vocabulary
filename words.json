@@ -4929,5 +4929,47 @@
     "register": "neutral",
     "notes": "die Unterstützung (noun) = support. Unterstützung leisten/geben = to provide support.",
     "added": "2026-04-05"
+  },
+  {
+    "id": "hoeren",
+    "word": "hören",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to hear",
+        "note": null
+      },
+      {
+        "meaning": "to listen to",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich kann dich nicht hören.",
+        "en": "I can't hear you."
+      },
+      {
+        "de": "Sie hört gerne Musik.",
+        "en": "She likes to listen to music."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-05",
+    "auxiliary": "haben",
+    "past_tense": "hörte",
+    "past_participle": "gehört",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "hören",
+    "related": [
+      "aufhören"
+    ]
   }
 ]
