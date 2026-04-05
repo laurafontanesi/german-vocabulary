@@ -14,7 +14,6 @@ german_vocabulary/
 ├── index.html          ← the website (browse + practice)
 ├── vocab.py            ← CLI tool for adding/managing words
 ├── fix_related.py      ← utility to repair bidirectional links
-├── .env                ← API key (never committed to git)
 └── README.md           ← this file
 ```
 
@@ -201,18 +200,3 @@ git push
 ```
 
 The live site updates within ~60 seconds of pushing.
-
----
-
-## Current vocabulary stats
-
-| | |
-|---|---|
-| Total entries | 169 |
-| Verbs | 87 |
-| Adjectives | 30 |
-| Nouns | 22 |
-| Adverbs | 15 |
-| Expressions | 12 |
-| Constructions | 3 |
-| Topics | 13 |
