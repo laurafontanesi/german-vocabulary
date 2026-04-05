@@ -1343,7 +1343,13 @@ function checkAnswer() {
   }
 
   scoreTried++;
-  sessionLog.push({ word: w.word, type: w.type, correct, yourAnswer: input, correctAnswer });
+  // capture the prompt that was shown to the user
+  let prompt = '';
+  if (practiceMode === 'de-en') prompt = w.word;
+  else if (practiceMode === 'en-de') prompt = w.definitions[0].meaning;
+  else if (practiceMode === 'conjugation') prompt = w.word;
+  else if (practiceMode === 'articles') prompt = '___ ' + w.word.replace(/^(der|die|das)\s+/i, '');
+  sessionLog.push({ word: w.word, type: w.type, correct, prompt, yourAnswer: input, correctAnswer });
   const fb = document.getElementById('practice-feedback');
   if (correct) {
     scoreCorrect++;
@@ -1414,7 +1420,7 @@ function openSummary() {
   const correctSection = document.getElementById('summary-correct-section');
   if (correct.length) {
     correctSection.innerHTML = `<div class="summary-section-title">✓ Correct (${correct.length})</div>` +
-      correct.map(e => `<div class="summary-item"><span class="word">${e.word}</span><span class="answer">${e.yourAnswer}</span></div>`).join('');
+      correct.map(e => `<div class="summary-item"><span class="word">${e.prompt}</span><span class="answer">${e.yourAnswer}</span></div>`).join('');
   } else {
     correctSection.innerHTML = '';
   }
@@ -1422,7 +1428,7 @@ function openSummary() {
   const wrongSection = document.getElementById('summary-wrong-section');
   if (wrong.length) {
     wrongSection.innerHTML = `<div class="summary-section-title">✗ To review (${wrong.length})</div>` +
-      wrong.map(e => `<div class="summary-item"><span class="word">${e.word}</span><span class="answer" style="color:var(--accent)">${e.yourAnswer} → ${e.correctAnswer}</span></div>`).join('');
+      wrong.map(e => `<div class="summary-item"><span class="word">${e.prompt}</span><span class="answer" style="color:var(--accent)">${e.correctAnswer}</span></div>`).join('');
   } else {
     wrongSection.innerHTML = '';
   }
