@@ -3969,5 +3969,965 @@
     "register": "neutral",
     "notes": "geizig = stingy/miserly (opposite). großzügig also means 'broad/spacious' in a physical sense (eine großzügige Wohnung = a spacious flat).",
     "added": "2026-04-05"
+  },
+  {
+    "id": "treffen",
+    "word": "treffen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "traf",
+    "past_participle": "getroffen",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "das Treffen",
+      "kennenlernen",
+      "besuchen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to meet (someone you know)",
+        "note": null
+      },
+      {
+        "meaning": "to meet by chance, to encounter",
+        "note": "treffen auf + AKK = to come across"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Heute treffe ich meine Freundin in der Stadt.",
+        "en": "Today I'm meeting my friend in the city."
+      },
+      {
+        "de": "Gestern traf ich ihn zufällig im Supermarkt.",
+        "en": "Yesterday I ran into him by chance at the supermarket."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [
+      "similar to: kennenlernen, besuchen"
+    ],
+    "register": "neutral",
+    "notes": "treffen = to meet someone you already know; kennenlernen = to meet for the first time. treffen auf + AKK = to encounter by chance.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "besuchen",
+    "word": "besuchen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "besuchte",
+    "past_participle": "besucht",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "treffen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to visit (a person or place)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Jeden Sonntag besuche ich meine Eltern.",
+        "en": "Every Sunday I visit my parents."
+      },
+      {
+        "de": "Meine Freunde haben mich in Basel besucht.",
+        "en": "My friends came to visit me in Basel."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "besuchen = to visit (people or places). Also: die Schule/Uni besuchen = to attend school/university.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "das-treffen",
+    "word": "das Treffen",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Treffen",
+    "related": [
+      "die Verabredung",
+      "der Termin"
+    ],
+    "definitions": [
+      {
+        "meaning": "meeting, get-together (informal)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe morgen ein Treffen mit alten Schulfreunden.",
+        "en": "I have a get-together with old school friends tomorrow."
+      },
+      {
+        "de": "Das Treffen war sehr schön.",
+        "en": "The meeting was very nice."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [
+      "similar to: die Verabredung, der Termin"
+    ],
+    "register": "neutral",
+    "notes": "das Treffen = informal gathering/meetup; die Verabredung = personal date/arrangement with friends; der Termin = professional appointment.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "die-verabredung",
+    "word": "die Verabredung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Verabredungen",
+    "related": [
+      "das Treffen",
+      "der Termin"
+    ],
+    "definitions": [
+      {
+        "meaning": "arrangement, date, plan to meet (informal/personal)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe heute Abend eine Verabredung mit Freunden.",
+        "en": "I have plans to meet friends this evening."
+      },
+      {
+        "de": "Wir haben uns für Samstag verabredet.",
+        "en": "We made plans to meet on Saturday."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [
+      "similar to: das Treffen, der Termin"
+    ],
+    "register": "neutral",
+    "notes": "die Verabredung = personal/social arrangement; der Termin = professional appointment. sich verabreden = to make plans to meet.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "der-termin",
+    "word": "der Termin",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Termine",
+    "related": [
+      "die Verabredung",
+      "das Treffen"
+    ],
+    "definitions": [
+      {
+        "meaning": "appointment, scheduled meeting (professional)",
+        "note": null
+      },
+      {
+        "meaning": "deadline",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe um 10 Uhr einen Termin beim Arzt.",
+        "en": "I have a doctor's appointment at 10 o'clock."
+      },
+      {
+        "de": "Montags habe ich immer viele Termine.",
+        "en": "I always have lots of appointments on Mondays."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "people & relationships"
+    ],
+    "tags": [
+      "similar to: die Verabredung"
+    ],
+    "register": "neutral",
+    "notes": "der Termin = professional appointment or deadline; die Verabredung = personal/social plans. einen Termin vereinbaren = to make an appointment.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "die-beziehung",
+    "word": "die Beziehung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Beziehungen",
+    "related": [
+      "das Verhältnis"
+    ],
+    "definitions": [
+      {
+        "meaning": "relationship (romantic or otherwise)",
+        "note": null
+      },
+      {
+        "meaning": "connection, link (between things or concepts)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie sind seit drei Jahren in einer Beziehung.",
+        "en": "They have been in a relationship for three years."
+      },
+      {
+        "de": "Die Beziehung zwischen Mensch und Natur ist komplex.",
+        "en": "The relationship between humans and nature is complex."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [
+      "similar to: das Verhältnis"
+    ],
+    "register": "neutral",
+    "notes": "die Beziehung = relationship (broad, romantic or abstract); das Verhältnis = relationship/ratio (more formal or specific). 'In dieser Beziehung' = in this respect.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "das-verhaeltnis",
+    "word": "das Verhältnis",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Verhältnisse",
+    "related": [
+      "die Beziehung"
+    ],
+    "definitions": [
+      {
+        "meaning": "relationship, rapport (with someone)",
+        "note": null
+      },
+      {
+        "meaning": "ratio, proportion",
+        "note": "mathematical or abstract"
+      },
+      {
+        "meaning": "affair (romantic)",
+        "note": "ein außereheliches Verhältnis = an extramarital affair"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe ein gutes Verhältnis zu meinen Kollegen.",
+        "en": "I have a good relationship with my colleagues."
+      },
+      {
+        "de": "Das Verhältnis von Arbeit und Freizeit ist wichtig.",
+        "en": "The balance between work and leisure is important."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [
+      "similar to: die Beziehung"
+    ],
+    "register": "neutral",
+    "notes": "das Verhältnis is more formal/neutral than die Beziehung. Also means ratio/proportion. im Verhältnis zu = in relation to / compared to.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "vertrauen",
+    "word": "vertrauen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "vertraute",
+    "past_participle": "vertraut",
+    "is_separable": false,
+    "reflexive": false,
+    "preposition": "DAT",
+    "related": [
+      "trauen",
+      "das Vertrauen",
+      "anvertrauen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to trust (someone or something)",
+        "note": "always takes dative"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich vertraue dir vollständig.",
+        "en": "I trust you completely."
+      },
+      {
+        "de": "Sie vertraut ihrer Intuition.",
+        "en": "She trusts her intuition."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Always dative: ich vertraue DIR (not dich). das Vertrauen (noun) = trust. jemandem vertrauen = general trust; jemandem trauen = similar but more colloquial.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "das-vertrauen",
+    "word": "das Vertrauen",
+    "type": "noun",
+    "gender": "das",
+    "plural": null,
+    "related": [
+      "vertrauen",
+      "trauen"
+    ],
+    "definitions": [
+      {
+        "meaning": "trust, confidence",
+        "note": "kein Plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Vertrauen ist die Grundlage jeder guten Beziehung.",
+        "en": "Trust is the foundation of every good relationship."
+      },
+      {
+        "de": "Er hat mein Vertrauen missbraucht.",
+        "en": "He abused my trust."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "No plural. Vertrauen haben in + AKK = to have confidence in. Vertrauen schenken = to place one's trust in someone.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "anvertrauen",
+    "word": "anvertrauen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "vertraute an",
+    "past_participle": "anvertraut",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "vertrauen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to entrust (someone with something), to confide",
+        "note": "jmdm. etw. anvertrauen = to entrust sth to sb"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich kann ihr meine Geheimnisse anvertrauen.",
+        "en": "I can confide my secrets to her."
+      },
+      {
+        "de": "Er hat mir seinen Schlüssel anvertraut.",
+        "en": "He entrusted me with his key."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "anvertrauen = to entrust someone with something valuable (physical or emotional). sich jemandem anvertrauen = to confide in someone.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "sich-trauen",
+    "word": "sich trauen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "traute sich",
+    "past_participle": "getraut",
+    "is_separable": false,
+    "reflexive": true,
+    "related": [
+      "vertrauen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to dare (to do something)",
+        "note": "sich trauen + zu + Infinitiv"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich traue mich nicht, ihn anzusprechen.",
+        "en": "I don't dare to talk to him."
+      },
+      {
+        "de": "Traust du dich, das zu sagen?",
+        "en": "Do you dare to say that?"
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "emotions"
+    ],
+    "tags": [
+      "reflexive"
+    ],
+    "register": "neutral",
+    "notes": "sich trauen = to dare (requires courage). Different from vertrauen (to trust). Also used colloquially: 'Trau dich!' = Go for it! / Don't be shy!",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "die-verantwortung",
+    "word": "die Verantwortung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Verantwortungen",
+    "related": [
+      "verantwortlich"
+    ],
+    "definitions": [
+      {
+        "meaning": "responsibility, accountability",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Eltern haben eine große Verantwortung für ihre Kinder.",
+        "en": "Parents have a great responsibility towards their children."
+      },
+      {
+        "de": "Ich übernehme die Verantwortung dafür.",
+        "en": "I take responsibility for it."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Verantwortung übernehmen/tragen = to take/bear responsibility. verantwortlich für + AKK = responsible for.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "rechnen-mit",
+    "word": "rechnen mit",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "rechnete mit",
+    "past_participle": "gerechnet",
+    "is_separable": false,
+    "reflexive": false,
+    "preposition": "mit + DAT",
+    "related": [
+      "zählen auf"
+    ],
+    "definitions": [
+      {
+        "meaning": "to count on, to rely on, to expect",
+        "note": "mit + DAT"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich kann immer mit dir rechnen.",
+        "en": "I can always count on you."
+      },
+      {
+        "de": "Damit hatte ich nicht gerechnet.",
+        "en": "I hadn't expected that."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [
+      "similar to: zählen auf"
+    ],
+    "register": "neutral",
+    "notes": "rechnen mit = to count on / to expect (something might happen). zählen auf = to count on (more about relying on a person).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "zaehlen-auf",
+    "word": "zählen auf",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "zählte auf",
+    "past_participle": "gezählt",
+    "is_separable": false,
+    "reflexive": false,
+    "preposition": "auf + AKK",
+    "related": [
+      "rechnen mit"
+    ],
+    "definitions": [
+      {
+        "meaning": "to count on, to rely on (a person)",
+        "note": "auf + AKK"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich zähle auf dich!",
+        "en": "I'm counting on you!"
+      },
+      {
+        "de": "Auf sie kann man immer zählen.",
+        "en": "You can always count on her."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [
+      "similar to: rechnen mit"
+    ],
+    "register": "neutral",
+    "notes": "zählen auf + AKK = to count on a person (emphasis on reliability). rechnen mit + DAT = to count on / to expect (broader use).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "sich-verstehen",
+    "word": "sich verstehen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "verstand sich",
+    "past_participle": "verstanden",
+    "is_separable": false,
+    "reflexive": true,
+    "related": [
+      "auskommen mit"
+    ],
+    "definitions": [
+      {
+        "meaning": "to get along (with someone), to understand each other",
+        "note": "sich verstehen mit + DAT"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir verstehen uns sehr gut.",
+        "en": "We get along very well."
+      },
+      {
+        "de": "Ich verstehe mich gut mit meinen Kollegen.",
+        "en": "I get along well with my colleagues."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [
+      "reflexive"
+    ],
+    "register": "neutral",
+    "notes": "sich verstehen = to get along (mutual understanding); miteinander auskommen = to get by/manage together (more about coexisting). Both are common.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "luegen",
+    "word": "lügen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "log",
+    "past_participle": "gelogen",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "anlügen",
+      "die Lüge"
+    ],
+    "definitions": [
+      {
+        "meaning": "to lie, to tell lies",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er lügt ständig.",
+        "en": "He lies constantly."
+      },
+      {
+        "de": "Lügen haben kurze Beine.",
+        "en": "Lies have short legs. (= lies always come out in the end)"
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "'Lügen haben kurze Beine' is a very common proverb meaning lies will always be found out. anlügen = to lie TO someone specifically.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "die-luege",
+    "word": "die Lüge",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Lügen",
+    "related": [
+      "lügen",
+      "anlügen"
+    ],
+    "definitions": [
+      {
+        "meaning": "the lie, the falsehood",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist eine glatte Lüge.",
+        "en": "That's an outright lie."
+      },
+      {
+        "de": "Lügen haben kurze Beine.",
+        "en": "Lies have short legs."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-05"
+  },
+  {
+    "id": "anluegen",
+    "word": "anlügen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "log an",
+    "past_participle": "angelogen",
+    "is_separable": true,
+    "reflexive": false,
+    "prefix": "an-",
+    "family_root": "lügen",
+    "related": [
+      "lügen"
+    ],
+    "definitions": [
+      {
+        "meaning": "to lie to someone (directly)",
+        "note": "jmdn. anlügen = to lie to a specific person"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er hat mich angelogen!",
+        "en": "He lied to me!"
+      },
+      {
+        "de": "Lüg mich nicht an.",
+        "en": "Don't lie to me."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [
+      "separable",
+      "verb family: lügen"
+    ],
+    "register": "neutral",
+    "notes": "anlügen = to lie TO someone (direct object); lügen = to lie in general. Er lügt = he lies. Er lügt mich an = he lies to me.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "der-umgang",
+    "word": "der Umgang",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Umgänge",
+    "definitions": [
+      {
+        "meaning": "social interaction, dealings, contact",
+        "note": null
+      },
+      {
+        "meaning": "the people one associates with",
+        "note": "Er hat einen schlechten Umgang = he's mixing with the wrong crowd"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Umgang mit Kunden erfordert Geduld.",
+        "en": "Dealing with customers requires patience."
+      },
+      {
+        "de": "Er hat gute Umgangsformen.",
+        "en": "He has good manners."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Umgangsformen = manners, social etiquette. der Umgang mit + DAT = dealing with / handling of.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "zufaellig",
+    "word": "zufällig",
+    "type": "adjective",
+    "also_adverb": true,
+    "definitions": [
+      {
+        "meaning": "by chance, coincidentally, accidentally",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe ihn zufällig im Park getroffen.",
+        "en": "I ran into him by chance in the park."
+      },
+      {
+        "de": "Bist du zufällig heute Abend frei?",
+        "en": "Are you by any chance free this evening?"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "people & relationships"
+    ],
+    "tags": [
+      "also adverb"
+    ],
+    "register": "neutral",
+    "notes": "Very useful word! 'Bist du zufällig...?' = Do you happen to...? A polite way to ask something without being presumptuous.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "gegenseitig",
+    "word": "gegenseitig",
+    "type": "adjective",
+    "also_adverb": true,
+    "definitions": [
+      {
+        "meaning": "mutual, reciprocal",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Respekt muss gegenseitig sein.",
+        "en": "Respect must be mutual."
+      },
+      {
+        "de": "Sie helfen sich gegenseitig.",
+        "en": "They help each other."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [
+      "also adverb"
+    ],
+    "register": "neutral",
+    "notes": "gegenseitig = mutual/reciprocal. sich gegenseitig helfen = to help each other. A very useful word for talking about relationships.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "sich-beschweren",
+    "word": "sich beschweren",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "beschwerte sich",
+    "past_participle": "beschwert",
+    "is_separable": false,
+    "reflexive": true,
+    "preposition": "über + AKK",
+    "definitions": [
+      {
+        "meaning": "to complain (about something)",
+        "note": "über + AKK"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er beschwert sich ständig über das Wetter.",
+        "en": "He's constantly complaining about the weather."
+      },
+      {
+        "de": "Ich möchte mich über den Service beschweren.",
+        "en": "I would like to complain about the service."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "daily life"
+    ],
+    "tags": [
+      "reflexive"
+    ],
+    "register": "neutral",
+    "notes": "sich beschweren über + AKK = to complain about something. More formal/official than meckern (to grumble, informal).",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "nerven",
+    "word": "nerven",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "nervte",
+    "past_participle": "genervt",
+    "is_separable": false,
+    "reflexive": false,
+    "definitions": [
+      {
+        "meaning": "to irritate, to annoy, to get on someone's nerves",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das nervt mich total!",
+        "en": "That really gets on my nerves!"
+      },
+      {
+        "de": "Hör auf, mich zu nerven!",
+        "en": "Stop annoying me!"
+      }
+    ],
+    "topics": [
+      "emotions",
+      "people & relationships"
+    ],
+    "tags": [
+      "informal"
+    ],
+    "register": "informal",
+    "notes": "Very common in spoken German. genervt sein = to be annoyed/irritated. 'Das geht mir auf die Nerven' = same meaning, slightly more emphatic.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "stoeren",
+    "word": "stören",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "störte",
+    "past_participle": "gestört",
+    "is_separable": false,
+    "reflexive": false,
+    "related": [
+      "nerven"
+    ],
+    "definitions": [
+      {
+        "meaning": "to disturb, to bother, to disrupt",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Darf ich Sie kurz stören?",
+        "en": "May I briefly disturb you?"
+      },
+      {
+        "de": "Der Lärm stört mich beim Arbeiten.",
+        "en": "The noise bothers me when I'm working."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "people & relationships"
+    ],
+    "tags": [
+      "similar to: nerven"
+    ],
+    "register": "neutral",
+    "notes": "stören = to disturb/bother (more neutral); nerven = to annoy/get on nerves (more emotional). 'Bitte nicht stören' = Do not disturb.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "die-stimmung",
+    "word": "die Stimmung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Stimmungen",
+    "definitions": [
+      {
+        "meaning": "mood, atmosphere, vibe",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Stimmung auf der Party war großartig.",
+        "en": "The atmosphere at the party was great."
+      },
+      {
+        "de": "Ich bin heute nicht in der Stimmung dafür.",
+        "en": "I'm not in the mood for that today."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "in (guter/schlechter) Stimmung sein = to be in a (good/bad) mood. die Stimmung heben = to lift the mood.",
+    "added": "2026-04-05"
+  },
+  {
+    "id": "unterstuetzen",
+    "word": "unterstützen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "unterstützte",
+    "past_participle": "unterstützt",
+    "is_separable": false,
+    "reflexive": false,
+    "definitions": [
+      {
+        "meaning": "to support, to back up",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Meine Familie hat mich immer unterstützt.",
+        "en": "My family has always supported me."
+      },
+      {
+        "de": "Ich unterstütze deine Entscheidung.",
+        "en": "I support your decision."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Unterstützung (noun) = support. Unterstützung leisten/geben = to provide support.",
+    "added": "2026-04-05"
   }
 ]
