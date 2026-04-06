@@ -9137,36 +9137,702 @@
     "added": "2026-04-06 11:47:00"
   },
   {
-    "id": "laut",
-    "word": "laut",
-    "type": "prep/conj",
+    "id": "der-schriftsteller",
+    "word": "der Schriftsteller",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Schriftsteller",
     "definitions": [
       {
-        "meaning": "according to",
-        "note": "used with dative case"
-      },
-      {
-        "meaning": "as per",
-        "note": "in formal contexts"
+        "meaning": "writer, author (literary)",
+        "note": "specifically a literary/creative writer"
       }
     ],
     "examples": [
       {
-        "de": "Laut dem Wetterbericht regnet es morgen.",
-        "en": "According to the weather report, it will rain tomorrow."
+        "de": "Er ist ein bekannter Schriftsteller aus Berlin.",
+        "en": "He is a well-known writer from Berlin."
       },
       {
-        "de": "Laut seiner Aussage war er zu Hause.",
-        "en": "According to his statement, he was at home."
+        "de": "Die Schriftstellerin hat mehrere Romane veröffentlicht.",
+        "en": "The writer has published several novels."
       }
     ],
     "topics": [
+      "culture & arts",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Schriftstellerin = female writer. der Schriftsteller = specifically a literary writer; der Autor is broader (any author, incl. academic).",
+    "related": [
+      "der Autor",
+      "der Drehbuchautor"
+    ],
+    "added": "2026-04-06 12:00:00"
+  },
+  {
+    "id": "der-autor",
+    "word": "der Autor",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Autoren",
+    "definitions": [
+      {
+        "meaning": "author (of any written work)",
+        "note": "broader than Schriftsteller"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Autor des Artikels ist unbekannt.",
+        "en": "The author of the article is unknown."
+      },
+      {
+        "de": "Sie ist die Autorin dieses Buches.",
+        "en": "She is the author of this book."
+      }
+    ],
+    "topics": [
+      "culture & arts",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Autorin = female author. der Autor = any author (books, articles, reports); der Schriftsteller = specifically a literary/creative writer.",
+    "related": [
+      "der Schriftsteller",
+      "der Drehbuchautor"
+    ],
+    "added": "2026-04-06 12:01:00"
+  },
+  {
+    "id": "der-regisseur",
+    "word": "der Regisseur",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Regisseure",
+    "definitions": [
+      {
+        "meaning": "director (film or theatre)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Regisseur hat den Film wunderbar inszeniert.",
+        "en": "The director staged the film wonderfully."
+      },
+      {
+        "de": "Die Regisseurin gewann einen Preis für ihren Dokumentarfilm.",
+        "en": "The director won a prize for her documentary."
+      }
+    ],
+    "topics": [
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Regisseurin = female director. Used for both film and theatre directors.",
+    "related": [
+      "das Drehbuch",
+      "der Drehbuchautor",
+      "der Hauptdarsteller",
+      "der Spielfilm"
+    ],
+    "added": "2026-04-06 12:02:00"
+  },
+  {
+    "id": "der-spielfilm",
+    "word": "der Spielfilm",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Spielfilme",
+    "definitions": [
+      {
+        "meaning": "feature film, fiction film",
+        "note": "as opposed to a documentary"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Spielfilm dauert fast drei Stunden.",
+        "en": "The feature film lasts almost three hours."
+      },
+      {
+        "de": "Sie bevorzugt Spielfilme gegenüber Dokumentarfilmen.",
+        "en": "She prefers feature films over documentaries."
+      }
+    ],
+    "topics": [
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Spielfilm = fiction/narrative film; der Dokumentarfilm = documentary.",
+    "related": [
+      "der Regisseur",
+      "der Hauptdarsteller"
+    ],
+    "added": "2026-04-06 12:03:00"
+  },
+  {
+    "id": "das-drehbuch",
+    "word": "das Drehbuch",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Drehbücher",
+    "definitions": [
+      {
+        "meaning": "screenplay, script",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Drehbuch basiert auf einem Roman.",
+        "en": "The screenplay is based on a novel."
+      },
+      {
+        "de": "Sie schreibt gerade an einem Drehbuch.",
+        "en": "She is currently writing a screenplay."
+      }
+    ],
+    "topics": [
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Drehbuchautor = screenwriter. Literally: 'turning book' (from the rotation of film reels).",
+    "related": [
+      "der Drehbuchautor",
+      "der Regisseur"
+    ],
+    "added": "2026-04-06 12:04:00"
+  },
+  {
+    "id": "der-drehbuchautor",
+    "word": "der Drehbuchautor",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Drehbuchautoren",
+    "definitions": [
+      {
+        "meaning": "screenwriter, scriptwriter",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Drehbuchautor wurde für sein Skript ausgezeichnet.",
+        "en": "The screenwriter was awarded for his script."
+      },
+      {
+        "de": "Das Buch inspirierte den Drehbuchautor des Films.",
+        "en": "The book inspired the film's screenwriter."
+      }
+    ],
+    "topics": [
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Drehbuchautorin = female screenwriter.",
+    "related": [
+      "das Drehbuch",
+      "der Autor",
+      "der Regisseur",
+      "der Schriftsteller"
+    ],
+    "added": "2026-04-06 12:05:00"
+  },
+  {
+    "id": "die-hauptfigur",
+    "word": "die Hauptfigur",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Hauptfiguren",
+    "definitions": [
+      {
+        "meaning": "main character, protagonist",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Hauptfigur des Romans ist ein junger Arzt.",
+        "en": "The main character of the novel is a young doctor."
+      },
+      {
+        "de": "Ich kann mich gut mit der Hauptfigur identifizieren.",
+        "en": "I can identify well with the main character."
+      }
+    ],
+    "topics": [
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Hauptfigur = main character (books and films); der Hauptdarsteller = leading actor (the person playing the role in a film).",
+    "related": [
+      "der Hauptdarsteller",
+      "der Wendepunkt",
+      "die Geschichte"
+    ],
+    "added": "2026-04-06 12:06:00"
+  },
+  {
+    "id": "der-hauptdarsteller",
+    "word": "der Hauptdarsteller",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Hauptdarsteller",
+    "definitions": [
+      {
+        "meaning": "lead actor, leading actor",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Hauptdarsteller hat eine Oscar-Nominierung bekommen.",
+        "en": "The lead actor received an Oscar nomination."
+      },
+      {
+        "de": "Die Hauptdarstellerin spielt die Rolle überzeugend.",
+        "en": "The lead actress plays the role convincingly."
+      }
+    ],
+    "topics": [
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Hauptdarstellerin = female lead actress. der Hauptdarsteller = the actor; die Hauptfigur = the character they play.",
+    "related": [
+      "die Hauptfigur",
+      "der Regisseur",
+      "der Spielfilm"
+    ],
+    "added": "2026-04-06 12:07:00"
+  },
+  {
+    "id": "der-wendepunkt",
+    "word": "der Wendepunkt",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Wendepunkte",
+    "definitions": [
+      {
+        "meaning": "turning point, pivotal moment",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Wendepunkt der Geschichte kommt überraschend.",
+        "en": "The turning point of the story comes as a surprise."
+      },
+      {
+        "de": "Das war ein Wendepunkt in seinem Leben.",
+        "en": "That was a turning point in his life."
+      }
+    ],
+    "topics": [
+      "culture & arts",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Used both for stories/films and for real life events.",
+    "related": [
+      "die Geschichte",
+      "die Hauptfigur"
+    ],
+    "added": "2026-04-06 12:08:00"
+  },
+  {
+    "id": "die-praemisse",
+    "word": "die Prämisse",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Prämissen",
+    "definitions": [
+      {
+        "meaning": "premise, basic assumption",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Prämisse des Films ist nicht sehr originell.",
+        "en": "The premise of the film is not very original."
+      },
+      {
+        "de": "Auf welcher Prämisse basiert diese Theorie?",
+        "en": "On what premise is this theory based?"
+      }
+    ],
+    "topics": [
+      "culture & arts",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Used both in academic/logical contexts and when talking about films and books.",
+    "related": [],
+    "added": "2026-04-06 12:09:00"
+  },
+  {
+    "id": "die-anregung",
+    "word": "die Anregung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Anregungen",
+    "definitions": [
+      {
+        "meaning": "inspiration, stimulus, impulse",
+        "note": null
+      },
+      {
+        "meaning": "suggestion, idea",
+        "note": "e.g. Haben Sie Anregungen? = Do you have any suggestions?"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Buch gibt mir viele Anregungen für meine Forschung.",
+        "en": "The book gives me a lot of inspiration for my research."
+      },
+      {
+        "de": "Haben Sie Anregungen oder Verbesserungsvorschläge?",
+        "en": "Do you have any suggestions or ideas for improvement?"
+      }
+    ],
+    "topics": [
+      "culture & arts",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Anregung = inspiration/stimulus (something that sparks ideas). die Inspiration is also used but Anregung is more versatile.",
+    "related": [],
+    "added": "2026-04-06 12:10:00"
+  },
+  {
+    "id": "das-bild",
+    "word": "das Bild",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Bilder",
+    "definitions": [
+      {
+        "meaning": "picture, image",
+        "note": null
+      },
+      {
+        "meaning": "painting (general)",
+        "note": "less formal than Gemälde"
+      }
+    ],
+    "examples": [
+      {
+        "de": "An der Wand hängen viele Bilder.",
+        "en": "Many pictures hang on the wall."
+      },
+      {
+        "de": "Ich mache mir kein genaues Bild davon.",
+        "en": "I can't form a clear picture of it."
+      }
+    ],
+    "topics": [
+      "culture & arts",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das Bild = picture/image (broad); das Gemälde = painting (specifically oil/canvas, more formal). Also used figuratively: sich ein Bild machen = to get an idea of something.",
+    "related": [
+      "das Gemälde",
+      "die Ausstellung"
+    ],
+    "added": "2026-04-06 12:11:00"
+  },
+  {
+    "id": "das-gemaelde",
+    "word": "das Gemälde",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Gemälde",
+    "definitions": [
+      {
+        "meaning": "painting (artwork)",
+        "note": "specifically a painted artwork on canvas/panel"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Museum zeigt Gemälde aus dem 17. Jahrhundert.",
+        "en": "The museum displays paintings from the 17th century."
+      },
+      {
+        "de": "Das Gemälde wurde für eine Million Euro verkauft.",
+        "en": "The painting was sold for a million euros."
+      }
+    ],
+    "topics": [
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das Gemälde = a formal painted artwork; das Bild is more general (any picture). malen = to paint.",
+    "related": [
+      "das Bild",
+      "der Kunstmaler",
+      "die Ausstellung"
+    ],
+    "added": "2026-04-06 12:12:00"
+  },
+  {
+    "id": "die-ausstellung",
+    "word": "die Ausstellung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Ausstellungen",
+    "definitions": [
+      {
+        "meaning": "exhibition, show, display",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir gehen morgen zur Ausstellung im Kunstmuseum.",
+        "en": "We're going to the exhibition at the art museum tomorrow."
+      },
+      {
+        "de": "Die Ausstellung läuft noch bis Ende des Monats.",
+        "en": "The exhibition runs until the end of the month."
+      }
+    ],
+    "topics": [
+      "culture & arts",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "ausstellen = to exhibit/display. der Aussteller = exhibitor.",
+    "related": [
+      "das Gemälde",
+      "das Bild"
+    ],
+    "added": "2026-04-06 12:13:00"
+  },
+  {
+    "id": "der-kunstmaler",
+    "word": "der Kunstmaler",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Kunstmaler",
+    "definitions": [
+      {
+        "meaning": "painter (fine arts)",
+        "note": "specifically a visual artist who paints"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Kunstmaler arbeitete jahrelang an diesem Gemälde.",
+        "en": "The painter worked on this painting for years."
+      },
+      {
+        "de": "Sie ist eine talentierte Kunstmalerin.",
+        "en": "She is a talented painter."
+      }
+    ],
+    "topics": [
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Kunstmalerin = female painter. der Kunstmaler = specifically a fine arts painter; der Maler can also mean house painter.",
+    "related": [
+      "das Gemälde",
+      "der Bildhauer",
+      "der Künstler"
+    ],
+    "added": "2026-04-06 12:14:00"
+  },
+  {
+    "id": "der-kuenstler",
+    "word": "der Künstler",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Künstler",
+    "definitions": [
+      {
+        "meaning": "artist (broad)",
+        "note": "any creative artist"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie ist eine vielseitige Künstlerin.",
+        "en": "She is a versatile artist."
+      },
+      {
+        "de": "Die Stadt fördert lokale Künstler.",
+        "en": "The city supports local artists."
+      }
+    ],
+    "topics": [
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Künstlerin = female artist. der Künstler covers painters, sculptors, musicians, performers etc. More general than der Kunstmaler. Not to be confused with der Artist (circus/stage performer).",
+    "related": [
+      "der Kunstmaler",
+      "der Artist",
+      "der Bildhauer"
+    ],
+    "added": "2026-04-06 12:15:00"
+  },
+  {
+    "id": "der-artist",
+    "word": "der Artist",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Artisten",
+    "definitions": [
+      {
+        "meaning": "performer, acrobat (circus or stage)",
+        "note": "NOT the same as English 'artist'"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Artisten im Zirkus haben atemberaubende Kunststücke gezeigt.",
+        "en": "The performers in the circus showed breathtaking acts."
+      },
+      {
+        "de": "Er ist Artist und tritt jede Nacht auf.",
+        "en": "He is a performer and appears every night."
+      }
+    ],
+    "topics": [
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "False friend! der Artist ≠ English 'artist'. In German, Artist = circus/stage performer/acrobat. A visual artist is der Künstler.",
+    "related": [
+      "der Künstler"
+    ],
+    "added": "2026-04-06 12:16:00"
+  },
+  {
+    "id": "der-bildhauer",
+    "word": "der Bildhauer",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Bildhauer",
+    "definitions": [
+      {
+        "meaning": "sculptor",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Bildhauer arbeitet mit Marmor und Holz.",
+        "en": "The sculptor works with marble and wood."
+      },
+      {
+        "de": "Rodin war einer der berühmtesten Bildhauer der Geschichte.",
+        "en": "Rodin was one of the most famous sculptors in history."
+      }
+    ],
+    "topics": [
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Bildhauerin = female sculptor. Literally: 'image-hewer'. die Bildhauerei = sculpture (the art form).",
+    "related": [
+      "der Künstler",
+      "der Kunstmaler"
+    ],
+    "added": "2026-04-06 12:17:00"
+  },
+  {
+    "id": "die-geschichte",
+    "word": "die Geschichte",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Geschichten",
+    "definitions": [
+      {
+        "meaning": "story, tale",
+        "note": null
+      },
+      {
+        "meaning": "history",
+        "note": "no plural in this sense"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er erzählte uns eine lustige Geschichte.",
+        "en": "He told us a funny story."
+      },
+      {
+        "de": "Die Geschichte Europas ist sehr komplex.",
+        "en": "The history of Europe is very complex."
+      }
+    ],
+    "topics": [
+      "culture & arts",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Two meanings: (1) eine Geschichte = a story/tale; (2) die Geschichte (no article needed) = history as a subject. Das Geschäft (business/shop) and das Gesicht (face) are false friends.",
+    "related": [
+      "die Hauptfigur",
+      "der Wendepunkt"
+    ],
+    "added": "2026-04-06 12:18:00"
+  },
+  {
+    "id": "laut",
+    "word": "laut",
+    "type": "prep/conj",
+    "usage": "preposition only",
+    "definitions": [
+      {
+        "meaning": "according to, as per",
+        "note": "+ DAT or GEN"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Laut Wettervorhersage soll es morgen regnen.",
+        "en": "According to the weather forecast it should rain tomorrow."
+      },
+      {
+        "de": "Laut Experten wird die Situation besser.",
+        "en": "According to experts the situation will improve."
+      }
+    ],
+    "topics": [
+      "grammar & structure",
       "language & communication"
     ],
     "tags": [],
     "register": "neutral",
-    "notes": "Always takes the dative case and can also function as an adjective meaning loud.",
-    "added": "2026-04-06 08:26:26",
-    "usage": "preposition only"
+    "notes": "laut + DAT or GEN. Very common in formal writing and news: laut Bericht, laut Gesetz, laut Angaben. Not to be confused with the adjective laut (loud).",
+    "related": [],
+    "added": "2026-04-06 12:19:00"
   }
 ]
