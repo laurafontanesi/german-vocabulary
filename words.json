@@ -774,6 +774,7 @@
     "plural": "die Sorgen",
     "related": [
       "die Angst",
+      "sich besorgen",
       "sich sorgen"
     ],
     "definitions": [
@@ -7182,7 +7183,9 @@
     "tags": [],
     "register": "neutral",
     "notes": "das Sommergewitter = summer thunderstorm. der Blitz = lightning; der Donner = thunder.",
-    "related": [],
+    "related": [
+      "der Donner"
+    ],
     "added": "2026-04-06 10:11:00"
   },
   {
@@ -7434,5 +7437,1703 @@
     ],
     "family_root": "frieren",
     "added": "2026-04-06 10:18:00"
+  },
+  {
+    "id": "fleißig",
+    "word": "fleißig",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "hardworking, diligent, industrious",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie ist eine fleißige Studentin.",
+        "en": "She is a hardworking student."
+      },
+      {
+        "de": "Er arbeitet fleißig an seiner Dissertation.",
+        "en": "He is diligently working on his dissertation."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Opposite: faul (lazy).",
+    "related": [],
+    "added": "2026-04-06 11:00:00"
+  },
+  {
+    "id": "das-loch",
+    "word": "das Loch",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Löcher",
+    "definitions": [
+      {
+        "meaning": "hole, gap",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "In meiner Socke ist ein Loch.",
+        "en": "There's a hole in my sock."
+      },
+      {
+        "de": "Sie gruben ein Loch im Garten.",
+        "en": "They dug a hole in the garden."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-06 11:01:00"
+  },
+  {
+    "id": "legen",
+    "word": "legen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "legte",
+    "past_participle": "gelegt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "legen",
+    "definitions": [
+      {
+        "meaning": "to lay, to put (flat)",
+        "note": "places something horizontal"
+      },
+      {
+        "meaning": "sich legen — to lie down",
+        "note": "reflexive"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie legte das Buch auf den Tisch.",
+        "en": "She laid the book on the table."
+      },
+      {
+        "de": "Er legte sich aufs Sofa und schlief ein.",
+        "en": "He lay down on the sofa and fell asleep."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "legen = to lay (transitive, causes horizontal position); liegen = to lie (intransitive, is in horizontal position). A classic German confusion: ich lege (I lay) vs ich liege (I lie).",
+    "related": [],
+    "added": "2026-04-06 11:02:00"
+  },
+  {
+    "id": "schwinden",
+    "word": "schwinden",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "schwand",
+    "past_participle": "geschwunden",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schwinden",
+    "definitions": [
+      {
+        "meaning": "to dwindle, to fade, to diminish",
+        "note": "literary/formal"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Seine Kräfte schwanden mit der Zeit.",
+        "en": "His strength dwindled over time."
+      },
+      {
+        "de": "Die Hoffnung schwindet.",
+        "en": "Hope is fading."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "Root of verschwinden (to disappear) and schwinden (to fade). More literary than verschwinden.",
+    "related": [
+      "verschwinden"
+    ],
+    "added": "2026-04-06 11:03:00"
+  },
+  {
+    "id": "verschwinden",
+    "word": "verschwinden",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "verschwand",
+    "past_participle": "verschwunden",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schwinden",
+    "prefix": "ver-",
+    "definitions": [
+      {
+        "meaning": "to disappear, to vanish",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Meine Schlüssel sind verschwunden — hast du sie gesehen?",
+        "en": "My keys have disappeared — have you seen them?"
+      },
+      {
+        "de": "Er verschwand ohne ein Wort zu sagen.",
+        "en": "He disappeared without saying a word."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Past participle verschwunden is also commonly used as an adjective: 'das verschwundene Kind' (the missing child).",
+    "related": [
+      "schwinden"
+    ],
+    "added": "2026-04-06 11:04:00"
+  },
+  {
+    "id": "neben",
+    "word": "neben",
+    "type": "prep/conj",
+    "usage": "preposition only",
+    "definitions": [
+      {
+        "meaning": "next to, beside",
+        "note": "position: + DAT"
+      },
+      {
+        "meaning": "in addition to, apart from",
+        "note": "figurative: + DAT"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie saß neben mir im Kino.",
+        "en": "She sat next to me in the cinema."
+      },
+      {
+        "de": "Neben der Arbeit macht er noch Sport.",
+        "en": "In addition to work he also does sport."
+      }
+    ],
+    "topics": [
+      "grammar & structure",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Takes DAT for position (Wo?) and AKK for direction (Wohin?): 'Er setzt sich neben mich' (AKK).",
+    "related": [
+      "nebenan"
+    ],
+    "added": "2026-04-06 11:05:00"
+  },
+  {
+    "id": "nebenan",
+    "word": "nebenan",
+    "type": "adj/adv",
+    "usage": "adverb only",
+    "definitions": [
+      {
+        "meaning": "next door, right next to",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Nachbarn nebenan sind sehr laut.",
+        "en": "The neighbours next door are very loud."
+      },
+      {
+        "de": "Das Café ist gleich nebenan.",
+        "en": "The café is right next door."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "neben"
+    ],
+    "added": "2026-04-06 11:06:00"
+  },
+  {
+    "id": "die-vorsicht",
+    "word": "die Vorsicht",
+    "type": "noun",
+    "gender": "die",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "caution, care, caution!",
+        "note": "no plural; also used as exclamation"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Vorsicht! Die Straße ist glatt.",
+        "en": "Careful! The road is slippery."
+      },
+      {
+        "de": "Mit großer Vorsicht öffnete sie die Tür.",
+        "en": "She opened the door with great care."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Vorsicht! = Watch out! / Careful! Very common as a standalone warning. vorsichtig = careful (adjective).",
+    "related": [
+      "die Aussicht"
+    ],
+    "added": "2026-04-06 11:07:00"
+  },
+  {
+    "id": "die-aussicht",
+    "word": "die Aussicht",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Aussichten",
+    "definitions": [
+      {
+        "meaning": "view, panorama",
+        "note": "physical view from a place"
+      },
+      {
+        "meaning": "prospect, outlook",
+        "note": "figurative: future chances"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Von hier oben hat man eine wunderschöne Aussicht.",
+        "en": "From up here you have a wonderful view."
+      },
+      {
+        "de": "Die Aussichten auf eine Stelle sind gut.",
+        "en": "The prospects of getting a job are good."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Vorsicht (caution) shares the -sicht ending but is unrelated. die Ansicht = opinion/view.",
+    "related": [
+      "die Vorsicht"
+    ],
+    "added": "2026-04-06 11:08:00"
+  },
+  {
+    "id": "hübsch",
+    "word": "hübsch",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "pretty, nice-looking, lovely",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist ein hübsches Kleid.",
+        "en": "That's a pretty dress."
+      },
+      {
+        "de": "Sie hat hübsch dekoriert.",
+        "en": "She decorated nicely."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Slightly softer than schön (beautiful). Often used for things, faces, places. Also used ironically: 'das ist eine hübsche Bescherung!' (what a fine mess!).",
+    "related": [],
+    "added": "2026-04-06 11:09:00"
+  },
+  {
+    "id": "schuetteln",
+    "word": "schütteln",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "schüttelte",
+    "past_participle": "geschüttelt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schütteln",
+    "definitions": [
+      {
+        "meaning": "to shake",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie schüttelte den Kopf.",
+        "en": "She shook her head."
+      },
+      {
+        "de": "Vor Gebrauch schütteln.",
+        "en": "Shake before use."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "den Kopf schütteln = to shake one's head (disagreement). die Hand schütteln = to shake hands.",
+    "related": [
+      "nicken"
+    ],
+    "added": "2026-04-06 11:10:00"
+  },
+  {
+    "id": "der-fussboden",
+    "word": "der Fußboden",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Fußböden",
+    "definitions": [
+      {
+        "meaning": "floor (of a room)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie wischte den Fußboden.",
+        "en": "She mopped the floor."
+      },
+      {
+        "de": "Das Kind saß auf dem Fußboden und spielte.",
+        "en": "The child sat on the floor and played."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Fußboden = floor (surface inside a room); der Boden = floor/ground (more general); die Etage/das Stockwerk = floor (level of a building).",
+    "related": [],
+    "added": "2026-04-06 11:11:00"
+  },
+  {
+    "id": "betreten",
+    "word": "betreten",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "betrat",
+    "past_participle": "betreten",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "treten",
+    "prefix": "be-",
+    "definitions": [
+      {
+        "meaning": "to enter, to step into (a place)",
+        "note": "formal"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Betreten verboten.",
+        "en": "No entry. / Do not enter."
+      },
+      {
+        "de": "Sie betrat den Raum und alle schwiegen.",
+        "en": "She entered the room and everyone fell silent."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "'Betreten verboten' = No entry (common on signs). More formal than 'reingehen'. The past participle 'betreten' also means embarrassed as an adjective.",
+    "related": [],
+    "added": "2026-04-06 11:12:00"
+  },
+  {
+    "id": "der-staub",
+    "word": "der Staub",
+    "type": "noun",
+    "gender": "der",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "dust",
+        "note": "no plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Auf dem Regal liegt eine dicke Schicht Staub.",
+        "en": "There's a thick layer of dust on the shelf."
+      },
+      {
+        "de": "Sie hat Staub gewischt.",
+        "en": "She dusted."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Staub wischen/saugen = to dust/vacuum. sich aus dem Staub machen = to make oneself scarce (idiom).",
+    "related": [
+      "der Staubsauger"
+    ],
+    "added": "2026-04-06 11:13:00"
+  },
+  {
+    "id": "der-staubsauger",
+    "word": "der Staubsauger",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Staubsauger",
+    "definitions": [
+      {
+        "meaning": "vacuum cleaner, hoover",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich muss noch Staubsauger fahren.",
+        "en": "I still need to vacuum."
+      },
+      {
+        "de": "Der Staubsauger ist kaputt.",
+        "en": "The vacuum cleaner is broken."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "staubsaugen = to vacuum (also: Staubsauger fahren). Literally: 'dust-sucker'.",
+    "related": [
+      "der Staub"
+    ],
+    "added": "2026-04-06 11:14:00"
+  },
+  {
+    "id": "nicken",
+    "word": "nicken",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "nickte",
+    "past_participle": "genickt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "nicken",
+    "definitions": [
+      {
+        "meaning": "to nod",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er nickte zustimmend.",
+        "en": "He nodded in agreement."
+      },
+      {
+        "de": "Sie nickte und lächelte.",
+        "en": "She nodded and smiled."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Opposite: den Kopf schütteln (to shake one's head = disagree).",
+    "related": [
+      "schütteln"
+    ],
+    "added": "2026-04-06 11:15:00"
+  },
+  {
+    "id": "umarmen",
+    "word": "umarmen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "umarmte",
+    "past_participle": "umarmt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "umarmen",
+    "definitions": [
+      {
+        "meaning": "to hug, to embrace",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie umarmten sich zur Begrüßung.",
+        "en": "They hugged each other in greeting."
+      },
+      {
+        "de": "Er umarmte sie fest.",
+        "en": "He hugged her tightly."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Umarmung = hug, embrace.",
+    "related": [],
+    "added": "2026-04-06 11:16:00"
+  },
+  {
+    "id": "sonst",
+    "word": "sonst",
+    "type": "adj/adv",
+    "usage": "adverb only",
+    "definitions": [
+      {
+        "meaning": "otherwise, or else",
+        "note": "introduces a consequence"
+      },
+      {
+        "meaning": "usually, normally",
+        "note": "referring to habitual past"
+      },
+      {
+        "meaning": "anything else?",
+        "note": "in questions: sonst noch etwas?"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Beeil dich, sonst kommen wir zu spät.",
+        "en": "Hurry up, otherwise we'll be late."
+      },
+      {
+        "de": "Sonst trinke ich keinen Kaffee, aber heute schon.",
+        "en": "Normally I don't drink coffee, but today I do."
+      }
+    ],
+    "topics": [
+      "grammar & structure",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "'Sonst noch etwas?' = Anything else? (very common in shops/restaurants). 'Was machst du sonst so?' = What else do you do / what do you usually do?",
+    "related": [],
+    "added": "2026-04-06 11:17:00"
+  },
+  {
+    "id": "der-stift",
+    "word": "der Stift",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Stifte",
+    "definitions": [
+      {
+        "meaning": "pen, pencil, marker (writing instrument)",
+        "note": null
+      },
+      {
+        "meaning": "pin, peg (small pointed object)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Hast du einen Stift für mich?",
+        "en": "Do you have a pen for me?"
+      },
+      {
+        "de": "Sie malte mit bunten Stiften.",
+        "en": "She drew with coloured pencils."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Kugelschreiber (KuBi) = ballpoint pen; der Bleistift = pencil; der Filzstift = felt-tip pen. der Stift covers all of these colloquially.",
+    "related": [
+      "der Zettel"
+    ],
+    "added": "2026-04-06 11:18:00"
+  },
+  {
+    "id": "der-zettel",
+    "word": "der Zettel",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Zettel",
+    "definitions": [
+      {
+        "meaning": "piece of paper, note, slip",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er hinterließ einen Zettel auf dem Küchentisch.",
+        "en": "He left a note on the kitchen table."
+      },
+      {
+        "de": "Sie schrieb die Adresse auf einen Zettel.",
+        "en": "She wrote the address on a piece of paper."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Zettel = a small piece of paper or note. der Brief = letter. die Notiz = note (more formal).",
+    "related": [
+      "der Stift"
+    ],
+    "added": "2026-04-06 11:19:00"
+  },
+  {
+    "id": "dorthin",
+    "word": "dorthin",
+    "type": "adj/adv",
+    "usage": "adverb only",
+    "definitions": [
+      {
+        "meaning": "to there, (going) there",
+        "note": "direction towards that place"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir fahren morgen dorthin.",
+        "en": "We're going there tomorrow."
+      },
+      {
+        "de": "Wie komme ich dorthin?",
+        "en": "How do I get there?"
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "dorthin = motion towards there (Wohin?); dort = static location there (Wo?); dorther = from there (Woher?). The hin/her distinction is important in German.",
+    "related": [
+      "dorther"
+    ],
+    "added": "2026-04-06 11:20:00"
+  },
+  {
+    "id": "dorther",
+    "word": "dorther",
+    "type": "adj/adv",
+    "usage": "adverb only",
+    "definitions": [
+      {
+        "meaning": "from there",
+        "note": "direction away from that place"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich kenne ihn von dorther.",
+        "en": "I know him from there."
+      },
+      {
+        "de": "Dorther kommt der Wind.",
+        "en": "The wind comes from there."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "dorther = from there (Woher?); dorthin = to there (Wohin?); dort = there (Wo?). Less common than 'von dort'.",
+    "related": [
+      "dorthin"
+    ],
+    "added": "2026-04-06 11:21:00"
+  },
+  {
+    "id": "das-schiff",
+    "word": "das Schiff",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Schiffe",
+    "definitions": [
+      {
+        "meaning": "ship, vessel",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Schiff legte im Hafen an.",
+        "en": "The ship docked at the harbour."
+      },
+      {
+        "de": "Sie reisten mit dem Schiff nach New York.",
+        "en": "They travelled to New York by ship."
+      }
+    ],
+    "topics": [
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das Boot = boat (smaller); das Schiff = ship (larger). die Schifffahrt = shipping/navigation.",
+    "related": [],
+    "added": "2026-04-06 11:22:00"
+  },
+  {
+    "id": "das-hallenbad",
+    "word": "das Hallenbad",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Hallenbäder",
+    "definitions": [
+      {
+        "meaning": "indoor swimming pool",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Im Winter gehe ich ins Hallenbad.",
+        "en": "In winter I go to the indoor pool."
+      },
+      {
+        "de": "Das Hallenbad ist wegen Renovierung geschlossen.",
+        "en": "The indoor pool is closed for renovation."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das Freibad = outdoor pool; das Hallenbad = indoor pool; das Schwimmbad = swimming pool (general).",
+    "related": [],
+    "added": "2026-04-06 11:23:00"
+  },
+  {
+    "id": "schmutzig",
+    "word": "schmutzig",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "dirty, filthy",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Kinder kamen schmutzig nach Hause.",
+        "en": "The children came home dirty."
+      },
+      {
+        "de": "Das Geschirr ist noch schmutzig.",
+        "en": "The dishes are still dirty."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Opposite: sauber (clean). der Schmutz = dirt, filth.",
+    "related": [
+      "verseuchen",
+      "verseucht"
+    ],
+    "added": "2026-04-06 11:24:00"
+  },
+  {
+    "id": "verseuchen",
+    "word": "verseuchen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "verseuchte",
+    "past_participle": "verseucht",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "seuchen",
+    "prefix": "ver-",
+    "definitions": [
+      {
+        "meaning": "to contaminate, to pollute, to infect",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Öl hat das Meer verseucht.",
+        "en": "The oil contaminated the sea."
+      },
+      {
+        "de": "Das verseuchte Wasser ist nicht trinkbar.",
+        "en": "The contaminated water is not drinkable."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "verseucht = contaminated (past participle used as adjective). die Seuche = epidemic/plague.",
+    "related": [
+      "schmutzig"
+    ],
+    "added": "2026-04-06 11:25:00"
+  },
+  {
+    "id": "schimpfen",
+    "word": "schimpfen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "schimpfte",
+    "past_participle": "geschimpft",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schimpfen",
+    "definitions": [
+      {
+        "meaning": "to scold, to tell off",
+        "note": "auf/über + AKK or mit + DAT"
+      },
+      {
+        "meaning": "to grumble, to complain",
+        "note": "informal"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Lehrerin schimpfte mit den Schülern.",
+        "en": "The teacher told the students off."
+      },
+      {
+        "de": "Er schimpfte auf das schlechte Wetter.",
+        "en": "He grumbled about the bad weather."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "informal",
+    "notes": "schimpfen mit jemandem = to tell someone off; schimpfen auf/über etwas = to grumble about something.",
+    "related": [],
+    "added": "2026-04-06 11:26:00"
+  },
+  {
+    "id": "der-donner",
+    "word": "der Donner",
+    "type": "noun",
+    "gender": "der",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "thunder",
+        "note": "no plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nach dem Blitz kommt der Donner.",
+        "en": "Thunder comes after lightning."
+      },
+      {
+        "de": "Der Donner war so laut, dass sie aufwachte.",
+        "en": "The thunder was so loud that she woke up."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Blitz = lightning; der Donner = thunder. Together in: das Gewitter (thunderstorm).",
+    "related": [
+      "das Gewitter"
+    ],
+    "added": "2026-04-06 11:27:00"
+  },
+  {
+    "id": "die-werbung",
+    "word": "die Werbung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Werbungen",
+    "definitions": [
+      {
+        "meaning": "advertising, advertisement",
+        "note": null
+      },
+      {
+        "meaning": "commercial (on TV/radio)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Werbung im Fernsehen nervt mich.",
+        "en": "TV advertising annoys me."
+      },
+      {
+        "de": "Das Unternehmen investiert viel in Werbung.",
+        "en": "The company invests a lot in advertising."
+      }
+    ],
+    "topics": [
+      "money & shopping",
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-06 11:28:00"
+  },
+  {
+    "id": "irgendwann",
+    "word": "irgendwann",
+    "type": "adj/adv",
+    "usage": "adverb only",
+    "definitions": [
+      {
+        "meaning": "sometime, at some point, sooner or later",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Irgendwann werden wir uns wiedersehen.",
+        "en": "Someday we'll see each other again."
+      },
+      {
+        "de": "Das muss irgendwann aufhören.",
+        "en": "This has to stop at some point."
+      }
+    ],
+    "topics": [
+      "time",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Part of the irgend- family: irgendwann (sometime), irgendwo (somewhere), irgendwie (somehow), irgendjemand (someone).",
+    "related": [],
+    "added": "2026-04-06 11:29:00"
+  },
+  {
+    "id": "zeigen",
+    "word": "zeigen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "zeigte",
+    "past_participle": "gezeigt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "zeigen",
+    "definitions": [
+      {
+        "meaning": "to show, to point to",
+        "note": null
+      },
+      {
+        "meaning": "sich zeigen — to show oneself, to turn out",
+        "note": "reflexive"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Kannst du mir zeigen, wie das geht?",
+        "en": "Can you show me how that works?"
+      },
+      {
+        "de": "Es zeigt sich, dass sie Recht hatte.",
+        "en": "It turns out she was right."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-06 11:30:00"
+  },
+  {
+    "id": "der-klotz",
+    "word": "der Klotz",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Klötze",
+    "definitions": [
+      {
+        "meaning": "block, lump (of wood)",
+        "note": null
+      },
+      {
+        "meaning": "blockhead, lout",
+        "note": "informal, person who is clumsy or dull"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er hackte den Klotz in kleine Stücke.",
+        "en": "He chopped the block into small pieces."
+      },
+      {
+        "de": "So ein Klotz! Er hat alles fallen lassen.",
+        "en": "What a clumsy oaf! He dropped everything."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "ein Klotz am Bein sein = to be a millstone around someone's neck (idiom). Also: Holzklotz = wooden block.",
+    "related": [],
+    "added": "2026-04-06 11:31:00"
+  },
+  {
+    "id": "zuenden",
+    "word": "zünden",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "zündete",
+    "past_participle": "gezündet",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "zünden",
+    "definitions": [
+      {
+        "meaning": "to ignite, to light, to set fire to",
+        "note": null
+      },
+      {
+        "meaning": "to spark, to click (figurative)",
+        "note": "Der Witz hat gezündet = the joke landed"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er zündete ein Streichholz an.",
+        "en": "He struck a match."
+      },
+      {
+        "de": "Die Idee hat sofort gezündet.",
+        "en": "The idea immediately caught on."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das Zündholz = match; das Feuerzeug = lighter. anzünden (sep.) = to light/set fire to.",
+    "related": [],
+    "added": "2026-04-06 11:32:00"
+  },
+  {
+    "id": "knistern",
+    "word": "knistern",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "knisterte",
+    "past_participle": "geknistert",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "knistern",
+    "definitions": [
+      {
+        "meaning": "to crackle, to rustle",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Feuer knistert gemütlich.",
+        "en": "The fire crackles cosily."
+      },
+      {
+        "de": "Die Blätter knistern unter meinen Füßen.",
+        "en": "The leaves rustle under my feet."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Onomatopoeic — sounds like what it describes. das Knistern = crackling/rustling (noun).",
+    "related": [],
+    "added": "2026-04-06 11:33:00"
+  },
+  {
+    "id": "die-weile",
+    "word": "die Weile",
+    "type": "noun",
+    "gender": "die",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "a while, a short time",
+        "note": "no plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Warte eine Weile, ich komme gleich.",
+        "en": "Wait a while, I'll be right there."
+      },
+      {
+        "de": "Er blieb nur eine kurze Weile.",
+        "en": "He stayed only a short while."
+      }
+    ],
+    "topics": [
+      "time",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "eine Weile = a while. weilen (formal/poetic) = to stay, to sojourn. 'Gut Ding will Weile haben' = good things take time (proverb).",
+    "related": [],
+    "added": "2026-04-06 11:34:00"
+  },
+  {
+    "id": "das-gespenst",
+    "word": "das Gespenst",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Gespenster",
+    "definitions": [
+      {
+        "meaning": "ghost, spectre, phantom",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Kind glaubt an Gespenster.",
+        "en": "The child believes in ghosts."
+      },
+      {
+        "de": "Das alte Haus soll von Gespenstern heimgesucht werden.",
+        "en": "The old house is said to be haunted by ghosts."
+      }
+    ],
+    "topics": [
+      "culture & arts",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Geist = spirit/ghost (more general); das Gespenst = ghost (more specifically a haunting apparition).",
+    "related": [],
+    "added": "2026-04-06 11:35:00"
+  },
+  {
+    "id": "zucken",
+    "word": "zucken",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "zuckte",
+    "past_participle": "gezuckt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "zucken",
+    "definitions": [
+      {
+        "meaning": "to twitch, to flinch, to jerk",
+        "note": "involuntary movement"
+      },
+      {
+        "meaning": "mit den Schultern zucken — to shrug",
+        "note": "fixed expression"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie zuckte zusammen, als sie den lauten Knall hörte.",
+        "en": "She flinched when she heard the loud bang."
+      },
+      {
+        "de": "Er zuckte mit den Schultern.",
+        "en": "He shrugged his shoulders."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "zusammenzucken = to flinch/start (from surprise). mit den Schultern zucken = to shrug.",
+    "related": [],
+    "added": "2026-04-06 11:36:00"
+  },
+  {
+    "id": "ploetzlich",
+    "word": "plötzlich",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "suddenly, all of a sudden",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Plötzlich fing es an zu regnen.",
+        "en": "Suddenly it started to rain."
+      },
+      {
+        "de": "Sein plötzlicher Tod hat alle überrascht.",
+        "en": "His sudden death surprised everyone."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-06 11:37:00"
+  },
+  {
+    "id": "der-tropfen",
+    "word": "der Tropfen",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Tropfen",
+    "definitions": [
+      {
+        "meaning": "drop (of liquid)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ein paar Tropfen Regen fielen auf die Windschutzscheibe.",
+        "en": "A few drops of rain fell on the windscreen."
+      },
+      {
+        "de": "Nur ein Tropfen Milch, bitte.",
+        "en": "Just a drop of milk, please."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "tropfen (verb) = to drip. ein Tropfen auf den heißen Stein = a drop in the ocean (idiom).",
+    "related": [
+      "tropfen"
+    ],
+    "added": "2026-04-06 11:38:00"
+  },
+  {
+    "id": "tropfen-verb",
+    "word": "tropfen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "tropfte",
+    "past_participle": "getropft",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "tropfen",
+    "definitions": [
+      {
+        "meaning": "to drip, to drop",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Wasserhahn tropft.",
+        "en": "The tap is dripping."
+      },
+      {
+        "de": "Blut tropfte auf den Boden.",
+        "en": "Blood dripped onto the floor."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "der Speichel",
+      "der Tropfen"
+    ],
+    "added": "2026-04-06 11:39:00"
+  },
+  {
+    "id": "der-speichel",
+    "word": "der Speichel",
+    "type": "noun",
+    "gender": "der",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "saliva, spit",
+        "note": "no plural; formal/medical term"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Speichel hilft bei der Verdauung.",
+        "en": "Saliva helps with digestion."
+      },
+      {
+        "de": "Der Hund ließ Speichel auf den Boden tropfen.",
+        "en": "The dog dripped saliva onto the floor."
+      }
+    ],
+    "topics": [
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "der Speichel = saliva (formal/medical); der Spucke = spit (colloquial). spucken = to spit.",
+    "related": [
+      "tropfen"
+    ],
+    "added": "2026-04-06 11:40:00"
+  },
+  {
+    "id": "die-spuele",
+    "word": "die Spüle",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Spülen",
+    "definitions": [
+      {
+        "meaning": "kitchen sink",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das schmutzige Geschirr liegt in der Spüle.",
+        "en": "The dirty dishes are in the sink."
+      },
+      {
+        "de": "Stell die Tassen bitte in die Spüle.",
+        "en": "Please put the cups in the sink."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Spüle = kitchen sink; das Waschbecken = bathroom sink. Not to be confused with spülen (to rinse).",
+    "related": [
+      "spülen"
+    ],
+    "added": "2026-04-06 11:41:00"
+  },
+  {
+    "id": "spuelen",
+    "word": "spülen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "spülte",
+    "past_participle": "gespült",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "spülen",
+    "definitions": [
+      {
+        "meaning": "to rinse, to wash (dishes)",
+        "note": null
+      },
+      {
+        "meaning": "to flush (toilet)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Kannst du bitte das Geschirr spülen?",
+        "en": "Can you please wash the dishes?"
+      },
+      {
+        "de": "Vergiss nicht, die Toilette zu spülen.",
+        "en": "Don't forget to flush the toilet."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "spülen = to rinse/wash up by hand; abwaschen = same meaning. der Geschirrspüler = dishwasher.",
+    "related": [
+      "die Spüle"
+    ],
+    "added": "2026-04-06 11:42:00"
+  },
+  {
+    "id": "wedeln",
+    "word": "wedeln",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "wedelte",
+    "past_participle": "gewedelt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "wedeln",
+    "definitions": [
+      {
+        "meaning": "to wag (tail), to wave, to fan",
+        "note": "mit + DAT"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Hund wedelte mit dem Schwanz.",
+        "en": "The dog wagged its tail."
+      },
+      {
+        "de": "Sie wedelte mit der Hand, um ihn zu grüßen.",
+        "en": "She waved her hand to greet him."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Most commonly used for dogs wagging their tail. mit dem Schwanz wedeln = to wag the tail.",
+    "related": [],
+    "added": "2026-04-06 11:43:00"
+  },
+  {
+    "id": "rammen",
+    "word": "rammen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "rammte",
+    "past_participle": "gerammt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "rammen",
+    "definitions": [
+      {
+        "meaning": "to ram, to crash into, to drive into",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Auto rammte die Leitplanke.",
+        "en": "The car rammed into the crash barrier."
+      },
+      {
+        "de": "Er rammte den Pfahl in die Erde.",
+        "en": "He drove the stake into the ground."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-06 11:44:00"
+  },
+  {
+    "id": "besorgen",
+    "word": "besorgen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "besorgte",
+    "past_participle": "besorgt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "sorgen",
+    "prefix": "be-",
+    "definitions": [
+      {
+        "meaning": "to get, to fetch, to obtain",
+        "note": "to go and get something"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Kannst du mir ein Brot besorgen?",
+        "en": "Can you get me a loaf of bread?"
+      },
+      {
+        "de": "Ich muss noch ein paar Sachen besorgen.",
+        "en": "I still need to get a few things."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "money & shopping"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "besorgen = to go and get/obtain something; sich besorgen = to worry (reflexive, different meaning!). besorgt = worried (adjective).",
+    "related": [
+      "sich besorgen"
+    ],
+    "added": "2026-04-06 11:45:00"
+  },
+  {
+    "id": "sich-besorgen",
+    "word": "sich besorgen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "besorgte sich",
+    "past_participle": "besorgt",
+    "is_separable": false,
+    "reflexive": true,
+    "family_root": "sorgen",
+    "prefix": "be-",
+    "definitions": [
+      {
+        "meaning": "to worry, to be concerned",
+        "note": "reflexive; über + AKK"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie besorgt sich sehr um ihre Mutter.",
+        "en": "She worries a great deal about her mother."
+      },
+      {
+        "de": "Er besorgte sich über die Situation.",
+        "en": "He was concerned about the situation."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "people & relationships"
+    ],
+    "tags": [
+      "reflexive"
+    ],
+    "register": "neutral",
+    "notes": "sich besorgen = to worry (reflexive); besorgen = to fetch/obtain (non-reflexive). besorgt = worried, concerned (adjective).",
+    "related": [
+      "besorgen",
+      "die Sorge"
+    ],
+    "added": "2026-04-06 11:46:00"
+  },
+  {
+    "id": "tatsaechlich",
+    "word": "tatsächlich",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "actually, really, indeed",
+        "note": "confirms something surprising or real"
+      },
+      {
+        "meaning": "actual, real",
+        "note": "as adjective: der tatsächliche Grund"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er hat es tatsächlich geschafft!",
+        "en": "He actually managed it!"
+      },
+      {
+        "de": "Was ist der tatsächliche Grund dafür?",
+        "en": "What is the actual reason for that?"
+      }
+    ],
+    "topics": [
+      "grammar & structure",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Often used to express mild surprise that something is true. Similar to 'wirklich' but with more emphasis on factual reality.",
+    "related": [],
+    "added": "2026-04-06 11:47:00"
   }
 ]
