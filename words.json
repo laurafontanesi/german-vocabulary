@@ -9135,5 +9135,38 @@
     "notes": "Often used to express mild surprise that something is true. Similar to 'wirklich' but with more emphasis on factual reality.",
     "related": [],
     "added": "2026-04-06 11:47:00"
+  },
+  {
+    "id": "laut",
+    "word": "laut",
+    "type": "prep/conj",
+    "definitions": [
+      {
+        "meaning": "according to",
+        "note": "used with dative case"
+      },
+      {
+        "meaning": "as per",
+        "note": "in formal contexts"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Laut dem Wetterbericht regnet es morgen.",
+        "en": "According to the weather report, it will rain tomorrow."
+      },
+      {
+        "de": "Laut seiner Aussage war er zu Hause.",
+        "en": "According to his statement, he was at home."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Always takes the dative case and can also function as an adjective meaning loud.",
+    "added": "2026-04-06 08:26:26",
+    "usage": "preposition only"
   }
 ]
