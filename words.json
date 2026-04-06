@@ -1159,8 +1159,9 @@
     "word": "gespannt",
     "type": "adj/adv",
     "related": [
+      "entspannt",
       "sich entspannen",
-      "entspannt"
+      "spannen"
     ],
     "definitions": [
       {
@@ -1200,8 +1201,9 @@
     "word": "entspannt",
     "type": "adj/adv",
     "related": [
+      "gespannt",
       "sich entspannen",
-      "gespannt"
+      "spannen"
     ],
     "definitions": [
       {
@@ -6738,7 +6740,699 @@
     "prefix": "ent-",
     "related": [
       "entspannt",
-      "gespannt"
+      "gespannt",
+      "spannen"
     ]
+  },
+  {
+    "id": "spannen",
+    "word": "spannen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to stretch, to tighten",
+        "note": null
+      },
+      {
+        "meaning": "to harness (animals)",
+        "note": null
+      },
+      {
+        "meaning": "to be exciting, thrilling",
+        "note": "informal usage"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er spannte das Seil zwischen den Bäumen.",
+        "en": "He stretched the rope between the trees."
+      },
+      {
+        "de": "Der Film spannt wirklich - ich bin total gespannt auf das Ende!",
+        "en": "The movie is really exciting - I'm totally excited about the ending!"
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "The informal meaning 'to be exciting' is commonly used in spoken German.",
+    "added": "2026-04-05 22:20:58",
+    "auxiliary": "haben",
+    "past_tense": "spannte",
+    "past_participle": "gespannt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "spannen",
+    "related": [
+      "gespannt",
+      "sich entspannen",
+      "entspannt"
+    ]
+  },
+  {
+    "id": "der-grad",
+    "word": "der Grad",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Grad",
+    "definitions": [
+      {
+        "meaning": "degree (temperature)",
+        "note": "always singular in temperature contexts"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Es sind heute 25 Grad.",
+        "en": "It's 25 degrees today."
+      },
+      {
+        "de": "Bei 30 Grad und hoher Luftfeuchtigkeit ist es unerträglich.",
+        "en": "At 30 degrees with high humidity it's unbearable."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Used in the singular for temperatures: '25 Grad', never '25 Grade'.",
+    "related": [],
+    "added": "2026-04-06 10:00:00"
+  },
+  {
+    "id": "die-temperatur",
+    "word": "die Temperatur",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Temperaturen",
+    "definitions": [
+      {
+        "meaning": "temperature",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Temperatur ist heute ungewöhnlich hoch.",
+        "en": "The temperature is unusually high today."
+      },
+      {
+        "de": "Die Wettervorhersage sagt steigende Temperaturen voraus.",
+        "en": "The weather forecast predicts rising temperatures."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Höchsttemperatur = maximum temperature; die Tiefsttemperatur = minimum temperature.",
+    "related": [
+      "die Luftfeuchtigkeit",
+      "die Wettervorhersage"
+    ],
+    "added": "2026-04-06 10:01:00"
+  },
+  {
+    "id": "die-hitze",
+    "word": "die Hitze",
+    "type": "noun",
+    "gender": "die",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "heat, intense heat",
+        "note": "no plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Hitze im August ist kaum auszuhalten.",
+        "en": "The heat in August is barely bearable."
+      },
+      {
+        "de": "Bei dieser Hitze mag ich nicht rausgehen.",
+        "en": "I don't want to go out in this heat."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Sommerhitze = summer heat. Opposite: die Kälte.",
+    "related": [
+      "die Kälte"
+    ],
+    "added": "2026-04-06 10:02:00"
+  },
+  {
+    "id": "die-kaelte",
+    "word": "die Kälte",
+    "type": "noun",
+    "gender": "die",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "cold, the cold",
+        "note": "no plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Kälte heute Morgen hat mich überrascht.",
+        "en": "The cold this morning surprised me."
+      },
+      {
+        "de": "Im Winter leidet sie sehr unter der Kälte.",
+        "en": "In winter she suffers a lot from the cold."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Winterkälte = winter cold. Opposite: die Hitze.",
+    "related": [
+      "die Hitze",
+      "frieren"
+    ],
+    "added": "2026-04-06 10:03:00"
+  },
+  {
+    "id": "die-luftfeuchtigkeit",
+    "word": "die Luftfeuchtigkeit",
+    "type": "noun",
+    "gender": "die",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "humidity, atmospheric moisture",
+        "note": "no plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "In Basel ist die Luftfeuchtigkeit im Sommer oft sehr hoch.",
+        "en": "In Basel the humidity is often very high in summer."
+      },
+      {
+        "de": "Die gefühlte Temperatur hängt von der Luftfeuchtigkeit ab.",
+        "en": "The perceived temperature depends on the humidity."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die gefühlte Temperatur = perceived/feels-like temperature.",
+    "related": [
+      "die Temperatur",
+      "feucht"
+    ],
+    "added": "2026-04-06 10:04:00"
+  },
+  {
+    "id": "das-erdbeben",
+    "word": "das Erdbeben",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Erdbeben",
+    "definitions": [
+      {
+        "meaning": "earthquake",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "In Japan gibt es sehr häufig Erdbeben.",
+        "en": "In Japan earthquakes are very common."
+      },
+      {
+        "de": "Das Erdbeben hatte eine Stärke von 6,5.",
+        "en": "The earthquake had a magnitude of 6.5."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-06 10:05:00"
+  },
+  {
+    "id": "die-ueberschwemmung",
+    "word": "die Überschwemmung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Überschwemmungen",
+    "definitions": [
+      {
+        "meaning": "flood, flooding",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nach dem starken Regen kam es zu Überschwemmungen.",
+        "en": "After the heavy rain there were floods."
+      },
+      {
+        "de": "Die Überschwemmung hat viele Häuser beschädigt.",
+        "en": "The flood damaged many houses."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "der Brand"
+    ],
+    "added": "2026-04-06 10:06:00"
+  },
+  {
+    "id": "die-klimaerwaermung",
+    "word": "die Klimaerwärmung",
+    "type": "noun",
+    "gender": "die",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "global warming, climate change",
+        "note": "no plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Klimaerwärmung führt zu häufigeren Extremwetterereignissen.",
+        "en": "Global warming is leading to more frequent extreme weather events."
+      },
+      {
+        "de": "Wir müssen die Klimaerwärmung ernstnehmen.",
+        "en": "We need to take global warming seriously."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "der Treibhauseffekt"
+    ],
+    "added": "2026-04-06 10:07:00"
+  },
+  {
+    "id": "der-treibhauseffekt",
+    "word": "der Treibhauseffekt",
+    "type": "noun",
+    "gender": "der",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "greenhouse effect",
+        "note": "no plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Treibhauseffekt wird durch CO₂-Emissionen verstärkt.",
+        "en": "The greenhouse effect is intensified by CO₂ emissions."
+      },
+      {
+        "de": "Der Treibhauseffekt ist eine der Hauptursachen der Klimaerwärmung.",
+        "en": "The greenhouse effect is one of the main causes of global warming."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "die Klimaerwärmung"
+    ],
+    "added": "2026-04-06 10:08:00"
+  },
+  {
+    "id": "der-brand",
+    "word": "der Brand",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Brände",
+    "definitions": [
+      {
+        "meaning": "fire, blaze",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Feuerwehr hat den Brand schnell gelöscht.",
+        "en": "The fire brigade extinguished the fire quickly."
+      },
+      {
+        "de": "Der Brand breitete sich schnell aus.",
+        "en": "The fire spread quickly."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Waldbrand = wildfire/forest fire. in Brand geraten = to catch fire.",
+    "related": [
+      "die Überschwemmung"
+    ],
+    "added": "2026-04-06 10:09:00"
+  },
+  {
+    "id": "der-nebel",
+    "word": "der Nebel",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Nebel",
+    "definitions": [
+      {
+        "meaning": "fog, mist",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "In der Poebene gibt es im Winter viel Nebel.",
+        "en": "In the Po Valley there is a lot of fog in winter."
+      },
+      {
+        "de": "Wegen des dichten Nebels musste ich langsam fahren.",
+        "en": "Because of the thick fog I had to drive slowly."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "neblig/nebelig = foggy.",
+    "related": [],
+    "added": "2026-04-06 10:10:00"
+  },
+  {
+    "id": "das-gewitter",
+    "word": "das Gewitter",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Gewitter",
+    "definitions": [
+      {
+        "meaning": "thunderstorm",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Während des Gewitters gibt es Blitze und Donner.",
+        "en": "During the thunderstorm there is lightning and thunder."
+      },
+      {
+        "de": "Ein Gewitter zieht auf.",
+        "en": "A thunderstorm is coming."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das Sommergewitter = summer thunderstorm. der Blitz = lightning; der Donner = thunder.",
+    "related": [],
+    "added": "2026-04-06 10:11:00"
+  },
+  {
+    "id": "der-hagel",
+    "word": "der Hagel",
+    "type": "noun",
+    "gender": "der",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "hail",
+        "note": "no plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Hagel hat die Ernte zerstört.",
+        "en": "The hail destroyed the harvest."
+      },
+      {
+        "de": "Es hagelt — bleib drinnen!",
+        "en": "It's hailing — stay inside!"
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "hageln = to hail (es hagelt).",
+    "related": [],
+    "added": "2026-04-06 10:12:00"
+  },
+  {
+    "id": "die-wettervorhersage",
+    "word": "die Wettervorhersage",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Wettervorhersagen",
+    "definitions": [
+      {
+        "meaning": "weather forecast",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Laut Wettervorhersage soll es morgen regnen.",
+        "en": "According to the weather forecast it should rain tomorrow."
+      },
+      {
+        "de": "Ich schaue immer die Wettervorhersage, bevor ich rausgehe.",
+        "en": "I always check the weather forecast before going out."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "die Temperatur"
+    ],
+    "added": "2026-04-06 10:13:00"
+  },
+  {
+    "id": "feucht",
+    "word": "feucht",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "damp, humid, moist",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Wände im Keller sind feucht.",
+        "en": "The walls in the basement are damp."
+      },
+      {
+        "de": "Heute ist es warm und feucht.",
+        "en": "Today it's warm and humid."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Feuchtigkeit = moisture, humidity. feuchtes Wetter = damp weather.",
+    "related": [
+      "die Luftfeuchtigkeit"
+    ],
+    "added": "2026-04-06 10:14:00"
+  },
+  {
+    "id": "regnen",
+    "word": "regnen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "regnete",
+    "past_participle": "geregnet",
+    "is_separable": false,
+    "reflexive": false,
+    "definitions": [
+      {
+        "meaning": "to rain",
+        "note": "impersonal — always 'es regnet'"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Es hat die ganze Nacht geregnet.",
+        "en": "It rained all night."
+      },
+      {
+        "de": "Es wird morgen regnen.",
+        "en": "It will rain tomorrow."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Always used impersonally: es regnet. der Regen = rain; regnerisch = rainy.",
+    "related": [
+      "regnerisch",
+      "schneien"
+    ],
+    "family_root": "regnen",
+    "added": "2026-04-06 10:15:00"
+  },
+  {
+    "id": "regnerisch",
+    "word": "regnerisch",
+    "type": "adj/adv",
+    "usage": "both",
+    "derived_from": "regnen",
+    "definitions": [
+      {
+        "meaning": "rainy, wet (of weather)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der April war dieses Jahr besonders regnerisch.",
+        "en": "April was particularly rainy this year."
+      },
+      {
+        "de": "Bei regnerischem Wetter bleibe ich lieber zuhause.",
+        "en": "In rainy weather I prefer to stay at home."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "regnen",
+      "schneien"
+    ],
+    "added": "2026-04-06 10:16:00"
+  },
+  {
+    "id": "schneien",
+    "word": "schneien",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "schneite",
+    "past_participle": "geschneit",
+    "is_separable": false,
+    "reflexive": false,
+    "definitions": [
+      {
+        "meaning": "to snow",
+        "note": "impersonal — always 'es schneit'"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Es hat letzte Nacht geschneit.",
+        "en": "It snowed last night."
+      },
+      {
+        "de": "In Basel schneit es selten.",
+        "en": "In Basel it rarely snows."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Always impersonal: es schneit. der Schnee = snow.",
+    "related": [
+      "regnen",
+      "regnerisch"
+    ],
+    "family_root": "schneien",
+    "added": "2026-04-06 10:17:00"
+  },
+  {
+    "id": "frieren",
+    "word": "frieren",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "fror",
+    "past_participle": "gefroren",
+    "is_separable": false,
+    "reflexive": false,
+    "definitions": [
+      {
+        "meaning": "to be cold, to feel cold",
+        "note": "es friert mich = I'm cold"
+      },
+      {
+        "meaning": "to freeze (of water)",
+        "note": "es friert = it's freezing"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Mich friert — hast du eine Jacke für mich?",
+        "en": "I'm cold — do you have a jacket for me?"
+      },
+      {
+        "de": "Heute Nacht wird es frieren.",
+        "en": "It will freeze tonight."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Two uses: (1) es friert mich / ich friere = I'm cold; (2) es friert = it's freezing (water turns to ice). gefroren = frozen.",
+    "related": [
+      "die Kälte"
+    ],
+    "family_root": "frieren",
+    "added": "2026-04-06 10:18:00"
   }
 ]
