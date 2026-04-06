@@ -5697,6 +5697,7 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
+      "der Mieter",
       "vermieten"
     ],
     "definitions": [
@@ -5737,6 +5738,7 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
+      "der Vermieter",
       "mieten"
     ],
     "definitions": [
@@ -9834,5 +9836,454 @@
     "notes": "laut + DAT or GEN. Very common in formal writing and news: laut Bericht, laut Gesetz, laut Angaben. Not to be confused with the adjective laut (loud).",
     "related": [],
     "added": "2026-04-06 12:19:00"
+  },
+  {
+    "id": "billig",
+    "word": "billig",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "cheap, inexpensive",
+        "note": null
+      },
+      {
+        "meaning": "cheap, low-quality",
+        "note": "figurative/pejorative"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist sehr billig — ich kaufe es!",
+        "en": "That's very cheap — I'll buy it!"
+      },
+      {
+        "de": "Das war eine billige Ausrede.",
+        "en": "That was a cheap excuse."
+      }
+    ],
+    "topics": [
+      "money & shopping"
+    ],
+    "tags": [
+      "similar to: teuer"
+    ],
+    "register": "neutral",
+    "notes": "Opposite: teuer. billig can also mean cheap in quality or morally low, not just price.",
+    "related": [
+      "teuer"
+    ],
+    "added": "2026-04-06 13:00:00"
+  },
+  {
+    "id": "teuer",
+    "word": "teuer",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "expensive, costly",
+        "note": null
+      },
+      {
+        "meaning": "dear, precious",
+        "note": "literary: etwas teuer bezahlen = to pay dearly for something"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Restaurant ist sehr teuer.",
+        "en": "The restaurant is very expensive."
+      },
+      {
+        "de": "Das wird ihn teuer zu stehen kommen.",
+        "en": "That will cost him dearly."
+      }
+    ],
+    "topics": [
+      "money & shopping"
+    ],
+    "tags": [
+      "similar to: billig"
+    ],
+    "register": "neutral",
+    "notes": "Opposite: billig (cheap). teuer can also mean 'dear' in an emotional/literary sense.",
+    "related": [
+      "billig"
+    ],
+    "added": "2026-04-06 13:01:00"
+  },
+  {
+    "id": "arm",
+    "word": "arm",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "poor, impoverished",
+        "note": null
+      },
+      {
+        "meaning": "poor thing, unfortunate",
+        "note": "expressing sympathy: der arme Kerl = poor guy"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Familie ist sehr arm.",
+        "en": "The family is very poor."
+      },
+      {
+        "de": "Du armes Kind!",
+        "en": "You poor child!"
+      }
+    ],
+    "topics": [
+      "money & shopping",
+      "society & politics",
+      "emotions"
+    ],
+    "tags": [
+      "similar to: reich, vermögend"
+    ],
+    "register": "neutral",
+    "notes": "Opposite: reich (rich). die Armut = poverty. arm can express both financial poverty and sympathy.",
+    "related": [
+      "reich",
+      "vermögend"
+    ],
+    "added": "2026-04-06 13:02:00"
+  },
+  {
+    "id": "vermoegend",
+    "word": "vermögend",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "wealthy, well-off, affluent",
+        "note": "more formal than reich"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er stammt aus einer vermögenden Familie.",
+        "en": "He comes from a wealthy family."
+      },
+      {
+        "de": "Die vermögenden Schichten der Gesellschaft.",
+        "en": "The affluent layers of society."
+      }
+    ],
+    "topics": [
+      "money & shopping",
+      "society & politics"
+    ],
+    "tags": [
+      "similar to: reich, arm"
+    ],
+    "register": "formal",
+    "notes": "das Vermögen = wealth, fortune; also = ability/capability. vermögend = wealthy (formal); reich = rich (everyday).",
+    "related": [
+      "reich",
+      "arm"
+    ],
+    "added": "2026-04-06 13:03:00"
+  },
+  {
+    "id": "reich",
+    "word": "reich",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "rich, wealthy",
+        "note": null
+      },
+      {
+        "meaning": "rich, abundant",
+        "note": "figurative: eine reiche Ernte = a rich harvest"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie ist sehr reich und lebt in einer Villa.",
+        "en": "She is very rich and lives in a villa."
+      },
+      {
+        "de": "Die Region ist reich an Bodenschätzen.",
+        "en": "The region is rich in natural resources."
+      }
+    ],
+    "topics": [
+      "money & shopping",
+      "society & politics"
+    ],
+    "tags": [
+      "similar to: arm, vermögend"
+    ],
+    "register": "neutral",
+    "notes": "Opposite: arm (poor). reich an + DAT = rich in something. das Reich = empire/realm (different word).",
+    "related": [
+      "arm",
+      "vermögend"
+    ],
+    "added": "2026-04-06 13:04:00"
+  },
+  {
+    "id": "geizig",
+    "word": "geizig",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "stingy, miserly, mean with money",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er ist so geizig, er lädt nie jemanden ein.",
+        "en": "He's so stingy, he never invites anyone."
+      },
+      {
+        "de": "Sei nicht so geizig!",
+        "en": "Don't be so tight-fisted!"
+      }
+    ],
+    "topics": [
+      "money & shopping",
+      "people & relationships"
+    ],
+    "tags": [
+      "similar to: großzügig"
+    ],
+    "register": "neutral",
+    "notes": "Opposite: großzügig (generous). der Geizhals = miser (lit. 'miser-neck').",
+    "related": [
+      "großzügig"
+    ],
+    "added": "2026-04-06 13:05:00"
+  },
+  {
+    "id": "das-geld",
+    "word": "das Geld",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Gelder",
+    "definitions": [
+      {
+        "meaning": "money",
+        "note": "singular in everyday use"
+      },
+      {
+        "meaning": "funds, monies",
+        "note": "plural Gelder used in formal/financial contexts"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe kein Geld dabei.",
+        "en": "I don't have any money on me."
+      },
+      {
+        "de": "Er zerrinnt das Geld unter den Fingern.",
+        "en": "Money runs through his fingers. (he spends money carelessly)"
+      }
+    ],
+    "topics": [
+      "money & shopping"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "zu Geld kommen = to come into money. Geld ausgeben = to spend money. die Gelder (plural) used for institutional funds.",
+    "related": [
+      "die Münze"
+    ],
+    "added": "2026-04-06 13:06:00"
+  },
+  {
+    "id": "die-muenze",
+    "word": "die Münze",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Münzen",
+    "definitions": [
+      {
+        "meaning": "coin",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe keine Münzen für den Automaten.",
+        "en": "I don't have any coins for the machine."
+      },
+      {
+        "de": "Sie warf eine Münze, um zu entscheiden.",
+        "en": "She tossed a coin to decide."
+      }
+    ],
+    "topics": [
+      "money & shopping"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "eine Münze werfen = to toss a coin. Münzen prägen = to mint coins.",
+    "related": [
+      "das Geld"
+    ],
+    "added": "2026-04-06 13:07:00"
+  },
+  {
+    "id": "schenken",
+    "word": "schenken",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "schenkte",
+    "past_participle": "geschenkt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schenken",
+    "definitions": [
+      {
+        "meaning": "to give as a gift, to present",
+        "note": "jmdm. etw. schenken"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Was schenkst du ihr zum Geburtstag?",
+        "en": "What are you giving her for her birthday?"
+      },
+      {
+        "de": "Er hat mir ein Buch geschenkt.",
+        "en": "He gave me a book as a gift."
+      }
+    ],
+    "topics": [
+      "money & shopping",
+      "people & relationships"
+    ],
+    "tags": [
+      "similar to: verschenken"
+    ],
+    "register": "neutral",
+    "notes": "das Geschenk = gift. schenken = to give as a gift (to a specific person); verschenken = to give away (sometimes implies giving something away for free/unnecessarily).",
+    "related": [
+      "verschenken"
+    ],
+    "added": "2026-04-06 13:08:00"
+  },
+  {
+    "id": "verschenken",
+    "word": "verschenken",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "verschenkte",
+    "past_participle": "verschenkt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schenken",
+    "prefix": "ver-",
+    "definitions": [
+      {
+        "meaning": "to give away, to give as gifts (to many people)",
+        "note": "often implies giving away something valuable unnecessarily"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie verschenkten Bücher an alle Kinder der Klasse.",
+        "en": "They gave books as gifts to all the children in the class."
+      },
+      {
+        "de": "Du verschenkst deine Zeit mit dieser Arbeit.",
+        "en": "You're giving away your time on this work."
+      }
+    ],
+    "topics": [
+      "money & shopping",
+      "daily life"
+    ],
+    "tags": [
+      "similar to: schenken"
+    ],
+    "register": "neutral",
+    "notes": "verschenken = to give away (often to multiple people, or implying waste); schenken = to give as a gift to a specific person.",
+    "related": [
+      "schenken"
+    ],
+    "added": "2026-04-06 13:09:00"
+  },
+  {
+    "id": "der-mieter",
+    "word": "der Mieter",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Mieter",
+    "definitions": [
+      {
+        "meaning": "tenant, renter",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Mieter hat die Miete nicht bezahlt.",
+        "en": "The tenant hasn't paid the rent."
+      },
+      {
+        "de": "Als Mieterin hat sie das Recht auf Privatsphäre.",
+        "en": "As a tenant she has the right to privacy."
+      }
+    ],
+    "topics": [
+      "money & shopping",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Mieterin = female tenant. die Miete = rent. mieten = to rent (as tenant). Opposite: der Vermieter (landlord).",
+    "related": [
+      "der Vermieter",
+      "mieten"
+    ],
+    "added": "2026-04-06 13:10:00"
+  },
+  {
+    "id": "der-vermieter",
+    "word": "der Vermieter",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Vermieter",
+    "definitions": [
+      {
+        "meaning": "landlord, lessor",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Vermieter hat die Miete erhöht.",
+        "en": "The landlord raised the rent."
+      },
+      {
+        "de": "Ich habe eine gute Vermieterin — sie repariert alles schnell.",
+        "en": "I have a good landlady — she fixes everything quickly."
+      }
+    ],
+    "topics": [
+      "money & shopping",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Vermieterin = female landlord. vermieten = to rent out. Opposite: der Mieter (tenant).",
+    "related": [
+      "der Mieter",
+      "vermieten"
+    ],
+    "added": "2026-04-06 13:11:00"
   }
 ]
