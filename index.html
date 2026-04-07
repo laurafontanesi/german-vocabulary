@@ -1060,7 +1060,7 @@
     <div class="results-bar">
       <div class="results-count" id="results-count"></div>
       <div class="sort-wrap">
-        <button class="sort-btn relevance" id="btn-relevance">Relevance</button>
+        <button class="sort-btn relevance" id="btn-relevance" onclick="setRelevanceSort()">Relevance</button>
         <button class="sort-btn active" id="btn-alpha" onclick="setSort('alpha',this)">A → Z</button>
         <button class="sort-btn" id="btn-type" onclick="setSort('type',this)">By type</button>
         <button class="sort-btn" id="btn-newest" onclick="setSort('newest',this)">Newest</button>
@@ -1185,6 +1185,7 @@ let activeType = null;
 let activeTopic = null;
 let activeAlpha = null;
 let sortMode = 'alpha';
+let useRelevanceSort = false; // true when searching and relevance sort is active
 
 // practice state
 
@@ -1299,8 +1300,18 @@ function clearFilters() {
 }
 function setSort(mode, btn) {
   sortMode = mode;
+  useRelevanceSort = false;
   document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
+  // keep relevance visible if there's a query
+  const q = document.getElementById('search').value.trim();
+  if (q) document.getElementById('btn-relevance').classList.add('visible');
+  applyFilters();
+}
+
+function setRelevanceSort() {
+  useRelevanceSort = true;
+  document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
   applyFilters();
 }
 
@@ -1332,23 +1343,22 @@ function scoreMatch(w, q) {
 function applyFilters() {
   const q = document.getElementById('search').value.toLowerCase().trim();
 
-  // show/hide relevance button
   const relBtn = document.getElementById('btn-relevance');
   const sortBtns = ['btn-alpha','btn-type','btn-newest'].map(id => document.getElementById(id));
 
   if (q) {
     relBtn.classList.add('visible');
-    // always switch to relevance when there's a query, unless user explicitly picked another sort
-    if (!relBtn.classList.contains('active')) {
+    // auto-switch to relevance when user starts typing (unless they've manually picked another sort)
+    if (!useRelevanceSort && !sortBtns.some(b => b.classList.contains('active') && b.id !== 'btn-alpha')) {
+      useRelevanceSort = true;
       sortBtns.forEach(b => b.classList.remove('active'));
-      relBtn.classList.add('active');
     }
   } else {
     relBtn.classList.remove('visible');
-    relBtn.classList.remove('active');
-    // restore active state on the current sortMode button
-    const modeMap = { alpha: 'btn-alpha', type: 'btn-type', newest: 'btn-newest' };
+    useRelevanceSort = false;
+    // restore the active state on the current sortMode button
     sortBtns.forEach(b => b.classList.remove('active'));
+    const modeMap = { alpha: 'btn-alpha', type: 'btn-type', newest: 'btn-newest' };
     const activeId = modeMap[sortMode];
     if (activeId) document.getElementById(activeId).classList.add('active');
   }
@@ -1364,10 +1374,8 @@ function applyFilters() {
     return true;
   });
 
-  // sort
-  const useRelevance = q && document.getElementById('btn-relevance').classList.contains('active');
   filtered.sort((a, b) => {
-    if (useRelevance) {
+    if (useRelevanceSort && q) {
       const scoreDiff = scoreMatch(b, q) - scoreMatch(a, q);
       if (scoreDiff !== 0) return scoreDiff;
       return a.word.localeCompare(b.word, 'de');
@@ -1381,7 +1389,7 @@ function applyFilters() {
       const bB = b.word.replace(/^(der|die|das|sich|ein|eine)\s+/i, '');
       return a.type.localeCompare(b.type) || bA.localeCompare(bB, 'de');
     } else {
-      // newest: normalise to date+time string — take first 19 chars so both formats compare correctly
+      // newest: normalise both formats (YYYY-MM-DD and YYYY-MM-DD HH:MM:SS) to 19 chars
       const dateA = (a.added || '').substring(0, 19);
       const dateB = (b.added || '').substring(0, 19);
       const dateDiff = dateB.localeCompare(dateA);
