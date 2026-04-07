@@ -465,6 +465,24 @@
   .practice-mute-btn:hover { color: var(--ink); }
   .practice-mute-btn.muted { color: var(--accent); opacity: 0.7; }
 
+  /* ── voice selector ── */
+  .practice-voice-select {
+    position: absolute;
+    top: 1rem; left: 5.5rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    color: var(--ink-muted);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 2px 4px;
+    max-width: 120px;
+    opacity: 0.6;
+    transition: opacity 0.15s;
+  }
+  .practice-voice-select:hover { opacity: 1; }
+  .practice-voice-select:focus { outline: none; opacity: 1; }
+
   /* ── word card modal ── */
   #card-modal-overlay {
     display: none; position: fixed; inset: 0;
@@ -1109,6 +1127,7 @@
   <div class="practice-box">
     <button class="practice-back" onclick="backToLauncher()" title="Back">←</button>
     <button class="practice-mute-btn" id="mute-btn" onclick="toggleMute()" title="Toggle audio">🔊</button>
+    <select class="practice-voice-select" id="voice-select" onchange="onVoiceSelect()" title="Choose voice"></select>
     <button class="practice-summary-btn" onclick="openSummary()">Summary</button>
     <button class="practice-close" onclick="closePractice()">✕</button>
     <div class="practice-prompt" id="practice-prompt"></div>
@@ -1313,23 +1332,27 @@ function scoreMatch(w, q) {
 function applyFilters() {
   const q = document.getElementById('search').value.toLowerCase().trim();
 
-  // show/hide relevance button and mute/unmute sort buttons
+  // show/hide relevance button
   const relBtn = document.getElementById('btn-relevance');
   const sortBtns = ['btn-alpha','btn-type','btn-newest'].map(id => document.getElementById(id));
+
   if (q) {
     relBtn.classList.add('visible');
-    // only auto-select relevance if no other sort button is active
-    const anyActive = sortBtns.some(b => b.classList.contains('active'));
-    if (!anyActive) relBtn.classList.add('active');
+    // always switch to relevance when there's a query, unless user explicitly picked another sort
+    if (!relBtn.classList.contains('active')) {
+      sortBtns.forEach(b => b.classList.remove('active'));
+      relBtn.classList.add('active');
+    }
   } else {
     relBtn.classList.remove('visible');
     relBtn.classList.remove('active');
-    // restore active state on correct sort button
+    // restore active state on the current sortMode button
     const modeMap = { alpha: 'btn-alpha', type: 'btn-type', newest: 'btn-newest' };
     sortBtns.forEach(b => b.classList.remove('active'));
     const activeId = modeMap[sortMode];
     if (activeId) document.getElementById(activeId).classList.add('active');
   }
+
   filtered = allWords.filter(w => {
     if (activeType && w.type !== activeType) return false;
     if (activeTopic && !(w.topics || []).includes(activeTopic)) return false;
@@ -1341,7 +1364,7 @@ function applyFilters() {
     return true;
   });
 
-  // sort — relevance when searching (unless user picked a different sort), otherwise sortMode
+  // sort
   const useRelevance = q && document.getElementById('btn-relevance').classList.contains('active');
   filtered.sort((a, b) => {
     if (useRelevance) {
@@ -1358,8 +1381,14 @@ function applyFilters() {
       const bB = b.word.replace(/^(der|die|das|sich|ein|eine)\s+/i, '');
       return a.type.localeCompare(b.type) || bA.localeCompare(bB, 'de');
     } else {
-      const dateDiff = (b.added || '').localeCompare(a.added || '');
-      const tbA = a.word.replace(/^(der|die|das|sich|ein|eine)\s+/i, ''); const tbB = b.word.replace(/^(der|die|das|sich|ein|eine)\s+/i, ''); return dateDiff !== 0 ? dateDiff : tbA.localeCompare(tbB, 'de');
+      // newest: normalise to date+time string — take first 19 chars so both formats compare correctly
+      const dateA = (a.added || '').substring(0, 19);
+      const dateB = (b.added || '').substring(0, 19);
+      const dateDiff = dateB.localeCompare(dateA);
+      if (dateDiff !== 0) return dateDiff;
+      const tbA = a.word.replace(/^(der|die|das|sich|ein|eine)\s+/i, '');
+      const tbB = b.word.replace(/^(der|die|das|sich|ein|eine)\s+/i, '');
+      return tbA.localeCompare(tbB, 'de');
     }
   });
 
@@ -1462,6 +1491,68 @@ function searchRelated(word, event) {
 const SPEAK_SVG = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>`;
 const SPEAK_SVG_LG = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>`;
 
+let selectedVoice = null; // the SpeechSynthesisVoice object to use
+
+function getGermanVoices() {
+  return window.speechSynthesis.getVoices().filter(v =>
+    v.lang.startsWith('de') || v.lang.startsWith('DE')
+  );
+}
+
+function pickBestVoice(voices) {
+  if (!voices.length) return null;
+  // Prefer: 1) Google Deutsch (online, high quality), 2) any Google de voice,
+  // 3) any de-DE voice, 4) any German voice
+  return voices.find(v => v.name === 'Google Deutsch')
+    || voices.find(v => v.name.toLowerCase().includes('google') && v.lang.startsWith('de'))
+    || voices.find(v => v.lang === 'de-DE')
+    || voices[0];
+}
+
+function initVoices() {
+  const voices = getGermanVoices();
+  if (!voices.length) return; // voices not ready yet, will retry on voiceschanged
+
+  const savedName = localStorage.getItem('practiceVoiceName');
+  selectedVoice = voices.find(v => v.name === savedName) || pickBestVoice(voices);
+
+  // populate the dropdown
+  const sel = document.getElementById('voice-select');
+  if (!sel) return;
+  sel.innerHTML = '';
+  voices.forEach(v => {
+    const opt = document.createElement('option');
+    opt.value = v.name;
+    // shorten label: strip language tag and "Google " prefix for readability
+    opt.textContent = v.name.replace(/\s*\(.*\)/, '').replace('Google ', 'G: ');
+    opt.selected = selectedVoice && v.name === selectedVoice.name;
+    sel.appendChild(opt);
+  });
+  // hide the selector if only one voice (nothing to choose)
+  sel.style.display = voices.length <= 1 ? 'none' : '';
+}
+
+function onVoiceSelect() {
+  const sel = document.getElementById('voice-select');
+  const voices = getGermanVoices();
+  selectedVoice = voices.find(v => v.name === sel.value) || null;
+  if (selectedVoice) localStorage.setItem('practiceVoiceName', selectedVoice.name);
+}
+
+// voices may load async — init now and again on voiceschanged
+if (window.speechSynthesis) {
+  initVoices();
+  window.speechSynthesis.onvoiceschanged = initVoices;
+}
+
+function makeUtterance(text) {
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'de-DE';
+  u.rate = 0.9;
+  if (selectedVoice) u.voice = selectedVoice;
+  return u;
+}
+
 function speakText(text, btn, event) {
   if (event) event.stopPropagation();
   if (!window.speechSynthesis) return;
@@ -1475,9 +1566,7 @@ function speakText(text, btn, event) {
   window.speechSynthesis.cancel();
   document.querySelectorAll('.speak-btn.speaking').forEach(b => b.classList.remove('speaking'));
 
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = 'de-DE';
-  utterance.rate = 0.9;
+  const utterance = makeUtterance(text);
   if (btn) {
     btn.classList.add('speaking');
     utterance.onend = () => btn.classList.remove('speaking');
@@ -1487,13 +1576,9 @@ function speakText(text, btn, event) {
 }
 
 function autoPlay(text) {
-  // Play automatically if not muted
   if (isMuted || !window.speechSynthesis || !text) return;
   window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = 'de-DE';
-  utterance.rate = 0.9;
-  window.speechSynthesis.speak(utterance);
+  window.speechSynthesis.speak(makeUtterance(text));
 }
 
 function toggleMute() {
@@ -1716,7 +1801,7 @@ function startTask() {
     const now = new Date();
     function ageBucket(w) {
       if (!w.added) return 3;
-      const days = (now - new Date(w.added)) / 86400000;
+      const days = (now - new Date(w.added.substring(0, 10))) / 86400000;
       if (days <= 14)  return 0; // last 2 weeks
       if (days <= 60)  return 1; // last 2 months
       if (days <= 180) return 2; // last 6 months

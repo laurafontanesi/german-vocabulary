@@ -20069,7 +20069,8 @@
       "entfernen",
       "in der Nähe"
     ],
-    "added": "2026-04-07 15:11:00"
+    "added": "2026-04-07 15:11:00",
+    "derived_from": "entfernen"
   },
   {
     "id": "entfernen",
@@ -24827,6 +24828,7 @@
     "usage": "both",
     "related": [
       "knittern"
-    ]
+    ],
+    "derived_from": "knittern"
   }
 ]
