@@ -2597,7 +2597,6 @@
     "word": "vor Kurzem",
     "type": "adj/adv",
     "related": [
-      "in letzter Zeit",
       "kürzlich",
       "neulich",
       "vorhin"
@@ -3280,40 +3279,6 @@
     "notes": "der Zeitgenosse / die Zeitgenossin = a contemporary (person living in the same era). Er war ein Zeitgenosse Goethes.",
     "added": "2026-04-05",
     "usage": "both"
-  },
-  {
-    "id": "in-letzter-zeit",
-    "word": "in letzter Zeit",
-    "type": "expression",
-    "related": [
-      "vor Kurzem",
-      "neuerdings"
-    ],
-    "definitions": [
-      {
-        "meaning": "lately, recently, in recent times",
-        "note": "refers to an ongoing recent period, not a single point"
-      }
-    ],
-    "examples": [
-      {
-        "de": "In letzter Zeit habe ich wenig gelesen.",
-        "en": "Lately I haven't been reading much."
-      },
-      {
-        "de": "Wie geht es dir? In letzter Zeit habe ich nichts von dir gehört.",
-        "en": "How are you? I haven't heard from you lately."
-      }
-    ],
-    "topics": [
-      "time"
-    ],
-    "tags": [
-      "similar to: vor Kurzem"
-    ],
-    "register": "neutral",
-    "notes": "in letzter Zeit = lately (ongoing period); vor Kurzem = recently (specific point). 'In letzter Zeit schlafe ich schlecht' = I've been sleeping badly lately.",
-    "added": "2026-04-05"
   },
   {
     "id": "zwar-aber",
