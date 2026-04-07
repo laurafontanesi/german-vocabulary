@@ -2146,6 +2146,7 @@
     "family_root": "sehen",
     "prefix": "aus-",
     "related": [
+      "fernsehen",
       "scheinen",
       "sehen",
       "zusehen"
@@ -3123,7 +3124,11 @@
     "tags": [],
     "register": "neutral",
     "notes": "gewohnt sein = to be used to. Ich bin es gewohnt, früh aufzustehen = I'm used to getting up early.",
-    "added": "2026-04-05"
+    "added": "2026-04-05",
+    "related": [
+      "gewohnt",
+      "gewöhnlich"
+    ]
   },
   {
     "id": "meistens",
@@ -3891,8 +3896,9 @@
     "reflexive": false,
     "prefix": "aus-",
     "related": [
+      "einwandern",
       "umziehen",
-      "einwandern"
+      "wandern"
     ],
     "definitions": [
       {
@@ -3981,8 +3987,14 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
+      "abfahren",
       "fahren",
+      "herfahren",
+      "herumfahren",
+      "hinfahren",
       "kennen",
+      "losfahren",
+      "wegfahren",
       "wissen"
     ],
     "definitions": [
@@ -5966,8 +5978,14 @@
     "related": [
       "abfahren",
       "ankommen",
+      "das Fahrrad",
+      "der Verkehr",
       "erfahren",
-      "losfahren"
+      "herfahren",
+      "herumfahren",
+      "hinfahren",
+      "losfahren",
+      "wegfahren"
     ],
     "definitions": [
       {
@@ -6083,6 +6101,7 @@
     "family_root": "steigen",
     "prefix": "aus-",
     "related": [
+      "besteigen",
       "steigen"
     ]
   },
@@ -7541,6 +7560,7 @@
     "register": "neutral",
     "notes": "legen = to lay (transitive, causes horizontal position); liegen = to lie (intransitive, is in horizontal position). A classic German confusion: ich lege (I lay) vs ich liege (I lie).",
     "related": [
+      "liegen",
       "stellen"
     ],
     "added": "2026-04-06 11:02:00"
@@ -7758,6 +7778,8 @@
     "register": "neutral",
     "notes": "die Vorsicht (caution) shares the -sicht ending but is unrelated. die Ansicht = opinion/view.",
     "related": [
+      "der Ausblick",
+      "der Fernblick",
       "die Vorsicht"
     ],
     "added": "2026-04-06 11:08:00"
@@ -10287,6 +10309,7 @@
     "register": "neutral",
     "notes": "die Vermieterin = female landlord. vermieten = to rent out. Opposite: der Mieter (tenant).",
     "related": [
+      "der Eigentümer",
       "der Mieter",
       "vermieten"
     ],
@@ -10957,7 +10980,8 @@
       "handeln",
       "sich benehmen",
       "sich halten",
-      "sich verhalten"
+      "sich verhalten",
+      "sich zurückhalten"
     ],
     "added": "2026-04-06 14:14:00"
   },
@@ -11579,7 +11603,8 @@
       "die Bemerkung",
       "die Redewendung",
       "die Äußerung",
-      "drucken"
+      "drucken",
+      "drücken"
     ],
     "added": "2026-04-06 14:29:00"
   },
@@ -12796,6 +12821,7 @@
     "notes": "schauen = look/watch (Swiss/Austrian/South German). sehen = see/watch (standard German). fernschauen = to watch TV (Swiss). fernsehen = standard.",
     "related": [
       "anschauen",
+      "fernsehen",
       "sehen",
       "zusehen"
     ],
@@ -12845,9 +12871,10 @@
     "register": "neutral",
     "notes": "sehen = to see/watch (standard German). mal sehen = we'll see / let's see. aussehen = to look/appear.",
     "related": [
-      "schauen",
       "anschauen",
       "aussehen",
+      "fernsehen",
+      "schauen",
       "zusehen"
     ],
     "added": "2026-04-07 10:20:00"
@@ -12890,6 +12917,7 @@
     "notes": "zusehen = to watch/look on (standard); zuschauen = same but more Swiss/Austrian. sieh zu, dass... = make sure that...",
     "related": [
       "aussehen",
+      "fernsehen",
       "schauen",
       "sehen"
     ],
@@ -15452,6 +15480,7 @@
     "notes": "Takes sein. Opposite: sinken. aussteigen = to get out; einsteigen = to get in.",
     "related": [
       "aussteigen",
+      "besteigen",
       "der Anstieg",
       "erhöhen",
       "sinken"
@@ -16442,6 +16471,7 @@
     "notes": "sich zurückhalten = to hold back/restrain oneself. zurückhaltend = reserved, restrained (adjective).",
     "related": [
       "aufhalten",
+      "das Verhalten",
       "erhalten",
       "halten",
       "sich halten",
@@ -16620,6 +16650,7 @@
     "register": "neutral",
     "notes": "Opposite: tiefgründig (profound). die Oberfläche = surface.",
     "related": [
+      "die Oberfläche",
       "tiefgründig"
     ],
     "added": "2026-04-07 12:53:00"
@@ -16767,6 +16798,7 @@
     "related": [
       "Lieblings-",
       "gefallen",
+      "gerne",
       "ich … lieber … als …"
     ],
     "added": "2026-04-07 12:57:00"
@@ -17105,7 +17137,8 @@
     "notes": "lieber = more gladly/preferably (comparative of gern). ich hätte lieber = I would prefer. am liebsten = most of all/favourite.",
     "related": [
       "bevorzugen",
-      "gefallen"
+      "gefallen",
+      "gerne"
     ],
     "added": "2026-04-07 13:06:00"
   },
@@ -17275,5 +17308,3096 @@
       "durcheinander"
     ],
     "added": "2026-04-07 13:11:00"
+  },
+  {
+    "id": "die-oberflaeche",
+    "word": "die Oberfläche",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Oberflächen",
+    "definitions": [
+      {
+        "meaning": "surface",
+        "note": null
+      },
+      {
+        "meaning": "superficiality",
+        "note": "figurative: an der Oberfläche bleiben = to stay on the surface"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Oberfläche des Sees war spiegelglatt.",
+        "en": "The surface of the lake was mirror-smooth."
+      },
+      {
+        "de": "Er bleibt immer an der Oberfläche.",
+        "en": "He always stays on the surface."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "oberflächlich = superficial (adjective). die Arbeitsfläche = worktop/work surface.",
+    "related": [
+      "oberflächlich",
+      "rau"
+    ],
+    "added": "2026-04-07 14:00:00"
+  },
+  {
+    "id": "glatt",
+    "word": "glatt",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "smooth, slippery",
+        "note": null
+      },
+      {
+        "meaning": "flat-out, completely",
+        "note": "colloquial intensifier: glatt falsch = completely wrong"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Straße ist glatt — pass auf!",
+        "en": "The road is slippery — be careful!"
+      },
+      {
+        "de": "Das ist glatt gelogen.",
+        "en": "That is a flat-out lie."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "nature & weather"
+    ],
+    "tags": [
+      "similar to: rau"
+    ],
+    "register": "neutral",
+    "notes": "Glatteis = black ice. glatt rasiert = clean-shaven. Opposite: rau (rough).",
+    "related": [
+      "rau"
+    ],
+    "added": "2026-04-07 14:01:00"
+  },
+  {
+    "id": "rau",
+    "word": "rau",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "rough, coarse (surface)",
+        "note": null
+      },
+      {
+        "meaning": "harsh, raw (weather or voice)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Holz hat eine raue Oberfläche.",
+        "en": "The wood has a rough surface."
+      },
+      {
+        "de": "Ein raues Klima.",
+        "en": "A harsh climate."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "nature & weather"
+    ],
+    "tags": [
+      "similar to: glatt"
+    ],
+    "register": "neutral",
+    "notes": "Opposite: glatt (smooth). rau can describe texture, weather, voice, or manners.",
+    "related": [
+      "glatt",
+      "die Oberfläche"
+    ],
+    "added": "2026-04-07 14:02:00"
+  },
+  {
+    "id": "nass",
+    "word": "nass",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "wet, damp",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Meine Jacke ist völlig nass.",
+        "en": "My jacket is completely wet."
+      },
+      {
+        "de": "Es hat geregnet — die Straße ist noch nass.",
+        "en": "It rained — the road is still wet."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "nature & weather"
+    ],
+    "tags": [
+      "similar to: trocken"
+    ],
+    "register": "neutral",
+    "notes": "Opposite: trocken. patschnass = soaking wet. nass bis auf die Haut = soaked to the skin.",
+    "related": [
+      "trocken"
+    ],
+    "added": "2026-04-07 14:03:00"
+  },
+  {
+    "id": "trocken",
+    "word": "trocken",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "dry",
+        "note": null
+      },
+      {
+        "meaning": "dry, deadpan (humour)",
+        "note": "trockener Humor = dry humour"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir sollten warten, bis die Straße trocken ist.",
+        "en": "We should wait until the road is dry."
+      },
+      {
+        "de": "Er hat einen trockenen Humor.",
+        "en": "He has a dry sense of humour."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "nature & weather"
+    ],
+    "tags": [
+      "similar to: nass"
+    ],
+    "register": "neutral",
+    "notes": "Opposite: nass. trocknen = to dry (verb). abtrocknen = to dry off.",
+    "related": [
+      "nass",
+      "trocknen",
+      "abtrocknen"
+    ],
+    "added": "2026-04-07 14:04:00"
+  },
+  {
+    "id": "trocknen",
+    "word": "trocknen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "trocknete",
+    "past_participle": "getrocknet",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "trocknen",
+    "definitions": [
+      {
+        "meaning": "to dry",
+        "note": "transitive and intransitive"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Wäsche trocknet an der Leine.",
+        "en": "The laundry is drying on the line."
+      },
+      {
+        "de": "Sie trocknete sich die Haare.",
+        "en": "She dried her hair."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "similar to: abtrocknen"
+    ],
+    "register": "neutral",
+    "notes": "trocknen = to dry (general). abtrocknen = to dry off (with a towel). der Trockner = tumble dryer.",
+    "related": [
+      "trocken",
+      "abtrocknen"
+    ],
+    "added": "2026-04-07 14:05:00"
+  },
+  {
+    "id": "abtrocknen",
+    "word": "abtrocknen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "trocknete ab",
+    "past_participle": "abgetrocknet",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "trocknen",
+    "prefix": "ab-",
+    "definitions": [
+      {
+        "meaning": "to dry off, to towel dry",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nach dem Duschen trockne ich mich gründlich ab.",
+        "en": "After showering I dry myself off thoroughly."
+      },
+      {
+        "de": "Kannst du das Geschirr abtrocknen?",
+        "en": "Can you dry the dishes?"
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "trocken",
+      "trocknen"
+    ],
+    "added": "2026-04-07 14:06:00"
+  },
+  {
+    "id": "das-eisen",
+    "word": "das Eisen",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Eisen",
+    "definitions": [
+      {
+        "meaning": "iron (metal)",
+        "note": null
+      },
+      {
+        "meaning": "iron (for clothes)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Eisen ist schwer und stabil.",
+        "en": "Iron is heavy and stable."
+      },
+      {
+        "de": "Das Eisen ist heiß — Vorsicht!",
+        "en": "The iron is hot — be careful!"
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Man muss das Eisen schmieden, solange es heiß ist = Strike while the iron is hot. der Stahl = steel (stronger than iron).",
+    "related": [
+      "der Stahl"
+    ],
+    "added": "2026-04-07 14:07:00"
+  },
+  {
+    "id": "der-stahl",
+    "word": "der Stahl",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Stähle",
+    "definitions": [
+      {
+        "meaning": "steel",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Brücke ist aus Stahl gebaut.",
+        "en": "The bridge is built from steel."
+      },
+      {
+        "de": "Nerven aus Stahl = nerves of steel.",
+        "en": "Nerves of steel."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Nerven aus Stahl = nerves of steel. der Stahl is stronger and harder than das Eisen.",
+    "related": [
+      "das Eisen"
+    ],
+    "added": "2026-04-07 14:08:00"
+  },
+  {
+    "id": "der-urlaub",
+    "word": "der Urlaub",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Urlaube",
+    "definitions": [
+      {
+        "meaning": "holiday, vacation, leave",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir fahren nächste Woche in den Urlaub.",
+        "en": "We're going on holiday next week."
+      },
+      {
+        "de": "Ich habe drei Wochen Urlaub genommen.",
+        "en": "I took three weeks of holiday."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "in den Urlaub fahren = to go on holiday. Urlaub nehmen = to take leave. die Urlaubsreise = holiday trip.",
+    "related": [
+      "die Reise",
+      "reisen",
+      "verreisen",
+      "übernachten"
+    ],
+    "added": "2026-04-07 14:09:00"
+  },
+  {
+    "id": "die-reise",
+    "word": "die Reise",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Reisen",
+    "definitions": [
+      {
+        "meaning": "journey, trip, travel",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Reise nach Japan war wunderschön.",
+        "en": "The trip to Japan was wonderful."
+      },
+      {
+        "de": "Gute Reise!",
+        "en": "Have a good journey!"
+      }
+    ],
+    "topics": [
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Gute Reise! = Have a good trip! auf Reisen sein = to be travelling. die Reisekosten = travel expenses.",
+    "related": [
+      "der Urlaub",
+      "reisen",
+      "verreisen",
+      "übernachten"
+    ],
+    "added": "2026-04-07 14:10:00"
+  },
+  {
+    "id": "reisen",
+    "word": "reisen",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "reiste",
+    "past_participle": "gereist",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "reisen",
+    "definitions": [
+      {
+        "meaning": "to travel",
+        "note": "takes sein"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie reist gerne durch Europa.",
+        "en": "She likes travelling through Europe."
+      },
+      {
+        "de": "Wir sind letzten Sommer nach Japan gereist.",
+        "en": "We travelled to Japan last summer."
+      }
+    ],
+    "topics": [
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Takes sein. verreisen = to go away on a trip. abreisen = to depart. anreisen = to arrive/travel to.",
+    "related": [
+      "abreisen",
+      "anreisen",
+      "der Urlaub",
+      "die Reise",
+      "verreisen"
+    ],
+    "added": "2026-04-07 14:11:00"
+  },
+  {
+    "id": "verreisen",
+    "word": "verreisen",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "verreiste",
+    "past_participle": "verreist",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "reisen",
+    "prefix": "ver-",
+    "definitions": [
+      {
+        "meaning": "to go away (on a trip), to travel away",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir verreisen nächste Woche.",
+        "en": "We're going away next week."
+      },
+      {
+        "de": "Er ist gerade verreist.",
+        "en": "He's away travelling at the moment."
+      }
+    ],
+    "topics": [
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "verreist sein = to be away on a trip. verreisen is more about the act of going away, reisen about the journey.",
+    "related": [
+      "abreisen",
+      "anreisen",
+      "der Urlaub",
+      "die Reise",
+      "reisen"
+    ],
+    "added": "2026-04-07 14:12:00"
+  },
+  {
+    "id": "treiben",
+    "word": "treiben",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "trieb",
+    "past_participle": "getrieben",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "treiben",
+    "definitions": [
+      {
+        "meaning": "to do, to pursue (an activity)",
+        "note": "Sport treiben = to do sport"
+      },
+      {
+        "meaning": "to drive, to push, to urge",
+        "note": null
+      },
+      {
+        "meaning": "to drift (in water/air)",
+        "note": "takes sein in this meaning"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie treibt regelmäßig Sport.",
+        "en": "She does sport regularly."
+      },
+      {
+        "de": "Was treibst du so?",
+        "en": "What have you been up to?"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Sport treiben = to do sport. Handel treiben = to trade. Was treibst du? = What are you up to? abtreiben = to abort / to drift off course.",
+    "related": [
+      "abtreiben"
+    ],
+    "added": "2026-04-07 14:13:00"
+  },
+  {
+    "id": "abtreiben",
+    "word": "abtreiben",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "trieb ab",
+    "past_participle": "abgetrieben",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "treiben",
+    "prefix": "ab-",
+    "definitions": [
+      {
+        "meaning": "to abort (a pregnancy)",
+        "note": null
+      },
+      {
+        "meaning": "to drift off course",
+        "note": "takes sein: das Boot trieb ab"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Boot wurde vom Sturm abgetrieben.",
+        "en": "The boat was driven off course by the storm."
+      },
+      {
+        "de": "Sie entschied sich, abzutreiben.",
+        "en": "She decided to have an abortion."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "society & politics"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": "Two meanings: (1) to drift off course (sein); (2) to abort a pregnancy (haben). die Abtreibung = abortion.",
+    "related": [
+      "treiben"
+    ],
+    "added": "2026-04-07 14:14:00"
+  },
+  {
+    "id": "besteigen",
+    "word": "besteigen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "bestieg",
+    "past_participle": "bestiegen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "steigen",
+    "prefix": "be-",
+    "definitions": [
+      {
+        "meaning": "to climb, to ascend (a mountain or vehicle)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie bestieg den Gipfel nach sechs Stunden.",
+        "en": "She reached the summit after six hours."
+      },
+      {
+        "de": "Er bestieg das Pferd.",
+        "en": "He mounted the horse."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "besteigen = to climb/mount (formal). einen Berg besteigen = to climb a mountain.",
+    "related": [
+      "aussteigen",
+      "der Gipfel",
+      "die Wanderung",
+      "steigen",
+      "wandern"
+    ],
+    "added": "2026-04-07 14:15:00"
+  },
+  {
+    "id": "wandern",
+    "word": "wandern",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "wanderte",
+    "past_participle": "gewandert",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "wandern",
+    "definitions": [
+      {
+        "meaning": "to hike, to go walking",
+        "note": null
+      },
+      {
+        "meaning": "to wander, to roam",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir sind gestern durch den Schwarzwald gewandert.",
+        "en": "We hiked through the Black Forest yesterday."
+      },
+      {
+        "de": "Seine Gedanken wanderten ab.",
+        "en": "His thoughts wandered off."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Takes sein. die Wanderung = hike. auswandern = to emigrate (different meaning!).",
+    "related": [
+      "auswandern",
+      "besteigen",
+      "der Spaziergang",
+      "die Wanderung",
+      "spazieren"
+    ],
+    "added": "2026-04-07 14:16:00"
+  },
+  {
+    "id": "die-wanderung",
+    "word": "die Wanderung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Wanderungen",
+    "definitions": [
+      {
+        "meaning": "hike, walking tour",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir haben eine mehrtägige Wanderung gemacht.",
+        "en": "We went on a multi-day hike."
+      },
+      {
+        "de": "Die Wanderung war anstrengend aber schön.",
+        "en": "The hike was tiring but beautiful."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Hüttenwanderung = hut-to-hut hike. die Wanderung ↔ der Spaziergang (more leisurely walk).",
+    "related": [
+      "besteigen",
+      "der Höhenunterschied",
+      "der Spaziergang",
+      "die Ausrüstung",
+      "wandern"
+    ],
+    "added": "2026-04-07 14:17:00"
+  },
+  {
+    "id": "der-spaziergang",
+    "word": "der Spaziergang",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Spaziergänge",
+    "definitions": [
+      {
+        "meaning": "walk, stroll",
+        "note": "leisurely, not a hike"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Jeden Abend mache ich einen Spaziergang.",
+        "en": "Every evening I go for a walk."
+      },
+      {
+        "de": "Das war kein Spaziergang! (figurative)",
+        "en": "That was no walk in the park!"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "einen Spaziergang machen = to go for a walk. spazieren gehen = same. Less demanding than wandern.",
+    "related": [
+      "Gassi gehen",
+      "die Wanderung",
+      "spazieren",
+      "wandern"
+    ],
+    "added": "2026-04-07 14:18:00"
+  },
+  {
+    "id": "spazieren",
+    "word": "spazieren",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "spazierte",
+    "past_participle": "spaziert",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "spazieren",
+    "definitions": [
+      {
+        "meaning": "to stroll, to walk (leisurely)",
+        "note": "mainly used in: spazieren gehen"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir sind durch den Park spaziert.",
+        "en": "We strolled through the park."
+      },
+      {
+        "de": "Gehen wir spazieren?",
+        "en": "Shall we go for a walk?"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "spazieren gehen = to go for a walk. Takes sein.",
+    "related": [
+      "Gassi gehen",
+      "der Spaziergang",
+      "wandern"
+    ],
+    "added": "2026-04-07 14:19:00"
+  },
+  {
+    "id": "die-ausruestung",
+    "word": "die Ausrüstung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Ausrüstungen",
+    "definitions": [
+      {
+        "meaning": "equipment, gear",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Für die Wanderung braucht man gute Ausrüstung.",
+        "en": "You need good equipment for the hike."
+      },
+      {
+        "de": "Die Ausrüstung der Feuerwehr ist modern.",
+        "en": "The fire brigade's equipment is modern."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "ausrüsten = to equip. gut ausgerüstet sein = to be well-equipped.",
+    "related": [
+      "die Wanderung"
+    ],
+    "added": "2026-04-07 14:20:00"
+  },
+  {
+    "id": "sich-sonnen",
+    "word": "sich sonnen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "sonnte sich",
+    "past_participle": "gesonnt",
+    "is_separable": false,
+    "reflexive": true,
+    "family_root": "sonnen",
+    "definitions": [
+      {
+        "meaning": "to sunbathe, to bask in the sun",
+        "note": "reflexive"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie liegt im Garten und sonnt sich.",
+        "en": "She is lying in the garden sunbathing."
+      },
+      {
+        "de": "Die Katze sonnt sich auf dem Fensterbrett.",
+        "en": "The cat is basking in the sun on the windowsill."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "daily life"
+    ],
+    "tags": [
+      "reflexive"
+    ],
+    "register": "neutral",
+    "notes": "sich sonnen = to sunbathe. die Sonne = sun. sonnig = sunny.",
+    "related": [
+      "liegen"
+    ],
+    "added": "2026-04-07 14:21:00"
+  },
+  {
+    "id": "liegen",
+    "word": "liegen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "lag",
+    "past_participle": "gelegen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "liegen",
+    "definitions": [
+      {
+        "meaning": "to lie (be in a horizontal position)",
+        "note": null
+      },
+      {
+        "meaning": "to be located, to be situated",
+        "note": "Basel liegt am Rhein"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er liegt auf dem Sofa und schläft.",
+        "en": "He is lying on the sofa sleeping."
+      },
+      {
+        "de": "Basel liegt am Rhein.",
+        "en": "Basel is situated on the Rhine."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [
+      "similar to: legen"
+    ],
+    "register": "neutral",
+    "notes": "liegen = to lie/be located (intransitive); legen = to lay (transitive — you place something). Takes haben in standard German (sein in Southern/Swiss German).",
+    "related": [
+      "legen",
+      "sich sonnen"
+    ],
+    "added": "2026-04-07 14:22:00"
+  },
+  {
+    "id": "hinfahren",
+    "word": "hinfahren",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "fuhr hin",
+    "past_participle": "hingefahren",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "fahren",
+    "prefix": "hin-",
+    "definitions": [
+      {
+        "meaning": "to go there, to drive there",
+        "note": "motion away from speaker"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wie bist du hingefahren?",
+        "en": "How did you get there?"
+      },
+      {
+        "de": "Wir fahren morgen hin.",
+        "en": "We're going there tomorrow."
+      }
+    ],
+    "topics": [
+      "travel & places"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": "hinfahren = to go there (away from speaker); herfahren = to come here (towards speaker). hin und her = back and forth.",
+    "related": [
+      "abfahren",
+      "erfahren",
+      "fahren",
+      "herfahren",
+      "herumfahren",
+      "losfahren",
+      "wegfahren"
+    ],
+    "added": "2026-04-07 14:23:00"
+  },
+  {
+    "id": "herfahren",
+    "word": "herfahren",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "fuhr her",
+    "past_participle": "hergefahren",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "fahren",
+    "prefix": "her-",
+    "definitions": [
+      {
+        "meaning": "to come here, to drive here",
+        "note": "motion towards speaker"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wie bist du hergefahren?",
+        "en": "How did you get here?"
+      },
+      {
+        "de": "Er ist extra hergefahren.",
+        "en": "He made a special trip to come here."
+      }
+    ],
+    "topics": [
+      "travel & places"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": "herfahren = motion towards speaker; hinfahren = motion away. her- vs hin- is a key distinction in German.",
+    "related": [
+      "abfahren",
+      "erfahren",
+      "fahren",
+      "herumfahren",
+      "hinfahren",
+      "losfahren",
+      "wegfahren"
+    ],
+    "added": "2026-04-07 14:24:00"
+  },
+  {
+    "id": "herumfahren",
+    "word": "herumfahren",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "fuhr herum",
+    "past_participle": "herumgefahren",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "fahren",
+    "prefix": "herum-",
+    "definitions": [
+      {
+        "meaning": "to drive around, to travel around",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir sind durch die Stadt herumgefahren.",
+        "en": "We drove around the city."
+      },
+      {
+        "de": "Er fährt den ganzen Tag herum.",
+        "en": "He drives around all day."
+      }
+    ],
+    "topics": [
+      "travel & places"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "abfahren",
+      "erfahren",
+      "fahren",
+      "herfahren",
+      "hinfahren",
+      "losfahren",
+      "wegfahren"
+    ],
+    "added": "2026-04-07 14:25:00"
+  },
+  {
+    "id": "losfahren",
+    "word": "losfahren",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "fuhr los",
+    "past_participle": "losgefahren",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "fahren",
+    "prefix": "los-",
+    "definitions": [
+      {
+        "meaning": "to set off, to depart, to leave (by vehicle)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wann fahren wir los?",
+        "en": "When do we set off?"
+      },
+      {
+        "de": "Er ist früh morgens losgefahren.",
+        "en": "He set off early in the morning."
+      }
+    ],
+    "topics": [
+      "travel & places"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": "losfahren = to set off (by vehicle). losgehen = to set off on foot. los! = let's go! / go!",
+    "related": [
+      "abfahren",
+      "erfahren",
+      "fahren",
+      "herfahren",
+      "herumfahren",
+      "hinfahren",
+      "wegfahren"
+    ],
+    "added": "2026-04-07 14:26:00"
+  },
+  {
+    "id": "wegfahren",
+    "word": "wegfahren",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "fuhr weg",
+    "past_participle": "weggefahren",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "fahren",
+    "prefix": "weg-",
+    "definitions": [
+      {
+        "meaning": "to drive away, to go away (by vehicle)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er ist einfach weggefahren ohne ein Wort.",
+        "en": "He just drove away without a word."
+      },
+      {
+        "de": "Wir fahren dieses Wochenende weg.",
+        "en": "We're going away this weekend."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "daily life"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": "wegfahren = to drive/go away. wegfahren can also mean to go away for a short trip.",
+    "related": [
+      "abfahren",
+      "erfahren",
+      "fahren",
+      "herfahren",
+      "herumfahren",
+      "hinfahren",
+      "losfahren"
+    ],
+    "added": "2026-04-07 14:27:00"
+  },
+  {
+    "id": "abfahren",
+    "word": "abfahren",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "fuhr ab",
+    "past_participle": "abgefahren",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "fahren",
+    "prefix": "ab-",
+    "definitions": [
+      {
+        "meaning": "to depart, to leave (of scheduled transport)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Zug fährt um 10 Uhr ab.",
+        "en": "The train departs at 10 o'clock."
+      },
+      {
+        "de": "Wann fährt der nächste Bus ab?",
+        "en": "When does the next bus leave?"
+      }
+    ],
+    "topics": [
+      "travel & places"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": "abfahren = to depart (scheduled transport). die Abfahrt = departure. Opposite: ankommen.",
+    "related": [
+      "abreisen",
+      "ankommen",
+      "die Abreise",
+      "erfahren",
+      "fahren",
+      "herfahren",
+      "herumfahren",
+      "hinfahren",
+      "losfahren",
+      "wegfahren"
+    ],
+    "added": "2026-04-07 14:28:00"
+  },
+  {
+    "id": "abreisen",
+    "word": "abreisen",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "reiste ab",
+    "past_participle": "abgereist",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "reisen",
+    "prefix": "ab-",
+    "definitions": [
+      {
+        "meaning": "to depart, to leave (on a journey)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir reisen morgen früh ab.",
+        "en": "We're departing tomorrow morning."
+      },
+      {
+        "de": "Er ist bereits abgereist.",
+        "en": "He has already left/departed."
+      }
+    ],
+    "topics": [
+      "travel & places"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": "abreisen = to depart on a journey (people); abfahren = departure of transport. die Abreise = departure.",
+    "related": [
+      "abfahren",
+      "ankommen",
+      "anreisen",
+      "die Abreise",
+      "reisen",
+      "verreisen"
+    ],
+    "added": "2026-04-07 14:29:00"
+  },
+  {
+    "id": "anreisen",
+    "word": "anreisen",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "reiste an",
+    "past_participle": "angereist",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "reisen",
+    "prefix": "an-",
+    "definitions": [
+      {
+        "meaning": "to arrive, to travel to (a destination)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir reisen am Freitag an.",
+        "en": "We're arriving on Friday."
+      },
+      {
+        "de": "Die Gäste sind aus aller Welt angereist.",
+        "en": "The guests arrived from all over the world."
+      }
+    ],
+    "topics": [
+      "travel & places"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": "anreisen = to arrive/travel to a place. die Anreise = journey there/arrival.",
+    "related": [
+      "abreisen",
+      "die Anreise",
+      "reisen",
+      "verreisen"
+    ],
+    "added": "2026-04-07 14:30:00"
+  },
+  {
+    "id": "die-anreise",
+    "word": "die Anreise",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Anreisen",
+    "definitions": [
+      {
+        "meaning": "journey to a destination, arrival trip",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Anreise mit dem Zug dauerte vier Stunden.",
+        "en": "The train journey there took four hours."
+      },
+      {
+        "de": "Bei der Anreise hat es geregnet.",
+        "en": "It was raining on the way there."
+      }
+    ],
+    "topics": [
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Anreise = journey TO the destination. die Abreise = departure/journey back.",
+    "related": [
+      "anreisen",
+      "die Abreise"
+    ],
+    "added": "2026-04-07 14:31:00"
+  },
+  {
+    "id": "die-abreise",
+    "word": "die Abreise",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Abreisen",
+    "definitions": [
+      {
+        "meaning": "departure, leaving (of a journey)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Am Tag der Abreise war das Wetter wunderschön.",
+        "en": "On the day of departure the weather was beautiful."
+      },
+      {
+        "de": "Die Abreise ist für Sonntag geplant.",
+        "en": "The departure is planned for Sunday."
+      }
+    ],
+    "topics": [
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Abreise = departure. die Anreise = arrival journey. Opposite pair.",
+    "related": [
+      "abreisen",
+      "die Anreise",
+      "abfahren"
+    ],
+    "added": "2026-04-07 14:32:00"
+  },
+  {
+    "id": "der-verkehr",
+    "word": "der Verkehr",
+    "type": "noun",
+    "gender": "der",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "traffic",
+        "note": "no plural in this sense"
+      },
+      {
+        "meaning": "intercourse, relations (formal/euphemistic)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Verkehr in der Stadt ist heute sehr dicht.",
+        "en": "Traffic in the city is very heavy today."
+      },
+      {
+        "de": "Stau im Berufsverkehr.",
+        "en": "Rush-hour traffic jam."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Berufsverkehr = rush-hour traffic. der Straßenverkehr = road traffic. der Verkehrsunfall = traffic accident.",
+    "related": [
+      "das Fahrrad",
+      "fahren"
+    ],
+    "added": "2026-04-07 14:33:00"
+  },
+  {
+    "id": "vermeiden",
+    "word": "vermeiden",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "vermied",
+    "past_participle": "vermieden",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "meiden",
+    "prefix": "ver-",
+    "definitions": [
+      {
+        "meaning": "to avoid",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er versucht, Konflikte zu vermeiden.",
+        "en": "He tries to avoid conflicts."
+      },
+      {
+        "de": "Das hätte man vermeiden können.",
+        "en": "That could have been avoided."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "vermeiden = to avoid (transitive). unvermeidlich = unavoidable.",
+    "related": [],
+    "added": "2026-04-07 14:34:00"
+  },
+  {
+    "id": "das-fahrrad",
+    "word": "das Fahrrad",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Fahrräder",
+    "definitions": [
+      {
+        "meaning": "bicycle, bike",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich fahre gerne mit dem Fahrrad durch Basel.",
+        "en": "I like cycling through Basel."
+      },
+      {
+        "de": "Sie fährt jeden Tag Rad zur Arbeit.",
+        "en": "She cycles to work every day."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "mit dem Fahrrad fahren OR Rad fahren = to cycle. das Velo (Switzerland) = bicycle. das Rennrad = racing bike. das E-Bike = electric bike.",
+    "related": [
+      "fahren",
+      "der Verkehr"
+    ],
+    "added": "2026-04-07 14:35:00"
+  },
+  {
+    "id": "uebernachten",
+    "word": "übernachten",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "übernachtete",
+    "past_participle": "übernachtet",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "übernachten",
+    "definitions": [
+      {
+        "meaning": "to stay overnight, to spend the night",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir haben in einem kleinen Hotel übernachtet.",
+        "en": "We stayed overnight in a small hotel."
+      },
+      {
+        "de": "Darf ich heute Nacht bei dir übernachten?",
+        "en": "Can I stay at your place tonight?"
+      }
+    ],
+    "topics": [
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Übernachtung = overnight stay. Übernachtung inklusive Frühstück = bed and breakfast.",
+    "related": [
+      "die Reise",
+      "der Urlaub"
+    ],
+    "added": "2026-04-07 14:36:00"
+  },
+  {
+    "id": "der-eigentuemer",
+    "word": "der Eigentümer",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Eigentümer",
+    "definitions": [
+      {
+        "meaning": "owner, proprietor",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Eigentümer des Hauses hat die Miete erhöht.",
+        "en": "The owner of the house raised the rent."
+      },
+      {
+        "de": "Sie ist die Eigentümerin eines kleinen Cafés.",
+        "en": "She is the owner of a small café."
+      }
+    ],
+    "topics": [
+      "money & shopping",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Eigentümerin = female owner. das Eigentum = property/ownership. Eigentümer is more formal than Besitzer.",
+    "related": [
+      "der Vermieter"
+    ],
+    "added": "2026-04-07 14:37:00"
+  },
+  {
+    "id": "letzte",
+    "word": "letzte",
+    "type": "adj/adv",
+    "usage": "adjective only",
+    "definitions": [
+      {
+        "meaning": "last, most recent, final",
+        "note": "always before a noun"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Letztes Jahr war ich in Japan.",
+        "en": "Last year I was in Japan."
+      },
+      {
+        "de": "Das war das letzte Mal.",
+        "en": "That was the last time."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "letztes Jahr = last year. letzte Woche = last week. zum letzten Mal = for the last time. Opposite: nächste.",
+    "related": [
+      "nächste",
+      "vorletzte",
+      "vergangene"
+    ],
+    "added": "2026-04-07 14:38:00"
+  },
+  {
+    "id": "vorletzte",
+    "word": "vorletzte",
+    "type": "adj/adv",
+    "usage": "adjective only",
+    "definitions": [
+      {
+        "meaning": "second-to-last, penultimate",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die vorletzte Folge der Serie war fantastisch.",
+        "en": "The penultimate episode of the series was fantastic."
+      },
+      {
+        "de": "Er wohnt im vorletzten Haus.",
+        "en": "He lives in the second-to-last house."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "letzte",
+      "übernächste"
+    ],
+    "added": "2026-04-07 14:39:00"
+  },
+  {
+    "id": "vergangene",
+    "word": "vergangene",
+    "type": "adj/adv",
+    "usage": "adjective only",
+    "definitions": [
+      {
+        "meaning": "past, last (referring to a recent past period)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "In der vergangenen Woche hat es viel geregnet.",
+        "en": "In the past week it rained a lot."
+      },
+      {
+        "de": "Die vergangenen Jahre waren schwierig.",
+        "en": "The past years were difficult."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "vergangene = past (referring to a completed period). letzte = last (most recent). die Vergangenheit = the past.",
+    "related": [
+      "jetzige",
+      "letzte",
+      "zukünftige"
+    ],
+    "added": "2026-04-07 14:40:00"
+  },
+  {
+    "id": "naechste",
+    "word": "nächste",
+    "type": "adj/adv",
+    "usage": "adjective only",
+    "definitions": [
+      {
+        "meaning": "next, nearest",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nächste Woche habe ich Urlaub.",
+        "en": "Next week I'm on holiday."
+      },
+      {
+        "de": "Wo ist die nächste Haltestelle?",
+        "en": "Where is the nearest stop?"
+      }
+    ],
+    "topics": [
+      "time",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "nächste = next (time) OR nearest (place). Opposite: letzte.",
+    "related": [
+      "letzte",
+      "übernächste"
+    ],
+    "added": "2026-04-07 14:41:00"
+  },
+  {
+    "id": "uebernaechste",
+    "word": "übernächste",
+    "type": "adj/adv",
+    "usage": "adjective only",
+    "definitions": [
+      {
+        "meaning": "the one after next",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Übernächste Woche fahre ich nach Berlin.",
+        "en": "The week after next I'm going to Berlin."
+      },
+      {
+        "de": "Das übernächste Haus gehört ihr.",
+        "en": "The house after the next one belongs to her."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "übernächste Woche = the week after next. vorletzt = second-to-last (opposite direction).",
+    "related": [
+      "nächste",
+      "vorletzte"
+    ],
+    "added": "2026-04-07 14:42:00"
+  },
+  {
+    "id": "jetzige",
+    "word": "jetzige",
+    "type": "adj/adv",
+    "usage": "adjective only",
+    "definitions": [
+      {
+        "meaning": "current, present (used before a noun)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die jetzige Situation ist schwierig.",
+        "en": "The current situation is difficult."
+      },
+      {
+        "de": "Der jetzige Direktor heißt Müller.",
+        "en": "The current director is called Müller."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "jetzige = current (before a noun). jetzt = now (adverb). aktuell = current (more common in everyday speech).",
+    "related": [
+      "vergangene",
+      "zukünftige"
+    ],
+    "added": "2026-04-07 14:43:00"
+  },
+  {
+    "id": "zukuenftige",
+    "word": "zukünftige",
+    "type": "adj/adv",
+    "usage": "adjective only",
+    "definitions": [
+      {
+        "meaning": "future, prospective",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die zukünftigen Generationen werden darunter leiden.",
+        "en": "Future generations will suffer from it."
+      },
+      {
+        "de": "Mein zukünftiger Mann.",
+        "en": "My future husband."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Zukunft = the future. zukünftig = future/prospective.",
+    "related": [
+      "vergangene",
+      "jetzige"
+    ],
+    "added": "2026-04-07 14:44:00"
+  },
+  {
+    "id": "vor-prep",
+    "word": "vor",
+    "type": "prep/conj",
+    "usage": "preposition only",
+    "definitions": [
+      {
+        "meaning": "before, in front of (position)",
+        "note": "+ DAT for position"
+      },
+      {
+        "meaning": "ago (time)",
+        "note": "vor einer Stunde = an hour ago"
+      },
+      {
+        "meaning": "because of, with (emotion)",
+        "note": "vor Angst = with fear"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er steht vor der Tür.",
+        "en": "He's standing in front of the door."
+      },
+      {
+        "de": "Ich habe sie vor drei Jahren kennengelernt.",
+        "en": "I met her three years ago."
+      },
+      {
+        "de": "Sie zitterte vor Angst.",
+        "en": "She trembled with fear."
+      }
+    ],
+    "topics": [
+      "grammar & structure",
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "vor + DAT (position/time/emotion). vor + AKK (direction: vor das Haus stellen). vor allem = above all.",
+    "related": [
+      "seit"
+    ],
+    "added": "2026-04-07 14:45:00"
+  },
+  {
+    "id": "seit",
+    "word": "seit",
+    "type": "prep/conj",
+    "usage": "preposition only",
+    "definitions": [
+      {
+        "meaning": "since, for (with ongoing duration)",
+        "note": "+ DAT; action started in past and continues"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich wohne seit drei Jahren in Basel.",
+        "en": "I have been living in Basel for three years."
+      },
+      {
+        "de": "Seit wann bist du hier?",
+        "en": "How long have you been here? / Since when are you here?"
+      }
+    ],
+    "topics": [
+      "grammar & structure",
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "seit + DAT = since/for (ongoing). Always with present tense in German (not perfect like in English). seit wann? = since when? / how long?",
+    "related": [
+      "vor",
+      "vor-prep"
+    ],
+    "added": "2026-04-07 14:46:00"
+  },
+  {
+    "id": "demnaechst",
+    "word": "demnächst",
+    "type": "adj/adv",
+    "usage": "adverb only",
+    "definitions": [
+      {
+        "meaning": "soon, shortly, in the near future",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Demnächst eröffnet hier ein neues Restaurant.",
+        "en": "A new restaurant will be opening here soon."
+      },
+      {
+        "de": "Wir sehen uns demnächst!",
+        "en": "See you soon!"
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "demnächst = soon/shortly (slightly more formal than bald).",
+    "related": [
+      "bald"
+    ],
+    "added": "2026-04-07 14:47:00"
+  },
+  {
+    "id": "gewohnt",
+    "word": "gewohnt",
+    "type": "adj/adv",
+    "usage": "adjective only",
+    "definitions": [
+      {
+        "meaning": "accustomed to, used to",
+        "note": "etw. gewohnt sein = to be used to something"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bin es gewohnt, früh aufzustehen.",
+        "en": "I'm used to getting up early."
+      },
+      {
+        "de": "Das bin ich nicht gewohnt.",
+        "en": "I'm not used to that."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "etw. gewohnt sein = to be used to something. die Gewohnheit = habit. gewöhnlich = usually (different meaning!).",
+    "related": [
+      "die Gewohnheit",
+      "gewöhnlich"
+    ],
+    "added": "2026-04-07 14:48:00"
+  },
+  {
+    "id": "gewoehnlich",
+    "word": "gewöhnlich",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "usually, normally, generally",
+        "note": "adverb"
+      },
+      {
+        "meaning": "ordinary, common, vulgar",
+        "note": "adjective"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Gewöhnlich stehe ich um 7 Uhr auf.",
+        "en": "I usually get up at 7 o'clock."
+      },
+      {
+        "de": "Das ist ein ganz gewöhnlicher Tag.",
+        "en": "That's a perfectly ordinary day."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "gewöhnlich = usually (adverb) OR ordinary (adjective). gewohnt = accustomed to (different meaning!).",
+    "related": [
+      "gewohnt",
+      "die Gewohnheit",
+      "meistens"
+    ],
+    "added": "2026-04-07 14:49:00"
+  },
+  {
+    "id": "selten",
+    "word": "selten",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "rare, rarely, seldom",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "In Basel schneit es selten.",
+        "en": "It rarely snows in Basel."
+      },
+      {
+        "de": "Das ist eine seltene Gelegenheit.",
+        "en": "That is a rare opportunity."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "time"
+    ],
+    "tags": [
+      "similar to: manchmal"
+    ],
+    "register": "neutral",
+    "notes": "Opposite: oft/häufig. selten = rarely. eine seltene Pflanze = a rare plant.",
+    "related": [
+      "manchmal",
+      "meistens"
+    ],
+    "added": "2026-04-07 14:50:00"
+  },
+  {
+    "id": "manchmal",
+    "word": "manchmal",
+    "type": "adj/adv",
+    "usage": "adverb only",
+    "definitions": [
+      {
+        "meaning": "sometimes, occasionally",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Manchmal gehe ich abends spazieren.",
+        "en": "Sometimes I go for a walk in the evening."
+      },
+      {
+        "de": "Das passiert manchmal.",
+        "en": "That happens sometimes."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "manchmal = sometimes. ab und zu = now and then. gelegentlich = occasionally (more formal).",
+    "related": [
+      "selten",
+      "meistens"
+    ],
+    "added": "2026-04-07 14:51:00"
+  },
+  {
+    "id": "unpuenktlich",
+    "word": "unpünktlich",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "unpunctual, late, not on time",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er ist immer unpünktlich.",
+        "en": "He is always late."
+      },
+      {
+        "de": "Der Zug ist unpünktlich angekommen.",
+        "en": "The train arrived late."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Opposite: pünktlich (punctual). die Unpünktlichkeit = lack of punctuality.",
+    "related": [
+      "pünktlich"
+    ],
+    "added": "2026-04-07 14:52:00"
+  },
+  {
+    "id": "das-gebiet",
+    "word": "das Gebiet",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Gebiete",
+    "definitions": [
+      {
+        "meaning": "area, region, territory",
+        "note": null
+      },
+      {
+        "meaning": "field, domain (of knowledge)",
+        "note": "auf dem Gebiet der Linguistik"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Gebiet ist dünn besiedelt.",
+        "en": "The area is sparsely populated."
+      },
+      {
+        "de": "Sie ist Expertin auf diesem Gebiet.",
+        "en": "She is an expert in this field."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "die Landschaft",
+      "der Ort"
+    ],
+    "added": "2026-04-07 14:53:00"
+  },
+  {
+    "id": "der-platz",
+    "word": "der Platz",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Plätze",
+    "definitions": [
+      {
+        "meaning": "square, public space",
+        "note": null
+      },
+      {
+        "meaning": "seat, place, spot",
+        "note": null
+      },
+      {
+        "meaning": "space, room",
+        "note": "hier ist kein Platz = there's no room here"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Marktplatz ist im Zentrum der Stadt.",
+        "en": "The market square is in the city centre."
+      },
+      {
+        "de": "Ist dieser Platz noch frei?",
+        "en": "Is this seat still free?"
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Platz = square (place) OR seat/space. Platz nehmen = to take a seat. Platz machen = to make room.",
+    "related": [
+      "der Ort"
+    ],
+    "added": "2026-04-07 14:54:00"
+  },
+  {
+    "id": "der-ort",
+    "word": "der Ort",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Orte",
+    "definitions": [
+      {
+        "meaning": "place, location, village, town",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist ein schöner Ort zum Leben.",
+        "en": "That is a beautiful place to live."
+      },
+      {
+        "de": "Wir treffen uns am vereinbarten Ort.",
+        "en": "We'll meet at the agreed location."
+      }
+    ],
+    "topics": [
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Ort = place/location/small town. vor Ort = on site/on location. der Geburtsort = place of birth.",
+    "related": [
+      "der Platz",
+      "das Gebiet"
+    ],
+    "added": "2026-04-07 14:55:00"
+  },
+  {
+    "id": "die-landschaft",
+    "word": "die Landschaft",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Landschaften",
+    "definitions": [
+      {
+        "meaning": "landscape, scenery, countryside",
+        "note": null
+      },
+      {
+        "meaning": "landscape (painting)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Landschaft im Schwarzwald ist atemberaubend.",
+        "en": "The scenery in the Black Forest is breathtaking."
+      },
+      {
+        "de": "Er malt Landschaften.",
+        "en": "He paints landscapes."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "das Gebiet",
+      "die Landkarte",
+      "die Wiese",
+      "hügelig"
+    ],
+    "added": "2026-04-07 14:56:00"
+  },
+  {
+    "id": "die-landkarte",
+    "word": "die Landkarte",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Landkarten",
+    "definitions": [
+      {
+        "meaning": "map (geographical)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich brauche eine Landkarte von der Schweiz.",
+        "en": "I need a map of Switzerland."
+      },
+      {
+        "de": "Auf der Landkarte sieht man die Grenze.",
+        "en": "You can see the border on the map."
+      }
+    ],
+    "topics": [
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Landkarte = printed map. die Karte = card/map (general). die Stadtplan = city map.",
+    "related": [
+      "die Landschaft",
+      "die Grenze"
+    ],
+    "added": "2026-04-07 14:57:00"
+  },
+  {
+    "id": "der-ausblick",
+    "word": "der Ausblick",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Ausblicke",
+    "definitions": [
+      {
+        "meaning": "view, outlook (from a high point)",
+        "note": null
+      },
+      {
+        "meaning": "outlook, prospects (figurative)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Von hier oben hat man einen herrlichen Ausblick.",
+        "en": "From up here you have a wonderful view."
+      },
+      {
+        "de": "Der Ausblick auf die Zukunft ist positiv.",
+        "en": "The outlook for the future is positive."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "nature & weather"
+    ],
+    "tags": [
+      "similar to: die Aussicht"
+    ],
+    "register": "neutral",
+    "notes": "der Ausblick ≈ die Aussicht (both = view/outlook). der Fernblick = long-distance view.",
+    "related": [
+      "die Aussicht",
+      "der Fernblick",
+      "sichtbar"
+    ],
+    "added": "2026-04-07 14:58:00"
+  },
+  {
+    "id": "der-fernblick",
+    "word": "der Fernblick",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Fernblicke",
+    "definitions": [
+      {
+        "meaning": "long-distance view, panoramic view into the distance",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Bei klarem Wetter hat man von hier einen Fernblick bis zu den Alpen.",
+        "en": "In clear weather you can see all the way to the Alps from here."
+      },
+      {
+        "de": "Der Gipfel bietet einen fantastischen Fernblick.",
+        "en": "The summit offers a fantastic long-distance view."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Fernblick = specifically a view into the far distance. der Ausblick/die Aussicht = more general 'view'.",
+    "related": [
+      "der Ausblick",
+      "die Aussicht",
+      "sichtbar"
+    ],
+    "added": "2026-04-07 14:59:00"
+  },
+  {
+    "id": "sichtbar",
+    "word": "sichtbar",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "visible, noticeable",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Berge sind heute gut sichtbar.",
+        "en": "The mountains are clearly visible today."
+      },
+      {
+        "de": "Er war sichtbar erschöpft.",
+        "en": "He was visibly exhausted."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Opposite: unsichtbar (invisible). die Sichtbarkeit = visibility. sichtlich = visibly/noticeably (synonym).",
+    "related": [
+      "der Ausblick",
+      "der Fernblick"
+    ],
+    "added": "2026-04-07 15:00:00"
+  },
+  {
+    "id": "die-grenze",
+    "word": "die Grenze",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Grenzen",
+    "definitions": [
+      {
+        "meaning": "border, boundary",
+        "note": null
+      },
+      {
+        "meaning": "limit (figurative)",
+        "note": "seine Grenzen kennen = to know one's limits"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Basel liegt an der Grenze zu Frankreich und Deutschland.",
+        "en": "Basel is on the border with France and Germany."
+      },
+      {
+        "de": "Es gibt Grenzen, die man nicht überschreiten sollte.",
+        "en": "There are limits that shouldn't be crossed."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "grenzenlos = boundless, limitless. über die Grenze gehen = to cross the border.",
+    "related": [
+      "die Landkarte"
+    ],
+    "added": "2026-04-07 15:01:00"
+  },
+  {
+    "id": "die-ebene",
+    "word": "die Ebene",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Ebenen",
+    "definitions": [
+      {
+        "meaning": "plain, flat land",
+        "note": null
+      },
+      {
+        "meaning": "level, plane (figurative)",
+        "note": "auf höchster Ebene = at the highest level"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Poebene ist eine der fruchtbarsten Ebenen Europas.",
+        "en": "The Po Plain is one of the most fertile plains in Europe."
+      },
+      {
+        "de": "Das müssen wir auf einer anderen Ebene diskutieren.",
+        "en": "We need to discuss that on a different level."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "travel & places"
+    ],
+    "tags": [
+      "similar to: flach"
+    ],
+    "register": "neutral",
+    "notes": "flach = flat (adjective). die Ebene = plain/flatland (noun). auf internationaler Ebene = at international level.",
+    "related": [
+      "die Wiese",
+      "flach",
+      "steil"
+    ],
+    "added": "2026-04-07 15:02:00"
+  },
+  {
+    "id": "die-wiese",
+    "word": "die Wiese",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Wiesen",
+    "definitions": [
+      {
+        "meaning": "meadow, field, lawn",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Kinder spielen auf der Wiese.",
+        "en": "The children are playing in the meadow."
+      },
+      {
+        "de": "Im Frühling sind die Wiesen voller Blumen.",
+        "en": "In spring the meadows are full of flowers."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Wiese = meadow/grassy field. der Rasen = lawn (mown). die Wiese is generally unmown/natural.",
+    "related": [
+      "die Landschaft",
+      "die Ebene"
+    ],
+    "added": "2026-04-07 15:03:00"
+  },
+  {
+    "id": "der-gipfel",
+    "word": "der Gipfel",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Gipfel",
+    "definitions": [
+      {
+        "meaning": "summit, peak (of a mountain)",
+        "note": null
+      },
+      {
+        "meaning": "summit (meeting)",
+        "note": "der G7-Gipfel = G7 summit"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie erreichten den Gipfel nach sechs Stunden.",
+        "en": "They reached the summit after six hours."
+      },
+      {
+        "de": "Das ist der Gipfel der Frechheit!",
+        "en": "That is the height of cheek!"
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "travel & places",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Gipfel = mountain summit OR political summit meeting. Das ist der Gipfel! = That's the limit! (exclamation of outrage).",
+    "related": [
+      "besteigen",
+      "steil",
+      "der Höhenunterschied"
+    ],
+    "added": "2026-04-07 15:04:00"
+  },
+  {
+    "id": "huegelig",
+    "word": "hügelig",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "hilly",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Gelände ist hügelig und schwer zu befahren.",
+        "en": "The terrain is hilly and hard to drive on."
+      },
+      {
+        "de": "Eine hügelige Landschaft.",
+        "en": "A hilly landscape."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "travel & places"
+    ],
+    "tags": [
+      "similar to: flach, steil"
+    ],
+    "register": "neutral",
+    "notes": "der Hügel = hill. hügelig = hilly.",
+    "related": [
+      "flach",
+      "steil",
+      "die Landschaft"
+    ],
+    "added": "2026-04-07 15:05:00"
+  },
+  {
+    "id": "die-neigung",
+    "word": "die Neigung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Neigungen",
+    "definitions": [
+      {
+        "meaning": "slope, gradient, incline",
+        "note": null
+      },
+      {
+        "meaning": "tendency, inclination, disposition",
+        "note": "figurative"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Neigung des Hangs beträgt 30 Grad.",
+        "en": "The gradient of the slope is 30 degrees."
+      },
+      {
+        "de": "Sie hat eine Neigung zur Melancholie.",
+        "en": "She has a tendency towards melancholy."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Neigung = slope (physical) or tendency/inclination (figurative). sich neigen = to lean/slope.",
+    "related": [
+      "steil",
+      "flach"
+    ],
+    "added": "2026-04-07 15:06:00"
+  },
+  {
+    "id": "flach",
+    "word": "flach",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "flat, level, shallow",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Norddeutsche Tiefebene ist sehr flach.",
+        "en": "The North German Plain is very flat."
+      },
+      {
+        "de": "Das Wasser ist hier flach.",
+        "en": "The water is shallow here."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "travel & places"
+    ],
+    "tags": [
+      "similar to: steil, hügelig"
+    ],
+    "register": "neutral",
+    "notes": "Opposite: steil (steep). flach = flat/level/shallow.",
+    "related": [
+      "die Ebene",
+      "die Neigung",
+      "hügelig",
+      "steil"
+    ],
+    "added": "2026-04-07 15:07:00"
+  },
+  {
+    "id": "steil",
+    "word": "steil",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "steep",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Anstieg war steil und anstrengend.",
+        "en": "The ascent was steep and strenuous."
+      },
+      {
+        "de": "Eine steile Karriere machen = to have a steep career rise.",
+        "en": "To have a meteoric career rise."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "travel & places"
+    ],
+    "tags": [
+      "similar to: flach"
+    ],
+    "register": "neutral",
+    "notes": "Opposite: flach. eine steile Karriere = a meteoric rise (idiom). der steile Hang = the steep slope.",
+    "related": [
+      "der Gipfel",
+      "der Höhenunterschied",
+      "die Ebene",
+      "die Neigung",
+      "flach",
+      "hügelig"
+    ],
+    "added": "2026-04-07 15:08:00"
+  },
+  {
+    "id": "der-hoehenunterschied",
+    "word": "der Höhenunterschied",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Höhenunterschiede",
+    "definitions": [
+      {
+        "meaning": "difference in altitude, elevation gain/loss",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Wanderung hat einen Höhenunterschied von 800 Metern.",
+        "en": "The hike has an elevation gain of 800 metres."
+      },
+      {
+        "de": "Der Höhenunterschied zwischen Basel und dem Feldberg ist beträchtlich.",
+        "en": "The difference in altitude between Basel and the Feldberg is considerable."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "steil",
+      "der Gipfel",
+      "die Wanderung"
+    ],
+    "added": "2026-04-07 15:09:00"
+  },
+  {
+    "id": "nirgends",
+    "word": "nirgends",
+    "type": "adj/adv",
+    "usage": "adverb only",
+    "definitions": [
+      {
+        "meaning": "nowhere, not anywhere",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich finde meine Schlüssel nirgends.",
+        "en": "I can't find my keys anywhere."
+      },
+      {
+        "de": "Nirgends ist es so schön wie zuhause.",
+        "en": "Nowhere is as beautiful as home."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "nirgends = nowhere (standard). nirgendwo = same meaning. Opposite: überall (everywhere).",
+    "related": [],
+    "added": "2026-04-07 15:10:00"
+  },
+  {
+    "id": "entfernt",
+    "word": "entfernt",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "distant, far away",
+        "note": null
+      },
+      {
+        "meaning": "remotely (figurative)",
+        "note": "nicht entfernt = not remotely"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Dorf ist 10 km entfernt.",
+        "en": "The village is 10 km away."
+      },
+      {
+        "de": "Ich bin nicht im Entferntesten daran interessiert.",
+        "en": "I'm not remotely interested in it."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "entfernt = distant (adjective) or away (adverb). die Entfernung = distance. entfernen = to remove.",
+    "related": [
+      "entfernen",
+      "in der Nähe"
+    ],
+    "added": "2026-04-07 15:11:00"
+  },
+  {
+    "id": "entfernen",
+    "word": "entfernen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "entfernte",
+    "past_participle": "entfernt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "entfernen",
+    "definitions": [
+      {
+        "meaning": "to remove, to take away",
+        "note": null
+      },
+      {
+        "meaning": "sich entfernen — to move away, to leave",
+        "note": "reflexive"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Fleck lässt sich nicht entfernen.",
+        "en": "The stain can't be removed."
+      },
+      {
+        "de": "Sie entfernte sich langsam vom Haus.",
+        "en": "She slowly moved away from the house."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "entfernen = to remove. sich entfernen = to move away/leave. die Entfernung = distance.",
+    "related": [
+      "entfernt"
+    ],
+    "added": "2026-04-07 15:12:00"
+  },
+  {
+    "id": "der-weg",
+    "word": "der Weg",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Wege",
+    "definitions": [
+      {
+        "meaning": "path, way, route",
+        "note": null
+      },
+      {
+        "meaning": "way, method",
+        "note": "auf dem Weg = on the way; auf diese Weise = in this way"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Welchen Weg sollen wir nehmen?",
+        "en": "Which path should we take?"
+      },
+      {
+        "de": "Ich bin auf dem Weg zur Arbeit.",
+        "en": "I'm on my way to work."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "auf dem Weg = on the way. aus dem Weg gehen = to get out of the way. den Weg kennen = to know the way.",
+    "related": [
+      "weg"
+    ],
+    "added": "2026-04-07 15:13:00"
+  },
+  {
+    "id": "weg-adv",
+    "word": "weg",
+    "type": "adj/adv",
+    "usage": "adverb only",
+    "definitions": [
+      {
+        "meaning": "away, gone",
+        "note": null
+      },
+      {
+        "meaning": "off (in commands)",
+        "note": "Hände weg! = Hands off!"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er ist weg.",
+        "en": "He is gone."
+      },
+      {
+        "de": "Weg mit dir!",
+        "en": "Get away! / Off with you!"
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "weg = gone/away (adverb). Not to be confused with der Weg (path/way). wegfahren, weggehen, wegnehmen = all use weg- as prefix.",
+    "related": [
+      "der Weg"
+    ],
+    "added": "2026-04-07 15:14:00"
+  },
+  {
+    "id": "fernsehen",
+    "word": "fernsehen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "sah fern",
+    "past_participle": "ferngesehen",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "sehen",
+    "prefix": "fern-",
+    "definitions": [
+      {
+        "meaning": "to watch TV",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich sehe jeden Abend etwas fern.",
+        "en": "I watch something on TV every evening."
+      },
+      {
+        "de": "Meine Kinder dürfen nur eine Stunde fernsehen.",
+        "en": "My children are only allowed to watch TV for one hour."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "culture & arts"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": "fernsehen = to watch TV. das Fernsehen = TV/television. der Fernseher = TV set. In Swiss German: fernschauen.",
+    "related": [
+      "aussehen",
+      "schauen",
+      "sehen",
+      "zusehen"
+    ],
+    "added": "2026-04-07 15:15:00"
+  },
+  {
+    "id": "x-ist-aus-y",
+    "word": "X ist aus Y",
+    "type": "construction",
+    "definitions": [
+      {
+        "meaning": "X is made of Y (material)",
+        "note": "aus + DAT for material"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Ohrringe sind aus Silber.",
+        "en": "The earrings are made of silver."
+      },
+      {
+        "de": "Der Tisch ist aus Holz.",
+        "en": "The table is made of wood."
+      }
+    ],
+    "topics": [
+      "grammar & structure",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "X ist aus Y = made of Y (the material is inherent). X wird aus Y gemacht = made from Y (a process). aus Holz, aus Glas, aus Stahl, aus Leder.",
+    "related": [
+      "x-wird-aus-y-gemacht"
+    ],
+    "added": "2026-04-07 15:16:00"
+  },
+  {
+    "id": "x-wird-aus-y-gemacht",
+    "word": "X wird aus Y gemacht",
+    "type": "construction",
+    "definitions": [
+      {
+        "meaning": "X is made from Y (process/production)",
+        "note": "aus + DAT"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wein wird aus Trauben gemacht.",
+        "en": "Wine is made from grapes."
+      },
+      {
+        "de": "Papier wird aus Holz gemacht.",
+        "en": "Paper is made from wood."
+      }
+    ],
+    "topics": [
+      "grammar & structure",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "wird gemacht = passive present (is made). Emphasises the production process. ist aus = describes the material composition.",
+    "related": [
+      "x-ist-aus-y"
+    ],
+    "added": "2026-04-07 15:17:00"
+  },
+  {
+    "id": "gerne",
+    "word": "gerne",
+    "type": "adj/adv",
+    "usage": "adverb only",
+    "definitions": [
+      {
+        "meaning": "gladly, with pleasure, willingly",
+        "note": "also: gern (shorter form)"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich helfe dir gerne.",
+        "en": "I'm happy to help you."
+      },
+      {
+        "de": "Ich trinke gerne Kaffee.",
+        "en": "I like drinking coffee. (lit. I drink coffee gladly)"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "gerne/gern = gladly/with pleasure. ich … gerne = I like to / I enjoy. Comparative: lieber (preferably). Superlative: am liebsten (most of all). 'Bitte sehr!' — 'Gerne!'",
+    "related": [
+      "ich … lieber … als …",
+      "bevorzugen"
+    ],
+    "added": "2026-04-07 15:18:00"
+  },
+  {
+    "id": "in-der-naehe",
+    "word": "in der Nähe",
+    "type": "construction",
+    "definitions": [
+      {
+        "meaning": "near, nearby, close to",
+        "note": "in der Nähe + GEN or von + DAT"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Hotel liegt in der Nähe des Bahnhofs.",
+        "en": "The hotel is near the train station."
+      },
+      {
+        "de": "Gibt es ein Restaurant in der Nähe?",
+        "en": "Is there a restaurant nearby?"
+      }
+    ],
+    "topics": [
+      "grammar & structure",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "in der Nähe + GEN = near (formal). in der Nähe von + DAT = near (colloquial). die Nähe = nearness/closeness. nahe = near (adjective).",
+    "related": [
+      "entfernt"
+    ],
+    "added": "2026-04-07 15:19:00"
+  },
+  {
+    "id": "gassi-gehen",
+    "word": "Gassi gehen",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "to walk the dog, to take the dog for a walk",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich muss noch mit dem Hund Gassi gehen.",
+        "en": "I still need to take the dog for a walk."
+      },
+      {
+        "de": "Er geht jeden Morgen Gassi.",
+        "en": "He walks the dog every morning."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "informal",
+    "notes": "Gassi gehen = to walk the dog (specifically). Very common colloquial expression. mit dem Hund spazieren gehen = more formal alternative.",
+    "related": [
+      "spazieren",
+      "der Spaziergang"
+    ],
+    "added": "2026-04-07 15:20:00"
   }
 ]
