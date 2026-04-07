@@ -8525,46 +8525,6 @@
     "added": "2026-04-06 11:29:00"
   },
   {
-    "id": "zeigen",
-    "word": "zeigen",
-    "type": "verb",
-    "auxiliary": "haben",
-    "past_tense": "zeigte",
-    "past_participle": "gezeigt",
-    "is_separable": false,
-    "reflexive": false,
-    "family_root": "zeigen",
-    "definitions": [
-      {
-        "meaning": "to show, to point to",
-        "note": null
-      },
-      {
-        "meaning": "sich zeigen — to show oneself, to turn out",
-        "note": "reflexive"
-      }
-    ],
-    "examples": [
-      {
-        "de": "Kannst du mir zeigen, wie das geht?",
-        "en": "Can you show me how that works?"
-      },
-      {
-        "de": "Es zeigt sich, dass sie Recht hatte.",
-        "en": "It turns out she was right."
-      }
-    ],
-    "topics": [
-      "daily life",
-      "language & communication"
-    ],
-    "tags": [],
-    "register": "neutral",
-    "notes": null,
-    "related": [],
-    "added": "2026-04-06 11:30:00"
-  },
-  {
     "id": "der-klotz",
     "word": "der Klotz",
     "type": "noun",
@@ -24482,5 +24442,137 @@
       "das kommt darauf an"
     ],
     "added": "2026-04-07 17:49:00"
+  },
+  {
+    "id": "zeigen",
+    "word": "zeigen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to show",
+        "note": null
+      },
+      {
+        "meaning": "to point",
+        "note": "used when indicating direction or location"
+      },
+      {
+        "meaning": "to display",
+        "note": null
+      },
+      {
+        "meaning": "to demonstrate",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Kannst du mir den Weg zeigen?",
+        "en": "Can you show me the way?"
+      },
+      {
+        "de": "Er zeigt mit dem Finger auf das Bild.",
+        "en": "He points at the picture with his finger."
+      },
+      {
+        "de": "Die Uhr zeigt drei Uhr.",
+        "en": "The clock shows three o'clock."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-07 13:53:16",
+    "auxiliary": "haben",
+    "past_tense": "zeigte",
+    "past_participle": "gezeigt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "zeigen",
+    "related": [
+      "sich zeigen"
+    ]
+  },
+  {
+    "id": "sich-zeigen",
+    "word": "sich zeigen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to show oneself, to appear",
+        "note": null
+      },
+      {
+        "meaning": "to turn out to be, to prove to be",
+        "note": null
+      },
+      {
+        "meaning": "to become visible or evident",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er zeigte sich sehr hilfsbereit.",
+        "en": "He proved to be very helpful."
+      },
+      {
+        "de": "Die Sonne zeigte sich nach dem Regen.",
+        "en": "The sun appeared after the rain."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-07 13:54:18",
+    "auxiliary": "haben",
+    "past_tense": "zeigte sich",
+    "past_participle": "sich gezeigt",
+    "is_separable": false,
+    "reflexive": true,
+    "family_root": "zeigen",
+    "related": [
+      "zeigen"
+    ]
+  },
+  {
+    "id": "frappant",
+    "word": "frappant",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "striking",
+        "note": null
+      },
+      {
+        "meaning": "remarkable",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Ähnlichkeit zwischen den beiden Schwestern ist frappant.",
+        "en": "The similarity between the two sisters is striking."
+      },
+      {
+        "de": "Es ist frappant, wie schnell sich die Situation geändert hat.",
+        "en": "It is remarkable how quickly the situation has changed."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "This is a loanword from French and is primarily used in formal or literary contexts.",
+    "added": "2026-04-07 13:56:19",
+    "usage": "both"
   }
 ]
