@@ -397,6 +397,61 @@
     color: var(--ink-muted);
   }
 
+  /* ── text-to-speech speaker button ── */
+  .speak-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: var(--ink-muted);
+    opacity: 0.5;
+    transition: opacity 0.15s, color 0.15s;
+    vertical-align: middle;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+  .speak-btn:hover { opacity: 1; color: var(--teal); }
+  .speak-btn.speaking { opacity: 1; color: var(--accent); animation: pulse-speak 0.8s ease-in-out infinite alternate; }
+  @keyframes pulse-speak { from { opacity: 0.6; } to { opacity: 1; } }
+
+  /* speaker in example items — sits at the end of the de line */
+  .example-de-row {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    margin-bottom: 2px;
+  }
+  .example-de-row .example-de { margin-bottom: 0; }
+
+  /* speaker in practice — floats next to the sentence */
+  .practice-sentence-wrap {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 1.25rem;
+  }
+  .practice-sentence-wrap .practice-sentence {
+    margin-bottom: 0;
+    flex: 1;
+  }
+  .practice-sentence-wrap .speak-btn {
+    margin-top: 4px;
+    flex-shrink: 0;
+  }
+
+  /* speaker next to practice word (for DE→EN) */
+  .practice-word-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+  }
+
   .tags-row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 4px; }
   .tag {
     font-size: 11px;
@@ -991,7 +1046,12 @@
     <button class="practice-close" onclick="closePractice()">✕</button>
     <div class="practice-prompt" id="practice-prompt"></div>
     <div class="practice-word" id="practice-word"></div>
-    <div class="practice-sentence" id="practice-sentence" style="display:none"></div>
+    <div class="practice-sentence-wrap" id="practice-sentence-wrap" style="display:none">
+      <div class="practice-sentence" id="practice-sentence"></div>
+      <button class="speak-btn" id="speak-sentence-btn" title="Read aloud" onclick="speakText(currentSpeakText, this)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+      </button>
+    </div>
     <input type="text" id="practice-input" placeholder="Your answer…" onkeydown="handleEnter(event)">
     <button class="practice-submit" onclick="checkAnswer()">Check</button>
     <div class="practice-feedback" id="practice-feedback"></div>
@@ -1244,9 +1304,18 @@ function cardHTML(w) {
   const defs = (w.definitions || []).map((d, i) =>
     `<li><span class="def-num">${i+1}.</span><span>${d.meaning}${d.note ? `<span class="def-note">(${d.note})</span>` : ''}</span></li>`
   ).join('');
-  const examples = (w.examples || []).map(e =>
-    `<div class="example-item"><div class="example-de">${e.de}</div><div class="example-en">${e.en}</div></div>`
-  ).join('');
+  const examples = (w.examples || []).map(e => {
+    const escaped = e.de.replace(/'/g, '&#39;');
+    return `<div class="example-item">
+      <div class="example-de-row">
+        <div class="example-de">${e.de}</div>
+        <button class="speak-btn" title="Read aloud" onclick="speakText('${escaped}', this, event)">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+        </button>
+      </div>
+      <div class="example-en">${e.en}</div>
+    </div>`;
+  }).join('');
   const topics = (w.topics || []).map(t => `<span class="tag">${t}</span>`).join('');
   const tags = (w.tags || []).map(t => `<span class="tag">${t}</span>`).join('');
   const related = (w.related || []).map(r =>
@@ -1309,6 +1378,33 @@ function searchRelated(word, event) {
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
+// ── text-to-speech ─────────────────────────────────────────────────────────────
+function speakText(text, btn, event) {
+  if (event) event.stopPropagation();
+  if (!window.speechSynthesis) return;
+
+  // if already speaking this button's text, stop
+  if (btn && btn.classList.contains('speaking')) {
+    window.speechSynthesis.cancel();
+    btn.classList.remove('speaking');
+    return;
+  }
+
+  // cancel any current speech and clear all speaking states
+  window.speechSynthesis.cancel();
+  document.querySelectorAll('.speak-btn.speaking').forEach(b => b.classList.remove('speaking'));
+
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = 'de-DE';
+  utterance.rate = 0.9; // slightly slower — easier to follow
+  if (btn) {
+    btn.classList.add('speaking');
+    utterance.onend = () => btn.classList.remove('speaking');
+    utterance.onerror = () => btn.classList.remove('speaking');
+  }
+  window.speechSynthesis.speak(utterance);
+}
+
 // ── practice ───────────────────────────────────────────────────────────────────
 let practiceMode = 'de-en';
 let practiceWords = [];
@@ -1318,6 +1414,7 @@ let scoreTried = 0;
 let currentAnswer = ''; // for fill-in tasks
 let answered = false;  // true after answer has been checked
 let sessionLog = [];   // {word, correct, yourAnswer, correctAnswer}
+let currentSpeakText = ''; // German text to read aloud in practice
 
 // ── article patterns to detect in sentences ──────────────────────────────────
 const ARTICLE_RE = /\b(der|die|das|ein|eine|einen|einem|einer|eines|den|dem|des)\b/gi;
@@ -1341,6 +1438,7 @@ function backToLauncher() {
   document.getElementById('launcher-overlay').classList.add('open');
 }
 function closePractice() {
+  window.speechSynthesis && window.speechSynthesis.cancel();
   document.getElementById('practice-overlay').classList.remove('open');
   document.getElementById('launcher-overlay').classList.remove('open');
 }
@@ -1537,7 +1635,11 @@ function loadPracticeWord() {
   const w = practiceWords[practiceIndex % practiceWords.length];
   const wordEl     = document.getElementById('practice-word');
   const sentenceEl = document.getElementById('practice-sentence');
+  const wrapEl     = document.getElementById('practice-sentence-wrap');
   const promptEl   = document.getElementById('practice-prompt');
+
+  // stop any in-progress speech
+  window.speechSynthesis && window.speechSynthesis.cancel();
 
   // reset UI
   answered = false;
@@ -1549,13 +1651,19 @@ function loadPracticeWord() {
   document.getElementById('btn-next').style.display = 'none';
   document.getElementById('btn-skip').style.display = 'inline-block';
   document.getElementById('practice-word-info').classList.remove('visible');
-  sentenceEl.style.display = 'none';
+  wrapEl.style.display = 'none';
   wordEl.style.display = 'block';
+  wordEl.innerHTML = ''; // reset (may contain speak button)
   currentAnswer = '';
+  currentSpeakText = '';
 
   if (practiceMode === 'de-en') {
     promptEl.textContent = 'Translate into English:';
-    wordEl.textContent = w.word;
+    // Show word with a small speaker button beside it
+    const speakIcon = `<button class="speak-btn" title="Read aloud" onclick="speakText('${w.word.replace(/'/g,"\\'")}', this)" style="font-size:1rem">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+    </button>`;
+    wordEl.innerHTML = `<div class="practice-word-wrap"><span>${w.word}</span>${speakIcon}</div>`;
   } else if (practiceMode === 'en-de') {
     promptEl.textContent = 'Translate into German:';
     wordEl.textContent = w.definitions[0].meaning;
@@ -1565,16 +1673,17 @@ function loadPracticeWord() {
     promptEl.textContent = `Fill in the correct form${tenseLabel}:`;
     wordEl.textContent = w.word;
     sentenceEl.innerHTML = task.blanked.replace('___', '<span class="blank">___</span>');
-    sentenceEl.style.display = 'block';
+    currentSpeakText = task.sentence;
+    wrapEl.style.display = 'flex';
     currentAnswer = task.answer;
   } else if (practiceMode === 'articles') {
     const task = buildArticleTask(w);
     promptEl.textContent = 'Fill in the correct article:';
-    // show noun without article as prompt
     const bare = w.word.replace(/^(der|die|das)\s+/i, '');
     wordEl.textContent = '___ ' + bare;
     sentenceEl.innerHTML = task.blanked.replace('___', '<span class="blank">___</span>');
-    sentenceEl.style.display = 'block';
+    currentSpeakText = task.sentence;
+    wrapEl.style.display = 'flex';
     currentAnswer = task.answer;
   }
 
@@ -1658,10 +1767,22 @@ function checkAnswer() {
   if ((practiceMode === 'conjugation' || practiceMode === 'articles') && currentAnswer) {
     const task = practiceMode === 'conjugation' ? buildConjugationTask(w) : buildArticleTask(w);
     if (task) {
-      exHTML = `<div class="ex-de">${task.sentence}</div><div class="ex-en">${task.translation}</div>`;
+      const esc = task.sentence.replace(/'/g, '&#39;');
+      exHTML = `<div class="example-de-row">
+        <div class="ex-de">${task.sentence}</div>
+        <button class="speak-btn" title="Read aloud" onclick="speakText('${esc}', this)">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+        </button>
+      </div><div class="ex-en">${task.translation}</div>`;
     }
   } else if (w.examples && w.examples[0]) {
-    exHTML = `<div class="ex-de">${w.examples[0].de}</div><div class="ex-en">${w.examples[0].en}</div>`;
+    const esc = w.examples[0].de.replace(/'/g, '&#39;');
+    exHTML = `<div class="example-de-row">
+      <div class="ex-de">${w.examples[0].de}</div>
+      <button class="speak-btn" title="Read aloud" onclick="speakText('${esc}', this)">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+      </button>
+    </div><div class="ex-en">${w.examples[0].en}</div>`;
   }
 
   info.innerHTML = grammarHTML + defs + (exHTML ? '<div style="margin-top:6px">' + exHTML + '</div>' : '');
@@ -1675,6 +1796,7 @@ function checkAnswer() {
 }
 
 function nextWord() {
+  window.speechSynthesis && window.speechSynthesis.cancel();
   practiceIndex++;
   if (practiceIndex >= practiceWords.length) {
     practiceWords = practiceWords.sort(() => Math.random() - 0.5);
