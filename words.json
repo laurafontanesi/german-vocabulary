@@ -1490,7 +1490,10 @@
     "register": "neutral",
     "notes": "Takes sein as auxiliary. Very versatile: bleiben + adjective = to stay/remain [adjective].",
     "added": "2026-04-05",
-    "family_root": "bleiben"
+    "family_root": "bleiben",
+    "related": [
+      "hängenbleiben"
+    ]
   },
   {
     "id": "aendern",
@@ -2059,8 +2062,9 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
-      "sprechen",
-      "sagen"
+      "das Gespräch",
+      "sagen",
+      "sprechen"
     ],
     "definitions": [
       {
@@ -3665,6 +3669,8 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
+      "die Kenntnis",
+      "die Wahrheit",
       "erfahren",
       "kennen"
     ],
@@ -4589,7 +4595,9 @@
     "is_separable": false,
     "reflexive": false,
     "preposition": "auf + AKK",
-    "related": [],
+    "related": [
+      "erzählen"
+    ],
     "definitions": [
       {
         "meaning": "to count on, to rely on (a person)",
@@ -4743,7 +4751,8 @@
     "family_root": "lügen",
     "related": [
       "die Lüge",
-      "lügen"
+      "lügen",
+      "verraten"
     ],
     "definitions": [
       {
@@ -5964,7 +5973,10 @@
     "register": "neutral",
     "notes": null,
     "added": "2026-04-05",
-    "family_root": "schreiben"
+    "family_root": "schreiben",
+    "related": [
+      "beschreiben"
+    ]
   },
   {
     "id": "fahren",
@@ -8723,7 +8735,9 @@
     "tags": [],
     "register": "neutral",
     "notes": "der Geist = spirit/ghost (more general); das Gespenst = ghost (more specifically a haunting apparition).",
-    "related": [],
+    "related": [
+      "der Geist"
+    ],
     "added": "2026-04-06 11:35:00"
   },
   {
@@ -9440,9 +9454,10 @@
     "register": "neutral",
     "notes": "die Hauptdarstellerin = female lead actress. der Hauptdarsteller = the actor; die Hauptfigur = the character they play.",
     "related": [
-      "die Hauptfigur",
+      "der Held",
       "der Regisseur",
-      "der Spielfilm"
+      "der Spielfilm",
+      "die Hauptfigur"
     ],
     "added": "2026-04-06 12:07:00"
   },
@@ -9829,8 +9844,9 @@
     "register": "neutral",
     "notes": "Two meanings: (1) eine Geschichte = a story/tale; (2) die Geschichte (no article needed) = history as a subject. Das Geschäft (business/shop) and das Gesicht (face) are false friends.",
     "related": [
+      "der Wendepunkt",
       "die Hauptfigur",
-      "der Wendepunkt"
+      "erzählen"
     ],
     "added": "2026-04-06 12:18:00"
   },
@@ -10199,6 +10215,7 @@
     "register": "neutral",
     "notes": "das Geschenk = gift. schenken = to give as a gift (to a specific person); verschenken = to give away (sometimes implies giving something away for free/unnecessarily).",
     "related": [
+      "das Geschenk",
       "verschenken"
     ],
     "added": "2026-04-06 13:08:00"
@@ -10240,6 +10257,7 @@
     "register": "neutral",
     "notes": "verschenken = to give away (often to multiple people, or implying waste); schenken = to give as a gift to a specific person.",
     "related": [
+      "das Geschenk",
       "schenken"
     ],
     "added": "2026-04-06 13:09:00"
@@ -10801,8 +10819,10 @@
     "register": "neutral",
     "notes": "eine Entscheidung treffen = to make a decision. die Entscheidungsfindung = decision-making process.",
     "related": [
-      "sich entscheiden",
-      "die Wahl"
+      "das Entscheidungsverfahren",
+      "die Entscheidungsfindung",
+      "die Wahl",
+      "sich entscheiden"
     ],
     "added": "2026-04-06 14:10:00"
   },
@@ -11225,6 +11245,7 @@
     "register": "neutral",
     "notes": "sinnvoll = sensible/meaningful (NOT to be confused with sensibel = sensitive). Opposite: sinnlos = pointless, meaningless.",
     "related": [
+      "nützlich",
       "sensibel"
     ],
     "added": "2026-04-06 14:20:00"
@@ -11600,6 +11621,7 @@
     "register": "neutral",
     "notes": "Three meanings: (1) linguistic expression/term; (2) facial expression; (3) printout. die Ausdrucksweise = way of expressing oneself.",
     "related": [
+      "das Gesicht",
       "die Bemerkung",
       "die Redewendung",
       "die Äußerung",
@@ -13749,8 +13771,9 @@
     "register": "neutral",
     "notes": "suchen nach = to search for. gesucht = wanted/sought (e.g. on job ads). besuchen = to visit.",
     "related": [
-      "versuchen",
-      "besuchen"
+      "besuchen",
+      "untersuchen",
+      "versuchen"
     ],
     "added": "2026-04-07 10:42:00"
   },
@@ -14085,7 +14108,8 @@
     "register": "neutral",
     "notes": null,
     "related": [
-      "der Ausdruck"
+      "der Ausdruck",
+      "die Umgangssprache"
     ],
     "added": "2026-04-07 10:50:00"
   },
@@ -14589,7 +14613,8 @@
     "register": "neutral",
     "notes": "Very common expression. darauf ankommen = to depend on, to matter. Es kommt auf + AKK an = it depends on.",
     "related": [
-      "abhängig sein von"
+      "abhängig sein von",
+      "das geht nicht"
     ],
     "added": "2026-04-07 11:05:00"
   },
@@ -15483,6 +15508,7 @@
       "besteigen",
       "der Anstieg",
       "erhöhen",
+      "gestiegen",
       "sinken"
     ],
     "added": "2026-04-07 12:23:00"
@@ -15523,10 +15549,11 @@
     "register": "neutral",
     "notes": "erhöhen = to raise/increase (transitive — you do it to something). steigen = to rise (intransitive — it happens by itself).",
     "related": [
-      "steigen",
-      "verstärken",
+      "der Anstieg",
+      "gestiegen",
       "senken",
-      "der Anstieg"
+      "steigen",
+      "verstärken"
     ],
     "added": "2026-04-07 12:24:00"
   },
@@ -15905,6 +15932,7 @@
     "notes": "die Furcht ≈ die Angst, but Furcht is often more acute/immediate. furchtbar = terrible. fürchten = to fear.",
     "related": [
       "die Angst",
+      "furchtbar",
       "sich fürchten",
       "sich ängstigen"
     ],
@@ -16134,7 +16162,8 @@
     "register": "neutral",
     "notes": "großartig = great/wonderful (genuine enthusiasm). Stronger than gut. Often used ironically too: 'Na, das ist ja großartig!' (sarcastic).",
     "related": [
-      "der Spaß"
+      "der Spaß",
+      "herrlich"
     ],
     "added": "2026-04-07 12:39:00"
   },
@@ -16508,6 +16537,7 @@
     "register": "informal",
     "notes": "doof = stupid/silly (informal, mild). blöd = same meaning. dumm = stupid (more formal/direct). Often used affectionately.",
     "related": [
+      "Quatsch",
       "verrückt"
     ],
     "added": "2026-04-07 12:49:00"
@@ -16574,7 +16604,9 @@
     "register": "neutral",
     "notes": "Opposite: erträglich (bearable). ertragen = to bear/endure.",
     "related": [
-      "ertragen"
+      "erschreckend",
+      "ertragen",
+      "furchtbar"
     ],
     "added": "2026-04-07 12:51:00"
   },
@@ -20399,5 +20431,4056 @@
       "der Spaziergang"
     ],
     "added": "2026-04-07 15:20:00"
+  },
+  {
+    "id": "ueberarbeitet",
+    "word": "überarbeitet",
+    "type": "adj/adv",
+    "usage": "both",
+    "derived_from": "überarbeiten",
+    "definitions": [
+      {
+        "meaning": "overworked, exhausted from work",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie sieht völlig überarbeitet aus.",
+        "en": "She looks completely overworked."
+      },
+      {
+        "de": "Er ist chronisch überarbeitet.",
+        "en": "He is chronically overworked."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "überarbeitet = overworked (adjective). überarbeiten = to overwork (oneself) OR to revise/rework (a text).",
+    "related": [
+      "überarbeiten",
+      "gestresst",
+      "beschäftigt"
+    ],
+    "added": "2026-04-07 16:00:00"
+  },
+  {
+    "id": "ueberarbeiten",
+    "word": "überarbeiten",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "überarbeitete",
+    "past_participle": "überarbeitet",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "arbeiten",
+    "prefix": "über-",
+    "definitions": [
+      {
+        "meaning": "to revise, to rework (a text or plan)",
+        "note": null
+      },
+      {
+        "meaning": "sich überarbeiten — to overwork oneself",
+        "note": "reflexive"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie überarbeitet das Manuskript.",
+        "en": "She is revising the manuscript."
+      },
+      {
+        "de": "Pass auf, dass du dich nicht überarbeitest.",
+        "en": "Be careful not to overwork yourself."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "überarbeitet",
+      "arbeiten"
+    ],
+    "added": "2026-04-07 16:01:00"
+  },
+  {
+    "id": "arbeiten",
+    "word": "arbeiten",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "arbeitete",
+    "past_participle": "gearbeitet",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "arbeiten",
+    "definitions": [
+      {
+        "meaning": "to work",
+        "note": null
+      },
+      {
+        "meaning": "arbeiten an + DAT — to work on something",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie arbeitet als Ärztin.",
+        "en": "She works as a doctor."
+      },
+      {
+        "de": "Er arbeitet gerade an einem neuen Buch.",
+        "en": "He's currently working on a new book."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "arbeiten an + DAT = to work on. die Arbeit = work. der Arbeitsplatz = workplace. überarbeiten = to revise/overwork.",
+    "related": [
+      "die Arbeit",
+      "überarbeiten",
+      "der Beruf"
+    ],
+    "added": "2026-04-07 16:02:00"
+  },
+  {
+    "id": "die-arbeit",
+    "word": "die Arbeit",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Arbeiten",
+    "definitions": [
+      {
+        "meaning": "work, job, labour",
+        "note": null
+      },
+      {
+        "meaning": "paper, essay (academic)",
+        "note": "eine wissenschaftliche Arbeit = academic paper"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe heute viel Arbeit.",
+        "en": "I have a lot of work today."
+      },
+      {
+        "de": "Sie schreibt eine wissenschaftliche Arbeit.",
+        "en": "She is writing an academic paper."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Arbeitsplatz = workplace/job. die Arbeitsbedingungen = working conditions. die Arbeitsmöglichkeit = job opportunity.",
+    "related": [
+      "arbeiten",
+      "der Beruf",
+      "die Stelle",
+      "schaffen"
+    ],
+    "added": "2026-04-07 16:03:00"
+  },
+  {
+    "id": "die-stelle",
+    "word": "die Stelle",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Stellen",
+    "definitions": [
+      {
+        "meaning": "position, job, post",
+        "note": null
+      },
+      {
+        "meaning": "place, spot, passage (in a text)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie hat eine neue Stelle gefunden.",
+        "en": "She found a new position."
+      },
+      {
+        "de": "An dieser Stelle möchte ich danken.",
+        "en": "At this point I'd like to give thanks."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Stelle = job/position OR spot/place. die Stellenanzeige = job ad. auf der Stelle = on the spot/immediately.",
+    "related": [
+      "das Praktikum",
+      "der Beruf",
+      "die Arbeit",
+      "die Ausbildung"
+    ],
+    "added": "2026-04-07 16:04:00"
+  },
+  {
+    "id": "der-beruf",
+    "word": "der Beruf",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Berufe",
+    "definitions": [
+      {
+        "meaning": "profession, occupation, career",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Was ist dein Beruf?",
+        "en": "What is your profession?"
+      },
+      {
+        "de": "Sie hat ihren Beruf zum Hobby gemacht.",
+        "en": "She made her profession her hobby."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "beruflich = professional(ly). der Berufsverkehr = rush-hour traffic. von Beruf = by profession.",
+    "related": [
+      "arbeiten",
+      "beruflich",
+      "die Arbeit",
+      "die Stelle"
+    ],
+    "added": "2026-04-07 16:05:00"
+  },
+  {
+    "id": "beruflich",
+    "word": "beruflich",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "professional, work-related, career-wise",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bin beruflich in Berlin.",
+        "en": "I'm in Berlin for work."
+      },
+      {
+        "de": "Berufliche Weiterbildung ist wichtig.",
+        "en": "Professional development is important."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "beruflich = professional/work-related. privat = private (opposite in context).",
+    "related": [
+      "der Beruf"
+    ],
+    "added": "2026-04-07 16:06:00"
+  },
+  {
+    "id": "der-anruf",
+    "word": "der Anruf",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Anrufe",
+    "definitions": [
+      {
+        "meaning": "phone call",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe einen Anruf verpasst.",
+        "en": "I missed a phone call."
+      },
+      {
+        "de": "Kannst du mir einen Anruf geben?",
+        "en": "Can you give me a call?"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "anrufen = to call (verb). einen Anruf tätigen = to make a call (formal).",
+    "related": [],
+    "added": "2026-04-07 16:07:00"
+  },
+  {
+    "id": "die-besprechung",
+    "word": "die Besprechung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Besprechungen",
+    "definitions": [
+      {
+        "meaning": "meeting, discussion",
+        "note": null
+      },
+      {
+        "meaning": "review (of a book/film)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe um 10 Uhr eine Besprechung.",
+        "en": "I have a meeting at 10 o'clock."
+      },
+      {
+        "de": "Die Besprechung des Buches war sehr positiv.",
+        "en": "The review of the book was very positive."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Besprechung = meeting OR book/film review. besprechen = to discuss.",
+    "related": [
+      "das Gespräch",
+      "der Vortrag"
+    ],
+    "added": "2026-04-07 16:08:00"
+  },
+  {
+    "id": "die-zeitschrift",
+    "word": "die Zeitschrift",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Zeitschriften",
+    "definitions": [
+      {
+        "meaning": "journal, magazine, periodical",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Artikel wurde in einer Fachzeitschrift veröffentlicht.",
+        "en": "The article was published in a specialist journal."
+      },
+      {
+        "de": "Sie liest gerne Modezeitschriften.",
+        "en": "She likes reading fashion magazines."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Fachzeitschrift = specialist/academic journal. die Zeitschrift ≠ die Zeitung (newspaper).",
+    "related": [
+      "veröffentlichen"
+    ],
+    "added": "2026-04-07 16:09:00"
+  },
+  {
+    "id": "der-abgabetermin",
+    "word": "der Abgabetermin",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Abgabetermine",
+    "definitions": [
+      {
+        "meaning": "deadline, submission deadline",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Abgabetermin ist nächsten Freitag.",
+        "en": "The deadline is next Friday."
+      },
+      {
+        "de": "Ich schaffe den Abgabetermin nicht.",
+        "en": "I won't make the deadline."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Abgabefrist = same as Abgabetermin (deadline). abgeben = to hand in/submit.",
+    "related": [
+      "die Abgabefrist"
+    ],
+    "added": "2026-04-07 16:10:00"
+  },
+  {
+    "id": "veroeffentlichen",
+    "word": "veröffentlichen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "veröffentlichte",
+    "past_participle": "veröffentlicht",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "veröffentlichen",
+    "definitions": [
+      {
+        "meaning": "to publish, to release, to make public",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie hat drei Bücher veröffentlicht.",
+        "en": "She has published three books."
+      },
+      {
+        "de": "Die Ergebnisse wurden gestern veröffentlicht.",
+        "en": "The results were published yesterday."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Veröffentlichung = publication. öffentlich = public.",
+    "related": [
+      "das Ergebnis",
+      "die Forschung",
+      "die Zeitschrift"
+    ],
+    "added": "2026-04-07 16:11:00"
+  },
+  {
+    "id": "beschaeftigt",
+    "word": "beschäftigt",
+    "type": "adj/adv",
+    "usage": "both",
+    "derived_from": "beschäftigen",
+    "definitions": [
+      {
+        "meaning": "busy, occupied, employed",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er ist gerade sehr beschäftigt.",
+        "en": "He is very busy at the moment."
+      },
+      {
+        "de": "Sie ist bei einer Firma beschäftigt.",
+        "en": "She is employed at a company."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "beschäftigt = busy (temporary) OR employed. sich beschäftigen mit = to occupy oneself with / to deal with.",
+    "related": [
+      "gestresst",
+      "überarbeitet"
+    ],
+    "added": "2026-04-07 16:12:00"
+  },
+  {
+    "id": "gestresst",
+    "word": "gestresst",
+    "type": "adj/adv",
+    "usage": "both",
+    "derived_from": "stressen",
+    "definitions": [
+      {
+        "meaning": "stressed, under stress",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bin total gestresst vor dem Abgabetermin.",
+        "en": "I'm totally stressed before the deadline."
+      },
+      {
+        "de": "Du wirkst gestresst — alles ok?",
+        "en": "You seem stressed — everything ok?"
+      }
+    ],
+    "topics": [
+      "emotions",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "informal",
+    "notes": "gestresst = stressed out (informal). der Stress = stress. stressen = to stress (someone).",
+    "related": [
+      "überarbeitet",
+      "beschäftigt"
+    ],
+    "added": "2026-04-07 16:13:00"
+  },
+  {
+    "id": "schaffen",
+    "word": "schaffen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "schaffte",
+    "past_participle": "geschafft",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schaffen",
+    "definitions": [
+      {
+        "meaning": "to manage, to accomplish, to make it",
+        "note": "schaffte/geschafft (weak)"
+      },
+      {
+        "meaning": "to create, to make",
+        "note": "schuf/geschaffen (strong, literary)"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich schaffe das!",
+        "en": "I can do this! / I'll manage!"
+      },
+      {
+        "de": "Das habe ich nie geschafft.",
+        "en": "I never managed that."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Two forms: schaffen (schaffte) = to manage/accomplish (everyday); schaffen (schuf) = to create (literary/artistic). geschafft sein = to be exhausted: 'Ich bin total geschafft.'",
+    "related": [
+      "die Arbeit"
+    ],
+    "added": "2026-04-07 16:14:00"
+  },
+  {
+    "id": "befristet",
+    "word": "befristet",
+    "type": "adj/adv",
+    "usage": "adjective only",
+    "definitions": [
+      {
+        "meaning": "fixed-term, temporary, time-limited",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie hat einen befristeten Vertrag.",
+        "en": "She has a fixed-term contract."
+      },
+      {
+        "de": "Die Stelle ist nur befristet.",
+        "en": "The position is only temporary."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [
+      "similar to: fest"
+    ],
+    "register": "neutral",
+    "notes": "befristeter Vertrag = fixed-term contract. Opposite: unbefristet/fest (permanent). die Frist = deadline/period.",
+    "related": [
+      "die Abgabefrist",
+      "die Kündigungsfrist",
+      "fest"
+    ],
+    "added": "2026-04-07 16:15:00"
+  },
+  {
+    "id": "fest",
+    "word": "fest",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "permanent, steady, fixed (of employment)",
+        "note": null
+      },
+      {
+        "meaning": "firm, solid, tight",
+        "note": "physical sense"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie hat endlich einen festen Vertrag bekommen.",
+        "en": "She finally got a permanent contract."
+      },
+      {
+        "de": "Halt dich fest!",
+        "en": "Hold on tight!"
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "daily life"
+    ],
+    "tags": [
+      "similar to: befristet"
+    ],
+    "register": "neutral",
+    "notes": "fester Vertrag = permanent contract. fest angestellt = permanently employed. Opposite in job context: befristet.",
+    "related": [
+      "befristet"
+    ],
+    "added": "2026-04-07 16:16:00"
+  },
+  {
+    "id": "haengenbleiben",
+    "word": "hängenbleiben",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "blieb hängen",
+    "past_participle": "hängengeblieben",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "bleiben",
+    "prefix": "hängen-",
+    "definitions": [
+      {
+        "meaning": "to get stuck, to get caught (on something)",
+        "note": null
+      },
+      {
+        "meaning": "to get behind, to be held up",
+        "note": "bei etwas hängenbleiben"
+      },
+      {
+        "meaning": "to stick in one's mind",
+        "note": "etwas bleibt hängen = something sticks"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bin bei dieser Aufgabe hängengeblieben.",
+        "en": "I got stuck on this task."
+      },
+      {
+        "de": "Der Satz ist mir im Gedächtnis hängengeblieben.",
+        "en": "The sentence stuck in my memory."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "daily life"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": "hängengeblieben is the common past participle form. etwas bleibt hängen = something sticks in the mind.",
+    "related": [
+      "bleiben"
+    ],
+    "added": "2026-04-07 16:17:00"
+  },
+  {
+    "id": "die-abgabefrist",
+    "word": "die Abgabefrist",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Abgabefristen",
+    "definitions": [
+      {
+        "meaning": "submission deadline, deadline for handing in",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Abgabefrist läuft morgen ab.",
+        "en": "The deadline expires tomorrow."
+      },
+      {
+        "de": "Ich habe die Abgabefrist verpasst.",
+        "en": "I missed the deadline."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Abgabefrist = deadline (for submission). die Kündigungsfrist = notice period. die Frist = period, deadline (general).",
+    "related": [
+      "befristet",
+      "der Abgabetermin",
+      "die Kündigungsfrist"
+    ],
+    "added": "2026-04-07 16:18:00"
+  },
+  {
+    "id": "die-kuendigungsfrist",
+    "word": "die Kündigungsfrist",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Kündigungsfristen",
+    "definitions": [
+      {
+        "meaning": "notice period (for terminating a contract)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Kündigungsfrist beträgt drei Monate.",
+        "en": "The notice period is three months."
+      },
+      {
+        "de": "Ich muss die Kündigungsfrist einhalten.",
+        "en": "I must observe the notice period."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "die Kündigung = termination/resignation. kündigen = to resign/terminate. die Frist = period/deadline.",
+    "related": [
+      "die Abgabefrist",
+      "befristet"
+    ],
+    "added": "2026-04-07 16:19:00"
+  },
+  {
+    "id": "die-vorlesung",
+    "word": "die Vorlesung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Vorlesungen",
+    "definitions": [
+      {
+        "meaning": "lecture (at university)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Vorlesung beginnt um 8 Uhr.",
+        "en": "The lecture begins at 8 o'clock."
+      },
+      {
+        "de": "Ich habe heute drei Vorlesungen.",
+        "en": "I have three lectures today."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Vorlesung = university lecture (professor reads/presents). das Seminar = seminar. der Vortrag = talk/presentation.",
+    "related": [
+      "das Studium",
+      "der Unterricht",
+      "der Vortrag"
+    ],
+    "added": "2026-04-07 16:20:00"
+  },
+  {
+    "id": "das-studium",
+    "word": "das Studium",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Studien",
+    "definitions": [
+      {
+        "meaning": "studies, degree programme",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie hat ihr Studium in Basel abgeschlossen.",
+        "en": "She completed her studies in Basel."
+      },
+      {
+        "de": "Das Studium dauert fünf Jahre.",
+        "en": "The degree programme takes five years."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das Studium = university studies. studieren = to study (at university). das Masterstudium = Master's programme.",
+    "related": [
+      "das Praktikum",
+      "die Ausbildung",
+      "die Promotion",
+      "die Vorlesung"
+    ],
+    "added": "2026-04-07 16:21:00"
+  },
+  {
+    "id": "das-praktikum",
+    "word": "das Praktikum",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Praktika",
+    "definitions": [
+      {
+        "meaning": "internship, work placement",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie macht ein Praktikum bei einer Forschungsgruppe.",
+        "en": "She's doing an internship at a research group."
+      },
+      {
+        "de": "Das Praktikum dauert drei Monate.",
+        "en": "The internship lasts three months."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Praktikant / die Praktikantin = intern.",
+    "related": [
+      "das Studium",
+      "die Stelle"
+    ],
+    "added": "2026-04-07 16:22:00"
+  },
+  {
+    "id": "die-promotion",
+    "word": "die Promotion",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Promotionen",
+    "definitions": [
+      {
+        "meaning": "doctorate, PhD",
+        "note": "German academic usage"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie macht gerade ihre Promotion.",
+        "en": "She's currently doing her doctorate."
+      },
+      {
+        "de": "Nach der Promotion sucht er eine Stelle.",
+        "en": "After his doctorate he's looking for a position."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Promotion = PhD/doctorate (not English 'promotion'!). promovieren = to do a doctorate. der Doktorand = PhD student.",
+    "related": [
+      "das Studium"
+    ],
+    "added": "2026-04-07 16:23:00"
+  },
+  {
+    "id": "der-vortrag",
+    "word": "der Vortrag",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Vorträge",
+    "definitions": [
+      {
+        "meaning": "talk, presentation, lecture",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie hält nächste Woche einen Vortrag.",
+        "en": "She is giving a talk next week."
+      },
+      {
+        "de": "Der Vortrag war sehr informativ.",
+        "en": "The talk was very informative."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "einen Vortrag halten = to give a talk. die Vorlesung = university lecture. die Präsentation = presentation.",
+    "related": [
+      "die Vorlesung",
+      "die Besprechung"
+    ],
+    "added": "2026-04-07 16:24:00"
+  },
+  {
+    "id": "anbieten",
+    "word": "anbieten",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "bot an",
+    "past_participle": "angeboten",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "bieten",
+    "prefix": "an-",
+    "definitions": [
+      {
+        "meaning": "to offer, to provide",
+        "note": "jmdm. etw. anbieten"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Uni bietet interessante Kurse an.",
+        "en": "The university offers interesting courses."
+      },
+      {
+        "de": "Darf ich Ihnen etwas zu trinken anbieten?",
+        "en": "May I offer you something to drink?"
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "daily life"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": "das Angebot = offer/supply. anbieten = to offer. sich anbieten = to present itself as an option.",
+    "related": [],
+    "added": "2026-04-07 16:25:00"
+  },
+  {
+    "id": "schulen",
+    "word": "schulen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "schulte",
+    "past_participle": "geschult",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schulen",
+    "definitions": [
+      {
+        "meaning": "to train, to coach, to develop skills",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Studenten müssen geschult werden, damit sie besser schreiben.",
+        "en": "The students need to be trained so that they write better."
+      },
+      {
+        "de": "Sie wurden intensiv geschult.",
+        "en": "They were intensively trained."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "schulen = to train/coach. geschult = trained/skilled (adjective). die Schulung = training session.",
+    "related": [
+      "geschult"
+    ],
+    "added": "2026-04-07 16:26:00"
+  },
+  {
+    "id": "geschult",
+    "word": "geschult",
+    "type": "adj/adv",
+    "usage": "both",
+    "derived_from": "schulen",
+    "definitions": [
+      {
+        "meaning": "trained, skilled, practised",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er hat ein geschultes Ohr für Musik.",
+        "en": "He has a trained ear for music."
+      },
+      {
+        "de": "Die Mitarbeiter sind gut geschult.",
+        "en": "The staff are well trained."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "schulen"
+    ],
+    "added": "2026-04-07 16:27:00"
+  },
+  {
+    "id": "die-wissenschaft",
+    "word": "die Wissenschaft",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Wissenschaften",
+    "definitions": [
+      {
+        "meaning": "science, academic discipline",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Wissenschaft hat viele Fragen beantwortet.",
+        "en": "Science has answered many questions."
+      },
+      {
+        "de": "Welche Wissenschaft studierst du?",
+        "en": "What academic discipline are you studying?"
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Wissenschaftler = scientist/academic. wissenschaftlich = scientific/academic. die Naturwissenschaften = natural sciences.",
+    "related": [
+      "die Forschung",
+      "der Forscher"
+    ],
+    "added": "2026-04-07 16:28:00"
+  },
+  {
+    "id": "die-wahrheit",
+    "word": "die Wahrheit",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Wahrheiten",
+    "definitions": [
+      {
+        "meaning": "truth",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sag mir die Wahrheit!",
+        "en": "Tell me the truth!"
+      },
+      {
+        "de": "Die Wahrheit ist oft unbequem.",
+        "en": "The truth is often uncomfortable."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Wahrheit = truth. wahr = true. wahrhaftig = truthful. in Wahrheit = in truth/actually.",
+    "related": [
+      "das Wissen",
+      "die Kenntnis",
+      "wissen"
+    ],
+    "added": "2026-04-07 16:29:00"
+  },
+  {
+    "id": "die-kenntnis",
+    "word": "die Kenntnis",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Kenntnisse",
+    "definitions": [
+      {
+        "meaning": "knowledge, familiarity with, awareness of",
+        "note": "often plural: Kenntnisse"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie hat gute Kenntnisse in Deutsch.",
+        "en": "She has good knowledge of German."
+      },
+      {
+        "de": "Das entzieht sich meiner Kenntnis.",
+        "en": "That is beyond my knowledge."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Kenntnisse (plural) = knowledge/skills. das Wissen = knowledge (broader). kennen = to know (a person/place).",
+    "related": [
+      "das Wissen",
+      "die Auskunft",
+      "die Wahrheit",
+      "wissen"
+    ],
+    "added": "2026-04-07 16:30:00"
+  },
+  {
+    "id": "die-forschung",
+    "word": "die Forschung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Forschungen",
+    "definitions": [
+      {
+        "meaning": "research",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie betreibt Forschung auf dem Gebiet der Neurowissenschaften.",
+        "en": "She conducts research in the field of neuroscience."
+      },
+      {
+        "de": "Die Forschungsergebnisse wurden veröffentlicht.",
+        "en": "The research results were published."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Forschung betreiben = to conduct research. theoretische und angewandte Forschung = theoretical and applied research. die Forschungsgruppe = research group.",
+    "related": [
+      "das Ergebnis",
+      "das Labor",
+      "der Forscher",
+      "die Erforschung",
+      "die Recherche",
+      "die Wissenschaft",
+      "erforschen",
+      "forschen",
+      "veröffentlichen"
+    ],
+    "added": "2026-04-07 16:31:00"
+  },
+  {
+    "id": "der-forscher",
+    "word": "der Forscher",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Forscher",
+    "definitions": [
+      {
+        "meaning": "researcher, scientist",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Forscher haben neue Erkenntnisse gewonnen.",
+        "en": "The researchers gained new insights."
+      },
+      {
+        "de": "Sie ist eine renommierte Forscherin.",
+        "en": "She is a renowned researcher."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Forscherin = female researcher. forschen = to research. die Forschung = research.",
+    "related": [
+      "die Forschung",
+      "erforschen",
+      "die Wissenschaft"
+    ],
+    "added": "2026-04-07 16:32:00"
+  },
+  {
+    "id": "das-ergebnis",
+    "word": "das Ergebnis",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Ergebnisse",
+    "definitions": [
+      {
+        "meaning": "result, outcome, finding",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Ergebnis der Studie war überraschend.",
+        "en": "The result of the study was surprising."
+      },
+      {
+        "de": "Was ist das Ergebnis?",
+        "en": "What is the result/outcome?"
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das Forschungsergebnis = research finding. das Ergebnis = result (general). die Folge = consequence (different connotation).",
+    "related": [
+      "die Forschung",
+      "die Untersuchung",
+      "untersuchen",
+      "veröffentlichen"
+    ],
+    "added": "2026-04-07 16:33:00"
+  },
+  {
+    "id": "das-labor",
+    "word": "das Labor",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Labore",
+    "definitions": [
+      {
+        "meaning": "laboratory, lab",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Proben werden im Labor analysiert.",
+        "en": "The samples are analysed in the laboratory."
+      },
+      {
+        "de": "Sie arbeitet den ganzen Tag im Labor.",
+        "en": "She works in the lab all day."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das Labor = lab. das Laborpersonal = lab staff.",
+    "related": [
+      "die Forschung",
+      "untersuchen"
+    ],
+    "added": "2026-04-07 16:34:00"
+  },
+  {
+    "id": "erforschen",
+    "word": "erforschen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "erforschte",
+    "past_participle": "erforscht",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "forschen",
+    "prefix": "er-",
+    "definitions": [
+      {
+        "meaning": "to research, to investigate, to explore",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie erforscht die Auswirkungen von Stress auf das Gehirn.",
+        "en": "She researches the effects of stress on the brain."
+      },
+      {
+        "de": "Das Gebiet wurde noch nicht vollständig erforscht.",
+        "en": "The area has not yet been fully explored."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "erforschen = to research/explore thoroughly. die Erforschung = the act of researching.",
+    "related": [
+      "der Forscher",
+      "die Erforschung",
+      "die Forschung",
+      "recherchieren",
+      "untersuchen"
+    ],
+    "added": "2026-04-07 16:35:00"
+  },
+  {
+    "id": "die-erforschung",
+    "word": "die Erforschung",
+    "type": "noun",
+    "gender": "die",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "the investigation, exploration, researching of (something)",
+        "note": "no plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Erforschung des Gehirns ist noch lange nicht abgeschlossen.",
+        "en": "The exploration of the brain is far from complete."
+      },
+      {
+        "de": "Die Erforschung des Weltalls fasziniert mich.",
+        "en": "The exploration of space fascinates me."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "erforschen",
+      "die Forschung"
+    ],
+    "added": "2026-04-07 16:36:00"
+  },
+  {
+    "id": "untersuchen",
+    "word": "untersuchen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "untersuchte",
+    "past_participle": "untersucht",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "untersuchen",
+    "definitions": [
+      {
+        "meaning": "to examine, to investigate, to analyse",
+        "note": null
+      },
+      {
+        "meaning": "to examine (medically)",
+        "note": "einen Patienten untersuchen"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir untersuchen die Ursachen des Problems.",
+        "en": "We are investigating the causes of the problem."
+      },
+      {
+        "de": "Der Arzt untersucht den Patienten.",
+        "en": "The doctor examines the patient."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "untersuchen = to examine/investigate. die Untersuchung = examination/investigation.",
+    "related": [
+      "das Ergebnis",
+      "das Labor",
+      "die Untersuchung",
+      "erforschen",
+      "suchen"
+    ],
+    "added": "2026-04-07 16:37:00"
+  },
+  {
+    "id": "die-untersuchung",
+    "word": "die Untersuchung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Untersuchungen",
+    "definitions": [
+      {
+        "meaning": "investigation, examination, study",
+        "note": null
+      },
+      {
+        "meaning": "medical examination, check-up",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Untersuchung ergab keine Auffälligkeiten.",
+        "en": "The examination revealed no abnormalities."
+      },
+      {
+        "de": "Eine gründliche Untersuchung ist nötig.",
+        "en": "A thorough investigation is necessary."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "untersuchen",
+      "das Ergebnis"
+    ],
+    "added": "2026-04-07 16:38:00"
+  },
+  {
+    "id": "recherchieren",
+    "word": "recherchieren",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "recherchierte",
+    "past_participle": "recherchiert",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "recherchieren",
+    "definitions": [
+      {
+        "meaning": "to research, to investigate (journalistic or academic)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Journalist recherchierte wochenlang für den Artikel.",
+        "en": "The journalist researched for weeks for the article."
+      },
+      {
+        "de": "Hast du das recherchiert?",
+        "en": "Did you look that up/research that?"
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "recherchieren = to research/investigate (often journalistic). die Literaturrecherche = literature review.",
+    "related": [
+      "die Recherche",
+      "erforschen"
+    ],
+    "added": "2026-04-07 16:39:00"
+  },
+  {
+    "id": "die-recherche",
+    "word": "die Recherche",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Recherchen",
+    "definitions": [
+      {
+        "meaning": "research, investigation (journalistic or academic)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Recherche hat viel Zeit gekostet.",
+        "en": "The research took a lot of time."
+      },
+      {
+        "de": "Gründliche Recherche ist die Basis guten Journalismus.",
+        "en": "Thorough research is the foundation of good journalism."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "recherchieren",
+      "die Forschung"
+    ],
+    "added": "2026-04-07 16:40:00"
+  },
+  {
+    "id": "das-gehirn",
+    "word": "das Gehirn",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Gehirne",
+    "definitions": [
+      {
+        "meaning": "brain",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das menschliche Gehirn ist faszinierend komplex.",
+        "en": "The human brain is fascinatingly complex."
+      },
+      {
+        "de": "Sport ist gut für das Gehirn.",
+        "en": "Sport is good for the brain."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das Gehirn = brain (standard term). das Hirn = brain (colloquial/informal, also used in cooking). Hirnschäden = brain damage.",
+    "related": [
+      "der Verstand",
+      "der Geist",
+      "die Kognition"
+    ],
+    "added": "2026-04-07 16:41:00"
+  },
+  {
+    "id": "der-geist",
+    "word": "der Geist",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Geister",
+    "definitions": [
+      {
+        "meaning": "mind, intellect, spirit",
+        "note": null
+      },
+      {
+        "meaning": "ghost, spirit",
+        "note": "supernatural sense"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie hat einen scharfen Geist.",
+        "en": "She has a sharp mind."
+      },
+      {
+        "de": "Er gab den Geist auf.",
+        "en": "He gave up the ghost. (died / broke down)"
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Geist = mind/spirit/ghost. geistreich = witty/intellectual. den Geist aufgeben = to give up the ghost (die or break down).",
+    "related": [
+      "der Verstand",
+      "das Gehirn",
+      "das Gespenst"
+    ],
+    "added": "2026-04-07 16:42:00"
+  },
+  {
+    "id": "der-verstand",
+    "word": "der Verstand",
+    "type": "noun",
+    "gender": "der",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "reason, intellect, mind, understanding",
+        "note": "no plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das geht über meinen Verstand.",
+        "en": "That's beyond my understanding."
+      },
+      {
+        "de": "Sie hat den Verstand verloren.",
+        "en": "She has lost her mind."
+      }
+    ],
+    "topics": [
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Verstand = rational mind/intellect. verständig = sensible. das Verständnis = understanding/comprehension.",
+    "related": [
+      "das Gehirn",
+      "der Geist",
+      "die Kognition"
+    ],
+    "added": "2026-04-07 16:43:00"
+  },
+  {
+    "id": "die-beratung",
+    "word": "die Beratung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Beratungen",
+    "definitions": [
+      {
+        "meaning": "consultation, advice, counselling",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich brauche eine Beratung vom Arzt.",
+        "en": "I need a consultation with the doctor."
+      },
+      {
+        "de": "Die Beratung war sehr hilfreich.",
+        "en": "The consultation was very helpful."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Beratung = consultation/advice. beraten = to advise. der Berater = consultant/advisor.",
+    "related": [],
+    "added": "2026-04-07 16:44:00"
+  },
+  {
+    "id": "die-kognition",
+    "word": "die Kognition",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Kognitionen",
+    "definitions": [
+      {
+        "meaning": "cognition",
+        "note": "academic/psychological term"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Kognition umfasst Wahrnehmung, Denken und Gedächtnis.",
+        "en": "Cognition encompasses perception, thinking and memory."
+      },
+      {
+        "de": "Soziale Kognitionen beeinflussen unser Verhalten.",
+        "en": "Social cognitions influence our behaviour."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "die Kognitionswissenschaft = cognitive science. kognitiv = cognitive.",
+    "related": [
+      "das Gehirn",
+      "der Erkenntnisprozess",
+      "der Verstand",
+      "die Entscheidungsfindung"
+    ],
+    "added": "2026-04-07 16:45:00"
+  },
+  {
+    "id": "der-erkenntnisprozess",
+    "word": "der Erkenntnisprozess",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Erkenntnisprozesse",
+    "definitions": [
+      {
+        "meaning": "cognitive process, process of gaining knowledge/insight",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Erkenntnisprozess ist individuell verschieden.",
+        "en": "The cognitive process varies individually."
+      },
+      {
+        "de": "Lernen ist ein aktiver Erkenntnisprozess.",
+        "en": "Learning is an active process of gaining knowledge."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "die Erkenntnis = insight, knowledge, finding. der Erkenntnisprozess = process of gaining knowledge.",
+    "related": [
+      "die Kognition",
+      "die Entscheidungsfindung"
+    ],
+    "added": "2026-04-07 16:46:00"
+  },
+  {
+    "id": "die-entscheidungsfindung",
+    "word": "die Entscheidungsfindung",
+    "type": "noun",
+    "gender": "die",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "decision-making (process)",
+        "note": "no plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Entscheidungsfindung im Team braucht Zeit.",
+        "en": "Decision-making in a team takes time."
+      },
+      {
+        "de": "Emotionen spielen bei der Entscheidungsfindung eine große Rolle.",
+        "en": "Emotions play a big role in decision-making."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "die Entscheidungsfindung = decision-making. das Entscheidungsverfahren = decision-making procedure. eine Entscheidung treffen = to make a decision.",
+    "related": [
+      "das Entscheidungsverfahren",
+      "der Erkenntnisprozess",
+      "die Entscheidung",
+      "die Kognition",
+      "die Wertvorstellung"
+    ],
+    "added": "2026-04-07 16:47:00"
+  },
+  {
+    "id": "die-wertvorstellung",
+    "word": "die Wertvorstellung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Wertvorstellungen",
+    "definitions": [
+      {
+        "meaning": "value, moral belief, idea of what is valuable",
+        "note": "usually plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Unsere Wertvorstellungen prägen unsere Entscheidungen.",
+        "en": "Our values shape our decisions."
+      },
+      {
+        "de": "Wir haben unterschiedliche Wertvorstellungen.",
+        "en": "We have different values."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Wertvorstellung = value/moral belief. der Wert = value (abstract or monetary). die Wertevorstellung is also correct.",
+    "related": [
+      "die Entscheidungsfindung"
+    ],
+    "added": "2026-04-07 16:48:00"
+  },
+  {
+    "id": "das-entscheidungsverfahren",
+    "word": "das Entscheidungsverfahren",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Entscheidungsverfahren",
+    "definitions": [
+      {
+        "meaning": "decision-making procedure, decision process",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Entscheidungsverfahren in dieser Organisation ist sehr komplex.",
+        "en": "The decision-making procedure in this organisation is very complex."
+      },
+      {
+        "de": "Wir brauchen ein klares Entscheidungsverfahren.",
+        "en": "We need a clear decision-making procedure."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": null,
+    "related": [
+      "die Entscheidungsfindung",
+      "die Entscheidung"
+    ],
+    "added": "2026-04-07 16:49:00"
+  },
+  {
+    "id": "die-einsamkeit",
+    "word": "die Einsamkeit",
+    "type": "noun",
+    "gender": "die",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "loneliness, solitude",
+        "note": "no plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Einsamkeit in der Großstadt ist ein bekanntes Phänomen.",
+        "en": "Loneliness in the big city is a well-known phenomenon."
+      },
+      {
+        "de": "Sie genießt die Einsamkeit der Berge.",
+        "en": "She enjoys the solitude of the mountains."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Einsamkeit = loneliness (negative) OR solitude (positive). das Alleinsein = being alone (more neutral). einsam = lonely.",
+    "related": [
+      "das Alleinsein",
+      "die Entfremdung",
+      "einsam"
+    ],
+    "added": "2026-04-07 16:50:00"
+  },
+  {
+    "id": "das-alleinsein",
+    "word": "das Alleinsein",
+    "type": "noun",
+    "gender": "das",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "being alone, aloneness",
+        "note": "no plural; neutral/positive connotation"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Alleinsein macht ihr manchmal Angst.",
+        "en": "Being alone sometimes frightens her."
+      },
+      {
+        "de": "Er schätzt das Alleinsein.",
+        "en": "He appreciates being alone."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das Alleinsein = being alone (neutral state). die Einsamkeit = loneliness (more emotionally charged). allein = alone.",
+    "related": [
+      "die Einsamkeit"
+    ],
+    "added": "2026-04-07 16:51:00"
+  },
+  {
+    "id": "das-geschaeft",
+    "word": "das Geschäft",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Geschäfte",
+    "definitions": [
+      {
+        "meaning": "shop, store",
+        "note": null
+      },
+      {
+        "meaning": "business, deal",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Geschäfte in der Altstadt schließen um 18 Uhr.",
+        "en": "The shops in the old town close at 6pm."
+      },
+      {
+        "de": "Wir haben ein gutes Geschäft gemacht.",
+        "en": "We made a good deal."
+      }
+    ],
+    "topics": [
+      "money & shopping",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das Geschäft = shop OR business/deal. Geschäfte machen = to do business. ein schlechtes Geschäft = a bad deal.",
+    "related": [],
+    "added": "2026-04-07 16:52:00"
+  },
+  {
+    "id": "das-geschlecht",
+    "word": "das Geschlecht",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Geschlechter",
+    "definitions": [
+      {
+        "meaning": "sex, gender",
+        "note": null
+      },
+      {
+        "meaning": "grammatical gender",
+        "note": "das grammatische Geschlecht"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Geschlecht spielt in dieser Studie eine wichtige Rolle.",
+        "en": "Gender plays an important role in this study."
+      },
+      {
+        "de": "Jedes Substantiv hat ein Geschlecht.",
+        "en": "Every noun has a gender."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das Geschlecht = biological sex or social gender. Also used for grammatical gender in linguistics.",
+    "related": [],
+    "added": "2026-04-07 16:53:00"
+  },
+  {
+    "id": "das-geschenk",
+    "word": "das Geschenk",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Geschenke",
+    "definitions": [
+      {
+        "meaning": "gift, present",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe ein schönes Geschenk zum Geburtstag bekommen.",
+        "en": "I received a lovely gift for my birthday."
+      },
+      {
+        "de": "Das ist ein Geschenk des Himmels!",
+        "en": "That is a godsend!"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "money & shopping"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "schenken = to give as a gift. das Geschenk = the gift. das ist (wie) ein Geschenk = that's a gift/godsend.",
+    "related": [
+      "schenken",
+      "verschenken"
+    ],
+    "added": "2026-04-07 16:54:00"
+  },
+  {
+    "id": "das-gesicht",
+    "word": "das Gesicht",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Gesichter",
+    "definitions": [
+      {
+        "meaning": "face",
+        "note": null
+      },
+      {
+        "meaning": "vision, sight",
+        "note": "literary: ein Gesicht haben = to have a vision"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie hat ein freundliches Gesicht.",
+        "en": "She has a friendly face."
+      },
+      {
+        "de": "Das Gesicht wahren = to save face.",
+        "en": "To save face."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das Gesicht wahren = to save face. das Gesicht verlieren = to lose face. der Gesichtsausdruck = facial expression.",
+    "related": [
+      "der Ausdruck"
+    ],
+    "added": "2026-04-07 16:55:00"
+  },
+  {
+    "id": "unterstreichen",
+    "word": "unterstreichen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "unterstrich",
+    "past_participle": "unterstrichen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "streichen",
+    "prefix": "unter-",
+    "definitions": [
+      {
+        "meaning": "to underline (text)",
+        "note": null
+      },
+      {
+        "meaning": "to emphasise, to underscore (figurative)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Unterstreiche die wichtigen Wörter.",
+        "en": "Underline the important words."
+      },
+      {
+        "de": "Das unterstreicht meine These.",
+        "en": "That underscores my thesis."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "betonen"
+    ],
+    "added": "2026-04-07 16:56:00"
+  },
+  {
+    "id": "betonen",
+    "word": "betonen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "betonte",
+    "past_participle": "betont",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "betonen",
+    "definitions": [
+      {
+        "meaning": "to emphasise, to stress (verbally)",
+        "note": null
+      },
+      {
+        "meaning": "to stress (a syllable)",
+        "note": "phonetic"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie betonte, wie wichtig das sei.",
+        "en": "She emphasised how important that was."
+      },
+      {
+        "de": "Das Wort wird auf der ersten Silbe betont.",
+        "en": "The word is stressed on the first syllable."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "betonen = to emphasise (speech). unterstreichen = to underline/underscore. die Betonung = emphasis/stress.",
+    "related": [
+      "unterstreichen"
+    ],
+    "added": "2026-04-07 16:57:00"
+  },
+  {
+    "id": "die-auskunft",
+    "word": "die Auskunft",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Auskünfte",
+    "definitions": [
+      {
+        "meaning": "information, details, answer to an inquiry",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Können Sie mir eine Auskunft geben?",
+        "en": "Can you give me some information?"
+      },
+      {
+        "de": "Die Auskunft war nicht sehr hilfreich.",
+        "en": "The information was not very helpful."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Auskunft geben = to provide information. die Auskunft = information desk (at train station etc.).",
+    "related": [
+      "die Kenntnis"
+    ],
+    "added": "2026-04-07 16:58:00"
+  },
+  {
+    "id": "die-ausbildung",
+    "word": "die Ausbildung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Ausbildungen",
+    "definitions": [
+      {
+        "meaning": "training, vocational education, apprenticeship",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie macht eine Ausbildung als Krankenschwester.",
+        "en": "She is doing a nursing apprenticeship."
+      },
+      {
+        "de": "Nach der Ausbildung suchte er eine Stelle.",
+        "en": "After his training he looked for a job."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Ausbildung = vocational training/apprenticeship (not university). das Studium = university study. ausgebildet = trained/qualified.",
+    "related": [
+      "das Studium",
+      "der Unterricht",
+      "die Stelle"
+    ],
+    "added": "2026-04-07 16:59:00"
+  },
+  {
+    "id": "der-unterricht",
+    "word": "der Unterricht",
+    "type": "noun",
+    "gender": "der",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "lessons, teaching, instruction",
+        "note": "no plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Unterricht beginnt um 8 Uhr.",
+        "en": "Lessons begin at 8 o'clock."
+      },
+      {
+        "de": "Sie erteilt Unterricht in Mathematik.",
+        "en": "She teaches mathematics lessons."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Unterricht = lessons/teaching (school level). die Vorlesung = university lecture. Unterricht geben/erteilen = to teach.",
+    "related": [
+      "die Vorlesung",
+      "die Ausbildung"
+    ],
+    "added": "2026-04-07 17:00:00"
+  },
+  {
+    "id": "die-zeile",
+    "word": "die Zeile",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Zeilen",
+    "definitions": [
+      {
+        "meaning": "line (of text, code)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Lies bitte ab Zeile drei.",
+        "en": "Please read from line three."
+      },
+      {
+        "de": "Ich schreibe dir ein paar Zeilen.",
+        "en": "I'll write you a few lines."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Zeile = line of text. die Seite = page. jdm. ein paar Zeilen schreiben = to drop someone a line.",
+    "related": [],
+    "added": "2026-04-07 17:01:00"
+  },
+  {
+    "id": "hinzufuegen",
+    "word": "hinzufügen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "fügte hinzu",
+    "past_participle": "hinzugefügt",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "fügen",
+    "prefix": "hinzu-",
+    "definitions": [
+      {
+        "meaning": "to add, to append",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich möchte noch etwas hinzufügen.",
+        "en": "I would like to add something."
+      },
+      {
+        "de": "Fügen Sie bitte Ihre Unterschrift hinzu.",
+        "en": "Please add your signature."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "work & academia"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-07 17:02:00"
+  },
+  {
+    "id": "die-beschraenkung",
+    "word": "die Beschränkung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Beschränkungen",
+    "definitions": [
+      {
+        "meaning": "restriction, limitation, constraint",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Es gibt Reisebeschränkungen in diesem Land.",
+        "en": "There are travel restrictions in this country."
+      },
+      {
+        "de": "Die Beschränkungen wurden aufgehoben.",
+        "en": "The restrictions were lifted."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "beschränken = to restrict/limit. die Beschränkung = restriction. der Zwang = compulsion (stronger than restriction).",
+    "related": [
+      "der Zwang",
+      "die Regelung"
+    ],
+    "added": "2026-04-07 17:03:00"
+  },
+  {
+    "id": "die-fallzahlen",
+    "word": "die Fallzahlen",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Fallzahlen",
+    "definitions": [
+      {
+        "meaning": "case numbers, incidence figures",
+        "note": "usually plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Fallzahlen sind gestiegen.",
+        "en": "The case numbers have risen."
+      },
+      {
+        "de": "Die aktuellen Fallzahlen sind besorgniserregend.",
+        "en": "The current case numbers are worrying."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "die Fallzahl = number of cases (singular). Most commonly used in plural. der Fall = case.",
+    "related": [],
+    "added": "2026-04-07 17:04:00"
+  },
+  {
+    "id": "die-regelung",
+    "word": "die Regelung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Regelungen",
+    "definitions": [
+      {
+        "meaning": "regulation, rule, arrangement",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Es gibt neue Regelungen für das Homeoffice.",
+        "en": "There are new regulations for working from home."
+      },
+      {
+        "de": "Die Regelung gilt ab sofort.",
+        "en": "The regulation takes effect immediately."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Regelung = regulation/arrangement. die Regel = rule (general). regeln = to regulate/sort out.",
+    "related": [
+      "die Beschränkung"
+    ],
+    "added": "2026-04-07 17:05:00"
+  },
+  {
+    "id": "der-fremde",
+    "word": "der Fremde",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Fremden",
+    "definitions": [
+      {
+        "meaning": "stranger, foreigner",
+        "note": "adjective used as noun"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ein Fremder sprach mich auf der Straße an.",
+        "en": "A stranger spoke to me in the street."
+      },
+      {
+        "de": "In der neuen Stadt fühlte sie sich wie eine Fremde.",
+        "en": "In the new city she felt like a stranger."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Fremde/die Fremde = stranger/foreigner (adjective nominalised). fremd = foreign/strange. die Fremde = foreign parts/abroad. der Ausländer = foreigner (specifically non-citizen).",
+    "related": [
+      "der Ausländer"
+    ],
+    "added": "2026-04-07 17:06:00"
+  },
+  {
+    "id": "der-auslaender",
+    "word": "der Ausländer",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Ausländer",
+    "definitions": [
+      {
+        "meaning": "foreigner, non-citizen",
+        "note": "legal/administrative sense"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Als Ausländerin hat sie besondere Vorschriften zu beachten.",
+        "en": "As a foreigner she has special regulations to observe."
+      },
+      {
+        "de": "Er lebt seit zehn Jahren als Ausländer in Deutschland.",
+        "en": "He has been living in Germany as a foreigner for ten years."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Ausländerin = female foreigner. der Ausländer = legally a non-citizen. der Fremde = stranger (broader, not specifically legal).",
+    "related": [
+      "der Fremde"
+    ],
+    "added": "2026-04-07 17:07:00"
+  },
+  {
+    "id": "gestiegen",
+    "word": "gestiegen",
+    "type": "adj/adv",
+    "usage": "adjective only",
+    "derived_from": "steigen",
+    "definitions": [
+      {
+        "meaning": "risen, increased, gone up",
+        "note": "past participle of steigen used as adjective"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die gestiegen Preise belasten die Haushalte.",
+        "en": "The risen prices are a burden on households."
+      },
+      {
+        "de": "Die Temperaturen sind gestiegen.",
+        "en": "Temperatures have risen."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Past participle of steigen. gestiegene Kosten = increased costs. gestiegene Nachfrage = increased demand.",
+    "related": [
+      "steigen",
+      "erhöhen"
+    ],
+    "added": "2026-04-07 17:08:00"
+  },
+  {
+    "id": "das-heim",
+    "word": "das Heim",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Heime",
+    "definitions": [
+      {
+        "meaning": "home (as institution)",
+        "note": "Altersheim, Kinderheim"
+      },
+      {
+        "meaning": "home (poetic/informal)",
+        "note": "ein Heim schaffen = to make a home"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie lebt in einem Altersheim.",
+        "en": "She lives in a care home."
+      },
+      {
+        "de": "Er hat sich ein gemütliches Heim geschaffen.",
+        "en": "He has made himself a cosy home."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das Heim = home (institutional or poetic). das Zuhause = home (everyday). die Heimat = homeland/place of origin. das Altersheim = care home.",
+    "related": [
+      "die Heimat"
+    ],
+    "added": "2026-04-07 17:09:00"
+  },
+  {
+    "id": "die-heimat",
+    "word": "die Heimat",
+    "type": "noun",
+    "gender": "die",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "homeland, home region, place where one belongs",
+        "note": "no plural; carries emotional weight"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie vermisst ihre Heimat sehr.",
+        "en": "She misses her homeland a lot."
+      },
+      {
+        "de": "Für mich ist Basel zur Heimat geworden.",
+        "en": "Basel has become home for me."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Heimat = homeland/home (emotional). die Heimatstadt = home town. heimweh = homesickness.",
+    "related": [
+      "das Heim",
+      "die Entfremdung"
+    ],
+    "added": "2026-04-07 17:10:00"
+  },
+  {
+    "id": "die-entfremdung",
+    "word": "die Entfremdung",
+    "type": "noun",
+    "gender": "die",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "alienation, estrangement",
+        "note": "no plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er spürt eine zunehmende Entfremdung von seiner Heimat.",
+        "en": "He feels a growing alienation from his homeland."
+      },
+      {
+        "de": "Die Entfremdung zwischen den beiden war deutlich spürbar.",
+        "en": "The estrangement between the two was clearly felt."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "die Entfremdung = alienation/estrangement. sich entfremden von = to become alienated from.",
+    "related": [
+      "die Heimat",
+      "die Einsamkeit"
+    ],
+    "added": "2026-04-07 17:11:00"
+  },
+  {
+    "id": "der-bund",
+    "word": "der Bund",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Bünde",
+    "definitions": [
+      {
+        "meaning": "federation, confederation",
+        "note": "der Bund = federal government (Germany/Switzerland)"
+      },
+      {
+        "meaning": "alliance, union, bond",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist eine Angelegenheit des Bundes, nicht der Kantone.",
+        "en": "That is a matter for the federal government, not the cantons."
+      },
+      {
+        "de": "Sie schlossen einen Bund fürs Leben.",
+        "en": "They made a bond for life."
+      }
+    ],
+    "topics": [
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Bund = federal government (Switzerland/Germany). der Bundesrat = Federal Council. das Bundesamt = federal office.",
+    "related": [
+      "das Bundesamt",
+      "der Bundesrat",
+      "die Gesellschaft"
+    ],
+    "added": "2026-04-07 17:12:00"
+  },
+  {
+    "id": "das-bundesamt",
+    "word": "das Bundesamt",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Bundesämter",
+    "definitions": [
+      {
+        "meaning": "federal office, federal agency",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Bundesamt für Gesundheit hat neue Empfehlungen herausgegeben.",
+        "en": "The Federal Office of Public Health has issued new recommendations."
+      },
+      {
+        "de": "Sie arbeitet beim Bundesamt für Statistik.",
+        "en": "She works at the Federal Statistical Office."
+      }
+    ],
+    "topics": [
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "Swiss/German federal administration term. das Bundesamt für Gesundheit (BAG) = Federal Office of Public Health.",
+    "related": [
+      "der Bund",
+      "der Bundesrat"
+    ],
+    "added": "2026-04-07 17:13:00"
+  },
+  {
+    "id": "der-bundesrat",
+    "word": "der Bundesrat",
+    "type": "noun",
+    "gender": "der",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "Federal Council (Swiss government) or Federal Council (German upper house)",
+        "note": "no plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Bundesrat hat heute eine neue Verordnung erlassen.",
+        "en": "The Federal Council issued a new ordinance today."
+      },
+      {
+        "de": "Der Bundesrat besteht in der Schweiz aus sieben Mitgliedern.",
+        "en": "The Federal Council in Switzerland consists of seven members."
+      }
+    ],
+    "topics": [
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "In Switzerland: the seven-member executive government. In Germany: the upper house representing the states.",
+    "related": [
+      "der Bund",
+      "das Bundesamt"
+    ],
+    "added": "2026-04-07 17:14:00"
+  },
+  {
+    "id": "die-gesellschaft",
+    "word": "die Gesellschaft",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Gesellschaften",
+    "definitions": [
+      {
+        "meaning": "society",
+        "note": null
+      },
+      {
+        "meaning": "company, companionship",
+        "note": "jdm. Gesellschaft leisten = to keep someone company"
+      },
+      {
+        "meaning": "company (business)",
+        "note": "die GmbH = Gesellschaft mit beschränkter Haftung"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Gesellschaft hat sich verändert.",
+        "en": "Society has changed."
+      },
+      {
+        "de": "Ich leiste dir gerne Gesellschaft.",
+        "en": "I'll gladly keep you company."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "gesellschaftlich = social. jdm. Gesellschaft leisten = to keep company. die GmbH = Ltd company.",
+    "related": [
+      "der Bund",
+      "die Genossenschaft"
+    ],
+    "added": "2026-04-07 17:15:00"
+  },
+  {
+    "id": "der-zwang",
+    "word": "der Zwang",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Zwänge",
+    "definitions": [
+      {
+        "meaning": "compulsion, constraint, coercion, pressure",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich tue das aus eigenem Antrieb, nicht aus Zwang.",
+        "en": "I do that of my own accord, not under compulsion."
+      },
+      {
+        "de": "Gesellschaftliche Zwänge sind oft unsichtbar.",
+        "en": "Social constraints are often invisible."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Zwang = compulsion/coercion. zwingen = to force. gezwungen = forced. zwanghaft = compulsive.",
+    "related": [
+      "zwängen",
+      "die Beschränkung"
+    ],
+    "added": "2026-04-07 17:16:00"
+  },
+  {
+    "id": "zwaengen",
+    "word": "zwängen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "zwängte",
+    "past_participle": "gezwängt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "zwängen",
+    "definitions": [
+      {
+        "meaning": "to squeeze, to force, to cram into a tight space",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er zwängte sich durch die enge Lücke.",
+        "en": "He squeezed himself through the narrow gap."
+      },
+      {
+        "de": "Sie zwängte alles in den kleinen Koffer.",
+        "en": "She crammed everything into the small suitcase."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "zwängen = to squeeze/cram. sich zwängen = to squeeze oneself through. Not to be confused with zwingen (to force/compel).",
+    "related": [
+      "der Zwang"
+    ],
+    "added": "2026-04-07 17:17:00"
+  },
+  {
+    "id": "die-genossenschaft",
+    "word": "die Genossenschaft",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Genossenschaften",
+    "definitions": [
+      {
+        "meaning": "cooperative, co-op",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie kauft ihr Gemüse bei einer Genossenschaft.",
+        "en": "She buys her vegetables from a cooperative."
+      },
+      {
+        "de": "Migros ist eine Genossenschaft.",
+        "en": "Migros is a cooperative."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "money & shopping"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Genossenschaft = cooperative. der Genosse = comrade/member. Particularly common in Switzerland.",
+    "related": [
+      "die Gesellschaft"
+    ],
+    "added": "2026-04-07 17:18:00"
+  },
+  {
+    "id": "erkranken",
+    "word": "erkranken",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "erkrankte",
+    "past_participle": "erkrankt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "krank",
+    "prefix": "er-",
+    "definitions": [
+      {
+        "meaning": "to fall ill, to become sick",
+        "note": "an + DAT"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er erkrankte schwer an Grippe.",
+        "en": "He fell seriously ill with flu."
+      },
+      {
+        "de": "Sie ist an Krebs erkrankt.",
+        "en": "She has fallen ill with cancer."
+      }
+    ],
+    "topics": [
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "erkranken = to fall ill (takes sein). an etwas erkranken = to become ill with something. krank = ill. die Erkrankung = illness.",
+    "related": [
+      "anstecken"
+    ],
+    "added": "2026-04-07 17:19:00"
+  },
+  {
+    "id": "anstecken",
+    "word": "anstecken",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "steckte an",
+    "past_participle": "angesteckt",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "stecken",
+    "prefix": "an-",
+    "definitions": [
+      {
+        "meaning": "to infect, to pass on (a disease)",
+        "note": null
+      },
+      {
+        "meaning": "to pin on, to attach (a badge)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er hat mich mit seiner Erkältung angesteckt.",
+        "en": "He infected me with his cold."
+      },
+      {
+        "de": "Lachen ist ansteckend.",
+        "en": "Laughter is contagious."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "daily life"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": "anstecken = to infect. ansteckend = contagious. sich anstecken = to catch an illness.",
+    "related": [
+      "erkranken"
+    ],
+    "added": "2026-04-07 17:20:00"
+  },
+  {
+    "id": "der-krieg",
+    "word": "der Krieg",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Kriege",
+    "definitions": [
+      {
+        "meaning": "war",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Krieg dauerte fünf Jahre.",
+        "en": "The war lasted five years."
+      },
+      {
+        "de": "Krieg führen = to wage war.",
+        "en": "To wage war."
+      }
+    ],
+    "topics": [
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Krieg führen = to wage war. im Krieg = at war. der Weltkrieg = world war. der Krieger = warrior.",
+    "related": [
+      "der Held",
+      "die Besatzung",
+      "töten",
+      "verteidigen",
+      "zerstören"
+    ],
+    "added": "2026-04-07 17:21:00"
+  },
+  {
+    "id": "die-besatzung",
+    "word": "die Besatzung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Besatzungen",
+    "definitions": [
+      {
+        "meaning": "occupation (military)",
+        "note": null
+      },
+      {
+        "meaning": "crew (of a ship, plane)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Land litt unter der Besatzung.",
+        "en": "The country suffered under the occupation."
+      },
+      {
+        "de": "Die Besatzung des Schiffes bestand aus 20 Personen.",
+        "en": "The ship's crew consisted of 20 people."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Besatzung = occupation (military) OR crew. besetzen = to occupy.",
+    "related": [
+      "der Krieg"
+    ],
+    "added": "2026-04-07 17:22:00"
+  },
+  {
+    "id": "ueberleben",
+    "word": "überleben",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "überlebte",
+    "past_participle": "überlebt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "leben",
+    "prefix": "über-",
+    "definitions": [
+      {
+        "meaning": "to survive, to outlive",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie hat den Unfall überlebt.",
+        "en": "She survived the accident."
+      },
+      {
+        "de": "Er hat seinen Bruder überlebt.",
+        "en": "He outlived his brother."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Überlebende = survivor. überleben = to survive (transitive and intransitive).",
+    "related": [
+      "der Held",
+      "sterben",
+      "verteidigen"
+    ],
+    "added": "2026-04-07 17:23:00"
+  },
+  {
+    "id": "sterben",
+    "word": "sterben",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "starb",
+    "past_participle": "gestorben",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "sterben",
+    "definitions": [
+      {
+        "meaning": "to die",
+        "note": "an + DAT = to die of/from"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er starb im Alter von 90 Jahren.",
+        "en": "He died at the age of 90."
+      },
+      {
+        "de": "Sie starb an Herzversagen.",
+        "en": "She died of heart failure."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Takes sein. an etwas sterben = to die of something. der Tod = death. gestorben = dead (past participle).",
+    "related": [
+      "töten",
+      "überleben"
+    ],
+    "added": "2026-04-07 17:24:00"
+  },
+  {
+    "id": "toeten",
+    "word": "töten",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "tötete",
+    "past_participle": "getötet",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "töten",
+    "definitions": [
+      {
+        "meaning": "to kill",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Virus hat Tausende getötet.",
+        "en": "The virus killed thousands."
+      },
+      {
+        "de": "Er wurde im Krieg getötet.",
+        "en": "He was killed in the war."
+      }
+    ],
+    "topics": [
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "töten = to kill. der Tod = death. tödlich = deadly/fatal.",
+    "related": [
+      "sterben",
+      "der Krieg"
+    ],
+    "added": "2026-04-07 17:25:00"
+  },
+  {
+    "id": "verraten",
+    "word": "verraten",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "verriet",
+    "past_participle": "verraten",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "raten",
+    "prefix": "ver-",
+    "definitions": [
+      {
+        "meaning": "to betray, to give away (a secret)",
+        "note": null
+      },
+      {
+        "meaning": "to reveal, to tell (informally)",
+        "note": "Kannst du mir verraten...? = Can you tell me...?"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er hat seine Freunde verraten.",
+        "en": "He betrayed his friends."
+      },
+      {
+        "de": "Kannst du mir verraten, wo du das gekauft hast?",
+        "en": "Can you tell me where you bought that?"
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "verraten = to betray (serious) or to let slip/reveal (colloquial). der Verrat = betrayal.",
+    "related": [
+      "anlügen"
+    ],
+    "added": "2026-04-07 17:26:00"
+  },
+  {
+    "id": "zerstoert",
+    "word": "zerstört",
+    "type": "adj/adv",
+    "usage": "both",
+    "derived_from": "zerstören",
+    "definitions": [
+      {
+        "meaning": "destroyed, devastated",
+        "note": null
+      },
+      {
+        "meaning": "devastated, shattered (emotionally)",
+        "note": "colloquial"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Stadt war völlig zerstört.",
+        "en": "The city was completely destroyed."
+      },
+      {
+        "de": "Sie war zerstört nach der Nachricht.",
+        "en": "She was shattered by the news."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Past participle of zerstören. zerstört = destroyed/devastated. die Zerstörung = destruction.",
+    "related": [
+      "zerstören"
+    ],
+    "added": "2026-04-07 17:27:00"
+  },
+  {
+    "id": "zerstoeren",
+    "word": "zerstören",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "zerstörte",
+    "past_participle": "zerstört",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "zerstören",
+    "definitions": [
+      {
+        "meaning": "to destroy, to ruin, to wreck",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Feuer zerstörte das ganze Haus.",
+        "en": "The fire destroyed the entire house."
+      },
+      {
+        "de": "Der Krieg hat alles zerstört.",
+        "en": "The war destroyed everything."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Zerstörung = destruction. zerstörerisch = destructive.",
+    "related": [
+      "zerstört",
+      "der Krieg"
+    ],
+    "added": "2026-04-07 17:28:00"
+  },
+  {
+    "id": "verteidigen",
+    "word": "verteidigen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "verteidigte",
+    "past_participle": "verteidigt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "verteidigen",
+    "definitions": [
+      {
+        "meaning": "to defend (militarily or verbally)",
+        "note": null
+      },
+      {
+        "meaning": "to defend (a thesis or dissertation)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er verteidigte seine Heimat.",
+        "en": "He defended his homeland."
+      },
+      {
+        "de": "Sie hat ihre Doktorarbeit erfolgreich verteidigt.",
+        "en": "She successfully defended her doctoral thesis."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Verteidigung = defence. sich verteidigen = to defend oneself.",
+    "related": [
+      "der Krieg",
+      "überleben"
+    ],
+    "added": "2026-04-07 17:29:00"
+  },
+  {
+    "id": "schicken",
+    "word": "schicken",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "schickte",
+    "past_participle": "geschickt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schicken",
+    "definitions": [
+      {
+        "meaning": "to send (everyday)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich schicke dir eine E-Mail.",
+        "en": "I'll send you an email."
+      },
+      {
+        "de": "Sie hat mir ein Paket geschickt.",
+        "en": "She sent me a parcel."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [
+      "similar to: senden"
+    ],
+    "register": "neutral",
+    "notes": "schicken and senden both mean to send. schicken is more everyday/colloquial; senden is slightly more formal.",
+    "related": [
+      "senden"
+    ],
+    "added": "2026-04-07 17:30:00"
+  },
+  {
+    "id": "senden",
+    "word": "senden",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "sandte / sendete",
+    "past_participle": "gesandt / gesendet",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "senden",
+    "definitions": [
+      {
+        "meaning": "to send (formal/technical)",
+        "note": null
+      },
+      {
+        "meaning": "to broadcast (radio/TV)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir senden Ihnen die Unterlagen zu.",
+        "en": "We will send you the documents."
+      },
+      {
+        "de": "Der Sender sendet rund um die Uhr.",
+        "en": "The broadcaster broadcasts around the clock."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "culture & arts"
+    ],
+    "tags": [
+      "similar to: schicken"
+    ],
+    "register": "formal",
+    "notes": "senden = to send (formal) or to broadcast. schicken = more everyday. der Sender = broadcaster/transmitter.",
+    "related": [
+      "schicken"
+    ],
+    "added": "2026-04-07 17:31:00"
+  },
+  {
+    "id": "der-held",
+    "word": "der Held",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Helden",
+    "definitions": [
+      {
+        "meaning": "hero",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er ist der Held des Romans.",
+        "en": "He is the hero of the novel."
+      },
+      {
+        "de": "Sie gilt als Heldin der Bewegung.",
+        "en": "She is regarded as a heroine of the movement."
+      }
+    ],
+    "topics": [
+      "culture & arts",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Heldin = heroine. heldenhaft = heroic.",
+    "related": [
+      "der Hauptdarsteller",
+      "der Krieg",
+      "überleben"
+    ],
+    "added": "2026-04-07 17:32:00"
+  },
+  {
+    "id": "der-zauber",
+    "word": "der Zauber",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Zauber",
+    "definitions": [
+      {
+        "meaning": "magic, spell, enchantment",
+        "note": null
+      },
+      {
+        "meaning": "charm, fascination",
+        "note": "figurative"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Zauber des Waldes hat sie verzaubert.",
+        "en": "The magic of the forest enchanted her."
+      },
+      {
+        "de": "Alter Zauber!",
+        "en": "Old magic! / Same old tricks!"
+      }
+    ],
+    "topics": [
+      "culture & arts",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Zauber- as prefix: der Zauberstab = magic wand, der Zaubertrank = magic potion, die Zauberflöte = The Magic Flute. zaubern = to do magic. verzaubern = to enchant.",
+    "related": [],
+    "added": "2026-04-07 17:33:00"
+  },
+  {
+    "id": "wachsen",
+    "word": "wachsen",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "wuchs",
+    "past_participle": "gewachsen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "wachsen",
+    "definitions": [
+      {
+        "meaning": "to grow",
+        "note": "takes sein"
+      },
+      {
+        "meaning": "einer Sache gewachsen sein — to be up to something",
+        "note": "idiom"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Kinder wachsen so schnell.",
+        "en": "The children grow so quickly."
+      },
+      {
+        "de": "Ich bin der Aufgabe nicht gewachsen.",
+        "en": "I'm not up to the task."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Takes sein. einer Sache gewachsen sein = to be equal to / up to something. das Wachstum = growth.",
+    "related": [],
+    "added": "2026-04-07 17:34:00"
+  },
+  {
+    "id": "das-gespraech",
+    "word": "das Gespräch",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Gespräche",
+    "definitions": [
+      {
+        "meaning": "conversation, talk, discussion",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir hatten ein langes Gespräch.",
+        "en": "We had a long conversation."
+      },
+      {
+        "de": "Das Gespräch verlief sehr produktiv.",
+        "en": "The discussion was very productive."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "ein Gespräch führen = to have a conversation. ins Gespräch kommen = to start talking.",
+    "related": [
+      "die Besprechung",
+      "reden"
+    ],
+    "added": "2026-04-07 17:35:00"
+  },
+  {
+    "id": "die-umgangssprache",
+    "word": "die Umgangssprache",
+    "type": "noun",
+    "gender": "die",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "colloquial language, everyday speech, vernacular",
+        "note": "no plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist umgangssprachlich.",
+        "en": "That is colloquial."
+      },
+      {
+        "de": "In der Umgangssprache sagt man oft 'kriegen' statt 'bekommen'.",
+        "en": "In colloquial language one often says 'kriegen' instead of 'bekommen'."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "umgangssprachlich = colloquial (adjective). Opposite: die Hochsprache = standard language.",
+    "related": [
+      "die Redewendung",
+      "übersetzen"
+    ],
+    "added": "2026-04-07 17:36:00"
+  },
+  {
+    "id": "uebersetzen",
+    "word": "übersetzen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "übersetzte",
+    "past_participle": "übersetzt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "übersetzen",
+    "definitions": [
+      {
+        "meaning": "to translate",
+        "note": "aus + DAT, ins + AKK"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Kannst du das ins Deutsche übersetzen?",
+        "en": "Can you translate that into German?"
+      },
+      {
+        "de": "Das Buch wurde in zwanzig Sprachen übersetzt.",
+        "en": "The book was translated into twenty languages."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "übersetzen = to translate. die Übersetzung = translation. der Übersetzer = translator.",
+    "related": [
+      "die Umgangssprache"
+    ],
+    "added": "2026-04-07 17:37:00"
+  },
+  {
+    "id": "quatsch",
+    "word": "Quatsch",
+    "type": "noun",
+    "gender": "der",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "nonsense, rubbish, balderdash",
+        "note": "no plural; informal"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist doch Quatsch!",
+        "en": "That's nonsense!"
+      },
+      {
+        "de": "Mach keinen Quatsch!",
+        "en": "Don't do anything stupid! / Stop messing around!"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "informal",
+    "notes": "Quatsch! = Nonsense! Very common interjection. Quatsch machen = to mess around/do silly things.",
+    "related": [
+      "doof"
+    ],
+    "added": "2026-04-07 17:38:00"
+  },
+  {
+    "id": "herrlich",
+    "word": "herrlich",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "magnificent, wonderful, glorious, splendid",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Wetter war herrlich.",
+        "en": "The weather was wonderful."
+      },
+      {
+        "de": "Ein herrlicher Ausblick!",
+        "en": "A magnificent view!"
+      }
+    ],
+    "topics": [
+      "emotions",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "herrlich = magnificent/glorious (genuine enthusiasm). Stronger than schön.",
+    "related": [
+      "großartig",
+      "wunderbar"
+    ],
+    "added": "2026-04-07 17:39:00"
+  },
+  {
+    "id": "furchtbar",
+    "word": "furchtbar",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "terrible, dreadful, awful",
+        "note": null
+      },
+      {
+        "meaning": "terribly, awfully (intensifier)",
+        "note": "colloquial: furchtbar nett = terribly nice"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das war eine furchtbare Erfahrung.",
+        "en": "That was a dreadful experience."
+      },
+      {
+        "de": "Er ist furchtbar nett.",
+        "en": "He is terribly nice."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "daily life"
+    ],
+    "tags": [
+      "similar to: schrecklich"
+    ],
+    "register": "neutral",
+    "notes": "furchtbar = terrible/awful. Also used as intensifier: furchtbar schön = terribly beautiful. die Furcht = fear (root word).",
+    "related": [
+      "die Furcht",
+      "erschreckend",
+      "unerträglich"
+    ],
+    "added": "2026-04-07 17:40:00"
+  },
+  {
+    "id": "nuetzlich",
+    "word": "nützlich",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "useful, helpful, beneficial",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist ein nützlicher Tipp.",
+        "en": "That is a useful tip."
+      },
+      {
+        "de": "Sich nützlich machen = to make oneself useful.",
+        "en": "To make oneself useful."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Opposite: nutzlos (useless). sich nützlich machen = to make oneself useful.",
+    "related": [
+      "sinnvoll"
+    ],
+    "added": "2026-04-07 17:41:00"
+  },
+  {
+    "id": "erzaehlen",
+    "word": "erzählen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "erzählte",
+    "past_participle": "erzählt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "zählen",
+    "prefix": "er-",
+    "definitions": [
+      {
+        "meaning": "to tell, to narrate, to recount",
+        "note": "von + DAT or über + AKK"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er erzählt ihr eine Geschichte.",
+        "en": "He tells her a story."
+      },
+      {
+        "de": "Erzähl mir von deiner Reise!",
+        "en": "Tell me about your trip!"
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "erzählen = to tell/narrate. der Erzähler = narrator. die Erzählung = narration/story.",
+    "related": [
+      "beschreiben",
+      "die Geschichte",
+      "sagen",
+      "zählen auf"
+    ],
+    "added": "2026-04-07 17:42:00"
+  },
+  {
+    "id": "beschreiben",
+    "word": "beschreiben",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "beschrieb",
+    "past_participle": "beschrieben",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schreiben",
+    "prefix": "be-",
+    "definitions": [
+      {
+        "meaning": "to describe",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Beschreib mir, wie der Mann aussah.",
+        "en": "Describe to me what the man looked like."
+      },
+      {
+        "de": "Das lässt sich schwer beschreiben.",
+        "en": "That's hard to describe."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Beschreibung = description. beschreiben = to describe.",
+    "related": [
+      "erzählen",
+      "schreiben"
+    ],
+    "added": "2026-04-07 17:43:00"
+  },
+  {
+    "id": "beruehmt",
+    "word": "berühmt",
+    "type": "adj/adv",
+    "usage": "both",
+    "derived_from": "berühmen",
+    "definitions": [
+      {
+        "meaning": "famous, renowned",
+        "note": "berühmt für + AKK"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Basel ist berühmt für sein Kunstmuseum.",
+        "en": "Basel is famous for its art museum."
+      },
+      {
+        "de": "Sie ist eine berühmte Schriftstellerin.",
+        "en": "She is a famous writer."
+      }
+    ],
+    "topics": [
+      "culture & arts",
+      "people & relationships"
+    ],
+    "tags": [
+      "similar to: bekannt"
+    ],
+    "register": "neutral",
+    "notes": "berühmt = famous (widely known). bekannt = well-known (more modest). die Berühmtheit = fame/celebrity.",
+    "related": [
+      "gefeiert"
+    ],
+    "added": "2026-04-07 17:44:00"
+  },
+  {
+    "id": "gefeiert",
+    "word": "gefeiert",
+    "type": "adj/adv",
+    "usage": "adjective only",
+    "derived_from": "feiern",
+    "definitions": [
+      {
+        "meaning": "acclaimed, celebrated (artist/work)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er ist ein gefeierter Pianist.",
+        "en": "He is an acclaimed pianist."
+      },
+      {
+        "de": "Die gefeierte Autorin sprach über ihr neues Buch.",
+        "en": "The celebrated author spoke about her new book."
+      }
+    ],
+    "topics": [
+      "culture & arts"
+    ],
+    "tags": [
+      "similar to: berühmt"
+    ],
+    "register": "formal",
+    "notes": "gefeiert = acclaimed/celebrated (specifically in the arts/cultural sphere). berühmt = famous more broadly.",
+    "related": [
+      "berühmt"
+    ],
+    "added": "2026-04-07 17:45:00"
+  },
+  {
+    "id": "speziell",
+    "word": "speziell",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "special, specific, particular",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist ein sehr spezieller Fall.",
+        "en": "That is a very special case."
+      },
+      {
+        "de": "Ich mag ihn speziell wegen seines Humors.",
+        "en": "I like him specifically because of his humour."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "speziell = special/specific. besonders = especially/particularly (more common in everyday use). spezialisiert = specialised.",
+    "related": [],
+    "added": "2026-04-07 17:46:00"
+  },
+  {
+    "id": "erschreckend",
+    "word": "erschreckend",
+    "type": "adj/adv",
+    "usage": "both",
+    "derived_from": "erschrecken",
+    "definitions": [
+      {
+        "meaning": "alarming, frightening, shocking",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Zahlen sind erschreckend.",
+        "en": "The figures are alarming."
+      },
+      {
+        "de": "Das ist erschreckend wenig.",
+        "en": "That is alarmingly little."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "erschreckend = alarming/shocking. erschrecken = to frighten/startle. erschrocken = startled/shocked.",
+    "related": [
+      "furchtbar",
+      "unerträglich"
+    ],
+    "added": "2026-04-07 17:47:00"
+  },
+  {
+    "id": "provokativ",
+    "word": "provokativ",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "provocative, challenging, deliberately controversial",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das war eine provokative Frage.",
+        "en": "That was a provocative question."
+      },
+      {
+        "de": "Er argumentiert gerne provokativ.",
+        "en": "He likes to argue provocatively."
+      }
+    ],
+    "topics": [
+      "culture & arts",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "provozieren = to provoke. die Provokation = provocation.",
+    "related": [],
+    "added": "2026-04-07 17:48:00"
+  },
+  {
+    "id": "das-geht-nicht",
+    "word": "das geht nicht",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "that won't work, that's not possible, that's not acceptable",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das geht nicht — ich habe keine Zeit.",
+        "en": "That won't work — I don't have time."
+      },
+      {
+        "de": "Das geht so nicht!",
+        "en": "That's not acceptable! / That's not how it works!"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das geht nicht = that's not possible/not ok. Das geht so nicht! = That won't do! / That's not the right way.",
+    "related": [
+      "das kommt darauf an"
+    ],
+    "added": "2026-04-07 17:49:00"
   }
 ]
