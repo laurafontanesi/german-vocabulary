@@ -3327,32 +3327,6 @@
     "added": "2026-04-05"
   },
   {
-    "id": "ich-verstehe-nur-bahnhof",
-    "word": "ich verstehe nur Bahnhof",
-    "type": "expression",
-    "definitions": [
-      {
-        "meaning": "I don't understand a word (lit. I only understand 'train station')",
-        "note": null
-      }
-    ],
-    "examples": [
-      {
-        "de": "Der Vortrag war so kompliziert — ich habe nur Bahnhof verstanden.",
-        "en": "The lecture was so complicated — I didn't understand a word."
-      }
-    ],
-    "topics": [
-      "language & communication"
-    ],
-    "tags": [
-      "idiom"
-    ],
-    "register": "informal",
-    "notes": "Equivalent of 'it's all Greek to me'. Origin: WWI soldiers overwhelmed with information only retained 'Bahnhof' (the way home).",
-    "added": "2026-04-05"
-  },
-  {
     "id": "das-kommt-mir-spanisch-vor",
     "word": "das kommt mir spanisch vor",
     "type": "expression",
@@ -3376,37 +3350,6 @@
     ],
     "register": "informal",
     "notes": "German equivalent of 'it's all Greek to me' or 'something smells fishy'. Interestingly uses 'Spanish' as the foreign/strange language.",
-    "added": "2026-04-05"
-  },
-  {
-    "id": "fuer-die-katz",
-    "word": "das war für die Katz",
-    "type": "expression",
-    "definitions": [
-      {
-        "meaning": "that was pointless, a waste of time (lit. that was for the cat)",
-        "note": null
-      }
-    ],
-    "examples": [
-      {
-        "de": "Ich habe zwei Stunden gewartet und niemand kam — das war für die Katz!",
-        "en": "I waited two hours and nobody came — what a waste!"
-      },
-      {
-        "de": "Die ganze Vorbereitung war für die Katz.",
-        "en": "All that preparation was for nothing."
-      }
-    ],
-    "topics": [
-      "daily life",
-      "emotions"
-    ],
-    "tags": [
-      "idiom"
-    ],
-    "register": "informal",
-    "notes": "In Swiss German: 'für die Füchse'. Means effort that leads to nothing. Similar to English 'down the drain'.",
     "added": "2026-04-05"
   },
   {
