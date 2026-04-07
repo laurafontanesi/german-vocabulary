@@ -11,18 +11,25 @@
     "family_root": "nehmen",
     "prefix": null,
     "related": [
-      "mitnehmen",
-      "teilnehmen",
       "abnehmen",
-      "zunehmen",
-      "übernehmen",
-      "einnehmen",
-      "hinnehmen",
-      "festnehmen",
-      "wegnehmen",
-      "zurücknehmen",
+      "ausnehmen",
       "benehmen",
-      "unternehmen"
+      "einnehmen",
+      "festnehmen",
+      "herausnehmen",
+      "hinnehmen",
+      "mitnehmen",
+      "sich benehmen",
+      "sich zusammennehmen",
+      "teilnehmen",
+      "unternehmen",
+      "vereinnahmen",
+      "vernehmen",
+      "vornehmen",
+      "wegnehmen",
+      "zunehmen",
+      "zurücknehmen",
+      "übernehmen"
     ],
     "definitions": [
       {
@@ -66,8 +73,24 @@
     "family_root": "nehmen",
     "prefix": "mit-",
     "related": [
+      "abnehmen",
+      "ausnehmen",
+      "einnehmen",
+      "festnehmen",
+      "herausnehmen",
+      "hinnehmen",
       "nehmen",
-      "teilnehmen"
+      "sich benehmen",
+      "sich zusammennehmen",
+      "teilnehmen",
+      "unternehmen",
+      "vereinnahmen",
+      "vernehmen",
+      "vornehmen",
+      "wegnehmen",
+      "zunehmen",
+      "zurücknehmen",
+      "übernehmen"
     ],
     "definitions": [
       {
@@ -109,8 +132,24 @@
     "family_root": "nehmen",
     "prefix": "teil-",
     "related": [
+      "abnehmen",
+      "ausnehmen",
+      "einnehmen",
+      "festnehmen",
+      "herausnehmen",
+      "hinnehmen",
       "mitnehmen",
-      "nehmen"
+      "nehmen",
+      "sich benehmen",
+      "sich zusammennehmen",
+      "unternehmen",
+      "vereinnahmen",
+      "vernehmen",
+      "vornehmen",
+      "wegnehmen",
+      "zunehmen",
+      "zurücknehmen",
+      "übernehmen"
     ],
     "definitions": [
       {
@@ -142,10 +181,12 @@
     "gender": "die",
     "plural": "die Erinnerungen",
     "related": [
-      "sich erinnern",
       "das Gedächtnis",
-      "sich merken",
-      "sich einprägen"
+      "einprägen",
+      "merken",
+      "sich einprägen",
+      "sich erinnern",
+      "sich merken"
     ],
     "definitions": [
       {
@@ -181,6 +222,7 @@
     "plural": "die Gedächtnisse",
     "related": [
       "die Erinnerung",
+      "merken",
       "sich erinnern",
       "sich merken"
     ],
@@ -2089,7 +2131,9 @@
     "family_root": "sehen",
     "prefix": "aus-",
     "related": [
-      "scheinen"
+      "scheinen",
+      "sehen",
+      "zusehen"
     ],
     "definitions": [
       {
@@ -4177,6 +4221,7 @@
     "reflexive": false,
     "related": [
       "das Treffen",
+      "suchen",
       "treffen"
     ],
     "definitions": [
@@ -4921,7 +4966,10 @@
     "register": "neutral",
     "notes": "sich beschweren über + AKK = to complain about something. More formal/official than meckern (to grumble, informal).",
     "added": "2026-04-05",
-    "family_root": "beschweren"
+    "family_root": "beschweren",
+    "related": [
+      "hinnehmen"
+    ]
   },
   {
     "id": "nerven",
@@ -9033,7 +9081,9 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "related": [],
+    "related": [
+      "schieben"
+    ],
     "added": "2026-04-06 11:44:00"
   },
   {
@@ -10327,7 +10377,10 @@
     "tags": [],
     "register": "neutral",
     "notes": "deswegen = therefore/that's why (refers back to a cause). Similar to deshalb and daher, all interchangeable in most contexts.",
-    "related": [],
+    "related": [
+      "also",
+      "deshalb"
+    ],
     "added": "2026-04-06 14:00:00"
   },
   {
@@ -10384,6 +10437,8 @@
     "register": "neutral",
     "notes": "Very versatile verb. Key phrases: halten für = to regard as; eine Rede halten = give a speech; Wort halten = keep one's promise; sich halten an = to stick to/follow (rules).",
     "related": [
+      "aufhalten",
+      "das Verhalten",
       "erhalten",
       "sich halten",
       "sich verhalten"
@@ -10438,6 +10493,8 @@
     "register": "neutral",
     "notes": "sich halten an + AKK = to stick to/follow. sich halten = to keep/stay fresh (food). Different from halten (non-reflexive).",
     "related": [
+      "aufhalten",
+      "das Verhalten",
       "erhalten",
       "halten",
       "sich verhalten"
@@ -10483,7 +10540,9 @@
     "register": "formal",
     "notes": "erhalten = to receive (formal; bekommen is the everyday equivalent). Also: to preserve/maintain (das Gebäude erhalten). gut erhalten = well preserved.",
     "related": [
+      "aufhalten",
       "bekommen",
+      "das Verhalten",
       "halten",
       "sich halten",
       "sich verhalten"
@@ -10905,6 +10964,7 @@
     "register": "neutral",
     "notes": "sich verhalten = to behave (reflexive); das Verhalten = behaviour (noun). sich gut/schlecht verhalten = to behave well/badly.",
     "related": [
+      "aufhalten",
       "das Handeln",
       "das Verhalten",
       "erhalten",
@@ -10945,7 +11005,11 @@
     "notes": "das Verhalten = behaviour (general); die Umgangsformen = manners (social etiquette).",
     "related": [
       "das Handeln",
+      "erhalten",
+      "halten",
       "handeln",
+      "sich benehmen",
+      "sich halten",
       "sich verhalten"
     ],
     "added": "2026-04-06 14:14:00"
@@ -11565,8 +11629,9 @@
     "register": "neutral",
     "notes": "Three meanings: (1) linguistic expression/term; (2) facial expression; (3) printout. die Ausdrucksweise = way of expressing oneself.",
     "related": [
-      "die Äußerung",
-      "die Bemerkung"
+      "die Bemerkung",
+      "die Redewendung",
+      "die Äußerung"
     ],
     "added": "2026-04-06 14:29:00"
   },
@@ -11649,5 +11714,2901 @@
       "beanspruchen"
     ],
     "added": "2026-04-06 14:31:00"
+  },
+  {
+    "id": "abnehmen",
+    "word": "abnehmen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "nahm ab",
+    "past_participle": "abgenommen",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "nehmen",
+    "prefix": "ab-",
+    "definitions": [
+      {
+        "meaning": "to lose weight",
+        "note": null
+      },
+      {
+        "meaning": "to decrease, to decline",
+        "note": null
+      },
+      {
+        "meaning": "to take off, to remove",
+        "note": "jmdm. etw. abnehmen"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie hat fünf Kilo abgenommen.",
+        "en": "She lost five kilos."
+      },
+      {
+        "de": "Die Zahl der Fälle nimmt ab.",
+        "en": "The number of cases is decreasing."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "daily life"
+    ],
+    "tags": [
+      "separable",
+      "verb family: nehmen"
+    ],
+    "register": "neutral",
+    "notes": "Opposite of zunehmen. Also: den Hörer abnehmen = to pick up the phone.",
+    "related": [
+      "ausnehmen",
+      "einnehmen",
+      "festnehmen",
+      "herausnehmen",
+      "hinnehmen",
+      "mitnehmen",
+      "nehmen",
+      "sich benehmen",
+      "sich zusammennehmen",
+      "teilnehmen",
+      "unternehmen",
+      "vereinnahmen",
+      "vernehmen",
+      "vornehmen",
+      "wegnehmen",
+      "zunehmen",
+      "zurücknehmen",
+      "übernehmen"
+    ],
+    "added": "2026-04-07 10:00:00"
+  },
+  {
+    "id": "zunehmen",
+    "word": "zunehmen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "nahm zu",
+    "past_participle": "zugenommen",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "nehmen",
+    "prefix": "zu-",
+    "definitions": [
+      {
+        "meaning": "to gain weight",
+        "note": null
+      },
+      {
+        "meaning": "to increase, to grow",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe über die Feiertage zugenommen.",
+        "en": "I put on weight over the holidays."
+      },
+      {
+        "de": "Der Verkehr nimmt ständig zu.",
+        "en": "Traffic is constantly increasing."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "daily life"
+    ],
+    "tags": [
+      "separable",
+      "verb family: nehmen"
+    ],
+    "register": "neutral",
+    "notes": "Opposite of abnehmen.",
+    "related": [
+      "abnehmen",
+      "ausnehmen",
+      "einnehmen",
+      "festnehmen",
+      "herausnehmen",
+      "hinnehmen",
+      "mitnehmen",
+      "nehmen",
+      "sich benehmen",
+      "sich zusammennehmen",
+      "teilnehmen",
+      "unternehmen",
+      "vereinnahmen",
+      "vernehmen",
+      "vornehmen",
+      "wegnehmen",
+      "zurücknehmen",
+      "übernehmen"
+    ],
+    "added": "2026-04-07 10:01:00"
+  },
+  {
+    "id": "uebernehmen",
+    "word": "übernehmen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "übernahm",
+    "past_participle": "übernommen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "nehmen",
+    "prefix": "über-",
+    "definitions": [
+      {
+        "meaning": "to take over, to take on (a task or role)",
+        "note": null
+      },
+      {
+        "meaning": "sich übernehmen — to overdo it, to take on too much",
+        "note": "reflexive"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er übernimmt die Verantwortung für das Projekt.",
+        "en": "He's taking on responsibility for the project."
+      },
+      {
+        "de": "Sie hat die Firma von ihrem Vater übernommen.",
+        "en": "She took over the company from her father."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "daily life"
+    ],
+    "tags": [
+      "verb family: nehmen"
+    ],
+    "register": "neutral",
+    "notes": "sich übernehmen = to take on too much / to overexert oneself.",
+    "related": [
+      "abnehmen",
+      "ausnehmen",
+      "einnehmen",
+      "festnehmen",
+      "herausnehmen",
+      "hinnehmen",
+      "mitnehmen",
+      "nehmen",
+      "sich benehmen",
+      "sich zusammennehmen",
+      "teilnehmen",
+      "unternehmen",
+      "vereinnahmen",
+      "vernehmen",
+      "vornehmen",
+      "wegnehmen",
+      "zunehmen",
+      "zurücknehmen"
+    ],
+    "added": "2026-04-07 10:02:00"
+  },
+  {
+    "id": "einnehmen",
+    "word": "einnehmen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "nahm ein",
+    "past_participle": "eingenommen",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "nehmen",
+    "prefix": "ein-",
+    "definitions": [
+      {
+        "meaning": "to take (medication)",
+        "note": null
+      },
+      {
+        "meaning": "to occupy (a place or position)",
+        "note": null
+      },
+      {
+        "meaning": "to earn, to take in (money)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie muss die Tabletten dreimal täglich einnehmen.",
+        "en": "She has to take the tablets three times a day."
+      },
+      {
+        "de": "Die Truppen nahmen die Stadt ein.",
+        "en": "The troops captured the city."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "daily life"
+    ],
+    "tags": [
+      "separable",
+      "verb family: nehmen"
+    ],
+    "register": "neutral",
+    "notes": "Medikamente einnehmen = to take medication. Platz einnehmen = to occupy space.",
+    "related": [
+      "abnehmen",
+      "ausnehmen",
+      "festnehmen",
+      "herausnehmen",
+      "hinnehmen",
+      "mitnehmen",
+      "nehmen",
+      "sich benehmen",
+      "sich zusammennehmen",
+      "teilnehmen",
+      "unternehmen",
+      "vereinnahmen",
+      "vernehmen",
+      "vornehmen",
+      "wegnehmen",
+      "zunehmen",
+      "zurücknehmen",
+      "übernehmen"
+    ],
+    "added": "2026-04-07 10:03:00"
+  },
+  {
+    "id": "herausnehmen",
+    "word": "herausnehmen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "nahm heraus",
+    "past_participle": "herausgenommen",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "nehmen",
+    "prefix": "heraus-",
+    "definitions": [
+      {
+        "meaning": "to take out, to remove",
+        "note": null
+      },
+      {
+        "meaning": "sich etw. herausnehmen — to take liberties, to presume",
+        "note": "reflexive"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nimm bitte den Kuchen aus dem Ofen heraus.",
+        "en": "Please take the cake out of the oven."
+      },
+      {
+        "de": "Das nimmst du dir zu viel heraus!",
+        "en": "You're taking too many liberties!"
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "separable",
+      "verb family: nehmen"
+    ],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "abnehmen",
+      "ausnehmen",
+      "einnehmen",
+      "festnehmen",
+      "hinnehmen",
+      "mitnehmen",
+      "nehmen",
+      "sich benehmen",
+      "sich zusammennehmen",
+      "teilnehmen",
+      "unternehmen",
+      "vereinnahmen",
+      "vernehmen",
+      "vornehmen",
+      "wegnehmen",
+      "zunehmen",
+      "zurücknehmen",
+      "übernehmen"
+    ],
+    "added": "2026-04-07 10:04:00"
+  },
+  {
+    "id": "sich-anmassen",
+    "word": "sich anmaßen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "maßte sich an",
+    "past_participle": "angemast",
+    "is_separable": true,
+    "reflexive": true,
+    "family_root": "maßen",
+    "prefix": "an-",
+    "definitions": [
+      {
+        "meaning": "to presume, to arrogate, to claim without right",
+        "note": "sich etw. anmaßen"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er maßt sich an, immer Recht zu haben.",
+        "en": "He presumes to always be right."
+      },
+      {
+        "de": "Sie maßt sich Rechte an, die ihr nicht zustehen.",
+        "en": "She claims rights that are not hers."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "society & politics"
+    ],
+    "tags": [
+      "separable",
+      "reflexive"
+    ],
+    "register": "formal",
+    "notes": "anmaßend = presumptuous, arrogant (adjective). Rather formal/literary.",
+    "related": [],
+    "added": "2026-04-07 10:05:00"
+  },
+  {
+    "id": "hinnehmen",
+    "word": "hinnehmen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "nahm hin",
+    "past_participle": "hingenommen",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "nehmen",
+    "prefix": "hin-",
+    "definitions": [
+      {
+        "meaning": "to accept, to put up with, to tolerate (reluctantly)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das lasse ich mir nicht hinnehmen!",
+        "en": "I won't stand for that!"
+      },
+      {
+        "de": "Sie nimmt viel hin, ohne sich zu beschweren.",
+        "en": "She puts up with a lot without complaining."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "emotions"
+    ],
+    "tags": [
+      "separable",
+      "verb family: nehmen"
+    ],
+    "register": "neutral",
+    "notes": "hinnehmen implies reluctant acceptance — you put up with something you don't like.",
+    "related": [
+      "abnehmen",
+      "ausnehmen",
+      "einnehmen",
+      "festnehmen",
+      "herausnehmen",
+      "mitnehmen",
+      "nehmen",
+      "sich benehmen",
+      "sich beschweren",
+      "sich zusammennehmen",
+      "teilnehmen",
+      "unternehmen",
+      "vereinnahmen",
+      "vernehmen",
+      "vornehmen",
+      "wegnehmen",
+      "zunehmen",
+      "zurücknehmen",
+      "übernehmen"
+    ],
+    "added": "2026-04-07 10:06:00"
+  },
+  {
+    "id": "festnehmen",
+    "word": "festnehmen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "nahm fest",
+    "past_participle": "festgenommen",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "nehmen",
+    "prefix": "fest-",
+    "definitions": [
+      {
+        "meaning": "to arrest, to apprehend, to detain",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Polizei hat den Verdächtigen festgenommen.",
+        "en": "The police arrested the suspect."
+      },
+      {
+        "de": "Er wurde an der Grenze festgenommen.",
+        "en": "He was arrested at the border."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "daily life"
+    ],
+    "tags": [
+      "separable",
+      "verb family: nehmen"
+    ],
+    "register": "neutral",
+    "notes": "die Festnahme = arrest. festnehmen is the standard police/legal term.",
+    "related": [
+      "abnehmen",
+      "ausnehmen",
+      "einnehmen",
+      "herausnehmen",
+      "hinnehmen",
+      "mitnehmen",
+      "nehmen",
+      "sich benehmen",
+      "sich zusammennehmen",
+      "teilnehmen",
+      "unternehmen",
+      "vereinnahmen",
+      "vernehmen",
+      "vornehmen",
+      "wegnehmen",
+      "zunehmen",
+      "zurücknehmen",
+      "übernehmen"
+    ],
+    "added": "2026-04-07 10:07:00"
+  },
+  {
+    "id": "wegnehmen",
+    "word": "wegnehmen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "nahm weg",
+    "past_participle": "weggenommen",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "nehmen",
+    "prefix": "weg-",
+    "definitions": [
+      {
+        "meaning": "to take away, to remove",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nimm dem Kind das Messer weg!",
+        "en": "Take the knife away from the child!"
+      },
+      {
+        "de": "Das Gebäude nimmt viel Licht weg.",
+        "en": "The building blocks a lot of light."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "separable",
+      "verb family: nehmen"
+    ],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "abnehmen",
+      "ausnehmen",
+      "einnehmen",
+      "festnehmen",
+      "herausnehmen",
+      "hinnehmen",
+      "mitnehmen",
+      "nehmen",
+      "sich benehmen",
+      "sich zusammennehmen",
+      "teilnehmen",
+      "unternehmen",
+      "vereinnahmen",
+      "vernehmen",
+      "vornehmen",
+      "zunehmen",
+      "zurücknehmen",
+      "übernehmen"
+    ],
+    "added": "2026-04-07 10:08:00"
+  },
+  {
+    "id": "zuruecknehmen",
+    "word": "zurücknehmen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "nahm zurück",
+    "past_participle": "zurückgenommen",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "nehmen",
+    "prefix": "zurück-",
+    "definitions": [
+      {
+        "meaning": "to take back, to withdraw, to retract",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er nahm seine Aussage zurück.",
+        "en": "He retracted his statement."
+      },
+      {
+        "de": "Kannst du das Produkt zurücknehmen?",
+        "en": "Can you take the product back?"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [
+      "separable",
+      "verb family: nehmen"
+    ],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "abnehmen",
+      "ausnehmen",
+      "einnehmen",
+      "festnehmen",
+      "herausnehmen",
+      "hinnehmen",
+      "mitnehmen",
+      "nehmen",
+      "sich benehmen",
+      "sich zusammennehmen",
+      "teilnehmen",
+      "unternehmen",
+      "vereinnahmen",
+      "vernehmen",
+      "vornehmen",
+      "wegnehmen",
+      "zunehmen",
+      "übernehmen"
+    ],
+    "added": "2026-04-07 10:09:00"
+  },
+  {
+    "id": "vornehmen",
+    "word": "vornehmen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "nahm vor",
+    "past_participle": "vorgenommen",
+    "is_separable": true,
+    "reflexive": true,
+    "family_root": "nehmen",
+    "prefix": "vor-",
+    "definitions": [
+      {
+        "meaning": "sich etw. vornehmen — to plan, to intend, to resolve to do something",
+        "note": "reflexive"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe mir vorgenommen, mehr Sport zu machen.",
+        "en": "I've resolved to do more sport."
+      },
+      {
+        "de": "Was hast du dir für dieses Jahr vorgenommen?",
+        "en": "What have you planned for this year?"
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "separable",
+      "reflexive",
+      "verb family: nehmen"
+    ],
+    "register": "neutral",
+    "notes": "Almost always used reflexively: sich etw. vornehmen = to plan/intend to do something.",
+    "related": [
+      "abnehmen",
+      "ausnehmen",
+      "einnehmen",
+      "festnehmen",
+      "herausnehmen",
+      "hinnehmen",
+      "mitnehmen",
+      "nehmen",
+      "sich benehmen",
+      "sich zusammennehmen",
+      "teilnehmen",
+      "unternehmen",
+      "vereinnahmen",
+      "vernehmen",
+      "wegnehmen",
+      "zunehmen",
+      "zurücknehmen",
+      "übernehmen"
+    ],
+    "added": "2026-04-07 10:10:00"
+  },
+  {
+    "id": "unternehmen",
+    "word": "unternehmen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "unternahm",
+    "past_participle": "unternommen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "nehmen",
+    "prefix": "unter-",
+    "definitions": [
+      {
+        "meaning": "to undertake, to do (an activity)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Was unternehmen wir heute?",
+        "en": "What shall we do today?"
+      },
+      {
+        "de": "Sie haben einen Ausflug unternommen.",
+        "en": "They went on an excursion."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [
+      "verb family: nehmen"
+    ],
+    "register": "neutral",
+    "notes": "das Unternehmen = company/enterprise. einen Ausflug/eine Reise unternehmen = to go on a trip.",
+    "related": [
+      "abnehmen",
+      "ausnehmen",
+      "einnehmen",
+      "festnehmen",
+      "herausnehmen",
+      "hinnehmen",
+      "mitnehmen",
+      "nehmen",
+      "sich benehmen",
+      "sich zusammennehmen",
+      "teilnehmen",
+      "vereinnahmen",
+      "vernehmen",
+      "vornehmen",
+      "wegnehmen",
+      "zunehmen",
+      "zurücknehmen",
+      "übernehmen"
+    ],
+    "added": "2026-04-07 10:11:00"
+  },
+  {
+    "id": "ausnehmen",
+    "word": "ausnehmen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "nahm aus",
+    "past_participle": "ausgenommen",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "nehmen",
+    "prefix": "aus-",
+    "definitions": [
+      {
+        "meaning": "to gut (fish/poultry)",
+        "note": null
+      },
+      {
+        "meaning": "to exclude, to exempt",
+        "note": "ausgenommen = except for"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Alle waren eingeladen, mich ausgenommen.",
+        "en": "Everyone was invited, except for me."
+      },
+      {
+        "de": "Er nimmt sich selbst immer aus.",
+        "en": "He always excludes himself."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "separable",
+      "verb family: nehmen"
+    ],
+    "register": "neutral",
+    "notes": "ausgenommen = except (for), excluding. Very common in formal writing.",
+    "related": [
+      "abnehmen",
+      "die Ausnahme",
+      "einnehmen",
+      "festnehmen",
+      "herausnehmen",
+      "hinnehmen",
+      "mitnehmen",
+      "nehmen",
+      "sich benehmen",
+      "sich zusammennehmen",
+      "teilnehmen",
+      "unternehmen",
+      "vereinnahmen",
+      "vernehmen",
+      "vornehmen",
+      "wegnehmen",
+      "zunehmen",
+      "zurücknehmen",
+      "übernehmen"
+    ],
+    "added": "2026-04-07 10:12:00"
+  },
+  {
+    "id": "die-ausnahme",
+    "word": "die Ausnahme",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Ausnahmen",
+    "definitions": [
+      {
+        "meaning": "exception",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist eine Ausnahme, keine Regel.",
+        "en": "That's an exception, not a rule."
+      },
+      {
+        "de": "Ausnahmen bestätigen die Regel.",
+        "en": "Exceptions prove the rule."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "ausnahmsweise = exceptionally, just this once. Ausnahmen bestätigen die Regel = exceptions prove the rule (common saying).",
+    "related": [
+      "ausnehmen"
+    ],
+    "added": "2026-04-07 10:13:00"
+  },
+  {
+    "id": "sich-zusammennehmen",
+    "word": "sich zusammennehmen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "nahm sich zusammen",
+    "past_participle": "zusammengenommen",
+    "is_separable": true,
+    "reflexive": true,
+    "family_root": "nehmen",
+    "prefix": "zusammen-",
+    "definitions": [
+      {
+        "meaning": "to pull oneself together, to get a grip",
+        "note": "reflexive"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nimm dich zusammen!",
+        "en": "Pull yourself together!"
+      },
+      {
+        "de": "Sie musste sich wirklich zusammennehmen, um nicht zu weinen.",
+        "en": "She really had to pull herself together not to cry."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "daily life"
+    ],
+    "tags": [
+      "separable",
+      "reflexive",
+      "verb family: nehmen"
+    ],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "abnehmen",
+      "ausnehmen",
+      "einnehmen",
+      "festnehmen",
+      "herausnehmen",
+      "hinnehmen",
+      "mitnehmen",
+      "nehmen",
+      "sich benehmen",
+      "teilnehmen",
+      "unternehmen",
+      "vereinnahmen",
+      "vernehmen",
+      "vornehmen",
+      "wegnehmen",
+      "zunehmen",
+      "zurücknehmen",
+      "übernehmen"
+    ],
+    "added": "2026-04-07 10:14:00"
+  },
+  {
+    "id": "benehmen",
+    "word": "sich benehmen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "benahm sich",
+    "past_participle": "benommen",
+    "is_separable": false,
+    "reflexive": true,
+    "family_root": "nehmen",
+    "prefix": "be-",
+    "definitions": [
+      {
+        "meaning": "to behave, to conduct oneself",
+        "note": "reflexive"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Benimm dich!",
+        "en": "Behave yourself!"
+      },
+      {
+        "de": "Er benimmt sich immer vorbildlich.",
+        "en": "He always behaves exemplarily."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "daily life"
+    ],
+    "tags": [
+      "reflexive",
+      "verb family: nehmen"
+    ],
+    "register": "neutral",
+    "notes": "das Benehmen = behaviour, manners. 'Kein Benehmen haben' = to have no manners.",
+    "related": [
+      "abnehmen",
+      "ausnehmen",
+      "das Verhalten",
+      "einnehmen",
+      "festnehmen",
+      "herausnehmen",
+      "hinnehmen",
+      "mitnehmen",
+      "nehmen",
+      "sich verhalten",
+      "sich zusammennehmen",
+      "teilnehmen",
+      "unternehmen",
+      "vereinnahmen",
+      "vernehmen",
+      "vornehmen",
+      "wegnehmen",
+      "zunehmen",
+      "zurücknehmen",
+      "übernehmen"
+    ],
+    "added": "2026-04-07 10:15:00"
+  },
+  {
+    "id": "vernehmen",
+    "word": "vernehmen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "vernahm",
+    "past_participle": "vernommen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "nehmen",
+    "prefix": "ver-",
+    "definitions": [
+      {
+        "meaning": "to hear, to perceive",
+        "note": "formal/literary"
+      },
+      {
+        "meaning": "to interrogate, to question (police/legal)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er vernahm ein leises Geräusch.",
+        "en": "He heard a faint noise."
+      },
+      {
+        "de": "Der Zeuge wurde von der Polizei vernommen.",
+        "en": "The witness was questioned by the police."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "society & politics"
+    ],
+    "tags": [
+      "verb family: nehmen"
+    ],
+    "register": "formal",
+    "notes": "Both meanings are formal. die Vernehmung = interrogation/hearing.",
+    "related": [
+      "abnehmen",
+      "ausnehmen",
+      "einnehmen",
+      "festnehmen",
+      "herausnehmen",
+      "hinnehmen",
+      "mitnehmen",
+      "nehmen",
+      "sich benehmen",
+      "sich zusammennehmen",
+      "teilnehmen",
+      "unternehmen",
+      "vereinnahmen",
+      "vornehmen",
+      "wegnehmen",
+      "zunehmen",
+      "zurücknehmen",
+      "übernehmen"
+    ],
+    "added": "2026-04-07 10:16:00"
+  },
+  {
+    "id": "vereinnahmen",
+    "word": "vereinnahmen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "vereinnahmte",
+    "past_participle": "vereinnahmt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "nehmen",
+    "prefix": "ver-",
+    "definitions": [
+      {
+        "meaning": "to absorb, to monopolise (someone's time/attention)",
+        "note": "figurative, often pejorative"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Arbeit vereinnahmt ihn völlig.",
+        "en": "Work completely absorbs him."
+      },
+      {
+        "de": "Sie lässt sich nicht von ihm vereinnahmen.",
+        "en": "She doesn't let herself be dominated by him."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "work & academia"
+    ],
+    "tags": [
+      "verb family: nehmen"
+    ],
+    "register": "neutral",
+    "notes": "Often used negatively — someone/something takes over your time or autonomy completely.",
+    "related": [
+      "abnehmen",
+      "ausnehmen",
+      "einnehmen",
+      "festnehmen",
+      "herausnehmen",
+      "hinnehmen",
+      "mitnehmen",
+      "nehmen",
+      "sich benehmen",
+      "sich zusammennehmen",
+      "teilnehmen",
+      "unternehmen",
+      "vernehmen",
+      "vornehmen",
+      "wegnehmen",
+      "zunehmen",
+      "zurücknehmen",
+      "übernehmen"
+    ],
+    "added": "2026-04-07 10:17:00"
+  },
+  {
+    "id": "anschauen",
+    "word": "anschauen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "schaute an",
+    "past_participle": "angeschaut",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "schauen",
+    "prefix": "an-",
+    "definitions": [
+      {
+        "meaning": "to look at, to watch",
+        "note": "more common in Southern German/Austrian/Swiss"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Schau dir das mal an!",
+        "en": "Take a look at that!"
+      },
+      {
+        "de": "Wir haben uns einen Film angeschaut.",
+        "en": "We watched a film."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "separable",
+      "similar to: ansehen"
+    ],
+    "register": "neutral",
+    "notes": "anschauen and ansehen are largely interchangeable. anschauen is more common in Swiss/Austrian German; ansehen in Northern Germany.",
+    "related": [
+      "schauen",
+      "sehen"
+    ],
+    "added": "2026-04-07 10:18:00"
+  },
+  {
+    "id": "schauen",
+    "word": "schauen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "schaute",
+    "past_participle": "geschaut",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schauen",
+    "definitions": [
+      {
+        "meaning": "to look, to watch",
+        "note": "Southern German/Swiss alternative to sehen"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Schau mal!",
+        "en": "Look! / Have a look!"
+      },
+      {
+        "de": "Ich schaue jeden Abend fern.",
+        "en": "I watch TV every evening."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "similar to: sehen"
+    ],
+    "register": "neutral",
+    "notes": "schauen = look/watch (Swiss/Austrian/South German). sehen = see/watch (standard German). fernschauen = to watch TV (Swiss). fernsehen = standard.",
+    "related": [
+      "anschauen",
+      "sehen",
+      "zusehen"
+    ],
+    "added": "2026-04-07 10:19:00"
+  },
+  {
+    "id": "sehen",
+    "word": "sehen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "sah",
+    "past_participle": "gesehen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "sehen",
+    "definitions": [
+      {
+        "meaning": "to see",
+        "note": null
+      },
+      {
+        "meaning": "to watch (TV, a film)",
+        "note": null
+      },
+      {
+        "meaning": "to look, to view",
+        "note": "mal sehen = let's see"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Siehst du das Haus dort drüben?",
+        "en": "Do you see the house over there?"
+      },
+      {
+        "de": "Mal sehen, was passiert.",
+        "en": "We'll see what happens."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "body & mind"
+    ],
+    "tags": [
+      "similar to: schauen"
+    ],
+    "register": "neutral",
+    "notes": "sehen = to see/watch (standard German). mal sehen = we'll see / let's see. aussehen = to look/appear.",
+    "related": [
+      "schauen",
+      "anschauen",
+      "aussehen",
+      "zusehen"
+    ],
+    "added": "2026-04-07 10:20:00"
+  },
+  {
+    "id": "zusehen",
+    "word": "zusehen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "sah zu",
+    "past_participle": "zugesehen",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "sehen",
+    "prefix": "zu-",
+    "definitions": [
+      {
+        "meaning": "to watch, to look on, to observe",
+        "note": "bei + DAT"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe nur zugeschaut, wie er kochte.",
+        "en": "I just watched as he cooked."
+      },
+      {
+        "de": "Sieh zu, dass du pünktlich bist!",
+        "en": "Make sure you're on time!"
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "separable",
+      "similar to: zuschauen"
+    ],
+    "register": "neutral",
+    "notes": "zusehen = to watch/look on (standard); zuschauen = same but more Swiss/Austrian. sieh zu, dass... = make sure that...",
+    "related": [
+      "aussehen",
+      "schauen",
+      "sehen"
+    ],
+    "added": "2026-04-07 10:21:00"
+  },
+  {
+    "id": "nennen",
+    "word": "nennen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "nannte",
+    "past_participle": "genannt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "nennen",
+    "definitions": [
+      {
+        "meaning": "to name, to call (something by a name)",
+        "note": null
+      },
+      {
+        "meaning": "to mention, to cite",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie nannten das Kind Maria.",
+        "en": "They named the child Maria."
+      },
+      {
+        "de": "Können Sie drei Beispiele nennen?",
+        "en": "Can you mention three examples?"
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "nennen = to name/call; heißen = to be called. Kannst du Beispiele nennen? = Can you give examples?",
+    "related": [
+      "heißen"
+    ],
+    "added": "2026-04-07 10:22:00"
+  },
+  {
+    "id": "heissen",
+    "word": "heißen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "hieß",
+    "past_participle": "geheißen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "heißen",
+    "definitions": [
+      {
+        "meaning": "to be called, to be named",
+        "note": "Ich heiße Laura = My name is Laura"
+      },
+      {
+        "meaning": "to mean, to say",
+        "note": "was heißt das? = what does that mean?"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wie heißt du?",
+        "en": "What's your name?"
+      },
+      {
+        "de": "Was heißt 'Gemütlichkeit' auf Englisch?",
+        "en": "What does 'Gemütlichkeit' mean in English?"
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "heißen = to be called; nennen = to call/name someone. Das heißt (d.h.) = that means / i.e.",
+    "related": [
+      "nennen"
+    ],
+    "added": "2026-04-07 10:23:00"
+  },
+  {
+    "id": "das-beduerfnis",
+    "word": "das Bedürfnis",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Bedürfnisse",
+    "definitions": [
+      {
+        "meaning": "need, requirement, desire",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Schlaf ist ein grundlegendes menschliches Bedürfnis.",
+        "en": "Sleep is a basic human need."
+      },
+      {
+        "de": "Sie hat das Bedürfnis, allein zu sein.",
+        "en": "She has the need to be alone."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Bedürfnispyramide = Maslow's hierarchy of needs. soziale/individuelle Bedürfnisse = social/individual needs.",
+    "related": [],
+    "added": "2026-04-07 10:24:00"
+  },
+  {
+    "id": "beenden",
+    "word": "beenden",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "beendete",
+    "past_participle": "beendet",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "beenden",
+    "definitions": [
+      {
+        "meaning": "to end, to finish, to conclude",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie hat das Studium erfolgreich beendet.",
+        "en": "She successfully finished her studies."
+      },
+      {
+        "de": "Die Sitzung wurde um 18 Uhr beendet.",
+        "en": "The meeting was concluded at 6pm."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "work & academia"
+    ],
+    "tags": [
+      "similar to: abschließen, stoppen"
+    ],
+    "register": "neutral",
+    "notes": "beenden = to finish/complete (implies a natural end); abschließen = to conclude/close; stoppen = to stop (abruptly).",
+    "related": [
+      "abschließen",
+      "anfangen",
+      "aufhalten",
+      "etwas zu Ende bringen",
+      "stoppen"
+    ],
+    "added": "2026-04-07 10:25:00"
+  },
+  {
+    "id": "abschliessen",
+    "word": "abschließen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "schloss ab",
+    "past_participle": "abgeschlossen",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "schließen",
+    "prefix": "ab-",
+    "definitions": [
+      {
+        "meaning": "to lock (a door)",
+        "note": null
+      },
+      {
+        "meaning": "to conclude, to finish (formally)",
+        "note": "einen Vertrag abschließen = to conclude a contract"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Hast du die Tür abgeschlossen?",
+        "en": "Did you lock the door?"
+      },
+      {
+        "de": "Sie hat ihr Studium mit Auszeichnung abgeschlossen.",
+        "en": "She completed her studies with distinction."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "work & academia"
+    ],
+    "tags": [
+      "separable",
+      "similar to: beenden"
+    ],
+    "register": "neutral",
+    "notes": "abschließen = to lock OR to formally conclude. einen Vertrag/eine Versicherung abschließen = to take out a contract/insurance.",
+    "related": [
+      "beenden",
+      "etwas zu Ende bringen",
+      "stoppen"
+    ],
+    "added": "2026-04-07 10:26:00"
+  },
+  {
+    "id": "stoppen",
+    "word": "stoppen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "stoppte",
+    "past_participle": "gestoppt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "stoppen",
+    "definitions": [
+      {
+        "meaning": "to stop (abruptly), to halt",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Fahrer stoppte das Auto plötzlich.",
+        "en": "The driver stopped the car suddenly."
+      },
+      {
+        "de": "Wir müssen den Klimawandel stoppen.",
+        "en": "We need to stop climate change."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "similar to: beenden, aufhalten"
+    ],
+    "register": "neutral",
+    "notes": "stoppen = to stop (abrupt/forceful); aufhalten = to stop/hold back (prevent from continuing).",
+    "related": [
+      "abschließen",
+      "aufhalten",
+      "beenden"
+    ],
+    "added": "2026-04-07 10:27:00"
+  },
+  {
+    "id": "aufhalten",
+    "word": "aufhalten",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "hielt auf",
+    "past_participle": "aufgehalten",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "halten",
+    "prefix": "auf-",
+    "definitions": [
+      {
+        "meaning": "to stop, to hold back, to delay",
+        "note": null
+      },
+      {
+        "meaning": "sich aufhalten — to stay, to be located (somewhere)",
+        "note": "reflexive"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nichts kann ihn aufhalten.",
+        "en": "Nothing can stop him."
+      },
+      {
+        "de": "Ich habe mich nicht lange in Wien aufgehalten.",
+        "en": "I didn't stay long in Vienna."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [
+      "separable",
+      "similar to: stoppen"
+    ],
+    "register": "neutral",
+    "notes": "aufhalten = to stop/delay (someone); sich aufhalten = to stay/be located somewhere.",
+    "related": [
+      "beenden",
+      "erhalten",
+      "halten",
+      "sich halten",
+      "sich verhalten",
+      "stoppen"
+    ],
+    "added": "2026-04-07 10:28:00"
+  },
+  {
+    "id": "anfangen",
+    "word": "anfangen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "fing an",
+    "past_participle": "angefangen",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "fangen",
+    "prefix": "an-",
+    "definitions": [
+      {
+        "meaning": "to begin, to start",
+        "note": "with + zu + Infinitiv or + mit + DAT"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wann fängt der Film an?",
+        "en": "When does the film start?"
+      },
+      {
+        "de": "Sie fing an zu weinen.",
+        "en": "She started to cry."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "separable",
+      "similar to: beginnen"
+    ],
+    "register": "neutral",
+    "notes": "anfangen and beginnen are largely interchangeable; anfangen is more colloquial. Mit etwas anfangen = to start on something; also: 'was soll ich damit anfangen?' = what am I supposed to do with this?",
+    "related": [
+      "beenden"
+    ],
+    "added": "2026-04-07 10:29:00"
+  },
+  {
+    "id": "dauern",
+    "word": "dauern",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "dauerte",
+    "past_participle": "gedauert",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "dauern",
+    "definitions": [
+      {
+        "meaning": "to last, to take (time)",
+        "note": null
+      },
+      {
+        "meaning": "to feel sorry for (someone)",
+        "note": "jdn. dauert es = he feels sorry; regional/informal"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Vortrag dauert ungefähr eine Stunde.",
+        "en": "The lecture lasts about an hour."
+      },
+      {
+        "de": "Wie lange dauert die Fahrt?",
+        "en": "How long does the journey take?"
+      }
+    ],
+    "topics": [
+      "time",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Es dauert (lange) = it takes (a long time). Wie lange dauert es? = How long does it take?",
+    "related": [
+      "die Dauer"
+    ],
+    "added": "2026-04-07 10:30:00"
+  },
+  {
+    "id": "die-bedingung",
+    "word": "die Bedingung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Bedingungen",
+    "definitions": [
+      {
+        "meaning": "condition, requirement, term",
+        "note": null
+      },
+      {
+        "meaning": "unter der Bedingung, dass — on condition that",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist eine wichtige Bedingung für den Erfolg.",
+        "en": "That is an important condition for success."
+      },
+      {
+        "de": "Unter welchen Bedingungen arbeiten Sie?",
+        "en": "Under what conditions do you work?"
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "unter der Bedingung, dass = on condition that. Arbeitsbedingungen = working conditions.",
+    "related": [
+      "bedingt sein durch",
+      "der Faktor",
+      "der Grund"
+    ],
+    "added": "2026-04-07 10:31:00"
+  },
+  {
+    "id": "der-zweck",
+    "word": "der Zweck",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Zwecke",
+    "definitions": [
+      {
+        "meaning": "purpose, aim, point",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Was ist der Zweck dieser Übung?",
+        "en": "What is the purpose of this exercise?"
+      },
+      {
+        "de": "Es hat keinen Zweck, sich aufzuregen.",
+        "en": "There's no point in getting upset."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "keinen Zweck haben = to be pointless. zweckmäßig = practical, fit for purpose. zu diesem Zweck = for this purpose.",
+    "related": [
+      "der Grund"
+    ],
+    "added": "2026-04-07 10:32:00"
+  },
+  {
+    "id": "der-grund",
+    "word": "der Grund",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Gründe",
+    "definitions": [
+      {
+        "meaning": "reason, cause, grounds",
+        "note": null
+      },
+      {
+        "meaning": "ground, bottom, foundation",
+        "note": "also physical: Meeresgrund = seabed"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Aus welchem Grund bist du zu spät?",
+        "en": "For what reason are you late?"
+      },
+      {
+        "de": "Im Grunde hat sie Recht.",
+        "en": "Basically she is right."
+      }
+    ],
+    "topics": [
+      "grammar & structure",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "aus diesem Grund = for this reason. im Grunde (genommen) = basically, fundamentally. begründen = to justify/substantiate.",
+    "related": [
+      "der Faktor",
+      "der Zweck",
+      "die Bedingung",
+      "die Begründung",
+      "die Folge"
+    ],
+    "added": "2026-04-07 10:33:00"
+  },
+  {
+    "id": "die-begruendung",
+    "word": "die Begründung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Begründungen",
+    "definitions": [
+      {
+        "meaning": "justification, reasoning, explanation (for a decision or claim)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er gab keine Begründung für seine Entscheidung.",
+        "en": "He gave no justification for his decision."
+      },
+      {
+        "de": "Die Begründung des Urteils wurde veröffentlicht.",
+        "en": "The reasoning behind the verdict was published."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Begründung = the reasoning/justification given; der Grund = the reason itself. begründen = to justify, to give reasons for.",
+    "related": [
+      "der Grund"
+    ],
+    "added": "2026-04-07 10:34:00"
+  },
+  {
+    "id": "der-faktor",
+    "word": "der Faktor",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Faktoren",
+    "definitions": [
+      {
+        "meaning": "factor, element",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Wetter ist ein wichtiger Faktor.",
+        "en": "The weather is an important factor."
+      },
+      {
+        "de": "Viele Faktoren spielen dabei eine Rolle.",
+        "en": "Many factors play a role here."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "der Grund",
+      "die Bedingung"
+    ],
+    "added": "2026-04-07 10:35:00"
+  },
+  {
+    "id": "deshalb",
+    "word": "deshalb",
+    "type": "adj/adv",
+    "usage": "adverb only",
+    "definitions": [
+      {
+        "meaning": "therefore, that's why, for that reason",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er war krank, deshalb kam er nicht.",
+        "en": "He was ill, that's why he didn't come."
+      },
+      {
+        "de": "Deshalb habe ich angerufen.",
+        "en": "That's why I called."
+      }
+    ],
+    "topics": [
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "deshalb, deswegen, daher, darum — all mean 'therefore/that's why' and are largely interchangeable in everyday use.",
+    "related": [
+      "also",
+      "deswegen",
+      "je … desto …"
+    ],
+    "added": "2026-04-07 10:36:00"
+  },
+  {
+    "id": "also",
+    "word": "also",
+    "type": "adj/adv",
+    "usage": "adverb only",
+    "definitions": [
+      {
+        "meaning": "so, therefore, thus",
+        "note": "FALSE FRIEND: NOT 'also' in English!"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Also, was machen wir jetzt?",
+        "en": "So, what do we do now?"
+      },
+      {
+        "de": "Er hat nicht geantwortet, also gehe ich davon aus, dass er nicht kommt.",
+        "en": "He hasn't replied, so I assume he's not coming."
+      }
+    ],
+    "topics": [
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "⚠️ False friend! German 'also' = English 'so/therefore', NOT 'also'. English 'also' = German 'auch'. Very common filler at the start of sentences: 'Also...' = 'So...' / 'Well...'",
+    "related": [
+      "deshalb",
+      "deswegen",
+      "je … desto …"
+    ],
+    "added": "2026-04-07 10:37:00"
+  },
+  {
+    "id": "trotzdem",
+    "word": "trotzdem",
+    "type": "adj/adv",
+    "usage": "adverb only",
+    "definitions": [
+      {
+        "meaning": "nevertheless, nonetheless, still, anyway",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Es regnete, trotzdem gingen wir spazieren.",
+        "en": "It was raining, nevertheless we went for a walk."
+      },
+      {
+        "de": "Ich weiß, dass es schwer ist — trotzdem versuche ich es.",
+        "en": "I know it's hard — I'll try anyway."
+      }
+    ],
+    "topics": [
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "trotzdem = nevertheless (adverb, main clause). trotz + GEN = despite (preposition). obwohl + verb-final clause = although (conjunction).",
+    "related": [
+      "je … desto …",
+      "obwohl",
+      "trotz"
+    ],
+    "added": "2026-04-07 10:38:00"
+  },
+  {
+    "id": "die-folge",
+    "word": "die Folge",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Folgen",
+    "definitions": [
+      {
+        "meaning": "consequence, result, effect",
+        "note": null
+      },
+      {
+        "meaning": "episode (of a series)",
+        "note": "die nächste Folge = the next episode"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Was sind die Folgen des Klimawandels?",
+        "en": "What are the consequences of climate change?"
+      },
+      {
+        "de": "Die vorletzte Folge der Serie war fantastisch.",
+        "en": "The second-to-last episode of the series was fantastic."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "culture & arts",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Folge = consequence/result OR episode. soziale/Umweltfolgen = social/environmental consequences. infolge = as a result of (preposition).",
+    "related": [
+      "der Grund",
+      "infolge"
+    ],
+    "added": "2026-04-07 10:39:00"
+  },
+  {
+    "id": "schieben",
+    "word": "schieben",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "schob",
+    "past_participle": "geschoben",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schieben",
+    "definitions": [
+      {
+        "meaning": "to push, to shove",
+        "note": null
+      },
+      {
+        "meaning": "to postpone, to put off",
+        "note": "auf die lange Bank schieben = to put on the back burner"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er schob den Tisch an die Wand.",
+        "en": "He pushed the table against the wall."
+      },
+      {
+        "de": "Sie schiebt alles auf die lange Bank.",
+        "en": "She puts everything on the back burner."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "auf die lange Bank schieben = to procrastinate, to keep putting something off (idiom).",
+    "related": [
+      "rammen"
+    ],
+    "added": "2026-04-07 10:40:00"
+  },
+  {
+    "id": "versuchen",
+    "word": "versuchen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "versuchte",
+    "past_participle": "versucht",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "versuchen",
+    "definitions": [
+      {
+        "meaning": "to try, to attempt",
+        "note": "versuchen + zu + Infinitiv"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich versuche, früher schlafen zu gehen.",
+        "en": "I'm trying to go to bed earlier."
+      },
+      {
+        "de": "Versuch es doch mal!",
+        "en": "Just give it a try!"
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "similar to: probieren"
+    ],
+    "register": "neutral",
+    "notes": "versuchen = to try (to do something); probieren = to try/taste (something). der Versuch = attempt, experiment.",
+    "related": [
+      "probieren",
+      "suchen"
+    ],
+    "added": "2026-04-07 10:41:00"
+  },
+  {
+    "id": "suchen",
+    "word": "suchen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "suchte",
+    "past_participle": "gesucht",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "suchen",
+    "definitions": [
+      {
+        "meaning": "to look for, to search for",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich suche meine Schlüssel.",
+        "en": "I'm looking for my keys."
+      },
+      {
+        "de": "Gesucht: erfahrener Programmierer.",
+        "en": "Wanted: experienced programmer."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "suchen nach = to search for. gesucht = wanted/sought (e.g. on job ads). besuchen = to visit.",
+    "related": [
+      "versuchen",
+      "besuchen"
+    ],
+    "added": "2026-04-07 10:42:00"
+  },
+  {
+    "id": "probieren",
+    "word": "probieren",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "probierte",
+    "past_participle": "probiert",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "probieren",
+    "definitions": [
+      {
+        "meaning": "to try, to taste, to sample",
+        "note": null
+      },
+      {
+        "meaning": "to try on (clothing)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Probier mal diesen Käse!",
+        "en": "Try this cheese!"
+      },
+      {
+        "de": "Probier es einfach mal!",
+        "en": "Just give it a try!"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "money & shopping"
+    ],
+    "tags": [
+      "similar to: versuchen"
+    ],
+    "register": "neutral",
+    "notes": "probieren = to try/taste (something physical); versuchen = to attempt (an action). Probieren geht über Studieren = the proof is in the pudding (proverb).",
+    "related": [
+      "versuchen"
+    ],
+    "added": "2026-04-07 10:43:00"
+  },
+  {
+    "id": "einpraegen",
+    "word": "einprägen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "prägte ein",
+    "past_participle": "eingeprägt",
+    "is_separable": true,
+    "reflexive": true,
+    "family_root": "prägen",
+    "prefix": "ein-",
+    "definitions": [
+      {
+        "meaning": "to memorise, to imprint on one's mind",
+        "note": "sich etw. einprägen"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Präg dir diese Vokabeln gut ein!",
+        "en": "Make sure you memorise these vocabulary words!"
+      },
+      {
+        "de": "Ich habe mir seine Adresse eingeprägt.",
+        "en": "I memorised his address."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "body & mind"
+    ],
+    "tags": [
+      "separable",
+      "reflexive"
+    ],
+    "register": "neutral",
+    "notes": "sich etw. einprägen = to commit to memory. ins Gedächtnis einprägen = to imprint on the memory.",
+    "related": [
+      "die Erinnerung",
+      "merken"
+    ],
+    "added": "2026-04-07 10:44:00"
+  },
+  {
+    "id": "merken",
+    "word": "merken",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "merkte",
+    "past_participle": "gemerkt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "merken",
+    "definitions": [
+      {
+        "meaning": "to notice, to realise",
+        "note": null
+      },
+      {
+        "meaning": "sich etw. merken — to remember, to keep in mind",
+        "note": "reflexive"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe nicht gemerkt, dass er gegangen ist.",
+        "en": "I didn't notice that he had left."
+      },
+      {
+        "de": "Merk dir das!",
+        "en": "Remember that! / Keep that in mind!"
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "merken = to notice (intransitive); sich etw. merken = to remember/memorise (reflexive). die Bemerkung = remark (related root).",
+    "related": [
+      "das Gedächtnis",
+      "die Erinnerung",
+      "einprägen"
+    ],
+    "added": "2026-04-07 10:45:00"
+  },
+  {
+    "id": "urteilen",
+    "word": "urteilen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "urteilte",
+    "past_participle": "geurteilt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "urteilen",
+    "definitions": [
+      {
+        "meaning": "to judge, to form a judgement",
+        "note": "über + AKK"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Man sollte nicht so schnell über andere urteilen.",
+        "en": "One shouldn't judge others so quickly."
+      },
+      {
+        "de": "Über Geschmack lässt sich nicht urteilen.",
+        "en": "There's no accounting for taste."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "urteilen über = to judge about. das Urteil = judgement, verdict. beurteilen = to assess/evaluate; verurteilen = to condemn/sentence.",
+    "related": [
+      "beurteilen",
+      "teilen",
+      "verurteilen"
+    ],
+    "added": "2026-04-07 10:46:00"
+  },
+  {
+    "id": "teilen",
+    "word": "teilen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "teilte",
+    "past_participle": "geteilt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "teilen",
+    "definitions": [
+      {
+        "meaning": "to share",
+        "note": null
+      },
+      {
+        "meaning": "to divide",
+        "note": "mathematical or physical division"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir teilen uns die Kosten.",
+        "en": "We share the costs."
+      },
+      {
+        "de": "Ich teile deine Meinung.",
+        "en": "I share your opinion."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "teilen = to share or to divide. Ich teile deine Meinung = I share your view. aufteilen = to split up; mitteilen = to inform/communicate.",
+    "related": [
+      "beurteilen",
+      "urteilen",
+      "verurteilen"
+    ],
+    "added": "2026-04-07 10:47:00"
+  },
+  {
+    "id": "beurteilen",
+    "word": "beurteilen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "beurteilte",
+    "past_participle": "beurteilt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "urteilen",
+    "prefix": "be-",
+    "definitions": [
+      {
+        "meaning": "to assess, to evaluate, to judge (a situation or work)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wie beurteilen Sie die Situation?",
+        "en": "How do you assess the situation?"
+      },
+      {
+        "de": "Es ist schwer, das objektiv zu beurteilen.",
+        "en": "It's hard to judge that objectively."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "beurteilen = to assess/evaluate (neutral); verurteilen = to condemn/sentence (negative). die Beurteilung = assessment, appraisal.",
+    "related": [
+      "teilen",
+      "urteilen",
+      "verurteilen"
+    ],
+    "added": "2026-04-07 10:48:00"
+  },
+  {
+    "id": "verurteilen",
+    "word": "verurteilen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "verurteilte",
+    "past_participle": "verurteilt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "urteilen",
+    "prefix": "ver-",
+    "definitions": [
+      {
+        "meaning": "to condemn, to criticise strongly",
+        "note": null
+      },
+      {
+        "meaning": "to sentence, to convict (legal)",
+        "note": "jdn. zu etw. verurteilen"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die internationale Gemeinschaft verurteilte den Angriff.",
+        "en": "The international community condemned the attack."
+      },
+      {
+        "de": "Er wurde zu zwei Jahren Haft verurteilt.",
+        "en": "He was sentenced to two years in prison."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "verurteilen = to condemn (morally) or to sentence (legally). das Urteil = verdict. beurteilen = to assess (neutral).",
+    "related": [
+      "beurteilen",
+      "teilen",
+      "urteilen"
+    ],
+    "added": "2026-04-07 10:49:00"
+  },
+  {
+    "id": "die-redewendung",
+    "word": "die Redewendung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Redewendungen",
+    "definitions": [
+      {
+        "meaning": "idiom, fixed expression, phrase",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "'Die Katze aus dem Sack lassen' ist eine bekannte Redewendung.",
+        "en": "'To let the cat out of the bag' is a well-known idiom."
+      },
+      {
+        "de": "Deutsche Redewendungen sind oft schwer zu übersetzen.",
+        "en": "German idioms are often hard to translate."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "der Ausdruck"
+    ],
+    "added": "2026-04-07 10:50:00"
+  },
+  {
+    "id": "sein-zu-infinitiv",
+    "word": "sein + zu + Infinitiv",
+    "type": "construction",
+    "definitions": [
+      {
+        "meaning": "expresses possibility or necessity (can be done / must be done)",
+        "note": "passive-like construction"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Problem ist leicht zu lösen.",
+        "en": "The problem is easy to solve. (= can be solved)"
+      },
+      {
+        "de": "Der Fehler ist nicht zu übersehen.",
+        "en": "The mistake is impossible to miss. (= cannot be overlooked)"
+      }
+    ],
+    "topics": [
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "sein + zu + Infinitiv = passive-like: expresses that something can or must be done. 'Das ist zu tun' = that needs to be done / that can be done. Tone depends on context.",
+    "related": [
+      "haben + zu + Infinitiv",
+      "nicht brauchen + zu + Infinitiv"
+    ],
+    "added": "2026-04-07 10:51:00"
+  },
+  {
+    "id": "haben-zu-infinitiv",
+    "word": "haben + zu + Infinitiv",
+    "type": "construction",
+    "definitions": [
+      {
+        "meaning": "expresses obligation — have to do something",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Du hast dich zu benehmen.",
+        "en": "You have to behave yourself."
+      },
+      {
+        "de": "Ich habe heute noch viel zu erledigen.",
+        "en": "I still have a lot to do today."
+      }
+    ],
+    "topics": [
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "haben + zu + Infinitiv = obligation (stronger than müssen in formal contexts). 'Du hast mir nichts zu sagen' = you have no right to tell me what to do.",
+    "related": [
+      "sein + zu + Infinitiv",
+      "nicht brauchen + zu + Infinitiv"
+    ],
+    "added": "2026-04-07 10:52:00"
+  },
+  {
+    "id": "nicht-brauchen-zu-infinitiv",
+    "word": "nicht brauchen + zu + Infinitiv",
+    "type": "construction",
+    "definitions": [
+      {
+        "meaning": "don't need to, don't have to",
+        "note": "negation of obligation"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Du brauchst das nicht zu tun.",
+        "en": "You don't need to do that."
+      },
+      {
+        "de": "Sie braucht sich keine Sorgen zu machen.",
+        "en": "She doesn't need to worry."
+      }
+    ],
+    "topics": [
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "nicht brauchen + zu + Infinitiv = don't need to (= nicht müssen). Note: brauchen here is used like a modal verb and requires 'zu' before the infinitive.",
+    "related": [
+      "haben + zu + Infinitiv",
+      "sein + zu + Infinitiv"
+    ],
+    "added": "2026-04-07 10:53:00"
+  },
+  {
+    "id": "zu-ende-bringen",
+    "word": "etwas zu Ende bringen",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "to finish something, to bring something to completion",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie brachte das Projekt trotz aller Schwierigkeiten zu Ende.",
+        "en": "She brought the project to completion despite all the difficulties."
+      },
+      {
+        "de": "Ich muss diesen Bericht noch zu Ende bringen.",
+        "en": "I still need to finish this report."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "zu Ende bringen = to bring to completion. Also: zu Ende gehen = to come to an end; zu Ende sein = to be over/finished.",
+    "related": [
+      "beenden",
+      "abschließen"
+    ],
+    "added": "2026-04-07 10:54:00"
+  },
+  {
+    "id": "bedingt-sein-durch",
+    "word": "bedingt sein durch",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "to be caused by, to be determined by, to be contingent on",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sein Verhalten ist durch seine Kindheit bedingt.",
+        "en": "His behaviour is determined by his childhood."
+      },
+      {
+        "de": "Die hohen Kosten sind durch die Inflation bedingt.",
+        "en": "The high costs are caused by inflation."
+      }
+    ],
+    "topics": [
+      "grammar & structure",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "bedingt sein durch = to be conditioned/caused by. bedingt = conditional, limited (adjective): 'nur bedingt geeignet' = only partially suitable.",
+    "related": [
+      "die Bedingung"
+    ],
+    "added": "2026-04-07 10:55:00"
+  },
+  {
+    "id": "weil",
+    "word": "weil",
+    "type": "prep/conj",
+    "usage": "conjunction only",
+    "definitions": [
+      {
+        "meaning": "because (causal conjunction)",
+        "note": "verb goes to the END of the clause"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bleibe zuhause, weil es regnet.",
+        "en": "I'm staying home because it's raining."
+      },
+      {
+        "de": "Weil sie krank war, konnte sie nicht kommen.",
+        "en": "Because she was ill, she couldn't come."
+      }
+    ],
+    "topics": [
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "weil + verb-final clause. Very common. Different from denn (which keeps normal word order). Colloquially, weil is sometimes used with normal word order: 'Ich bleibe zuhause, weil es regnet.' is correct; 'weil es regnet.' has verb at end.",
+    "related": [
+      "denn",
+      "da",
+      "wegen",
+      "aufgrund",
+      "infolge"
+    ],
+    "added": "2026-04-07 10:56:00"
+  },
+  {
+    "id": "wegen",
+    "word": "wegen",
+    "type": "prep/conj",
+    "usage": "preposition only",
+    "definitions": [
+      {
+        "meaning": "because of, due to",
+        "note": "+ GEN (or DAT in informal speech)"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wegen des Regens blieb ich zuhause.",
+        "en": "Because of the rain I stayed home."
+      },
+      {
+        "de": "Er hat wegen seiner Krankheit abgesagt.",
+        "en": "He cancelled because of his illness."
+      }
+    ],
+    "topics": [
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "wegen + GEN (formal); wegen + DAT (colloquial). Similar to aufgrund but wegen is more common in everyday speech.",
+    "related": [
+      "aufgrund",
+      "da",
+      "denn",
+      "infolge",
+      "weil"
+    ],
+    "added": "2026-04-07 10:57:00"
+  },
+  {
+    "id": "aufgrund",
+    "word": "aufgrund",
+    "type": "prep/conj",
+    "usage": "preposition only",
+    "definitions": [
+      {
+        "meaning": "because of, on account of, due to",
+        "note": "+ GEN"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Aufgrund des schlechten Wetters wurde das Konzert abgesagt.",
+        "en": "Due to the bad weather the concert was cancelled."
+      },
+      {
+        "de": "Aufgrund seiner Erfahrung wurde er eingestellt.",
+        "en": "He was hired on account of his experience."
+      }
+    ],
+    "topics": [
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "aufgrund + GEN. More formal than wegen. auf Grund (two words) is also correct but less common.",
+    "related": [
+      "wegen",
+      "weil",
+      "infolge"
+    ],
+    "added": "2026-04-07 10:58:00"
+  },
+  {
+    "id": "denn",
+    "word": "denn",
+    "type": "prep/conj",
+    "usage": "conjunction only",
+    "definitions": [
+      {
+        "meaning": "because, for (causal conjunction with normal word order)",
+        "note": "verb stays in position 2"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bleibe zuhause, denn es regnet.",
+        "en": "I'm staying home, for it is raining."
+      },
+      {
+        "de": "Sie lernt viel, denn die Prüfung ist morgen.",
+        "en": "She's studying a lot, because the exam is tomorrow."
+      }
+    ],
+    "topics": [
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "denn keeps normal word order (verb in position 2), unlike weil (verb at end). denn is a coordinating conjunction; weil is subordinating. Also used in questions: 'Warum denn?' = But why?",
+    "related": [
+      "weil",
+      "da",
+      "wegen"
+    ],
+    "added": "2026-04-07 10:59:00"
+  },
+  {
+    "id": "da-konj",
+    "word": "da",
+    "type": "prep/conj",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "since, as, given that (conjunction — causal/formal)",
+        "note": "verb-final; often begins the sentence"
+      },
+      {
+        "meaning": "there, then (adverb)",
+        "note": "spatial or temporal"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Da er krank war, konnte er nicht kommen.",
+        "en": "Since he was ill, he couldn't come."
+      },
+      {
+        "de": "Da ist er!",
+        "en": "There he is!"
+      }
+    ],
+    "topics": [
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "As conjunction: da (= since/because) is more formal than weil and often starts the sentence. As adverb: da = there/then. Don't confuse with 'da' as a filler in colloquial German.",
+    "related": [
+      "weil",
+      "denn",
+      "wegen"
+    ],
+    "added": "2026-04-07 11:00:00"
+  },
+  {
+    "id": "infolge",
+    "word": "infolge",
+    "type": "prep/conj",
+    "usage": "preposition only",
+    "definitions": [
+      {
+        "meaning": "as a result of, owing to (formal)",
+        "note": "+ GEN"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Infolge des Unfalls musste die Straße gesperrt werden.",
+        "en": "As a result of the accident the road had to be closed."
+      },
+      {
+        "de": "Infolge der Pandemie hat sich viel verändert.",
+        "en": "As a result of the pandemic, much has changed."
+      }
+    ],
+    "topics": [
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "infolge + GEN. Formal written language. infolgedessen = as a result of this (adverb).",
+    "related": [
+      "aufgrund",
+      "die Folge",
+      "wegen",
+      "weil"
+    ],
+    "added": "2026-04-07 11:01:00"
+  },
+  {
+    "id": "trotz",
+    "word": "trotz",
+    "type": "prep/conj",
+    "usage": "preposition only",
+    "definitions": [
+      {
+        "meaning": "despite, in spite of",
+        "note": "+ GEN (or DAT informally)"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Trotz des Regens gingen wir spazieren.",
+        "en": "Despite the rain we went for a walk."
+      },
+      {
+        "de": "Trotz allem mag ich ihn.",
+        "en": "Despite everything I like him."
+      }
+    ],
+    "topics": [
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "trotz + GEN = despite (preposition). trotzdem = nevertheless (adverb). obwohl = although (conjunction with verb-final clause).",
+    "related": [
+      "trotzdem",
+      "obwohl"
+    ],
+    "added": "2026-04-07 11:02:00"
+  },
+  {
+    "id": "obwohl",
+    "word": "obwohl",
+    "type": "prep/conj",
+    "usage": "conjunction only",
+    "definitions": [
+      {
+        "meaning": "although, even though",
+        "note": "verb-final clause"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Obwohl es regnete, gingen wir spazieren.",
+        "en": "Although it was raining, we went for a walk."
+      },
+      {
+        "de": "Er kam, obwohl er krank war.",
+        "en": "He came even though he was ill."
+      }
+    ],
+    "topics": [
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "obwohl + verb-final clause = although (concessive conjunction). trotz + GEN = despite (preposition). trotzdem = nevertheless (adverb). All three express concession.",
+    "related": [
+      "trotz",
+      "trotzdem"
+    ],
+    "added": "2026-04-07 11:03:00"
+  },
+  {
+    "id": "abhaengig-sein-von",
+    "word": "abhängig sein von",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "to depend on, to be dependent on",
+        "note": "von + DAT"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das hängt davon ab, wie viel Zeit wir haben.",
+        "en": "That depends on how much time we have."
+      },
+      {
+        "de": "Sie ist finanziell von ihren Eltern abhängig.",
+        "en": "She is financially dependent on her parents."
+      }
+    ],
+    "topics": [
+      "grammar & structure",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "abhängig sein von + DAT = to be dependent on. abhängen von = same meaning (verb). die Abhängigkeit = dependence, addiction.",
+    "related": [
+      "das kommt darauf an"
+    ],
+    "added": "2026-04-07 11:04:00"
+  },
+  {
+    "id": "das-kommt-darauf-an",
+    "word": "das kommt darauf an",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "it depends, that depends",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Kommst du morgen? — Das kommt darauf an.",
+        "en": "Are you coming tomorrow? — It depends."
+      },
+      {
+        "de": "Das kommt darauf an, wie das Wetter ist.",
+        "en": "That depends on what the weather is like."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Very common expression. darauf ankommen = to depend on, to matter. Es kommt auf + AKK an = it depends on.",
+    "related": [
+      "abhängig sein von"
+    ],
+    "added": "2026-04-07 11:05:00"
   }
 ]
