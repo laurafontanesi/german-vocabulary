@@ -794,6 +794,51 @@
   .practice-word-info .ex-de { font-style: italic; color: var(--ink-soft); font-family: 'Playfair Display', serif; font-size: 13px; }
   .practice-word-info .ex-en { color: var(--ink-muted); font-size: 12px; margin-top: 2px; }
 
+  /* ── mobile filter dropdowns ── */
+  .filter-section details {
+    display: none; /* hidden on desktop */
+  }
+  .filter-section .filter-desktop {
+    display: block; /* shown on desktop */
+  }
+  .filter-section details summary {
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink-muted);
+    padding: 8px 10px;
+    border: 1px solid var(--border-soft);
+    border-radius: 6px;
+    background: var(--paper-card);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+  }
+  .filter-section details summary::-webkit-details-marker { display: none; }
+  .filter-section details summary::after {
+    content: '▼';
+    font-size: 9px;
+    opacity: 0.5;
+    transition: transform 0.2s;
+  }
+  .filter-section details[open] summary::after { transform: rotate(180deg); }
+  .filter-section details .details-inner {
+    border: 1px solid var(--border-soft);
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    background: var(--paper-card);
+    padding: 6px 4px 8px;
+    max-height: 220px;
+    overflow-y: auto;
+  }
+  .filter-section details .alpha-grid {
+    padding: 4px;
+  }
+
   /* ── responsive ── */
   @media (max-width: 720px) {
     .layout { grid-template-columns: 1fr; padding: 0 1rem; height: auto; }
@@ -802,6 +847,10 @@
     header { padding: 1.5rem 1rem 1.2rem; }
     header h1 { font-size: 1.6rem; }
     header::before { display: none; }
+    /* switch filter sections to dropdowns on mobile */
+    .filter-section details { display: block; }
+    .filter-section .filter-desktop { display: none; }
+    .filter-section { margin-bottom: 0.6rem; }
   }
 </style>
 </head>
@@ -826,18 +875,42 @@
     </div>
 
     <div class="filter-section">
-      <div class="filter-label">Word type</div>
-      <div id="type-filters"></div>
+      <!-- desktop -->
+      <div class="filter-desktop">
+        <div class="filter-label">Word type</div>
+        <div id="type-filters"></div>
+      </div>
+      <!-- mobile dropdown -->
+      <details id="details-type">
+        <summary>Word type</summary>
+        <div class="details-inner"><div id="type-filters-mobile"></div></div>
+      </details>
     </div>
 
     <div class="filter-section">
-      <div class="filter-label">Topic</div>
-      <div id="topic-filters"></div>
+      <!-- desktop -->
+      <div class="filter-desktop">
+        <div class="filter-label">Topic</div>
+        <div id="topic-filters"></div>
+      </div>
+      <!-- mobile dropdown -->
+      <details id="details-topic">
+        <summary>Topic</summary>
+        <div class="details-inner"><div id="topic-filters-mobile"></div></div>
+      </details>
     </div>
 
     <div class="filter-section">
-      <div class="filter-label">Alphabetical</div>
-      <div class="alpha-grid" id="alpha-grid"></div>
+      <!-- desktop -->
+      <div class="filter-desktop">
+        <div class="filter-label">Alphabetical</div>
+        <div class="alpha-grid" id="alpha-grid"></div>
+      </div>
+      <!-- mobile dropdown -->
+      <details id="details-alpha">
+        <summary>Alphabetical</summary>
+        <div class="details-inner"><div class="alpha-grid" id="alpha-grid-mobile"></div></div>
+      </details>
     </div>
 
     <button class="clear-btn" onclick="clearFilters()">Clear all filters</button>
@@ -983,63 +1056,80 @@ function buildSidebar() {
   // types
   const typeCounts = {};
   allWords.forEach(w => { typeCounts[w.type] = (typeCounts[w.type] || 0) + 1; });
-  const typeEl = document.getElementById('type-filters');
-  typeEl.innerHTML = '';
   const typeOrder = ['verb','noun','adj/adv','prep/conj','expression','construction','other','adjective','adverb'];
-  Object.entries(typeCounts).sort((a,b) => {
+  const sortedTypes = Object.entries(typeCounts).sort((a,b) => {
     const ai = typeOrder.indexOf(a[0]), bi = typeOrder.indexOf(b[0]);
     return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
-  }).forEach(([type, count]) => {
-    const btn = document.createElement('button');
-    btn.className = 'filter-btn';
-    btn.innerHTML = `${type} <span class="count">${count}</span>`;
-    btn.onclick = () => toggleType(type, btn);
-    typeEl.appendChild(btn);
+  });
+  ['type-filters', 'type-filters-mobile'].forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.innerHTML = '';
+    sortedTypes.forEach(([type, count]) => {
+      const btn = document.createElement('button');
+      btn.className = 'filter-btn';
+      btn.dataset.filterType = type;
+      btn.innerHTML = `${type} <span class="count">${count}</span>`;
+      btn.onclick = () => toggleType(type, btn);
+      el.appendChild(btn);
+    });
   });
 
   // topics
   const topicCounts = {};
   allWords.forEach(w => (w.topics || []).forEach(t => { topicCounts[t] = (topicCounts[t] || 0) + 1; }));
-  const topicEl = document.getElementById('topic-filters');
-  topicEl.innerHTML = '';
-  Object.entries(topicCounts).sort().forEach(([topic, count]) => {
-    const btn = document.createElement('button');
-    btn.className = 'filter-btn';
-    btn.innerHTML = `${topic} <span class="count">${count}</span>`;
-    btn.onclick = () => toggleTopic(topic, btn);
-    topicEl.appendChild(btn);
+  const sortedTopics = Object.entries(topicCounts).sort();
+  ['topic-filters', 'topic-filters-mobile'].forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.innerHTML = '';
+    sortedTopics.forEach(([topic, count]) => {
+      const btn = document.createElement('button');
+      btn.className = 'filter-btn';
+      btn.dataset.filterTopic = topic;
+      btn.innerHTML = `${topic} <span class="count">${count}</span>`;
+      btn.onclick = () => toggleTopic(topic, btn);
+      el.appendChild(btn);
+    });
   });
 
   // alphabet
   const letters = [...new Set(allWords.map(w => w.word.replace(/^(der|die|das|eine?|sich)\s+/i,'')[0].toUpperCase()))].sort();
-  const alphaEl = document.getElementById('alpha-grid');
-  alphaEl.innerHTML = '';
-  'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach(letter => {
-    const btn = document.createElement('button');
-    btn.className = 'alpha-btn' + (letters.includes(letter) ? '' : ' disabled');
-    btn.textContent = letter;
-    if (letters.includes(letter)) btn.onclick = () => toggleAlpha(letter, btn);
-    alphaEl.appendChild(btn);
+  ['alpha-grid', 'alpha-grid-mobile'].forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.innerHTML = '';
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').forEach(letter => {
+      const btn = document.createElement('button');
+      btn.className = 'alpha-btn' + (letters.includes(letter) ? '' : ' disabled');
+      btn.dataset.filterAlpha = letter;
+      btn.textContent = letter;
+      if (letters.includes(letter)) btn.onclick = () => toggleAlpha(letter, btn);
+      el.appendChild(btn);
+    });
   });
 }
 
 // ── filter toggles ─────────────────────────────────────────────────────────────
 function toggleType(type, btn) {
   activeType = activeType === type ? null : type;
-  document.querySelectorAll('#type-filters .filter-btn').forEach(b => b.classList.remove('active'));
-  if (activeType) btn.classList.add('active');
+  document.querySelectorAll('[data-filter-type]').forEach(b => {
+    b.classList.toggle('active', activeType && b.dataset.filterType === activeType);
+  });
   applyFilters();
 }
 function toggleTopic(topic, btn) {
   activeTopic = activeTopic === topic ? null : topic;
-  document.querySelectorAll('#topic-filters .filter-btn').forEach(b => b.classList.remove('active'));
-  if (activeTopic) btn.classList.add('active');
+  document.querySelectorAll('[data-filter-topic]').forEach(b => {
+    b.classList.toggle('active', activeTopic && b.dataset.filterTopic === activeTopic);
+  });
   applyFilters();
 }
 function toggleAlpha(letter, btn) {
   activeAlpha = activeAlpha === letter ? null : letter;
-  document.querySelectorAll('.alpha-btn').forEach(b => b.classList.remove('active'));
-  if (activeAlpha) btn.classList.add('active');
+  document.querySelectorAll('[data-filter-alpha]').forEach(b => {
+    b.classList.toggle('active', activeAlpha && b.dataset.filterAlpha === activeAlpha);
+  });
   applyFilters();
 }
 function clearFilters() {
@@ -1329,7 +1419,21 @@ function startTask() {
 
   // apply sort/priority
   if (selectedPriority === 'recent') {
-    words = words.slice().sort((a, b) => (b.added || '').localeCompare(a.added || ''));
+    // Group into recency buckets, shuffle within each, so it's not perfectly chronological
+    const now = new Date();
+    function ageBucket(w) {
+      if (!w.added) return 3;
+      const days = (now - new Date(w.added)) / 86400000;
+      if (days <= 14)  return 0; // last 2 weeks
+      if (days <= 60)  return 1; // last 2 months
+      if (days <= 180) return 2; // last 6 months
+      return 3;                  // older
+    }
+    words = words.slice().sort((a, b) => {
+      const bucketDiff = ageBucket(a) - ageBucket(b);
+      if (bucketDiff !== 0) return bucketDiff;
+      return Math.random() - 0.5; // shuffle within bucket
+    });
   } else {
     words = words.slice().sort(() => Math.random() - 0.5);
   }
@@ -1344,32 +1448,35 @@ function startTask() {
 // ── task builders ─────────────────────────────────────────────────────────────
 function buildConjugationTask(w) {
   // find an example sentence that contains a form of the verb
-  // the "answer" is the token(s) in the sentence that differ from the infinitive
   const infinitive = w.word.replace(/^sich\s+/i, '').toLowerCase();
   for (const ex of (w.examples || [])) {
     const sentence = ex.de;
-    // look for past participle or separable forms
-    const targets = [];
-    if (w.past_participle) targets.push(w.past_participle.toLowerCase());
-    if (w.past_tense) {
-      // separable past tense like "nahm mit" — just the first token
-      targets.push(w.past_tense.toLowerCase().split(' ')[0]);
-    }
-    for (const t of targets) {
+    // check past participle first
+    if (w.past_participle) {
+      const t = w.past_participle.toLowerCase();
       const re = new RegExp('\\b(' + escapeRegex(t) + ')\\b', 'i');
       if (re.test(sentence)) {
         const blanked = sentence.replace(re, '___');
-        return { sentence, blanked, answer: t, translation: ex.en };
+        return { sentence, blanked, answer: t, translation: ex.en, tense: 'past participle' };
       }
     }
-    // also check if infinitive stem appears conjugated (regular verbs)
+    // check simple past (Präteritum)
+    if (w.past_tense) {
+      const t = w.past_tense.toLowerCase().split(' ')[0];
+      const re = new RegExp('\\b(' + escapeRegex(t) + ')\\b', 'i');
+      if (re.test(sentence)) {
+        const blanked = sentence.replace(re, '___');
+        return { sentence, blanked, answer: t, translation: ex.en, tense: 'simple past' };
+      }
+    }
+    // check if infinitive stem appears conjugated (regular verbs — present tense)
     const stem = infinitive.replace(/(en|n)$/, '');
     if (stem.length >= 3) {
       const re = new RegExp('\\b(' + escapeRegex(stem) + '\\w*)\\b', 'i');
       const m = sentence.match(re);
       if (m && m[1].toLowerCase() !== infinitive) {
         const blanked = sentence.replace(re, '___');
-        return { sentence, blanked, answer: m[1].toLowerCase(), translation: ex.en };
+        return { sentence, blanked, answer: m[1].toLowerCase(), translation: ex.en, tense: 'present' };
       }
     }
   }
@@ -1377,17 +1484,42 @@ function buildConjugationTask(w) {
 }
 
 function buildArticleTask(w) {
+  // The bare noun stem (without its canonical article prefix)
+  const bare = w.word.replace(/^(der|die|das)\s+/i, '').toLowerCase();
+  // Also prepare a short stem for partial matching (for compound nouns)
+  // We'll try to match the word itself first, then fall back to any article
   for (const ex of (w.examples || [])) {
     const sentence = ex.de;
-    // find an article in the sentence
+    // Try to find an article that directly precedes (a form of) the noun in the sentence.
+    // Pattern: article followed by optional adjective(s), then the noun stem
+    // We look for <article> <word-that-starts-with-bare-stem>
+    const articleList = ['der','die','das','ein','eine','einen','einem','einer','eines','den','dem','des'];
+    const tokens = sentence.split(/\s+/);
+    for (let i = 0; i < tokens.length - 1; i++) {
+      const tok = tokens[i].replace(/[,.:;!?"""()]/g,'').toLowerCase();
+      if (!articleList.includes(tok)) continue;
+      // Check if any of the next 1–3 tokens starts with the bare noun stem
+      for (let j = i + 1; j <= Math.min(i + 3, tokens.length - 1); j++) {
+        const candidate = tokens[j].replace(/[,.:;!?"""()]/g,'').toLowerCase();
+        if (candidate.startsWith(bare.substring(0, Math.min(bare.length, 5))) && candidate.length >= bare.length - 2) {
+          // Found it — blank out this article
+          const re = new RegExp('\\b' + escapeRegex(tokens[i].replace(/[,.:;!?"""()]/g,'')) + '\\b');
+          const blanked = sentence.replace(re, '___');
+          if (blanked !== sentence) {
+            return { sentence, blanked, answer: tok, translation: ex.en };
+          }
+        }
+      }
+    }
+    // Fallback: first article in sentence (original behaviour, only if no better match)
     const m = sentence.match(ARTICLE_RE);
     if (!m) continue;
-    // pick the first article occurrence
     const article = m[0];
     const re = new RegExp('\\b' + escapeRegex(article) + '\\b');
     const blanked = sentence.replace(re, '___');
-    if (blanked === sentence) continue; // no replacement happened
-    return { sentence, blanked, answer: article.toLowerCase(), translation: ex.en };
+    if (blanked !== sentence) {
+      return { sentence, blanked, answer: article.toLowerCase(), translation: ex.en };
+    }
   }
   return null;
 }
@@ -1429,7 +1561,8 @@ function loadPracticeWord() {
     wordEl.textContent = w.definitions[0].meaning;
   } else if (practiceMode === 'conjugation') {
     const task = buildConjugationTask(w);
-    promptEl.textContent = 'Fill in the correct form:';
+    const tenseLabel = task.tense ? ` (${task.tense})` : '';
+    promptEl.textContent = `Fill in the correct form${tenseLabel}:`;
     wordEl.textContent = w.word;
     sentenceEl.innerHTML = task.blanked.replace('___', '<span class="blank">___</span>');
     sentenceEl.style.display = 'block';
@@ -1470,9 +1603,13 @@ function checkAnswer() {
     correct = answers.some(a => input === a || a.includes(input) || input.includes(a.split(',')[0].trim()));
     correctAnswer = w.definitions[0].meaning;
   } else if (practiceMode === 'en-de') {
-    correct = input === w.word.toLowerCase() ||
-      w.word.toLowerCase().includes(input) ||
-      input.includes(w.word.toLowerCase().replace(/^(der|die|das|sich)\s+/i,''));
+    const canonical = w.word.toLowerCase();
+    const bare = canonical.replace(/^(der|die|das|sich)\s+/i, '');
+    // Accept: exact full word, exact bare word (without article/sich), or input with article added
+    // Do NOT accept if input is just a prefix/substring of the word
+    correct = input === canonical || input === bare ||
+      // also accept if they typed the article separately: "das buch" for "das Buch"
+      input.replace(/\s+/g,' ').trim() === canonical;
     correctAnswer = w.word;
   } else {
     // conjugation or articles — exact match only
