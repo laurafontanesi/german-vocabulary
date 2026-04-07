@@ -24574,5 +24574,72 @@
     "notes": "This is a loanword from French and is primarily used in formal or literary contexts.",
     "added": "2026-04-07 13:56:19",
     "usage": "both"
+  },
+  {
+    "id": "irgendwo",
+    "word": "irgendwo",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "somewhere",
+        "note": null
+      },
+      {
+        "meaning": "anywhere",
+        "note": "in questions or negative contexts"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe meine Brille irgendwo hingelegt.",
+        "en": "I put my glasses down somewhere."
+      },
+      {
+        "de": "Hast du irgendwo ein Restaurant gesehen?",
+        "en": "Did you see a restaurant anywhere?"
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-07 14:00:31",
+    "usage": "adverb only"
+  },
+  {
+    "id": "zuegig",
+    "word": "zügig",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "swift, brisk, prompt",
+        "note": null
+      },
+      {
+        "meaning": "efficient, without delay",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir müssen zügig arbeiten, um das Projekt rechtzeitig zu beenden.",
+        "en": "We need to work swiftly to finish the project on time."
+      },
+      {
+        "de": "Der zügige Fortschritt des Bauvorhabens beeindruckte alle Beteiligten.",
+        "en": "The swift progress of the construction project impressed everyone involved."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-07 14:01:22",
+    "usage": "both"
   }
 ]
