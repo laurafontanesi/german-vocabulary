@@ -494,7 +494,17 @@
   .card-modal-word {
     font-family: 'Playfair Display', serif;
     font-size: 1.6rem; font-weight: 400; color: var(--ink);
+    flex: 1;
   }
+  .card-modal-nav {
+    display: flex; align-items: center; gap: 6px; flex-shrink: 0;
+  }
+  .card-modal-back {
+    background: none; border: none; font-size: 1rem;
+    cursor: pointer; color: var(--ink-muted); padding: 2px 4px;
+    transition: color 0.12s;
+  }
+  .card-modal-back:hover { color: var(--ink); }
   .card-modal-close {
     background: none; border: none; font-size: 1.2rem;
     cursor: pointer; color: var(--ink-muted); flex-shrink: 0;
@@ -1139,7 +1149,10 @@
   <div class="card-modal-box">
     <div class="card-modal-header">
       <div class="card-modal-word" id="card-modal-word"></div>
-      <button class="card-modal-close" onclick="closeCardModal()">✕</button>
+      <div class="card-modal-nav">
+        <button class="card-modal-back" id="card-modal-back-btn" onclick="cardModalBack()" style="display:none">← Back</button>
+        <button class="card-modal-close" onclick="closeCardModal()">✕</button>
+      </div>
     </div>
     <div id="card-modal-body"></div>
     <button class="card-modal-next" onclick="closeCardModal(); nextWord()">Next word →</button>
@@ -1500,13 +1513,29 @@ function syncMuteBtn() {
 }
 
 // ── word card modal ────────────────────────────────────────────────────────────
-function openCardModal() {
-  const w = practiceWords[practiceIndex % practiceWords.length];
-  if (!w) return;
+let cardModalStack = []; // back-navigation stack of word ids
 
+function openCardModal(wordId) {
+  // if no wordId given, open current practice word
+  let w;
+  if (wordId) {
+    w = allWords.find(x => x.id === wordId);
+  } else {
+    w = practiceWords[practiceIndex % practiceWords.length];
+    cardModalStack = []; // fresh open — clear history
+  }
+  if (!w) return;
+  renderCardModal(w);
+  document.getElementById('card-modal-overlay').classList.add('open');
+}
+
+function renderCardModal(w) {
   document.getElementById('card-modal-word').innerHTML = formatWord(w);
 
-  // Build card body content (reusing existing helper functions)
+  // show/hide back button
+  const backBtn = document.getElementById('card-modal-back-btn');
+  backBtn.style.display = cardModalStack.length > 0 ? 'inline-block' : 'none';
+
   const grammarPills = buildGrammarPills(w);
   const defs = (w.definitions || []).map((d, i) =>
     `<li><span class="def-num">${i+1}.</span><span>${d.meaning}${d.note ? `<span class="def-note">(${d.note})</span>` : ''}</span></li>`
@@ -1516,18 +1545,25 @@ function openCardModal() {
     return `<div class="example-item">
       <div class="example-de-row">
         <div class="example-de">${e.de}</div>
-        <button class="speak-btn" title="Read aloud" onclick="speakText('${esc}', this, event)">
-          ${SPEAK_SVG}
-        </button>
+        <button class="speak-btn" title="Read aloud" onclick="speakText('${esc}', this, event)">${SPEAK_SVG}</button>
       </div>
       <div class="example-en">${e.en}</div>
     </div>`;
   }).join('');
   const topics = (w.topics || []).map(t => `<span class="tag">${t}</span>`).join('');
   const tags   = (w.tags   || []).map(t => `<span class="tag">${t}</span>`).join('');
-  const related = (w.related || []).map(r =>
-    `<span class="related-chip" onclick="closeCardModal(); searchRelated('${r}', event)">${r}</span>`
-  ).join('');
+
+  // Related chips: navigate within the modal, push current word onto stack
+  const related = (w.related || []).map(r => {
+    const target = allWords.find(x => x.word === r || x.word.replace(/^(der|die|das|sich)\s+/i,'').toLowerCase() === r.toLowerCase());
+    if (target) {
+      return `<span class="related-chip" onclick="cardModalNavigate('${w.id}', '${target.id}')">${r}</span>`;
+    }
+    // word not in DB — fall back to search
+    const esc = r.replace(/'/g, "\\'");
+    return `<span class="related-chip" onclick="closeCardModal(); searchRelated('${esc}', event)">${r}</span>`;
+  }).join('');
+
   const notes = w.notes ? `<div class="notes-box">${w.notes}</div>` : '';
 
   document.getElementById('card-modal-body').innerHTML = `
@@ -1540,11 +1576,27 @@ function openCardModal() {
       ${notes}
     </div>`;
 
-  document.getElementById('card-modal-overlay').classList.add('open');
+  // scroll modal back to top when navigating
+  const box = document.querySelector('.card-modal-box');
+  if (box) box.scrollTop = 0;
+}
+
+function cardModalNavigate(fromId, toId) {
+  cardModalStack.push(fromId);
+  const target = allWords.find(x => x.id === toId);
+  if (target) renderCardModal(target);
+}
+
+function cardModalBack() {
+  const prevId = cardModalStack.pop();
+  if (!prevId) return;
+  const prev = allWords.find(x => x.id === prevId);
+  if (prev) renderCardModal(prev);
 }
 
 function closeCardModal() {
   document.getElementById('card-modal-overlay').classList.remove('open');
+  cardModalStack = [];
 }
 
 // ── practice ───────────────────────────────────────────────────────────────────
@@ -1949,6 +2001,16 @@ function checkAnswer() {
 
   info.innerHTML = grammarHTML + defs + (exHTML ? '<div style="margin-top:6px">' + exHTML + '</div>' : '');
   info.classList.add('visible');
+
+  // auto-play the example sentence on reveal (Next will cancel it)
+  let revealSpeakText = '';
+  if ((practiceMode === 'conjugation' || practiceMode === 'articles') && currentAnswer) {
+    const task = practiceMode === 'conjugation' ? buildConjugationTask(w) : buildArticleTask(w);
+    if (task) revealSpeakText = task.sentence;
+  } else if (w.examples && w.examples[0]) {
+    revealSpeakText = w.examples[0].de;
+  }
+  if (revealSpeakText) setTimeout(() => autoPlay(revealSpeakText), 200);
 
   // swap Check → Next + View card
   document.querySelector('.practice-submit').style.display = 'none';
