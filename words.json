@@ -525,6 +525,7 @@
     "notes": "More reflective/conscious than fühlen or spüren. das Empfinden (noun) = feeling, sentiment.",
     "added": "2026-04-05",
     "related": [
+      "fühlen",
       "spüren"
     ],
     "family_root": "empfinden"
@@ -565,7 +566,9 @@
     "notes": "spüren = physical/instinctive sensation; empfinden = emotional/reflective feeling; fühlen = general feeling.",
     "added": "2026-04-05",
     "related": [
-      "empfinden"
+      "empfinden",
+      "fühlen",
+      "sich anfühlen"
     ],
     "family_root": "spüren"
   },
@@ -653,10 +656,11 @@
     "word": "glücklich",
     "type": "adj/adv",
     "related": [
+      "Glück haben",
+      "das Glück",
       "froh",
       "fröhlich",
-      "traurig",
-      "das Glück"
+      "traurig"
     ],
     "definitions": [
       {
@@ -739,8 +743,10 @@
     "gender": "die",
     "plural": "die Ängste",
     "related": [
+      "die Furcht",
+      "die Sorge",
       "sich fürchten",
-      "die Sorge"
+      "sich ängstigen"
     ],
     "definitions": [
       {
@@ -804,7 +810,9 @@
     "notes": "Always reflexive: sich fürchten vor + DAT. Synonym: Angst haben vor + DAT.",
     "added": "2026-04-05",
     "related": [
-      "die Angst"
+      "die Angst",
+      "die Furcht",
+      "sich ängstigen"
     ],
     "family_root": "fürchten"
   },
@@ -879,7 +887,10 @@
     "register": "neutral",
     "notes": "die Überraschung (noun) = the surprise. 'Ich bin überrascht' = I am surprised (state). 'Das überrascht mich' = That surprises me (action).",
     "added": "2026-04-05",
-    "family_root": "überraschen"
+    "family_root": "überraschen",
+    "related": [
+      "die Überraschung"
+    ]
   },
   {
     "id": "deprimiert",
@@ -1077,6 +1088,7 @@
     "added": "2026-04-05",
     "related": [
       "munter",
+      "unkonzentriert",
       "wach"
     ],
     "usage": "both"
@@ -1195,7 +1207,10 @@
     "register": "neutral",
     "notes": "neugierig auf + AKK = curious about. Can also mean nosy in a negative sense depending on context.",
     "added": "2026-04-05",
-    "usage": "both"
+    "usage": "both",
+    "related": [
+      "sich interessieren"
+    ]
   },
   {
     "id": "gespannt",
@@ -4058,9 +4073,10 @@
     "word": "verschieden",
     "type": "adj/adv",
     "related": [
-      "unterschiedlich",
       "anders",
-      "der Unterschied"
+      "der Unterschied",
+      "unterschiedlich",
+      "ähnlich"
     ],
     "definitions": [
       {
@@ -4462,6 +4478,7 @@
     "plural": null,
     "related": [
       "anvertrauen",
+      "das Zutrauen",
       "sich trauen",
       "trauen",
       "vertrauen"
@@ -4501,6 +4518,7 @@
     "reflexive": false,
     "related": [
       "das Vertrauen",
+      "das Zutrauen",
       "vertrauen"
     ],
     "definitions": [
@@ -4540,6 +4558,7 @@
     "reflexive": true,
     "related": [
       "das Vertrauen",
+      "das Zutrauen",
       "vertrauen"
     ],
     "definitions": [
@@ -4577,6 +4596,7 @@
     "gender": "die",
     "plural": "die Verantwortungen",
     "related": [
+      "verantworten",
       "verantwortlich"
     ],
     "definitions": [
@@ -4972,6 +4992,8 @@
     "notes": "Very common in spoken German. genervt sein = to be annoyed/irritated. 'Das geht mir auf die Nerven' = same meaning, slightly more emphatic.",
     "added": "2026-04-05",
     "related": [
+      "das geht mir auf die Nerven",
+      "irritieren",
       "stören"
     ],
     "family_root": "nerven"
@@ -4986,6 +5008,8 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
+      "das geht mir auf die Nerven",
+      "irritieren",
       "nerven"
     ],
     "definitions": [
@@ -5289,6 +5313,7 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
+      "ertragen",
       "sich anziehen"
     ],
     "definitions": [
@@ -5371,9 +5396,10 @@
     "reflexive": false,
     "prefix": "auf-",
     "related": [
-      "umräumen",
+      "ausräumen",
+      "das Geschirr",
       "einräumen",
-      "ausräumen"
+      "umräumen"
     ],
     "definitions": [
       {
@@ -5416,7 +5442,9 @@
     "family_root": "räumen",
     "related": [
       "aufräumen",
-      "ausräumen"
+      "ausräumen",
+      "das Geschirr",
+      "umräumen"
     ],
     "definitions": [
       {
@@ -5458,7 +5486,8 @@
     "family_root": "räumen",
     "related": [
       "aufräumen",
-      "einräumen"
+      "einräumen",
+      "umräumen"
     ],
     "definitions": [
       {
@@ -5676,7 +5705,10 @@
     "register": "neutral",
     "notes": "drücken = to push/press (a button or person). die Tür drücken = push the door (vs ziehen = pull). Also: die Daumen drücken = fingers crossed.",
     "added": "2026-04-05",
-    "family_root": "drücken"
+    "family_root": "drücken",
+    "related": [
+      "der Ausdruck"
+    ]
   },
   {
     "id": "renovieren",
@@ -6107,7 +6139,9 @@
     "preposition": "aus + DAT",
     "family_root": "steigen",
     "prefix": "aus-",
-    "related": []
+    "related": [
+      "steigen"
+    ]
   },
   {
     "id": "ziehen",
@@ -10406,7 +10440,8 @@
       "das Verhalten",
       "erhalten",
       "sich halten",
-      "sich verhalten"
+      "sich verhalten",
+      "sich zurückhalten"
     ],
     "added": "2026-04-06 14:01:00"
   },
@@ -10462,7 +10497,8 @@
       "das Verhalten",
       "erhalten",
       "halten",
-      "sich verhalten"
+      "sich verhalten",
+      "sich zurückhalten"
     ],
     "added": "2026-04-06 14:02:00"
   },
@@ -10510,7 +10546,8 @@
       "das Verhalten",
       "halten",
       "sich halten",
-      "sich verhalten"
+      "sich verhalten",
+      "sich zurückhalten"
     ],
     "added": "2026-04-06 14:03:00"
   },
@@ -10935,7 +10972,8 @@
       "erhalten",
       "halten",
       "handeln",
-      "sich halten"
+      "sich halten",
+      "sich zurückhalten"
     ],
     "added": "2026-04-06 14:13:00"
   },
@@ -11597,7 +11635,8 @@
     "related": [
       "die Bemerkung",
       "die Redewendung",
-      "die Äußerung"
+      "die Äußerung",
+      "drucken"
     ],
     "added": "2026-04-06 14:29:00"
   },
@@ -12039,7 +12078,9 @@
     ],
     "register": "formal",
     "notes": "anmaßend = presumptuous, arrogant (adjective). Rather formal/literary.",
-    "related": [],
+    "related": [
+      "vermessen"
+    ],
     "added": "2026-04-07 10:05:00"
   },
   {
@@ -12083,6 +12124,7 @@
       "abnehmen",
       "ausnehmen",
       "einnehmen",
+      "ertragen",
       "festnehmen",
       "herausnehmen",
       "mitnehmen",
@@ -13207,6 +13249,7 @@
       "halten",
       "sich halten",
       "sich verhalten",
+      "sich zurückhalten",
       "stoppen"
     ],
     "added": "2026-04-07 10:28:00"
@@ -13950,6 +13993,7 @@
     "notes": "teilen = to share or to divide. Ich teile deine Meinung = I share your view. aufteilen = to split up; mitteilen = to inform/communicate.",
     "related": [
       "beurteilen",
+      "der Teil",
       "urteilen",
       "verurteilen"
     ],
@@ -14577,5 +14621,2716 @@
       "abhängig sein von"
     ],
     "added": "2026-04-07 11:05:00"
+  },
+  {
+    "id": "ausserdem",
+    "word": "außerdem",
+    "type": "adj/adv",
+    "usage": "adverb only",
+    "definitions": [
+      {
+        "meaning": "besides, moreover, in addition, also",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er ist intelligent und außerdem sehr fleißig.",
+        "en": "He is intelligent and moreover very hardworking."
+      },
+      {
+        "de": "Außerdem möchte ich noch etwas sagen.",
+        "en": "Besides, I'd like to say one more thing."
+      }
+    ],
+    "topics": [
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "außerdem = besides/moreover (adds information). Similar to ebenfalls (likewise) but außerdem adds a new point while ebenfalls says the same applies.",
+    "related": [
+      "ebenfalls"
+    ],
+    "added": "2026-04-07 12:00:00"
+  },
+  {
+    "id": "ebenfalls",
+    "word": "ebenfalls",
+    "type": "adj/adv",
+    "usage": "adverb only",
+    "definitions": [
+      {
+        "meaning": "likewise, also, equally, the same to you",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Danke, ebenfalls!",
+        "en": "Thank you, likewise!"
+      },
+      {
+        "de": "Sie spricht Französisch, er ebenfalls.",
+        "en": "She speaks French, he does too."
+      }
+    ],
+    "topics": [
+      "grammar & structure",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "'Danke, ebenfalls!' = Thanks, same to you! Very common polite response. ebenfalls = likewise (same applies); außerdem = moreover (additional point).",
+    "related": [
+      "außerdem"
+    ],
+    "added": "2026-04-07 12:01:00"
+  },
+  {
+    "id": "die-menge",
+    "word": "die Menge",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Mengen",
+    "definitions": [
+      {
+        "meaning": "quantity, amount",
+        "note": null
+      },
+      {
+        "meaning": "crowd (of people)",
+        "note": null
+      },
+      {
+        "meaning": "a lot, loads",
+        "note": "colloquial: eine Menge = a lot"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Eine große Menge Menschen wartete vor dem Eingang.",
+        "en": "A large crowd was waiting at the entrance."
+      },
+      {
+        "de": "Ich habe eine Menge zu tun.",
+        "en": "I have a lot to do."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "eine Menge + noun = a lot of. jede Menge = loads of (colloquial).",
+    "related": [
+      "der Teil"
+    ],
+    "added": "2026-04-07 12:02:00"
+  },
+  {
+    "id": "der-teil",
+    "word": "der Teil",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Teile",
+    "definitions": [
+      {
+        "meaning": "part, portion, section",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ein großer Teil der Bevölkerung lebt in Städten.",
+        "en": "A large part of the population lives in cities."
+      },
+      {
+        "de": "Welcher Teil hat dir am besten gefallen?",
+        "en": "Which part did you like best?"
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Großteil = the majority, the greater part. zum Teil = partly. teils... teils... = partly... partly...",
+    "related": [
+      "teilen",
+      "die Menge"
+    ],
+    "added": "2026-04-07 12:03:00"
+  },
+  {
+    "id": "spärlich",
+    "word": "spärlich",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "sparse, scarce, meagre, thin",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Informationen waren sehr spärlich.",
+        "en": "The information was very sparse."
+      },
+      {
+        "de": "Das Zimmer war spärlich möbliert.",
+        "en": "The room was sparsely furnished."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "der Mangel",
+      "kaum"
+    ],
+    "added": "2026-04-07 12:04:00"
+  },
+  {
+    "id": "reichen",
+    "word": "reichen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "reichte",
+    "past_participle": "gereicht",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "reichen",
+    "definitions": [
+      {
+        "meaning": "to be enough, to suffice",
+        "note": null
+      },
+      {
+        "meaning": "to reach, to extend",
+        "note": null
+      },
+      {
+        "meaning": "to hand, to pass (something to someone)",
+        "note": "jmdm. etw. reichen"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Geld reicht nicht bis Ende des Monats.",
+        "en": "The money won't last until the end of the month."
+      },
+      {
+        "de": "Es reicht!",
+        "en": "That's enough! / I've had enough!"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "money & shopping"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "'Es reicht!' = That's enough! / I've had enough! (can express frustration). reich = rich (different word, no relation).",
+    "related": [],
+    "added": "2026-04-07 12:05:00"
+  },
+  {
+    "id": "ungefaehr",
+    "word": "ungefähr",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "approximately, about, roughly",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Es dauert ungefähr eine Stunde.",
+        "en": "It takes about an hour."
+      },
+      {
+        "de": "Ich habe ungefähr 50 Euro dabei.",
+        "en": "I have roughly 50 euros on me."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "ungefähr = approximately. Similar to etwa and circa, all interchangeable in most contexts.",
+    "related": [
+      "fast",
+      "kaum"
+    ],
+    "added": "2026-04-07 12:06:00"
+  },
+  {
+    "id": "kaum",
+    "word": "kaum",
+    "type": "adj/adv",
+    "usage": "adverb only",
+    "definitions": [
+      {
+        "meaning": "hardly, barely, scarcely",
+        "note": null
+      },
+      {
+        "meaning": "hardly any, very few",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe kaum geschlafen.",
+        "en": "I barely slept."
+      },
+      {
+        "de": "Es ist kaum zu glauben.",
+        "en": "It's hard to believe."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "kaum = hardly/barely (near negation). kaum dass = barely/no sooner than.",
+    "related": [
+      "fast",
+      "spärlich",
+      "ungefähr"
+    ],
+    "added": "2026-04-07 12:07:00"
+  },
+  {
+    "id": "fast",
+    "word": "fast",
+    "type": "adj/adv",
+    "usage": "adverb only",
+    "definitions": [
+      {
+        "meaning": "almost, nearly",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bin fast fertig.",
+        "en": "I'm almost done."
+      },
+      {
+        "de": "Es ist fast Mitternacht.",
+        "en": "It's almost midnight."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "fast = almost (near but not quite). nahezu = almost (more formal). beinahe = nearly/almost (often with near-miss connotation).",
+    "related": [
+      "kaum",
+      "ungefähr"
+    ],
+    "added": "2026-04-07 12:08:00"
+  },
+  {
+    "id": "insgesamt",
+    "word": "insgesamt",
+    "type": "adj/adv",
+    "usage": "adverb only",
+    "definitions": [
+      {
+        "meaning": "in total, altogether, overall, all in all",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Insgesamt waren wir zwanzig Personen.",
+        "en": "Altogether there were twenty of us."
+      },
+      {
+        "de": "Insgesamt bin ich zufrieden.",
+        "en": "Overall I'm satisfied."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-07 12:09:00"
+  },
+  {
+    "id": "ähnlich",
+    "word": "ähnlich",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "similar, alike",
+        "note": "+ DAT: ähnlich sein = to be similar to"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie sieht ihrer Mutter sehr ähnlich.",
+        "en": "She looks very similar to her mother."
+      },
+      {
+        "de": "Ich denke ähnlich wie du.",
+        "en": "I think similarly to you."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [
+      "similar to: gleich, verschieden"
+    ],
+    "register": "neutral",
+    "notes": "jdm./etw. ähnlich sein = to be similar to. ähneln = to resemble (verb). die Ähnlichkeit = similarity.",
+    "related": [
+      "die Ähnlichkeit",
+      "verschieden",
+      "ähneln"
+    ],
+    "added": "2026-04-07 12:10:00"
+  },
+  {
+    "id": "aehneln",
+    "word": "ähneln",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "ähnelte",
+    "past_participle": "geähnelt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "ähneln",
+    "preposition": "DAT",
+    "definitions": [
+      {
+        "meaning": "to resemble, to be similar to",
+        "note": "+ DAT"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er ähnelt seinem Vater sehr.",
+        "en": "He resembles his father a lot."
+      },
+      {
+        "de": "Die beiden Fälle ähneln sich.",
+        "en": "The two cases resemble each other."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "ähneln + DAT = to resemble. ähnlich sein + DAT = same meaning but adjectival.",
+    "related": [
+      "ähnlich",
+      "die Ähnlichkeit"
+    ],
+    "added": "2026-04-07 12:11:00"
+  },
+  {
+    "id": "die-aehnlichkeit",
+    "word": "die Ähnlichkeit",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Ähnlichkeiten",
+    "definitions": [
+      {
+        "meaning": "similarity, resemblance",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Ähnlichkeit zwischen den Geschwistern ist frappant.",
+        "en": "The resemblance between the siblings is striking."
+      },
+      {
+        "de": "Es gibt viele Ähnlichkeiten zwischen den beiden Sprachen.",
+        "en": "There are many similarities between the two languages."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "ähnlich",
+      "ähneln"
+    ],
+    "added": "2026-04-07 12:12:00"
+  },
+  {
+    "id": "messen",
+    "word": "messen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "maß",
+    "past_participle": "gemessen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "messen",
+    "definitions": [
+      {
+        "meaning": "to measure",
+        "note": null
+      },
+      {
+        "meaning": "sich messen mit — to compete with, to match oneself against",
+        "note": "reflexive"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er misst die Temperatur jeden Morgen.",
+        "en": "He measures the temperature every morning."
+      },
+      {
+        "de": "Sie kann sich mit den Besten messen.",
+        "en": "She can match herself against the best."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Messung = measurement. das Maß = measure/degree. vermessen = to survey/measure (land); also arrogant (adjective).",
+    "related": [
+      "vermessen",
+      "die Messung"
+    ],
+    "added": "2026-04-07 12:13:00"
+  },
+  {
+    "id": "vermessen-verb",
+    "word": "vermessen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "vermaß",
+    "past_participle": "vermessen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "messen",
+    "prefix": "ver-",
+    "definitions": [
+      {
+        "meaning": "to survey, to measure (land/space)",
+        "note": null
+      },
+      {
+        "meaning": "to measure incorrectly",
+        "note": "sich vermessen = to misjudge a measurement"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Grundstück wurde neu vermessen.",
+        "en": "The plot of land was newly surveyed."
+      },
+      {
+        "de": "Der Architekt hat sich vermessen.",
+        "en": "The architect made a mistake in measuring."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "vermessen (verb) = to survey/measure. Not to be confused with vermessen (adj) = presumptuous.",
+    "related": [
+      "messen",
+      "die Messung"
+    ],
+    "added": "2026-04-07 12:14:00"
+  },
+  {
+    "id": "vermessen-adj",
+    "word": "vermessen",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "presumptuous, arrogant, audacious",
+        "note": "literary/formal"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Es wäre vermessen zu glauben, wir hätten alle Antworten.",
+        "en": "It would be presumptuous to believe we have all the answers."
+      },
+      {
+        "de": "Das ist ein vermessener Anspruch.",
+        "en": "That is a presumptuous claim."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "vermessen (adj) = presumptuous/arrogant. Literary/formal, similar to anmaßend. Not related etymologically to vermessen (verb) = to survey.",
+    "related": [
+      "die Messung",
+      "messen",
+      "sich anmaßen"
+    ],
+    "added": "2026-04-07 12:15:00"
+  },
+  {
+    "id": "die-messung",
+    "word": "die Messung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Messungen",
+    "definitions": [
+      {
+        "meaning": "measurement, reading",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Messung ergab einen Wert von 37,5 Grad.",
+        "en": "The measurement gave a reading of 37.5 degrees."
+      },
+      {
+        "de": "Seit die Messungen begonnen haben, ist es wärmer geworden.",
+        "en": "Since measurements began, it has become warmer."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "messen",
+      "vermessen"
+    ],
+    "added": "2026-04-07 12:16:00"
+  },
+  {
+    "id": "vergeuden",
+    "word": "vergeuden",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "vergeudete",
+    "past_participle": "vergeudet",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "vergeuden",
+    "definitions": [
+      {
+        "meaning": "to waste, to squander (time, money, talent)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er vergeudet sein Talent.",
+        "en": "He's wasting his talent."
+      },
+      {
+        "de": "Vergeudet keine Zeit!",
+        "en": "Don't waste time!"
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "similar to: verschwenden"
+    ],
+    "register": "neutral",
+    "notes": "vergeuden and verschwenden are largely synonymous. vergeuden slightly more literary.",
+    "related": [
+      "verschwenden",
+      "die Verschwendung"
+    ],
+    "added": "2026-04-07 12:17:00"
+  },
+  {
+    "id": "verschwenden",
+    "word": "verschwenden",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "verschwendete",
+    "past_participle": "verschwendet",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "verschwenden",
+    "definitions": [
+      {
+        "meaning": "to waste, to squander",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie verschwendet viel Geld für unnötige Dinge.",
+        "en": "She wastes a lot of money on unnecessary things."
+      },
+      {
+        "de": "Verschwende keine Energie damit.",
+        "en": "Don't waste your energy on it."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "money & shopping"
+    ],
+    "tags": [
+      "similar to: vergeuden"
+    ],
+    "register": "neutral",
+    "notes": "die Verschwendung = waste. Wegwerfgesellschaft = throwaway society.",
+    "related": [
+      "vergeuden",
+      "die Verschwendung"
+    ],
+    "added": "2026-04-07 12:18:00"
+  },
+  {
+    "id": "die-verschwendung",
+    "word": "die Verschwendung",
+    "type": "noun",
+    "gender": "die",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "waste, squandering",
+        "note": "no plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist eine reine Verschwendung von Zeit.",
+        "en": "That's a complete waste of time."
+      },
+      {
+        "de": "Lebensmittelverschwendung ist ein ernstes Problem.",
+        "en": "Food waste is a serious problem."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Zeitverschwendung = waste of time. Lebensmittelverschwendung = food waste.",
+    "related": [
+      "verschwenden",
+      "vergeuden"
+    ],
+    "added": "2026-04-07 12:19:00"
+  },
+  {
+    "id": "der-mangel",
+    "word": "der Mangel",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Mängel",
+    "definitions": [
+      {
+        "meaning": "lack, shortage, deficiency",
+        "note": "Mangel an + DAT"
+      },
+      {
+        "meaning": "defect, fault",
+        "note": "in technical/legal contexts"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Es gibt einen Mangel an Fachkräften.",
+        "en": "There is a shortage of skilled workers."
+      },
+      {
+        "de": "Das Produkt hat mehrere Mängel.",
+        "en": "The product has several defects."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Mangel an + DAT = lack of. mangelhaft = deficient, poor (grade). mangeln = to be lacking.",
+    "related": [
+      "spärlich",
+      "der Rückgang"
+    ],
+    "added": "2026-04-07 12:20:00"
+  },
+  {
+    "id": "der-anstieg",
+    "word": "der Anstieg",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Anstiege",
+    "definitions": [
+      {
+        "meaning": "rise, increase, ascent",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Anstieg der Temperaturen ist besorgniserregend.",
+        "en": "The rise in temperatures is worrying."
+      },
+      {
+        "de": "Der Anstieg war steil und anstrengend.",
+        "en": "The ascent was steep and strenuous."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Anstieg = rise/increase (noun). steigen = to rise (verb). Opposite: der Rückgang.",
+    "related": [
+      "steigen",
+      "der Rückgang",
+      "erhöhen"
+    ],
+    "added": "2026-04-07 12:21:00"
+  },
+  {
+    "id": "der-rueckgang",
+    "word": "der Rückgang",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Rückgänge",
+    "definitions": [
+      {
+        "meaning": "decline, decrease, drop",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Es gibt einen Rückgang der Geburtenrate.",
+        "en": "There is a decline in the birth rate."
+      },
+      {
+        "de": "Der Rückgang der Artenvielfalt ist alarmierend.",
+        "en": "The decline in biodiversity is alarming."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Opposite: der Anstieg. sinken = to fall (verb).",
+    "related": [
+      "der Anstieg",
+      "der Mangel",
+      "sinken"
+    ],
+    "added": "2026-04-07 12:22:00"
+  },
+  {
+    "id": "steigen",
+    "word": "steigen",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "stieg",
+    "past_participle": "gestiegen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "steigen",
+    "definitions": [
+      {
+        "meaning": "to rise, to increase, to go up",
+        "note": null
+      },
+      {
+        "meaning": "to climb",
+        "note": "auf einen Berg steigen = to climb a mountain"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Preise sind wieder gestiegen.",
+        "en": "Prices have gone up again."
+      },
+      {
+        "de": "Sie stieg auf den Gipfel.",
+        "en": "She climbed to the summit."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Takes sein. Opposite: sinken. aussteigen = to get out; einsteigen = to get in.",
+    "related": [
+      "aussteigen",
+      "der Anstieg",
+      "erhöhen",
+      "sinken"
+    ],
+    "added": "2026-04-07 12:23:00"
+  },
+  {
+    "id": "erhoehen",
+    "word": "erhöhen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "erhöhte",
+    "past_participle": "erhöht",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "erhöhen",
+    "definitions": [
+      {
+        "meaning": "to increase, to raise, to put up",
+        "note": "transitive — you increase something"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Firma hat die Löhne erhöht.",
+        "en": "The company raised wages."
+      },
+      {
+        "de": "Der Vermieter will die Miete erhöhen.",
+        "en": "The landlord wants to raise the rent."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "money & shopping"
+    ],
+    "tags": [
+      "similar to: steigen"
+    ],
+    "register": "neutral",
+    "notes": "erhöhen = to raise/increase (transitive — you do it to something). steigen = to rise (intransitive — it happens by itself).",
+    "related": [
+      "steigen",
+      "verstärken",
+      "senken",
+      "der Anstieg"
+    ],
+    "added": "2026-04-07 12:24:00"
+  },
+  {
+    "id": "verstaerken",
+    "word": "verstärken",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "verstärkte",
+    "past_participle": "verstärkt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "stärken",
+    "prefix": "ver-",
+    "definitions": [
+      {
+        "meaning": "to strengthen, to intensify, to reinforce",
+        "note": null
+      },
+      {
+        "meaning": "sich verstärken — to intensify, to grow stronger",
+        "note": "reflexive"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Sturm hat sich verstärkt.",
+        "en": "The storm has intensified."
+      },
+      {
+        "de": "Das verstärkt meine Überzeugung.",
+        "en": "That reinforces my conviction."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "verstärken = to strengthen/intensify (transitive); sich verstärken = to intensify (intransitive/reflexive).",
+    "related": [
+      "erhöhen",
+      "senken"
+    ],
+    "added": "2026-04-07 12:25:00"
+  },
+  {
+    "id": "sinken",
+    "word": "sinken",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "sank",
+    "past_participle": "gesunken",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "sinken",
+    "definitions": [
+      {
+        "meaning": "to sink, to fall, to drop",
+        "note": null
+      },
+      {
+        "meaning": "to decrease, to decline",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Temperaturen sind gesunken.",
+        "en": "Temperatures have dropped."
+      },
+      {
+        "de": "Das Schiff sank innerhalb von Stunden.",
+        "en": "The ship sank within hours."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Takes sein. Opposite: steigen. versinken = to sink completely/disappear into.",
+    "related": [
+      "der Rückgang",
+      "senken",
+      "steigen",
+      "versenken",
+      "versinken"
+    ],
+    "added": "2026-04-07 12:26:00"
+  },
+  {
+    "id": "versinken",
+    "word": "versinken",
+    "type": "verb",
+    "auxiliary": "sein",
+    "past_tense": "versank",
+    "past_participle": "versunken",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "sinken",
+    "prefix": "ver-",
+    "definitions": [
+      {
+        "meaning": "to sink (completely), to become submerged, to be lost in",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Dorf versank in den Fluten.",
+        "en": "The village was submerged in the floods."
+      },
+      {
+        "de": "Sie versank in Gedanken.",
+        "en": "She was lost in thought."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "versinken implies complete submersion or total absorption. in Gedanken versinken = to be lost in thought.",
+    "related": [
+      "senken",
+      "sinken",
+      "versenken"
+    ],
+    "added": "2026-04-07 12:27:00"
+  },
+  {
+    "id": "senken",
+    "word": "senken",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "senkte",
+    "past_participle": "gesenkt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "sinken",
+    "definitions": [
+      {
+        "meaning": "to lower, to reduce, to bring down",
+        "note": "transitive"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Regierung will die Steuern senken.",
+        "en": "The government wants to lower taxes."
+      },
+      {
+        "de": "Sie senkte die Stimme.",
+        "en": "She lowered her voice."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "society & politics"
+    ],
+    "tags": [
+      "similar to: sinken"
+    ],
+    "register": "neutral",
+    "notes": "senken = to lower (transitive — you do it); sinken = to fall (intransitive — it happens by itself). die Stimme senken = to lower one's voice.",
+    "related": [
+      "erhöhen",
+      "sinken",
+      "versenken",
+      "versinken",
+      "verstärken"
+    ],
+    "added": "2026-04-07 12:28:00"
+  },
+  {
+    "id": "versenken",
+    "word": "versenken",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "versenkte",
+    "past_participle": "versenkt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "sinken",
+    "prefix": "ver-",
+    "definitions": [
+      {
+        "meaning": "to sink (a ship), to submerge",
+        "note": "transitive"
+      },
+      {
+        "meaning": "sich versenken — to immerse oneself in",
+        "note": "reflexive"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das U-Boot versenkte das Schiff.",
+        "en": "The submarine sank the ship."
+      },
+      {
+        "de": "Er versenkte sich in die Lektüre.",
+        "en": "He immersed himself in reading."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "versenken = to sink something (transitive); versinken = to sink by itself (intransitive).",
+    "related": [
+      "sinken",
+      "versinken",
+      "senken"
+    ],
+    "added": "2026-04-07 12:29:00"
+  },
+  {
+    "id": "fuehlen",
+    "word": "fühlen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "fühlte",
+    "past_participle": "gefühlt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "fühlen",
+    "definitions": [
+      {
+        "meaning": "to feel (touch), to sense",
+        "note": null
+      },
+      {
+        "meaning": "sich fühlen — to feel (emotionally)",
+        "note": "reflexive"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich fühle mich heute nicht gut.",
+        "en": "I don't feel well today."
+      },
+      {
+        "de": "Sie fühlte seinen Herzschlag.",
+        "en": "She felt his heartbeat."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "fühlen = to feel physically (touch/sense); sich fühlen = to feel emotionally. das Gefühl = feeling. sich anfühlen = to feel like (texture/sensation).",
+    "related": [
+      "sich anfühlen",
+      "empfinden",
+      "spüren"
+    ],
+    "added": "2026-04-07 12:30:00"
+  },
+  {
+    "id": "sich-anfuehlen",
+    "word": "sich anfühlen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "fühlte sich an",
+    "past_participle": "angefühlt",
+    "is_separable": true,
+    "reflexive": true,
+    "family_root": "fühlen",
+    "prefix": "an-",
+    "definitions": [
+      {
+        "meaning": "to feel like (to the touch or emotionally)",
+        "note": "wie + adjective/noun"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Stoff fühlt sich weich an.",
+        "en": "The fabric feels soft."
+      },
+      {
+        "de": "Es fühlt sich falsch an.",
+        "en": "It feels wrong."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "emotions",
+      "daily life"
+    ],
+    "tags": [
+      "separable",
+      "reflexive"
+    ],
+    "register": "neutral",
+    "notes": "sich anfühlen wie = to feel like. Used for both physical texture and emotional impression.",
+    "related": [
+      "fühlen",
+      "spüren"
+    ],
+    "added": "2026-04-07 12:31:00"
+  },
+  {
+    "id": "satt",
+    "word": "satt",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "full, satiated (after eating)",
+        "note": null
+      },
+      {
+        "meaning": "jdn./etw. satt haben — to be fed up with",
+        "note": "colloquial"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bin satt, danke.",
+        "en": "I'm full, thank you."
+      },
+      {
+        "de": "Ich habe es satt, immer zu warten.",
+        "en": "I'm fed up with always waiting."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "daily life",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "satt sein = to be full. etw. satt haben = to be fed up with something. satt und zufrieden = full and content.",
+    "related": [],
+    "added": "2026-04-07 12:32:00"
+  },
+  {
+    "id": "die-furcht",
+    "word": "die Furcht",
+    "type": "noun",
+    "gender": "die",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "fear, dread",
+        "note": "no plural; more intense than Angst"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er handelte aus Furcht, nicht aus Mut.",
+        "en": "He acted out of fear, not courage."
+      },
+      {
+        "de": "Die Furcht vor dem Unbekannten ist menschlich.",
+        "en": "Fear of the unknown is human."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [
+      "similar to: die Angst"
+    ],
+    "register": "neutral",
+    "notes": "die Furcht ≈ die Angst, but Furcht is often more acute/immediate. furchtbar = terrible. fürchten = to fear.",
+    "related": [
+      "die Angst",
+      "sich fürchten",
+      "sich ängstigen"
+    ],
+    "added": "2026-04-07 12:33:00"
+  },
+  {
+    "id": "sich-aengstigen",
+    "word": "sich ängstigen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "ängstigt sich",
+    "past_participle": "geängstigt",
+    "is_separable": false,
+    "reflexive": true,
+    "family_root": "ängstigen",
+    "definitions": [
+      {
+        "meaning": "to be anxious, to worry, to be afraid",
+        "note": "über/wegen + AKK/GEN or um + AKK"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie ängstigt sich um ihre Kinder.",
+        "en": "She worries about her children."
+      },
+      {
+        "de": "Er ängstigt sich vor der Operation.",
+        "en": "He's anxious about the operation."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [
+      "reflexive",
+      "similar to: sich fürchten"
+    ],
+    "register": "neutral",
+    "notes": "ängstlich = anxious, fearful (adjective). sich ängstigen = to feel anxious. Similar to sich sorgen (to worry).",
+    "related": [
+      "die Angst",
+      "die Furcht",
+      "sich fürchten"
+    ],
+    "added": "2026-04-07 12:34:00"
+  },
+  {
+    "id": "irritieren",
+    "word": "irritieren",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "irritierte",
+    "past_participle": "irritiert",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "irritieren",
+    "definitions": [
+      {
+        "meaning": "to irritate, to annoy",
+        "note": null
+      },
+      {
+        "meaning": "to confuse, to unsettle",
+        "note": "das irritiert mich = that confuses/unsettles me"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sein Verhalten irritiert mich.",
+        "en": "His behaviour irritates me."
+      },
+      {
+        "de": "Die widersprüchlichen Aussagen haben mich irritiert.",
+        "en": "The contradictory statements confused me."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "people & relationships"
+    ],
+    "tags": [
+      "similar to: nerven, stören"
+    ],
+    "register": "neutral",
+    "notes": "irritieren can mean both to annoy AND to confuse/perplex — context determines which. irritiert = irritated or confused.",
+    "related": [
+      "nerven",
+      "stören"
+    ],
+    "added": "2026-04-07 12:35:00"
+  },
+  {
+    "id": "die-ueberraschung",
+    "word": "die Überraschung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Überraschungen",
+    "definitions": [
+      {
+        "meaning": "surprise",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das war eine angenehme Überraschung.",
+        "en": "That was a pleasant surprise."
+      },
+      {
+        "de": "Zu meiner Überraschung war er schon da.",
+        "en": "To my surprise, he was already there."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "überraschen = to surprise (verb). überraschend = surprisingly. zu meiner Überraschung = to my surprise.",
+    "related": [
+      "überraschen"
+    ],
+    "added": "2026-04-07 12:36:00"
+  },
+  {
+    "id": "depressiv",
+    "word": "depressiv",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "depressive, suffering from depression",
+        "note": "clinical/medical sense"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er ist klinisch depressiv.",
+        "en": "He is clinically depressive."
+      },
+      {
+        "de": "Sie fühlt sich seit Wochen depressiv.",
+        "en": "She has been feeling depressive for weeks."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "emotions"
+    ],
+    "tags": [
+      "similar to: deprimiert"
+    ],
+    "register": "neutral",
+    "notes": "depressiv = clinically depressive (medical condition); deprimiert = depressed/low (temporary mood state). die Depression = depression.",
+    "related": [
+      "deprimiert"
+    ],
+    "added": "2026-04-07 12:37:00"
+  },
+  {
+    "id": "der-spass",
+    "word": "der Spaß",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Späße",
+    "definitions": [
+      {
+        "meaning": "fun, enjoyment",
+        "note": null
+      },
+      {
+        "meaning": "joke, jest",
+        "note": "das war nur ein Spaß = it was just a joke"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das macht mir großen Spaß.",
+        "en": "I really enjoy that. / That's great fun."
+      },
+      {
+        "de": "Das war nur ein Spaß!",
+        "en": "It was just a joke!"
+      }
+    ],
+    "topics": [
+      "emotions",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Spaß haben = to have fun. Spaß machen = to be fun. Riesenspaß = enormous fun. Spaß beiseite = joking aside.",
+    "related": [
+      "großartig",
+      "witzig"
+    ],
+    "added": "2026-04-07 12:38:00"
+  },
+  {
+    "id": "grossartig",
+    "word": "großartig",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "great, wonderful, magnificent, splendid",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das war eine großartige Vorstellung!",
+        "en": "That was a wonderful performance!"
+      },
+      {
+        "de": "Sie hat großartig gespielt.",
+        "en": "She played magnificently."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "großartig = great/wonderful (genuine enthusiasm). Stronger than gut. Often used ironically too: 'Na, das ist ja großartig!' (sarcastic).",
+    "related": [
+      "der Spaß"
+    ],
+    "added": "2026-04-07 12:39:00"
+  },
+  {
+    "id": "beeindrucken",
+    "word": "beeindrucken",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "beeindruckte",
+    "past_participle": "beeindruckt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "beeindrucken",
+    "definitions": [
+      {
+        "meaning": "to impress, to make an impression on",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ihre Präsentation hat alle beeindruckt.",
+        "en": "Her presentation impressed everyone."
+      },
+      {
+        "de": "Er lässt sich von nichts beeindrucken.",
+        "en": "He is not impressed by anything."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "beeindrucken = to impress. beeindruckend = impressive (adj). beeindruckt = impressed (past participle as adj).",
+    "related": [
+      "beeindruckend"
+    ],
+    "added": "2026-04-07 12:40:00"
+  },
+  {
+    "id": "drucken",
+    "word": "drucken",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "druckte",
+    "past_participle": "gedruckt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "drucken",
+    "definitions": [
+      {
+        "meaning": "to print",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Kannst du das bitte ausdrucken?",
+        "en": "Can you please print that out?"
+      },
+      {
+        "de": "Das Buch wurde 1905 gedruckt.",
+        "en": "The book was printed in 1905."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "drucken = to print. NOT to be confused with drücken (to press/push). der Drucker = printer. der Ausdruck = printout.",
+    "related": [
+      "drücken",
+      "der Ausdruck"
+    ],
+    "added": "2026-04-07 12:41:00"
+  },
+  {
+    "id": "rührend",
+    "word": "rührend",
+    "type": "adj/adv",
+    "usage": "both",
+    "derived_from": "rühren",
+    "definitions": [
+      {
+        "meaning": "touching, moving, endearing",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das war eine rührende Geschichte.",
+        "en": "That was a touching story."
+      },
+      {
+        "de": "Er kümmert sich rührend um sie.",
+        "en": "He takes endearing care of her."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Present participle of rühren used as adjective. rühren = to move/touch (emotionally) or to stir. berühren = to touch (physically or emotionally).",
+    "related": [
+      "berühren"
+    ],
+    "added": "2026-04-07 12:42:00"
+  },
+  {
+    "id": "beruehren",
+    "word": "berühren",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "berührte",
+    "past_participle": "berührt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "rühren",
+    "prefix": "be-",
+    "definitions": [
+      {
+        "meaning": "to touch (physically)",
+        "note": null
+      },
+      {
+        "meaning": "to move, to affect (emotionally)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Bitte nicht berühren!",
+        "en": "Please do not touch!"
+      },
+      {
+        "de": "Die Geschichte hat mich sehr berührt.",
+        "en": "The story moved me deeply."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "berühren = to touch (physically) or to move (emotionally). berührt = touched/moved (adjective). berühmt = famous (different word!)",
+    "related": [
+      "rührend"
+    ],
+    "added": "2026-04-07 12:43:00"
+  },
+  {
+    "id": "sich-interessieren",
+    "word": "sich interessieren",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "interessierte sich",
+    "past_participle": "interessiert",
+    "is_separable": false,
+    "reflexive": true,
+    "family_root": "interessieren",
+    "preposition": "für + AKK",
+    "definitions": [
+      {
+        "meaning": "to be interested in, to take an interest in",
+        "note": "für + AKK"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich interessiere mich sehr für Sprachen.",
+        "en": "I'm very interested in languages."
+      },
+      {
+        "de": "Wofür interessierst du dich?",
+        "en": "What are you interested in?"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "emotions"
+    ],
+    "tags": [
+      "reflexive"
+    ],
+    "register": "neutral",
+    "notes": "sich interessieren für + AKK = to be interested in. interessant = interesting. das Interesse = interest.",
+    "related": [
+      "neugierig"
+    ],
+    "added": "2026-04-07 12:44:00"
+  },
+  {
+    "id": "unkonzentriert",
+    "word": "unkonzentriert",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "unfocused, distracted, not concentrating",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er war heute sehr unkonzentriert.",
+        "en": "He was very unfocused today."
+      },
+      {
+        "de": "Ich arbeite unkonzentriert, wenn ich müde bin.",
+        "en": "I work without concentration when I'm tired."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Opposite: konzentriert (focused). sich konzentrieren = to concentrate.",
+    "related": [
+      "müde"
+    ],
+    "added": "2026-04-07 12:45:00"
+  },
+  {
+    "id": "die-muehe",
+    "word": "die Mühe",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Mühen",
+    "definitions": [
+      {
+        "meaning": "effort, trouble, pains",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das war eine große Mühe.",
+        "en": "That was a great effort."
+      },
+      {
+        "de": "Mach dir keine Mühe!",
+        "en": "Don't bother! / Don't go to any trouble!"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "sich Mühe geben = to take pains/make an effort. Mach dir keine Mühe! = Don't bother! mit Mühe = with difficulty. mühsam = laborious.",
+    "related": [],
+    "added": "2026-04-07 12:46:00"
+  },
+  {
+    "id": "der-muskelkater",
+    "word": "der Muskelkater",
+    "type": "noun",
+    "gender": "der",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "muscle soreness, DOMS (delayed onset muscle soreness)",
+        "note": "no plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nach dem Sport hatte ich starken Muskelkater.",
+        "en": "After exercising I had severe muscle soreness."
+      },
+      {
+        "de": "Ich kann kaum laufen — mein Muskelkater ist furchtbar.",
+        "en": "I can barely walk — my muscle soreness is terrible."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Literally 'muscle hangover'. einen Kater haben = to have a hangover (der Kater = tomcat/hangover).",
+    "related": [
+      "einen Kater haben"
+    ],
+    "added": "2026-04-07 12:47:00"
+  },
+  {
+    "id": "sich-zurueckhalten",
+    "word": "sich zurückhalten",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "hielt sich zurück",
+    "past_participle": "zurückgehalten",
+    "is_separable": true,
+    "reflexive": true,
+    "family_root": "halten",
+    "prefix": "zurück-",
+    "definitions": [
+      {
+        "meaning": "to hold back, to restrain oneself, to keep a low profile",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er hält sich mit seiner Meinung zurück.",
+        "en": "He holds back his opinion."
+      },
+      {
+        "de": "Ich musste mich sehr zurückhalten, um nichts zu sagen.",
+        "en": "I had to restrain myself greatly to say nothing."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "emotions"
+    ],
+    "tags": [
+      "separable",
+      "reflexive"
+    ],
+    "register": "neutral",
+    "notes": "sich zurückhalten = to hold back/restrain oneself. zurückhaltend = reserved, restrained (adjective).",
+    "related": [
+      "aufhalten",
+      "erhalten",
+      "halten",
+      "sich halten",
+      "sich verhalten"
+    ],
+    "added": "2026-04-07 12:48:00"
+  },
+  {
+    "id": "doof",
+    "word": "doof",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "stupid, dumb, silly",
+        "note": "informal"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das war eine doofe Idee.",
+        "en": "That was a stupid idea."
+      },
+      {
+        "de": "Stell dich nicht so doof an!",
+        "en": "Don't act so dumb!"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "informal",
+    "notes": "doof = stupid/silly (informal, mild). blöd = same meaning. dumm = stupid (more formal/direct). Often used affectionately.",
+    "related": [
+      "verrückt"
+    ],
+    "added": "2026-04-07 12:49:00"
+  },
+  {
+    "id": "witzig",
+    "word": "witzig",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "funny, witty, amusing",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er ist sehr witzig.",
+        "en": "He is very funny."
+      },
+      {
+        "de": "Das ist nicht witzig!",
+        "en": "That's not funny!"
+      }
+    ],
+    "topics": [
+      "emotions",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "witzig = funny/witty. lustig = funny/jolly (more about general fun). der Witz = joke.",
+    "related": [
+      "der Spaß"
+    ],
+    "added": "2026-04-07 12:50:00"
+  },
+  {
+    "id": "unertraeglich",
+    "word": "unerträglich",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "unbearable, intolerable",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Hitze ist heute unerträglich.",
+        "en": "The heat is unbearable today."
+      },
+      {
+        "de": "Sein Verhalten ist unerträglich.",
+        "en": "His behaviour is intolerable."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Opposite: erträglich (bearable). ertragen = to bear/endure.",
+    "related": [
+      "ertragen"
+    ],
+    "added": "2026-04-07 12:51:00"
+  },
+  {
+    "id": "ertragen",
+    "word": "ertragen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "ertrug",
+    "past_participle": "ertragen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "tragen",
+    "prefix": "er-",
+    "definitions": [
+      {
+        "meaning": "to bear, to endure, to put up with",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich kann diesen Lärm nicht ertragen.",
+        "en": "I can't bear this noise."
+      },
+      {
+        "de": "Sie hat viel ertragen in ihrem Leben.",
+        "en": "She has endured a lot in her life."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "ertragen = to endure (with difficulty). hinnehmen = to accept/put up with (more passive). unerträglich = unbearable.",
+    "related": [
+      "unerträglich",
+      "hinnehmen",
+      "tragen"
+    ],
+    "added": "2026-04-07 12:52:00"
+  },
+  {
+    "id": "oberflaechlich",
+    "word": "oberflächlich",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "superficial, shallow, cursory",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie hat nur eine oberflächliche Kenntnis des Themas.",
+        "en": "She has only a superficial knowledge of the subject."
+      },
+      {
+        "de": "Er denkt sehr oberflächlich.",
+        "en": "He thinks very superficially."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "work & academia"
+    ],
+    "tags": [
+      "similar to: tiefgründig"
+    ],
+    "register": "neutral",
+    "notes": "Opposite: tiefgründig (profound). die Oberfläche = surface.",
+    "related": [
+      "tiefgründig"
+    ],
+    "added": "2026-04-07 12:53:00"
+  },
+  {
+    "id": "tiefgruendig",
+    "word": "tiefgründig",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "profound, deep, thought-provoking",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist ein tiefgründiges Buch.",
+        "en": "That's a profound book."
+      },
+      {
+        "de": "Sie denkt tiefgründig über das Leben nach.",
+        "en": "She thinks deeply about life."
+      }
+    ],
+    "topics": [
+      "culture & arts",
+      "people & relationships"
+    ],
+    "tags": [
+      "similar to: oberflächlich"
+    ],
+    "register": "neutral",
+    "notes": "Opposite: oberflächlich (superficial). tiefgehend = in-depth (synonym).",
+    "related": [
+      "oberflächlich"
+    ],
+    "added": "2026-04-07 12:54:00"
+  },
+  {
+    "id": "grausam",
+    "word": "grausam",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "cruel, brutal, gruesome",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das war eine grausame Tat.",
+        "en": "That was a cruel act."
+      },
+      {
+        "de": "Er bestrafte sie grausam.",
+        "en": "He punished her cruelly."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Grausamkeit = cruelty. grausam can also be used colloquially as an intensifier: 'grausam kalt' = terribly cold.",
+    "related": [],
+    "added": "2026-04-07 12:55:00"
+  },
+  {
+    "id": "gefallen",
+    "word": "gefallen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "gefiel",
+    "past_participle": "gefallen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "fallen",
+    "prefix": "ge-",
+    "preposition": "DAT",
+    "definitions": [
+      {
+        "meaning": "to please, to like (something appeals to you)",
+        "note": "always takes DAT — es gefällt MIR"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Buch hat mir sehr gut gefallen.",
+        "en": "I really liked the book. (lit. The book pleased me a lot)"
+      },
+      {
+        "de": "Wie gefällt dir Basel?",
+        "en": "How do you like Basel?"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Always dative: es gefällt MIR (not mich). Different from mögen (I like it) — gefallen emphasises the thing's appeal. sich etw. gefallen lassen = to put up with something.",
+    "related": [
+      "Lieblings-",
+      "bevorzugen",
+      "ich … lieber … als …"
+    ],
+    "added": "2026-04-07 12:56:00"
+  },
+  {
+    "id": "bevorzugen",
+    "word": "bevorzugen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "bevorzugte",
+    "past_participle": "bevorzugt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "bevorzugen",
+    "definitions": [
+      {
+        "meaning": "to prefer, to favour, to give preference to",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bevorzuge Tee gegenüber Kaffee.",
+        "en": "I prefer tea over coffee."
+      },
+      {
+        "de": "Sie wird bei der Beförderung bevorzugt.",
+        "en": "She is being favoured for the promotion."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "bevorzugen = to prefer (slightly formal). lieber mögen = prefer (colloquial). bevorzugt = preferred, favoured (adjective).",
+    "related": [
+      "Lieblings-",
+      "gefallen",
+      "ich … lieber … als …"
+    ],
+    "added": "2026-04-07 12:57:00"
+  },
+  {
+    "id": "das-zutrauen",
+    "word": "das Zutrauen",
+    "type": "noun",
+    "gender": "das",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "trust in someone's ability, confidence in someone",
+        "note": "no plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Tier hat kein Zutrauen zum Menschen.",
+        "en": "The animal has no trust in humans."
+      },
+      {
+        "de": "Ich habe großes Zutrauen in ihre Fähigkeiten.",
+        "en": "I have great confidence in her abilities."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das Zutrauen = trust in someone's capability. jdm. etw. zutrauen = to believe someone capable of something. 'Das traue ich mir nicht zu' = I don't think I'm capable of that.",
+    "related": [
+      "sich trauen",
+      "anvertrauen",
+      "das Vertrauen"
+    ],
+    "added": "2026-04-07 12:58:00"
+  },
+  {
+    "id": "verantworten",
+    "word": "verantworten",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "verantwortete",
+    "past_participle": "verantwortet",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "verantworten",
+    "definitions": [
+      {
+        "meaning": "to be responsible for, to answer for",
+        "note": null
+      },
+      {
+        "meaning": "sich verantworten — to justify oneself, to account for one's actions",
+        "note": "reflexive"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er muss sein Handeln verantworten.",
+        "en": "He must answer for his actions."
+      },
+      {
+        "de": "Das kannst du nicht verantworten!",
+        "en": "You can't justify that!"
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "verantworten = to be accountable for. die Verantwortung = responsibility. verantwortlich = responsible (adjective).",
+    "related": [
+      "die Verantwortung",
+      "verantwortlich"
+    ],
+    "added": "2026-04-07 12:59:00"
+  },
+  {
+    "id": "verantwortlich",
+    "word": "verantwortlich",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "responsible, accountable, in charge",
+        "note": "verantwortlich für + AKK"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wer ist dafür verantwortlich?",
+        "en": "Who is responsible for that?"
+      },
+      {
+        "de": "Eltern sind für ihre Kinder verantwortlich.",
+        "en": "Parents are responsible for their children."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "verantwortlich für + AKK = responsible for. jdn. verantwortlich machen = to hold someone responsible.",
+    "related": [
+      "die Verantwortung",
+      "verantworten"
+    ],
+    "added": "2026-04-07 13:00:00"
+  },
+  {
+    "id": "sich-putzen",
+    "word": "sich putzen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "putzte sich",
+    "past_participle": "geputzt",
+    "is_separable": false,
+    "reflexive": true,
+    "family_root": "putzen",
+    "definitions": [
+      {
+        "meaning": "to clean oneself, to groom oneself",
+        "note": "reflexive"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Katze putzt sich stundenlang.",
+        "en": "The cat grooms itself for hours."
+      },
+      {
+        "de": "Vergiss nicht, dir die Zähne zu putzen.",
+        "en": "Don't forget to brush your teeth."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "body & mind"
+    ],
+    "tags": [
+      "reflexive"
+    ],
+    "register": "neutral",
+    "notes": "sich putzen = to groom/clean oneself. sich die Zähne putzen = to brush teeth. putzen = to clean (non-reflexive): die Schuhe putzen = to polish shoes.",
+    "related": [
+      "sich waschen"
+    ],
+    "added": "2026-04-07 13:01:00"
+  },
+  {
+    "id": "sich-waschen",
+    "word": "sich waschen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "wusch sich",
+    "past_participle": "gewaschen",
+    "is_separable": false,
+    "reflexive": true,
+    "family_root": "waschen",
+    "definitions": [
+      {
+        "meaning": "to wash oneself",
+        "note": "reflexive"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich wasche mich jeden Morgen.",
+        "en": "I wash myself every morning."
+      },
+      {
+        "de": "Hast du dir die Hände gewaschen?",
+        "en": "Did you wash your hands?"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "body & mind"
+    ],
+    "tags": [
+      "reflexive"
+    ],
+    "register": "neutral",
+    "notes": "sich waschen = to wash oneself. waschen = to wash (something): die Wäsche waschen = to do laundry. die Waschmaschine = washing machine.",
+    "related": [
+      "sich putzen"
+    ],
+    "added": "2026-04-07 13:02:00"
+  },
+  {
+    "id": "der-kellner",
+    "word": "der Kellner",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Kellner",
+    "definitions": [
+      {
+        "meaning": "waiter, server",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Kellner brachte uns die Speisekarte.",
+        "en": "The waiter brought us the menu."
+      },
+      {
+        "de": "Entschuldigung, Herr Ober!",
+        "en": "Excuse me, waiter!"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "money & shopping"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Kellnerin = waitress. Herr Ober = formal way to address a waiter.",
+    "related": [],
+    "added": "2026-04-07 13:03:00"
+  },
+  {
+    "id": "umraemen",
+    "word": "umräumen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "räumte um",
+    "past_participle": "umgeräumt",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "räumen",
+    "prefix": "um-",
+    "definitions": [
+      {
+        "meaning": "to rearrange (furniture), to move things around",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe das Zimmer umgeräumt.",
+        "en": "I rearranged the room."
+      },
+      {
+        "de": "Wir müssen die Möbel umräumen.",
+        "en": "We need to move the furniture around."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "separable",
+      "verb family: räumen"
+    ],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "aufräumen",
+      "einräumen",
+      "ausräumen"
+    ],
+    "added": "2026-04-07 13:04:00"
+  },
+  {
+    "id": "das-geschirr",
+    "word": "das Geschirr",
+    "type": "noun",
+    "gender": "das",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "dishes, crockery, tableware",
+        "note": "no plural in this sense"
+      },
+      {
+        "meaning": "harness (for animals)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich muss noch das Geschirr abwaschen.",
+        "en": "I still need to wash the dishes."
+      },
+      {
+        "de": "Das Geschirr in den Schrank einräumen.",
+        "en": "To put the dishes away in the cupboard."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das Geschirr = dishes/crockery (collective noun). Geschirr spülen/abwaschen = to wash the dishes. der Geschirrspüler = dishwasher.",
+    "related": [
+      "aufräumen",
+      "einräumen"
+    ],
+    "added": "2026-04-07 13:05:00"
+  },
+  {
+    "id": "ich-lieber-als",
+    "word": "ich … lieber … als …",
+    "type": "construction",
+    "definitions": [
+      {
+        "meaning": "I prefer … to …, I'd rather … than …",
+        "note": "lieber = comparative of gern"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich trinke lieber Tee als Kaffee.",
+        "en": "I prefer tea to coffee."
+      },
+      {
+        "de": "Ich gehe lieber spazieren als fernzusehen.",
+        "en": "I'd rather go for a walk than watch TV."
+      }
+    ],
+    "topics": [
+      "grammar & structure",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "lieber = more gladly/preferably (comparative of gern). ich hätte lieber = I would prefer. am liebsten = most of all/favourite.",
+    "related": [
+      "bevorzugen",
+      "gefallen"
+    ],
+    "added": "2026-04-07 13:06:00"
+  },
+  {
+    "id": "lieblings",
+    "word": "Lieblings-",
+    "type": "construction",
+    "definitions": [
+      {
+        "meaning": "favourite … (prefix added to a noun)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Was ist dein Lieblingsessen?",
+        "en": "What is your favourite food?"
+      },
+      {
+        "de": "Das ist mein Lieblingsfilm.",
+        "en": "That is my favourite film."
+      }
+    ],
+    "topics": [
+      "grammar & structure",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Lieblings- is a prefix added to nouns: Lieblingsessen, Lieblingsfilm, Lieblingsfarbe, Lieblingsort. Always written as one compound word.",
+    "related": [
+      "bevorzugen",
+      "gefallen"
+    ],
+    "added": "2026-04-07 13:07:00"
+  },
+  {
+    "id": "das-geht-mir-auf-die-nerven",
+    "word": "das geht mir auf die Nerven",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "that gets on my nerves, that annoys me",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Dieses ständige Piepen geht mir auf die Nerven.",
+        "en": "That constant beeping gets on my nerves."
+      },
+      {
+        "de": "Er geht mir wirklich auf die Nerven.",
+        "en": "He really gets on my nerves."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "informal",
+    "notes": "auf die Nerven gehen = to get on one's nerves. jdm. auf die Nerven fallen/gehen = same meaning.",
+    "related": [
+      "nerven",
+      "stören"
+    ],
+    "added": "2026-04-07 13:08:00"
+  },
+  {
+    "id": "glueck-haben",
+    "word": "Glück haben",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "to be lucky, to have good luck",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Du hast wirklich Glück gehabt!",
+        "en": "You were really lucky!"
+      },
+      {
+        "de": "Ich hatte Glück — der Zug hatte Verspätung.",
+        "en": "I was lucky — the train was late."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Glück haben = to be lucky (fortune smiles on you). glücklich = happy (different meaning!). das Glück = luck OR happiness.",
+    "related": [
+      "glücklich"
+    ],
+    "added": "2026-04-07 13:09:00"
+  },
+  {
+    "id": "durcheinander",
+    "word": "durcheinander",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "confused, muddled, mixed up",
+        "note": "of a person"
+      },
+      {
+        "meaning": "in a mess, chaotic, jumbled",
+        "note": "of things"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bin völlig durcheinander.",
+        "en": "I'm completely confused."
+      },
+      {
+        "de": "In seinem Zimmer ist alles durcheinander.",
+        "en": "Everything in his room is in a mess."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "durcheinander bringen = to confuse someone / to mess something up. das Durcheinander = chaos, confusion (noun).",
+    "related": [
+      "das bringt mich durcheinander"
+    ],
+    "added": "2026-04-07 13:10:00"
+  },
+  {
+    "id": "das-bringt-mich-durcheinander",
+    "word": "das bringt mich durcheinander",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "that confuses me, that messes me up",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Diese widersprüchlichen Informationen bringen mich völlig durcheinander.",
+        "en": "These contradictory pieces of information confuse me completely."
+      },
+      {
+        "de": "Ich komme ganz durcheinander, wenn du so schnell redest.",
+        "en": "I get completely confused when you speak so fast."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "durcheinanderbringen = to confuse/muddle. ich komme durcheinander = I get confused (same meaning, different structure).",
+    "related": [
+      "durcheinander"
+    ],
+    "added": "2026-04-07 13:11:00"
   }
 ]
