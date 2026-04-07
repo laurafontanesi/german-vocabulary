@@ -1575,8 +1575,10 @@
     "reflexive": true,
     "preposition": "für + AKK",
     "related": [
-      "wählen",
-      "die Entscheidung"
+      "auswählen",
+      "die Entscheidung",
+      "die Wahl",
+      "wählen"
     ],
     "definitions": [
       {
@@ -1701,7 +1703,9 @@
     "reflexive": false,
     "related": [
       "abholen",
-      "wiederholen"
+      "einholen",
+      "wiederholen",
+      "überholen"
     ],
     "family_root": "holen",
     "definitions": [
@@ -1742,8 +1746,10 @@
     "family_root": "holen",
     "prefix": "ab-",
     "related": [
+      "einholen",
       "holen",
-      "wiederholen"
+      "wiederholen",
+      "überholen"
     ],
     "definitions": [
       {
@@ -1786,7 +1792,9 @@
     "prefix": "wieder-",
     "related": [
       "abholen",
-      "holen"
+      "einholen",
+      "holen",
+      "überholen"
     ],
     "definitions": [
       {
@@ -1953,8 +1961,9 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
+      "reden",
       "sagen",
-      "reden"
+      "widersprechen"
     ],
     "definitions": [
       {
@@ -2428,7 +2437,10 @@
     "register": "neutral",
     "notes": "Two distinct uses: sich (DAT) etw. vorstellen = to imagine; sich vorstellen = to introduce oneself; jmdn. vorstellen = to introduce sb.",
     "added": "2026-04-05",
-    "family_root": "stellen"
+    "family_root": "stellen",
+    "related": [
+      "stellen"
+    ]
   },
   {
     "id": "die-zeit",
@@ -7538,7 +7550,9 @@
     "tags": [],
     "register": "neutral",
     "notes": "legen = to lay (transitive, causes horizontal position); liegen = to lie (intransitive, is in horizontal position). A classic German confusion: ich lege (I lay) vs ich liege (I lie).",
-    "related": [],
+    "related": [
+      "stellen"
+    ],
     "added": "2026-04-06 11:02:00"
   },
   {
@@ -10285,5 +10299,1355 @@
       "vermieten"
     ],
     "added": "2026-04-06 13:11:00"
+  },
+  {
+    "id": "deswegen",
+    "word": "deswegen",
+    "type": "adj/adv",
+    "usage": "adverb only",
+    "definitions": [
+      {
+        "meaning": "therefore, that's why, because of that",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Es regnet. Deswegen bleibe ich zuhause.",
+        "en": "It's raining. That's why I'm staying home."
+      },
+      {
+        "de": "Sie ist krank, deswegen kommt sie nicht.",
+        "en": "She's ill, that's why she's not coming."
+      }
+    ],
+    "topics": [
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "deswegen = therefore/that's why (refers back to a cause). Similar to deshalb and daher, all interchangeable in most contexts.",
+    "related": [],
+    "added": "2026-04-06 14:00:00"
+  },
+  {
+    "id": "halten",
+    "word": "halten",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "hielt",
+    "past_participle": "gehalten",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "halten",
+    "definitions": [
+      {
+        "meaning": "to hold, to keep",
+        "note": null
+      },
+      {
+        "meaning": "to stop (of vehicles)",
+        "note": "der Bus hält = the bus stops"
+      },
+      {
+        "meaning": "to give (a speech)",
+        "note": "eine Rede halten = to give a speech"
+      },
+      {
+        "meaning": "halten für — to consider, to regard as",
+        "note": "+ AKK"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Kannst du mir bitte die Tür halten?",
+        "en": "Can you hold the door for me please?"
+      },
+      {
+        "de": "Der Zug hält in Basel für drei Minuten.",
+        "en": "The train stops in Basel for three minutes."
+      },
+      {
+        "de": "Sie hält ihn für sehr intelligent.",
+        "en": "She considers him very intelligent."
+      },
+      {
+        "de": "Der Präsident hielt eine Rede zum Nationalfeiertag.",
+        "en": "The president gave a speech on the national holiday."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Very versatile verb. Key phrases: halten für = to regard as; eine Rede halten = give a speech; Wort halten = keep one's promise; sich halten an = to stick to/follow (rules).",
+    "related": [
+      "erhalten",
+      "sich halten",
+      "sich verhalten"
+    ],
+    "added": "2026-04-06 14:01:00"
+  },
+  {
+    "id": "sich-halten",
+    "word": "sich halten",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "hielt sich",
+    "past_participle": "gehalten",
+    "is_separable": false,
+    "reflexive": true,
+    "family_root": "halten",
+    "definitions": [
+      {
+        "meaning": "to stick to, to follow, to abide by",
+        "note": "sich halten an + AKK"
+      },
+      {
+        "meaning": "to keep, to stay (fresh/good)",
+        "note": "das Essen hält sich drei Tage"
+      },
+      {
+        "meaning": "to hold on, to stay upright",
+        "note": "sich halten an + DAT"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Es ist wichtig, sich an die Regeln zu halten.",
+        "en": "It's important to stick to the rules."
+      },
+      {
+        "de": "Der Joghurt hält sich noch eine Woche.",
+        "en": "The yogurt will keep for another week."
+      },
+      {
+        "de": "Ich halte mich an deinen Rat.",
+        "en": "I'm following your advice."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "grammar & structure"
+    ],
+    "tags": [
+      "reflexive"
+    ],
+    "register": "neutral",
+    "notes": "sich halten an + AKK = to stick to/follow. sich halten = to keep/stay fresh (food). Different from halten (non-reflexive).",
+    "related": [
+      "erhalten",
+      "halten",
+      "sich verhalten"
+    ],
+    "added": "2026-04-06 14:02:00"
+  },
+  {
+    "id": "erhalten",
+    "word": "erhalten",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "erhielt",
+    "past_participle": "erhalten",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "halten",
+    "prefix": "er-",
+    "definitions": [
+      {
+        "meaning": "to receive, to get (formal)",
+        "note": null
+      },
+      {
+        "meaning": "to preserve, to maintain",
+        "note": "etwas erhalten = to keep something in its state"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe Ihren Brief erhalten, vielen Dank.",
+        "en": "I received your letter, thank you very much."
+      },
+      {
+        "de": "Das alte Gebäude wurde gut erhalten.",
+        "en": "The old building was well preserved."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "erhalten = to receive (formal; bekommen is the everyday equivalent). Also: to preserve/maintain (das Gebäude erhalten). gut erhalten = well preserved.",
+    "related": [
+      "bekommen",
+      "halten",
+      "sich halten",
+      "sich verhalten"
+    ],
+    "added": "2026-04-06 14:03:00"
+  },
+  {
+    "id": "ueberholen",
+    "word": "überholen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "überholte",
+    "past_participle": "überholt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "holen",
+    "prefix": "über-",
+    "definitions": [
+      {
+        "meaning": "to overtake, to pass (a vehicle)",
+        "note": null
+      },
+      {
+        "meaning": "to overhaul, to service (a machine)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Auto überholte den LKW mit 160 km/h.",
+        "en": "The car overtook the truck at 160 km/h."
+      },
+      {
+        "de": "Diese Technologie ist völlig überholt.",
+        "en": "This technology is completely outdated."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "überholt = overtaken, but also outdated/obsolete as adjective.",
+    "related": [
+      "abholen",
+      "einholen",
+      "holen",
+      "wiederholen"
+    ],
+    "added": "2026-04-06 14:04:00"
+  },
+  {
+    "id": "einholen",
+    "word": "einholen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "holte ein",
+    "past_participle": "eingeholt",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "holen",
+    "prefix": "ein-",
+    "definitions": [
+      {
+        "meaning": "to catch up with, to make up for",
+        "note": null
+      },
+      {
+        "meaning": "to fetch, to get in (shopping)",
+        "note": "Swiss German: einholen gehen = go shopping"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er holte den Führenden im letzten Kilometer ein.",
+        "en": "He caught up with the leader in the last kilometre."
+      },
+      {
+        "de": "Die verlorene Zeit lässt sich nicht mehr einholen.",
+        "en": "The lost time can no longer be made up."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": "einholen = to catch up with / to make up for lost time. In Swiss German: einholen gehen = to go shopping.",
+    "related": [
+      "abholen",
+      "holen",
+      "wiederholen",
+      "überholen"
+    ],
+    "added": "2026-04-06 14:05:00"
+  },
+  {
+    "id": "der-wechsel",
+    "word": "der Wechsel",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Wechsel",
+    "definitions": [
+      {
+        "meaning": "change, switch, transition",
+        "note": null
+      },
+      {
+        "meaning": "exchange (of currency)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Wechsel von der Schule zur Uni war schwierig.",
+        "en": "The transition from school to university was difficult."
+      },
+      {
+        "de": "Ein häufiger Wechsel des Jobs ist heutzutage normal.",
+        "en": "Frequently changing jobs is normal nowadays."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "money & shopping"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "der Wechsel = change/switch (noun); wechseln = to change (verb). im Wechsel = alternately.",
+    "related": [
+      "wechseln",
+      "ändern"
+    ],
+    "added": "2026-04-06 14:06:00"
+  },
+  {
+    "id": "wechseln",
+    "word": "wechseln",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "wechselte",
+    "past_participle": "gewechselt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "wechseln",
+    "definitions": [
+      {
+        "meaning": "to change, to switch, to exchange",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich muss das Thema wechseln.",
+        "en": "I need to change the subject."
+      },
+      {
+        "de": "Können Sie mir einen 50-Euro-Schein wechseln?",
+        "en": "Can you change a 50-euro note for me?"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "money & shopping"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "wechseln = to change/switch/exchange. Geld wechseln = to change money. den Job wechseln = to change jobs.",
+    "related": [
+      "der Wechsel"
+    ],
+    "added": "2026-04-06 14:07:00"
+  },
+  {
+    "id": "auswaehlen",
+    "word": "auswählen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "wählte aus",
+    "past_participle": "ausgewählt",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "wählen",
+    "prefix": "aus-",
+    "definitions": [
+      {
+        "meaning": "to select, to choose (from a range of options)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich wähle den blauen Mantel aus.",
+        "en": "I'll select the blue coat."
+      },
+      {
+        "de": "Sie hat sorgfältig die besten Kandidaten ausgewählt.",
+        "en": "She carefully selected the best candidates."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": "auswählen = to select from options (more deliberate than wählen). die Auswahl = selection, choice.",
+    "related": [
+      "wählen",
+      "die Wahl",
+      "sich entscheiden"
+    ],
+    "added": "2026-04-06 14:08:00"
+  },
+  {
+    "id": "die-wahl",
+    "word": "die Wahl",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Wahlen",
+    "definitions": [
+      {
+        "meaning": "choice, option",
+        "note": null
+      },
+      {
+        "meaning": "election, vote",
+        "note": "die Parlamentswahl = parliamentary election"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie haben die Wahl zwischen zwei Optionen.",
+        "en": "You have the choice between two options."
+      },
+      {
+        "de": "Bei der letzten Wahl hat sie nicht abgestimmt.",
+        "en": "She didn't vote in the last election."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Wahl = both choice and election. keine Wahl haben = to have no choice. zur Wahl gehen = to go and vote.",
+    "related": [
+      "auswählen",
+      "die Entscheidung",
+      "sich entscheiden",
+      "wählen"
+    ],
+    "added": "2026-04-06 14:09:00"
+  },
+  {
+    "id": "die-entscheidung",
+    "word": "die Entscheidung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Entscheidungen",
+    "definitions": [
+      {
+        "meaning": "decision, choice",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das war eine schwierige Entscheidung.",
+        "en": "That was a difficult decision."
+      },
+      {
+        "de": "Eine Entscheidung treffen = to make a decision.",
+        "en": "Eine Entscheidung treffen = to make a decision."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "eine Entscheidung treffen = to make a decision. die Entscheidungsfindung = decision-making process.",
+    "related": [
+      "sich entscheiden",
+      "die Wahl"
+    ],
+    "added": "2026-04-06 14:10:00"
+  },
+  {
+    "id": "handeln",
+    "word": "handeln",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "handelte",
+    "past_participle": "gehandelt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "handeln",
+    "definitions": [
+      {
+        "meaning": "to act, to take action",
+        "note": null
+      },
+      {
+        "meaning": "to trade, to deal in",
+        "note": "handeln mit + DAT"
+      },
+      {
+        "meaning": "to be about, to deal with",
+        "note": "es handelt sich um + AKK; handelt von + DAT"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir müssen jetzt handeln!",
+        "en": "We need to act now!"
+      },
+      {
+        "de": "Er handelt mit Antiquitäten.",
+        "en": "He deals in antiques."
+      },
+      {
+        "de": "Der Film handelt von einer Freundschaft.",
+        "en": "The film is about a friendship."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "money & shopping",
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Three main meanings: (1) to act; (2) to trade; (3) handeln von = to be about (a book/film). es handelt sich um = it concerns/is about.",
+    "related": [
+      "das Handeln",
+      "das Verhalten",
+      "sich verhalten"
+    ],
+    "added": "2026-04-06 14:11:00"
+  },
+  {
+    "id": "das-handeln",
+    "word": "das Handeln",
+    "type": "noun",
+    "gender": "das",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "action, acting, conduct",
+        "note": "no plural; nominalised infinitive"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Handeln zählt mehr als Worte.",
+        "en": "Actions count more than words."
+      },
+      {
+        "de": "Sein Handeln war unverantwortlich.",
+        "en": "His conduct was irresponsible."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Nominalised form of handeln. das Handeln = the act of acting/conduct. Often used in ethical or philosophical contexts.",
+    "related": [
+      "das Verhalten",
+      "handeln",
+      "sich verhalten"
+    ],
+    "added": "2026-04-06 14:12:00"
+  },
+  {
+    "id": "sich-verhalten",
+    "word": "sich verhalten",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "verhielt sich",
+    "past_participle": "verhalten",
+    "is_separable": false,
+    "reflexive": true,
+    "family_root": "halten",
+    "prefix": "ver-",
+    "definitions": [
+      {
+        "meaning": "to behave, to act, to conduct oneself",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie verhalten sich, als ob nichts passiert wäre.",
+        "en": "They behave as if nothing had happened."
+      },
+      {
+        "de": "Du verhältst dich komisch heute.",
+        "en": "You're behaving strangely today."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "daily life"
+    ],
+    "tags": [
+      "reflexive"
+    ],
+    "register": "neutral",
+    "notes": "sich verhalten = to behave (reflexive); das Verhalten = behaviour (noun). sich gut/schlecht verhalten = to behave well/badly.",
+    "related": [
+      "das Handeln",
+      "das Verhalten",
+      "erhalten",
+      "halten",
+      "handeln",
+      "sich halten"
+    ],
+    "added": "2026-04-06 14:13:00"
+  },
+  {
+    "id": "das-verhalten",
+    "word": "das Verhalten",
+    "type": "noun",
+    "gender": "das",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "behaviour, conduct",
+        "note": "no plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sein Verhalten hat mich überrascht.",
+        "en": "His behaviour surprised me."
+      },
+      {
+        "de": "Ein Zoologe studiert das Verhalten von Tieren.",
+        "en": "A zoologist studies the behaviour of animals."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das Verhalten = behaviour (general); die Umgangsformen = manners (social etiquette).",
+    "related": [
+      "das Handeln",
+      "handeln",
+      "sich verhalten"
+    ],
+    "added": "2026-04-06 14:14:00"
+  },
+  {
+    "id": "hoffen",
+    "word": "hoffen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "hoffte",
+    "past_participle": "gehofft",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "hoffen",
+    "definitions": [
+      {
+        "meaning": "to hope",
+        "note": "hoffen auf + AKK or hoffen, dass..."
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich hoffe, es geht dir gut.",
+        "en": "I hope you're doing well."
+      },
+      {
+        "de": "Hoffen wir das Beste!",
+        "en": "Let's hope for the best!"
+      }
+    ],
+    "topics": [
+      "emotions",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "die Hoffnung = hope (noun). hoffentlich = hopefully. auf etwas hoffen = to hope for something.",
+    "related": [],
+    "added": "2026-04-06 14:15:00"
+  },
+  {
+    "id": "bewusst",
+    "word": "bewusst",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "conscious, aware",
+        "note": "sich bewusst sein + GEN = to be aware of"
+      },
+      {
+        "meaning": "deliberate, intentional",
+        "note": "er hat das bewusst gemacht = he did that deliberately"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bin mir des Problems bewusst.",
+        "en": "I am aware of the problem."
+      },
+      {
+        "de": "Das war eine bewusste Entscheidung.",
+        "en": "That was a deliberate decision."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "sich bewusst sein + GEN = to be aware of. bewusst = conscious/aware (adjective) or deliberately (adverb). das Bewusstsein = consciousness/awareness.",
+    "related": [
+      "das Bewusstsein"
+    ],
+    "added": "2026-04-06 14:16:00"
+  },
+  {
+    "id": "das-bewusstsein",
+    "word": "das Bewusstsein",
+    "type": "noun",
+    "gender": "das",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "consciousness, awareness",
+        "note": "no plural"
+      },
+      {
+        "meaning": "conscience, sense of",
+        "note": "das Umweltbewusstsein = environmental awareness"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er verlor das Bewusstsein nach dem Unfall.",
+        "en": "He lost consciousness after the accident."
+      },
+      {
+        "de": "Das Bewusstsein für Nachhaltigkeit wächst.",
+        "en": "Awareness of sustainability is growing."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das Bewusstsein = consciousness (medical) or awareness (social). ins Bewusstsein rufen = to bring to awareness.",
+    "related": [
+      "bewusst"
+    ],
+    "added": "2026-04-06 14:17:00"
+  },
+  {
+    "id": "widersprechen",
+    "word": "widersprechen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "widersprach",
+    "past_participle": "widersprochen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "sprechen",
+    "prefix": "wider-",
+    "preposition": "DAT",
+    "definitions": [
+      {
+        "meaning": "to contradict, to object, to disagree with",
+        "note": "+ DAT"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er widerspricht ihr immer, egal was sie sagt.",
+        "en": "He always contradicts her, no matter what she says."
+      },
+      {
+        "de": "Das widerspricht meiner Überzeugung.",
+        "en": "That contradicts my conviction."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Always takes dative: ich widerspreche DIR (not dich). der Widerspruch = contradiction. immer widersprechen müssen = to always have to disagree (colloquial).",
+    "related": [
+      "sprechen",
+      "zustimmen"
+    ],
+    "added": "2026-04-06 14:18:00"
+  },
+  {
+    "id": "stellen",
+    "word": "stellen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "stellte",
+    "past_participle": "gestellt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "stellen",
+    "definitions": [
+      {
+        "meaning": "to place, to put (upright)",
+        "note": "places something vertical"
+      },
+      {
+        "meaning": "eine Frage stellen — to ask a question",
+        "note": "fixed expression"
+      },
+      {
+        "meaning": "sich stellen — to present oneself; to turn oneself in",
+        "note": "reflexive"
+      },
+      {
+        "meaning": "to set (a clock, a trap)",
+        "note": "die Uhr stellen"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie stellte die Flasche auf den Tisch.",
+        "en": "She placed the bottle on the table."
+      },
+      {
+        "de": "Der Kursteilnehmer stellte eine sinnvolle Frage.",
+        "en": "The course participant asked a sensible question."
+      },
+      {
+        "de": "Er stellte sich der Polizei.",
+        "en": "He turned himself in to the police."
+      },
+      {
+        "de": "Ich habe den Wecker auf 7 Uhr gestellt.",
+        "en": "I set the alarm for 7 o'clock."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "stellen = to place upright (vs legen = flat, setzen = seat). Key phrases: eine Frage stellen = ask a question; sich vorstellen = introduce oneself; zur Verfügung stellen = to make available; sich stellen = to present oneself / turn oneself in.",
+    "related": [
+      "legen",
+      "sich vorstellen"
+    ],
+    "added": "2026-04-06 14:19:00"
+  },
+  {
+    "id": "sinnvoll",
+    "word": "sinnvoll",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "sensible, meaningful, useful, worthwhile",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist ein sinnvoller Vorschlag.",
+        "en": "That's a sensible suggestion."
+      },
+      {
+        "de": "Sie nutzt ihre Zeit sinnvoll.",
+        "en": "She makes good use of her time."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "sinnvoll = sensible/meaningful (NOT to be confused with sensibel = sensitive). Opposite: sinnlos = pointless, meaningless.",
+    "related": [
+      "sensibel"
+    ],
+    "added": "2026-04-06 14:20:00"
+  },
+  {
+    "id": "sensibel",
+    "word": "sensibel",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "sensitive (emotionally or physically)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er ist ein sehr sensibler Mensch.",
+        "en": "He is a very sensitive person."
+      },
+      {
+        "de": "Sie reagiert sensibel auf Kritik.",
+        "en": "She reacts sensitively to criticism."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "False friend! sensibel ≠ English 'sensible' (= vernünftig in German). sensibel = sensitive. Also used for sensitive topics: ein sensibles Thema.",
+    "related": [
+      "sinnvoll"
+    ],
+    "added": "2026-04-06 14:21:00"
+  },
+  {
+    "id": "die-aeusserung",
+    "word": "die Äußerung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Äußerungen",
+    "definitions": [
+      {
+        "meaning": "statement, remark, expression (of opinion)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Seine Äußerungen zur Politik sorgten für Aufregung.",
+        "en": "His statements about politics caused a stir."
+      },
+      {
+        "de": "Sie bat ihn, sich zu diesem Thema zu äußern.",
+        "en": "She asked him to make a statement on this topic."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "sich äußern zu + DAT = to comment on / make a statement about. die Äußerung is more formal than die Bemerkung.",
+    "related": [
+      "die Bemerkung",
+      "der Ausdruck"
+    ],
+    "added": "2026-04-06 14:22:00"
+  },
+  {
+    "id": "die-stimme",
+    "word": "die Stimme",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Stimmen",
+    "definitions": [
+      {
+        "meaning": "voice (human)",
+        "note": null
+      },
+      {
+        "meaning": "vote (in an election)",
+        "note": "seine Stimme abgeben = to cast one's vote"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie hat eine wunderschöne Stimme.",
+        "en": "She has a beautiful voice."
+      },
+      {
+        "de": "Die Partei hat viele Stimmen verloren.",
+        "en": "The party lost many votes."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Two main meanings: (1) voice — 'mit lauter Stimme' = in a loud voice; (2) vote — 'seine Stimme abgeben' = to cast one's vote. stimmen = to be correct / to tune / to vote.",
+    "related": [
+      "stimmen",
+      "anstimmen",
+      "abstimmen",
+      "zustimmen"
+    ],
+    "added": "2026-04-06 14:23:00"
+  },
+  {
+    "id": "stimmen",
+    "word": "stimmen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "stimmte",
+    "past_participle": "gestimmt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "stimmen",
+    "definitions": [
+      {
+        "meaning": "to be correct, to be right",
+        "note": "das stimmt = that's right"
+      },
+      {
+        "meaning": "to tune (an instrument)",
+        "note": null
+      },
+      {
+        "meaning": "to vote",
+        "note": "für/gegen etwas stimmen"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Stimmt das? — Ja, das stimmt.",
+        "en": "Is that right? — Yes, that's right."
+      },
+      {
+        "de": "Die Mehrheit stimmte für den Vorschlag.",
+        "en": "The majority voted for the proposal."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "das stimmt! = that's right/correct! Very common in conversation. Root of: anstimmen, abstimmen, zustimmen, widersprechen (opposite).",
+    "related": [
+      "die Stimme",
+      "anstimmen",
+      "abstimmen",
+      "zustimmen"
+    ],
+    "added": "2026-04-06 14:24:00"
+  },
+  {
+    "id": "anstimmen",
+    "word": "anstimmen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "stimmte an",
+    "past_participle": "angestimmt",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "stimmen",
+    "prefix": "an-",
+    "definitions": [
+      {
+        "meaning": "to strike up, to start singing/playing",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Vögel stimmten ihr Morgenlied an.",
+        "en": "The birds struck up their morning song."
+      },
+      {
+        "de": "Die Menge stimmte eine Hymne an.",
+        "en": "The crowd struck up a hymn."
+      }
+    ],
+    "topics": [
+      "culture & arts",
+      "language & communication"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "formal",
+    "notes": "anstimmen = to start singing or playing music (often in a group). Slightly literary/formal.",
+    "related": [
+      "stimmen",
+      "die Stimme",
+      "abstimmen",
+      "zustimmen"
+    ],
+    "added": "2026-04-06 14:25:00"
+  },
+  {
+    "id": "abstimmen",
+    "word": "abstimmen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "stimmte ab",
+    "past_participle": "abgestimmt",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "stimmen",
+    "prefix": "ab-",
+    "definitions": [
+      {
+        "meaning": "to vote, to take a vote",
+        "note": "über + AKK"
+      },
+      {
+        "meaning": "to coordinate, to align",
+        "note": "etw. aufeinander abstimmen"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir haben über den Vorschlag abgestimmt.",
+        "en": "We voted on the proposal."
+      },
+      {
+        "de": "Die Termine müssen aufeinander abgestimmt werden.",
+        "en": "The dates need to be coordinated with each other."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "work & academia"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": "über etwas abstimmen = to vote on something. die Volksabstimmung = referendum. Also: to coordinate/align things.",
+    "related": [
+      "anstimmen",
+      "die Stimme",
+      "stimmen",
+      "zustimmen"
+    ],
+    "added": "2026-04-06 14:26:00"
+  },
+  {
+    "id": "zustimmen",
+    "word": "zustimmen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "stimmte zu",
+    "past_participle": "zugestimmt",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "stimmen",
+    "prefix": "zu-",
+    "preposition": "DAT",
+    "definitions": [
+      {
+        "meaning": "to agree, to approve, to consent",
+        "note": "+ DAT"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich stimme dir vollkommen zu.",
+        "en": "I completely agree with you."
+      },
+      {
+        "de": "Alle stimmten dem Vorschlag zu.",
+        "en": "Everyone agreed to the proposal."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "people & relationships"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": "Takes dative: ich stimme DIR zu. Opposite: widersprechen (to contradict/disagree).",
+    "related": [
+      "abstimmen",
+      "anstimmen",
+      "die Stimme",
+      "stimmen",
+      "widersprechen"
+    ],
+    "added": "2026-04-06 14:27:00"
+  },
+  {
+    "id": "die-bemerkung",
+    "word": "die Bemerkung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Bemerkungen",
+    "definitions": [
+      {
+        "meaning": "comment, remark, observation",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er machte eine witzige Bemerkung beim Essen.",
+        "en": "He made a funny remark during dinner."
+      },
+      {
+        "de": "Ihre kritischen Bemerkungen waren sehr hilfreich.",
+        "en": "Her critical comments were very helpful."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "eine Bemerkung machen = to make a remark. die Randbemerkung = marginal note. Less formal than die Äußerung.",
+    "related": [
+      "die Äußerung",
+      "der Ausdruck"
+    ],
+    "added": "2026-04-06 14:28:00"
+  },
+  {
+    "id": "der-ausdruck",
+    "word": "der Ausdruck",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Ausdrücke",
+    "definitions": [
+      {
+        "meaning": "expression, term, phrase (linguistic)",
+        "note": null
+      },
+      {
+        "meaning": "expression (on a face)",
+        "note": "der Gesichtsausdruck = facial expression"
+      },
+      {
+        "meaning": "printout (computing)",
+        "note": "einen Ausdruck machen = to print something out"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist ein veralteter Ausdruck.",
+        "en": "That's an outdated expression."
+      },
+      {
+        "de": "Sie hatte einen traurigen Ausdruck im Gesicht.",
+        "en": "She had a sad expression on her face."
+      },
+      {
+        "de": "Kannst du mir einen Ausdruck davon machen?",
+        "en": "Can you make a printout of that for me?"
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Three meanings: (1) linguistic expression/term; (2) facial expression; (3) printout. die Ausdrucksweise = way of expressing oneself.",
+    "related": [
+      "die Äußerung",
+      "die Bemerkung"
+    ],
+    "added": "2026-04-06 14:29:00"
+  },
+  {
+    "id": "beanspruchen",
+    "word": "beanspruchen",
+    "type": "verb",
+    "auxiliary": "haben",
+    "past_tense": "beanspruchte",
+    "past_participle": "beansprucht",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "beanspruchen",
+    "definitions": [
+      {
+        "meaning": "to claim, to demand, to assert (a right)",
+        "note": null
+      },
+      {
+        "meaning": "to take up, to occupy (time/space)",
+        "note": "das beansprucht viel Zeit"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie beanspruchen das Recht auf freie Meinungsäußerung.",
+        "en": "They claim the right to freedom of expression."
+      },
+      {
+        "de": "Diese Aufgabe beansprucht viel Zeit.",
+        "en": "This task takes up a lot of time."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "beanspruchen = to claim (formally) or to take up (time/resources). der Anspruch = claim, entitlement.",
+    "related": [
+      "der Anspruch"
+    ],
+    "added": "2026-04-06 14:30:00"
+  },
+  {
+    "id": "der-anspruch",
+    "word": "der Anspruch",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Ansprüche",
+    "definitions": [
+      {
+        "meaning": "claim, entitlement, right",
+        "note": "Anspruch haben auf + AKK"
+      },
+      {
+        "meaning": "demand, expectation, standard",
+        "note": "hohe Ansprüche = high standards"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie hat Anspruch auf Kindergeld.",
+        "en": "She is entitled to child benefit."
+      },
+      {
+        "de": "Er stellt hohe Ansprüche an sich selbst.",
+        "en": "He sets high standards for himself."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "Anspruch haben auf + AKK = to be entitled to. hohe Ansprüche stellen = to have high demands/standards. in Anspruch nehmen = to make use of / to take up (time).",
+    "related": [
+      "beanspruchen"
+    ],
+    "added": "2026-04-06 14:31:00"
   }
 ]
