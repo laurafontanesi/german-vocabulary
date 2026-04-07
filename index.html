@@ -452,6 +452,62 @@
     justify-content: center;
   }
 
+  /* ── mute toggle button ── */
+  .practice-mute-btn {
+    position: absolute;
+    top: 1rem; left: 3.5rem;
+    background: none; border: none;
+    font-size: 1rem; cursor: pointer;
+    color: var(--ink-muted);
+    line-height: 1; padding: 2px;
+    transition: color 0.15s;
+  }
+  .practice-mute-btn:hover { color: var(--ink); }
+  .practice-mute-btn.muted { color: var(--accent); opacity: 0.7; }
+
+  /* ── word card modal ── */
+  #card-modal-overlay {
+    display: none; position: fixed; inset: 0;
+    background: rgba(26,26,24,0.7);
+    z-index: 300; align-items: center; justify-content: center;
+  }
+  #card-modal-overlay.open { display: flex; }
+  .card-modal-box {
+    background: var(--paper-card);
+    border-radius: 12px;
+    padding: 1.5rem 1.75rem 1.5rem;
+    max-width: 560px; width: 92%;
+    max-height: 85vh; overflow-y: auto;
+    position: relative;
+  }
+  .card-modal-box .card-body {
+    display: block;
+    padding: 0; border-top: none; margin-top: 0;
+  }
+  .card-modal-header {
+    display: flex; align-items: baseline;
+    justify-content: space-between; gap: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-soft);
+  }
+  .card-modal-word {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem; font-weight: 400; color: var(--ink);
+  }
+  .card-modal-close {
+    background: none; border: none; font-size: 1.2rem;
+    cursor: pointer; color: var(--ink-muted); flex-shrink: 0;
+  }
+  .card-modal-next {
+    width: 100%; margin-top: 1.25rem; padding: 10px;
+    background: var(--ink); color: var(--paper);
+    border: none; border-radius: 6px;
+    font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500;
+    cursor: pointer; transition: opacity 0.12s;
+  }
+  .card-modal-next:hover { opacity: 0.85; }
+
   .tags-row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 4px; }
   .tag {
     font-size: 11px;
@@ -1042,15 +1098,13 @@
 <div id="practice-overlay">
   <div class="practice-box">
     <button class="practice-back" onclick="backToLauncher()" title="Back">←</button>
+    <button class="practice-mute-btn" id="mute-btn" onclick="toggleMute()" title="Toggle audio">🔊</button>
     <button class="practice-summary-btn" onclick="openSummary()">Summary</button>
     <button class="practice-close" onclick="closePractice()">✕</button>
     <div class="practice-prompt" id="practice-prompt"></div>
     <div class="practice-word" id="practice-word"></div>
     <div class="practice-sentence-wrap" id="practice-sentence-wrap" style="display:none">
       <div class="practice-sentence" id="practice-sentence"></div>
-      <button class="speak-btn" id="speak-sentence-btn" title="Read aloud" onclick="speakText(currentSpeakText, this)">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
-      </button>
     </div>
     <input type="text" id="practice-input" placeholder="Your answer…" onkeydown="handleEnter(event)">
     <button class="practice-submit" onclick="checkAnswer()">Check</button>
@@ -1058,6 +1112,7 @@
     <div class="practice-btn-row">
       <button class="practice-next" id="btn-next" onclick="nextWord()">Next →</button>
       <button class="practice-next" id="btn-skip" onclick="nextWord()" style="display:none">Skip →</button>
+      <button class="practice-next" id="btn-view-card" onclick="openCardModal()" style="display:none">View card ↗</button>
     </div>
     <div class="practice-word-info" id="practice-word-info"></div>
     <div class="practice-score">
@@ -1076,6 +1131,18 @@
     <div id="summary-correct-section" class="summary-section"></div>
     <div id="summary-wrong-section" class="summary-section"></div>
     <button class="summary-close-btn" onclick="closeSummary()">Back to practice</button>
+  </div>
+</div>
+
+<!-- word card modal (opened from practice) -->
+<div id="card-modal-overlay">
+  <div class="card-modal-box">
+    <div class="card-modal-header">
+      <div class="card-modal-word" id="card-modal-word"></div>
+      <button class="card-modal-close" onclick="closeCardModal()">✕</button>
+    </div>
+    <div id="card-modal-body"></div>
+    <button class="card-modal-next" onclick="closeCardModal(); nextWord()">Next word →</button>
   </div>
 </div>
 
@@ -1379,30 +1446,105 @@ function searchRelated(word, event) {
 }
 
 // ── text-to-speech ─────────────────────────────────────────────────────────────
+const SPEAK_SVG = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>`;
+const SPEAK_SVG_LG = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>`;
+
 function speakText(text, btn, event) {
   if (event) event.stopPropagation();
   if (!window.speechSynthesis) return;
 
-  // if already speaking this button's text, stop
   if (btn && btn.classList.contains('speaking')) {
     window.speechSynthesis.cancel();
     btn.classList.remove('speaking');
     return;
   }
 
-  // cancel any current speech and clear all speaking states
   window.speechSynthesis.cancel();
   document.querySelectorAll('.speak-btn.speaking').forEach(b => b.classList.remove('speaking'));
 
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = 'de-DE';
-  utterance.rate = 0.9; // slightly slower — easier to follow
+  utterance.rate = 0.9;
   if (btn) {
     btn.classList.add('speaking');
     utterance.onend = () => btn.classList.remove('speaking');
     utterance.onerror = () => btn.classList.remove('speaking');
   }
   window.speechSynthesis.speak(utterance);
+}
+
+function autoPlay(text) {
+  // Play automatically if not muted
+  if (isMuted || !window.speechSynthesis || !text) return;
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = 'de-DE';
+  utterance.rate = 0.9;
+  window.speechSynthesis.speak(utterance);
+}
+
+function toggleMute() {
+  isMuted = !isMuted;
+  sessionStorage.setItem('practiceAudioMuted', isMuted);
+  const btn = document.getElementById('mute-btn');
+  btn.textContent = isMuted ? '🔇' : '🔊';
+  btn.classList.toggle('muted', isMuted);
+  if (isMuted) window.speechSynthesis && window.speechSynthesis.cancel();
+}
+
+function syncMuteBtn() {
+  const btn = document.getElementById('mute-btn');
+  if (!btn) return;
+  btn.textContent = isMuted ? '🔇' : '🔊';
+  btn.classList.toggle('muted', isMuted);
+}
+
+// ── word card modal ────────────────────────────────────────────────────────────
+function openCardModal() {
+  const w = practiceWords[practiceIndex % practiceWords.length];
+  if (!w) return;
+
+  document.getElementById('card-modal-word').innerHTML = formatWord(w);
+
+  // Build card body content (reusing existing helper functions)
+  const grammarPills = buildGrammarPills(w);
+  const defs = (w.definitions || []).map((d, i) =>
+    `<li><span class="def-num">${i+1}.</span><span>${d.meaning}${d.note ? `<span class="def-note">(${d.note})</span>` : ''}</span></li>`
+  ).join('');
+  const examples = (w.examples || []).map(e => {
+    const esc = e.de.replace(/'/g, '&#39;');
+    return `<div class="example-item">
+      <div class="example-de-row">
+        <div class="example-de">${e.de}</div>
+        <button class="speak-btn" title="Read aloud" onclick="speakText('${esc}', this, event)">
+          ${SPEAK_SVG}
+        </button>
+      </div>
+      <div class="example-en">${e.en}</div>
+    </div>`;
+  }).join('');
+  const topics = (w.topics || []).map(t => `<span class="tag">${t}</span>`).join('');
+  const tags   = (w.tags   || []).map(t => `<span class="tag">${t}</span>`).join('');
+  const related = (w.related || []).map(r =>
+    `<span class="related-chip" onclick="closeCardModal(); searchRelated('${r}', event)">${r}</span>`
+  ).join('');
+  const notes = w.notes ? `<div class="notes-box">${w.notes}</div>` : '';
+
+  document.getElementById('card-modal-body').innerHTML = `
+    <div class="card-body">
+      ${grammarPills ? `<div class="grammar-row">${grammarPills}</div>` : ''}
+      ${defs ? `<div class="section-head">Meaning</div><ul class="def-list">${defs}</ul>` : ''}
+      ${examples ? `<div class="section-head">Examples</div><div class="example-list">${examples}</div>` : ''}
+      ${topics || tags ? `<div class="section-head">Topics & tags</div><div class="tags-row">${topics}${tags}</div>` : ''}
+      ${related ? `<div class="section-head">Related words</div><div class="related-row">${related}</div>` : ''}
+      ${notes}
+    </div>`;
+
+  document.getElementById('card-modal-overlay').classList.add('open');
+}
+
+function closeCardModal() {
+  document.getElementById('card-modal-overlay').classList.remove('open');
 }
 
 // ── practice ───────────────────────────────────────────────────────────────────
@@ -1415,6 +1557,7 @@ let currentAnswer = ''; // for fill-in tasks
 let answered = false;  // true after answer has been checked
 let sessionLog = [];   // {word, correct, yourAnswer, correctAnswer}
 let currentSpeakText = ''; // German text to read aloud in practice
+let isMuted = sessionStorage.getItem('practiceAudioMuted') === 'true';
 
 // ── article patterns to detect in sentences ──────────────────────────────────
 const ARTICLE_RE = /\b(der|die|das|ein|eine|einen|einem|einer|eines|den|dem|des)\b/gi;
@@ -1641,6 +1784,9 @@ function loadPracticeWord() {
   // stop any in-progress speech
   window.speechSynthesis && window.speechSynthesis.cancel();
 
+  // sync mute button icon
+  syncMuteBtn();
+
   // reset UI
   answered = false;
   document.getElementById('practice-input').value = '';
@@ -1650,41 +1796,57 @@ function loadPracticeWord() {
   document.querySelector('.practice-submit').style.display = 'block';
   document.getElementById('btn-next').style.display = 'none';
   document.getElementById('btn-skip').style.display = 'inline-block';
+  document.getElementById('btn-view-card').style.display = 'none';
   document.getElementById('practice-word-info').classList.remove('visible');
   wrapEl.style.display = 'none';
   wordEl.style.display = 'block';
-  wordEl.innerHTML = ''; // reset (may contain speak button)
+  wordEl.innerHTML = '';
   currentAnswer = '';
   currentSpeakText = '';
 
+  // The text to auto-speak: always the German word/verb/noun (never the sentence)
+  let autoSpeakText = '';
+
   if (practiceMode === 'de-en') {
     promptEl.textContent = 'Translate into English:';
-    // Show word with a small speaker button beside it
-    const speakIcon = `<button class="speak-btn" title="Read aloud" onclick="speakText('${w.word.replace(/'/g,"\\'")}', this)" style="font-size:1rem">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
-    </button>`;
+    const esc = w.word.replace(/'/g, "\\'");
+    const speakIcon = `<button class="speak-btn" title="Read aloud" onclick="speakText('${esc}', this)">${SPEAK_SVG_LG}</button>`;
     wordEl.innerHTML = `<div class="practice-word-wrap"><span>${w.word}</span>${speakIcon}</div>`;
+    autoSpeakText = w.word;
+
   } else if (practiceMode === 'en-de') {
     promptEl.textContent = 'Translate into German:';
     wordEl.textContent = w.definitions[0].meaning;
+    // no auto-play for EN→DE (prompt is English)
+
   } else if (practiceMode === 'conjugation') {
     const task = buildConjugationTask(w);
     const tenseLabel = task.tense ? ` (${task.tense})` : '';
     promptEl.textContent = `Fill in the correct form${tenseLabel}:`;
-    wordEl.textContent = w.word;
+    const esc = w.word.replace(/'/g, "\\'");
+    const speakIcon = `<button class="speak-btn" title="Read aloud" onclick="speakText('${esc}', this)">${SPEAK_SVG_LG}</button>`;
+    wordEl.innerHTML = `<div class="practice-word-wrap"><span>${w.word}</span>${speakIcon}</div>`;
     sentenceEl.innerHTML = task.blanked.replace('___', '<span class="blank">___</span>');
-    currentSpeakText = task.sentence;
     wrapEl.style.display = 'flex';
     currentAnswer = task.answer;
+    autoSpeakText = w.word;
+
   } else if (practiceMode === 'articles') {
     const task = buildArticleTask(w);
     promptEl.textContent = 'Fill in the correct article:';
     const bare = w.word.replace(/^(der|die|das)\s+/i, '');
-    wordEl.textContent = '___ ' + bare;
+    const esc = bare.replace(/'/g, "\\'");
+    const speakIcon = `<button class="speak-btn" title="Read aloud" onclick="speakText('${esc}', this)">${SPEAK_SVG_LG}</button>`;
+    wordEl.innerHTML = `<div class="practice-word-wrap"><span>___ ${bare}</span>${speakIcon}</div>`;
     sentenceEl.innerHTML = task.blanked.replace('___', '<span class="blank">___</span>');
-    currentSpeakText = task.sentence;
     wrapEl.style.display = 'flex';
     currentAnswer = task.answer;
+    autoSpeakText = bare;
+  }
+
+  // auto-play with a small delay so the UI has settled
+  if (autoSpeakText) {
+    setTimeout(() => autoPlay(autoSpeakText), 300);
   }
 
   document.getElementById('practice-input').focus();
@@ -1788,9 +1950,10 @@ function checkAnswer() {
   info.innerHTML = grammarHTML + defs + (exHTML ? '<div style="margin-top:6px">' + exHTML + '</div>' : '');
   info.classList.add('visible');
 
-  // swap Check → Next
+  // swap Check → Next + View card
   document.querySelector('.practice-submit').style.display = 'none';
   document.getElementById('btn-next').style.display = 'inline-block';
+  document.getElementById('btn-view-card').style.display = 'inline-block';
   document.getElementById('btn-skip').style.display = 'none';
   updateScore();
 }
@@ -1853,6 +2016,9 @@ document.getElementById('launcher-overlay').addEventListener('click', function(e
 });
 document.getElementById('summary-overlay').addEventListener('click', function(e) {
   if (e.target === this) closeSummary();
+});
+document.getElementById('card-modal-overlay').addEventListener('click', function(e) {
+  if (e.target === this) closeCardModal();
 });
 </script>
 </body>
