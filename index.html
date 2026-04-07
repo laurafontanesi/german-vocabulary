@@ -684,14 +684,15 @@
   .practice-summary-btn {
     position: absolute;
     top: 1rem; right: 3rem;
-    background: none; border: 1px solid var(--border);
+    background: #f5ede0; border: 1px solid #c8a882;
     border-radius: var(--border-radius-md);
     font-family: 'DM Sans', sans-serif;
-    font-size: 12px; color: var(--ink-muted);
-    padding: 3px 10px; cursor: pointer;
+    font-size: 12px; color: #7a5230;
+    font-weight: 500;
+    padding: 4px 12px; cursor: pointer;
     transition: all 0.12s;
   }
-  .practice-summary-btn:hover { border-color: var(--ink-soft); color: var(--ink); }
+  .practice-summary-btn:hover { background: #c8a882; color: white; }
   /* summary overlay */
   #summary-overlay {
     display: none; position: fixed; inset: 0;
@@ -1119,12 +1120,16 @@ function applyFilters() {
       return a.word.localeCompare(b.word, 'de');
     }
     if (sortMode === 'alpha') {
-      return a.word.localeCompare(b.word, 'de');
+      const bareA = a.word.replace(/^(der|die|das|sich|ein|eine)\s+/i, '');
+      const bareB = b.word.replace(/^(der|die|das|sich|ein|eine)\s+/i, '');
+      return bareA.localeCompare(bareB, 'de');
     } else if (sortMode === 'type') {
-      return a.type.localeCompare(b.type) || a.word.localeCompare(b.word, 'de');
+      const bA = a.word.replace(/^(der|die|das|sich|ein|eine)\s+/i, '');
+      const bB = b.word.replace(/^(der|die|das|sich|ein|eine)\s+/i, '');
+      return a.type.localeCompare(b.type) || bA.localeCompare(bB, 'de');
     } else {
       const dateDiff = (b.added || '').localeCompare(a.added || '');
-      return dateDiff !== 0 ? dateDiff : a.word.localeCompare(b.word, 'de');
+      const tbA = a.word.replace(/^(der|die|das|sich|ein|eine)\s+/i, ''); const tbB = b.word.replace(/^(der|die|das|sich|ein|eine)\s+/i, ''); return dateDiff !== 0 ? dateDiff : tbA.localeCompare(tbB, 'de');
     }
   });
 
@@ -1162,7 +1167,7 @@ function cardHTML(w) {
   return `<div class="word-card" id="card-${w.id}" onclick="toggleCard('${w.id}',event)">
     <div class="card-header">
       <div class="card-word">${formatWord(w)}</div>
-      <span class="type-badge type-${w.type === 'adj/adv' ? 'adjadv' : w.type === 'prep/conj' ? 'prepconj' : w.type}">${w.type === 'adj/adv' && w.usage ? 'adj/adv — ' + w.usage : w.type === 'prep/conj' && w.usage ? 'prep/conj — ' + w.usage : w.type}</span>
+      <span class="type-badge type-${w.type === 'adj/adv' ? 'adjadv' : w.type === 'prep/conj' ? 'prepconj' : w.type}">${w.type}</span>
       <div class="card-preview">${preview}</div>
       <span class="card-chevron">▼</span>
     </div>
