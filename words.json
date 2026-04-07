@@ -24641,5 +24641,192 @@
     "notes": null,
     "added": "2026-04-07 14:01:22",
     "usage": "both"
+  },
+  {
+    "id": "ordentlich",
+    "word": "ordentlich",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "tidy, neat, well-organized",
+        "note": null
+      },
+      {
+        "meaning": "proper, decent, respectable",
+        "note": null
+      },
+      {
+        "meaning": "considerable, substantial",
+        "note": "informal usage meaning 'quite a lot'"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sein Zimmer ist immer sehr ordentlich.",
+        "en": "His room is always very tidy."
+      },
+      {
+        "de": "Das hat ordentlich viel Geld gekostet.",
+        "en": "That cost quite a lot of money."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-07 16:50:28",
+    "usage": "both"
+  },
+  {
+    "id": "der-schalter",
+    "word": "der Schalter",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "switch",
+        "note": "electrical device for turning something on/off"
+      },
+      {
+        "meaning": "counter",
+        "note": "service desk at bank, post office, etc."
+      },
+      {
+        "meaning": "ticket window",
+        "note": "at train stations, theaters, etc."
+      }
+    ],
+    "examples": [
+      {
+        "de": "Kannst du bitte den Schalter für das Licht anmachen?",
+        "en": "Can you please turn on the light switch?"
+      },
+      {
+        "de": "Ich muss zum Schalter gehen, um Geld zu wechseln.",
+        "en": "I have to go to the counter to exchange money."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-07 16:51:51",
+    "gender": "der",
+    "plural": "die Schalter"
+  },
+  {
+    "id": "die-aufschrift",
+    "word": "die Aufschrift",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "inscription, text or writing on an object",
+        "note": null
+      },
+      {
+        "meaning": "label, caption",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Aufschrift auf dem Denkmal ist kaum noch lesbar.",
+        "en": "The inscription on the monument is barely readable anymore."
+      },
+      {
+        "de": "Das Medikament hat eine deutsche Aufschrift auf der Verpackung.",
+        "en": "The medication has German text on the packaging."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-07 16:53:14",
+    "gender": "die",
+    "plural": "die Aufschriften"
+  },
+  {
+    "id": "knittern",
+    "word": "knittern",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to wrinkle or crease",
+        "note": "used for fabric, paper, or similar materials"
+      },
+      {
+        "meaning": "to become wrinkled or creased",
+        "note": "intransitive use"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Hemd knittert leicht in der Tasche.",
+        "en": "The shirt wrinkles easily in the bag."
+      },
+      {
+        "de": "Sie knitterte das Papier zusammen und warf es weg.",
+        "en": "She crumpled the paper together and threw it away."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-07 16:54:28",
+    "auxiliary": "haben",
+    "past_tense": "knitterte",
+    "past_participle": "geknittert",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "knittern",
+    "related": [
+      "zerknittert"
+    ]
+  },
+  {
+    "id": "zerknittert",
+    "word": "zerknittert",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "wrinkled, creased, crumpled",
+        "note": "describing fabric, paper, or skin"
+      },
+      {
+        "meaning": "disheveled, rumpled",
+        "note": "describing general appearance"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sein Hemd war völlig zerknittert nach der langen Reise.",
+        "en": "His shirt was completely wrinkled after the long journey."
+      },
+      {
+        "de": "Sie sah zerknittert aus, als ob sie schlecht geschlafen hätte.",
+        "en": "She looked disheveled as if she had slept poorly."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-07 16:55:28",
+    "usage": "both",
+    "related": [
+      "knittern"
+    ]
   }
 ]
