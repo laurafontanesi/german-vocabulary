@@ -1060,7 +1060,7 @@
     <div class="results-bar">
       <div class="results-count" id="results-count"></div>
       <div class="sort-wrap">
-        <button class="sort-btn relevance" id="btn-relevance" onclick="setRelevanceSort()">Relevance</button>
+        <button class="sort-btn relevance" id="btn-relevance" onclick="setSort('relevance',this)">Relevance</button>
         <button class="sort-btn active" id="btn-alpha" onclick="setSort('alpha',this)">A → Z</button>
         <button class="sort-btn" id="btn-type" onclick="setSort('type',this)">By type</button>
         <button class="sort-btn" id="btn-newest" onclick="setSort('newest',this)">Newest</button>
@@ -1185,7 +1185,6 @@ let activeType = null;
 let activeTopic = null;
 let activeAlpha = null;
 let sortMode = 'alpha';
-let useRelevanceSort = false; // true when searching and relevance sort is active
 
 // practice state
 
@@ -1300,18 +1299,8 @@ function clearFilters() {
 }
 function setSort(mode, btn) {
   sortMode = mode;
-  useRelevanceSort = false;
   document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
-  // keep relevance visible if there's a query
-  const q = document.getElementById('search').value.trim();
-  if (q) document.getElementById('btn-relevance').classList.add('visible');
-  applyFilters();
-}
-
-function setRelevanceSort() {
-  useRelevanceSort = true;
-  document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
   applyFilters();
 }
 
@@ -1327,15 +1316,10 @@ function scoreMatch(w, q) {
   const related  = (w.related || []).join(' ').toLowerCase();
   const topics   = (w.topics || []).join(' ').toLowerCase();
 
-  // Score 5: exact word match (bare, no article)
   if (wordBare === q || wordLow === q) return 5;
-  // Score 4: word starts with query
   if (wordBare.startsWith(q) || wordLow.startsWith(q)) return 4;
-  // Score 3: word contains query
   if (wordBare.includes(q) || wordLow.includes(q)) return 3;
-  // Score 2: definition contains query
   if (defs.includes(q)) return 2;
-  // Score 1: notes, examples, tags, related, topics contain query
   if (notes.includes(q) || examples.includes(q) || tags.includes(q) || related.includes(q) || topics.includes(q)) return 1;
   return 0;
 }
@@ -1343,24 +1327,30 @@ function scoreMatch(w, q) {
 function applyFilters() {
   const q = document.getElementById('search').value.toLowerCase().trim();
 
-  const relBtn = document.getElementById('btn-relevance');
-  const sortBtns = ['btn-alpha','btn-type','btn-newest'].map(id => document.getElementById(id));
+  const relBtn  = document.getElementById('btn-relevance');
+  const alphBtn = document.getElementById('btn-alpha');
+  const typeBtn = document.getElementById('btn-type');
+  const newBtn  = document.getElementById('btn-newest');
 
   if (q) {
+    // Show relevance button
     relBtn.classList.add('visible');
-    // auto-switch to relevance when user starts typing (unless they've manually picked another sort)
-    if (!useRelevanceSort && !sortBtns.some(b => b.classList.contains('active') && b.id !== 'btn-alpha')) {
-      useRelevanceSort = true;
-      sortBtns.forEach(b => b.classList.remove('active'));
+    // Auto-switch to relevance when user types, unless they explicitly chose a different sort
+    if (sortMode !== 'type' && sortMode !== 'newest') {
+      sortMode = 'relevance';
+    }
+    if (sortMode === 'relevance') {
+      [alphBtn, typeBtn, newBtn].forEach(b => b.classList.remove('active'));
+      relBtn.classList.add('active');
     }
   } else {
+    // No query: hide relevance, restore previous non-relevance sort
     relBtn.classList.remove('visible');
-    useRelevanceSort = false;
-    // restore the active state on the current sortMode button
-    sortBtns.forEach(b => b.classList.remove('active'));
-    const modeMap = { alpha: 'btn-alpha', type: 'btn-type', newest: 'btn-newest' };
-    const activeId = modeMap[sortMode];
-    if (activeId) document.getElementById(activeId).classList.add('active');
+    relBtn.classList.remove('active');
+    if (sortMode === 'relevance') sortMode = 'alpha';
+    const modeMap = { alpha: alphBtn, type: typeBtn, newest: newBtn };
+    [alphBtn, typeBtn, newBtn].forEach(b => b.classList.remove('active'));
+    if (modeMap[sortMode]) modeMap[sortMode].classList.add('active');
   }
 
   filtered = allWords.filter(w => {
@@ -1375,29 +1365,29 @@ function applyFilters() {
   });
 
   filtered.sort((a, b) => {
-    if (useRelevanceSort && q) {
-      const scoreDiff = scoreMatch(b, q) - scoreMatch(a, q);
-      if (scoreDiff !== 0) return scoreDiff;
+    if (sortMode === 'relevance' && q) {
+      const diff = scoreMatch(b, q) - scoreMatch(a, q);
+      if (diff !== 0) return diff;
       return a.word.localeCompare(b.word, 'de');
     }
-    if (sortMode === 'alpha') {
-      const bareA = a.word.replace(/^(der|die|das|sich|ein|eine)\s+/i, '');
-      const bareB = b.word.replace(/^(der|die|das|sich|ein|eine)\s+/i, '');
-      return bareA.localeCompare(bareB, 'de');
-    } else if (sortMode === 'type') {
+    if (sortMode === 'type') {
       const bA = a.word.replace(/^(der|die|das|sich|ein|eine)\s+/i, '');
       const bB = b.word.replace(/^(der|die|das|sich|ein|eine)\s+/i, '');
       return a.type.localeCompare(b.type) || bA.localeCompare(bB, 'de');
-    } else {
-      // newest: normalise both formats (YYYY-MM-DD and YYYY-MM-DD HH:MM:SS) to 19 chars
-      const dateA = (a.added || '').substring(0, 19);
-      const dateB = (b.added || '').substring(0, 19);
-      const dateDiff = dateB.localeCompare(dateA);
-      if (dateDiff !== 0) return dateDiff;
-      const tbA = a.word.replace(/^(der|die|das|sich|ein|eine)\s+/i, '');
-      const tbB = b.word.replace(/^(der|die|das|sich|ein|eine)\s+/i, '');
-      return tbA.localeCompare(tbB, 'de');
     }
+    if (sortMode === 'newest') {
+      // normalise both YYYY-MM-DD and YYYY-MM-DD HH:MM:SS to same length
+      const dA = (a.added || '').substring(0, 19).padEnd(19, ' ');
+      const dB = (b.added || '').substring(0, 19).padEnd(19, ' ');
+      const diff = dB.localeCompare(dA);
+      if (diff !== 0) return diff;
+      return a.word.replace(/^(der|die|das|sich|ein|eine)\s+/i,'').localeCompare(
+             b.word.replace(/^(der|die|das|sich|ein|eine)\s+/i,''), 'de');
+    }
+    // default: alpha
+    const bareA = a.word.replace(/^(der|die|das|sich|ein|eine)\s+/i, '');
+    const bareB = b.word.replace(/^(der|die|das|sich|ein|eine)\s+/i, '');
+    return bareA.localeCompare(bareB, 'de');
   });
 
   renderWords();
