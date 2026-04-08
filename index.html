@@ -1293,15 +1293,24 @@ function toggleAlpha(letter, btn) {
 }
 function clearFilters() {
   activeType = activeTopic = activeAlpha = null;
+  sortMode = 'alpha';
   document.getElementById('search').value = '';
   document.querySelectorAll('.filter-btn, .alpha-btn').forEach(b => b.classList.remove('active'));
+  syncSortButtons();
   applyFilters();
 }
 function setSort(mode, btn) {
   sortMode = mode;
-  document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('active');
+  syncSortButtons();
   applyFilters();
+}
+
+function syncSortButtons() {
+  // Sync button active states purely from sortMode
+  document.getElementById('btn-alpha').classList.toggle('active', sortMode === 'alpha');
+  document.getElementById('btn-type').classList.toggle('active', sortMode === 'type');
+  document.getElementById('btn-newest').classList.toggle('active', sortMode === 'newest');
+  // relevance button: visible only when searching, no 'active' class needed (it's always red when visible)
 }
 
 // ── main filter + render ───────────────────────────────────────────────────────
@@ -1326,32 +1335,22 @@ function scoreMatch(w, q) {
 
 function applyFilters() {
   const q = document.getElementById('search').value.toLowerCase().trim();
-
-  const relBtn  = document.getElementById('btn-relevance');
-  const alphBtn = document.getElementById('btn-alpha');
-  const typeBtn = document.getElementById('btn-type');
-  const newBtn  = document.getElementById('btn-newest');
+  const relBtn = document.getElementById('btn-relevance');
 
   if (q) {
-    // Show relevance button
     relBtn.classList.add('visible');
-    // Auto-switch to relevance when user types, unless they explicitly chose a different sort
-    if (sortMode !== 'type' && sortMode !== 'newest') {
+    // Auto-switch to relevance when user starts typing, but don't override
+    // if they've already explicitly picked a different sort while searching
+    if (sortMode !== 'type' && sortMode !== 'newest' && sortMode !== 'relevance') {
       sortMode = 'relevance';
     }
-    if (sortMode === 'relevance') {
-      [alphBtn, typeBtn, newBtn].forEach(b => b.classList.remove('active'));
-      relBtn.classList.add('active');
-    }
   } else {
-    // No query: hide relevance, restore previous non-relevance sort
     relBtn.classList.remove('visible');
-    relBtn.classList.remove('active');
+    // When query is cleared, fall back to alpha if we were in relevance mode
     if (sortMode === 'relevance') sortMode = 'alpha';
-    const modeMap = { alpha: alphBtn, type: typeBtn, newest: newBtn };
-    [alphBtn, typeBtn, newBtn].forEach(b => b.classList.remove('active'));
-    if (modeMap[sortMode]) modeMap[sortMode].classList.add('active');
   }
+
+  syncSortButtons();
 
   filtered = allWords.filter(w => {
     if (activeType && w.type !== activeType) return false;
@@ -1376,18 +1375,16 @@ function applyFilters() {
       return a.type.localeCompare(b.type) || bA.localeCompare(bB, 'de');
     }
     if (sortMode === 'newest') {
-      // normalise both YYYY-MM-DD and YYYY-MM-DD HH:MM:SS to same length
-      const dA = (a.added || '').substring(0, 19).padEnd(19, ' ');
-      const dB = (b.added || '').substring(0, 19).padEnd(19, ' ');
+      const dA = (a.added || '').substring(0, 19);
+      const dB = (b.added || '').substring(0, 19);
       const diff = dB.localeCompare(dA);
       if (diff !== 0) return diff;
-      return a.word.replace(/^(der|die|das|sich|ein|eine)\s+/i,'').localeCompare(
-             b.word.replace(/^(der|die|das|sich|ein|eine)\s+/i,''), 'de');
+      return a.word.replace(/^(der|die|das|sich|ein|eine)\s+/i,'')
+                   .localeCompare(b.word.replace(/^(der|die|das|sich|ein|eine)\s+/i,''), 'de');
     }
-    // default: alpha
-    const bareA = a.word.replace(/^(der|die|das|sich|ein|eine)\s+/i, '');
-    const bareB = b.word.replace(/^(der|die|das|sich|ein|eine)\s+/i, '');
-    return bareA.localeCompare(bareB, 'de');
+    // alpha (default)
+    return a.word.replace(/^(der|die|das|sich|ein|eine)\s+/i,'')
+                 .localeCompare(b.word.replace(/^(der|die|das|sich|ein|eine)\s+/i,''), 'de');
   });
 
   renderWords();
