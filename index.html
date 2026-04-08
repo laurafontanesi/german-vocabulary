@@ -1185,6 +1185,7 @@ let activeType = null;
 let activeTopic = null;
 let activeAlpha = null;
 let sortMode = 'alpha';
+let userChoseSortWhileSearching = false;
 
 // practice state
 
@@ -1294,6 +1295,7 @@ function toggleAlpha(letter, btn) {
 function clearFilters() {
   activeType = activeTopic = activeAlpha = null;
   sortMode = 'alpha';
+  userChoseSortWhileSearching = false;
   document.getElementById('search').value = '';
   document.querySelectorAll('.filter-btn, .alpha-btn').forEach(b => b.classList.remove('active'));
   syncSortButtons();
@@ -1301,6 +1303,7 @@ function clearFilters() {
 }
 function setSort(mode, btn) {
   sortMode = mode;
+  userChoseSortWhileSearching = true; // user explicitly picked this sort
   syncSortButtons();
   applyFilters();
 }
@@ -1339,14 +1342,13 @@ function applyFilters() {
 
   if (q) {
     relBtn.classList.add('visible');
-    // Auto-switch to relevance when user starts typing, but don't override
-    // if they've already explicitly picked a different sort while searching
-    if (sortMode !== 'type' && sortMode !== 'newest' && sortMode !== 'relevance') {
+    // Only auto-switch to relevance on the first keypress (when no manual sort was chosen yet)
+    if (!userChoseSortWhileSearching) {
       sortMode = 'relevance';
     }
   } else {
     relBtn.classList.remove('visible');
-    // When query is cleared, fall back to alpha if we were in relevance mode
+    userChoseSortWhileSearching = false; // reset for next search session
     if (sortMode === 'relevance') sortMode = 'alpha';
   }
 
