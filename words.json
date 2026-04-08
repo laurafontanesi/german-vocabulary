@@ -487,7 +487,7 @@
     ],
     "register": "neutral",
     "notes": "Often used with 'mit' + dative when specifying what you're stopping or quitting.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "empfinden",
@@ -523,7 +523,7 @@
     ],
     "register": "neutral",
     "notes": "More reflective/conscious than fühlen or spüren. das Empfinden (noun) = feeling, sentiment.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "related": [
       "fühlen",
       "spüren"
@@ -564,7 +564,7 @@
     ],
     "register": "neutral",
     "notes": "spüren = physical/instinctive sensation; empfinden = emotional/reflective feeling; fühlen = general feeling.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "related": [
       "empfinden",
       "fühlen",
@@ -606,7 +606,7 @@
     ],
     "register": "neutral",
     "notes": "Key distinction: freuen über + AKK (glad about past/present) vs freuen auf + AKK (looking forward to future).",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "related": [
       "die Freude",
       "froh",
@@ -644,7 +644,7 @@
     ],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "related": [
       "froh",
       "fröhlich",
@@ -692,7 +692,7 @@
     ],
     "register": "neutral",
     "notes": "glücklich = deeper, more lasting happiness; froh = momentary gladness. Glück haben = to be lucky.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -733,7 +733,7 @@
     ],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -772,7 +772,7 @@
     ],
     "register": "neutral",
     "notes": "die Angst = general fear/anxiety; die Furcht = more acute, specific fear; die Sorge = worry about someone/something.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "sich-fuerchten",
@@ -808,7 +808,7 @@
     ],
     "register": "neutral",
     "notes": "Always reflexive: sich fürchten vor + DAT. Synonym: Angst haben vor + DAT.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "related": [
       "die Angst",
       "die Furcht",
@@ -853,7 +853,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "Sich Sorgen machen um + AKK = to worry about. 'Keine Sorge!' = Don't worry! (very common expression).",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "ueberraschen",
@@ -886,7 +886,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "die Überraschung (noun) = the surprise. 'Ich bin überrascht' = I am surprised (state). 'Das überrascht mich' = That surprises me (action).",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "überraschen",
     "related": [
       "die Überraschung"
@@ -930,7 +930,7 @@
     ],
     "register": "neutral",
     "notes": "deprimiert = temporarily down/depressed (state); depressiv = clinically depressive (character trait). Important distinction.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both",
     "derived_from": "deprimieren"
   },
@@ -970,7 +970,7 @@
     ],
     "register": "neutral",
     "notes": "beeindrucken (verb) = to impress. Ich bin beeindruckt = I am impressed.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both",
     "derived_from": "beeindrucken"
   },
@@ -1010,7 +1010,7 @@
     ],
     "register": "neutral",
     "notes": "gelangweilt = bored (person's feeling); langweilig = boring (quality of a thing or person). 'Ich bin gelangweilt' vs 'Der Film ist langweilig'.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both",
     "derived_from": "langweilen"
   },
@@ -1050,7 +1050,7 @@
     ],
     "register": "neutral",
     "notes": "langweilig = boring (quality of something); gelangweilt = bored (how a person feels). Common mistake to confuse these.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both",
     "derived_from": "langweilen"
   },
@@ -1085,7 +1085,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "hundemüde / todmüde = dead tired (very common intensifiers). Opposite: wach (awake), munter (lively).",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "related": [
       "munter",
       "unkonzentriert",
@@ -1130,7 +1130,7 @@
     ],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -1171,7 +1171,7 @@
     ],
     "register": "neutral",
     "notes": "munter implies both being awake AND in good spirits — wach is just awake.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -1206,7 +1206,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "neugierig auf + AKK = curious about. Can also mean nosy in a negative sense depending on context.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both",
     "related": [
       "sich interessieren"
@@ -1250,7 +1250,7 @@
     ],
     "register": "neutral",
     "notes": "gespannt = excited/tense with anticipation (positive); entspannt = relaxed (opposite). 'Ich bin gespannt!' = I can't wait! / I'm curious!",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both",
     "derived_from": "spannen"
   },
@@ -1289,7 +1289,7 @@
     ],
     "register": "neutral",
     "notes": "sich entspannen (verb) = to relax. Opposite: gespannt (tense/eager) or gestresst (stressed).",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both",
     "derived_from": "entspannen"
   },
@@ -1332,7 +1332,7 @@
     ],
     "register": "neutral",
     "notes": "sich ausruhen = short rest; sich erholen = recover (implies longer recuperation or from illness/exhaustion).",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "ausruhen",
     "prefix": "aus-"
   },
@@ -1373,7 +1373,7 @@
     ],
     "register": "neutral",
     "notes": "sich erholen von + DAT. Implies fuller recovery than sich ausruhen. Also used for holiday recovery: 'Im Urlaub erholt man sich.'",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "verrueckt",
@@ -1412,7 +1412,7 @@
     ],
     "register": "informal",
     "notes": "Can be affectionate/playful or critical depending on context. Also used as intensifier: 'verrückt schnell' = insanely fast.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -1451,7 +1451,7 @@
     ],
     "register": "informal",
     "notes": "As an intensifier (wahnsinnig + adjective) it is extremely common in spoken German — similar to 'insanely' in English.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -1489,7 +1489,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "Takes sein as auxiliary. Very versatile: bleiben + adjective = to stay/remain [adjective].",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "bleiben",
     "related": [
       "hängenbleiben"
@@ -1532,7 +1532,7 @@
     ],
     "register": "neutral",
     "notes": "ändern = to change something (transitive); sich verändern = to change/transform (intransitive, about a person or situation).",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "ändern"
   },
   {
@@ -1573,7 +1573,7 @@
     ],
     "register": "neutral",
     "notes": "sich verändern = to change (intransitive); ändern = to change something (transitive). Common source of confusion.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "ändern",
     "prefix": "ver-"
   },
@@ -1621,7 +1621,7 @@
     ],
     "register": "neutral",
     "notes": "wählen covers both 'to choose' and 'to vote'. die Wahl = both the choice and the election.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "wählen"
   },
   {
@@ -1665,7 +1665,7 @@
     ],
     "register": "neutral",
     "notes": "die Entscheidung treffen = to make a decision (formal). sich entscheiden für + AKK = to decide in favour of.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "entscheiden"
   },
   {
@@ -1703,7 +1703,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "'es gibt' (there is/are) is one of the most essential German expressions — always followed by accusative.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "geben",
     "related": [
       "zugeben"
@@ -1748,7 +1748,7 @@
     ],
     "register": "neutral",
     "notes": "False friend! bekommen ≠ 'to become' (= werden). bekommen = to receive/get. erhalten = same but more formal.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "kommen",
     "prefix": "be-"
   },
@@ -1792,7 +1792,7 @@
     ],
     "register": "neutral",
     "notes": "holen implies going to retrieve something. Root of a small family: abholen, wiederholen, überholen.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "abholen",
@@ -1837,7 +1837,7 @@
     ],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "wiederholen",
@@ -1881,7 +1881,7 @@
     ],
     "register": "neutral",
     "notes": "Note: NOT separable (wiederholen), unlike abholen. Die Wiederholung = repetition/revision.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "glauben",
@@ -1920,7 +1920,7 @@
     ],
     "register": "neutral",
     "notes": "glauben = believe/think (less certain); denken = think (more neutral); meinen = think/be of the opinion (more assertive).",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "glauben"
   },
   {
@@ -1966,7 +1966,7 @@
     ],
     "register": "neutral",
     "notes": "denken an + AKK = to think of/about someone. denken über + AKK = to think about a topic.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "denken"
   },
   {
@@ -2008,7 +2008,7 @@
     ],
     "register": "neutral",
     "notes": "sagen = to say/tell (content of speech); sprechen = to speak (act of speaking); reden = to talk/chat (more informal, ongoing).",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "sagen"
   },
   {
@@ -2049,7 +2049,7 @@
     ],
     "register": "neutral",
     "notes": "sprechen = to speak (more formal/neutral); reden = to talk/chat (more informal). Both can be used for conversations.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "sprechen"
   },
   {
@@ -2091,7 +2091,7 @@
     ],
     "register": "informal",
     "notes": "reden = talk/chat (informal, conversational); sprechen = speak (more formal). 'Wir müssen reden' is a very common phrase.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "reden"
   },
   {
@@ -2135,7 +2135,7 @@
     ],
     "register": "neutral",
     "notes": "scheinen + zu + Infinitiv (same subject): Er scheint müde zu sein. scheinen + dass (different subject): Es scheint, dass er müde ist.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "scheinen"
   },
   {
@@ -2181,7 +2181,7 @@
     ],
     "register": "neutral",
     "notes": "aussehen wie + noun: Er sieht aus wie ein Gespenst. aussehen als ob + verb: Er sieht aus, als ob... Both patterns are very common.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "brauchen",
@@ -2218,7 +2218,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "nicht brauchen + zu + Infinitiv = don't have to (alternative to nicht müssen). Very common in spoken German.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "brauchen"
   },
   {
@@ -2260,7 +2260,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "lassen + Infinitiv has two uses: (1) to let/allow sb. to do sth.; (2) to have/get sth. done. Context makes it clear.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "lassen"
   },
   {
@@ -2298,7 +2298,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "behaupten implies asserting something without justification — slightly sceptical connotation. Often followed by Konjunktiv I in reported speech.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "behaupten"
   },
   {
@@ -2336,7 +2336,7 @@
     ],
     "register": "neutral",
     "notes": "der Vorschlag (noun) = the suggestion/proposal. Einen Vorschlag machen = to make a suggestion.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "schlagen"
   },
   {
@@ -2375,7 +2375,7 @@
     ],
     "register": "neutral",
     "notes": "nutzen = use in abstract/general sense; benutzen = use in practical/physical sense. In everyday speech often interchangeable.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "nutzen"
   },
   {
@@ -2414,7 +2414,7 @@
     ],
     "register": "neutral",
     "notes": "benutzen = concrete/practical use of a tool or object; nutzen = more abstract. Both are very common.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "nutzen",
     "prefix": "be-"
   },
@@ -2457,7 +2457,7 @@
     ],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "geben"
   },
   {
@@ -2500,7 +2500,7 @@
     ],
     "register": "neutral",
     "notes": "Two distinct uses: sich (DAT) etw. vorstellen = to imagine; sich vorstellen = to introduce oneself; jmdn. vorstellen = to introduce sb.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "stellen",
     "related": [
       "stellen"
@@ -2534,7 +2534,7 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "gerade",
@@ -2571,7 +2571,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "gerade = right now (present) OR just now (very recent past). Very common in spoken German.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "related": [
       "vorhin"
     ],
@@ -2609,7 +2609,7 @@
     ],
     "register": "neutral",
     "notes": "vorhin = earlier today/a short while ago. vor Kurzem = recently (could be days). gerade = just this moment.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "adverb only"
   },
   {
@@ -2645,7 +2645,7 @@
     ],
     "register": "neutral",
     "notes": "vor Kurzem / kürzlich / neulich are all roughly 'recently' — all refer to a defined point in the recent past. Interchangeable in most contexts.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "adverb only"
   },
   {
@@ -2677,7 +2677,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "'Bis bald!' = See you soon! Very common farewell. demnächst = soon/in the near future (slightly more formal).",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "adverb only"
   },
   {
@@ -2711,7 +2711,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "ständig carries a negative/irritated connotation — use immer for neutral 'always'. 'Das ständige X nervt mich' = I'm sick of the constant X.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -2754,7 +2754,7 @@
     ],
     "register": "neutral",
     "notes": "schließlich = eventually/after all (neutral); endlich = finally (implies long wait and relief). 'Endlich!' = At last! — schließlich doesn't carry that emotion.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -2793,7 +2793,7 @@
     ],
     "register": "neutral",
     "notes": "endlich = finally (with relief/impatience); schließlich = eventually/after all (neutral). 'Endlich!' alone = At last! — very expressive.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -2827,7 +2827,7 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -2862,7 +2862,7 @@
     ],
     "register": "neutral",
     "notes": "immer noch = still (with slight impatience); noch = still (neutral). 'Noch nicht' = not yet. 'Immer noch nicht' = still not (stronger frustration).",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "adverb only"
   },
   {
@@ -2899,7 +2899,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "noch nicht = not yet. noch ein/eine = another/one more. Very versatile little word.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "adverb only"
   },
   {
@@ -2943,7 +2943,7 @@
     ],
     "register": "neutral",
     "notes": "früher = formerly/used to (general past habit); damals = back then (specific past period). 'Früher war alles besser' = Things were better in the old days.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -2977,7 +2977,7 @@
     ],
     "register": "neutral",
     "notes": "damals refers to a specific past moment or era already in context; früher = in former times (more general). Already in db as adverb — check.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "adverb only"
   },
   {
@@ -3012,7 +3012,7 @@
     ],
     "register": "neutral",
     "notes": "Punctuality is culturally very important in German-speaking countries. unpünktlich = late/not punctual.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -3056,7 +3056,7 @@
     ],
     "register": "neutral",
     "notes": "fertig = finished/done (a process is complete); bereit = ready (prepared to do something). 'Das Essen ist fertig' (cooked) vs 'Das Essen ist bereit' (ready to eat).",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -3096,7 +3096,7 @@
     ],
     "register": "neutral",
     "notes": "bereit = ready/prepared (for an upcoming action); fertig = finished (a process is complete). Classic confusion for learners.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -3128,7 +3128,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "gewohnt sein = to be used to. Ich bin es gewohnt, früh aufzustehen = I'm used to getting up early.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "related": [
       "gewohnt",
       "gewöhnlich"
@@ -3168,7 +3168,7 @@
     ],
     "register": "neutral",
     "notes": "meistens ≈ normalerweise ≈ gewöhnlich — all mean 'usually'. Frequency scale: immer > meistens > oft > manchmal > selten > nie.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "adverb only"
   },
   {
@@ -3197,7 +3197,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "ehemalig = former (used attributively before nouns). For people: also 'Ex-' as prefix (Ex-Freund, Ex-Chef). die Ehe = marriage — the word root is unrelated.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "adjective only"
   },
   {
@@ -3236,7 +3236,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "German forms these duration adverbs very productively: stundenlang, tagelang, wochenlang, monatelang, jahrelang. Pattern: [time unit] + lang.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -3267,7 +3267,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "eine Gelegenheit nutzen = to take/use an opportunity. bei Gelegenheit = when the occasion arises.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "zeitgenössisch",
@@ -3301,7 +3301,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "der Zeitgenosse / die Zeitgenossin = a contemporary (person living in the same era). Er war ein Zeitgenosse Goethes.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -3333,7 +3333,7 @@
     ],
     "register": "neutral",
     "notes": "zwar signals a concession, aber introduces the contrast. The zwar clause admits something, the aber clause is the real point.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "das-kommt-mir-spanisch-vor",
@@ -3359,7 +3359,7 @@
     ],
     "register": "informal",
     "notes": "German equivalent of 'it's all Greek to me' or 'something smells fishy'. Interestingly uses 'Spanish' as the foreign/strange language.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "die-katze-aus-dem-sack-lassen",
@@ -3385,7 +3385,7 @@
     ],
     "register": "informal",
     "notes": "Same idiom exists in English! To reveal something that was meant to be kept secret.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "hals-und-beinbruch",
@@ -3416,7 +3416,7 @@
     ],
     "register": "informal",
     "notes": "Used before performances, exams, interviews. 'Toi toi toi' (knocking on wood three times) is an equivalent. Both are very common.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "ich-druecke-die-daumen",
@@ -3442,7 +3442,7 @@
     ],
     "register": "informal",
     "notes": "Germans press thumbs, not cross fingers! Same meaning as 'fingers crossed'. Also: 'Daumen drücken' as a noun phrase.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "nicht-alle-tassen-im-schrank",
@@ -3468,7 +3468,7 @@
     ],
     "register": "informal",
     "notes": "Affectionately or critically used to say someone is eccentric or crazy. One of the most vivid German idioms.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "sich-aus-dem-staub-machen",
@@ -3494,7 +3494,7 @@
     ],
     "register": "informal",
     "notes": "Der Staub = the dust. To leave quietly and quickly, often to avoid something unpleasant.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "warmherzig",
@@ -3530,7 +3530,7 @@
     ],
     "register": "neutral",
     "notes": "kaltherzig / hartherzig = cold-hearted (opposite). German compounds hearts and temperatures very productively.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -3571,7 +3571,7 @@
     ],
     "register": "neutral",
     "notes": "einsam = lonely (emotional state); allein = alone (physical state). You can be allein without being einsam, and vice versa.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -3613,7 +3613,7 @@
     ],
     "register": "neutral",
     "notes": "allein = alone (physical); einsam = lonely (emotional). 'Ich mag das Alleinsein' = I like being by myself (neutral/positive).",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -3656,7 +3656,7 @@
     ],
     "register": "neutral",
     "notes": "kennen = to know (people, places, things — familiarity); wissen = to know (facts, information). Classic distinction for learners.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "kennen"
   },
   {
@@ -3699,7 +3699,7 @@
     ],
     "register": "neutral",
     "notes": "wissen = to know facts (ich weiß, dass...); kennen = to know people/places. Irregular present: ich weiß, du weißt, er weiß, wir wissen.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "wissen"
   },
   {
@@ -3741,7 +3741,7 @@
     ],
     "register": "neutral",
     "notes": "kennenlernen = to meet and get to know someone (first encounter leading to familiarity). Different from treffen = to meet up with someone you already know.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "kennen"
   },
   {
@@ -3781,7 +3781,7 @@
     ],
     "register": "neutral",
     "notes": "einzig = only/sole (the one and only); einig = united/agreed; einsam = lonely. Three similar-looking words with very different meanings!",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -3812,7 +3812,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "unterschiedlich = different (within a group); verschieden = different (between objects); anders = different in a different way entirely.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "related": [
       "verschieden"
     ]
@@ -3854,7 +3854,7 @@
     ],
     "register": "neutral",
     "notes": "heiraten = to get married (process/event); verheiratet sein = to be married (state). 'Seit wann sind Sie verheiratet?' vs 'Wann haben Sie geheiratet?'",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "heiraten"
   },
   {
@@ -3889,7 +3889,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "das Ehepaar = married couple. ehemalig (former) shares the same spelling but has a completely different etymology — not related to Ehe.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "auswandern",
@@ -3932,7 +3932,7 @@
     ],
     "register": "neutral",
     "notes": "auswandern = emigrate (leaving your country permanently); umziehen = to move (to a new home, within a country); einwandern = to immigrate.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "wandern"
   },
   {
@@ -3980,7 +3980,7 @@
     ],
     "register": "neutral",
     "notes": "Two meanings: (1) umziehen = to move house; (2) sich umziehen = to change clothes. In Swiss German: zügeln.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "ziehen"
   },
   {
@@ -4025,7 +4025,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "erfahren = to find out (receiving news). Also an adjective: erfahren = experienced. Die Erfahrung = experience.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "fahren",
     "prefix": "er-"
   },
@@ -4068,7 +4068,7 @@
     ],
     "register": "neutral",
     "notes": "verschieden = different/various (between objects); unterschiedlich = varying (within a group); anders = different in kind. Three overlapping but distinct words.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both",
     "derived_from": "scheiden"
   },
@@ -4104,7 +4104,7 @@
     ],
     "register": "neutral",
     "notes": "geizig = stingy/miserly (opposite). großzügig also means 'broad/spacious' in a physical sense (eine großzügige Wohnung = a spacious flat).",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -4149,7 +4149,7 @@
     ],
     "register": "neutral",
     "notes": "treffen = to meet someone you already know; kennenlernen = to meet for the first time. treffen auf + AKK = to encounter by chance.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "treffen"
   },
   {
@@ -4189,7 +4189,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "besuchen = to visit (people or places). Also: die Schule/Uni besuchen = to attend school/university.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "suchen",
     "prefix": "be-"
   },
@@ -4229,7 +4229,7 @@
     ],
     "register": "neutral",
     "notes": "das Treffen = informal gathering/meetup; die Verabredung = personal date/arrangement with friends; der Termin = professional appointment.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "die-verabredung",
@@ -4265,7 +4265,7 @@
     ],
     "register": "neutral",
     "notes": "die Verabredung = personal/social arrangement; der Termin = professional appointment. sich verabreden = to make plans to meet.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "der-termin",
@@ -4306,7 +4306,7 @@
     ],
     "register": "neutral",
     "notes": "der Termin = professional appointment or deadline; die Verabredung = personal/social plans. einen Termin vereinbaren = to make an appointment.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "die-beziehung",
@@ -4345,7 +4345,7 @@
     ],
     "register": "neutral",
     "notes": "die Beziehung = relationship (broad, romantic or abstract); das Verhältnis = relationship/ratio (more formal or specific). 'In dieser Beziehung' = in this respect.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "das-verhaeltnis",
@@ -4388,7 +4388,7 @@
     ],
     "register": "neutral",
     "notes": "das Verhältnis is more formal/neutral than die Beziehung. Also means ratio/proportion. im Verhältnis zu = in relation to / compared to.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "vertrauen",
@@ -4428,7 +4428,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "Always dative: ich vertraue DIR (not dich). das Vertrauen (noun) = trust. jemandem vertrauen = general trust; jemandem trauen = similar but more colloquial.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "vertrauen"
   },
   {
@@ -4466,7 +4466,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "No plural. Vertrauen haben in + AKK = to have confidence in. Vertrauen schenken = to place one's trust in someone.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "anvertrauen",
@@ -4504,7 +4504,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "anvertrauen = to entrust someone with something valuable (physical or emotional). sich jemandem anvertrauen = to confide in someone.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "vertrauen",
     "prefix": "an-"
   },
@@ -4547,7 +4547,7 @@
     ],
     "register": "neutral",
     "notes": "sich trauen = to dare (requires courage). Different from vertrauen (to trust). Also used colloquially: 'Trau dich!' = Go for it! / Don't be shy!",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "trauen"
   },
   {
@@ -4583,7 +4583,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "Verantwortung übernehmen/tragen = to take/bear responsibility. verantwortlich für + AKK = responsible for.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "zaehlen-auf",
@@ -4622,7 +4622,7 @@
     ],
     "register": "neutral",
     "notes": "zählen auf + AKK = to count on a person (emphasis on reliability). rechnen mit + DAT = to count on / to expect (broader use).",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "zählen"
   },
   {
@@ -4662,7 +4662,7 @@
     ],
     "register": "neutral",
     "notes": "sich verstehen = to get along (mutual understanding); miteinander auskommen = to get by/manage together (more about coexisting). Both are common.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "stehen",
     "prefix": "ver-"
   },
@@ -4701,7 +4701,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "'Lügen haben kurze Beine' is a very common proverb meaning lies will always be found out. anlügen = to lie TO someone specifically.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "lügen"
   },
   {
@@ -4736,7 +4736,7 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "anluegen",
@@ -4779,7 +4779,7 @@
     ],
     "register": "neutral",
     "notes": "anlügen = to lie TO someone (direct object); lügen = to lie in general. Er lügt = he lies. Er lügt mich an = he lies to me.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "der-umgang",
@@ -4814,7 +4814,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "die Umgangsformen = manners, social etiquette. der Umgang mit + DAT = dealing with / handling of.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "zufaellig",
@@ -4845,7 +4845,7 @@
     ],
     "register": "neutral",
     "notes": "Very useful word! 'Bist du zufällig...?' = Do you happen to...? A polite way to ask something without being presumptuous.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -4876,7 +4876,7 @@
     ],
     "register": "neutral",
     "notes": "gegenseitig = mutual/reciprocal. sich gegenseitig helfen = to help each other. A very useful word for talking about relationships.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "usage": "both"
   },
   {
@@ -4914,7 +4914,7 @@
     ],
     "register": "neutral",
     "notes": "sich beschweren über + AKK = to complain about something. More formal/official than meckern (to grumble, informal).",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "beschweren",
     "related": [
       "hinnehmen"
@@ -4954,7 +4954,7 @@
     ],
     "register": "informal",
     "notes": "Very common in spoken German. genervt sein = to be annoyed/irritated. 'Das geht mir auf die Nerven' = same meaning, slightly more emphatic.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "related": [
       "das geht mir auf die Nerven",
       "irritieren",
@@ -5001,7 +5001,7 @@
     ],
     "register": "neutral",
     "notes": "stören = to disturb/bother (more neutral); nerven = to annoy/get on nerves (more emotional). 'Bitte nicht stören' = Do not disturb.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "stören"
   },
   {
@@ -5033,7 +5033,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "in (guter/schlechter) Stimmung sein = to be in a (good/bad) mood. die Stimmung heben = to lift the mood.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "unterstuetzen",
@@ -5066,7 +5066,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "die Unterstützung (noun) = support. Unterstützung leisten/geben = to provide support.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "unterstützen"
   },
   {
@@ -5102,7 +5102,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "träumen von + DAT = to dream of (wishes); träumen von + DAT (at night) = to dream about. 'Träume süß!' = Sweet dreams! (very common goodnight phrase).",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "träumen"
   },
   {
@@ -5137,7 +5137,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "wie ein Stein schlafen = to sleep like a log. einschlafen (sep.) = to fall asleep. aufwachen (sep.) = to wake up.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "schlafen"
   },
   {
@@ -5179,7 +5179,7 @@
     ],
     "register": "neutral",
     "notes": "aufwachen (sein) = to wake up spontaneously; wecken = to wake someone else up. Takes sein as auxiliary.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "wachen"
   },
   {
@@ -5218,7 +5218,7 @@
     ],
     "register": "neutral",
     "notes": "wecken = to wake someone up (transitive); aufwachen = to wake up oneself (intransitive). der Wecker = alarm clock.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "wecken"
   },
   {
@@ -5265,7 +5265,7 @@
     ],
     "register": "neutral",
     "notes": "sich anziehen = to get dressed (process); tragen = to wear (state). ausziehen = to take off / undress (opposite). umziehen = to change clothes.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "tragen",
@@ -5308,7 +5308,7 @@
     ],
     "register": "neutral",
     "notes": "tragen = to wear (state/ongoing); sich anziehen = to get dressed (action/process). Also: to carry (physically) and to bear (responsibility).",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "tragen"
   },
   {
@@ -5346,7 +5346,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "kochen = both to cook and to boil. der Koch / die Köchin = cook/chef. die Küche = kitchen.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "kochen"
   },
   {
@@ -5390,7 +5390,7 @@
     ],
     "register": "neutral",
     "notes": "Root of a productive family: aufräumen (tidy up), einräumen (put away), ausräumen (clear out), umräumen (rearrange).",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "räumen"
   },
   {
@@ -5435,7 +5435,7 @@
     ],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "ausraemen",
@@ -5478,7 +5478,7 @@
     ],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "einkaufen",
@@ -5518,7 +5518,7 @@
     ],
     "register": "neutral",
     "notes": "einkaufen gehen = to go shopping. der Einkauf = the shopping/purchase. die Einkaufsliste = shopping list.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "kaufen"
   },
   {
@@ -5559,7 +5559,7 @@
     ],
     "register": "neutral",
     "notes": "kaufen = to buy (a specific item); einkaufen = to do the shopping (general activity). verkaufen = to sell (opposite).",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "kaufen"
   },
   {
@@ -5596,7 +5596,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "'Zu verkaufen' = for sale (on signs). der Verkäufer / die Verkäuferin = salesperson.",
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "bestellen",
@@ -5630,7 +5630,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "Used both in restaurants and for online/mail orders. die Bestellung = the order.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "bestellen"
   },
   {
@@ -5668,7 +5668,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "drücken = to push/press (a button or person). die Tür drücken = push the door (vs ziehen = pull). Also: die Daumen drücken = fingers crossed.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "drücken",
     "related": [
       "der Ausdruck"
@@ -5705,7 +5705,7 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "renovieren"
   },
   {
@@ -5746,7 +5746,7 @@
     ],
     "register": "neutral",
     "notes": "mieten = to rent (as tenant); vermieten = to rent out (as landlord). der Mieter = tenant; der Vermieter = landlord.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "mieten"
   },
   {
@@ -5787,7 +5787,7 @@
     ],
     "register": "neutral",
     "notes": "'Zu vermieten' = to let/for rent (on signs). Opposite of mieten.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "vermieten"
   },
   {
@@ -5822,7 +5822,7 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "schwitzen"
   },
   {
@@ -5856,7 +5856,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "das Frühstück = breakfast. Frühstück machen/zubereiten = to prepare breakfast.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "frühstücken"
   },
   {
@@ -5894,7 +5894,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "vorlesen (sep.) = to read aloud. Ich lese gerade... = I'm currently reading...",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "lesen"
   },
   {
@@ -5937,7 +5937,7 @@
     ],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05"
+    "added": "2026-04-04"
   },
   {
     "id": "schreiben",
@@ -5972,7 +5972,7 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "schreiben",
     "related": [
       "beschreiben"
@@ -6024,7 +6024,7 @@
     ],
     "register": "neutral",
     "notes": "fahren = to travel by vehicle; gehen = to go on foot. Takes sein. Rad fahren = to cycle. Auto fahren = to drive a car.",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "fahren"
   },
   {
@@ -6069,7 +6069,7 @@
     ],
     "register": "neutral",
     "notes": "ankommen (sein) = to arrive. die Ankunft = the arrival. abfahren = to depart (opposite).",
-    "added": "2026-04-05",
+    "added": "2026-04-04",
     "family_root": "kommen"
   },
   {
@@ -6296,7 +6296,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "Often associated with the Berlin Wall in historical contexts.",
-    "added": "2026-04-05",
+    "added": "2026-04-05 19:03:52",
     "gender": "die",
     "plural": "die Mauern",
     "related": [
@@ -6334,7 +6334,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "Not to be confused with 'die Mauer' which refers to exterior walls or barriers.",
-    "added": "2026-04-05",
+    "added": "2026-04-05 19:03:54",
     "gender": "die",
     "plural": "die Wände",
     "related": [
@@ -6495,7 +6495,7 @@
     "tags": [],
     "register": "formal",
     "notes": "Most commonly used reflexively with 'sich erweisen als' meaning 'to prove to be'.",
-    "added": "2026-04-05",
+    "added": "2026-04-05 20:41:54",
     "auxiliary": "haben",
     "past_tense": "erwies",
     "past_participle": "erwiesen",
@@ -6540,7 +6540,7 @@
     "tags": [],
     "register": "neutral",
     "notes": "Often confused with 'wissen' (to know) due to similar past tense forms.",
-    "added": "2026-04-05",
+    "added": "2026-04-05 20:42:54",
     "auxiliary": "haben",
     "past_tense": "wies",
     "past_participle": "gewiesen",
@@ -24487,7 +24487,7 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-07 13:53:16",
+    "added": "2026-04-07 17:53:16",
     "auxiliary": "haben",
     "past_tense": "zeigte",
     "past_participle": "gezeigt",
@@ -24532,7 +24532,7 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-07 13:54:18",
+    "added": "2026-04-07 17:54:18",
     "auxiliary": "haben",
     "past_tense": "zeigte sich",
     "past_participle": "sich gezeigt",
@@ -24573,7 +24573,7 @@
     "tags": [],
     "register": "formal",
     "notes": "This is a loanword from French and is primarily used in formal or literary contexts.",
-    "added": "2026-04-07 13:56:19",
+    "added": "2026-04-07 17:56:19",
     "usage": "both"
   },
   {
@@ -24606,7 +24606,7 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-07 14:00:31",
+    "added": "2026-04-07 18:00:31",
     "usage": "adverb only"
   },
   {
@@ -24640,7 +24640,7 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-07 14:01:22",
+    "added": "2026-04-07 18:01:22",
     "usage": "both"
   },
   {
@@ -24677,7 +24677,7 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-07 16:50:28",
+    "added": "2026-04-07 18:50:28",
     "usage": "both"
   },
   {
@@ -24715,7 +24715,7 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-07 16:51:51",
+    "added": "2026-04-07 18:51:51",
     "gender": "der",
     "plural": "die Schalter"
   },
@@ -24749,7 +24749,7 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-07 16:53:14",
+    "added": "2026-04-07 18:53:14",
     "gender": "die",
     "plural": "die Aufschriften"
   },
@@ -24783,7 +24783,7 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-07 16:54:28",
+    "added": "2026-04-07 18:54:28",
     "auxiliary": "haben",
     "past_tense": "knitterte",
     "past_participle": "geknittert",
@@ -24824,7 +24824,7 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "added": "2026-04-07 16:55:28",
+    "added": "2026-04-07 18:55:28",
     "usage": "both",
     "related": [
       "knittern"
