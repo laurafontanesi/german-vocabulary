@@ -2503,6 +2503,8 @@
     "added": "2026-04-04",
     "family_root": "stellen",
     "related": [
+      "bestellen",
+      "erstellen",
       "stellen"
     ]
   },
@@ -5631,7 +5633,12 @@
     "register": "neutral",
     "notes": "Used both in restaurants and for online/mail orders. die Bestellung = the order.",
     "added": "2026-04-04",
-    "family_root": "bestellen"
+    "family_root": "stellen",
+    "related": [
+      "erstellen",
+      "sich vorstellen",
+      "stellen"
+    ]
   },
   {
     "id": "drucken",
@@ -11176,6 +11183,8 @@
     "register": "neutral",
     "notes": "stellen = to place upright (vs legen = flat, setzen = seat). Key phrases: eine Frage stellen = ask a question; sich vorstellen = introduce oneself; zur Verfügung stellen = to make available; sich stellen = to present oneself / turn oneself in.",
     "related": [
+      "bestellen",
+      "erstellen",
       "legen",
       "sich vorstellen"
     ],
@@ -25388,5 +25397,49 @@
     "register": "neutral",
     "notes": "Can express both frustration when fed up with something or simple adequacy of quantity or time.",
     "added": "2026-04-08 09:15:20"
+  },
+  {
+    "id": "erstellen",
+    "word": "erstellen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to create",
+        "note": "especially documents, reports, or digital content"
+      },
+      {
+        "meaning": "to draw up",
+        "note": "formal documents or plans"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir müssen einen Bericht über das Projekt erstellen.",
+        "en": "We need to create a report about the project."
+      },
+      {
+        "de": "Der Architekt hat die Baupläne bereits erstellt.",
+        "en": "The architect has already drawn up the construction plans."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Often used in professional contexts for creating formal documents or digital content.",
+    "added": "2026-04-08 09:17:18",
+    "auxiliary": "haben",
+    "past_tense": "erstellte",
+    "past_participle": "erstellt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "stellen",
+    "prefix": "er-",
+    "related": [
+      "bestellen",
+      "sich vorstellen",
+      "stellen"
+    ]
   }
 ]
