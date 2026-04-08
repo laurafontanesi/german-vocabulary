@@ -1185,7 +1185,6 @@ let activeType = null;
 let activeTopic = null;
 let activeAlpha = null;
 let sortMode = 'alpha';
-let userChoseSortWhileSearching = false;
 
 // practice state
 
@@ -1295,7 +1294,6 @@ function toggleAlpha(letter, btn) {
 function clearFilters() {
   activeType = activeTopic = activeAlpha = null;
   sortMode = 'alpha';
-  userChoseSortWhileSearching = false;
   document.getElementById('search').value = '';
   document.querySelectorAll('.filter-btn, .alpha-btn').forEach(b => b.classList.remove('active'));
   syncSortButtons();
@@ -1303,7 +1301,6 @@ function clearFilters() {
 }
 function setSort(mode, btn) {
   sortMode = mode;
-  userChoseSortWhileSearching = true; // user explicitly picked this sort
   syncSortButtons();
   applyFilters();
 }
@@ -1342,13 +1339,14 @@ function applyFilters() {
 
   if (q) {
     relBtn.classList.add('visible');
-    // Only auto-switch to relevance on the first keypress (when no manual sort was chosen yet)
-    if (!userChoseSortWhileSearching) {
+    // Auto-switch to relevance when user starts typing, but don't override
+    // if they've already explicitly picked a different sort while searching
+    if (sortMode !== 'type' && sortMode !== 'newest' && sortMode !== 'relevance') {
       sortMode = 'relevance';
     }
   } else {
     relBtn.classList.remove('visible');
-    userChoseSortWhileSearching = false; // reset for next search session
+    // When query is cleared, fall back to alpha if we were in relevance mode
     if (sortMode === 'relevance') sortMode = 'alpha';
   }
 
@@ -1859,26 +1857,25 @@ function buildConjugationTask(w) {
 }
 
 function buildArticleTask(w) {
-  // The bare noun stem (without its canonical article prefix)
   const bare = w.word.replace(/^(der|die|das)\s+/i, '').toLowerCase();
-  // Also prepare a short stem for partial matching (for compound nouns)
-  // We'll try to match the word itself first, then fall back to any article
+  const articleList = ['der','die','das','ein','eine','einen','einem','einer','eines','den','dem','des'];
+
   for (const ex of (w.examples || [])) {
     const sentence = ex.de;
-    // Try to find an article that directly precedes (a form of) the noun in the sentence.
-    // Pattern: article followed by optional adjective(s), then the noun stem
-    // We look for <article> <word-that-starts-with-bare-stem>
-    const articleList = ['der','die','das','ein','eine','einen','einem','einer','eines','den','dem','des'];
     const tokens = sentence.split(/\s+/);
+
     for (let i = 0; i < tokens.length - 1; i++) {
-      const tok = tokens[i].replace(/[,.:;!?"""()]/g,'').toLowerCase();
+      const tok = tokens[i].replace(/[,.:;!?"""()]/g, '').toLowerCase();
       if (!articleList.includes(tok)) continue;
-      // Check if any of the next 1–3 tokens starts with the bare noun stem
+
+      // Check if one of the next 1–3 tokens is (a form of) the target noun
       for (let j = i + 1; j <= Math.min(i + 3, tokens.length - 1); j++) {
-        const candidate = tokens[j].replace(/[,.:;!?"""()]/g,'').toLowerCase();
-        if (candidate.startsWith(bare.substring(0, Math.min(bare.length, 5))) && candidate.length >= bare.length - 2) {
-          // Found it — blank out this article
-          const re = new RegExp('\\b' + escapeRegex(tokens[i].replace(/[,.:;!?"""()]/g,'')) + '\\b');
+        const candidate = tokens[j].replace(/[,.:;!?"""()]/g, '').toLowerCase();
+        const stem = bare.substring(0, Math.min(bare.length, 5));
+        if (candidate.startsWith(stem) && candidate.length >= bare.length - 2) {
+          // Found the noun — blank out its article
+          const rawArticle = tokens[i].replace(/[,.:;!?"""()]/g, '');
+          const re = new RegExp('\\b' + escapeRegex(rawArticle) + '\\b');
           const blanked = sentence.replace(re, '___');
           if (blanked !== sentence) {
             return { sentence, blanked, answer: tok, translation: ex.en };
@@ -1886,17 +1883,9 @@ function buildArticleTask(w) {
         }
       }
     }
-    // Fallback: first article in sentence (original behaviour, only if no better match)
-    const m = sentence.match(ARTICLE_RE);
-    if (!m) continue;
-    const article = m[0];
-    const re = new RegExp('\\b' + escapeRegex(article) + '\\b');
-    const blanked = sentence.replace(re, '___');
-    if (blanked !== sentence) {
-      return { sentence, blanked, answer: article.toLowerCase(), translation: ex.en };
-    }
+    // No adjacent article found for this example — try the next one
   }
-  return null;
+  return null; // no valid task found for this noun — it will be excluded from the task pool
 }
 
 function escapeRegex(s) {
