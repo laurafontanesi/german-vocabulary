@@ -25631,29 +25631,20 @@
       {
         "meaning": "to get lost while driving, to lose one's way",
         "note": "used reflexively: sich verfahren"
-      },
-      {
-        "meaning": "to proceed, to act in a certain manner",
-        "note": "formal usage, often in official contexts"
       }
     ],
     "examples": [
       {
         "de": "Wir haben uns verfahren und sind zu spät angekommen.",
         "en": "We got lost and arrived late."
-      },
-      {
-        "de": "Das Gericht wird nach geltendem Recht verfahren.",
-        "en": "The court will proceed according to applicable law."
       }
     ],
     "topics": [
-      "travel & places",
-      "society & politics"
+      "travel & places"
     ],
     "tags": [],
     "register": "neutral",
-    "notes": "Can also function as an adjective meaning 'hopeless' or 'confused', but this entry treats it as a verb only.",
+    "notes": [],
     "added": "2026-04-08 09:50:06",
     "auxiliary": "sein",
     "past_tense": "verfuhr",
@@ -25663,6 +25654,51 @@
     "family_root": "fahren",
     "prefix": "ver-",
     "related": [
+	  "verfahren",	
+      "Entscheidungsverfahren",
+      "abfahren",
+      "das Entscheidungsverfahren",
+      "erfahren",
+      "fahren",
+      "herfahren",
+      "herumfahren",
+      "hinfahren",
+      "losfahren",
+      "wegfahren"
+    ]
+  },
+  {
+    "id": "verfahren",
+    "word": "verfahren",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to proceed, to act in a certain manner",
+        "note": "formal usage, often in official contexts"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Gericht wird nach geltendem Recht verfahren.",
+        "en": "The court will proceed according to applicable law."
+      }
+    ],
+    "topics": [
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": [],
+	"added": "2026-04-08 09:52:06",
+    "auxiliary": "sein",
+    "past_tense": "verfuhr",
+    "past_participle": "verfahren",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "fahren",
+    "prefix": "ver-",
+    "related": [
+	  "sich verfahren",	
       "Entscheidungsverfahren",
       "abfahren",
       "das Entscheidungsverfahren",
