@@ -1462,7 +1462,7 @@ function buildGrammarPills(w) {
     if (w.is_separable) pills.push('separable');
     if (w.reflexive) pills.push('reflexive');
     if (w.preposition) pills.push(w.preposition);
-    if (w.family_root) pills.push(`family: ${w.family_root}`);
+    if (w.family_root) pills.push(`<span class="grammar-pill" style="cursor:pointer;color:var(--teal)" onclick="searchRelated('${w.family_root}',event)" title="Search verb family">family: ${w.family_root}</span>`);
   }
   if (w.usage) pills.push(w.usage);
   if (w.derived_from) pills.push(`<span class="grammar-pill" style="cursor:pointer;color:var(--teal)" onclick="searchRelated('${w.derived_from}',event)" title="Search for source verb">pp: ${w.derived_from}</span>`);
@@ -1472,6 +1472,7 @@ function buildGrammarPills(w) {
 
 function toggleCard(id, event) {
   if (event.target.classList.contains('related-chip')) return;
+  if (event.target.classList.contains('grammar-pill') && event.target.onclick) return;
   const card = document.getElementById('card-' + id);
   card.classList.toggle('open');
 }
