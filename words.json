@@ -25286,5 +25286,107 @@
     "added": "2026-04-08 09:08:39",
     "gender": "das",
     "plural": "die Schweigen"
+  },
+  {
+    "id": "angeblich",
+    "word": "angeblich",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "alleged, supposed, claimed",
+        "note": "expresses doubt or skepticism about the truth of a statement"
+      },
+      {
+        "meaning": "supposedly, allegedly",
+        "note": "when used as an adverb"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der angebliche Dieb wurde verhaftet.",
+        "en": "The alleged thief was arrested."
+      },
+      {
+        "de": "Er ist angeblich sehr reich.",
+        "en": "He is supposedly very rich."
+      },
+      {
+        "de": "Angeblich findet die neue App die besten Flugpreise.",
+        "en": "Supposedly, the new app finds the best airfares."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Often implies skepticism or uncertainty about the truth of what is being claimed.",
+    "added": "2026-04-08 09:11:06",
+    "usage": "both"
+  },
+  {
+    "id": "das-stimmt-nicht",
+    "word": "Das stimmt nicht",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "that's not right",
+        "note": null
+      },
+      {
+        "meaning": "that's not correct",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Du sagst, Berlin ist die größte Stadt Europas? Das stimmt nicht.",
+        "en": "You say Berlin is the largest city in Europe? That's not right."
+      },
+      {
+        "de": "Das stimmt nicht, was du über mich erzählst.",
+        "en": "What you're saying about me is not correct."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Common way to express disagreement or correct false information.",
+    "added": "2026-04-08 09:14:11"
+  },
+  {
+    "id": "es-reicht",
+    "word": "es reicht",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "that's enough, enough is enough",
+        "note": "used to express frustration or to stop something"
+      },
+      {
+        "meaning": "it's sufficient, that will do",
+        "note": "used to indicate something is adequate"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Es reicht! Ich kann das Geschrei nicht mehr ertragen.",
+        "en": "That's enough! I can't stand the shouting anymore."
+      },
+      {
+        "de": "Drei Stunden Übung? Ja, es reicht für heute.",
+        "en": "Three hours of practice? Yes, that's enough for today."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Can express both frustration when fed up with something or simple adequacy of quantity or time.",
+    "added": "2026-04-08 09:15:20"
   }
 ]
