@@ -10380,6 +10380,7 @@
     "register": "neutral",
     "notes": "Very versatile verb. Key phrases: halten für = to regard as; eine Rede halten = give a speech; Wort halten = keep one's promise; sich halten an = to stick to/follow (rules).",
     "related": [
+      "anhalten",
       "aufhalten",
       "das Verhalten",
       "erhalten",
@@ -10437,6 +10438,7 @@
     "register": "neutral",
     "notes": "sich halten an + AKK = to stick to/follow. sich halten = to keep/stay fresh (food). Different from halten (non-reflexive).",
     "related": [
+      "anhalten",
       "aufhalten",
       "das Verhalten",
       "erhalten",
@@ -10485,6 +10487,7 @@
     "register": "formal",
     "notes": "erhalten = to receive (formal; bekommen is the everyday equivalent). Also: to preserve/maintain (das Gebäude erhalten). gut erhalten = well preserved.",
     "related": [
+      "anhalten",
       "aufhalten",
       "bekommen",
       "das Verhalten",
@@ -10912,6 +10915,7 @@
     "register": "neutral",
     "notes": "sich verhalten = to behave (reflexive); das Verhalten = behaviour (noun). sich gut/schlecht verhalten = to behave well/badly.",
     "related": [
+      "anhalten",
       "aufhalten",
       "das Handeln",
       "das Verhalten",
@@ -10953,6 +10957,7 @@
     "register": "neutral",
     "notes": "das Verhalten = behaviour (general); die Umgangsformen = manners (social etiquette).",
     "related": [
+      "anhalten",
       "aufhalten",
       "das Handeln",
       "erhalten",
@@ -13196,6 +13201,7 @@
     "register": "neutral",
     "notes": "aufhalten = to stop/delay (someone); sich aufhalten = to stay/be located somewhere.",
     "related": [
+      "anhalten",
       "beenden",
       "das Verhalten",
       "erhalten",
@@ -16459,6 +16465,7 @@
     "register": "neutral",
     "notes": "sich zurückhalten = to hold back/restrain oneself. zurückhaltend = reserved, restrained (adjective).",
     "related": [
+      "anhalten",
       "aufhalten",
       "das Verhalten",
       "erhalten",
@@ -24985,6 +24992,299 @@
     "related": [
       "nötigen"
     ],
-	"derived_from": "nötigen"
+    "derived_from": "nötigen"
+  },
+  {
+    "id": "die-neuigkeit",
+    "word": "die Neuigkeit",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "news, piece of news",
+        "note": null
+      },
+      {
+        "meaning": "novelty, something new",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe eine interessante Neuigkeit für dich.",
+        "en": "I have an interesting piece of news for you."
+      },
+      {
+        "de": "Gibt es irgendwelche Neuigkeiten von der Familie?",
+        "en": "Is there any news from the family?"
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-08 08:48:47",
+    "gender": "die",
+    "plural": "die Neuigkeiten"
+  },
+  {
+    "id": "guck-mal",
+    "word": "Guck mal",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "look",
+        "note": "used to draw someone's attention to something"
+      },
+      {
+        "meaning": "hey look",
+        "note": "informal exclamation to get attention"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Guck mal, wie schön der Sonnenuntergang ist!",
+        "en": "Look, how beautiful the sunset is!"
+      },
+      {
+        "de": "Guck mal hier, das ist interessant.",
+        "en": "Look here, this is interesting."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "informal",
+    "notes": "More common in northern Germany; 'Schau mal' is the southern German equivalent.",
+    "added": "2026-04-08 08:51:06"
+  },
+  {
+    "id": "die-anstalt",
+    "word": "die Anstalt",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "institution, establishment",
+        "note": "often referring to public or official institutions"
+      },
+      {
+        "meaning": "asylum, hospital",
+        "note": "particularly mental health facilities or care institutions"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er arbeitet in einer staatlichen Anstalt.",
+        "en": "He works in a state institution."
+      },
+      {
+        "de": "Die Anstalt wurde vor hundert Jahren gegründet.",
+        "en": "The institution was founded a hundred years ago."
+      }
+    ],
+    "topics": [
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "Often used in compound words like Krankenanstalt or Lehranstalt to specify the type of institution.",
+    "added": "2026-04-08 08:53:35",
+    "gender": "die",
+    "plural": "die Anstalten"
+  },
+  {
+    "id": "anhalten",
+    "word": "anhalten",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to stop",
+        "note": "for vehicles, movement, or processes"
+      },
+      {
+        "meaning": "to continue, to persist",
+        "note": "for ongoing situations or conditions"
+      },
+      {
+        "meaning": "to hold, to press against",
+        "note": "physical contact or pressure"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Bus hält an der nächsten Haltestelle an.",
+        "en": "The bus stops at the next bus stop."
+      },
+      {
+        "de": "Das schöne Wetter hält noch eine Woche an.",
+        "en": "The nice weather continues for another week."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Can mean both 'to stop' and 'to continue' depending on context.",
+    "added": "2026-04-08 08:54:34",
+    "auxiliary": "haben",
+    "past_tense": "hielt an",
+    "past_participle": "angehalten",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "halten",
+    "prefix": "an-",
+    "related": [
+      "aufhalten",
+      "das Verhalten",
+      "erhalten",
+      "halten",
+      "sich halten",
+      "sich verhalten",
+      "sich zurückhalten"
+    ]
+  },
+  {
+    "id": "vertuschen",
+    "word": "vertuschen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to cover up, to hush up",
+        "note": "used for concealing scandals, mistakes, or wrongdoing"
+      },
+      {
+        "meaning": "to whitewash",
+        "note": "to gloss over or minimize something negative"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Regierung versuchte den Skandal zu vertuschen.",
+        "en": "The government tried to cover up the scandal."
+      },
+      {
+        "de": "Er wollte seinen Fehler vertuschen, aber die Wahrheit kam ans Licht.",
+        "en": "He wanted to cover up his mistake, but the truth came to light."
+      }
+    ],
+    "topics": [
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-08 09:00:51",
+    "auxiliary": "haben",
+    "past_tense": "vertuschte",
+    "past_participle": "vertuscht",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "tuschen",
+    "prefix": "ver-"
+  },
+  {
+    "id": "sogar",
+    "word": "sogar",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "even",
+        "note": "used to emphasize something surprising or extreme"
+      },
+      {
+        "meaning": "in fact",
+        "note": "used to strengthen a statement"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er kann sogar Chinesisch sprechen.",
+        "en": "He can even speak Chinese."
+      },
+      {
+        "de": "Das Wetter war schlecht, sogar regnerisch.",
+        "en": "The weather was bad, even rainy."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Always precedes the word or phrase it emphasizes.",
+    "added": "2026-04-08 09:02:43",
+    "usage": "adverb only"
+  },
+  {
+    "id": "sofort",
+    "word": "sofort",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "immediately",
+        "note": null
+      },
+      {
+        "meaning": "right away",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich komme sofort.",
+        "en": "I'm coming immediately."
+      },
+      {
+        "de": "Das muss sofort gemacht werden.",
+        "en": "That must be done right away."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-08 09:05:10",
+    "usage": "adverb only"
+  },
+  {
+    "id": "das-schweigen",
+    "word": "das Schweigen",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "silence",
+        "note": null
+      },
+      {
+        "meaning": "the act of remaining silent or not speaking",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Schweigen im Raum war unerträglich.",
+        "en": "The silence in the room was unbearable."
+      },
+      {
+        "de": "Nach seiner Frage folgte ein langes Schweigen.",
+        "en": "After his question, a long silence followed."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "This is the nominalized form of the verb 'schweigen' (to be silent)",
+    "added": "2026-04-08 09:08:39",
+    "gender": "das",
+    "plural": "die Schweigen"
   }
 ]
