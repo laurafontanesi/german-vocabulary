@@ -577,6 +577,56 @@ def cmd_add(args):
         else:
             entry["usage"] = ask_choice("Usage", USAGE_OPTIONS, "both")
 
+        # ── derived_from detection ────────────────────────────────────────────
+        # Check if this adj/adv looks like a past or present participle of a verb
+        bare = word.lower().strip()
+        is_participle_shape = bool(re.match(
+            r'^(ge[a-zäöüß]{3,}(t|en)|'   # ge- + stem(3+) + -t/-en
+            r'[a-zäöüß]{4,}iert|'          # -iert (4+ chars before)
+            r'(ver|zer|be|er|ent|miss|über|unter|ab|an|auf|aus|durch|nach|vor|zu)'
+            r'[a-zäöüß]{3,}(t|en)|'        # prefix + stem(3+) + -t/-en
+            r'[a-zäöüß]{4,}end)$',         # -end present participle (4+ chars)
+            bare
+        ))
+
+        derived_from = None
+        if is_participle_shape:
+            # First: look for a verb in DB whose past_participle matches exactly
+            db_match = None
+            for w_db in words:
+                if w_db.get("type") != "verb":
+                    continue
+                pp = (w_db.get("past_participle") or "").lower().strip()
+                verb_bare = re.sub(r"^sich\s+", "", w_db["word"].lower()).strip()
+                if pp == bare or verb_bare == bare:
+                    db_match = w_db["word"]
+                    break
+
+            if db_match:
+                print(f"\n  ✦ '{word}' looks like a participle-adjective.")
+                print(f"    Found in database: derived from '{db_match}'")
+                use_it = ask("  Set derived_from to this verb? (y/n/other)", "y").strip().lower()
+                if use_it == "y":
+                    derived_from = db_match
+                elif use_it not in ("n", ""):
+                    # they typed something else — use it as the derived_from value
+                    derived_from = use_it
+            else:
+                # Not in DB — if it looks like a participle, ask anyway
+                print(f"\n  ✦ '{word}' looks like it could be a participle-adjective.")
+                source = ask("  Derived from which verb? (or Enter to skip)").strip()
+                if source:
+                    derived_from = source
+
+        else:
+            # Not a participle shape — still offer the field in case user knows
+            source = ask("  Derived from a verb? (e.g. entspannen → entspannt, or Enter to skip)").strip()
+            if source:
+                derived_from = source
+
+        if derived_from:
+            entry["derived_from"] = derived_from
+
     elif word_type == "prep/conj":
         USAGE_OPTIONS = ["both", "preposition only", "conjunction only"]
         if suggestion:
