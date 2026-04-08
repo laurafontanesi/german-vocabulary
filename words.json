@@ -24830,5 +24830,161 @@
       "knittern"
     ],
     "derived_from": "knittern"
+  },
+  {
+    "id": "sobald",
+    "word": "sobald",
+    "type": "prep/conj",
+    "definitions": [
+      {
+        "meaning": "as soon as",
+        "note": "introduces a subordinate clause with verb at the end"
+      },
+      {
+        "meaning": "once",
+        "note": "temporal conjunction indicating immediate succession"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sobald ich nach Hause komme, rufe ich dich an.",
+        "en": "As soon as I get home, I'll call you."
+      },
+      {
+        "de": "Sobald das Wetter besser wird, gehen wir spazieren.",
+        "en": "Once the weather gets better, we'll go for a walk."
+      },
+      {
+        "de": "Ich werde ihn anrufen, sobald ich Feierabend mache.",
+        "en": "I will call him when I finish work."
+      }
+    ],
+    "topics": [
+      "time",
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "This subordinating conjunction sends the verb to the end of the clause it introduces.",
+    "added": "2026-04-08 08:33:37",
+    "usage": "conjunction only"
+  },
+  {
+    "id": "sich-beeilen",
+    "word": "sich beeilen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to hurry, to rush",
+        "note": null
+      },
+      {
+        "meaning": "to make haste",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir müssen uns beeilen, sonst verpassen wir den Zug.",
+        "en": "We have to hurry or we'll miss the train."
+      },
+      {
+        "de": "Beeile dich! Das Geschäft schließt gleich.",
+        "en": "Hurry up! The store is closing soon."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-08 08:37:52",
+    "auxiliary": "haben",
+    "past_tense": "beeilte",
+    "past_participle": "beeilt",
+    "is_separable": false,
+    "reflexive": true,
+    "family_root": "eilen",
+    "prefix": "be-"
+  },
+  {
+    "id": "noetigen",
+    "word": "nötigen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to force, to compel, to coerce",
+        "note": null
+      },
+      {
+        "meaning": "to urge, to press (someone to do something)",
+        "note": "often used in polite contexts"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie nötigten ihn, das Dokument zu unterschreiben.",
+        "en": "They forced him to sign the document."
+      },
+      {
+        "de": "Die Gastgeberin nötigte uns, noch ein Stück Kuchen zu nehmen.",
+        "en": "The hostess urged us to have another piece of cake."
+      }
+    ],
+    "topics": [
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "Can range from polite urging to forceful coercion depending on context.",
+    "added": "2026-04-08 08:40:29",
+    "auxiliary": "haben",
+    "past_tense": "nötigte",
+    "past_participle": "genötigt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "nötigen",
+    "related": [
+      "nötig"
+    ]
+  },
+  {
+    "id": "noetig",
+    "word": "nötig",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "necessary, needed, required",
+        "note": null
+      },
+      {
+        "meaning": "urgent, pressing",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Es ist nötig, dass wir sofort handeln.",
+        "en": "It is necessary that we act immediately."
+      },
+      {
+        "de": "Ich habe das nötige Geld für den Kauf.",
+        "en": "I have the necessary money for the purchase."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Often used in the construction 'nötig haben' meaning 'to need'",
+    "added": "2026-04-08 08:41:32",
+    "usage": "both",
+    "related": [
+      "nötigen"
+    ],
+	"derived_from": "nötigen"
   }
 ]
