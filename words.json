@@ -745,6 +745,7 @@
     "related": [
       "die Furcht",
       "die Sorge",
+      "mir gefriert das Blut in den Adern",
       "sich fürchten",
       "sich ängstigen"
     ],
@@ -812,6 +813,7 @@
     "related": [
       "die Angst",
       "die Furcht",
+      "mir gefriert das Blut in den Adern",
       "sich ängstigen"
     ],
     "family_root": "fürchten"
@@ -1706,6 +1708,7 @@
     "added": "2026-04-04",
     "family_root": "geben",
     "related": [
+      "angeben",
       "zugeben"
     ]
   },
@@ -2429,6 +2432,7 @@
     "reflexive": false,
     "prefix": "zu-",
     "related": [
+      "angeben",
       "behaupten",
       "geben"
     ],
@@ -7475,7 +7479,8 @@
     "register": "neutral",
     "notes": "Two uses: (1) es friert mich / ich friere = I'm cold; (2) es friert = it's freezing (water turns to ice). gefroren = frozen.",
     "related": [
-      "die Kälte"
+      "die Kälte",
+      "mir gefriert das Blut in den Adern"
     ],
     "family_root": "frieren",
     "added": "2026-04-06 10:18:00"
@@ -15908,6 +15913,7 @@
     "related": [
       "die Angst",
       "furchtbar",
+      "mir gefriert das Blut in den Adern",
       "sich fürchten",
       "sich ängstigen"
     ],
@@ -25331,7 +25337,10 @@
     "register": "neutral",
     "notes": "Often implies skepticism or uncertainty about the truth of what is being claimed.",
     "added": "2026-04-08 09:11:06",
-    "usage": "both"
+    "usage": "both",
+    "related": [
+      "angeben"
+    ]
   },
   {
     "id": "das-stimmt-nicht",
@@ -25485,5 +25494,89 @@
     "reflexive": false,
     "family_root": "fassen",
     "prefix": "er-"
+  },
+  {
+    "id": "angeben",
+    "word": "angeben",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to show off, to boast",
+        "note": null
+      },
+      {
+        "meaning": "to state, to specify, to indicate",
+        "note": "formal contexts"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er gibt immer mit seinem neuen Auto an.",
+        "en": "He always shows off with his new car."
+      },
+      {
+        "de": "Bitte geben Sie Ihre Adresse an.",
+        "en": "Please state your address."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "The meaning varies significantly by context - from boasting to formal specification.",
+    "added": "2026-04-08 09:26:11",
+    "auxiliary": "haben",
+    "past_tense": "gab an",
+    "past_participle": "angegeben",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "geben",
+    "prefix": "an-",
+    "related": [
+      "geben",
+      "zugeben",
+      "angeblich"
+    ]
+  },
+  {
+    "id": "mir-gefriert-das-blut-in-den-adern",
+    "word": "mir gefriert das Blut in den Adern",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "my blood runs cold",
+        "note": "idiomatic expression for feeling extreme fear or horror"
+      },
+      {
+        "meaning": "I am terrified",
+        "note": "used to express being paralyzed by fear"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Als ich die schreckliche Nachricht hörte, gefror mir das Blut in den Adern.",
+        "en": "When I heard the terrible news, my blood ran cold."
+      },
+      {
+        "de": "Bei dem Gedanken an den Unfall gefriert mir das Blut in den Adern.",
+        "en": "At the thought of the accident, my blood runs cold."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "This expression uses dative case with 'mir' and can be conjugated for other persons.",
+    "added": "2026-04-08 09:28:29",
+    "related": [
+      "frieren",
+      "die Angst",
+      "die Furcht",
+      "sich fürchten"
+    ]
   }
 ]
