@@ -1465,6 +1465,7 @@ function buildGrammarPills(w) {
     if (w.family_root) pills.push(`family: ${w.family_root}`);
   }
   if (w.usage) pills.push(w.usage);
+  if (w.derived_from) pills.push(`<span class="grammar-pill" style="cursor:pointer;color:var(--teal)" onclick="searchRelated('${w.derived_from}',event)" title="Search for source verb">← ${w.derived_from}</span>`);
   if (w.register && w.register !== 'neutral') pills.push(w.register);
   return pills.map(p => p.startsWith('<') ? p : `<span class="grammar-pill">${p}</span>`).join('');
 }
