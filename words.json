@@ -25335,7 +25335,7 @@
   },
   {
     "id": "das-stimmt-nicht",
-    "word": "Das stimmt nicht",
+    "word": "das stimmt nicht",
     "type": "expression",
     "definitions": [
       {
@@ -25441,5 +25441,49 @@
       "sich vorstellen",
       "stellen"
     ]
+  },
+  {
+    "id": "erfassen",
+    "word": "erfassen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to grasp, to comprehend, to understand",
+        "note": null
+      },
+      {
+        "meaning": "to record, to register, to capture data",
+        "note": null
+      },
+      {
+        "meaning": "to seize, to catch, to grip physically",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich kann die Bedeutung dieser Theorie nicht erfassen.",
+        "en": "I cannot grasp the meaning of this theory."
+      },
+      {
+        "de": "Das System erfasst alle Kundendaten automatisch.",
+        "en": "The system records all customer data automatically."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-04-08 09:21:20",
+    "auxiliary": "haben",
+    "past_tense": "erfasste",
+    "past_participle": "erfasst",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "fassen",
+    "prefix": "er-"
   }
 ]
