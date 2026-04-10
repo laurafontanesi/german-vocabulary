@@ -4007,6 +4007,7 @@
       "kennen",
       "losfahren",
       "sich verfahren",
+      "verfahren",
       "wegfahren",
       "wissen"
     ],
@@ -4210,7 +4211,8 @@
       "besuchen",
       "der Termin",
       "die Verabredung",
-      "kennenlernen"
+      "kennenlernen",
+      "treffen"
     ],
     "definitions": [
       {
@@ -6010,6 +6012,7 @@
       "hinfahren",
       "losfahren",
       "sich verfahren",
+      "verfahren",
       "wegfahren"
     ],
     "definitions": [
@@ -18283,6 +18286,7 @@
       "herumfahren",
       "losfahren",
       "sich verfahren",
+      "verfahren",
       "wegfahren"
     ],
     "added": "2026-04-07 14:23:00"
@@ -18330,6 +18334,7 @@
       "hinfahren",
       "losfahren",
       "sich verfahren",
+      "verfahren",
       "wegfahren"
     ],
     "added": "2026-04-07 14:24:00"
@@ -18377,6 +18382,7 @@
       "hinfahren",
       "losfahren",
       "sich verfahren",
+      "verfahren",
       "wegfahren"
     ],
     "added": "2026-04-07 14:25:00"
@@ -18424,6 +18430,7 @@
       "herumfahren",
       "hinfahren",
       "sich verfahren",
+      "verfahren",
       "wegfahren"
     ],
     "added": "2026-04-07 14:26:00"
@@ -18472,7 +18479,8 @@
       "herumfahren",
       "hinfahren",
       "losfahren",
-      "sich verfahren"
+      "sich verfahren",
+      "verfahren"
     ],
     "added": "2026-04-07 14:27:00"
   },
@@ -18522,6 +18530,7 @@
       "hinfahren",
       "losfahren",
       "sich verfahren",
+      "verfahren",
       "wegfahren"
     ],
     "added": "2026-04-07 14:28:00"
@@ -22267,7 +22276,8 @@
     "related": [
       "die Entscheidung",
       "die Entscheidungsfindung",
-      "sich verfahren"
+      "sich verfahren",
+      "verfahren"
     ],
     "added": "2026-04-07 16:49:00"
   },
@@ -25652,7 +25662,7 @@
     "family_root": "fahren",
     "prefix": "ver-",
     "related": [
-	  "verfahren",	
+      "verfahren",
       "Entscheidungsverfahren",
       "abfahren",
       "das Entscheidungsverfahren",
@@ -25686,7 +25696,7 @@
     ],
     "tags": [],
     "register": "neutral",
-	"added": "2026-04-08 09:52:06",
+    "added": "2026-04-08 09:52:06",
     "auxiliary": "sein",
     "past_tense": "verfuhr",
     "past_participle": "verfahren",
@@ -25695,7 +25705,7 @@
     "family_root": "fahren",
     "prefix": "ver-",
     "related": [
-	  "sich verfahren",	
+      "sich verfahren",
       "Entscheidungsverfahren",
       "abfahren",
       "das Entscheidungsverfahren",
@@ -25707,5 +25717,1477 @@
       "losfahren",
       "wegfahren"
     ]
+  },
+  {
+    "id": "seufzen",
+    "word": "seufzen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to sigh",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie seufzte tief und legte das Buch weg.",
+        "en": "She sighed deeply and put the book down."
+      },
+      {
+        "de": "Er seufzte vor Erschöpfung nach dem langen Tag.",
+        "en": "He sighed with exhaustion after the long day."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "lass das Seufzen"
+    ],
+    "added": "2026-04-10 10:00:00",
+    "auxiliary": "haben",
+    "past_tense": "seufzte",
+    "past_participle": "geseufzt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "seufzen"
+  },
+  {
+    "id": "runzeln",
+    "word": "runzeln",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to wrinkle, to crease",
+        "note": null
+      },
+      {
+        "meaning": "die Stirn runzeln: to frown, to furrow one's brow",
+        "note": "almost always used in this fixed phrase"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er runzelte die Stirn, als er die Nachricht hörte.",
+        "en": "He furrowed his brow when he heard the news."
+      },
+      {
+        "de": "Sie runzelte nachdenklich die Stirn.",
+        "en": "She frowned thoughtfully."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Most common in the fixed phrase 'die Stirn runzeln' (to frown).",
+    "related": [],
+    "added": "2026-04-10 10:01:00",
+    "auxiliary": "haben",
+    "past_tense": "runzelte",
+    "past_participle": "gerunzelt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "runzeln"
+  },
+  {
+    "id": "knapp",
+    "word": "knapp",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "scarce, tight, in short supply",
+        "note": "e.g. time, money, resources"
+      },
+      {
+        "meaning": "just barely, narrowly",
+        "note": "adverbial use: knapp verpassen = to narrowly miss"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Zeit ist knapp, wir müssen uns beeilen.",
+        "en": "Time is tight, we need to hurry."
+      },
+      {
+        "de": "Er hat die Prüfung knapp bestanden.",
+        "en": "He barely passed the exam."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 10:02:00"
+  },
+  {
+    "id": "die-dammerung",
+    "word": "die Dämmerung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Dämmerungen",
+    "definitions": [
+      {
+        "meaning": "twilight, dusk",
+        "note": "Abenddämmerung = dusk; Morgendämmerung = dawn"
+      },
+      {
+        "meaning": "dawn",
+        "note": "when referring to morning twilight"
+      }
+    ],
+    "examples": [
+      {
+        "de": "In der Dämmerung sieht die Stadt besonders schön aus.",
+        "en": "The city looks especially beautiful at dusk."
+      },
+      {
+        "de": "Die Vögel singen bei der Dämmerung.",
+        "en": "The birds sing at dawn."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "das Morgengrauen"
+    ],
+    "added": "2026-04-10 10:03:00"
+  },
+  {
+    "id": "das-morgengrauen",
+    "word": "das Morgengrauen",
+    "type": "noun",
+    "gender": "das",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "dawn, daybreak",
+        "note": "literally 'morning grey'; no plural"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie brachen beim Morgengrauen auf.",
+        "en": "They set off at dawn."
+      },
+      {
+        "de": "Das Morgengrauen tauchte den Himmel in Rosa und Orange.",
+        "en": "The dawn bathed the sky in pink and orange."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "die Dämmerung"
+    ],
+    "added": "2026-04-10 10:04:00"
+  },
+  {
+    "id": "glitzern",
+    "word": "glitzern",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to glitter, to sparkle, to twinkle",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Sterne glitzern am klaren Winterhimmel.",
+        "en": "The stars twinkle in the clear winter sky."
+      },
+      {
+        "de": "Das Wasser glitzerte im Sonnenlicht.",
+        "en": "The water sparkled in the sunlight."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 10:05:00",
+    "auxiliary": "haben",
+    "past_tense": "glitzerte",
+    "past_participle": "geglitzert",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "glitzern"
+  },
+  {
+    "id": "der-anzug",
+    "word": "der Anzug",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Anzüge",
+    "definitions": [
+      {
+        "meaning": "suit (clothing)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er trug einen dunklen Anzug zur Hochzeit.",
+        "en": "He wore a dark suit to the wedding."
+      },
+      {
+        "de": "Der Anzug sitzt perfekt.",
+        "en": "The suit fits perfectly."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 10:06:00"
+  },
+  {
+    "id": "gemutlich",
+    "word": "gemütlich",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "cosy, comfortable, snug",
+        "note": "describing a place or atmosphere"
+      },
+      {
+        "meaning": "relaxed, leisurely, easy-going",
+        "note": "describing a person or pace"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Kneipe ist klein aber sehr gemütlich.",
+        "en": "The pub is small but very cosy."
+      },
+      {
+        "de": "Wir haben einen gemütlichen Abend verbracht.",
+        "en": "We spent a relaxed evening."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "A key German cultural concept — the feeling of warmth and belonging in a comfortable setting.",
+    "related": [],
+    "added": "2026-04-10 10:07:00"
+  },
+  {
+    "id": "das-erdgeschoss",
+    "word": "das Erdgeschoss",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Erdgeschosse",
+    "definitions": [
+      {
+        "meaning": "ground floor",
+        "note": "in German-speaking countries, the ground floor is Erdgeschoss; the floor above is the 1. Obergeschoss"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Café befindet sich im Erdgeschoss des Gebäudes.",
+        "en": "The café is on the ground floor of the building."
+      },
+      {
+        "de": "Die Wohnung im Erdgeschoss hat einen eigenen Garten.",
+        "en": "The ground-floor flat has its own garden."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Not the same as the English 'first floor' — the Erdgeschoss is floor 0.",
+    "related": [],
+    "added": "2026-04-10 10:08:00"
+  },
+  {
+    "id": "die-kneipe",
+    "word": "die Kneipe",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Kneipen",
+    "definitions": [
+      {
+        "meaning": "pub, bar, tavern",
+        "note": "informal; refers to a traditional local pub"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nach der Arbeit gehen wir in die Kneipe um die Ecke.",
+        "en": "After work we go to the pub around the corner."
+      },
+      {
+        "de": "Die Kneipe war voll mit Stammgästen.",
+        "en": "The pub was full of regulars."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "informal",
+    "notes": null,
+    "related": [
+      "der Krug"
+    ],
+    "added": "2026-04-10 10:09:00"
+  },
+  {
+    "id": "der-krug",
+    "word": "der Krug",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Krüge",
+    "definitions": [
+      {
+        "meaning": "jug, pitcher",
+        "note": "a vessel for pouring liquids"
+      },
+      {
+        "meaning": "pub, inn",
+        "note": "regional/dialectal, especially in northern Germany"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Kellner brachte einen Krug Bier an den Tisch.",
+        "en": "The waiter brought a jug of beer to the table."
+      },
+      {
+        "de": "Wir trafen uns im alten Krug am Marktplatz.",
+        "en": "We met at the old inn on the market square."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "die Kneipe"
+    ],
+    "added": "2026-04-10 10:10:00"
+  },
+  {
+    "id": "einheimisch",
+    "word": "einheimisch",
+    "type": "adj/adv",
+    "usage": "adjective only",
+    "definitions": [
+      {
+        "meaning": "local, native",
+        "note": "can refer to people or produce"
+      },
+      {
+        "meaning": "indigenous, domestic",
+        "note": "as opposed to imported or foreign"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die einheimischen Bewohner kennen die besten Restaurants.",
+        "en": "The local residents know the best restaurants."
+      },
+      {
+        "de": "Wir kaufen lieber einheimisches Gemüse.",
+        "en": "We prefer to buy locally grown vegetables."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 10:11:00"
+  },
+  {
+    "id": "riechen",
+    "word": "riechen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to smell",
+        "note": "intransitive: to have a smell; transitive: to smell something"
+      },
+      {
+        "meaning": "to sense, to detect",
+        "note": "figurative: ich rieche Ärger = I smell trouble"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Rosen riechen wunderschön.",
+        "en": "The roses smell wonderful."
+      },
+      {
+        "de": "Er roch den Kaffee schon vom Flur aus.",
+        "en": "He could smell the coffee from the hallway."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 10:12:00",
+    "auxiliary": "haben",
+    "past_tense": "roch",
+    "past_participle": "gerochen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "riechen"
+  },
+  {
+    "id": "kauen",
+    "word": "kauen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to chew",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Man sollte jeden Bissen gut kauen.",
+        "en": "One should chew every bite well."
+      },
+      {
+        "de": "Das Kind kaute nachdenklich auf dem Bleistift.",
+        "en": "The child chewed thoughtfully on the pencil."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "schlucken"
+    ],
+    "added": "2026-04-10 10:13:00",
+    "auxiliary": "haben",
+    "past_tense": "kaute",
+    "past_participle": "gekaut",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "kauen"
+  },
+  {
+    "id": "schlucken",
+    "word": "schlucken",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to swallow",
+        "note": null
+      },
+      {
+        "meaning": "to swallow (one's pride / emotions)",
+        "note": "figurative"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er schluckte die Tablette mit einem Schluck Wasser.",
+        "en": "He swallowed the pill with a sip of water."
+      },
+      {
+        "de": "Sie musste ihren Ärger schlucken und schweigen.",
+        "en": "She had to swallow her anger and stay silent."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "kauen"
+    ],
+    "added": "2026-04-10 10:14:00",
+    "auxiliary": "haben",
+    "past_tense": "schluckte",
+    "past_participle": "geschluckt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schlucken"
+  },
+  {
+    "id": "heben",
+    "word": "heben",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to lift, to raise",
+        "note": null
+      },
+      {
+        "meaning": "to improve, to elevate",
+        "note": "figurative: die Stimmung heben = to lift the mood"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er hob den schweren Koffer auf das Gepäckregal.",
+        "en": "He lifted the heavy suitcase onto the luggage rack."
+      },
+      {
+        "de": "Die gute Nachricht hob ihre Stimmung sofort.",
+        "en": "The good news immediately lifted her mood."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 10:15:00",
+    "auxiliary": "haben",
+    "past_tense": "hob",
+    "past_participle": "gehoben",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "heben"
+  },
+  {
+    "id": "das-rathaus",
+    "word": "das Rathaus",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Rathäuser",
+    "definitions": [
+      {
+        "meaning": "town hall, city hall",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Hochzeit fand im Rathaus statt.",
+        "en": "The wedding took place at the town hall."
+      },
+      {
+        "de": "Das Rathaus steht auf dem Marktplatz.",
+        "en": "The town hall stands on the market square."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 10:16:00"
+  },
+  {
+    "id": "das-ufer",
+    "word": "das Ufer",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Ufer",
+    "definitions": [
+      {
+        "meaning": "bank, shore, riverbank",
+        "note": "used for rivers, lakes, and the sea"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir spazierten am Ufer des Sees entlang.",
+        "en": "We walked along the shore of the lake."
+      },
+      {
+        "de": "Das Boot legte am anderen Ufer an.",
+        "en": "The boat docked on the other bank."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 10:17:00"
+  },
+  {
+    "id": "der-fahrstuhl",
+    "word": "der Fahrstuhl",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Fahrstühle",
+    "definitions": [
+      {
+        "meaning": "lift, elevator",
+        "note": "standard German term; 'Aufzug' is also common"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nehmen wir den Fahrstuhl, die Wohnung ist im fünften Stock.",
+        "en": "Let's take the lift, the flat is on the fifth floor."
+      },
+      {
+        "de": "Der Fahrstuhl ist leider außer Betrieb.",
+        "en": "The lift is unfortunately out of order."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 10:18:00"
+  },
+  {
+    "id": "gahnen",
+    "word": "gähnen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to yawn",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie gähnte herzhaft und streckte sich.",
+        "en": "She yawned heartily and stretched."
+      },
+      {
+        "de": "Er konnte nicht aufhören zu gähnen.",
+        "en": "He couldn't stop yawning."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 10:19:00",
+    "auxiliary": "haben",
+    "past_tense": "gähnte",
+    "past_participle": "gegähnt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "gähnen"
+  },
+  {
+    "id": "eigentlich",
+    "word": "eigentlich",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "actually, really, in fact",
+        "note": "adverbial: used to clarify or correct something"
+      },
+      {
+        "meaning": "actual, real, true",
+        "note": "adjectival: der eigentliche Grund = the real reason"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Eigentlich wollte ich früher schlafen gehen.",
+        "en": "I actually wanted to go to sleep earlier."
+      },
+      {
+        "de": "Was ist eigentlich der eigentliche Grund dafür?",
+        "en": "What's actually the real reason for that?"
+      }
+    ],
+    "topics": [
+      "grammar & structure",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Very common filler/hedging word in spoken German, similar to 'actually'.",
+    "related": [],
+    "added": "2026-04-10 10:20:00"
+  },
+  {
+    "id": "der-aufenthalt",
+    "word": "der Aufenthalt",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Aufenthalte",
+    "definitions": [
+      {
+        "meaning": "stay, sojourn",
+        "note": "period of time spent somewhere"
+      },
+      {
+        "meaning": "stopover, layover",
+        "note": "in the context of travel/transport"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Mein Aufenthalt in Berlin hat mir sehr gut gefallen.",
+        "en": "My stay in Berlin was very enjoyable."
+      },
+      {
+        "de": "Der Zug hat einen Aufenthalt von zehn Minuten in Frankfurt.",
+        "en": "The train has a ten-minute stopover in Frankfurt."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 10:21:00"
+  },
+  {
+    "id": "grinsen",
+    "word": "grinsen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to grin, to smirk",
+        "note": "a wide, often cheeky or knowing smile"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er grinste breit, als er die Überraschung sah.",
+        "en": "He grinned broadly when he saw the surprise."
+      },
+      {
+        "de": "Sie grinste verschmitzt und verriet nichts.",
+        "en": "She smirked mischievously and gave nothing away."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 10:22:00",
+    "auxiliary": "haben",
+    "past_tense": "grinste",
+    "past_participle": "gegrinst",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "grinsen"
+  },
+  {
+    "id": "laufen",
+    "word": "laufen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to run, to walk",
+        "note": "in colloquial German can mean simply 'to walk'; 'rennen' is more specifically 'to run fast'"
+      },
+      {
+        "meaning": "to be running, to be on (of a film, machine, process)",
+        "note": "Der Film läuft gerade = the film is on now"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie läuft jeden Morgen eine Stunde im Park.",
+        "en": "She runs for an hour in the park every morning."
+      },
+      {
+        "de": "Der Motor läuft einwandfrei.",
+        "en": "The engine is running perfectly."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "ablaufen"
+    ],
+    "added": "2026-04-10 10:23:00",
+    "auxiliary": "sein",
+    "past_tense": "lief",
+    "past_participle": "gelaufen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "laufen"
+  },
+  {
+    "id": "ablaufen",
+    "word": "ablaufen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to expire, to run out",
+        "note": "e.g. a passport, deadline, contract"
+      },
+      {
+        "meaning": "to go, to proceed, to unfold",
+        "note": "Wie ist es abgelaufen? = How did it go?"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Mein Visum läuft nächsten Monat ab.",
+        "en": "My visa expires next month."
+      },
+      {
+        "de": "Die Veranstaltung ist reibungslos abgelaufen.",
+        "en": "The event went smoothly."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "time"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "laufen"
+    ],
+    "added": "2026-04-10 10:24:00",
+    "auxiliary": "sein",
+    "past_tense": "lief ab",
+    "past_participle": "abgelaufen",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "laufen",
+    "prefix": "ab-"
+  },
+  {
+    "id": "klopfen",
+    "word": "klopfen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to knock, to tap",
+        "note": "e.g. on a door"
+      },
+      {
+        "meaning": "to beat, to pound",
+        "note": "Das Herz klopft = the heart is pounding"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Jemand klopfte leise an die Tür.",
+        "en": "Someone knocked quietly at the door."
+      },
+      {
+        "de": "Sein Herz klopfte vor Aufregung.",
+        "en": "His heart was pounding with excitement."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 10:25:00",
+    "auxiliary": "haben",
+    "past_tense": "klopfte",
+    "past_participle": "geklopft",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "klopfen"
+  },
+  {
+    "id": "schreien",
+    "word": "schreien",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to shout, to scream, to yell",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Kinder schrien vor Freude auf dem Spielplatz.",
+        "en": "The children shouted with joy on the playground."
+      },
+      {
+        "de": "Er schrie um Hilfe, aber niemand hörte ihn.",
+        "en": "He screamed for help but nobody heard him."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "anschreien"
+    ],
+    "added": "2026-04-10 10:26:00",
+    "auxiliary": "haben",
+    "past_tense": "schrie",
+    "past_participle": "geschrien",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schreien"
+  },
+  {
+    "id": "anschreien",
+    "word": "anschreien",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to shout at (someone), to yell at",
+        "note": "always directed at a person"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Du solltest dein Kind nicht anschreien.",
+        "en": "You shouldn't shout at your child."
+      },
+      {
+        "de": "Er hat sie wütend angeschrien.",
+        "en": "He shouted at her furiously."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "emotions"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "schreien"
+    ],
+    "added": "2026-04-10 10:27:00",
+    "auxiliary": "haben",
+    "past_tense": "schrie an",
+    "past_participle": "angeschrien",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "schreien",
+    "prefix": "an-"
+  },
+  {
+    "id": "gucken",
+    "word": "gucken",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to look, to watch",
+        "note": "colloquial; more formal equivalent is 'schauen' or 'sehen'"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Guck mal, da drüben ist ein Reh!",
+        "en": "Look, there's a deer over there!"
+      },
+      {
+        "de": "Wir haben gestern Abend einen Film geguckt.",
+        "en": "We watched a film last night."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "informal",
+    "notes": "Common in northern and central Germany; in southern Germany and Austria 'schauen' is preferred.",
+    "related": [],
+    "added": "2026-04-10 10:28:00",
+    "auxiliary": "haben",
+    "past_tense": "guckte",
+    "past_participle": "geguckt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "gucken"
+  },
+  {
+    "id": "der-affe",
+    "word": "der Affe",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Affen",
+    "definitions": [
+      {
+        "meaning": "monkey, ape",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Affen im Zoo kletterten auf die Bäume.",
+        "en": "The monkeys in the zoo climbed the trees."
+      },
+      {
+        "de": "Schau mal den Affen an — er macht alles nach!",
+        "en": "Look at that monkey — he copies everything!"
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "various"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 10:29:00"
+  },
+  {
+    "id": "faul",
+    "word": "faul",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "lazy, idle",
+        "note": "referring to a person's attitude"
+      },
+      {
+        "meaning": "rotten, bad",
+        "note": "referring to food: das Obst ist faul = the fruit is rotten"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er ist zu faul, um das Geschirr zu spülen.",
+        "en": "He's too lazy to do the dishes."
+      },
+      {
+        "de": "Die Äpfel sind faul geworden.",
+        "en": "The apples have gone rotten."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 10:30:00"
+  },
+  {
+    "id": "kunstlerisch",
+    "word": "künstlerisch",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "artistic",
+        "note": "related to art or artistic ability"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie hat ein großes künstlerisches Talent.",
+        "en": "She has great artistic talent."
+      },
+      {
+        "de": "Das Projekt war künstlerisch wertvoll.",
+        "en": "The project was artistically valuable."
+      }
+    ],
+    "topics": [
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "künstlich"
+    ],
+    "added": "2026-04-10 10:31:00"
+  },
+  {
+    "id": "kunstlich",
+    "word": "künstlich",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "artificial, synthetic, man-made",
+        "note": "not natural"
+      },
+      {
+        "meaning": "fake, forced",
+        "note": "figurative: ein künstliches Lächeln = a forced smile"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Blumen sind künstlich, aber sie sehen echt aus.",
+        "en": "The flowers are artificial but they look real."
+      },
+      {
+        "de": "Künstliche Intelligenz verändert die Welt.",
+        "en": "Artificial intelligence is changing the world."
+      }
+    ],
+    "topics": [
+      "various",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Easy to confuse with künstlerisch (artistic). Künstlich = artificial/fake; künstlerisch = related to art.",
+    "related": [
+      "künstlerisch"
+    ],
+    "added": "2026-04-10 10:32:00"
+  },
+  {
+    "id": "die-laune",
+    "word": "die Laune",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Launen",
+    "definitions": [
+      {
+        "meaning": "mood, temper",
+        "note": "gute Laune = good mood; schlechte Laune = bad mood"
+      },
+      {
+        "meaning": "whim, fancy",
+        "note": "aus einer Laune heraus = on a whim"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er ist heute guter Laune.",
+        "en": "He is in a good mood today."
+      },
+      {
+        "de": "Ihre Launen sind manchmal schwer vorherzusagen.",
+        "en": "Her moods are sometimes hard to predict."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 10:33:00"
+  },
+  {
+    "id": "drehen",
+    "word": "drehen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to turn, to rotate, to twist",
+        "note": null
+      },
+      {
+        "meaning": "to shoot (a film)",
+        "note": "einen Film drehen = to shoot/make a film"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie drehte den Schlüssel im Schloss um.",
+        "en": "She turned the key in the lock."
+      },
+      {
+        "de": "Der Regisseur dreht gerade seinen neuen Film.",
+        "en": "The director is currently shooting his new film."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "umdrehen"
+    ],
+    "added": "2026-04-10 10:34:00",
+    "auxiliary": "haben",
+    "past_tense": "drehte",
+    "past_participle": "gedreht",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "drehen"
+  },
+  {
+    "id": "umdrehen",
+    "word": "umdrehen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to turn around, to turn over",
+        "note": "transitive: to turn something around"
+      },
+      {
+        "meaning": "to turn around",
+        "note": "reflexive: sich umdrehen = to turn oneself around"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie drehte sich um und sah ihn.",
+        "en": "She turned around and saw him."
+      },
+      {
+        "de": "Er drehte die Münze um, um die andere Seite zu sehen.",
+        "en": "He turned the coin over to see the other side."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "body & mind"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "drehen"
+    ],
+    "added": "2026-04-10 10:35:00",
+    "auxiliary": "haben",
+    "past_tense": "drehte um",
+    "past_participle": "umgedreht",
+    "is_separable": true,
+    "reflexive": true,
+    "family_root": "drehen",
+    "prefix": "um-"
+  },
+  {
+    "id": "ehrlich-gesagt",
+    "word": "ehrlich gesagt",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "honestly, to be honest, frankly",
+        "note": "used to introduce a candid statement"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ehrlich gesagt finde ich das Buch etwas langweilig.",
+        "en": "To be honest, I find the book a bit boring."
+      },
+      {
+        "de": "Ehrlich gesagt weiß ich es nicht.",
+        "en": "Honestly, I don't know."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 10:36:00"
+  },
+  {
+    "id": "lass-das-seufzen",
+    "word": "lass das Seufzen",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "stop sighing, cut out the sighing",
+        "note": "informal command to stop sighing"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Lass das Seufzen und sag mir, was los ist.",
+        "en": "Stop sighing and tell me what's wrong."
+      },
+      {
+        "de": "Lass das Seufzen — es hilft nichts.",
+        "en": "Cut out the sighing — it doesn't help."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "informal",
+    "notes": null,
+    "related": [
+      "seufzen"
+    ],
+    "added": "2026-04-10 10:37:00"
+  },
+  {
+    "id": "hor-zu",
+    "word": "hör zu",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "listen up, look here, now listen",
+        "note": "imperative of zuhören; used to get someone's attention"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Hör zu, ich erkläre es dir noch einmal.",
+        "en": "Listen, I'll explain it to you once more."
+      },
+      {
+        "de": "Hör mal zu — das ist wichtig.",
+        "en": "Now listen — this is important."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "informal",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 10:38:00"
+  },
+  {
+    "id": "machst-du-witze",
+    "word": "machst du Witze?",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "are you kidding? are you joking?",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Machst du Witze? Das kann nicht dein Ernst sein!",
+        "en": "Are you kidding? You can't be serious!"
+      },
+      {
+        "de": "Er hat die Prüfung bestanden? Machst du Witze?",
+        "en": "He passed the exam? Are you joking?"
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "informal",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 10:39:00"
+  },
+  {
+    "id": "machs-gut",
+    "word": "mach's gut",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "take care, look after yourself, goodbye",
+        "note": "informal farewell, short for 'mach es gut'"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Mach's gut und meld dich bald!",
+        "en": "Take care and get in touch soon!"
+      },
+      {
+        "de": "Tschüss, mach's gut!",
+        "en": "Bye, take care!"
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "informal",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 10:40:00"
   }
 ]
