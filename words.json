@@ -2340,7 +2340,11 @@
     "register": "neutral",
     "notes": "der Vorschlag (noun) = the suggestion/proposal. Einen Vorschlag machen = to make a suggestion.",
     "added": "2026-04-04",
-    "family_root": "schlagen"
+    "family_root": "schlagen",
+    "related": [
+      "anschlagen",
+      "schlagen"
+    ]
   },
   {
     "id": "nutzen",
@@ -13638,7 +13642,9 @@
     "notes": "die Folge = consequence/result OR episode. soziale/Umweltfolgen = social/environmental consequences. infolge = as a result of (preposition).",
     "related": [
       "der Grund",
-      "infolge"
+      "folgen",
+      "infolge",
+      "verfolgen"
     ],
     "added": "2026-04-07 10:39:00"
   },
@@ -13972,6 +13978,7 @@
     "notes": "teilen = to share or to divide. Ich teile deine Meinung = I share your view. aufteilen = to split up; mitteilen = to inform/communicate.",
     "related": [
       "beurteilen",
+      "der Anteil",
       "der Teil",
       "urteilen",
       "verurteilen"
@@ -14738,8 +14745,9 @@
     "register": "neutral",
     "notes": "der Großteil = the majority, the greater part. zum Teil = partly. teils... teils... = partly... partly...",
     "related": [
-      "teilen",
-      "die Menge"
+      "der Anteil",
+      "die Menge",
+      "teilen"
     ],
     "added": "2026-04-07 12:03:00"
   },
@@ -23638,7 +23646,8 @@
     "register": "neutral",
     "notes": "verraten = to betray (serious) or to let slip/reveal (colloquial). der Verrat = betrayal.",
     "related": [
-      "anlügen"
+      "anlügen",
+      "raten"
     ],
     "added": "2026-04-07 17:26:00"
   },
@@ -24758,7 +24767,11 @@
     "notes": null,
     "added": "2026-04-07 18:51:51",
     "gender": "der",
-    "plural": "die Schalter"
+    "plural": "die Schalter",
+    "related": [
+      "ausschalten",
+      "schalten"
+    ]
   },
   {
     "id": "die-aufschrift",
@@ -27189,5 +27202,1765 @@
     "notes": null,
     "related": [],
     "added": "2026-04-10 10:40:00"
+  },
+  {
+    "id": "schalten",
+    "word": "schalten",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to switch, to flick (a switch)",
+        "note": null
+      },
+      {
+        "meaning": "to shift (gears)",
+        "note": "in a car"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er schaltete das Licht aus und verließ den Raum.",
+        "en": "He switched off the light and left the room."
+      },
+      {
+        "de": "Sie schaltete in den dritten Gang.",
+        "en": "She shifted into third gear."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "ausschalten",
+      "der Schalter"
+    ],
+    "added": "2026-04-10 11:00:00",
+    "auxiliary": "haben",
+    "past_tense": "schaltete",
+    "past_participle": "geschaltet",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schalten"
+  },
+  {
+    "id": "ausschalten",
+    "word": "ausschalten",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to switch off, to turn off",
+        "note": null
+      },
+      {
+        "meaning": "to eliminate, to neutralise",
+        "note": "figurative"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Vergiss nicht, den Computer auszuschalten.",
+        "en": "Don't forget to switch off the computer."
+      },
+      {
+        "de": "Das System schaltet sich automatisch aus.",
+        "en": "The system switches itself off automatically."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "schalten",
+      "der Schalter"
+    ],
+    "added": "2026-04-10 11:01:00",
+    "auxiliary": "haben",
+    "past_tense": "schaltete aus",
+    "past_participle": "ausgeschaltet",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "schalten",
+    "prefix": "aus-"
+  },
+  {
+    "id": "folgen",
+    "word": "folgen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to follow",
+        "note": "takes dative: jemandem folgen"
+      },
+      {
+        "meaning": "to result, to follow logically",
+        "note": "daraus folgt = it follows from this"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er folgte ihr durch die engen Gassen.",
+        "en": "He followed her through the narrow alleyways."
+      },
+      {
+        "de": "Daraus folgt, dass wir handeln müssen.",
+        "en": "It follows from this that we must act."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Takes dative case: jemandem folgen (not jemanden).",
+    "related": [
+      "verfolgen",
+      "die Folge"
+    ],
+    "added": "2026-04-10 11:02:00",
+    "auxiliary": "sein",
+    "past_tense": "folgte",
+    "past_participle": "gefolgt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "folgen",
+    "preposition": "+ DAT"
+  },
+  {
+    "id": "verfolgen",
+    "word": "verfolgen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to pursue, to chase",
+        "note": "more intense than folgen"
+      },
+      {
+        "meaning": "to prosecute, to persecute",
+        "note": null
+      },
+      {
+        "meaning": "to follow, to track",
+        "note": "eine Diskussion verfolgen = to follow a discussion"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Polizei verfolgte den Verdächtigen durch die Stadt.",
+        "en": "The police pursued the suspect through the city."
+      },
+      {
+        "de": "Sie verfolgte die Nachrichten aufmerksam.",
+        "en": "She followed the news attentively."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "folgen",
+      "die Folge"
+    ],
+    "added": "2026-04-10 11:03:00",
+    "auxiliary": "haben",
+    "past_tense": "verfolgte",
+    "past_participle": "verfolgt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "folgen"
+  },
+  {
+    "id": "binden",
+    "word": "binden",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to tie, to bind, to fasten",
+        "note": null
+      },
+      {
+        "meaning": "to commit, to oblige",
+        "note": "sich gebunden fühlen = to feel committed"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie band ihr Haar zu einem Zopf.",
+        "en": "She tied her hair into a braid."
+      },
+      {
+        "de": "Er fühlt sich durch den Vertrag gebunden.",
+        "en": "He feels bound by the contract."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "entbinden"
+    ],
+    "added": "2026-04-10 11:04:00",
+    "auxiliary": "haben",
+    "past_tense": "band",
+    "past_participle": "gebunden",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "binden"
+  },
+  {
+    "id": "entbinden",
+    "word": "entbinden",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to release, to free from an obligation",
+        "note": "jemanden von etwas entbinden"
+      },
+      {
+        "meaning": "to deliver a baby, to give birth",
+        "note": "medical context"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Chef entband ihn von seiner Aufgabe.",
+        "en": "The boss released him from his duty."
+      },
+      {
+        "de": "Sie wurde gestern entbunden.",
+        "en": "She gave birth yesterday."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "binden"
+    ],
+    "added": "2026-04-10 11:05:00",
+    "auxiliary": "haben",
+    "past_tense": "entband",
+    "past_participle": "entbunden",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "binden"
+  },
+  {
+    "id": "aufmachen",
+    "word": "aufmachen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to open",
+        "note": "colloquial equivalent of öffnen"
+      },
+      {
+        "meaning": "to open up a shop or business",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Mach bitte die Tür auf, es ist so heiß hier.",
+        "en": "Please open the door, it's so hot in here."
+      },
+      {
+        "de": "Sie haben letztes Jahr ein neues Café aufgemacht.",
+        "en": "They opened a new café last year."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "informal",
+    "notes": "More colloquial than öffnen; common in everyday speech.",
+    "related": [],
+    "added": "2026-04-10 11:06:00",
+    "auxiliary": "haben",
+    "past_tense": "machte auf",
+    "past_participle": "aufgemacht",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "machen",
+    "prefix": "auf-"
+  },
+  {
+    "id": "dennoch",
+    "word": "dennoch",
+    "type": "adj/adv",
+    "usage": "adverb only",
+    "definitions": [
+      {
+        "meaning": "nevertheless, nonetheless, yet",
+        "note": "concessive connector"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Es regnete stark, dennoch gingen sie spazieren.",
+        "en": "It was raining heavily, yet they went for a walk."
+      },
+      {
+        "de": "Das Projekt war schwierig, dennoch haben wir es geschafft.",
+        "en": "The project was difficult, nonetheless we managed it."
+      }
+    ],
+    "topics": [
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 11:07:00"
+  },
+  {
+    "id": "werfen",
+    "word": "werfen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to throw",
+        "note": null
+      },
+      {
+        "meaning": "to cast light or shadow",
+        "note": "Licht/Schatten werfen"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er warf den Ball so weit er konnte.",
+        "en": "He threw the ball as far as he could."
+      },
+      {
+        "de": "Die Lampe wirft ein warmes Licht.",
+        "en": "The lamp casts a warm light."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "vorwerfen",
+      "anschlagen"
+    ],
+    "added": "2026-04-10 11:08:00",
+    "auxiliary": "haben",
+    "past_tense": "warf",
+    "past_participle": "geworfen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "werfen"
+  },
+  {
+    "id": "vorwerfen",
+    "word": "vorwerfen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to accuse of, to reproach for, to blame for",
+        "note": "jemandem etwas vorwerfen"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er warf ihr vor, unehrlich zu sein.",
+        "en": "He accused her of being dishonest."
+      },
+      {
+        "de": "Man kann ihr nichts vorwerfen.",
+        "en": "You can't blame her for anything."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "society & politics"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": "Takes dative for person and accusative for the thing: jemandem etwas vorwerfen.",
+    "related": [
+      "werfen"
+    ],
+    "added": "2026-04-10 11:09:00",
+    "auxiliary": "haben",
+    "past_tense": "warf vor",
+    "past_participle": "vorgeworfen",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "werfen",
+    "prefix": "vor-"
+  },
+  {
+    "id": "der-bericht",
+    "word": "der Bericht",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Berichte",
+    "definitions": [
+      {
+        "meaning": "report, account, coverage",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Bericht über den Unfall erschien in der Zeitung.",
+        "en": "The report on the accident appeared in the newspaper."
+      },
+      {
+        "de": "Sie schrieb einen ausführlichen Bericht über die Konferenz.",
+        "en": "She wrote a detailed report on the conference."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "berichten"
+    ],
+    "added": "2026-04-10 11:10:00"
+  },
+  {
+    "id": "berichten",
+    "word": "berichten",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to report, to inform, to cover news",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Journalistin berichtete live vom Tatort.",
+        "en": "The journalist reported live from the crime scene."
+      },
+      {
+        "de": "Er berichtete von seinen Reiseerlebnissen.",
+        "en": "He reported on his travel experiences."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "der Bericht"
+    ],
+    "added": "2026-04-10 11:11:00",
+    "auxiliary": "haben",
+    "past_tense": "berichtete",
+    "past_participle": "berichtet",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "berichten"
+  },
+  {
+    "id": "die-ausschreitung",
+    "word": "die Ausschreitung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Ausschreitungen",
+    "definitions": [
+      {
+        "meaning": "riot, violent excess, act of violence",
+        "note": "almost always used in the plural: Ausschreitungen"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Bei der Demonstration kam es zu Ausschreitungen.",
+        "en": "There were riots at the demonstration."
+      },
+      {
+        "de": "Die Polizei versuchte, die Ausschreitungen zu stoppen.",
+        "en": "The police tried to stop the violent clashes."
+      }
+    ],
+    "topics": [
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Almost exclusively used in the plural in practice.",
+    "related": [
+      "der Angriff",
+      "der Anschlag"
+    ],
+    "added": "2026-04-10 11:12:00"
+  },
+  {
+    "id": "beschutzen",
+    "word": "beschützen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to protect, to shield, to guard",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er wollte seine Familie um jeden Preis beschützen.",
+        "en": "He wanted to protect his family at all costs."
+      },
+      {
+        "de": "Der Helm beschützt den Kopf beim Radfahren.",
+        "en": "The helmet protects your head when cycling."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 11:13:00",
+    "auxiliary": "haben",
+    "past_tense": "beschützte",
+    "past_participle": "beschützt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "beschützen"
+  },
+  {
+    "id": "haufig",
+    "word": "häufig",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "frequent, common",
+        "note": null
+      },
+      {
+        "meaning": "frequently, often",
+        "note": "adverbial use"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist ein häufiger Fehler unter Lernenden.",
+        "en": "This is a common mistake among learners."
+      },
+      {
+        "de": "Er besucht uns häufig am Wochenende.",
+        "en": "He visits us frequently at the weekend."
+      }
+    ],
+    "topics": [
+      "grammar & structure",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 11:14:00"
+  },
+  {
+    "id": "beobachten",
+    "word": "beobachten",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to observe, to watch, to monitor",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie beobachtete die Vögel durch das Fernglas.",
+        "en": "She observed the birds through binoculars."
+      },
+      {
+        "de": "Die Polizei beobachtete das Gebäude seit Wochen.",
+        "en": "The police had been monitoring the building for weeks."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "der Beobachter"
+    ],
+    "added": "2026-04-10 11:15:00",
+    "auxiliary": "haben",
+    "past_tense": "beobachtete",
+    "past_participle": "beobachtet",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "beobachten"
+  },
+  {
+    "id": "der-beobachter",
+    "word": "der Beobachter",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Beobachter",
+    "definitions": [
+      {
+        "meaning": "observer, watcher, monitor",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Als neutraler Beobachter konnte er die Lage gut einschätzen.",
+        "en": "As a neutral observer he could assess the situation well."
+      },
+      {
+        "de": "Die Beobachter der UNO überwachten den Waffenstillstand.",
+        "en": "The UN observers monitored the ceasefire."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "beobachten"
+    ],
+    "added": "2026-04-10 11:16:00"
+  },
+  {
+    "id": "die-untatigkeit",
+    "word": "die Untätigkeit",
+    "type": "noun",
+    "gender": "die",
+    "plural": null,
+    "definitions": [
+      {
+        "meaning": "inaction, inactivity, idleness",
+        "note": "no plural in this sense"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Man kritisierte die Untätigkeit der Regierung.",
+        "en": "The government's inaction was criticised."
+      },
+      {
+        "de": "Untätigkeit ist in dieser Situation keine Option.",
+        "en": "Inaction is not an option in this situation."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "die Tätigkeit"
+    ],
+    "added": "2026-04-10 11:17:00"
+  },
+  {
+    "id": "die-tatigkeit",
+    "word": "die Tätigkeit",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Tätigkeiten",
+    "definitions": [
+      {
+        "meaning": "activity, occupation, work",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ihre Tätigkeit als Ärztin ist sehr anspruchsvoll.",
+        "en": "Her work as a doctor is very demanding."
+      },
+      {
+        "de": "Er geht einer geregelten Tätigkeit nach.",
+        "en": "He pursues a regular occupation."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "die Untätigkeit"
+    ],
+    "added": "2026-04-10 11:18:00"
+  },
+  {
+    "id": "bestimmen",
+    "word": "bestimmen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to determine, to decide, to set",
+        "note": null
+      },
+      {
+        "meaning": "to define, to identify",
+        "note": "in science: eine Art bestimmen = to identify a species"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie bestimmt, wann und wo wir uns treffen.",
+        "en": "She decides when and where we meet."
+      },
+      {
+        "de": "Es ist schwer zu bestimmen, was genau passiert ist.",
+        "en": "It is hard to determine exactly what happened."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 11:19:00",
+    "auxiliary": "haben",
+    "past_tense": "bestimmte",
+    "past_participle": "bestimmt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "bestimmen"
+  },
+  {
+    "id": "kuscheln",
+    "word": "kuscheln",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to cuddle, to snuggle",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Kind kuschelte sich an seine Mutter.",
+        "en": "The child snuggled up to its mother."
+      },
+      {
+        "de": "Sie kuschelten sich zusammen unter die Decke.",
+        "en": "They cuddled up together under the blanket."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 11:20:00",
+    "auxiliary": "haben",
+    "past_tense": "kuschelte",
+    "past_participle": "gekuschelt",
+    "is_separable": false,
+    "reflexive": true,
+    "family_root": "kuscheln"
+  },
+  {
+    "id": "grunden",
+    "word": "gründen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to found, to establish, to set up",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie gründete ihr eigenes Unternehmen mit 30 Jahren.",
+        "en": "She founded her own company at 30."
+      },
+      {
+        "de": "Die Stadt wurde im 12. Jahrhundert gegründet.",
+        "en": "The city was founded in the 12th century."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 11:21:00",
+    "auxiliary": "haben",
+    "past_tense": "gründete",
+    "past_participle": "gegründet",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "gründen"
+  },
+  {
+    "id": "wuchern",
+    "word": "wuchern",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to proliferate, to spread uncontrollably, to overgrow",
+        "note": "of plants, tumours, or anything spreading unchecked"
+      },
+      {
+        "meaning": "to profiteer",
+        "note": "historical/formal"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Unkraut wuchert im ganzen Garten.",
+        "en": "The weeds are spreading all over the garden."
+      },
+      {
+        "de": "In der feuchten Wärme wucherte der Schimmel.",
+        "en": "The mould proliferated in the damp warmth."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 11:22:00",
+    "auxiliary": "haben",
+    "past_tense": "wucherte",
+    "past_participle": "gewuchert",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "wuchern"
+  },
+  {
+    "id": "bezeichnen",
+    "word": "bezeichnen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to call, to refer to as, to describe as",
+        "note": "etwas als X bezeichnen"
+      },
+      {
+        "meaning": "to label, to mark",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Man bezeichnet ihn als einen der besten Regisseure seiner Zeit.",
+        "en": "He is referred to as one of the best directors of his time."
+      },
+      {
+        "de": "Die Wege im Wald sind gut bezeichnet.",
+        "en": "The paths in the forest are well marked."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "die Bezeichnung"
+    ],
+    "added": "2026-04-10 11:23:00",
+    "auxiliary": "haben",
+    "past_tense": "bezeichnete",
+    "past_participle": "bezeichnet",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "bezeichnen"
+  },
+  {
+    "id": "die-bezeichnung",
+    "word": "die Bezeichnung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Bezeichnungen",
+    "definitions": [
+      {
+        "meaning": "name, term, designation, label",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Was ist die genaue Bezeichnung für dieses Werkzeug?",
+        "en": "What is the exact name for this tool?"
+      },
+      {
+        "de": "Der Fachbegriff ist die offizielle Bezeichnung.",
+        "en": "The technical term is the official designation."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "bezeichnen"
+    ],
+    "added": "2026-04-10 11:24:00"
+  },
+  {
+    "id": "das-ratsel",
+    "word": "das Rätsel",
+    "type": "noun",
+    "gender": "das",
+    "plural": "die Rätsel",
+    "definitions": [
+      {
+        "meaning": "puzzle, riddle",
+        "note": null
+      },
+      {
+        "meaning": "mystery, enigma",
+        "note": "es ist ein Rätsel = it is a mystery"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Kind löste das Rätsel in wenigen Minuten.",
+        "en": "The child solved the puzzle in a few minutes."
+      },
+      {
+        "de": "Sein Verschwinden bleibt ein Rätsel.",
+        "en": "His disappearance remains a mystery."
+      }
+    ],
+    "topics": [
+      "various",
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "raten"
+    ],
+    "added": "2026-04-10 11:25:00"
+  },
+  {
+    "id": "kriegen",
+    "word": "kriegen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to get, to receive, to obtain",
+        "note": "colloquial equivalent of bekommen"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Hast du die Nachricht gekriegt?",
+        "en": "Did you get the message?"
+      },
+      {
+        "de": "Sie kriegt nächsten Monat ein Baby.",
+        "en": "She is having a baby next month."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "informal",
+    "notes": "Very common in colloquial speech; in formal writing bekommen or erhalten are preferred.",
+    "related": [],
+    "added": "2026-04-10 11:26:00",
+    "auxiliary": "haben",
+    "past_tense": "kriegte",
+    "past_participle": "gekriegt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "kriegen"
+  },
+  {
+    "id": "der-anteil",
+    "word": "der Anteil",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Anteile",
+    "definitions": [
+      {
+        "meaning": "share, portion, part",
+        "note": "e.g. a share in a company"
+      },
+      {
+        "meaning": "stake, interest",
+        "note": "Anteil nehmen an = to sympathise, to take an interest"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie hält einen großen Anteil an dem Unternehmen.",
+        "en": "She holds a large share in the company."
+      },
+      {
+        "de": "Jeder bekommt seinen Anteil am Gewinn.",
+        "en": "Everyone gets their share of the profit."
+      }
+    ],
+    "topics": [
+      "money & shopping",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "der Teil",
+      "teilen"
+    ],
+    "added": "2026-04-10 11:27:00"
+  },
+  {
+    "id": "blosz",
+    "word": "bloß",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "only, merely, just",
+        "note": "adverbial: restricting or minimising"
+      },
+      {
+        "meaning": "bare, naked, exposed",
+        "note": "adjectival: mit bloßen Händen = with bare hands"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich wollte bloß kurz fragen.",
+        "en": "I just wanted to ask quickly."
+      },
+      {
+        "de": "Er stand mit bloßen Füßen im Gras.",
+        "en": "He stood with bare feet in the grass."
+      }
+    ],
+    "topics": [
+      "grammar & structure",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 11:28:00"
+  },
+  {
+    "id": "winzig",
+    "word": "winzig",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "tiny, minute, minuscule",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Wohnung ist winzig, aber sehr gemütlich.",
+        "en": "The flat is tiny but very cosy."
+      },
+      {
+        "de": "Ein winziger Fehler kann alles ruinieren.",
+        "en": "A tiny mistake can ruin everything."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 11:29:00"
+  },
+  {
+    "id": "der-zweig",
+    "word": "der Zweig",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Zweige",
+    "definitions": [
+      {
+        "meaning": "branch, twig",
+        "note": "of a tree or bush"
+      },
+      {
+        "meaning": "branch, division",
+        "note": "figurative: ein Zweig der Wissenschaft"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Vogel saß auf einem dünnen Zweig.",
+        "en": "The bird sat on a thin branch."
+      },
+      {
+        "de": "Die Linguistik ist ein Zweig der Sprachwissenschaft.",
+        "en": "Linguistics is a branch of language science."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 11:30:00"
+  },
+  {
+    "id": "raten",
+    "word": "raten",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to guess",
+        "note": null
+      },
+      {
+        "meaning": "to advise, to recommend",
+        "note": "jemandem raten = to advise someone"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Rate mal, wen ich heute getroffen habe!",
+        "en": "Guess who I met today!"
+      },
+      {
+        "de": "Ich rate dir, früh ins Bett zu gehen.",
+        "en": "I advise you to go to bed early."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Two meanings: raten (to guess) and jemandem raten (to advise).",
+    "related": [
+      "das Rätsel",
+      "verraten"
+    ],
+    "added": "2026-04-10 11:31:00",
+    "auxiliary": "haben",
+    "past_tense": "riet",
+    "past_participle": "geraten",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "raten"
+  },
+  {
+    "id": "behindern",
+    "word": "behindern",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to hinder, to obstruct, to impede",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Unfall behinderte den Verkehr stundenlang.",
+        "en": "The accident obstructed traffic for hours."
+      },
+      {
+        "de": "Nichts soll uns in unserer Arbeit behindern.",
+        "en": "Nothing should hinder us in our work."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "die Behinderung"
+    ],
+    "added": "2026-04-10 11:32:00",
+    "auxiliary": "haben",
+    "past_tense": "behinderte",
+    "past_participle": "behindert",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "behindern"
+  },
+  {
+    "id": "die-behinderung",
+    "word": "die Behinderung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Behinderungen",
+    "definitions": [
+      {
+        "meaning": "disability",
+        "note": "a physical or mental impairment"
+      },
+      {
+        "meaning": "obstruction, impediment",
+        "note": "e.g. traffic disruption"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie lebt seit ihrer Kindheit mit einer Behinderung.",
+        "en": "She has lived with a disability since childhood."
+      },
+      {
+        "de": "Die Baustelle verursacht erhebliche Behinderungen im Verkehr.",
+        "en": "The construction site is causing considerable traffic disruption."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "behindern"
+    ],
+    "added": "2026-04-10 11:33:00"
+  },
+  {
+    "id": "vollenden",
+    "word": "vollenden",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to complete, to finish, to perfect",
+        "note": "more formal than fertigstellen"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er vollendete sein Lebenswerk kurz vor seinem Tod.",
+        "en": "He completed his life's work shortly before his death."
+      },
+      {
+        "de": "Die Symphonie wurde nach seinem Tod vollendet.",
+        "en": "The symphony was completed after his death."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": null,
+    "related": [
+      "vollendet"
+    ],
+    "added": "2026-04-10 11:34:00",
+    "auxiliary": "haben",
+    "past_tense": "vollendete",
+    "past_participle": "vollendet",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "vollenden"
+  },
+  {
+    "id": "vollendet",
+    "word": "vollendet",
+    "type": "adj/adv",
+    "usage": "both",
+    "derived_from": "vollenden",
+    "definitions": [
+      {
+        "meaning": "perfect, accomplished, consummate",
+        "note": "describes something brought to perfection"
+      },
+      {
+        "meaning": "completed, finished",
+        "note": "more literal"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie ist eine vollendete Pianistin.",
+        "en": "She is an accomplished pianist."
+      },
+      {
+        "de": "Ein vollendetes Kunstwerk braucht keine Erklärung.",
+        "en": "A perfect work of art needs no explanation."
+      }
+    ],
+    "topics": [
+      "culture & arts",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": null,
+    "related": [
+      "vollenden"
+    ],
+    "added": "2026-04-10 11:35:00"
+  },
+  {
+    "id": "schlagen",
+    "word": "schlagen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to hit, to beat, to strike",
+        "note": null
+      },
+      {
+        "meaning": "to beat, to defeat in a competition",
+        "note": "jemanden schlagen"
+      },
+      {
+        "meaning": "to beat as in heartbeat or drum",
+        "note": "das Herz schlägt"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er schlug mit der Faust auf den Tisch.",
+        "en": "He hit the table with his fist."
+      },
+      {
+        "de": "Unser Team hat das andere Team klar geschlagen.",
+        "en": "Our team clearly beat the other team."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "anschlagen",
+      "der Anschlag",
+      "vorschlagen"
+    ],
+    "added": "2026-04-10 11:36:00",
+    "auxiliary": "haben",
+    "past_tense": "schlug",
+    "past_participle": "geschlagen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schlagen"
+  },
+  {
+    "id": "anschlagen",
+    "word": "anschlagen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to post, to put up a notice",
+        "note": "einen Zettel anschlagen"
+      },
+      {
+        "meaning": "to strike, to knock against",
+        "note": "den Kopf anschlagen = to knock one's head"
+      },
+      {
+        "meaning": "to start barking",
+        "note": "of a dog"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie schlug eine Bekanntmachung am schwarzen Brett an.",
+        "en": "She posted an announcement on the noticeboard."
+      },
+      {
+        "de": "Er schlug sich den Kopf am Türrahmen an.",
+        "en": "He knocked his head on the door frame."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [
+      "separable"
+    ],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "der Anschlag",
+      "schlagen",
+      "vorschlagen",
+      "werfen"
+    ],
+    "added": "2026-04-10 11:37:00",
+    "auxiliary": "haben",
+    "past_tense": "schlug an",
+    "past_participle": "angeschlagen",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "schlagen",
+    "prefix": "an-"
+  },
+  {
+    "id": "der-anschlag",
+    "word": "der Anschlag",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Anschläge",
+    "definitions": [
+      {
+        "meaning": "attack, assault",
+        "note": "especially a terrorist attack"
+      },
+      {
+        "meaning": "notice, poster",
+        "note": "a posted announcement"
+      },
+      {
+        "meaning": "keystroke",
+        "note": "computing or music"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Bei dem Anschlag wurden mehrere Menschen verletzt.",
+        "en": "Several people were injured in the attack."
+      },
+      {
+        "de": "Am schwarzen Brett hing ein neuer Anschlag.",
+        "en": "A new notice was posted on the noticeboard."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Context is essential: can be a terrorist attack or simply a posted notice.",
+    "related": [
+      "anschlagen",
+      "der Angriff",
+      "die Ausschreitung",
+      "schlagen"
+    ],
+    "added": "2026-04-10 11:38:00"
+  },
+  {
+    "id": "der-angriff",
+    "word": "der Angriff",
+    "type": "noun",
+    "gender": "der",
+    "plural": "die Angriffe",
+    "definitions": [
+      {
+        "meaning": "attack, assault, offensive",
+        "note": "physical or verbal"
+      },
+      {
+        "meaning": "in Angriff nehmen: to tackle a task",
+        "note": "fixed expression"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Angriff auf die Stadt begann in der Nacht.",
+        "en": "The attack on the city began at night."
+      },
+      {
+        "de": "Wir nehmen das Problem jetzt in Angriff.",
+        "en": "We are now tackling the problem."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "der Anschlag",
+      "die Ausschreitung"
+    ],
+    "added": "2026-04-10 11:39:00"
+  },
+  {
+    "id": "zerbrechlich",
+    "word": "zerbrechlich",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "fragile, breakable",
+        "note": "of objects"
+      },
+      {
+        "meaning": "fragile, delicate",
+        "note": "figurative: of a person or relationship"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Vorsicht, das Glas ist sehr zerbrechlich.",
+        "en": "Careful, the glass is very fragile."
+      },
+      {
+        "de": "Ihre Gesundheit ist zerbrechlich.",
+        "en": "Her health is fragile."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "kostbar"
+    ],
+    "added": "2026-04-10 11:40:00"
+  },
+  {
+    "id": "kostbar",
+    "word": "kostbar",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "precious, valuable",
+        "note": "of objects or time"
+      },
+      {
+        "meaning": "rare, treasured",
+        "note": "kostbare Zeit = precious time"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Diese Vase ist ein kostbares Erbstück.",
+        "en": "This vase is a precious heirloom."
+      },
+      {
+        "de": "Zeit ist das kostbarste Gut, das wir haben.",
+        "en": "Time is the most precious resource we have."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [
+      "zerbrechlich"
+    ],
+    "added": "2026-04-10 11:41:00"
+  },
+  {
+    "id": "strahlen",
+    "word": "strahlen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to shine, to beam, to radiate",
+        "note": "of light or a person beaming with happiness"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie strahlte vor Freude, als sie die Neuigkeit hörte.",
+        "en": "She beamed with joy when she heard the news."
+      },
+      {
+        "de": "Die Sonne strahlt heute besonders hell.",
+        "en": "The sun is shining particularly brightly today."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 11:42:00",
+    "auxiliary": "haben",
+    "past_tense": "strahlte",
+    "past_participle": "gestrahlt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "strahlen"
+  },
+  {
+    "id": "die-entwicklung",
+    "word": "die Entwicklung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Entwicklungen",
+    "definitions": [
+      {
+        "meaning": "development, evolution, progress",
+        "note": null
+      },
+      {
+        "meaning": "film development",
+        "note": "photographic context"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Entwicklung der Technologie schreitet rasant voran.",
+        "en": "The development of technology is advancing rapidly."
+      },
+      {
+        "de": "Die politischen Entwicklungen beunruhigen viele Menschen.",
+        "en": "The political developments are worrying many people."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 11:43:00"
+  },
+  {
+    "id": "angenehm",
+    "word": "angenehm",
+    "type": "adj/adv",
+    "usage": "both",
+    "definitions": [
+      {
+        "meaning": "pleasant, agreeable, comfortable",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Wetter war angenehm warm.",
+        "en": "The weather was pleasantly warm."
+      },
+      {
+        "de": "Es war ein angenehmer Abend mit guten Freunden.",
+        "en": "It was a pleasant evening with good friends."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 11:44:00"
+  },
+  {
+    "id": "wo-tut-es-weh",
+    "word": "Wo tut es weh?",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "Where does it hurt?",
+        "note": "standard medical or caring question"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Arzt fragte: Wo tut es weh?",
+        "en": "The doctor asked: where does it hurt?"
+      },
+      {
+        "de": "Wo tut es weh? Zeig mir die Stelle.",
+        "en": "Where does it hurt? Show me the spot."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "related": [],
+    "added": "2026-04-10 11:45:00"
   }
 ]
