@@ -1709,6 +1709,7 @@
     "family_root": "geben",
     "related": [
       "angeben",
+      "ausgeben",
       "zugeben"
     ]
   },
@@ -2107,7 +2108,9 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
-      "aussehen"
+      "anscheinend",
+      "aussehen",
+      "erscheinen"
     ],
     "definitions": [
       {
@@ -2437,6 +2440,7 @@
     "prefix": "zu-",
     "related": [
       "angeben",
+      "ausgeben",
       "behaupten",
       "geben"
     ],
@@ -25567,9 +25571,10 @@
     "family_root": "geben",
     "prefix": "an-",
     "related": [
+      "angeblich",
+      "ausgeben",
       "geben",
-      "zugeben",
-      "angeblich"
+      "zugeben"
     ]
   },
   {
@@ -28962,5 +28967,1319 @@
     "notes": null,
     "related": [],
     "added": "2026-04-10 11:45:00"
+  },
+  {
+    "id": "sich-ereignen",
+    "word": "sich ereignen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to happen, to occur, to take place",
+        "note": "typically used for significant or notable events"
+      },
+      {
+        "meaning": "to come to pass, to transpire",
+        "note": "formal register"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Unfall ereignete sich gestern Abend auf der Autobahn.",
+        "en": "The accident happened yesterday evening on the highway."
+      },
+      {
+        "de": "Solche Naturkatastrophen ereignen sich leider immer häufiger.",
+        "en": "Such natural disasters unfortunately occur more and more frequently."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "More formal than 'passieren' or 'geschehen' and often used for serious or significant events.",
+    "added": "2026-06-01 11:33:45",
+    "auxiliary": "haben",
+    "past_tense": "ereignete",
+    "past_participle": "ereignet",
+    "is_separable": false,
+    "reflexive": true,
+    "family_root": "ereignen"
+  },
+  {
+    "id": "riesig",
+    "word": "riesig",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "huge, enormous, gigantic",
+        "note": null
+      },
+      {
+        "meaning": "great, tremendous",
+        "note": "used to express intensity or degree"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist ein riesiger Fehler.",
+        "en": "That is a huge mistake."
+      },
+      {
+        "de": "Ich habe mich riesig gefreut.",
+        "en": "I was tremendously happy."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 18:59:44",
+    "usage": "both"
+  },
+  {
+    "id": "das-enkelkind",
+    "word": "das Enkelkind",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "grandchild",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Meine Großmutter liebt ihre Enkelkinder über alles.",
+        "en": "My grandmother loves her grandchildren more than anything."
+      },
+      {
+        "de": "Das erste Enkelkind wird im Herbst geboren.",
+        "en": "The first grandchild will be born in autumn."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 19:01:44",
+    "gender": "das",
+    "plural": "die Enkelkinder"
+  },
+  {
+    "id": "der-fleck",
+    "word": "der Fleck",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "stain, spot, mark",
+        "note": "especially unwanted marks on surfaces or clothing"
+      },
+      {
+        "meaning": "patch, area",
+        "note": "a specific area or region"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Auf meinem Hemd ist ein Fleck von der Soße.",
+        "en": "There's a stain on my shirt from the sauce."
+      },
+      {
+        "de": "Dieser Fleck hier ist ein schöner Ort zum Campen.",
+        "en": "This spot here is a nice place for camping."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 19:03:19",
+    "gender": "der",
+    "plural": "die Flecken"
+  },
+  {
+    "id": "die-abgase",
+    "word": "die Abgase",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "exhaust fumes",
+        "note": null
+      },
+      {
+        "meaning": "emissions",
+        "note": "from vehicles or industrial processes"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Abgase der Autos verschmutzen die Luft in der Stadt.",
+        "en": "The exhaust fumes from cars pollute the air in the city."
+      },
+      {
+        "de": "Die Fabrik muss ihre Abgase reinigen, bevor sie in die Atmosphäre gelangen.",
+        "en": "The factory must clean its emissions before they enter the atmosphere."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Always used in plural form when referring to exhaust fumes or emissions.",
+    "added": "2026-06-08 19:04:37",
+    "gender": "die",
+    "plural": "die Abgase"
+  },
+  {
+    "id": "es-ist-schon-besser-geworden",
+    "word": "Es ist schon besser geworden",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "it has already gotten better",
+        "note": "used to indicate improvement in a situation"
+      },
+      {
+        "meaning": "things have improved",
+        "note": "expressing positive change over time"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nach der Operation ist es schon besser geworden.",
+        "en": "After the surgery, it has already gotten better."
+      },
+      {
+        "de": "Mit der neuen Behandlung ist es schon besser geworden.",
+        "en": "With the new treatment, things have already improved."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 19:05:25"
+  },
+  {
+    "id": "schluerfen",
+    "word": "schlürfen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to slurp, to drink or eat making a sucking sound",
+        "note": null
+      },
+      {
+        "meaning": "to shuffle, to walk without lifting one's feet properly",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er schlürft laut seinen Kaffee.",
+        "en": "He slurps his coffee loudly."
+      },
+      {
+        "de": "Die alte Dame schlürfte in ihren Pantoffeln durch den Flur.",
+        "en": "The old lady shuffled through the hallway in her slippers."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Can describe both drinking sounds and a way of walking.",
+    "added": "2026-06-08 19:09:01",
+    "auxiliary": "haben",
+    "past_tense": "schlürfte",
+    "past_participle": "geschlürft",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schlürfen"
+  },
+  {
+    "id": "blasen",
+    "word": "blasen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to blow",
+        "note": null
+      },
+      {
+        "meaning": "to play a wind instrument",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Wind bläst stark heute.",
+        "en": "The wind is blowing strongly today."
+      },
+      {
+        "de": "Sie bläst Trompete in der Schulband.",
+        "en": "She plays trumpet in the school band."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "This is an irregular strong verb with vowel changes in conjugation.",
+    "added": "2026-06-08 19:10:30",
+    "auxiliary": "haben",
+    "past_tense": "blies",
+    "past_participle": "geblasen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "blasen"
+  },
+  {
+    "id": "dringend",
+    "word": "dringend",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "urgent, pressing",
+        "note": null
+      },
+      {
+        "meaning": "urgently, pressingly",
+        "note": "when used as adverb"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe eine dringende Bitte.",
+        "en": "I have an urgent request."
+      },
+      {
+        "de": "Der Arzt muss dringend kommen.",
+        "en": "The doctor must come urgently."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 19:12:48",
+    "usage": "both"
+  },
+  {
+    "id": "der-zweifel",
+    "word": "der Zweifel",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "doubt, uncertainty about the truth or validity of something",
+        "note": "often used with 'an + DAT' to express doubt about something"
+      },
+      {
+        "meaning": "hesitation, misgiving about a decision or course of action",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe Zweifel an seiner Geschichte.",
+        "en": "I have doubts about his story."
+      },
+      {
+        "de": "Ohne Zweifel ist das die beste Lösung.",
+        "en": "Without doubt, this is the best solution."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 19:33:59",
+    "gender": "der",
+    "plural": "die Zweifel",
+    "related": [
+      "zweifeln"
+    ]
+  },
+  {
+    "id": "zweifeln",
+    "word": "zweifeln",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to doubt",
+        "note": "often used with an + DAT"
+      },
+      {
+        "meaning": "to have doubts or uncertainty about something",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich zweifle an seiner Ehrlichkeit.",
+        "en": "I doubt his honesty."
+      },
+      {
+        "de": "Sie begann an sich selbst zu zweifeln.",
+        "en": "She began to doubt herself."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Commonly used with the preposition 'an' followed by dative case.",
+    "added": "2026-06-08 19:35:00",
+    "auxiliary": "haben",
+    "past_tense": "zweifelte",
+    "past_participle": "gezweifelt",
+    "is_separable": false,
+    "reflexive": false,
+    "preposition": "an + DAT",
+    "family_root": "zweifeln",
+    "related": [
+      "Zweifel"
+    ]
+  },
+  {
+    "id": "schnarchen",
+    "word": "schnarchen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to snore",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Mein Mann schnarcht so laut, dass ich nicht schlafen kann.",
+        "en": "My husband snores so loudly that I can't sleep."
+      },
+      {
+        "de": "Sie schnarchte die ganze Nacht durch.",
+        "en": "She snored all night long."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 19:37:42",
+    "auxiliary": "haben",
+    "past_tense": "schnarchte",
+    "past_participle": "geschnarcht",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schnarchen"
+  },
+  {
+    "id": "leise",
+    "word": "leise",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "quiet, soft, low in volume",
+        "note": null
+      },
+      {
+        "meaning": "gentle, slight, faint",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie spricht sehr leise.",
+        "en": "She speaks very quietly."
+      },
+      {
+        "de": "Es war nur ein leiser Verdacht.",
+        "en": "It was only a faint suspicion."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 19:38:34",
+    "usage": "both"
+  },
+  {
+    "id": "klingen",
+    "word": "klingen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to sound",
+        "note": null
+      },
+      {
+        "meaning": "to ring",
+        "note": "for bells, phones, etc."
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das klingt sehr interessant.",
+        "en": "That sounds very interesting."
+      },
+      {
+        "de": "Die Glocke klingt jeden Morgen um acht Uhr.",
+        "en": "The bell rings every morning at eight o'clock."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 19:40:33",
+    "auxiliary": "haben",
+    "past_tense": "klang",
+    "past_participle": "geklungen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "klingen"
+  },
+  {
+    "id": "ausgeben",
+    "word": "ausgeben",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to spend money",
+        "note": null
+      },
+      {
+        "meaning": "to distribute, hand out",
+        "note": null
+      },
+      {
+        "meaning": "to pretend to be, pose as",
+        "note": "used with reflexive pronoun and als"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich gebe viel Geld für Bücher aus.",
+        "en": "I spend a lot of money on books."
+      },
+      {
+        "de": "Der Lehrer gibt die Arbeitsblätter aus.",
+        "en": "The teacher hands out the worksheets."
+      }
+    ],
+    "topics": [
+      "money & shopping"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 19:42:05",
+    "auxiliary": "haben",
+    "past_tense": "gab aus",
+    "past_participle": "ausgegeben",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "geben",
+    "prefix": "aus-",
+    "related": [
+      "angeben",
+      "geben",
+      "zugeben"
+    ]
+  },
+  {
+    "id": "die-pleite",
+    "word": "die Pleite",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "bankruptcy",
+        "note": null
+      },
+      {
+        "meaning": "failure",
+        "note": "in a general sense"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Firma musste Pleite anmelden.",
+        "en": "The company had to file for bankruptcy."
+      },
+      {
+        "de": "Das Projekt war eine totale Pleite.",
+        "en": "The project was a total failure."
+      }
+    ],
+    "topics": [
+      "money & shopping",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "informal",
+    "notes": "Can also be used as a predicate adjective meaning 'broke' or 'bankrupt'.",
+    "added": "2026-06-08 19:43:03",
+    "gender": "die",
+    "plural": "die Pleiten"
+  },
+  {
+    "id": "der-flur",
+    "word": "der Flur",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "hallway, corridor",
+        "note": null
+      },
+      {
+        "meaning": "field, open land",
+        "note": "rural or agricultural context"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Kinder spielen im Flur vor den Zimmern.",
+        "en": "The children are playing in the hallway in front of the rooms."
+      },
+      {
+        "de": "Der Bauer arbeitet auf dem Flur.",
+        "en": "The farmer is working in the field."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Has two distinct meanings: indoor corridor and outdoor field area.",
+    "added": "2026-06-08 19:44:09",
+    "gender": "der",
+    "plural": "die Flure"
+  },
+  {
+    "id": "erscheinen",
+    "word": "erscheinen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to appear, to show up",
+        "note": null
+      },
+      {
+        "meaning": "to be published",
+        "note": "for books, articles, etc."
+      },
+      {
+        "meaning": "to seem, to appear to be",
+        "note": "with adjective or clause"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Buch ist letztes Jahr erschienen.",
+        "en": "The book was published last year."
+      },
+      {
+        "de": "Plötzlich erschien ein Mann vor der Tür.",
+        "en": "Suddenly a man appeared at the door."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 19:45:10",
+    "auxiliary": "sein",
+    "past_tense": "erschien",
+    "past_participle": "erschienen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "scheinen",
+    "prefix": "er-",
+    "related": [
+      "scheinen"
+    ]
+  },
+  {
+    "id": "kraulen",
+    "word": "kraulen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to scratch gently, to stroke with fingertips",
+        "note": "typically used for petting animals or gentle scratching"
+      },
+      {
+        "meaning": "to do the front crawl, to swim crawl stroke",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie kraul den Hund hinter den Ohren.",
+        "en": "She scratches the dog behind the ears."
+      },
+      {
+        "de": "Er kraul schnell durch das Schwimmbecken.",
+        "en": "He swims crawl quickly through the swimming pool."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "This verb has two distinct meanings: gentle scratching/stroking and swimming crawl stroke.",
+    "added": "2026-06-08 19:46:35",
+    "auxiliary": "haben",
+    "past_tense": "kraulte",
+    "past_participle": "gekrault",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "kraulen"
+  },
+  {
+    "id": "gehorchen",
+    "word": "gehorchen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to obey",
+        "note": "takes dative object"
+      },
+      {
+        "meaning": "to comply with orders or commands",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Kind muss seinen Eltern gehorchen.",
+        "en": "The child must obey his parents."
+      },
+      {
+        "de": "Der Hund gehorcht seinem Herrchen aufs Wort.",
+        "en": "The dog obeys its master to the letter."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Always takes a dative object indicating who is being obeyed.",
+    "added": "2026-06-08 19:47:37",
+    "auxiliary": "haben",
+    "past_tense": "gehorchte",
+    "past_participle": "gehorcht",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "horchen"
+  },
+  {
+    "id": "schmieren",
+    "word": "schmieren",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to spread (butter, cream, etc.)",
+        "note": null
+      },
+      {
+        "meaning": "to grease or lubricate",
+        "note": null
+      },
+      {
+        "meaning": "to smear or daub",
+        "note": null
+      },
+      {
+        "meaning": "to bribe",
+        "note": "colloquial usage"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie schmiert Butter auf das Brot.",
+        "en": "She spreads butter on the bread."
+      },
+      {
+        "de": "Der Mechaniker schmiert die Räder des Autos.",
+        "en": "The mechanic greases the wheels of the car."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Can range from innocent meanings like spreading butter to negative ones like bribing.",
+    "added": "2026-06-08 19:49:16",
+    "auxiliary": "haben",
+    "past_tense": "schmierte",
+    "past_participle": "geschmiert",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schmieren"
+  },
+  {
+    "id": "knurren",
+    "word": "knurren",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to growl",
+        "note": "used for animals, especially dogs"
+      },
+      {
+        "meaning": "to rumble",
+        "note": "used for stomach sounds"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Hund knurrt gefährlich.",
+        "en": "The dog growls dangerously."
+      },
+      {
+        "de": "Mein Magen knurrt vor Hunger.",
+        "en": "My stomach is rumbling from hunger."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "body & mind",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 19:50:22",
+    "auxiliary": "haben",
+    "past_tense": "knurrte",
+    "past_participle": "geknurrt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "knurren"
+  },
+  {
+    "id": "starren",
+    "word": "starren",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to stare",
+        "note": "used with auf + AKK"
+      },
+      {
+        "meaning": "to gaze fixedly",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie starrte auf den Bildschirm.",
+        "en": "She stared at the screen."
+      },
+      {
+        "de": "Er starrte ungläubig auf das Ergebnis.",
+        "en": "He stared in disbelief at the result."
+      }
+    ],
+    "topics": [
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 19:51:10",
+    "auxiliary": "haben",
+    "past_tense": "starrte",
+    "past_participle": "gestarrt",
+    "is_separable": false,
+    "reflexive": false,
+    "preposition": "auf + AKK",
+    "family_root": "starren"
+  },
+  {
+    "id": "basteln",
+    "word": "basteln",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to do crafts, to make things by hand",
+        "note": null
+      },
+      {
+        "meaning": "to tinker, to work on something in a makeshift way",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Kinder basteln gerne am Wochenende.",
+        "en": "The children like to do crafts on weekends."
+      },
+      {
+        "de": "Er bastelt schon seit Stunden an seinem Computer.",
+        "en": "He has been tinkering with his computer for hours."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 19:52:02",
+    "auxiliary": "haben",
+    "past_tense": "bastelte",
+    "past_participle": "gebastelt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "basteln"
+  },
+  {
+    "id": "sich-buecken",
+    "word": "sich bücken",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to bend down, to stoop",
+        "note": null
+      },
+      {
+        "meaning": "to crouch down",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er bückte sich, um den Schlüssel aufzuheben.",
+        "en": "He bent down to pick up the key."
+      },
+      {
+        "de": "Sie musste sich bücken, um unter dem Ast hindurchzugehen.",
+        "en": "She had to stoop to walk under the branch."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 19:53:03",
+    "auxiliary": "haben",
+    "past_tense": "bückte",
+    "past_participle": "gebückt",
+    "is_separable": false,
+    "reflexive": true,
+    "family_root": "bücken"
+  },
+  {
+    "id": "anscheinend",
+    "word": "anscheinend",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "apparently, seemingly",
+        "note": "expresses assumption based on observable evidence"
+      },
+      {
+        "meaning": "evidently, obviously",
+        "note": "indicates something that appears to be true"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er ist anscheinend krank, weil er heute nicht zur Arbeit gekommen ist.",
+        "en": "He is apparently sick because he didn't come to work today."
+      },
+      {
+        "de": "Das anscheinend leere Haus war voller Überraschungen.",
+        "en": "The seemingly empty house was full of surprises."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Often confused with 'scheinbar' which suggests false appearance rather than logical assumption.",
+    "added": "2026-06-08 19:54:05",
+    "usage": "both",
+    "derived_from": "anscheinen",
+    "related": [
+      "scheinen"
+    ]
+  },
+  {
+    "id": "schleppen",
+    "word": "schleppen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to drag or pull something heavy along the ground",
+        "note": null
+      },
+      {
+        "meaning": "to carry something heavy with difficulty",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er musste den schweren Koffer zum Bahnhof schleppen.",
+        "en": "He had to drag the heavy suitcase to the train station."
+      },
+      {
+        "de": "Die Kinder schleppen ihre Rucksäcke durch die Schule.",
+        "en": "The children are lugging their backpacks through the school."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 19:56:53",
+    "auxiliary": "haben",
+    "past_tense": "schleppte",
+    "past_participle": "geschleppt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schleppen"
+  },
+  {
+    "id": "die-schuessel",
+    "word": "die Schüssel",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "bowl",
+        "note": "used for serving food or mixing ingredients"
+      },
+      {
+        "meaning": "dish",
+        "note": "shallow container for food"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie servierte den Salat in einer großen Schüssel.",
+        "en": "She served the salad in a large bowl."
+      },
+      {
+        "de": "Die Schüssel ist aus Keramik gemacht.",
+        "en": "The bowl is made of ceramic."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 19:57:38",
+    "gender": "die",
+    "plural": "die Schüsseln"
+  },
+  {
+    "id": "nuechtern",
+    "word": "nüchtern",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "sober, not having consumed alcohol",
+        "note": null
+      },
+      {
+        "meaning": "on an empty stomach, having not eaten",
+        "note": null
+      },
+      {
+        "meaning": "rational, objective, matter-of-fact",
+        "note": null
+      },
+      {
+        "meaning": "plain, bare, without decoration",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nach der Party war er wieder völlig nüchtern.",
+        "en": "After the party he was completely sober again."
+      },
+      {
+        "de": "Sie betrachtet die Situation sehr nüchtern.",
+        "en": "She views the situation very objectively."
+      },
+      {
+        "de": "Die Medikamente müssen nüchtern eingenommen werden.",
+        "en": "The medication must be taken on an empty stomach."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 19:58:14",
+    "usage": "both"
+  },
+  {
+    "id": "vorbei",
+    "word": "vorbei",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "over, finished, past",
+        "note": "temporal sense indicating completion"
+      },
+      {
+        "meaning": "past, by",
+        "note": "spatial sense indicating movement past something"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Party ist vorbei.",
+        "en": "The party is over."
+      },
+      {
+        "de": "Er ging an mir vorbei, ohne mich zu grüßen.",
+        "en": "He walked past me without greeting me."
+      }
+    ],
+    "topics": [
+      "time",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Often used with prepositions like 'an' in spatial contexts or as predicate adjective for temporal contexts.",
+    "added": "2026-06-08 19:59:27",
+    "usage": "both"
+  },
+  {
+    "id": "von-weitem",
+    "word": "von Weitem",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "from a distance",
+        "note": null
+      },
+      {
+        "meaning": "from afar",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich kann das Schloss von Weitem sehen.",
+        "en": "I can see the castle from a distance."
+      },
+      {
+        "de": "Von Weitem sah er wie sein Bruder aus.",
+        "en": "From afar he looked like his brother."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "The 'W' in 'Weitem' is capitalized as it follows the preposition 'von'.",
+    "added": "2026-06-08 20:00:32",
+    "usage": "adverb only"
+  },
+  {
+    "id": "schmuecken",
+    "word": "schmücken",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to decorate, to adorn",
+        "note": null
+      },
+      {
+        "meaning": "to embellish, to ornament",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir schmücken den Weihnachtsbaum mit bunten Kugeln.",
+        "en": "We decorate the Christmas tree with colorful ornaments."
+      },
+      {
+        "de": "Sie schmückt ihr Zimmer mit frischen Blumen.",
+        "en": "She decorates her room with fresh flowers."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 20:01:41",
+    "auxiliary": "haben",
+    "past_tense": "schmückte",
+    "past_participle": "geschmückt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schmücken"
+  },
+  {
+    "id": "umgekehrt",
+    "word": "umgekehrt",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "reverse, opposite, inverted",
+        "note": "describing something turned around or in the opposite direction"
+      },
+      {
+        "meaning": "conversely, vice versa",
+        "note": "used adverbially to express the opposite case or situation"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Reihenfolge ist umgekehrt.",
+        "en": "The order is reversed."
+      },
+      {
+        "de": "Er hilft mir oft, und umgekehrt helfe ich ihm auch.",
+        "en": "He often helps me, and conversely I help him too."
+      }
+    ],
+    "topics": [
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Often used to introduce a contrasting or reciprocal statement.",
+    "added": "2026-06-08 20:04:07",
+    "usage": "both"
+  },
+  {
+    "id": "der-aufwand",
+    "word": "der Aufwand",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "effort, expenditure of time, energy, or resources required for something",
+        "note": null
+      },
+      {
+        "meaning": "expense, cost in terms of money or materials",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Aufwand für die Renovierung war größer als erwartet.",
+        "en": "The effort required for the renovation was greater than expected."
+      },
+      {
+        "de": "Mit wenig Aufwand kann man viel erreichen.",
+        "en": "You can achieve a lot with little effort."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 20:04:46",
+    "gender": "der",
+    "plural": "die Aufwände"
+  },
+  {
+    "id": "wischen",
+    "word": "wischen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to wipe",
+        "note": null
+      },
+      {
+        "meaning": "to clean by wiping",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie wischt den Tisch mit einem feuchten Tuch ab.",
+        "en": "She wipes the table with a damp cloth."
+      },
+      {
+        "de": "Er wischte sich die Tränen aus den Augen.",
+        "en": "He wiped the tears from his eyes."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 20:05:59",
+    "auxiliary": "haben",
+    "past_tense": "wischte",
+    "past_participle": "gewischt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "wischen"
   }
 ]
