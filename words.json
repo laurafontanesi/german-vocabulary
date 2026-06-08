@@ -7777,7 +7777,8 @@
     "register": "neutral",
     "notes": "Vorsicht! = Watch out! / Careful! Very common as a standalone warning. vorsichtig = careful (adjective).",
     "related": [
-      "die Aussicht"
+      "die Aussicht",
+      "vorsichtig"
     ],
     "added": "2026-04-06 11:07:00"
   },
@@ -16790,6 +16791,7 @@
     "related": [
       "Lieblings-",
       "bevorzugen",
+      "einfallen",
       "ich … lieber … als …"
     ],
     "added": "2026-04-07 12:56:00"
@@ -30282,5 +30284,991 @@
     "is_separable": false,
     "reflexive": false,
     "family_root": "wischen"
+  },
+  {
+    "id": "streifen",
+    "word": "streifen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to touch lightly or brush against something",
+        "note": null
+      },
+      {
+        "meaning": "to roam or wander through an area",
+        "note": null
+      },
+      {
+        "meaning": "to pull off or remove something",
+        "note": "often clothing items"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Ball streifte den Pfosten.",
+        "en": "The ball grazed the goalpost."
+      },
+      {
+        "de": "Sie streifte die Handschuhe ab.",
+        "en": "She pulled off the gloves."
+      },
+      {
+        "de": "Die Katze streift durch den Garten.",
+        "en": "The cat roams through the garden."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 20:07:58",
+    "auxiliary": "haben",
+    "past_tense": "streifte",
+    "past_participle": "gestreift",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "streifen"
+  },
+  {
+    "id": "vorsichtig",
+    "word": "vorsichtig",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "careful, cautious",
+        "note": null
+      },
+      {
+        "meaning": "gentle, delicate",
+        "note": "when handling something fragile"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sei vorsichtig beim Überqueren der Straße!",
+        "en": "Be careful when crossing the street!"
+      },
+      {
+        "de": "Sie öffnete vorsichtig die alte Truhe.",
+        "en": "She carefully opened the old chest."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 20:09:01",
+    "usage": "both",
+    "related": [
+      "Vorsicht"
+    ]
+  },
+  {
+    "id": "schleichen",
+    "word": "schleichen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to creep, to sneak, to move slowly and quietly",
+        "note": null
+      },
+      {
+        "meaning": "to crawl, to move very slowly",
+        "note": "used for vehicles or processes"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Katze schleicht durch das Gras.",
+        "en": "The cat creeps through the grass."
+      },
+      {
+        "de": "Der Verkehr schleicht nur langsam voran.",
+        "en": "The traffic is crawling along slowly."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 20:10:11",
+    "auxiliary": "sein",
+    "past_tense": "schlich",
+    "past_participle": "geschlichen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schleichen"
+  },
+  {
+    "id": "entdecken",
+    "word": "entdecken",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to discover",
+        "note": null
+      },
+      {
+        "meaning": "to find out",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Kolumbus entdeckte Amerika im Jahr 1492.",
+        "en": "Columbus discovered America in 1492."
+      },
+      {
+        "de": "Ich habe ein neues Restaurant in der Stadt entdeckt.",
+        "en": "I discovered a new restaurant in the city."
+      }
+    ],
+    "topics": [
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 20:11:04",
+    "auxiliary": "haben",
+    "past_tense": "entdeckte",
+    "past_participle": "entdeckt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "decken",
+    "prefix": "ent-"
+  },
+  {
+    "id": "erleichtern",
+    "word": "erleichtern",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to make easier, to facilitate",
+        "note": null
+      },
+      {
+        "meaning": "to relieve, to lighten (burden, pain)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die neue Software wird uns die Arbeit erleichtern.",
+        "en": "The new software will make our work easier."
+      },
+      {
+        "de": "Das Gespräch hat mein Gewissen erleichtert.",
+        "en": "The conversation relieved my conscience."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 20:11:59",
+    "auxiliary": "haben",
+    "past_tense": "erleichterte",
+    "past_participle": "erleichtert",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "leicht",
+    "prefix": "er-"
+  },
+  {
+    "id": "das-fell",
+    "word": "das Fell",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "fur, coat, pelt",
+        "note": "animal's natural covering of hair or wool"
+      },
+      {
+        "meaning": "hide, skin",
+        "note": "processed animal skin used for clothing or other purposes"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Hund hat ein dichtes, weiches Fell.",
+        "en": "The dog has thick, soft fur."
+      },
+      {
+        "de": "Die Jacke ist aus echtem Fell gemacht.",
+        "en": "The jacket is made from real fur."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 20:13:12",
+    "gender": "das",
+    "plural": "die Felle"
+  },
+  {
+    "id": "verletzen",
+    "word": "verletzen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to injure, to hurt physically",
+        "note": null
+      },
+      {
+        "meaning": "to violate, to breach (rules, laws, rights)",
+        "note": null
+      },
+      {
+        "meaning": "to hurt emotionally, to offend",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er hat sich beim Fußball am Knie verletzt.",
+        "en": "He injured his knee playing soccer."
+      },
+      {
+        "de": "Diese Entscheidung verletzt die Menschenrechte.",
+        "en": "This decision violates human rights."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Can be used reflexively (sich verletzen) to mean 'to hurt oneself' or 'to get injured'.",
+    "added": "2026-06-08 21:01:29",
+    "auxiliary": "haben",
+    "past_tense": "verletzte",
+    "past_participle": "verletzt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "verletzen"
+  },
+  {
+    "id": "das-rudel",
+    "word": "das Rudel",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "pack (group of wild animals, especially wolves or dogs)",
+        "note": null
+      },
+      {
+        "meaning": "group or gang (of people, often used derogatorily)",
+        "note": "figurative use"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Rudel Wölfe jagte durch den Wald.",
+        "en": "The pack of wolves hunted through the forest."
+      },
+      {
+        "de": "Ein Rudel Jugendlicher versammelte sich vor dem Geschäft.",
+        "en": "A gang of teenagers gathered in front of the store."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Primarily used for animals but can refer to groups of people in informal or negative contexts.",
+    "added": "2026-06-08 21:03:29",
+    "gender": "das",
+    "plural": "die Rudel"
+  },
+  {
+    "id": "heulen",
+    "word": "heulen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to howl",
+        "note": "used for animals, especially wolves and dogs"
+      },
+      {
+        "meaning": "to cry loudly, to wail",
+        "note": "informal, often used for children or emotional adults"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Wolf heult in der Nacht.",
+        "en": "The wolf howls in the night."
+      },
+      {
+        "de": "Das Kind heult, weil es seinen Teddy verloren hat.",
+        "en": "The child is crying loudly because it lost its teddy bear."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Can refer to both animal sounds and human crying, with the human usage being more colloquial.",
+    "added": "2026-06-08 21:04:34",
+    "auxiliary": "haben",
+    "past_tense": "heulte",
+    "past_participle": "geheult",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "heulen",
+    "related": [
+      "bellen"
+    ]
+  },
+  {
+    "id": "bellen",
+    "word": "bellen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to bark",
+        "note": "used for dogs making their characteristic sound"
+      },
+      {
+        "meaning": "to shout or yell loudly",
+        "note": "informal usage for humans speaking harshly"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Hund bellt laut im Garten.",
+        "en": "The dog is barking loudly in the garden."
+      },
+      {
+        "de": "Hör auf zu bellen und sprich normal mit mir!",
+        "en": "Stop yelling and speak normally to me!"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "When applied to humans, it implies rude or aggressive speech.",
+    "added": "2026-06-08 21:05:18",
+    "auxiliary": "haben",
+    "past_tense": "bellte",
+    "past_participle": "gebellt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "bellen",
+    "related": [
+      "heulen"
+    ]
+  },
+  {
+    "id": "keuchen",
+    "word": "keuchen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to pant or gasp for breath",
+        "note": null
+      },
+      {
+        "meaning": "to breathe heavily and with difficulty",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nach dem Sprint keuchte er heftig.",
+        "en": "After the sprint he was panting heavily."
+      },
+      {
+        "de": "Der alte Mann keuchte die Treppe hinauf.",
+        "en": "The old man wheezed up the stairs."
+      }
+    ],
+    "topics": [
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 21:06:14",
+    "auxiliary": "haben",
+    "past_tense": "keuchte",
+    "past_participle": "gekeucht",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "keuchen"
+  },
+  {
+    "id": "trommeln",
+    "word": "trommeln",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to drum, to play the drums",
+        "note": null
+      },
+      {
+        "meaning": "to drum with one's fingers, to tap rhythmically",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er trommelt jeden Abend auf seinem Schlagzeug.",
+        "en": "He drums on his drum kit every evening."
+      },
+      {
+        "de": "Sie trommelt nervös mit den Fingern auf den Tisch.",
+        "en": "She nervously drums her fingers on the table."
+      }
+    ],
+    "topics": [
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 21:06:49",
+    "auxiliary": "haben",
+    "past_tense": "trommelte",
+    "past_participle": "getrommelt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "trommeln"
+  },
+  {
+    "id": "die-pfote",
+    "word": "die Pfote",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "paw (of an animal)",
+        "note": null
+      },
+      {
+        "meaning": "hand (informal, often playful or childish)",
+        "note": "used colloquially to refer to human hands"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Hund hob seine Pfote und legte sie auf mein Bein.",
+        "en": "The dog lifted his paw and placed it on my leg."
+      },
+      {
+        "de": "Nimm deine Pfoten von meinem Kuchen!",
+        "en": "Keep your hands off my cake!"
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 21:07:34",
+    "gender": "die",
+    "plural": "die Pfoten"
+  },
+  {
+    "id": "die-narbe",
+    "word": "die Narbe",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "scar",
+        "note": "mark left on skin or tissue after healing"
+      },
+      {
+        "meaning": "stigma",
+        "note": "botanical term for part of flower pistil"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Narbe an seinem Arm erinnerte ihn an den Unfall.",
+        "en": "The scar on his arm reminded him of the accident."
+      },
+      {
+        "de": "Nach der Operation blieb eine kleine Narbe zurück.",
+        "en": "A small scar remained after the surgery."
+      }
+    ],
+    "topics": [
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 21:08:07",
+    "gender": "die",
+    "plural": "die Narben"
+  },
+  {
+    "id": "retten",
+    "word": "retten",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to save, to rescue",
+        "note": null
+      },
+      {
+        "meaning": "to salvage, to preserve",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Feuerwehr rettete das Kind aus dem brennenden Haus.",
+        "en": "The fire department rescued the child from the burning house."
+      },
+      {
+        "de": "Er rettete sein Geld vor der Inflation.",
+        "en": "He saved his money from inflation."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 21:08:39",
+    "auxiliary": "haben",
+    "past_tense": "rettete",
+    "past_participle": "gerettet",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "retten"
+  },
+  {
+    "id": "der-unterschlupf",
+    "word": "der Unterschlupf",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "shelter, hideout, refuge",
+        "note": "a place where someone or something can hide or find protection"
+      },
+      {
+        "meaning": "safe haven, hiding place",
+        "note": "often used in contexts involving protection from danger or weather"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Kinder suchten Unterschlupf vor dem Regen unter der Brücke.",
+        "en": "The children sought shelter from the rain under the bridge."
+      },
+      {
+        "de": "Der Verbrecher fand Unterschlupf in einer verlassenen Hütte.",
+        "en": "The criminal found a hideout in an abandoned hut."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 21:09:25",
+    "gender": "der",
+    "plural": "die Unterschlüpfe"
+  },
+  {
+    "id": "der-unterlass",
+    "word": "der Unterlass",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "cessation, interruption, pause",
+        "note": "primarily used in the phrase 'ohne Unterlass' meaning without interruption"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er arbeitete ohne Unterlass an seinem Projekt.",
+        "en": "He worked on his project without interruption."
+      },
+      {
+        "de": "Der Regen fiel ohne Unterlass.",
+        "en": "The rain fell without cease."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "Rarely used as a standalone noun, almost exclusively found in the fixed expression 'ohne Unterlass'.",
+    "added": "2026-06-08 21:10:07",
+    "gender": "der",
+    "plural": null
+  },
+  {
+    "id": "genesen",
+    "word": "genesen",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "recovered, healed, cured",
+        "note": "used to describe someone who has recovered from illness or injury"
+      },
+      {
+        "meaning": "convalescent",
+        "note": "in the process of recovering health"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er ist vollständig genesen und kann wieder arbeiten.",
+        "en": "He is completely recovered and can work again."
+      },
+      {
+        "de": "Die Patientin gilt als genesen.",
+        "en": "The patient is considered cured."
+      }
+    ],
+    "topics": [
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "This is the past participle of the verb 'genesen' used as an adjective.",
+    "added": "2026-06-08 21:10:45",
+    "usage": "adjective only",
+    "derived_from": "genesen"
+  },
+  {
+    "id": "ahnen",
+    "word": "ahnen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to suspect, to have a feeling or intuition about something",
+        "note": null
+      },
+      {
+        "meaning": "to foresee, to sense something coming",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich ahnte schon, dass etwas nicht stimmt.",
+        "en": "I already suspected that something was wrong."
+      },
+      {
+        "de": "Sie ahnte nicht, was auf sie zukommen würde.",
+        "en": "She had no idea what was coming her way."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Often used in negative constructions like 'nicht ahnen' meaning 'to have no idea'.",
+    "added": "2026-06-08 21:12:23",
+    "auxiliary": "haben",
+    "past_tense": "ahnte",
+    "past_participle": "geahnt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "ahnen"
+  },
+  {
+    "id": "einfallen",
+    "word": "einfallen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to occur to someone, to come to mind",
+        "note": "used with dative pronoun"
+      },
+      {
+        "meaning": "to invade, to attack",
+        "note": "used with in + AKK"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Mir fällt gerade eine gute Idee ein.",
+        "en": "A good idea is just occurring to me."
+      },
+      {
+        "de": "Die feindlichen Truppen fielen in das Land ein.",
+        "en": "The enemy troops invaded the country."
+      },
+      {
+        "de": "Das Kartenhaus fiel ein, als ein Windstoß durch das Zimmer wehte.",
+        "en": "The house of cards collapsed when a gust of wind went through the room."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "The dative construction (mir fällt etwas ein) is the most common usage meaning 'to think of something'.",
+    "added": "2026-06-08 21:13:26",
+    "auxiliary": "sein",
+    "past_tense": "fiel ein",
+    "past_participle": "eingefallen",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "fallen",
+    "prefix": "ein-",
+    "related": [
+      "gefallen"
+    ]
+  },
+  {
+    "id": "schnauben",
+    "word": "schnauben",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to snort (breathing forcefully through the nose)",
+        "note": null
+      },
+      {
+        "meaning": "to snort with anger or contempt",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Pferd schnaubte nervös vor dem Gewitter.",
+        "en": "The horse snorted nervously before the thunderstorm."
+      },
+      {
+        "de": "Er schnaubte verächtlich bei dieser Bemerkung.",
+        "en": "He snorted contemptuously at this remark."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Often used to describe both literal snorting sounds and expressing disdain or anger.",
+    "added": "2026-06-08 21:15:14",
+    "auxiliary": "haben",
+    "past_tense": "schnaubte",
+    "past_participle": "geschnaubt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schnauben"
+  },
+  {
+    "id": "der-unsinn",
+    "word": "der Unsinn",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "nonsense",
+        "note": null
+      },
+      {
+        "meaning": "rubbish",
+        "note": "when referring to foolish talk or ideas"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist kompletter Unsinn!",
+        "en": "That's complete nonsense!"
+      },
+      {
+        "de": "Hör auf mit diesem Unsinn und mach deine Hausaufgaben.",
+        "en": "Stop this nonsense and do your homework."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "This noun is typically used without a plural form.",
+    "added": "2026-06-08 21:15:56",
+    "gender": "der",
+    "plural": null
+  },
+  {
+    "id": "das-ziel",
+    "word": "das Ziel",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "goal, aim, objective",
+        "note": null
+      },
+      {
+        "meaning": "destination",
+        "note": "for travel or movement"
+      },
+      {
+        "meaning": "target",
+        "note": "for shooting or aiming"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Mein Ziel ist es, Deutsch fließend zu sprechen.",
+        "en": "My goal is to speak German fluently."
+      },
+      {
+        "de": "Wir haben unser Ziel nach drei Stunden erreicht.",
+        "en": "We reached our destination after three hours."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "work & academia",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 21:16:36",
+    "gender": "das",
+    "plural": "die Ziele"
+  },
+  {
+    "id": "die-enttaeuschung",
+    "word": "die Enttäuschung",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "disappointment",
+        "note": null
+      },
+      {
+        "meaning": "letdown",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Absage war eine große Enttäuschung für ihn.",
+        "en": "The rejection was a big disappointment for him."
+      },
+      {
+        "de": "Nach der Enttäuschung brauchte sie Zeit, um sich zu erholen.",
+        "en": "After the disappointment, she needed time to recover."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 21:17:26",
+    "gender": "die",
+    "plural": "die Enttäuschungen"
+  },
+  {
+    "id": "bereuen",
+    "word": "bereuen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to regret",
+        "note": null
+      },
+      {
+        "meaning": "to feel remorse about",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bereue meine Entscheidung.",
+        "en": "I regret my decision."
+      },
+      {
+        "de": "Sie bereut es, dass sie nicht früher gekommen ist.",
+        "en": "She regrets not coming earlier."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 21:18:14",
+    "auxiliary": "haben",
+    "past_tense": "bereute",
+    "past_participle": "bereut",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "bereuen"
+  },
+  {
+    "id": "funkeln",
+    "word": "funkeln",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to sparkle, to twinkle, to glitter",
+        "note": null
+      },
+      {
+        "meaning": "to flash with anger or emotion",
+        "note": "used especially for eyes"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Sterne funkeln am Himmel.",
+        "en": "The stars twinkle in the sky."
+      },
+      {
+        "de": "Ihre Augen funkelten vor Wut.",
+        "en": "Her eyes flashed with anger."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-08 21:19:14",
+    "auxiliary": "haben",
+    "past_tense": "funkelte",
+    "past_participle": "gefunkelt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "funkeln"
   }
 ]
