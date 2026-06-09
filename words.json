@@ -1709,6 +1709,7 @@
     "family_root": "geben",
     "related": [
       "angeben",
+      "aufgeben",
       "ausgeben",
       "zugeben"
     ]
@@ -2440,6 +2441,7 @@
     "prefix": "zu-",
     "related": [
       "angeben",
+      "aufgeben",
       "ausgeben",
       "behaupten",
       "geben"
@@ -17885,7 +17887,8 @@
     "register": "neutral",
     "notes": "Sport treiben = to do sport. Handel treiben = to trade. Was treibst du? = What are you up to? abtreiben = to abort / to drift off course.",
     "related": [
-      "abtreiben"
+      "abtreiben",
+      "übertreiben"
     ],
     "added": "2026-04-07 14:13:00"
   },
@@ -17930,7 +17933,8 @@
     "register": "neutral",
     "notes": "Two meanings: (1) to drift off course (sein); (2) to abort a pregnancy (haben). die Abtreibung = abortion.",
     "related": [
-      "treiben"
+      "treiben",
+      "übertreiben"
     ],
     "added": "2026-04-07 14:14:00"
   },
@@ -23261,8 +23265,9 @@
     "register": "neutral",
     "notes": "der Zwang = compulsion/coercion. zwingen = to force. gezwungen = forced. zwanghaft = compulsive.",
     "related": [
-      "zwängen",
-      "die Beschränkung"
+      "die Beschränkung",
+      "zwingen",
+      "zwängen"
     ],
     "added": "2026-04-07 17:16:00"
   },
@@ -25574,6 +25579,7 @@
     "prefix": "an-",
     "related": [
       "angeblich",
+      "aufgeben",
       "ausgeben",
       "geben",
       "zugeben"
@@ -28796,6 +28802,8 @@
     "register": "neutral",
     "notes": null,
     "related": [
+      "aufbrechen",
+      "brechen",
       "kostbar"
     ],
     "added": "2026-04-10 11:40:00"
@@ -29518,6 +29526,7 @@
     "prefix": "aus-",
     "related": [
       "angeben",
+      "aufgeben",
       "geben",
       "zugeben"
     ]
@@ -31271,5 +31280,382 @@
     "is_separable": false,
     "reflexive": false,
     "family_root": "funkeln"
+  },
+  {
+    "id": "brechen",
+    "word": "brechen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to break",
+        "note": null
+      },
+      {
+        "meaning": "to vomit",
+        "note": null
+      },
+      {
+        "meaning": "to refract",
+        "note": "used in physics contexts"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Ast ist gebrochen.",
+        "en": "The branch has broken."
+      },
+      {
+        "de": "Ihm war schlecht und er musste brechen.",
+        "en": "He felt sick and had to vomit."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Strong irregular verb with vowel changes in conjugation.",
+    "added": "2026-06-09 09:06:14",
+    "auxiliary": "haben",
+    "past_tense": "brach",
+    "past_participle": "gebrochen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "brechen",
+    "related": [
+      "aufbrechen",
+      "zerbrechlich"
+    ]
+  },
+  {
+    "id": "aufbrechen",
+    "word": "aufbrechen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to set off, to depart, to leave",
+        "note": null
+      },
+      {
+        "meaning": "to break open, to force open",
+        "note": "uses auxiliary haben"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir brechen morgen früh zu unserer Reise auf.",
+        "en": "We are setting off on our journey early tomorrow morning."
+      },
+      {
+        "de": "Die Einbrecher brachen den Safe auf.",
+        "en": "The burglars broke open the safe."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Uses sein when meaning to depart, haben when meaning to break open.",
+    "added": "2026-06-09 09:07:03",
+    "auxiliary": "sein",
+    "past_tense": "brach auf",
+    "past_participle": "aufgebrochen",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "brechen",
+    "prefix": "auf-",
+    "related": [
+      "brechen",
+      "zerbrechlich"
+    ]
+  },
+  {
+    "id": "hinken",
+    "word": "hinken",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to limp, to walk with difficulty due to injury or disability",
+        "note": null
+      },
+      {
+        "meaning": "to be flawed or inadequate",
+        "note": "figurative use, often describing comparisons or arguments"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nach dem Unfall hinkte er wochenlang.",
+        "en": "After the accident, he limped for weeks."
+      },
+      {
+        "de": "Der Vergleich hinkt, weil die Situationen völlig unterschiedlich sind.",
+        "en": "The comparison is flawed because the situations are completely different."
+      }
+    ],
+    "topics": [
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Often used figuratively to describe inadequate comparisons or arguments that don't hold up well.",
+    "added": "2026-06-09 09:09:01",
+    "auxiliary": "haben",
+    "past_tense": "hinkte",
+    "past_participle": "gehinkt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "hinken"
+  },
+  {
+    "id": "das-wesen",
+    "word": "das Wesen",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "being, creature, entity",
+        "note": null
+      },
+      {
+        "meaning": "nature, essence, character",
+        "note": "referring to the fundamental quality of something"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Hund ist ein treues Wesen.",
+        "en": "The dog is a loyal being."
+      },
+      {
+        "de": "Das Wesen der Demokratie ist die Meinungsfreiheit.",
+        "en": "The essence of democracy is freedom of opinion."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-09 09:09:51",
+    "gender": "das",
+    "plural": "die Wesen"
+  },
+  {
+    "id": "beschreiten",
+    "word": "beschreiten",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to walk on, to tread on",
+        "note": null
+      },
+      {
+        "meaning": "to embark on, to pursue (a path or course of action)",
+        "note": "figurative use"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir dürfen den Rasen nicht beschreiten.",
+        "en": "We are not allowed to walk on the lawn."
+      },
+      {
+        "de": "Die Firma hat neue Wege beschritten.",
+        "en": "The company has embarked on new paths."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "Often used figuratively to mean pursuing a new approach or strategy.",
+    "added": "2026-06-09 09:11:00",
+    "auxiliary": "haben",
+    "past_tense": "beschritt",
+    "past_participle": "beschritten",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schreiten",
+    "prefix": "be-"
+  },
+  {
+    "id": "zwingen",
+    "word": "zwingen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to force, to compel",
+        "note": null
+      },
+      {
+        "meaning": "to coerce, to make someone do something against their will",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Niemand kann mich dazu zwingen, das zu tun.",
+        "en": "Nobody can force me to do that."
+      },
+      {
+        "de": "Die Umstände zwangen ihn, eine schwere Entscheidung zu treffen.",
+        "en": "The circumstances forced him to make a difficult decision."
+      }
+    ],
+    "topics": [
+      "people & relationships",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "This is a strong irregular verb with vowel changes in conjugation.",
+    "added": "2026-06-09 09:11:56",
+    "auxiliary": "haben",
+    "past_tense": "zwang",
+    "past_participle": "gezwungen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "zwingen",
+    "related": [
+      "Zwang"
+    ]
+  },
+  {
+    "id": "uebertreiben",
+    "word": "übertreiben",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to exaggerate",
+        "note": null
+      },
+      {
+        "meaning": "to overdo",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Du übertreibst wirklich mit deinen Geschichten.",
+        "en": "You really exaggerate with your stories."
+      },
+      {
+        "de": "Man sollte es mit dem Sport nicht übertreiben.",
+        "en": "One shouldn't overdo it with sports."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-09 09:13:22",
+    "auxiliary": "haben",
+    "past_tense": "übertrieb",
+    "past_participle": "übertrieben",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "treiben",
+    "prefix": "über-",
+    "related": [
+      "abtreiben",
+      "treiben"
+    ]
+  },
+  {
+    "id": "uebrig",
+    "word": "übrig",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "remaining, left over",
+        "note": "often used predicatively with 'sein' or 'bleiben'"
+      },
+      {
+        "meaning": "spare, extra",
+        "note": "when referring to time, money, or resources"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ist noch Kuchen übrig?",
+        "en": "Is there any cake left?"
+      },
+      {
+        "de": "Hast du heute Abend Zeit übrig?",
+        "en": "Do you have spare time this evening?"
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Commonly used in the phrase 'übrig haben' meaning 'to have left over' or 'to spare'",
+    "added": "2026-06-09 09:14:37",
+    "usage": "both"
+  },
+  {
+    "id": "aufgeben",
+    "word": "aufgeben",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to give up, to quit, to surrender",
+        "note": null
+      },
+      {
+        "meaning": "to post, to mail",
+        "note": "used for letters or packages"
+      },
+      {
+        "meaning": "to assign, to give as homework",
+        "note": "used in educational contexts"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich werde niemals aufgeben!",
+        "en": "I will never give up!"
+      },
+      {
+        "de": "Sie hat den Brief auf der Post aufgegeben.",
+        "en": "She mailed the letter at the post office."
+      },
+      {
+        "de": "Der Lehrer gibt den Schülern viele Hausaufgaben auf.",
+        "en": "The teacher assigns a lot of homework to the students."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "daily life",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "The meaning varies significantly based on context, from emotional surrender to practical tasks like mailing.",
+    "added": "2026-06-09 09:16:14",
+    "auxiliary": "haben",
+    "past_tense": "gab auf",
+    "past_participle": "aufgegeben",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "geben",
+    "prefix": "auf-",
+    "related": [
+      "angeben",
+      "ausgeben",
+      "geben",
+      "zugeben"
+    ]
   }
 ]
