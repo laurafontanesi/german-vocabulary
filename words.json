@@ -5212,7 +5212,8 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
-      "aufwachen"
+      "aufwachen",
+      "der Wecker"
     ],
     "definitions": [
       {
@@ -20567,9 +20568,10 @@
     "register": "neutral",
     "notes": "arbeiten an + DAT = to work on. die Arbeit = work. der Arbeitsplatz = workplace. überarbeiten = to revise/overwork.",
     "related": [
+      "der Beruf",
       "die Arbeit",
-      "überarbeiten",
-      "der Beruf"
+      "die Arbeitslosigkeit",
+      "überarbeiten"
     ],
     "added": "2026-04-07 16:02:00"
   },
@@ -20608,6 +20610,7 @@
     "related": [
       "arbeiten",
       "der Beruf",
+      "die Arbeitslosigkeit",
       "die Stelle",
       "schaffen"
     ],
@@ -32049,5 +32052,402 @@
       "anstecken",
       "verstecken"
     ]
+  },
+  {
+    "id": "die-lage",
+    "word": "die Lage",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "situation, position, condition",
+        "note": null
+      },
+      {
+        "meaning": "location, position (geographical)",
+        "note": null
+      },
+      {
+        "meaning": "layer",
+        "note": "physical layer of material"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die wirtschaftliche Lage hat sich verbessert.",
+        "en": "The economic situation has improved."
+      },
+      {
+        "de": "Das Hotel hat eine sehr gute Lage am Strand.",
+        "en": "The hotel has a very good location on the beach."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 10:06:53",
+    "gender": "die",
+    "plural": "die Lagen"
+  },
+  {
+    "id": "woertlich",
+    "word": "wörtlich",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "literal, word-for-word",
+        "note": null
+      },
+      {
+        "meaning": "exactly as stated, verbatim",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist eine wörtliche Übersetzung des Textes.",
+        "en": "That is a literal translation of the text."
+      },
+      {
+        "de": "Nimm das nicht wörtlich, das war nur ein Scherz!",
+        "en": "Don't take that literally, it was just a joke!"
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 10:07:42",
+    "usage": "both"
+  },
+  {
+    "id": "die-wirtschaft",
+    "word": "die Wirtschaft",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "economy",
+        "note": null
+      },
+      {
+        "meaning": "tavern, pub, inn",
+        "note": "traditional or regional usage"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die deutsche Wirtschaft wächst langsam.",
+        "en": "The German economy is growing slowly."
+      },
+      {
+        "de": "Wir gehen heute Abend in die kleine Wirtschaft um die Ecke.",
+        "en": "We're going to the little tavern around the corner tonight."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "money & shopping"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Can refer to both the economic system and a traditional drinking establishment depending on context.",
+    "added": "2026-06-10 10:09:00",
+    "gender": "die",
+    "plural": "die Wirtschaften"
+  },
+  {
+    "id": "lutschen",
+    "word": "lutschen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to suck (on something)",
+        "note": null
+      },
+      {
+        "meaning": "to lick repeatedly",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Kind lutscht an seinem Daumen.",
+        "en": "The child is sucking its thumb."
+      },
+      {
+        "de": "Sie lutschte an einem Bonbon.",
+        "en": "She was sucking on a candy."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 10:10:43",
+    "auxiliary": "haben",
+    "past_tense": "lutschte",
+    "past_participle": "gelutscht",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "lutschen"
+  },
+  {
+    "id": "freilich",
+    "word": "freilich",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "of course, certainly, naturally",
+        "note": "expresses agreement or acknowledgment"
+      },
+      {
+        "meaning": "admittedly, to be sure",
+        "note": "used to concede a point"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist freilich richtig, aber trotzdem problematisch.",
+        "en": "That is certainly correct, but still problematic."
+      },
+      {
+        "de": "Freilich kann ich dir dabei helfen!",
+        "en": "Of course I can help you with that!"
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Often used to express concession while maintaining one's position in an argument.",
+    "added": "2026-06-10 10:11:43",
+    "usage": "adverb only"
+  },
+  {
+    "id": "die-arbeitslosigkeit",
+    "word": "die Arbeitslosigkeit",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "unemployment",
+        "note": null
+      },
+      {
+        "meaning": "the state of being jobless or without work",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Arbeitslosigkeit ist in den letzten Monaten gestiegen.",
+        "en": "Unemployment has risen in recent months."
+      },
+      {
+        "de": "Viele Menschen leiden unter der Arbeitslosigkeit.",
+        "en": "Many people suffer from unemployment."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 10:13:35",
+    "gender": "die",
+    "plural": null,
+    "related": [
+      "Arbeit",
+      "arbeiten"
+    ]
+  },
+  {
+    "id": "vorne",
+    "word": "vorne",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "at the front, in front",
+        "note": null
+      },
+      {
+        "meaning": "forward, ahead",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Auto steht vorne am Haus.",
+        "en": "The car is parked at the front of the house."
+      },
+      {
+        "de": "In der Schlange stehen wir ganz vorne.",
+        "en": "We are standing right at the front of the line."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 10:15:08",
+    "usage": "both"
+  },
+  {
+    "id": "fluestern",
+    "word": "flüstern",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to whisper",
+        "note": null
+      },
+      {
+        "meaning": "to speak in a very quiet voice",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie flüsterte mir etwas ins Ohr.",
+        "en": "She whispered something in my ear."
+      },
+      {
+        "de": "Die Kinder flüsterten während des Films.",
+        "en": "The children whispered during the movie."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 10:16:04",
+    "auxiliary": "haben",
+    "past_tense": "flüsterte",
+    "past_participle": "geflüstert",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "flüstern"
+  },
+  {
+    "id": "der-wecker",
+    "word": "der Wecker",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "alarm clock",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Wecker klingelt um sechs Uhr morgens.",
+        "en": "The alarm clock rings at six o'clock in the morning."
+      },
+      {
+        "de": "Ich habe vergessen, den Wecker zu stellen.",
+        "en": "I forgot to set the alarm clock."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 10:16:44",
+    "gender": "der",
+    "plural": "die Wecker",
+    "related": [
+      "wecken"
+    ]
+  },
+  {
+    "id": "verpassen",
+    "word": "verpassen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to miss (fail to catch or attend)",
+        "note": null
+      },
+      {
+        "meaning": "to give someone something (usually unpleasant)",
+        "note": "informal usage"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe den Zug verpasst.",
+        "en": "I missed the train."
+      },
+      {
+        "de": "Du verpasst eine große Chance!",
+        "en": "You're missing a great opportunity!"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 10:17:25",
+    "auxiliary": "haben",
+    "past_tense": "verpasste",
+    "past_participle": "verpasst",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "passen",
+    "prefix": "ver-"
+  },
+  {
+    "id": "wuetend",
+    "word": "wütend",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "angry, furious",
+        "note": "often used with auf + AKK to indicate the target of anger"
+      },
+      {
+        "meaning": "angrily, furiously",
+        "note": "when used as adverb"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie war wütend auf ihren Chef.",
+        "en": "She was angry at her boss."
+      },
+      {
+        "de": "Er reagierte wütend auf die Nachricht.",
+        "en": "He reacted angrily to the news."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 10:18:11",
+    "usage": "both"
   }
 ]
