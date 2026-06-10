@@ -3080,6 +3080,7 @@
     "word": "bereit",
     "type": "adj/adv",
     "related": [
+      "bereits",
       "fertig"
     ],
     "definitions": [
@@ -31009,7 +31010,10 @@
     "past_participle": "geahnt",
     "is_separable": false,
     "reflexive": false,
-    "family_root": "ahnen"
+    "family_root": "ahnen",
+    "related": [
+      "die Ahnung"
+    ]
   },
   {
     "id": "einfallen",
@@ -31657,6 +31661,193 @@
       "ausgeben",
       "geben",
       "zugeben"
+    ]
+  },
+  {
+    "id": "die-ahnung",
+    "word": "die Ahnung",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "idea, notion, inkling",
+        "note": null
+      },
+      {
+        "meaning": "suspicion, premonition",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe keine Ahnung, wo mein Schlüssel ist.",
+        "en": "I have no idea where my key is."
+      },
+      {
+        "de": "Sie hatte eine Ahnung, dass etwas nicht stimmte.",
+        "en": "She had a feeling that something was wrong."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Very commonly used in the phrase 'keine Ahnung haben' meaning to have no idea or clue.",
+    "added": "2026-06-10 09:24:37",
+    "gender": "die",
+    "plural": "die Ahnungen",
+    "related": [
+      "ahnen"
+    ]
+  },
+  {
+    "id": "bereits",
+    "word": "bereits",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "already",
+        "note": null
+      },
+      {
+        "meaning": "as early as",
+        "note": "when emphasizing an early point in time"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bin bereits fertig mit der Arbeit.",
+        "en": "I am already finished with the work."
+      },
+      {
+        "de": "Sie war bereits um sechs Uhr da.",
+        "en": "She was already there at six o'clock."
+      }
+    ],
+    "topics": [
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 09:54:49",
+    "usage": "adverb only",
+    "related": [
+      "bereit"
+    ]
+  },
+  {
+    "id": "der-lappen",
+    "word": "der Lappen",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "cloth, rag",
+        "note": null
+      },
+      {
+        "meaning": "driving license",
+        "note": "colloquial"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich brauche einen feuchten Lappen, um den Tisch zu putzen.",
+        "en": "I need a damp cloth to clean the table."
+      },
+      {
+        "de": "Er hat seinen Lappen verloren und muss eine neue Fahrerlaubnis beantragen.",
+        "en": "He lost his driving license and has to apply for a new one."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "The colloquial meaning for driving license is very common in spoken German.",
+    "added": "2026-06-10 09:55:57",
+    "gender": "der",
+    "plural": "die Lappen"
+  },
+  {
+    "id": "die-putzkraft",
+    "word": "die Putzkraft",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "cleaning lady/person, cleaner",
+        "note": null
+      },
+      {
+        "meaning": "cleaning staff member",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Putzkraft kommt jeden Dienstag ins Büro.",
+        "en": "The cleaner comes to the office every Tuesday."
+      },
+      {
+        "de": "Wir suchen eine zuverlässige Putzkraft für unser Haus.",
+        "en": "We are looking for a reliable cleaning person for our house."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 09:56:59",
+    "gender": "die",
+    "plural": "die Putzkräfte",
+    "related": [
+      "die Kraft"
+    ]
+  },
+  {
+    "id": "die-kraft",
+    "word": "die Kraft",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "strength, power, force",
+        "note": null
+      },
+      {
+        "meaning": "energy, vigor",
+        "note": null
+      },
+      {
+        "meaning": "force (in physics)",
+        "note": "scientific context"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie hat nicht genug Kraft, um den schweren Koffer zu tragen.",
+        "en": "She doesn't have enough strength to carry the heavy suitcase."
+      },
+      {
+        "de": "Die Kraft des Windes war beeindruckend.",
+        "en": "The force of the wind was impressive."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 09:57:40",
+    "gender": "die",
+    "plural": "die Kräfte",
+    "related": [
+      "Putzkraft"
     ]
   }
 ]
