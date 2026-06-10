@@ -23422,7 +23422,9 @@
     "register": "neutral",
     "notes": "anstecken = to infect. ansteckend = contagious. sich anstecken = to catch an illness.",
     "related": [
-      "erkranken"
+      "erkranken",
+      "stecken",
+      "verstecken"
     ],
     "added": "2026-04-07 17:20:00"
   },
@@ -31849,6 +31851,202 @@
     "related": [
       "Putzkraft",
       "die Putzkraft"
+    ]
+  },
+  {
+    "id": "kritzeln",
+    "word": "kritzeln",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to scribble, to doodle",
+        "note": null
+      },
+      {
+        "meaning": "to scratch or make marks carelessly",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Kind kritzelt mit bunten Stiften auf das Papier.",
+        "en": "The child scribbles on the paper with colored pencils."
+      },
+      {
+        "de": "Er kritzelte während der Besprechung kleine Figuren in sein Notizbuch.",
+        "en": "He doodled little figures in his notebook during the meeting."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 10:01:06",
+    "auxiliary": "haben",
+    "past_tense": "kritzelte",
+    "past_participle": "gekritzelt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "kritzeln"
+  },
+  {
+    "id": "das-geheimnis",
+    "word": "das Geheimnis",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "secret",
+        "note": null
+      },
+      {
+        "meaning": "mystery",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie hat mir ihr größtes Geheimnis verraten.",
+        "en": "She told me her biggest secret."
+      },
+      {
+        "de": "Das Verschwinden des Mannes bleibt ein Geheimnis.",
+        "en": "The man's disappearance remains a mystery."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 10:03:01",
+    "gender": "das",
+    "plural": "die Geheimnisse"
+  },
+  {
+    "id": "das-versteck",
+    "word": "das Versteck",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "hiding place",
+        "note": null
+      },
+      {
+        "meaning": "hideout",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Kinder haben ein geheimes Versteck im Wald.",
+        "en": "The children have a secret hiding place in the forest."
+      },
+      {
+        "de": "Der Schatz war in einem sicheren Versteck verborgen.",
+        "en": "The treasure was hidden in a safe hideout."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 10:03:55",
+    "gender": "das",
+    "plural": "die Verstecke",
+    "related": [
+      "verstecken"
+    ]
+  },
+  {
+    "id": "verstecken",
+    "word": "verstecken",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to hide",
+        "note": null
+      },
+      {
+        "meaning": "to conceal",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Kinder verstecken sich im Garten.",
+        "en": "The children are hiding in the garden."
+      },
+      {
+        "de": "Er versteckt das Geschenk unter dem Bett.",
+        "en": "He hides the gift under the bed."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Often used reflexively with 'sich' to mean 'to hide oneself'.",
+    "added": "2026-06-10 10:04:17",
+    "auxiliary": "haben",
+    "past_tense": "versteckte",
+    "past_participle": "versteckt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "stecken",
+    "prefix": "ver-",
+    "related": [
+      "Versteck",
+      "anstecken",
+      "stecken"
+    ]
+  },
+  {
+    "id": "stecken",
+    "word": "stecken",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to put, to stick, to insert",
+        "note": null
+      },
+      {
+        "meaning": "to be stuck, to be located",
+        "note": "when used with auxiliary sein"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er steckt den Schlüssel in das Schloss.",
+        "en": "He puts the key in the lock."
+      },
+      {
+        "de": "Wo steckt denn mein Handy?",
+        "en": "Where is my phone?"
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Can use auxiliary sein when expressing a state of being stuck or located somewhere.",
+    "added": "2026-06-10 10:05:13",
+    "auxiliary": "haben",
+    "past_tense": "steckte",
+    "past_participle": "gesteckt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "stecken",
+    "related": [
+      "anstecken",
+      "verstecken"
     ]
   }
 ]
