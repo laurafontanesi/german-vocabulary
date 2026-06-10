@@ -20206,6 +20206,7 @@
     "register": "neutral",
     "notes": "auf dem Weg = on the way. aus dem Weg gehen = to get out of the way. den Weg kennen = to know the way.",
     "related": [
+      "der Kiesweg",
       "weg"
     ],
     "added": "2026-04-07 15:13:00"
@@ -20242,6 +20243,7 @@
     "register": "neutral",
     "notes": "weg = gone/away (adverb). Not to be confused with der Weg (path/way). wegfahren, weggehen, wegnehmen = all use weg- as prefix.",
     "related": [
+      "der Kiesweg",
       "der Weg"
     ],
     "added": "2026-04-07 15:14:00"
@@ -26326,7 +26328,9 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "related": [],
+    "related": [
+      "aufheben"
+    ],
     "added": "2026-04-10 10:15:00",
     "auxiliary": "haben",
     "past_tense": "hob",
@@ -27987,7 +27991,9 @@
     "tags": [],
     "register": "neutral",
     "notes": null,
-    "related": [],
+    "related": [
+      "bestimmt"
+    ],
     "added": "2026-04-10 11:19:00",
     "auxiliary": "haben",
     "past_tense": "bestimmte",
@@ -31492,7 +31498,10 @@
     "is_separable": false,
     "reflexive": false,
     "family_root": "schreiten",
-    "prefix": "be-"
+    "prefix": "be-",
+    "related": [
+      "der Schritt"
+    ]
   },
   {
     "id": "zwingen",
@@ -32450,5 +32459,558 @@
     "notes": null,
     "added": "2026-06-10 10:18:11",
     "usage": "both"
+  },
+  {
+    "id": "der-schritt",
+    "word": "der Schritt",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "step",
+        "note": "physical movement with foot"
+      },
+      {
+        "meaning": "step",
+        "note": "figurative stage or measure in a process"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er machte einen großen Schritt nach vorn.",
+        "en": "He took a big step forward."
+      },
+      {
+        "de": "Das war ein wichtiger Schritt in die richtige Richtung.",
+        "en": "That was an important step in the right direction."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 10:21:39",
+    "gender": "der",
+    "plural": "die Schritte",
+    "related": [
+      "beschreiten"
+    ]
+  },
+  {
+    "id": "ausatmen",
+    "word": "ausatmen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to exhale",
+        "note": null
+      },
+      {
+        "meaning": "to breathe out",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Atme tief ein und dann langsam aus.",
+        "en": "Breathe in deeply and then exhale slowly."
+      },
+      {
+        "de": "Sie atmete erleichtert aus, als die Prüfung vorbei war.",
+        "en": "She breathed out with relief when the exam was over."
+      }
+    ],
+    "topics": [
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 10:22:52",
+    "auxiliary": "haben",
+    "past_tense": "atmete aus",
+    "past_participle": "ausgeatmet",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "atmen",
+    "prefix": "aus-"
+  },
+  {
+    "id": "der-kiesweg",
+    "word": "der Kiesweg",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "gravel path",
+        "note": null
+      },
+      {
+        "meaning": "gravel road",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Kiesweg führt durch den Park zum See.",
+        "en": "The gravel path leads through the park to the lake."
+      },
+      {
+        "de": "Wir gingen langsam den schmalen Kiesweg entlang.",
+        "en": "We walked slowly along the narrow gravel path."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 10:23:48",
+    "gender": "der",
+    "plural": "die Kieswege",
+    "related": [
+      "Weg"
+    ]
+  },
+  {
+    "id": "uebrigens",
+    "word": "übrigens",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "by the way",
+        "note": "used to introduce additional or tangential information"
+      },
+      {
+        "meaning": "incidentally",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Übrigens, hast du schon gehört, dass Maria einen neuen Job hat?",
+        "en": "By the way, have you heard that Maria has a new job?"
+      },
+      {
+        "de": "Das Restaurant war sehr gut, übrigens auch nicht teuer.",
+        "en": "The restaurant was very good, incidentally also not expensive."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Often used at the beginning of a sentence or clause to introduce a side remark or additional thought.",
+    "added": "2026-06-10 10:25:02",
+    "usage": "adverb only"
+  },
+  {
+    "id": "aufheben",
+    "word": "aufheben",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to pick up, to lift up",
+        "note": null
+      },
+      {
+        "meaning": "to keep, to save, to store",
+        "note": null
+      },
+      {
+        "meaning": "to cancel, to abolish, to revoke",
+        "note": "formal/legal contexts"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Kannst du bitte das Spielzeug aufheben?",
+        "en": "Can you please pick up the toys?"
+      },
+      {
+        "de": "Ich hebe alle wichtigen Dokumente in diesem Ordner auf.",
+        "en": "I keep all important documents in this folder."
+      },
+      {
+        "de": "Das Gesetz wurde vom Parlament aufgehoben.",
+        "en": "The law was abolished by parliament."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "This verb has three distinct meanings that are context-dependent and commonly used in different situations.",
+    "added": "2026-06-10 10:25:39",
+    "auxiliary": "haben",
+    "past_tense": "hob auf",
+    "past_participle": "aufgehoben",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "heben",
+    "prefix": "auf-",
+    "related": [
+      "heben"
+    ]
+  },
+  {
+    "id": "offensichtlich",
+    "word": "offensichtlich",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "obvious, evident, apparent",
+        "note": null
+      },
+      {
+        "meaning": "obviously, evidently, clearly",
+        "note": "when used as adverb"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Es ist offensichtlich, dass er müde ist.",
+        "en": "It is obvious that he is tired."
+      },
+      {
+        "de": "Sie hat offensichtlich keine Zeit für uns.",
+        "en": "She obviously has no time for us."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 10:27:01",
+    "usage": "both"
+  },
+  {
+    "id": "das-zelt",
+    "word": "das Zelt",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "tent",
+        "note": "portable shelter made of fabric or canvas"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir haben unser Zelt am See aufgebaut.",
+        "en": "We set up our tent by the lake."
+      },
+      {
+        "de": "Das Zelt ist wasserdicht und hält uns trocken.",
+        "en": "The tent is waterproof and keeps us dry."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 10:28:41",
+    "gender": "das",
+    "plural": "die Zelte"
+  },
+  {
+    "id": "anstrengend",
+    "word": "anstrengend",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "exhausting, tiring, demanding",
+        "note": null
+      },
+      {
+        "meaning": "difficult, challenging",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Arbeitstag war sehr anstrengend.",
+        "en": "The work day was very exhausting."
+      },
+      {
+        "de": "Sie fand die Prüfung ziemlich anstrengend.",
+        "en": "She found the exam quite demanding."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 10:30:18",
+    "usage": "both",
+    "derived_from": "sich anstrengen"
+  },
+  {
+    "id": "bestimmt",
+    "word": "bestimmt",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "certain, definite, specific",
+        "note": "as adjective"
+      },
+      {
+        "meaning": "certainly, definitely, surely",
+        "note": "as adverb"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich suche ein bestimmtes Buch.",
+        "en": "I'm looking for a specific book."
+      },
+      {
+        "de": "Er kommt bestimmt morgen.",
+        "en": "He will definitely come tomorrow."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Past participle of 'bestimmen' but commonly used as independent adjective/adverb.",
+    "added": "2026-06-10 10:31:31",
+    "usage": "both",
+    "derived_from": "bestimmen",
+    "related": [
+      "bestimmen"
+    ]
+  },
+  {
+    "id": "pass-auf",
+    "word": "Pass auf!",
+    "type": "expression",
+    "definitions": [
+      {
+        "meaning": "watch out, be careful",
+        "note": "imperative warning or command"
+      },
+      {
+        "meaning": "pay attention",
+        "note": "directive to focus or concentrate"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Pass auf! Da kommt ein Auto!",
+        "en": "Watch out! A car is coming!"
+      },
+      {
+        "de": "Pass auf, was ich dir jetzt sage!",
+        "en": "Pay attention to what I'm telling you now!"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "informal",
+    "notes": "Derived from the separable verb 'aufpassen' used as an imperative command.",
+    "added": "2026-06-10 10:34:04"
+  },
+  {
+    "id": "schnaufen",
+    "word": "schnaufen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to breathe heavily, to puff",
+        "note": null
+      },
+      {
+        "meaning": "to pant",
+        "note": "especially from exertion or being out of breath"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nach dem langen Lauf schnaufte er schwer.",
+        "en": "After the long run, he was breathing heavily."
+      },
+      {
+        "de": "Der Hund schnaufte in der Hitze.",
+        "en": "The dog was panting in the heat."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 10:35:23",
+    "auxiliary": "haben",
+    "past_tense": "schnaufte",
+    "past_participle": "geschnauft",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "schnaufen"
+  },
+  {
+    "id": "die-ameise",
+    "word": "die Ameise",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "ant",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Ameisen tragen Krümel in ihren Bau.",
+        "en": "The ants are carrying crumbs into their nest."
+      },
+      {
+        "de": "Im Garten gibt es viele fleißige Ameisen.",
+        "en": "There are many industrious ants in the garden."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 10:36:47",
+    "gender": "die",
+    "plural": "die Ameisen"
+  },
+  {
+    "id": "feuern",
+    "word": "feuern",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to fire (shoot)",
+        "note": null
+      },
+      {
+        "meaning": "to fire (dismiss from job)",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Soldat feuerte drei Schüsse ab.",
+        "en": "The soldier fired three shots."
+      },
+      {
+        "de": "Der Chef hat ihn wegen schlechter Leistung gefeuert.",
+        "en": "The boss fired him because of poor performance."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 10:37:49",
+    "auxiliary": "haben",
+    "past_tense": "feuerte",
+    "past_participle": "gefeuert",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "feuern"
+  },
+  {
+    "id": "sich-schaemen",
+    "word": "sich schämen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to be ashamed, to feel shame",
+        "note": "often used with für + AKK or wegen + GEN"
+      },
+      {
+        "meaning": "to be embarrassed",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich schäme mich für mein Verhalten gestern.",
+        "en": "I am ashamed of my behavior yesterday."
+      },
+      {
+        "de": "Sie schämt sich, weil sie einen Fehler gemacht hat.",
+        "en": "She is embarrassed because she made a mistake."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-10 10:40:13",
+    "auxiliary": "haben",
+    "past_tense": "schämte",
+    "past_participle": "geschämt",
+    "is_separable": false,
+    "reflexive": true,
+    "preposition": "für + AKK (optional)",
+    "family_root": "schämen"
+  },
+  {
+    "id": "beschaemen",
+    "word": "beschämen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to shame, to put to shame",
+        "note": null
+      },
+      {
+        "meaning": "to embarrass, to make ashamed",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Seine Großzügigkeit beschämte mich.",
+        "en": "His generosity put me to shame."
+      },
+      {
+        "de": "Die Wahrheit beschämte ihn zutiefst.",
+        "en": "The truth deeply shamed him."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Often used when someone's actions or qualities make others feel ashamed by comparison.",
+    "added": "2026-06-10 10:43:25",
+    "auxiliary": "haben",
+    "past_tense": "beschämte",
+    "past_participle": "beschämt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "beschämen"
   }
 ]
