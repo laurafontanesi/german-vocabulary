@@ -1497,7 +1497,8 @@
     "added": "2026-04-04",
     "family_root": "bleiben",
     "related": [
-      "hängenbleiben"
+      "hängenbleiben",
+      "verbleiben"
     ]
   },
   {
@@ -21163,7 +21164,8 @@
     "register": "neutral",
     "notes": "hängengeblieben is the common past participle form. etwas bleibt hängen = something sticks in the mind.",
     "related": [
-      "bleiben"
+      "bleiben",
+      "verbleiben"
     ],
     "added": "2026-04-07 16:17:00"
   },
@@ -34922,6 +34924,307 @@
     "related": [
       "Mühe",
       "die Mühe"
+    ]
+  },
+  {
+    "id": "belohnen",
+    "word": "belohnen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to reward",
+        "note": null
+      },
+      {
+        "meaning": "to compensate someone for their efforts or achievements",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Eltern belohnen ihr Kind für gute Noten.",
+        "en": "The parents reward their child for good grades."
+      },
+      {
+        "de": "Der Chef belohnte die fleißigen Mitarbeiter mit einem Bonus.",
+        "en": "The boss rewarded the hard-working employees with a bonus."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 18:04:25",
+    "auxiliary": "haben",
+    "past_tense": "belohnte",
+    "past_participle": "belohnt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "belohnen",
+    "related": [
+      "die Belohnung"
+    ]
+  },
+  {
+    "id": "die-belohnung",
+    "word": "die Belohnung",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "reward",
+        "note": null
+      },
+      {
+        "meaning": "compensation for good behavior or achievement",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Als Belohnung für seine guten Noten bekam er ein neues Fahrrad.",
+        "en": "As a reward for his good grades, he got a new bicycle."
+      },
+      {
+        "de": "Die Polizei hat eine Belohnung für Hinweise zum Täter ausgesetzt.",
+        "en": "The police have offered a reward for information about the perpetrator."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 18:05:43",
+    "gender": "die",
+    "plural": "die Belohnungen",
+    "related": [
+      "belohnen"
+    ]
+  },
+  {
+    "id": "der-trost",
+    "word": "der Trost",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "comfort, consolation",
+        "note": null
+      },
+      {
+        "meaning": "solace, relief from distress",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie spendete ihm Trost in seiner schweren Zeit.",
+        "en": "She gave him comfort during his difficult time."
+      },
+      {
+        "de": "Das war ein schwacher Trost für den großen Verlust.",
+        "en": "That was little comfort for the great loss."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 18:16:50",
+    "gender": "der",
+    "plural": "die Tröste"
+  },
+  {
+    "id": "verbleiben",
+    "word": "verbleiben",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to remain, to stay",
+        "note": null
+      },
+      {
+        "meaning": "to be left over, to be remaining",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir sind so verblieben, dass er mich morgen anruft.",
+        "en": "We agreed that he would call me tomorrow."
+      },
+      {
+        "de": "Nach der Diskussion verbleibt noch viel zu tun.",
+        "en": "After the discussion, much remains to be done."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "Often used in formal contexts and fixed expressions like 'so verbleiben' meaning 'to agree on something'.",
+    "added": "2026-06-11 18:17:48",
+    "auxiliary": "sein",
+    "past_tense": "verblieb",
+    "past_participle": "verblieben",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "bleiben",
+    "prefix": "ver-",
+    "related": [
+      "bleiben",
+      "hängenbleiben"
+    ]
+  },
+  {
+    "id": "deutlich",
+    "word": "deutlich",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "clear, distinct, obvious",
+        "note": null
+      },
+      {
+        "meaning": "significantly, considerably",
+        "note": "when used as adverb"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er hat eine deutliche Verbesserung gezeigt.",
+        "en": "He has shown a clear improvement."
+      },
+      {
+        "de": "Sie sprach deutlich langsamer als sonst.",
+        "en": "She spoke significantly slower than usual."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 18:29:15",
+    "usage": "both"
+  },
+  {
+    "id": "das-opfer",
+    "word": "das Opfer",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "victim",
+        "note": "person harmed or killed as a result of a crime, accident, or other event"
+      },
+      {
+        "meaning": "sacrifice",
+        "note": "something offered to a deity or given up for a cause"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Opfer des Unfalls wurde ins Krankenhaus gebracht.",
+        "en": "The victim of the accident was taken to the hospital."
+      },
+      {
+        "de": "Die Soldaten brachten ein großes Opfer für ihr Land.",
+        "en": "The soldiers made a great sacrifice for their country."
+      }
+    ],
+    "topics": [
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Can refer to both victims of harm and sacrificial offerings depending on context.",
+    "added": "2026-06-11 18:30:36",
+    "gender": "das",
+    "plural": "die Opfer"
+  },
+  {
+    "id": "gelingen",
+    "word": "gelingen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to succeed, to be successful",
+        "note": "impersonal verb, used with dative"
+      },
+      {
+        "meaning": "to work out well, to turn out successfully",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Experiment ist mir gelungen.",
+        "en": "The experiment was successful for me."
+      },
+      {
+        "de": "Es gelingt ihm nicht, pünktlich zu sein.",
+        "en": "He doesn't succeed in being punctual."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "This is an impersonal verb that takes the dative case for the person experiencing success.",
+    "added": "2026-06-11 18:31:54",
+    "auxiliary": "sein",
+    "past_tense": "gelang",
+    "past_participle": "gelungen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "gelingen",
+    "related": [
+      "erfolgreich"
+    ]
+  },
+  {
+    "id": "erfolgreich",
+    "word": "erfolgreich",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "successful",
+        "note": null
+      },
+      {
+        "meaning": "successfully",
+        "note": "when used as adverb"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie ist eine sehr erfolgreiche Geschäftsfrau.",
+        "en": "She is a very successful businesswoman."
+      },
+      {
+        "de": "Das Projekt wurde erfolgreich abgeschlossen.",
+        "en": "The project was successfully completed."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 18:32:58",
+    "usage": "both",
+    "related": [
+      "gelingen"
     ]
   }
 ]
