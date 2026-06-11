@@ -3766,8 +3766,9 @@
     "word": "einzig",
     "type": "adj/adv",
     "related": [
+      "allein",
       "einig",
-      "allein"
+      "einzigartig"
     ],
     "definitions": [
       {
@@ -7602,7 +7603,8 @@
     "notes": "legen = to lay (transitive, causes horizontal position); liegen = to lie (intransitive, is in horizontal position). A classic German confusion: ich lege (I lay) vs ich liege (I lie).",
     "related": [
       "liegen",
-      "stellen"
+      "stellen",
+      "überlegen"
     ],
     "added": "2026-04-06 11:02:00"
   },
@@ -23544,6 +23546,7 @@
     "notes": "der Überlebende = survivor. überleben = to survive (transitive and intransitive).",
     "related": [
       "der Held",
+      "erleben",
       "sterben",
       "verteidigen"
     ],
@@ -23943,7 +23946,9 @@
     "tags": [],
     "register": "neutral",
     "notes": "Zauber- as prefix: der Zauberstab = magic wand, der Zaubertrank = magic potion, die Zauberflöte = The Magic Flute. zaubern = to do magic. verzaubern = to enchant.",
-    "related": [],
+    "related": [
+      "verzaubern"
+    ],
     "added": "2026-04-07 17:33:00"
   },
   {
@@ -24088,7 +24093,9 @@
     "register": "neutral",
     "notes": "übersetzen = to translate. die Übersetzung = translation. der Übersetzer = translator.",
     "related": [
-      "die Umgangssprache"
+      "die Umgangssprache",
+      "fortsetzen",
+      "setzen"
     ],
     "added": "2026-04-07 17:37:00"
   },
@@ -33014,5 +33021,942 @@
     "is_separable": false,
     "reflexive": false,
     "family_root": "beschämen"
+  },
+  {
+    "id": "der-teich",
+    "word": "der Teich",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "pond",
+        "note": "a small body of still water, typically artificial"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Im Park gibt es einen kleinen Teich mit Enten.",
+        "en": "There is a small pond with ducks in the park."
+      },
+      {
+        "de": "Die Kinder warfen Steine in den Teich.",
+        "en": "The children threw stones into the pond."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 15:49:08",
+    "gender": "der",
+    "plural": "die Teiche"
+  },
+  {
+    "id": "betrachten",
+    "word": "betrachten",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to look at, to observe, to view",
+        "note": null
+      },
+      {
+        "meaning": "to consider, to regard as",
+        "note": "used with als + noun/adjective"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich betrachte das Gemälde im Museum.",
+        "en": "I am looking at the painting in the museum."
+      },
+      {
+        "de": "Er betrachtet sie als seine beste Freundin.",
+        "en": "He considers her his best friend."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "culture & arts"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 15:51:15",
+    "auxiliary": "haben",
+    "past_tense": "betrachtete",
+    "past_participle": "betrachtet",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "betrachten"
+  },
+  {
+    "id": "staunen",
+    "word": "staunen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to be amazed, to marvel",
+        "note": "often used with über + AKK"
+      },
+      {
+        "meaning": "to be astonished, to wonder",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich staune über ihre Leistung.",
+        "en": "I marvel at her performance."
+      },
+      {
+        "de": "Die Kinder staunten, als sie den Zaubertrick sahen.",
+        "en": "The children were amazed when they saw the magic trick."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 15:53:14",
+    "auxiliary": "haben",
+    "past_tense": "staunte",
+    "past_participle": "gestaunt",
+    "is_separable": false,
+    "reflexive": false,
+    "preposition": "über + AKK",
+    "family_root": "staunen"
+  },
+  {
+    "id": "gedeihen",
+    "word": "gedeihen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to thrive, to flourish, to prosper",
+        "note": null
+      },
+      {
+        "meaning": "to develop well, to grow successfully",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Pflanzen gedeihen in diesem Klima sehr gut.",
+        "en": "The plants thrive very well in this climate."
+      },
+      {
+        "de": "Das Projekt ist gut gediehen und wird bald abgeschlossen.",
+        "en": "The project has progressed well and will soon be completed."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 15:54:39",
+    "auxiliary": "sein",
+    "past_tense": "gedieh",
+    "past_participle": "gediehen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "gedeihen"
+  },
+  {
+    "id": "der-schlamm",
+    "word": "der Schlamm",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "mud",
+        "note": null
+      },
+      {
+        "meaning": "sludge",
+        "note": "thicker consistency"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nach dem Regen war der Weg voller Schlamm.",
+        "en": "After the rain, the path was full of mud."
+      },
+      {
+        "de": "Die Kinder spielten gerne im Schlamm am Seeufer.",
+        "en": "The children enjoyed playing in the mud by the lakeside."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 15:56:20",
+    "gender": "der",
+    "plural": "die Schlämme"
+  },
+  {
+    "id": "die-wurzel",
+    "word": "die Wurzel",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "root (of a plant or tree)",
+        "note": null
+      },
+      {
+        "meaning": "root (mathematical concept)",
+        "note": null
+      },
+      {
+        "meaning": "root, origin, source",
+        "note": "figurative use"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Wurzeln des Baumes reichen tief in die Erde.",
+        "en": "The roots of the tree reach deep into the earth."
+      },
+      {
+        "de": "Die Quadratwurzel von 16 ist 4.",
+        "en": "The square root of 16 is 4."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 15:57:04",
+    "gender": "die",
+    "plural": "die Wurzeln"
+  },
+  {
+    "id": "verzaubern",
+    "word": "verzaubern",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to enchant, to cast a spell on",
+        "note": null
+      },
+      {
+        "meaning": "to charm, to captivate, to bewitch",
+        "note": "figurative use"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Hexe verzauberte den Prinzen in einen Frosch.",
+        "en": "The witch enchanted the prince into a frog."
+      },
+      {
+        "de": "Das kleine Mädchen verzauberte alle mit ihrem süßen Lächeln.",
+        "en": "The little girl charmed everyone with her sweet smile."
+      }
+    ],
+    "topics": [
+      "culture & arts",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 15:58:40",
+    "auxiliary": "haben",
+    "past_tense": "verzauberte",
+    "past_participle": "verzaubert",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "zaubern",
+    "prefix": "ver-",
+    "related": [
+      "Zauber"
+    ]
+  },
+  {
+    "id": "sich-entfalten",
+    "word": "sich entfalten",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to unfold, to develop, to flourish",
+        "note": "used for personal growth, talents, or potential"
+      },
+      {
+        "meaning": "to unfurl, to open up",
+        "note": "used for physical objects like flowers or wings"
+      }
+    ],
+    "examples": [
+      {
+        "de": "In der neuen Schule konnte sie ihr Talent richtig entfalten.",
+        "en": "At the new school, she was able to really develop her talent."
+      },
+      {
+        "de": "Die Blüten entfalten sich langsam in der Morgensonne.",
+        "en": "The blossoms slowly unfurl in the morning sun."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "nature & weather",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 15:59:38",
+    "auxiliary": "haben",
+    "past_tense": "entfaltete sich",
+    "past_participle": "entfaltet",
+    "is_separable": false,
+    "reflexive": true,
+    "family_root": "falten",
+    "prefix": "ent-"
+  },
+  {
+    "id": "entgegen",
+    "word": "entgegen",
+    "type": "prep/conj",
+    "definitions": [
+      {
+        "meaning": "against, contrary to, in opposition to",
+        "note": "takes dative case"
+      },
+      {
+        "meaning": "towards, in the direction of",
+        "note": "indicates movement or direction"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er handelte entgegen meinem Rat.",
+        "en": "He acted against my advice."
+      },
+      {
+        "de": "Sie ging ihm entgegen.",
+        "en": "She went towards him."
+      }
+    ],
+    "topics": [
+      "grammar & structure"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Always governs the dative case and can be used before or after the noun it modifies.",
+    "added": "2026-06-11 16:01:05",
+    "usage": "preposition only"
+  },
+  {
+    "id": "trueb",
+    "word": "trüb",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "cloudy, murky, turbid",
+        "note": "describing liquids or transparency"
+      },
+      {
+        "meaning": "gloomy, dreary, dull",
+        "note": "describing weather, mood, or atmosphere"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Wasser im Teich ist heute sehr trüb.",
+        "en": "The water in the pond is very murky today."
+      },
+      {
+        "de": "Bei diesem trüben Wetter möchte ich nicht spazieren gehen.",
+        "en": "I don't want to go for a walk in this gloomy weather."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 16:02:42",
+    "usage": "both",
+    "related": [
+      "betrüben"
+    ]
+  },
+  {
+    "id": "betrueben",
+    "word": "betrüben",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to sadden, to grieve, to make sad",
+        "note": null
+      },
+      {
+        "meaning": "to distress, to trouble emotionally",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die schlechten Nachrichten betrübten ihn sehr.",
+        "en": "The bad news saddened him very much."
+      },
+      {
+        "de": "Es betrübte sie, dass ihre Freundin wegziehen musste.",
+        "en": "It grieved her that her friend had to move away."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "Often used in more literary or formal contexts; the past participle 'betrübt' is commonly used as an adjective meaning 'sad' or 'saddened'.",
+    "added": "2026-06-11 16:03:17",
+    "auxiliary": "haben",
+    "past_tense": "betrübte",
+    "past_participle": "betrübt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "trüben",
+    "prefix": "be-",
+    "related": [
+      "trüb"
+    ]
+  },
+  {
+    "id": "setzen",
+    "word": "setzen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to place, to put, to set",
+        "note": null
+      },
+      {
+        "meaning": "to sit down",
+        "note": "when used reflexively as 'sich setzen'"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich setze das Buch auf den Tisch.",
+        "en": "I put the book on the table."
+      },
+      {
+        "de": "Sie setzt sich auf den Stuhl.",
+        "en": "She sits down on the chair."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Often used reflexively (sich setzen) to mean 'to sit down'.",
+    "added": "2026-06-11 16:07:08",
+    "auxiliary": "haben",
+    "past_tense": "setzte",
+    "past_participle": "gesetzt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "setzen",
+    "related": [
+      "fortsetzen",
+      "übersetzen"
+    ]
+  },
+  {
+    "id": "fortsetzen",
+    "word": "fortsetzen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to continue",
+        "note": null
+      },
+      {
+        "meaning": "to resume",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir werden das Projekt nächste Woche fortsetzen.",
+        "en": "We will continue the project next week."
+      },
+      {
+        "de": "Nach der Pause setzte er seine Rede fort.",
+        "en": "After the break, he resumed his speech."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 16:08:00",
+    "auxiliary": "haben",
+    "past_tense": "setzte fort",
+    "past_participle": "fortgesetzt",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "setzen",
+    "prefix": "fort-",
+    "related": [
+      "setzen",
+      "übersetzen"
+    ]
+  },
+  {
+    "id": "das-hindernis",
+    "word": "das Hindernis",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "obstacle",
+        "note": null
+      },
+      {
+        "meaning": "barrier",
+        "note": null
+      },
+      {
+        "meaning": "impediment",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das umgestürzte Baumstamm war ein großes Hindernis auf der Straße.",
+        "en": "The fallen tree trunk was a big obstacle on the road."
+      },
+      {
+        "de": "Mangelnde Sprachkenntnisse können ein Hindernis für die Jobsuche sein.",
+        "en": "Lack of language skills can be an impediment to job searching."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 16:09:51",
+    "gender": "das",
+    "plural": "die Hindernisse"
+  },
+  {
+    "id": "fahl",
+    "word": "fahl",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "pale, wan, sallow",
+        "note": "describing unhealthy or washed-out appearance"
+      },
+      {
+        "meaning": "faded, dull",
+        "note": "describing colors or light that lack intensity"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ihr Gesicht war fahl vor Schreck.",
+        "en": "Her face was pale with fright."
+      },
+      {
+        "de": "Das fahle Mondlicht schien durch die Wolken.",
+        "en": "The pale moonlight shone through the clouds."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Often used in literary contexts to create atmosphere or describe illness.",
+    "added": "2026-06-11 16:15:13",
+    "usage": "both"
+  },
+  {
+    "id": "ueberlegen",
+    "word": "überlegen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to think about, to consider, to contemplate",
+        "note": null
+      },
+      {
+        "meaning": "to reflect on, to ponder",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich muss mir das noch einmal überlegen.",
+        "en": "I have to think about that again."
+      },
+      {
+        "de": "Sie überlegte lange, bevor sie eine Entscheidung traf.",
+        "en": "She thought for a long time before making a decision."
+      }
+    ],
+    "topics": [
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Do not confuse with the adjective 'überlegen' meaning superior or with the separable verb 'sich etwas überlegen' meaning to change one's mind.",
+    "added": "2026-06-11 16:18:20",
+    "auxiliary": "haben",
+    "past_tense": "überlegte",
+    "past_participle": "überlegt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "legen",
+    "prefix": "über-",
+    "related": [
+      "legen"
+    ]
+  },
+  {
+    "id": "einzigartig",
+    "word": "einzigartig",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "unique, one of a kind",
+        "note": null
+      },
+      {
+        "meaning": "exceptional, extraordinary",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Jeder Mensch ist einzigartig.",
+        "en": "Every person is unique."
+      },
+      {
+        "de": "Das war ein einzigartig schönes Erlebnis.",
+        "en": "That was an extraordinarily beautiful experience."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 16:20:10",
+    "usage": "both",
+    "related": [
+      "einzig"
+    ]
+  },
+  {
+    "id": "erleben",
+    "word": "erleben",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to experience",
+        "note": null
+      },
+      {
+        "meaning": "to witness",
+        "note": null
+      },
+      {
+        "meaning": "to live through",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe einen wunderbaren Tag erlebt.",
+        "en": "I experienced a wonderful day."
+      },
+      {
+        "de": "Sie erlebte die Geschichte der Stadt hautnah.",
+        "en": "She witnessed the history of the city firsthand."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 16:22:08",
+    "auxiliary": "haben",
+    "past_tense": "erlebte",
+    "past_participle": "erlebt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "leben",
+    "prefix": "er-",
+    "related": [
+      "überleben"
+    ]
+  },
+  {
+    "id": "die-gestalt",
+    "word": "die Gestalt",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "form, shape, figure",
+        "note": null
+      },
+      {
+        "meaning": "character, person, figure",
+        "note": "especially in literature or stories"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Gestalt des Berges war im Nebel kaum zu erkennen.",
+        "en": "The shape of the mountain was barely visible in the fog."
+      },
+      {
+        "de": "In dem Roman gibt es viele interessante Gestalten.",
+        "en": "There are many interesting characters in the novel."
+      }
+    ],
+    "topics": [
+      "culture & arts",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Often used in psychology (Gestalt psychology) and literature to describe forms or characters.",
+    "added": "2026-06-11 16:24:01",
+    "gender": "die",
+    "plural": "die Gestalten"
+  },
+  {
+    "id": "das-gedicht",
+    "word": "das Gedicht",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "poem",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie hat ein schönes Gedicht über die Liebe geschrieben.",
+        "en": "She wrote a beautiful poem about love."
+      },
+      {
+        "de": "In der Schule müssen wir ein Gedicht von Goethe auswendig lernen.",
+        "en": "At school we have to memorize a poem by Goethe."
+      }
+    ],
+    "topics": [
+      "culture & arts",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 16:25:18",
+    "gender": "das",
+    "plural": "die Gedichte"
+  },
+  {
+    "id": "geeignet",
+    "word": "geeignet",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "suitable, appropriate, fit for a purpose",
+        "note": "often used with 'für' + accusative"
+      },
+      {
+        "meaning": "qualified, competent for a task or role",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Diese Software ist für Anfänger gut geeignet.",
+        "en": "This software is well suited for beginners."
+      },
+      {
+        "de": "Er ist der geeignete Kandidat für diese Position.",
+        "en": "He is the suitable candidate for this position."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 16:27:40",
+    "usage": "both",
+    "derived_from": "sich eignen"
+  },
+  {
+    "id": "die-achtsamkeit",
+    "word": "die Achtsamkeit",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "mindfulness, careful attention or awareness",
+        "note": null
+      },
+      {
+        "meaning": "respectfulness, consideration for others",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Meditation hilft dabei, Achtsamkeit im Alltag zu entwickeln.",
+        "en": "Meditation helps to develop mindfulness in everyday life."
+      },
+      {
+        "de": "Er behandelte die alten Bücher mit großer Achtsamkeit.",
+        "en": "He handled the old books with great care and attention."
+      }
+    ],
+    "topics": [
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "This word has gained popularity through mindfulness practices and meditation but also means general carefulness or respect.",
+    "added": "2026-06-11 16:29:43",
+    "gender": "die",
+    "plural": null
+  },
+  {
+    "id": "die-schlucht",
+    "word": "die Schlucht",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "gorge, ravine, canyon",
+        "note": "a deep narrow valley with steep sides"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Wanderer überquerten die tiefe Schlucht auf einer schmalen Brücke.",
+        "en": "The hikers crossed the deep gorge on a narrow bridge."
+      },
+      {
+        "de": "Der Fluss hat über Millionen von Jahren diese beeindruckende Schlucht geformt.",
+        "en": "The river has formed this impressive canyon over millions of years."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 16:41:20",
+    "gender": "die",
+    "plural": "die Schluchten"
+  },
+  {
+    "id": "die-felswand",
+    "word": "die Felswand",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "rock face, cliff face",
+        "note": null
+      },
+      {
+        "meaning": "steep rocky wall or precipice",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Kletterer erklommen die steile Felswand.",
+        "en": "The climbers scaled the steep rock face."
+      },
+      {
+        "de": "An der Felswand nisten viele Vögel.",
+        "en": "Many birds nest on the cliff face."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 16:42:21",
+    "gender": "die",
+    "plural": "die Felswände",
+    "related": [
+      "der Fels"
+    ]
+  },
+  {
+    "id": "der-fels",
+    "word": "der Fels",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "rock, cliff, large mass of stone",
+        "note": null
+      },
+      {
+        "meaning": "rocky outcrop or formation",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Adler nistete auf dem hohen Fels.",
+        "en": "The eagle nested on the high rock."
+      },
+      {
+        "de": "Sie kletterten über den steilen Fels zum Gipfel.",
+        "en": "They climbed over the steep cliff to the summit."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 16:43:20",
+    "gender": "der",
+    "plural": "die Felsen",
+    "related": [
+      "Felswand"
+    ]
   }
 ]
