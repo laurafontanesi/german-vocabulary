@@ -33280,7 +33280,8 @@
     "family_root": "zaubern",
     "prefix": "ver-",
     "related": [
-      "Zauber"
+      "Zauber",
+      "der Zauber"
     ]
   },
   {
@@ -33956,7 +33957,8 @@
     "gender": "der",
     "plural": "die Felsen",
     "related": [
-      "Felswand"
+      "Felswand",
+      "die Felswand"
     ]
   }
 ]
