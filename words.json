@@ -13386,7 +13386,8 @@
     "related": [
       "bedingt sein durch",
       "der Faktor",
-      "der Grund"
+      "der Grund",
+      "unbedingt"
     ],
     "added": "2026-04-07 10:31:00"
   },
@@ -14293,7 +14294,8 @@
     "register": "formal",
     "notes": "bedingt sein durch = to be conditioned/caused by. bedingt = conditional, limited (adjective): 'nur bedingt geeignet' = only partially suitable.",
     "related": [
-      "die Bedingung"
+      "die Bedingung",
+      "unbedingt"
     ],
     "added": "2026-04-07 10:55:00"
   },
@@ -34487,5 +34489,116 @@
     "added": "2026-06-11 17:31:11",
     "usage": "both",
     "derived_from": "erschöpfen"
+  },
+  {
+    "id": "zoegern",
+    "word": "zögern",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to hesitate",
+        "note": null
+      },
+      {
+        "meaning": "to delay or postpone",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie zögerte einen Moment, bevor sie antwortete.",
+        "en": "She hesitated for a moment before answering."
+      },
+      {
+        "de": "Du solltest nicht zögern, um Hilfe zu bitten.",
+        "en": "You shouldn't hesitate to ask for help."
+      }
+    ],
+    "topics": [
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 17:35:54",
+    "auxiliary": "haben",
+    "past_tense": "zögerte",
+    "past_participle": "gezögert",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "zögern"
+  },
+  {
+    "id": "das-anliegen",
+    "word": "das Anliegen",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "concern, matter, request",
+        "note": null
+      },
+      {
+        "meaning": "cause, issue of importance",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe ein wichtiges Anliegen.",
+        "en": "I have an important matter to discuss."
+      },
+      {
+        "de": "Der Umweltschutz ist mir ein großes Anliegen.",
+        "en": "Environmental protection is a great concern of mine."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 17:37:20",
+    "gender": "das",
+    "plural": "die Anliegen"
+  },
+  {
+    "id": "unbedingt",
+    "word": "unbedingt",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "absolutely, definitely, without fail",
+        "note": "as adverb expressing strong necessity or certainty"
+      },
+      {
+        "meaning": "unconditional, absolute",
+        "note": "as adjective meaning without conditions or limitations"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Du musst unbedingt pünktlich sein.",
+        "en": "You absolutely must be on time."
+      },
+      {
+        "de": "Das ist eine unbedingte Voraussetzung für den Job.",
+        "en": "That is an absolute prerequisite for the job."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Most commonly used as an adverb to emphasize necessity or urgency in everyday speech.",
+    "added": "2026-06-11 17:38:44",
+    "usage": "both",
+    "related": [
+      "Bedingung",
+      "bedingt sein durch",
+      "die Bedingung"
+    ]
   }
 ]
