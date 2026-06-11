@@ -4941,6 +4941,7 @@
     "added": "2026-04-04",
     "family_root": "beschweren",
     "related": [
+      "beschwerlich",
       "hinnehmen"
     ]
   },
@@ -34380,5 +34381,111 @@
       "Achtsamkeit",
       "die Achtsamkeit"
     ]
+  },
+  {
+    "id": "der-schatten",
+    "word": "der Schatten",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "shadow",
+        "note": "dark area cast by an object blocking light"
+      },
+      {
+        "meaning": "shade",
+        "note": "cool area sheltered from direct sunlight"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Baum wirft einen langen Schatten auf den Boden.",
+        "en": "The tree casts a long shadow on the ground."
+      },
+      {
+        "de": "Wir setzten uns in den Schatten, weil es zu heiß war.",
+        "en": "We sat in the shade because it was too hot."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 17:23:15",
+    "gender": "der",
+    "plural": "die Schatten"
+  },
+  {
+    "id": "beschwerlich",
+    "word": "beschwerlich",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "arduous, strenuous, difficult",
+        "note": "used to describe tasks, journeys, or situations that require great effort"
+      },
+      {
+        "meaning": "troublesome, burdensome",
+        "note": "describing something that causes difficulty or inconvenience"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Aufstieg zum Gipfel war sehr beschwerlich.",
+        "en": "The climb to the summit was very arduous."
+      },
+      {
+        "de": "Die beschwerliche Reise dauerte drei Tage.",
+        "en": "The strenuous journey lasted three days."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "Often used in more formal or literary contexts compared to simpler alternatives like 'schwer' or 'anstrengend'.",
+    "added": "2026-06-11 17:29:43",
+    "usage": "both",
+    "related": [
+      "sich beschweren"
+    ]
+  },
+  {
+    "id": "erschoepft",
+    "word": "erschöpft",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "exhausted, worn out",
+        "note": null
+      },
+      {
+        "meaning": "depleted, used up",
+        "note": "when referring to resources"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nach dem Marathon war ich völlig erschöpft.",
+        "en": "After the marathon I was completely exhausted."
+      },
+      {
+        "de": "Die natürlichen Ressourcen sind fast erschöpft.",
+        "en": "The natural resources are almost depleted."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "This is the past participle of 'erschöpfen' used as an adjective meaning exhausted or depleted.",
+    "added": "2026-06-11 17:31:11",
+    "usage": "both",
+    "derived_from": "erschöpfen"
   }
 ]
