@@ -34797,5 +34797,83 @@
       "geschehen",
       "sich ereignen"
     ]
+  },
+  {
+    "id": "wuerdigen",
+    "word": "würdigen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to appreciate, to acknowledge the value or importance of something",
+        "note": null
+      },
+      {
+        "meaning": "to honor, to pay tribute to someone or something",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir sollten seine jahrelange Arbeit würdigen.",
+        "en": "We should appreciate his years of work."
+      },
+      {
+        "de": "Der Präsident würdigte die Verdienste des Wissenschaftlers.",
+        "en": "The president honored the scientist's achievements."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": null,
+    "added": "2026-06-11 17:53:00",
+    "auxiliary": "haben",
+    "past_tense": "würdigte",
+    "past_participle": "gewürdigt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "würdigen",
+    "related": [
+      "würdig"
+    ]
+  },
+  {
+    "id": "wuerdig",
+    "word": "würdig",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "worthy, deserving",
+        "note": "often used with genitive"
+      },
+      {
+        "meaning": "dignified, respectable",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Er ist eines Preises würdig.",
+        "en": "He is worthy of a prize."
+      },
+      {
+        "de": "Sie trug sich sehr würdig.",
+        "en": "She carried herself very dignifiedly."
+      }
+    ],
+    "topics": [
+      "society & politics"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "Often requires genitive case when meaning 'worthy of something'.",
+    "added": "2026-06-11 17:53:38",
+    "usage": "both",
+    "related": [
+      "würdigen"
+    ]
   }
 ]
