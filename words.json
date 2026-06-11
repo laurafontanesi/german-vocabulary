@@ -16451,7 +16451,9 @@
     "tags": [],
     "register": "neutral",
     "notes": "sich Mühe geben = to take pains/make an effort. Mach dir keine Mühe! = Don't bother! mit Mühe = with difficulty. mühsam = laborious.",
-    "related": [],
+    "related": [
+      "das Bemühen"
+    ],
     "added": "2026-04-07 12:46:00"
   },
   {
@@ -27877,6 +27879,8 @@
     "register": "neutral",
     "notes": null,
     "related": [
+      "achten",
+      "betrachten",
       "der Beobachter"
     ],
     "added": "2026-04-10 11:15:00",
@@ -33082,7 +33086,11 @@
     "past_participle": "betrachtet",
     "is_separable": false,
     "reflexive": false,
-    "family_root": "betrachten"
+    "family_root": "betrachten",
+    "related": [
+      "achten",
+      "beobachten"
+    ]
   },
   {
     "id": "staunen",
@@ -34385,6 +34393,8 @@
     "family_root": "achten",
     "related": [
       "Achtsamkeit",
+      "beobachten",
+      "betrachten",
       "die Achtsamkeit"
     ]
   },
@@ -34874,6 +34884,44 @@
     "usage": "both",
     "related": [
       "würdigen"
+    ]
+  },
+  {
+    "id": "das-bemuehen",
+    "word": "das Bemühen",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "effort, endeavor",
+        "note": null
+      },
+      {
+        "meaning": "attempt, striving",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Trotz aller Bemühungen konnte er das Problem nicht lösen.",
+        "en": "Despite all efforts, he could not solve the problem."
+      },
+      {
+        "de": "Ihr Bemühen um eine friedliche Lösung war vergeblich.",
+        "en": "Her endeavor for a peaceful solution was in vain."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 17:55:44",
+    "gender": "das",
+    "plural": "die Bemühungen",
+    "related": [
+      "Mühe",
+      "die Mühe"
     ]
   }
 ]
