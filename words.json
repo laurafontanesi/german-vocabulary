@@ -33838,7 +33838,10 @@
     "notes": "This word has gained popularity through mindfulness practices and meditation but also means general carefulness or respect.",
     "added": "2026-06-11 16:29:43",
     "gender": "die",
-    "plural": null
+    "plural": null,
+    "related": [
+      "achten"
+    ]
   },
   {
     "id": "die-schlucht",
@@ -34333,5 +34336,48 @@
     "reflexive": false,
     "family_root": "queren",
     "prefix": "über-"
+  },
+  {
+    "id": "achten",
+    "word": "achten",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to pay attention to, to watch out for",
+        "note": "used with auf + AKK"
+      },
+      {
+        "meaning": "to respect, to esteem",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Du musst auf den Verkehr achten.",
+        "en": "You have to pay attention to the traffic."
+      },
+      {
+        "de": "Ich achte ihn sehr für seine Ehrlichkeit.",
+        "en": "I respect him greatly for his honesty."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "The preposition auf + AKK is required when meaning 'to pay attention to'.",
+    "added": "2026-06-11 17:20:28",
+    "auxiliary": "haben",
+    "past_tense": "achtete",
+    "past_participle": "geachtet",
+    "is_separable": false,
+    "reflexive": false,
+    "preposition": "auf + AKK",
+    "family_root": "achten",
+    "related": [
+      "Achtsamkeit"
+    ]
   }
 ]
