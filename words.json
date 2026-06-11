@@ -29056,7 +29056,11 @@
     "past_participle": "ereignet",
     "is_separable": false,
     "reflexive": true,
-    "family_root": "ereignen"
+    "family_root": "ereignen",
+    "related": [
+      "geschehen",
+      "passieren"
+    ]
   },
   {
     "id": "riesig",
@@ -34599,6 +34603,199 @@
       "Bedingung",
       "bedingt sein durch",
       "die Bedingung"
+    ]
+  },
+  {
+    "id": "meinetwegen",
+    "word": "meinetwegen",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "as far as I'm concerned",
+        "note": "expressing personal indifference or consent"
+      },
+      {
+        "meaning": "for my sake",
+        "note": "indicating something done on one's behalf"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Meinetwegen können wir ins Kino gehen.",
+        "en": "As far as I'm concerned, we can go to the cinema."
+      },
+      {
+        "de": "Du musst das nicht meinetwegen machen.",
+        "en": "You don't have to do that for my sake."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Often expresses indifference or reluctant agreement rather than enthusiasm.",
+    "added": "2026-06-11 17:41:36",
+    "usage": "adverb only"
+  },
+  {
+    "id": "auftauchen",
+    "word": "auftauchen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to emerge, to surface",
+        "note": "literally rising from underwater"
+      },
+      {
+        "meaning": "to appear suddenly, to turn up",
+        "note": "figuratively appearing unexpectedly"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das U-Boot tauchte langsam auf.",
+        "en": "The submarine slowly surfaced."
+      },
+      {
+        "de": "Plötzlich tauchte mein alter Freund auf der Party auf.",
+        "en": "Suddenly my old friend turned up at the party."
+      }
+    ],
+    "topics": [
+      "nature & weather",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 17:44:26",
+    "auxiliary": "sein",
+    "past_tense": "tauchte auf",
+    "past_participle": "aufgetaucht",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "tauchen",
+    "prefix": "auf-"
+  },
+  {
+    "id": "die-wucht",
+    "word": "die Wucht",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "force, power, impact",
+        "note": "refers to physical or emotional intensity"
+      },
+      {
+        "meaning": "violence, vehemence",
+        "note": "emphasizes overwhelming strength"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Ball traf ihn mit voller Wucht.",
+        "en": "The ball hit him with full force."
+      },
+      {
+        "de": "Die Wucht des Sturms war überwältigend.",
+        "en": "The force of the storm was overwhelming."
+      }
+    ],
+    "topics": [
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 17:47:54",
+    "gender": "die",
+    "plural": "die Wuchten"
+  },
+  {
+    "id": "geschehen",
+    "word": "geschehen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to happen, to occur, to take place",
+        "note": null
+      },
+      {
+        "meaning": "to be done (passive construction)",
+        "note": "often in phrases like 'es ist geschehen'"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Was ist gestern geschehen?",
+        "en": "What happened yesterday?"
+      },
+      {
+        "de": "Es geschah ein Unfall auf der Autobahn.",
+        "en": "An accident happened on the highway."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "time"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "This is an irregular strong verb that is mostly used in third person forms.",
+    "added": "2026-06-11 17:49:09",
+    "auxiliary": "sein",
+    "past_tense": "geschah",
+    "past_participle": "geschehen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "geschehen",
+    "related": [
+      "passieren",
+      "sich ereignen"
+    ]
+  },
+  {
+    "id": "passieren",
+    "word": "passieren",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to happen, to occur",
+        "note": null
+      },
+      {
+        "meaning": "to pass through, to cross",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Was ist passiert?",
+        "en": "What happened?"
+      },
+      {
+        "de": "Wir passieren die Grenze um Mitternacht.",
+        "en": "We cross the border at midnight."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "When meaning 'to happen', it is often used impersonally with 'es' as subject.",
+    "added": "2026-06-11 17:50:23",
+    "auxiliary": "sein",
+    "past_tense": "passierte",
+    "past_participle": "passiert",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "passieren",
+    "related": [
+      "geschehen",
+      "sich ereignen"
     ]
   }
 ]
