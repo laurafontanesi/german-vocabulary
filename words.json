@@ -12,6 +12,7 @@
     "prefix": null,
     "related": [
       "abnehmen",
+      "annehmen",
       "ausnehmen",
       "benehmen",
       "einnehmen",
@@ -74,6 +75,7 @@
     "prefix": "mit-",
     "related": [
       "abnehmen",
+      "annehmen",
       "ausnehmen",
       "einnehmen",
       "festnehmen",
@@ -133,6 +135,7 @@
     "prefix": "teil-",
     "related": [
       "abnehmen",
+      "annehmen",
       "ausnehmen",
       "einnehmen",
       "festnehmen",
@@ -11755,6 +11758,7 @@
     "register": "neutral",
     "notes": "Opposite of zunehmen. Also: den Hörer abnehmen = to pick up the phone.",
     "related": [
+      "annehmen",
       "ausnehmen",
       "einnehmen",
       "festnehmen",
@@ -11819,6 +11823,7 @@
     "notes": "Opposite of abnehmen.",
     "related": [
       "abnehmen",
+      "annehmen",
       "ausnehmen",
       "einnehmen",
       "festnehmen",
@@ -11881,6 +11886,7 @@
     "notes": "sich übernehmen = to take on too much / to overexert oneself.",
     "related": [
       "abnehmen",
+      "annehmen",
       "ausnehmen",
       "einnehmen",
       "festnehmen",
@@ -11948,6 +11954,7 @@
     "notes": "Medikamente einnehmen = to take medication. Platz einnehmen = to occupy space.",
     "related": [
       "abnehmen",
+      "annehmen",
       "ausnehmen",
       "festnehmen",
       "herausnehmen",
@@ -12010,6 +12017,7 @@
     "notes": null,
     "related": [
       "abnehmen",
+      "annehmen",
       "ausnehmen",
       "einnehmen",
       "festnehmen",
@@ -12111,6 +12119,7 @@
     "notes": "hinnehmen implies reluctant acceptance — you put up with something you don't like.",
     "related": [
       "abnehmen",
+      "annehmen",
       "ausnehmen",
       "einnehmen",
       "ertragen",
@@ -12172,6 +12181,7 @@
     "notes": "die Festnahme = arrest. festnehmen is the standard police/legal term.",
     "related": [
       "abnehmen",
+      "annehmen",
       "ausnehmen",
       "einnehmen",
       "herausnehmen",
@@ -12230,6 +12240,7 @@
     "notes": null,
     "related": [
       "abnehmen",
+      "annehmen",
       "ausnehmen",
       "einnehmen",
       "festnehmen",
@@ -12289,6 +12300,7 @@
     "notes": null,
     "related": [
       "abnehmen",
+      "annehmen",
       "ausnehmen",
       "einnehmen",
       "festnehmen",
@@ -12348,6 +12360,7 @@
     "notes": "Almost always used reflexively: sich etw. vornehmen = to plan/intend to do something.",
     "related": [
       "abnehmen",
+      "annehmen",
       "ausnehmen",
       "einnehmen",
       "festnehmen",
@@ -12406,6 +12419,7 @@
     "notes": "das Unternehmen = company/enterprise. einen Ausflug/eine Reise unternehmen = to go on a trip.",
     "related": [
       "abnehmen",
+      "annehmen",
       "ausnehmen",
       "einnehmen",
       "festnehmen",
@@ -12468,6 +12482,7 @@
     "notes": "ausgenommen = except (for), excluding. Very common in formal writing.",
     "related": [
       "abnehmen",
+      "annehmen",
       "die Ausnahme",
       "einnehmen",
       "festnehmen",
@@ -12563,6 +12578,7 @@
     "notes": null,
     "related": [
       "abnehmen",
+      "annehmen",
       "ausnehmen",
       "einnehmen",
       "festnehmen",
@@ -12622,6 +12638,7 @@
     "notes": "das Benehmen = behaviour, manners. 'Kein Benehmen haben' = to have no manners.",
     "related": [
       "abnehmen",
+      "annehmen",
       "ausnehmen",
       "das Verhalten",
       "einnehmen",
@@ -12686,6 +12703,7 @@
     "notes": "Both meanings are formal. die Vernehmung = interrogation/hearing.",
     "related": [
       "abnehmen",
+      "annehmen",
       "ausnehmen",
       "einnehmen",
       "festnehmen",
@@ -12744,6 +12762,7 @@
     "notes": "Often used negatively — someone/something takes over your time or autonomy completely.",
     "related": [
       "abnehmen",
+      "annehmen",
       "ausnehmen",
       "einnehmen",
       "festnehmen",
@@ -30209,39 +30228,6 @@
     "family_root": "schmücken"
   },
   {
-    "id": "umgekehrt",
-    "word": "umgekehrt",
-    "type": "adj/adv",
-    "definitions": [
-      {
-        "meaning": "reverse, opposite, inverted",
-        "note": "describing something turned around or in the opposite direction"
-      },
-      {
-        "meaning": "conversely, vice versa",
-        "note": "used adverbially to express the opposite case or situation"
-      }
-    ],
-    "examples": [
-      {
-        "de": "Die Reihenfolge ist umgekehrt.",
-        "en": "The order is reversed."
-      },
-      {
-        "de": "Er hilft mir oft, und umgekehrt helfe ich ihm auch.",
-        "en": "He often helps me, and conversely I help him too."
-      }
-    ],
-    "topics": [
-      "grammar & structure"
-    ],
-    "tags": [],
-    "register": "neutral",
-    "notes": "Often used to introduce a contrasting or reciprocal statement.",
-    "added": "2026-06-08 20:04:07",
-    "usage": "both"
-  },
-  {
     "id": "der-aufwand",
     "word": "der Aufwand",
     "type": "noun",
@@ -33960,5 +33946,392 @@
       "Felswand",
       "die Felswand"
     ]
+  },
+  {
+    "id": "umkehren",
+    "word": "umkehren",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to turn around, to reverse direction",
+        "note": null
+      },
+      {
+        "meaning": "to turn something over, to invert",
+        "note": "when used transitively"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir mussten umkehren, weil die Straße gesperrt war.",
+        "en": "We had to turn around because the road was closed."
+      },
+      {
+        "de": "Er kehrte den Sack um und schüttete alles aus.",
+        "en": "He turned the bag over and poured everything out."
+      }
+    ],
+    "topics": [
+      "travel & places"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Can be used both intransitively with sein and transitively with haben as auxiliary.",
+    "added": "2026-06-11 16:45:44",
+    "auxiliary": "sein",
+    "past_tense": "kehrte um",
+    "past_participle": "umgekehrt",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "kehren",
+    "prefix": "um-",
+    "related": [
+      "umgekehrt"
+    ]
+  },
+  {
+    "id": "umgekehrt",
+    "word": "umgekehrt",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "reversed, opposite, inverted",
+        "note": "describing order, direction, or arrangement"
+      },
+      {
+        "meaning": "conversely, vice versa, the other way around",
+        "note": "used as adverb to express opposite relationship"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Buchstaben stehen in umgekehrter Reihenfolge.",
+        "en": "The letters are in reverse order."
+      },
+      {
+        "de": "Er hilft mir oft, und umgekehrt helfe ich ihm auch.",
+        "en": "He often helps me, and conversely I help him too."
+      }
+    ],
+    "topics": [
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Often used to express reciprocal relationships or to indicate the opposite of what was just mentioned.",
+    "added": "2026-06-11 16:47:14",
+    "usage": "both",
+    "derived_from": "umkehren",
+    "related": [
+      "umkehren"
+    ]
+  },
+  {
+    "id": "vorwaerts",
+    "word": "vorwärts",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "forward, ahead",
+        "note": "indicates direction of movement"
+      },
+      {
+        "meaning": "onward, ahead",
+        "note": "indicates progression or advancement"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir müssen vorwärts gehen, um das Ziel zu erreichen.",
+        "en": "We must go forward to reach the goal."
+      },
+      {
+        "de": "Die Entwicklung geht langsam aber stetig vorwärts.",
+        "en": "The development is progressing slowly but steadily."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 16:50:16",
+    "usage": "adverb only"
+  },
+  {
+    "id": "mutig",
+    "word": "mutig",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "brave, courageous",
+        "note": null
+      },
+      {
+        "meaning": "bold, daring",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie war mutig genug, ihre Meinung zu sagen.",
+        "en": "She was brave enough to speak her mind."
+      },
+      {
+        "de": "Er handelte mutig in der gefährlichen Situation.",
+        "en": "He acted courageously in the dangerous situation."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 16:59:03",
+    "usage": "both"
+  },
+  {
+    "id": "erwidern",
+    "word": "erwidern",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to reply, to respond",
+        "note": null
+      },
+      {
+        "meaning": "to return, to reciprocate",
+        "note": "used for actions, feelings, or gestures"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie erwiderte höflich auf seine Frage.",
+        "en": "She politely replied to his question."
+      },
+      {
+        "de": "Er erwiderte ihre Liebe nicht.",
+        "en": "He did not return her love."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 17:02:01",
+    "auxiliary": "haben",
+    "past_tense": "erwiderte",
+    "past_participle": "erwidert",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "erwidern"
+  },
+  {
+    "id": "nieder",
+    "word": "nieder",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "low, down",
+        "note": "often used in compound words or fixed expressions"
+      },
+      {
+        "meaning": "downward",
+        "note": "adverbial use indicating direction"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Äste hängen nieder.",
+        "en": "The branches hang down."
+      },
+      {
+        "de": "Er blickte nieder auf die Stadt.",
+        "en": "He looked down at the city."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "Mainly used in literary or formal contexts, more commonly found in compound words like niederreißen or Niederlage.",
+    "added": "2026-06-11 17:03:33",
+    "usage": "both"
+  },
+  {
+    "id": "annehmen",
+    "word": "annehmen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to accept",
+        "note": null
+      },
+      {
+        "meaning": "to assume",
+        "note": null
+      },
+      {
+        "meaning": "to adopt",
+        "note": "used for children, customs, or habits"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich nehme das Angebot an.",
+        "en": "I accept the offer."
+      },
+      {
+        "de": "Wir nehmen an, dass er kommt.",
+        "en": "We assume that he is coming."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 17:06:11",
+    "auxiliary": "haben",
+    "past_tense": "nahm an",
+    "past_participle": "angenommen",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "nehmen",
+    "prefix": "an-",
+    "related": [
+      "abnehmen",
+      "ausnehmen",
+      "einnehmen",
+      "festnehmen",
+      "herausnehmen",
+      "hinnehmen",
+      "mitnehmen",
+      "nehmen",
+      "sich benehmen",
+      "sich zusammennehmen",
+      "teilnehmen",
+      "unternehmen",
+      "vereinnahmen",
+      "vernehmen",
+      "vornehmen",
+      "wegnehmen",
+      "zunehmen",
+      "zurücknehmen",
+      "übernehmen"
+    ]
+  },
+  {
+    "id": "die-herausforderung",
+    "word": "die Herausforderung",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "challenge",
+        "note": "a demanding task or situation that tests one's abilities"
+      },
+      {
+        "meaning": "provocation",
+        "note": "an act of challenging or calling someone out"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Diese neue Position ist eine große Herausforderung für mich.",
+        "en": "This new position is a big challenge for me."
+      },
+      {
+        "de": "Der Klimawandel stellt eine globale Herausforderung dar.",
+        "en": "Climate change represents a global challenge."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 17:07:40",
+    "gender": "die",
+    "plural": "die Herausforderungen"
+  },
+  {
+    "id": "die-augenbraue",
+    "word": "die Augenbraue",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "eyebrow",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie hob eine Augenbraue und schaute ihn fragend an.",
+        "en": "She raised an eyebrow and looked at him questioningly."
+      },
+      {
+        "de": "Er hat sehr buschige Augenbrauen.",
+        "en": "He has very bushy eyebrows."
+      }
+    ],
+    "topics": [
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 17:16:41",
+    "gender": "die",
+    "plural": "die Augenbrauen"
+  },
+  {
+    "id": "ueberqueren",
+    "word": "überqueren",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to cross",
+        "note": "used for crossing streets, bridges, borders, etc."
+      },
+      {
+        "meaning": "to traverse",
+        "note": "used for crossing larger areas or distances"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wir müssen die Straße überqueren, um zum Geschäft zu gelangen.",
+        "en": "We have to cross the street to get to the store."
+      },
+      {
+        "de": "Die Wanderer überquerten den Fluss über eine alte Brücke.",
+        "en": "The hikers crossed the river over an old bridge."
+      }
+    ],
+    "topics": [
+      "travel & places",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-11 17:18:02",
+    "auxiliary": "haben",
+    "past_tense": "überquerte",
+    "past_participle": "überquert",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "queren",
+    "prefix": "über-"
   }
 ]
