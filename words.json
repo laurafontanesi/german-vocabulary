@@ -35268,8 +35268,10 @@
     "gender": "die",
     "plural": "die Abgaben",
     "related": [
+      "Abgabefrist",
       "Abgabetermin",
-      "Abgabefrist"
+      "der Abgabetermin",
+      "die Abgabefrist"
     ]
   },
   {
