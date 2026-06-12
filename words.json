@@ -20888,6 +20888,7 @@
     "register": "neutral",
     "notes": "die Abgabefrist = same as Abgabetermin (deadline). abgeben = to hand in/submit.",
     "related": [
+      "die Abgabe",
       "die Abgabefrist"
     ],
     "added": "2026-04-07 16:10:00"
@@ -21200,6 +21201,7 @@
     "related": [
       "befristet",
       "der Abgabetermin",
+      "die Abgabe",
       "die Kündigungsfrist"
     ],
     "added": "2026-04-07 16:18:00"
@@ -35226,5 +35228,83 @@
     "related": [
       "gelingen"
     ]
+  },
+  {
+    "id": "die-abgabe",
+    "word": "die Abgabe",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "submission, handing in",
+        "note": "used for assignments, documents, applications"
+      },
+      {
+        "meaning": "tax, fee, levy",
+        "note": "used for mandatory payments to authorities"
+      },
+      {
+        "meaning": "delivery, handover",
+        "note": "used for transferring goods or items"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Abgabe der Hausarbeit ist bis Freitag.",
+        "en": "The submission of the homework is due by Friday."
+      },
+      {
+        "de": "Wegen der hohen Abgaben bleibt wenig Geld übrig.",
+        "en": "Because of the high taxes, little money remains."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "money & shopping"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-12 07:58:56",
+    "gender": "die",
+    "plural": "die Abgaben",
+    "related": [
+      "Abgabetermin",
+      "Abgabefrist"
+    ]
+  },
+  {
+    "id": "die-hingabe",
+    "word": "die Hingabe",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "devotion, dedication",
+        "note": null
+      },
+      {
+        "meaning": "surrender, abandon",
+        "note": "often in romantic or spiritual contexts"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie arbeitet mit großer Hingabe an ihrem neuen Projekt.",
+        "en": "She works with great dedication on her new project."
+      },
+      {
+        "de": "Seine Hingabe zur Musik war bewundernswert.",
+        "en": "His devotion to music was admirable."
+      }
+    ],
+    "topics": [
+      "emotions",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "This noun is typically uncountable and expresses deep commitment or surrender to something.",
+    "added": "2026-06-12 07:59:48",
+    "gender": "die",
+    "plural": null
   }
 ]
