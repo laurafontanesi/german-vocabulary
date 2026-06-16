@@ -870,14 +870,27 @@
   .summary-item:last-child { border-bottom: none; }
   .summary-item .word { font-family: 'Playfair Display', serif; color: var(--ink); }
   .summary-item .answer { font-family: var(--font-mono); font-size: 12px; color: var(--ink-muted); }
-  .summary-close-btn {
-    width: 100%; margin-top: 1.25rem; padding: 9px;
-    background: var(--ink); color: var(--paper);
-    border: none; border-radius: 6px;
-    font-family: 'DM Sans', sans-serif; font-size: 14px;
-    cursor: pointer; transition: opacity 0.12s;
+  .summary-btn-row {
+    display: flex; gap: 8px; margin-top: 1.25rem;
   }
-  .summary-close-btn:hover { opacity: 0.85; }
+  .summary-close-btn {
+    flex: 1; padding: 9px;
+    background: var(--paper); color: var(--ink);
+    border: 1px solid var(--border); border-radius: 6px;
+    font-family: 'DM Sans', sans-serif; font-size: 14px;
+    cursor: pointer; transition: all 0.12s;
+  }
+  .summary-close-btn:hover { border-color: var(--ink-soft); }
+  .summary-retry-btn {
+    flex: 1.4; padding: 9px;
+    background: var(--accent); color: white;
+    border: none; border-radius: 6px;
+    font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500;
+    cursor: pointer; transition: opacity 0.12s;
+    display: none;
+  }
+  .summary-retry-btn:hover { opacity: 0.88; }
+  .summary-retry-btn.visible { display: block; }
 
   /* ── fill-in sentence ── */
   .practice-sentence {
@@ -1159,7 +1172,10 @@
     <div class="summary-score" id="summary-score"></div>
     <div id="summary-correct-section" class="summary-section"></div>
     <div id="summary-wrong-section" class="summary-section"></div>
-    <button class="summary-close-btn" onclick="closeSummary()">Back to practice</button>
+    <div class="summary-btn-row">
+      <button class="summary-close-btn" onclick="closeSummary()">Back to practice</button>
+      <button class="summary-retry-btn" id="summary-retry-btn" onclick="retryMistakes()">Retry mistakes →</button>
+    </div>
   </div>
 </div>
 
@@ -2128,10 +2144,36 @@ function openSummary() {
     wrongSection.innerHTML = '';
   }
 
+  const retryBtn = document.getElementById('summary-retry-btn');
+  retryBtn.classList.toggle('visible', wrong.length > 0);
+
   document.getElementById('summary-overlay').classList.add('open');
 }
 function closeSummary() {
   document.getElementById('summary-overlay').classList.remove('open');
+}
+
+function retryMistakes() {
+  const wrong = sessionLog.filter(e => !e.correct);
+  if (!wrong.length) return;
+
+  // collect the full word objects for each mistake (deduplicated by word id)
+  const seen = new Set();
+  const mistakeWords = [];
+  wrong.forEach(e => {
+    const w = allWords.find(w => w.word === e.word);
+    if (w && !seen.has(w.id)) { seen.add(w.id); mistakeWords.push(w); }
+  });
+
+  // shuffle and launch a new round with just these words
+  practiceWords = mistakeWords.sort(() => Math.random() - 0.5);
+  practiceIndex = 0;
+  scoreCorrect = 0; scoreTried = 0; sessionLog = [];
+  updateScore();
+
+  document.getElementById('summary-overlay').classList.remove('open');
+  document.getElementById('practice-overlay').classList.add('open');
+  loadPracticeWord();
 }
 
 function updateScore() {

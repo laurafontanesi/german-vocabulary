@@ -2032,6 +2032,7 @@
     "related": [
       "reden",
       "sagen",
+      "versprechen",
       "widersprechen"
     ],
     "definitions": [
@@ -11155,6 +11156,7 @@
     "notes": "Always takes dative: ich widerspreche DIR (not dich). der Widerspruch = contradiction. immer widersprechen müssen = to always have to disagree (colloquial).",
     "related": [
       "sprechen",
+      "versprechen",
       "zustimmen"
     ],
     "added": "2026-04-06 14:18:00"
@@ -35271,7 +35273,8 @@
       "Abgabefrist",
       "Abgabetermin",
       "der Abgabetermin",
-      "die Abgabefrist"
+      "die Abgabefrist",
+      "die Ausgabe"
     ]
   },
   {
@@ -35307,6 +35310,211 @@
     "notes": "This noun is typically uncountable and expresses deep commitment or surrender to something.",
     "added": "2026-06-12 07:59:48",
     "gender": "die",
-    "plural": null
+    "plural": null,
+    "related": [
+      "die Ausgabe"
+    ]
+  },
+  {
+    "id": "die-ausgabe",
+    "word": "die Ausgabe",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "expenditure, expense",
+        "note": null
+      },
+      {
+        "meaning": "edition, issue (of a publication)",
+        "note": null
+      },
+      {
+        "meaning": "output, distribution",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Diese Ausgabe war völlig unnötig.",
+        "en": "This expenditure was completely unnecessary."
+      },
+      {
+        "de": "Die neue Ausgabe der Zeitschrift ist sehr interessant.",
+        "en": "The new issue of the magazine is very interesting."
+      }
+    ],
+    "topics": [
+      "money & shopping",
+      "language & communication"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-14 19:16:05",
+    "gender": "die",
+    "plural": "die Ausgaben",
+    "related": [
+      "Abgabe",
+      "Hingabe",
+      "die Abgabe",
+      "die Hingabe"
+    ]
+  },
+  {
+    "id": "der-alptraum",
+    "word": "der Alptraum",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "nightmare",
+        "note": "a frightening or unpleasant dream"
+      },
+      {
+        "meaning": "nightmare",
+        "note": "figuratively, a very unpleasant or difficult situation"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich hatte letzte Nacht einen schrecklichen Alptraum.",
+        "en": "I had a terrible nightmare last night."
+      },
+      {
+        "de": "Die Prüfungszeit war ein wahrer Alptraum für mich.",
+        "en": "Exam time was a real nightmare for me."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Can also be spelled 'Albtraum' with 'b' instead of 'p'.",
+    "added": "2026-06-14 19:22:19",
+    "gender": "der",
+    "plural": "die Alpträume"
+  },
+  {
+    "id": "aufbewahren",
+    "word": "aufbewahren",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to store, to keep, to preserve",
+        "note": null
+      },
+      {
+        "meaning": "to safeguard, to maintain in a safe place",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bewahre wichtige Dokumente im Safe auf.",
+        "en": "I keep important documents in the safe."
+      },
+      {
+        "de": "Sie bewahrt alle ihre Fotos digital auf.",
+        "en": "She stores all her photos digitally."
+      }
+    ],
+    "topics": [
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-14 19:25:58",
+    "auxiliary": "haben",
+    "past_tense": "bewahrte auf",
+    "past_participle": "aufbewahrt",
+    "is_separable": true,
+    "reflexive": false,
+    "family_root": "wahren",
+    "prefix": "auf-"
+  },
+  {
+    "id": "versprechen",
+    "word": "versprechen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to promise",
+        "note": null
+      },
+      {
+        "meaning": "to make a slip of the tongue, to misspeak",
+        "note": "reflexive: sich versprechen"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich verspreche dir, dass ich pünktlich sein werde.",
+        "en": "I promise you that I will be on time."
+      },
+      {
+        "de": "Entschuldigung, ich habe mich versprochen.",
+        "en": "Sorry, I misspoke."
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Can be used reflexively (sich versprechen) with a different meaning: to misspeak.",
+    "added": "2026-06-14 19:29:27",
+    "auxiliary": "haben",
+    "past_tense": "versprach",
+    "past_participle": "versprochen",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "sprechen",
+    "prefix": "ver-",
+    "related": [
+      "sprechen",
+      "widersprechen"
+    ]
+  },
+  {
+    "id": "der-begriff",
+    "word": "der Begriff",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "concept",
+        "note": null
+      },
+      {
+        "meaning": "term",
+        "note": null
+      },
+      {
+        "meaning": "notion",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Begriff der Freiheit ist schwer zu definieren.",
+        "en": "The concept of freedom is difficult to define."
+      },
+      {
+        "de": "Kannst du mir diesen Begriff erklären?",
+        "en": "Can you explain this term to me?"
+      }
+    ],
+    "topics": [
+      "language & communication",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": null,
+    "added": "2026-06-14 19:30:37",
+    "gender": "der",
+    "plural": "die Begriffe"
   }
 ]
