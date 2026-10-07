@@ -89,7 +89,7 @@ Return ONLY valid JSON, no explanation, no markdown, no code fences.{type_hint}
 Word to analyse: {word}{type_hint}"""
 
     payload = json.dumps({
-        "model": "claude-sonnet-4-20250514",
+        "model": "claude-sonnet-5-5",
         "max_tokens": 1000,
         "messages": [{"role": "user", "content": prompt}]
     }).encode("utf-8")
@@ -736,7 +736,7 @@ def cmd_add(args):
     merged = sorted(set(detected) | set(ai_related))
 
     if merged:
-        print(f"  Auto-detected related words: {", ".join(merged)}")
+        print(f"  Auto-detected related words: {', '.join(merged)}")
         extra = ask("  Add more? (comma-separated, or Enter to keep)")
         if extra:
             for e in [e.strip() for e in extra.split(",") if e.strip()]:
