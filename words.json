@@ -13387,6 +13387,7 @@
     "register": "neutral",
     "notes": "unter der Bedingung, dass = on condition that. Arbeitsbedingungen = working conditions.",
     "related": [
+      "bedingt",
       "bedingt sein durch",
       "der Faktor",
       "der Grund",
@@ -14297,6 +14298,7 @@
     "register": "formal",
     "notes": "bedingt sein durch = to be conditioned/caused by. bedingt = conditional, limited (adjective): 'nur bedingt geeignet' = only partially suitable.",
     "related": [
+      "bedingt",
       "die Bedingung",
       "unbedingt"
     ],
@@ -31468,7 +31470,10 @@
     "notes": null,
     "added": "2026-06-09 09:09:51",
     "gender": "das",
-    "plural": "die Wesen"
+    "plural": "die Wesen",
+    "related": [
+      "das Gesundheitswesen"
+    ]
   },
   {
     "id": "beschreiten",
@@ -34617,6 +34622,7 @@
     "usage": "both",
     "related": [
       "Bedingung",
+      "bedingt",
       "bedingt sein durch",
       "die Bedingung"
     ]
@@ -35516,5 +35522,563 @@
     "added": "2026-06-14 19:30:37",
     "gender": "der",
     "plural": "die Begriffe"
+  },
+  {
+    "id": "das-gesundheitswesen",
+    "word": "das Gesundheitswesen",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "healthcare system; health sector",
+        "note": "refers to the whole system of institutions, services and professionals providing medical care in a country"
+      },
+      {
+        "meaning": "public health services",
+        "note": "often used in discussions of policy, funding and reform"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das deutsche Gesundheitswesen steht vor großen Herausforderungen.",
+        "en": "The German healthcare system faces major challenges."
+      },
+      {
+        "de": "Sie arbeitet seit zehn Jahren im Gesundheitswesen.",
+        "en": "She has worked in the healthcare sector for ten years."
+      }
+    ],
+    "topics": [
+      "society & politics",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Almost always used in the singular; compound of 'Gesundheit' (health) and 'Wesen' (here: system/institution), not to be confused with 'Gesundheitssystem', which is a near-synonym.",
+    "added": "2026-10-07 18:34:52",
+    "gender": "das",
+    "plural": "die Gesundheitswesen (rare; usually used only in the singular)",
+    "related": [
+      "das Wesen"
+    ]
+  },
+  {
+    "id": "pflegen",
+    "word": "pflegen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to care for, to nurse (a sick or elderly person)",
+        "note": "used with accusative object"
+      },
+      {
+        "meaning": "to maintain, to take care of, to tend (things, plants, appearance)",
+        "note": "e.g. a garden, skin, or one's appearance"
+      },
+      {
+        "meaning": "to cultivate, to nurture (relationships, traditions, contacts)",
+        "note": "e.g. Freundschaften pflegen"
+      },
+      {
+        "meaning": "to be in the habit of doing something (+ zu + infinitive)",
+        "note": "formal or literary; e.g. 'Er pflegt zu sagen...'"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie pflegt seit Jahren ihre kranke Mutter.",
+        "en": "She has been caring for her sick mother for years."
+      },
+      {
+        "de": "Er pflegt jeden Morgen um sechs Uhr zu joggen.",
+        "en": "He is in the habit of going jogging at six every morning."
+      },
+      {
+        "de": "Wir pflegen den Kontakt zu unseren Nachbarn.",
+        "en": "We keep up contact with our neighbours."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "The meaning 'to be in the habit of' (pflegen + zu + infinitive) is formal and regular, whereas 'pflegen' in the sense of 'to care for' is regular too: pflegte, gepflegt.",
+    "added": "2026-10-07 18:37:36",
+    "auxiliary": "haben",
+    "past_tense": "pflegte",
+    "past_participle": "gepflegt",
+    "is_separable": false,
+    "reflexive": false,
+    "family_root": "pflegen",
+    "related": [
+      "der Krankenpfleger",
+      "der/die Kranke",
+      "die Krankenschwester",
+      "die Pflegekraft"
+    ]
+  },
+  {
+    "id": "der-krankenpfleger",
+    "word": "der Krankenpfleger",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "male nurse",
+        "note": "feminine form: die Krankenpflegerin"
+      },
+      {
+        "meaning": "nurse (male or generic, a person who cares for the sick)",
+        "note": "the masculine form is often used generically in older or formal language; modern usage prefers 'Pflegefachmann/Pflegefachfrau' or 'Pflegekraft'"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Krankenpfleger misst jeden Morgen den Blutdruck der Patienten.",
+        "en": "The nurse takes the patients' blood pressure every morning."
+      },
+      {
+        "de": "Mein Bruder arbeitet als Krankenpfleger in einem Krankenhaus in Hamburg.",
+        "en": "My brother works as a nurse in a hospital in Hamburg."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "The official job title in Germany is now 'Pflegefachmann' (m) / 'Pflegefachfrau' (f), but 'Krankenpfleger' and 'Krankenschwester' are still very common in everyday speech.",
+    "added": "2026-10-07 18:40:08",
+    "gender": "der",
+    "plural": "die Krankenpfleger",
+    "related": [
+      "der/die Kranke",
+      "die Krankenschwester",
+      "die Pflegekraft",
+      "pflegen"
+    ]
+  },
+  {
+    "id": "die-krankenschwester",
+    "word": "die Krankenschwester",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "nurse (female)",
+        "note": "traditionally refers to a woman; the gender-neutral or male term is 'der Krankenpfleger' or 'die Pflegefachkraft'"
+      },
+      {
+        "meaning": "female nursing professional working in a hospital, clinic, or care setting",
+        "note": null
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Krankenschwester misst dem Patienten das Fieber.",
+        "en": "The nurse takes the patient's temperature."
+      },
+      {
+        "de": "Meine Schwester arbeitet als Krankenschwester in einem Kinderkrankenhaus.",
+        "en": "My sister works as a nurse in a children's hospital."
+      }
+    ],
+    "topics": [
+      "work & academia",
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Despite containing 'Schwester' (sister), it means 'nurse'; the official job title in Germany is now 'Gesundheits- und Krankenpfleger/in' or 'Pflegefachfrau/-mann'.",
+    "added": "2026-10-07 18:41:10",
+    "gender": "die",
+    "plural": "die Krankenschwestern",
+    "related": [
+      "Krankenpfleger",
+      "der Krankenpfleger",
+      "der/die Kranke",
+      "die Pflegekraft",
+      "pflegen"
+    ]
+  },
+  {
+    "id": "die-pflegekraft",
+    "word": "die Pflegekraft",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "care worker; nursing staff member (a person professionally employed to care for sick, elderly or disabled people)",
+        "note": "gender-neutral term, often used in hospitals, nursing homes and home care"
+      },
+      {
+        "meaning": "nurse; caregiver",
+        "note": "broader than 'Krankenschwester/Krankenpfleger'; can include both qualified nurses and care assistants"
+      }
+    ],
+    "examples": [
+      {
+        "de": "In Deutschland fehlen tausende Pflegekräfte in Krankenhäusern und Altenheimen.",
+        "en": "In Germany, thousands of care workers are lacking in hospitals and nursing homes."
+      },
+      {
+        "de": "Die Pflegekraft hilft der alten Dame jeden Morgen beim Anziehen.",
+        "en": "The caregiver helps the elderly lady get dressed every morning."
+      }
+    ],
+    "topics": [
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Although grammatically feminine, 'die Pflegekraft' refers to people of any gender, making it a common gender-neutral alternative to 'Krankenschwester' or 'Krankenpfleger'.",
+    "added": "2026-10-07 18:41:59",
+    "gender": "die",
+    "plural": "die Pflegekräfte",
+    "related": [
+      "Krankenpfleger",
+      "Krankenschwester",
+      "der Krankenpfleger",
+      "der/die Kranke",
+      "die Krankenschwester",
+      "pflegen"
+    ]
+  },
+  {
+    "id": "der-die-kranke",
+    "word": "der/die Kranke",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "sick person, patient (a person who is ill)",
+        "note": "nominalised adjective: der Kranke (male), die Kranke (female); declines like an adjective"
+      },
+      {
+        "meaning": "invalid, the sick (collectively, in the plural)",
+        "note": "often used in the plural, e.g. 'die Kranken und Alten'"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Kranke wurde sofort ins Krankenhaus gebracht.",
+        "en": "The sick woman was taken to the hospital immediately."
+      },
+      {
+        "de": "Der Arzt besuchte die Kranken in ihren Zimmern.",
+        "en": "The doctor visited the sick people in their rooms."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "people & relationships"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Nominalised adjective: the form depends on gender and article (ein Kranker, eine Kranke, der Kranke, die Kranken); 'der Patient' is more common in a medical context.",
+    "added": "2026-10-07 18:43:04",
+    "gender": "der",
+    "plural": "die Kranken",
+    "related": [
+      "Krankenpfleger",
+      "Krankenschwester",
+      "Pflegekraft",
+      "der Krankenpfleger",
+      "die Krankenschwester",
+      "die Pflegekraft",
+      "pflegen"
+    ]
+  },
+  {
+    "id": "bedingt",
+    "word": "bedingt",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "limited, qualified, conditional (only to a certain extent or under certain conditions)",
+        "note": "often in the phrase 'nur bedingt' = only to a limited extent"
+      },
+      {
+        "meaning": "caused by, due to, resulting from",
+        "note": "typically used with 'durch + AKK' or as a suffix, e.g. 'krankheitsbedingt', 'zeitbedingt'"
+      },
+      {
+        "meaning": "conditional, subject to conditions",
+        "note": "e.g. 'bedingte Zusage', 'bedingter Reflex' (conditioned reflex)"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Dieses Auto ist nur bedingt für lange Strecken geeignet.",
+        "en": "This car is only suitable for long distances to a limited extent."
+      },
+      {
+        "de": "Die Verspätung war durch das schlechte Wetter bedingt.",
+        "en": "The delay was caused by the bad weather."
+      },
+      {
+        "de": "Er hat die Aufgabe nur bedingt verstanden.",
+        "en": "He understood the task only partially."
+      }
+    ],
+    "topics": [
+      "grammar & structure",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Originally the past participle of 'bedingen'; it is also commonly used as a suffix (e.g. 'krankheitsbedingt' = due to illness) and should not be confused with 'bedingungslos' (unconditional).",
+    "added": "2026-10-07 18:45:58",
+    "usage": "both",
+    "related": [
+      "unbedingt",
+      "die Bedingung",
+      "bedingt sein durch"
+    ]
+  },
+  {
+    "id": "dehydriert",
+    "word": "dehydriert",
+    "type": "adj/adv",
+    "definitions": [
+      {
+        "meaning": "dehydrated; suffering from a lack of body fluids or water",
+        "note": "medical/everyday use describing a person or body"
+      },
+      {
+        "meaning": "dehydrated; having had water removed (of food or substances)",
+        "note": "e.g. dehydrated fruit or vegetables"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nach dem langen Lauf in der Hitze war er stark dehydriert.",
+        "en": "After the long run in the heat, he was severely dehydrated."
+      },
+      {
+        "de": "Dehydriertes Obst eignet sich gut als Snack für Wanderungen.",
+        "en": "Dehydrated fruit is a good snack for hikes."
+      }
+    ],
+    "topics": [
+      "body & mind"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Derived from the past participle of the verb 'dehydrieren'; the more colloquial alternatives are 'ausgetrocknet' or 'zu wenig getrunken haben'.",
+    "added": "2026-10-07 18:48:46",
+    "usage": "adjective only",
+    "derived_from": "dehydrieren"
+  },
+  {
+    "id": "der-reiz",
+    "word": "der Reiz",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "charm, appeal, attraction",
+        "note": "often used for the attractive quality of a person, place or idea"
+      },
+      {
+        "meaning": "stimulus",
+        "note": "in physiology and psychology, e.g. a sensory stimulus"
+      },
+      {
+        "meaning": "irritation",
+        "note": "in medicine, e.g. of the skin or mucous membranes"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Die Stadt hat einen ganz besonderen Reiz.",
+        "en": "The city has a very special charm."
+      },
+      {
+        "de": "Das Gehirn reagiert auf äußere Reize.",
+        "en": "The brain reacts to external stimuli."
+      },
+      {
+        "de": "Der Reiz des Neuen verliert schnell an Wirkung.",
+        "en": "The appeal of novelty quickly wears off."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "emotions"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Do not confuse the plural 'die Reize' (charms, stimuli) with the verb 'reizen' (to irritate, to appeal to).",
+    "added": "2026-10-07 19:07:55",
+    "gender": "der",
+    "plural": "die Reize",
+    "related": [
+      "der Stimulus",
+      "die Reizüberflutung"
+    ]
+  },
+  {
+    "id": "der-stimulus",
+    "word": "der Stimulus",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "stimulus (something that triggers a reaction or response in an organism or system)",
+        "note": "used in psychology, biology and medicine"
+      },
+      {
+        "meaning": "incentive, impetus, stimulation",
+        "note": "figurative use, e.g. in economics or motivation"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der visuelle Stimulus löste bei den Probanden eine schnelle Reaktion aus.",
+        "en": "The visual stimulus triggered a quick reaction in the test subjects."
+      },
+      {
+        "de": "Die Steuersenkung soll als Stimulus für die Wirtschaft wirken.",
+        "en": "The tax cut is intended to act as a stimulus for the economy."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "formal",
+    "notes": "Plural is 'die Stimuli' (Latin-style); in everyday German, 'der Reiz' or 'der Anreiz' are more common equivalents.",
+    "added": "2026-10-07 19:08:39",
+    "gender": "der",
+    "plural": "die Stimuli",
+    "related": [
+      "der Reiz",
+      "die Reizüberflutung"
+    ]
+  },
+  {
+    "id": "die-reizueberflutung",
+    "word": "die Reizüberflutung",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "sensory overload; overstimulation",
+        "note": "state in which too many sensory or informational stimuli overwhelm a person"
+      },
+      {
+        "meaning": "information overload (figurative)",
+        "note": "used for being overwhelmed by too much media, information or impressions"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Nach dem Tag in der lauten Großstadt litt sie unter Reizüberflutung.",
+        "en": "After the day in the noisy city, she suffered from sensory overload."
+      },
+      {
+        "de": "Viele Kinder mit Autismus reagieren empfindlich auf Reizüberflutung.",
+        "en": "Many children with autism are sensitive to overstimulation."
+      }
+    ],
+    "topics": [
+      "body & mind",
+      "daily life"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Compound of 'der Reiz' (stimulus) and 'die Überflutung' (flooding); often used in psychology and everyday speech, typically in the singular.",
+    "added": "2026-10-07 19:09:08",
+    "gender": "die",
+    "plural": "die Reizüberflutungen",
+    "related": [
+      "der Reiz",
+      "der Stimulus"
+    ]
+  },
+  {
+    "id": "der-bildschirm",
+    "word": "der Bildschirm",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "screen (of a computer, TV, or other electronic device)",
+        "note": null
+      },
+      {
+        "meaning": "monitor, display",
+        "note": "refers to the computer monitor as a device"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich sitze den ganzen Tag vor dem Bildschirm.",
+        "en": "I sit in front of the screen all day."
+      },
+      {
+        "de": "Der Bildschirm ist plötzlich schwarz geworden.",
+        "en": "The screen suddenly went black."
+      }
+    ],
+    "topics": [
+      "daily life",
+      "work & academia"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "Bildschirm is the general word for a screen or monitor; for a smartphone screen, 'Display' is also commonly used, and 'Leinwand' means a projection screen.",
+    "added": "2026-10-07 19:10:08",
+    "gender": "der",
+    "plural": "die Bildschirme",
+    "related": [
+      "der Schirm"
+    ]
+  },
+  {
+    "id": "der-schirm",
+    "word": "der Schirm",
+    "type": "noun",
+    "definitions": [
+      {
+        "meaning": "umbrella (a device for protection against rain)",
+        "note": "short for Regenschirm; also Sonnenschirm for 'parasol'"
+      },
+      {
+        "meaning": "screen (of a display device, e.g. a monitor or TV)",
+        "note": "Bildschirm is the more common word"
+      },
+      {
+        "meaning": "shade, lampshade, or visor/peak of a cap",
+        "note": "as in Lampenschirm, Schirmmütze"
+      },
+      {
+        "meaning": "shield, protective cover or screen",
+        "note": "often figurative or in compounds, e.g. Schutzschirm"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Schirm der Lampe ist aus Seide.",
+        "en": "The shade of the lamp is made of silk."
+      },
+      {
+        "de": "Ich glaube nicht, dass es regnen wird, aber ich werde für alle Fälle einen Schirm mitnehmen.",
+        "en": "I do not think it will rain, but I will take an umbrella, just in case."
+      },
+      {
+        "de": "äußerer Schirm",
+        "en": "outer screen"
+      }
+    ],
+    "topics": [
+      "daily life",
+      "nature & weather"
+    ],
+    "tags": [],
+    "register": "neutral",
+    "notes": "In everyday speech 'Schirm' usually means 'umbrella' (often 'Regenschirm'), while 'Bildschirm' is used for a screen.",
+    "added": "2026-10-07 19:10:38",
+    "gender": "der",
+    "plural": "die Schirme",
+    "related": [
+      "der Bildschirm"
+    ]
   }
 ]
