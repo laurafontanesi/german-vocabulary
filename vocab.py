@@ -191,6 +191,7 @@ Return ONLY valid JSON, no explanation, no markdown, no code fences.{type_hint}
     {{"de": "A natural German example sentence", "en": "English translation"}},
     {{"de": "A second example showing a different use", "en": "English translation"}}
   ],
+  "compound_parts": "for a compound noun or adjective, its parts in order as a list, nouns with article, linking elements as separate items: [\"die Kündigung\", \"-s-\", \"die Frist\"]; null if not a compound",
   "topics": ["0 to 2 topics from the list below, ONLY if the word is clearly about that domain; core vocabulary like brauchen or bekommen gets an empty list"],
   "notes": "one sentence max — only if there is something genuinely important to note, e.g. easy confusion with another word, or a non-neutral register (umgangssprachlich, gehoben, Schweizerdeutsch), or null",
   "related": [
@@ -864,6 +865,11 @@ def cmd_add(args):
     if own:
         entry["examples"].insert(0, own)
 
+    if word_type in ("noun", "adj/adv") and suggestion and s.get("compound_parts"):
+        cp = confirm_or_edit("Compound parts (comma-separated, '-' for none)", ", ".join(s["compound_parts"]))
+        parts = [x.strip() for x in (cp if isinstance(cp, str) else ", ".join(cp)).split(",") if x.strip()]
+        if parts and parts != ["-"]:
+            entry["compound_parts"] = parts
     wiktionary_definition(entry)
 
     # ── topics, notes ─────────────────────────────────────────

@@ -123,6 +123,9 @@ def formen(w):
     t, out = w.get('type'), []
     if t == 'noun':
         out.append('Pl: ' + (w.get('plural') or 'kein Plural'))
+    if w.get('compound_parts'):
+        parts = [re.sub(r'^(der|die|das|der/die)\s+', '', x) for x in w['compound_parts']]
+        out.append(' + '.join(parts))
     elif t == 'verb':
         if w.get('verb_class'):
             out.append(VERB_CLASS_LABEL.get(w['verb_class'], w['verb_class']))

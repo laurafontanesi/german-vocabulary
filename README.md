@@ -131,6 +131,7 @@ Each entry in `words.json` is a JSON object. All entries share these fields:
 | `definitions` | list | `[{meaning, note}]` — always in English |
 | `examples` | list | `[{de, en}]` — German sentence + translation |
 | `topics` | list | 0 to 2 entries from the closed list below; empty for core vocabulary |
+| `compound_parts` | list | Optional, for compound nouns and adjectives: the parts in order, nouns with article, linking elements as their own item: `["die Kündigung", "-s-", "die Frist"]`. Shown as one chip (Kündigung + -s- + Frist); parts that are in the database are clickable and get a `compound` link. Source: German Wiktionary's word-formation notes |
 | `definition_de` | string | German definition from German Wiktionary, matched to the first English meaning; used by the *Definition* card. Optional |
 | `notes` | string | One-sentence personal note, or null. Register goes here when it is not neutral (`Register: umgangssprachlich.`) |
 | `related` | list | `[{word, kind}]` — semantic links, always bidirectional. `kind` is one of `synonym`, `antonym`, `contrast` (easily confused), `derived` (same stem, other word class), `compound` (one word is part of the other). Verb families are **not** stored here; see `family_root`. |

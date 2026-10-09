@@ -564,6 +564,8 @@
   .related-chip.kind-synonym { border-color: var(--teal-soft); }
   .related-chip.kind-derived { color: var(--ink-muted); }
   .related-chip.kind-compound { color: var(--ink-muted); }
+  .compound-pill .part-link { cursor: pointer; color: var(--teal); text-decoration: underline dotted; }
+  .compound-pill .link-el { font-size: 0.8em; color: var(--ink-muted); }
   .related-group { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; margin: 0 0 6px; }
   .related-label { font-size: 11px; color: var(--ink-muted); min-width: 92px; }
 
@@ -1357,6 +1359,16 @@ function usageLabel(w) {
   if (w.usage !== 'both') return w.usage;
   return w.type === 'prep/conj' ? 'preposition and conjunction' : 'adjective and adverb';
 }
+// "Reiz + Überflutung": parts in the database are clickable, linking elements (-s-) are small
+function compoundPill(w) {
+  const parts = w.compound_parts.map(p => {
+    if (/^-.*-$/.test(p)) return `<span class="link-el">${p}</span>`;
+    const label = p.replace(/^(der|die|das|der\/die)\s+/, '');
+    const inDb = allWords.some(x => x.word === p);
+    return inDb ? `<span class="part-link" onclick="searchRelated('${label}',event)">${label}</span>` : label;
+  });
+  return `<span class="grammar-pill compound-pill" title="Compound">${parts.join(' + ')}</span>`;
+}
 function relWord(r) { return typeof r === 'string' ? r : r.word; }
 function relKind(r) { return typeof r === 'string' ? '' : (r.kind || ''); }
 const KIND_SIGN = { contrast: '', antonym: '≠ ', synonym: '= ', derived: '← ', compound: '+ ' };
@@ -1515,6 +1527,7 @@ function buildGrammarPills(w) {
   if (w.type === 'noun') {
     if (w.plural) pills.push(`Pl: ${w.plural}`);
   }
+  if (w.compound_parts) pills.push(compoundPill(w));
   if (w.type === 'verb') {
     if (w.verb_class) pills.push(`<span class="grammar-pill highlight">${VERB_CLASS_LABEL[w.verb_class] || w.verb_class}</span>`);
     if (changesStem(w)) pills.push(`er ${w.present_3sg}`);

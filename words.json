@@ -2655,6 +2655,10 @@
       {
         "word": "die Zeitschrift",
         "kind": "compound"
+      },
+      {
+        "word": "gleichzeitig",
+        "kind": "compound"
       }
     ]
   },
@@ -2956,7 +2960,17 @@
     "notes": null,
     "added": "2026-04-04",
     "usage": "both",
-    "related": []
+    "related": [
+      {
+        "word": "die Zeit",
+        "kind": "compound"
+      }
+    ],
+    "compound_parts": [
+      "gleich",
+      "die Zeit",
+      "-ig"
+    ]
   },
   {
     "id": "immer-noch",
@@ -3381,7 +3395,12 @@
     ],
     "notes": "German forms these duration adverbs very productively: stundenlang, tagelang, wochenlang, monatelang, jahrelang. Pattern: [time unit] + lang.",
     "added": "2026-04-04",
-    "usage": "both"
+    "usage": "both",
+    "compound_parts": [
+      "die Stunde",
+      "-n-",
+      "lang"
+    ]
   },
   {
     "id": "die-gelegenheit",
@@ -3653,7 +3672,11 @@
     ],
     "notes": "kaltherzig / hartherzig = cold-hearted (opposite). German compounds hearts and temperatures very productively.",
     "added": "2026-04-04",
-    "usage": "both"
+    "usage": "both",
+    "compound_parts": [
+      "warm",
+      "herzig"
+    ]
   },
   {
     "id": "einsam",
@@ -3898,7 +3921,7 @@
       },
       {
         "word": "einzigartig",
-        "kind": "contrast"
+        "kind": "compound"
       }
     ],
     "definitions": [
@@ -6333,7 +6356,11 @@
       },
       {
         "word": "das Fahrrad",
-        "kind": "derived"
+        "kind": "compound"
+      },
+      {
+        "word": "der Fahrstuhl",
+        "kind": "compound"
       }
     ],
     "definitions": [
@@ -7371,7 +7398,11 @@
         "kind": "derived"
       }
     ],
-    "added": "2026-04-06 10:04:00"
+    "added": "2026-04-06 10:04:00",
+    "compound_parts": [
+      "die Luft",
+      "die Feuchtigkeit"
+    ]
   },
   {
     "id": "das-erdbeben",
@@ -7401,7 +7432,11 @@
     ],
     "notes": null,
     "related": [],
-    "added": "2026-04-06 10:05:00"
+    "added": "2026-04-06 10:05:00",
+    "compound_parts": [
+      "die Erde",
+      "das Beben"
+    ]
   },
   {
     "id": "die-ueberschwemmung",
@@ -7462,7 +7497,11 @@
     ],
     "notes": null,
     "related": [],
-    "added": "2026-04-06 10:07:00"
+    "added": "2026-04-06 10:07:00",
+    "compound_parts": [
+      "das Klima",
+      "die Erwärmung"
+    ]
   },
   {
     "id": "der-treibhauseffekt",
@@ -7493,7 +7532,11 @@
     ],
     "notes": null,
     "related": [],
-    "added": "2026-04-06 10:08:00"
+    "added": "2026-04-06 10:08:00",
+    "compound_parts": [
+      "das Treibhaus",
+      "der Effekt"
+    ]
   },
   {
     "id": "der-brand",
@@ -7643,7 +7686,11 @@
     ],
     "notes": null,
     "related": [],
-    "added": "2026-04-06 10:13:00"
+    "added": "2026-04-06 10:13:00",
+    "compound_parts": [
+      "das Wetter",
+      "die Vorhersage"
+    ]
   },
   {
     "id": "feucht",
@@ -8297,7 +8344,11 @@
         "kind": "contrast"
       }
     ],
-    "added": "2026-04-06 11:11:00"
+    "added": "2026-04-06 11:11:00",
+    "compound_parts": [
+      "der Fuß",
+      "der Boden"
+    ]
   },
   {
     "id": "betreten",
@@ -8410,7 +8461,11 @@
         "kind": "compound"
       }
     ],
-    "added": "2026-04-06 11:14:00"
+    "added": "2026-04-06 11:14:00",
+    "compound_parts": [
+      "der Staub",
+      "der Sauger"
+    ]
   },
   {
     "id": "nicken",
@@ -8715,7 +8770,12 @@
     ],
     "notes": "das Freibad = outdoor pool; das Hallenbad = indoor pool; das Schwimmbad = swimming pool (general).",
     "related": [],
-    "added": "2026-04-06 11:23:00"
+    "added": "2026-04-06 11:23:00",
+    "compound_parts": [
+      "die Halle",
+      "-n-",
+      "das Bad"
+    ]
   },
   {
     "id": "schmutzig",
@@ -9645,7 +9705,11 @@
         "kind": "contrast"
       }
     ],
-    "added": "2026-04-06 12:03:00"
+    "added": "2026-04-06 12:03:00",
+    "compound_parts": [
+      "spielen",
+      "der Film"
+    ]
   },
   {
     "id": "das-drehbuch",
@@ -9682,9 +9746,17 @@
       {
         "word": "der Drehbuchautor",
         "kind": "compound"
+      },
+      {
+        "word": "drehen",
+        "kind": "compound"
       }
     ],
-    "added": "2026-04-06 12:04:00"
+    "added": "2026-04-06 12:04:00",
+    "compound_parts": [
+      "drehen",
+      "das Buch"
+    ]
   },
   {
     "id": "der-drehbuchautor",
@@ -9727,7 +9799,11 @@
         "kind": "compound"
       }
     ],
-    "added": "2026-04-06 12:05:00"
+    "added": "2026-04-06 12:05:00",
+    "compound_parts": [
+      "das Drehbuch",
+      "der Autor"
+    ]
   },
   {
     "id": "die-hauptfigur",
@@ -9757,7 +9833,11 @@
     ],
     "notes": "die Hauptfigur = main character (books and films); der Hauptdarsteller = leading actor (the person playing the role in a film).",
     "related": [],
-    "added": "2026-04-06 12:06:00"
+    "added": "2026-04-06 12:06:00",
+    "compound_parts": [
+      "Haupt-",
+      "die Figur"
+    ]
   },
   {
     "id": "der-hauptdarsteller",
@@ -9787,7 +9867,11 @@
     ],
     "notes": "die Hauptdarstellerin = female lead actress. der Hauptdarsteller = the actor; die Hauptfigur = the character they play.",
     "related": [],
-    "added": "2026-04-06 12:07:00"
+    "added": "2026-04-06 12:07:00",
+    "compound_parts": [
+      "Haupt-",
+      "der Darsteller"
+    ]
   },
   {
     "id": "der-wendepunkt",
@@ -9817,7 +9901,11 @@
     ],
     "notes": "Used both for stories/films and for real life events.",
     "related": [],
-    "added": "2026-04-06 12:08:00"
+    "added": "2026-04-06 12:08:00",
+    "compound_parts": [
+      "wenden",
+      "der Punkt"
+    ]
   },
   {
     "id": "die-praemisse",
@@ -10037,7 +10125,11 @@
         "kind": "derived"
       }
     ],
-    "added": "2026-04-06 12:14:00"
+    "added": "2026-04-06 12:14:00",
+    "compound_parts": [
+      "die Kunst",
+      "der Maler"
+    ]
   },
   {
     "id": "der-kuenstler",
@@ -10154,7 +10246,11 @@
         "kind": "compound"
       }
     ],
-    "added": "2026-04-06 12:17:00"
+    "added": "2026-04-06 12:17:00",
+    "compound_parts": [
+      "das Bild",
+      "hauen"
+    ]
   },
   {
     "id": "die-geschichte",
@@ -10424,6 +10520,10 @@
       {
         "word": "vermögend",
         "kind": "synonym"
+      },
+      {
+        "word": "erfolgreich",
+        "kind": "compound"
       }
     ],
     "added": "2026-04-06 13:04:00"
@@ -14327,7 +14427,11 @@
     ],
     "notes": null,
     "related": [],
-    "added": "2026-04-07 10:50:00"
+    "added": "2026-04-07 10:50:00",
+    "compound_parts": [
+      "die Rede",
+      "die Wendung"
+    ]
   },
   {
     "id": "sein-zu-infinitiv",
@@ -16841,7 +16945,11 @@
         "kind": "contrast"
       }
     ],
-    "added": "2026-04-07 12:47:00"
+    "added": "2026-04-07 12:47:00",
+    "compound_parts": [
+      "der Muskel",
+      "der Kater"
+    ]
   },
   {
     "id": "sich-zurueckhalten",
@@ -17376,7 +17484,7 @@
     "related": [
       {
         "word": "die Putzkraft",
-        "kind": "derived"
+        "kind": "compound"
       }
     ],
     "added": "2026-04-07 13:01:00"
@@ -17761,7 +17869,11 @@
         "kind": "derived"
       }
     ],
-    "added": "2026-04-07 14:00:00"
+    "added": "2026-04-07 14:00:00",
+    "compound_parts": [
+      "ober-",
+      "die Fläche"
+    ]
   },
   {
     "id": "glatt",
@@ -18493,10 +18605,14 @@
       },
       {
         "word": "spazieren",
-        "kind": "derived"
+        "kind": "compound"
       }
     ],
-    "added": "2026-04-07 14:18:00"
+    "added": "2026-04-07 14:18:00",
+    "compound_parts": [
+      "spazieren",
+      "der Gang"
+    ]
   },
   {
     "id": "spazieren",
@@ -18538,7 +18654,7 @@
       },
       {
         "word": "der Spaziergang",
-        "kind": "derived"
+        "kind": "compound"
       }
     ],
     "added": "2026-04-07 14:19:00"
@@ -19191,10 +19307,14 @@
     "related": [
       {
         "word": "fahren",
-        "kind": "derived"
+        "kind": "compound"
       }
     ],
-    "added": "2026-04-07 14:35:00"
+    "added": "2026-04-07 14:35:00",
+    "compound_parts": [
+      "fahren",
+      "das Rad"
+    ]
   },
   {
     "id": "uebernachten",
@@ -20021,7 +20141,11 @@
     ],
     "notes": "die Landkarte = printed map. die Karte = card/map (general). die Stadtplan = city map.",
     "related": [],
-    "added": "2026-04-07 14:57:00"
+    "added": "2026-04-07 14:57:00",
+    "compound_parts": [
+      "das Land",
+      "die Karte"
+    ]
   },
   {
     "id": "der-ausblick",
@@ -20099,7 +20223,11 @@
         "kind": "synonym"
       }
     ],
-    "added": "2026-04-07 14:59:00"
+    "added": "2026-04-07 14:59:00",
+    "compound_parts": [
+      "fern",
+      "der Blick"
+    ]
   },
   {
     "id": "sichtbar",
@@ -20448,7 +20576,12 @@
         "kind": "compound"
       }
     ],
-    "added": "2026-04-07 15:09:00"
+    "added": "2026-04-07 15:09:00",
+    "compound_parts": [
+      "die Höhe",
+      "-n-",
+      "der Unterschied"
+    ]
   },
   {
     "id": "nirgends",
@@ -21034,7 +21167,7 @@
       },
       {
         "word": "die Arbeitslosigkeit",
-        "kind": "compound"
+        "kind": "derived"
       }
     ],
     "added": "2026-04-07 16:03:00"
@@ -21262,7 +21395,11 @@
         "kind": "compound"
       }
     ],
-    "added": "2026-04-07 16:09:00"
+    "added": "2026-04-07 16:09:00",
+    "compound_parts": [
+      "die Zeit",
+      "die Schrift"
+    ]
   },
   {
     "id": "der-abgabetermin",
@@ -21305,7 +21442,11 @@
         "kind": "compound"
       }
     ],
-    "added": "2026-04-07 16:10:00"
+    "added": "2026-04-07 16:10:00",
+    "compound_parts": [
+      "die Abgabe",
+      "der Termin"
+    ]
   },
   {
     "id": "veroeffentlichen",
@@ -21611,7 +21752,11 @@
         "kind": "compound"
       }
     ],
-    "added": "2026-04-07 16:18:00"
+    "added": "2026-04-07 16:18:00",
+    "compound_parts": [
+      "die Abgabe",
+      "die Frist"
+    ]
   },
   {
     "id": "die-kuendigungsfrist",
@@ -21646,7 +21791,12 @@
         "kind": "derived"
       }
     ],
-    "added": "2026-04-07 16:19:00"
+    "added": "2026-04-07 16:19:00",
+    "compound_parts": [
+      "die Kündigung",
+      "-s-",
+      "die Frist"
+    ]
   },
   {
     "id": "die-vorlesung",
@@ -22667,7 +22817,11 @@
         "kind": "derived"
       }
     ],
-    "added": "2026-04-07 16:46:00"
+    "added": "2026-04-07 16:46:00",
+    "compound_parts": [
+      "die Erkenntnis",
+      "der Prozess"
+    ]
   },
   {
     "id": "die-entscheidungsfindung",
@@ -22702,7 +22856,12 @@
         "kind": "compound"
       }
     ],
-    "added": "2026-04-07 16:47:00"
+    "added": "2026-04-07 16:47:00",
+    "compound_parts": [
+      "die Entscheidung",
+      "-s-",
+      "die Findung"
+    ]
   },
   {
     "id": "die-wertvorstellung",
@@ -22737,7 +22896,11 @@
         "kind": "derived"
       }
     ],
-    "added": "2026-04-07 16:48:00"
+    "added": "2026-04-07 16:48:00",
+    "compound_parts": [
+      "der Wert",
+      "die Vorstellung"
+    ]
   },
   {
     "id": "das-entscheidungsverfahren",
@@ -22771,7 +22934,12 @@
         "kind": "compound"
       }
     ],
-    "added": "2026-04-07 16:49:00"
+    "added": "2026-04-07 16:49:00",
+    "compound_parts": [
+      "die Entscheidung",
+      "-s-",
+      "das Verfahren"
+    ]
   },
   {
     "id": "die-einsamkeit",
@@ -23299,7 +23467,11 @@
     ],
     "notes": "die Fallzahl = number of cases (singular). Most commonly used in plural. der Fall = case. Register: formell / gehoben.",
     "related": [],
-    "added": "2026-04-07 17:04:00"
+    "added": "2026-04-07 17:04:00",
+    "compound_parts": [
+      "der Fall",
+      "die Zahlen"
+    ]
   },
   {
     "id": "die-regelung",
@@ -23632,7 +23804,12 @@
         "kind": "compound"
       }
     ],
-    "added": "2026-04-07 17:13:00"
+    "added": "2026-04-07 17:13:00",
+    "compound_parts": [
+      "der Bund",
+      "-es-",
+      "das Amt"
+    ]
   },
   {
     "id": "der-bundesrat",
@@ -23671,7 +23848,12 @@
         "kind": "compound"
       }
     ],
-    "added": "2026-04-07 17:14:00"
+    "added": "2026-04-07 17:14:00",
+    "compound_parts": [
+      "der Bund",
+      "-es-",
+      "der Rat"
+    ]
   },
   {
     "id": "die-gesellschaft",
@@ -24547,7 +24729,12 @@
         "kind": "compound"
       }
     ],
-    "added": "2026-04-07 17:36:00"
+    "added": "2026-04-07 17:36:00",
+    "compound_parts": [
+      "der Umgang",
+      "-s-",
+      "die Sprache"
+    ]
   },
   {
     "id": "uebersetzen",
@@ -25327,6 +25514,10 @@
         "word": "schreiben",
         "kind": "derived"
       }
+    ],
+    "compound_parts": [
+      "auf",
+      "die Schrift"
     ]
   },
   {
@@ -26447,7 +26638,11 @@
         "kind": "contrast"
       }
     ],
-    "added": "2026-04-10 10:04:00"
+    "added": "2026-04-10 10:04:00",
+    "compound_parts": [
+      "der Morgen",
+      "grauen"
+    ]
   },
   {
     "id": "glitzern",
@@ -26576,7 +26771,11 @@
     ],
     "notes": "Not the same as the English 'first floor' — the Erdgeschoss is floor 0.",
     "related": [],
-    "added": "2026-04-10 10:08:00"
+    "added": "2026-04-10 10:08:00",
+    "compound_parts": [
+      "die Erde",
+      "das Geschoss"
+    ]
   },
   {
     "id": "die-kneipe",
@@ -26877,7 +27076,11 @@
     ],
     "notes": null,
     "related": [],
-    "added": "2026-04-10 10:16:00"
+    "added": "2026-04-10 10:16:00",
+    "compound_parts": [
+      "der Rat",
+      "das Haus"
+    ]
   },
   {
     "id": "das-ufer",
@@ -26936,8 +27139,17 @@
       "home & objects"
     ],
     "notes": null,
-    "related": [],
-    "added": "2026-04-10 10:18:00"
+    "related": [
+      {
+        "word": "fahren",
+        "kind": "compound"
+      }
+    ],
+    "added": "2026-04-10 10:18:00",
+    "compound_parts": [
+      "fahren",
+      "der Stuhl"
+    ]
   },
   {
     "id": "gahnen",
@@ -27546,7 +27758,12 @@
     ],
     "topics": [],
     "notes": null,
-    "related": [],
+    "related": [
+      {
+        "word": "das Drehbuch",
+        "kind": "compound"
+      }
+    ],
     "added": "2026-04-10 10:34:00",
     "auxiliary": "haben",
     "past_tense": "drehte",
@@ -29716,7 +29933,11 @@
     "added": "2026-06-08 19:01:44",
     "gender": "das",
     "plural": "die Enkelkinder",
-    "related": []
+    "related": [],
+    "compound_parts": [
+      "der Enkel",
+      "das Kind"
+    ]
   },
   {
     "id": "der-fleck",
@@ -29788,6 +30009,10 @@
         "word": "die Abgabe",
         "kind": "contrast"
       }
+    ],
+    "compound_parts": [
+      "ab-",
+      "das Gas"
     ]
   },
   {
@@ -31837,6 +32062,10 @@
         "word": "der Quatsch",
         "kind": "synonym"
       }
+    ],
+    "compound_parts": [
+      "un-",
+      "der Sinn"
     ]
   },
   {
@@ -32164,12 +32393,7 @@
     "added": "2026-06-09 09:09:51",
     "gender": "das",
     "plural": "die Wesen",
-    "related": [
-      {
-        "word": "das Gesundheitswesen",
-        "kind": "compound"
-      }
-    ]
+    "related": []
   },
   {
     "id": "beschreiten",
@@ -32565,13 +32789,17 @@
     "plural": "die Putzkräfte",
     "related": [
       {
-        "word": "putzen",
-        "kind": "derived"
-      },
-      {
         "word": "die Kraft",
         "kind": "compound"
+      },
+      {
+        "word": "putzen",
+        "kind": "compound"
       }
+    ],
+    "compound_parts": [
+      "putzen",
+      "die Kraft"
     ]
   },
   {
@@ -33052,7 +33280,7 @@
       },
       {
         "word": "die Arbeit",
-        "kind": "compound"
+        "kind": "derived"
       }
     ]
   },
@@ -33360,6 +33588,10 @@
         "word": "der Weg",
         "kind": "compound"
       }
+    ],
+    "compound_parts": [
+      "der Kies",
+      "der Weg"
     ]
   },
   {
@@ -34527,8 +34759,12 @@
     "related": [
       {
         "word": "einzig",
-        "kind": "contrast"
+        "kind": "compound"
       }
+    ],
+    "compound_parts": [
+      "einzig",
+      "-artig"
     ]
   },
   {
@@ -34793,6 +35029,10 @@
         "word": "die Wand",
         "kind": "compound"
       }
+    ],
+    "compound_parts": [
+      "der Fels",
+      "die Wand"
     ]
   },
   {
@@ -35167,7 +35407,12 @@
     "added": "2026-06-11 17:16:41",
     "gender": "die",
     "plural": "die Augenbrauen",
-    "related": []
+    "related": [],
+    "compound_parts": [
+      "das Auge",
+      "-n-",
+      "die Braue"
+    ]
   },
   {
     "id": "ueberqueren",
@@ -36156,7 +36401,16 @@
     "notes": null,
     "added": "2026-06-11 18:32:58",
     "usage": "both",
-    "related": []
+    "related": [
+      {
+        "word": "reich",
+        "kind": "compound"
+      }
+    ],
+    "compound_parts": [
+      "der Erfolg",
+      "reich"
+    ]
   },
   {
     "id": "die-abgabe",
@@ -36337,7 +36591,11 @@
     "added": "2026-06-14 19:22:19",
     "gender": "der",
     "plural": "die Alpträume",
-    "related": []
+    "related": [],
+    "compound_parts": [
+      "der Alp",
+      "der Traum"
+    ]
   },
   {
     "id": "aufbewahren",
@@ -36502,11 +36760,11 @@
     "added": "2026-10-07 18:34:52",
     "gender": "das",
     "plural": null,
-    "related": [
-      {
-        "word": "das Wesen",
-        "kind": "compound"
-      }
+    "related": [],
+    "compound_parts": [
+      "die Gesundheit",
+      "-s-",
+      "-wesen"
     ]
   },
   {
@@ -36566,7 +36824,7 @@
       },
       {
         "word": "die Pflegekraft",
-        "kind": "derived"
+        "kind": "compound"
       }
     ]
   },
@@ -36620,6 +36878,11 @@
         "word": "der/die Kranke",
         "kind": "compound"
       }
+    ],
+    "compound_parts": [
+      "der/die Kranke",
+      "-n-",
+      "der Pfleger"
     ]
   },
   {
@@ -36668,6 +36931,11 @@
         "word": "der/die Kranke",
         "kind": "compound"
       }
+    ],
+    "compound_parts": [
+      "der/die Kranke",
+      "-n-",
+      "die Schwester"
     ]
   },
   {
@@ -36713,13 +36981,17 @@
         "kind": "synonym"
       },
       {
-        "word": "pflegen",
-        "kind": "derived"
-      },
-      {
         "word": "die Kraft",
         "kind": "compound"
+      },
+      {
+        "word": "pflegen",
+        "kind": "compound"
       }
+    ],
+    "compound_parts": [
+      "pflegen",
+      "die Kraft"
     ]
   },
   {
@@ -36983,6 +37255,10 @@
         "word": "der Reiz",
         "kind": "compound"
       }
+    ],
+    "compound_parts": [
+      "der Reiz",
+      "die Überflutung"
     ]
   },
   {
@@ -37026,6 +37302,10 @@
         "word": "der Schirm",
         "kind": "compound"
       }
+    ],
+    "compound_parts": [
+      "das Bild",
+      "der Schirm"
     ]
   },
   {
