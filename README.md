@@ -54,7 +54,7 @@ After each answer the word card is revealed (definitions, grammar, example sente
 
 ## Adding words — `vocab.py`
 
-Requires Python 3.10+ and an Anthropic API key in `.env`.
+Requires Python 3.10+ and an Anthropic API key (see API key setup).
 
 ```bash
 # Add a new word (AI-assisted — looks up grammar, definitions, examples)
@@ -102,12 +102,16 @@ You confirm or override each suggestion before saving. Related words in the data
 
 ### API key setup
 
-Create a `.env` file in the project folder:
+Keep the key **outside** the repo, in a `Claude_API` folder next to it:
+
 ```
-ANTHROPIC_API_KEY=sk-ant-your-key-here
+Projects/
+├── Claude_API/
+│   └── .env              ANTHROPIC_API_KEY=sk-ant-your-key-here
+└── german_vocabulary/    this repo
 ```
 
-This file is in `.gitignore` and will never be committed.
+`vocab.py` looks there first, then for a `.env` inside the repo, and an `ANTHROPIC_API_KEY` environment variable overrides both. Keeping it outside means it cannot be committed by accident and is not visible to tools that only have access to the repo folder.
 
 ---
 

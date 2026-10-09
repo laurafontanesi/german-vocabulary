@@ -31,7 +31,12 @@ except ImportError:
 VERB_CLASSES = ["regular", "irregular", "mixed"]
 
 DB_PATH  = os.path.join(os.path.dirname(__file__), "words.json")
-ENV_PATH = os.path.join(os.path.dirname(__file__), ".env")
+# The API key lives OUTSIDE the repo, in ../Claude_API/.env, so it can never be
+# committed or read by tools that only see this folder. A .env next to this file
+# or an ANTHROPIC_API_KEY environment variable also work.
+_HERE = os.path.dirname(os.path.abspath(__file__))
+ENV_PATHS = [os.path.join(os.path.dirname(_HERE), "Claude_API", ".env"),
+             os.path.join(_HERE, ".env")]
 
 WORD_TYPES = ["noun", "verb", "adj/adv", "prep/conj", "expression", "construction", "other"]
 GENDERS    = ["der", "die", "das"]
@@ -97,14 +102,17 @@ def clean_topics(raw) -> list:
 # ── env / api key ──────────────────────────────────────────────────────────────
 
 def load_api_key() -> str | None:
-    """Load ANTHROPIC_API_KEY from .env file."""
-    if not os.path.exists(ENV_PATH):
-        return None
-    with open(ENV_PATH) as f:
-        for line in f:
-            line = line.strip()
-            if line.startswith("ANTHROPIC_API_KEY="):
-                return line.split("=", 1)[1].strip()
+    """Load ANTHROPIC_API_KEY: environment variable first, then the .env files in ENV_PATHS."""
+    if os.environ.get("ANTHROPIC_API_KEY"):
+        return os.environ["ANTHROPIC_API_KEY"].strip()
+    for path in ENV_PATHS:
+        if not os.path.exists(path):
+            continue
+        with open(path) as f:
+            for line in f:
+                line = line.strip()
+                if line.startswith("ANTHROPIC_API_KEY="):
+                    return line.split("=", 1)[1].strip().strip('"').strip("'")
     return None
 
 
