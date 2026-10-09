@@ -317,7 +317,7 @@ git push
 # After a batch of additions, check the links are consistent:
 python fix_related.py --db words.json
 
-# Rebuild the Anki import file (see anki/templates.md for the one-time note type setup):
+# Rebuild the Anki deck (needs once: pip install genanki), then double-click anki/deutsch.apkg:
 python anki/make_deck.py
 ```
 

@@ -5,3 +5,4 @@ anki/deutsch.txt
 __pycache__/
 backfill/*
 .venv/
+anki/deutsch.apkg

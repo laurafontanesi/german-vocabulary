@@ -29,6 +29,9 @@
 .hinweis { font-family: -apple-system, Helvetica, sans-serif; font-size: 13px;
            color: #8a8a80; margin-top: 8px; }
 .loesung { color: #c0392b; font-weight: 600; }
+.quelle { font-family: -apple-system, Helvetica, sans-serif; font-size: 11px;
+          color: #8a8a80; margin-top: 10px; }
+.quelle a { color: #8a8a80; }
 hr#answer { border: none; border-top: 1px solid #d8d0c4; margin: 18px 0; }
 input#typeans { font-family: Georgia, serif; font-size: 20px;
                 padding: 6px 10px; border: 1px solid #d8d0c4;

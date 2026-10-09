@@ -8,8 +8,8 @@ Design, so this stays maintainable:
     and a builder function.  Adding an exercise means adding one entry and one
     builder — nothing else changes.
 
-  * EVERY exercise gets the SAME five fields, named <Key>_Frage, _Antwort,
-    _Ganz, _GanzEN, _Hinweis.  The field list therefore never shifts around
+  * EVERY exercise gets the SAME six fields, named <Key>_Frage, _Antwort,
+    _Ganz, _GanzEN, _Hinweis, _Quelle.  The field list therefore never shifts around
     when an exercise changes, which was the old problem.
 
   * Builders return a dict, not a tuple, so a missing key cannot silently
@@ -23,7 +23,13 @@ Lives in anki/ next to its output; words.json and lexicon.py are one level up.
 
 Usage (from the repo root):
     python anki/make_deck.py
-writes anki/deutsch.txt, anki/templates.md and anki/styling.css.
+writes anki/deutsch.apkg (if genanki is installed: pip install genanki), and always
+anki/deutsch.txt, anki/templates.md and anki/styling.css.
+
+deutsch.apkg is the easy way: double-click it and Anki creates the note type with all fields,
+card types and styling, plus the deck. Importing it again later updates the same notes (each
+note's id comes from the word's id in words.json), so your review history is kept.
+The .txt + templates.md route does the same by hand.
 """
 
 import os
@@ -65,7 +71,7 @@ CORE_FIELDS = ['Wort', 'Typ', 'Formen', 'Englisch', 'EnglischKurz',
                'Beispiel', 'BeispielEN', 'Beispiel2', 'Beispiel2EN',
                'Verwandt', 'Notiz']
 
-SLOTS = ['Frage', 'Antwort', 'Ganz', 'GanzEN', 'Hinweis']
+SLOTS = ['Frage', 'Antwort', 'Ganz', 'GanzEN', 'Hinweis', 'Quelle']
 
 ARTICLES = {'der', 'die', 'das', 'den', 'dem', 'des',
             'ein', 'eine', 'einen', 'einem', 'einer', 'eines'}
@@ -196,49 +202,62 @@ def englisch_kurz(w):
 # Each returns a dict with the keys Frage, Antwort, Ganz, GanzEN, Hinweis,
 # or None when the word's data does not support that exercise.
 
-def ex_konjugation(w, ctx):
-    if w.get('type') != 'verb':
-        return None
-    inf = bare(w['word']).lower()
-    for ex in w.get('examples', []):
-        s = ex['de']
-        for key, label in (('past_participle', 'Partizip II'),
-                           ('past_tense', 'Präteritum')):
-            form = (w.get(key) or '').lower().split(' ')[0]
-            if form and re.search(r'\b' + re.escape(form) + r'\b', s, re.I):
-                return dict(Frage=re.sub(r'\b' + re.escape(form) + r'\b', '___', s,
-                                         count=1, flags=re.I),
-                            Antwort=form, Ganz=s, GanzEN=ex.get('en', ''),
-                            Hinweis=label)
-        stem = re.sub(r'(en|n)$', '', inf)
-        if len(stem) >= 3:
-            m = re.search(r'\b(' + re.escape(stem) + r'\w*)\b', s, re.I)
-            if m and m.group(1).lower() != inf:
-                return dict(Frage=s.replace(m.group(1), '___', 1),
-                            Antwort=m.group(1).lower(), Ganz=s,
-                            GanzEN=ex.get('en', ''), Hinweis='Präsens')
-    return None
+# Sentence exercises come from the `exercises` field of words.json (checked by exercise_check.py);
+# these builders only turn one of them into card fields.
+
+CASE_DE = {'AKK': 'Akkusativ', 'DAT': 'Dativ', 'GEN': 'Genitiv'}
 
 
-def ex_kasus(w, ctx):
-    """Only case-marked articles: the citation form is already the EN->DE card."""
-    if w.get('type') != 'noun':
+def gaps(ex):
+    """The sentence with one ___ per hidden word, and the hidden words."""
+    out, last, answers = '', 0, []
+    for a, b in ex['blanks']:
+        out += ex['de'][last:a] + '___'
+        answers.append(ex['de'][a:b])
+        last = b
+    return out + ex['de'][last:], answers
+
+
+def from_exercise(w, slot, hint):
+    ex = next((e for e in w.get('exercises', []) if e['slot'] == slot and e.get('blanks')), None)
+    if not ex:
         return None
-    stem = bare(w['word']).lower()[:5]
-    for ex in w.get('examples', []):
-        toks = ex['de'].split()
-        for i, tok in enumerate(toks[:-1]):
-            art = strip_punct(tok)
-            if art.lower() not in DETERMINERS:
-                continue
-            if art.lower() in ('der', 'die', 'das', 'ein', 'eine'):
-                continue
-            for j in range(i + 1, min(i + 4, len(toks))):
-                if strip_punct(toks[j]).lower().startswith(stem):
-                    return dict(Frage=blank_phrase(ex['de'], art),
-                                Antwort=art.lower(), Ganz=ex['de'],
-                                GanzEN=ex.get('en', ''), Hinweis='')
-    return None
+    frage, answers = gaps(ex)
+    if len(answers) > 1:
+        hint = (hint + ' · ' if hint else '') + f'{len(answers)} Lücken, mit Leerzeichen'
+    src = ex.get('source', '')
+    quelle = ''
+    if src.startswith('tatoeba:'):
+        sid = src.split(':', 1)[1]
+        quelle = (f'Satz von <a href="https://tatoeba.org/en/sentences/show/{sid}">Tatoeba #{sid}</a> '
+                  '(CC BY 2.0 FR)')
+    return dict(Frage=frage, Antwort=' '.join(answers), Ganz=ex['de'], GanzEN=ex.get('en', ''),
+                Hinweis=hint, Quelle=quelle)
+
+
+def meaning_hint(w):
+    d = (w.get('definitions') or [{}])[0].get('meaning', '')
+    return 'Bedeutung: ' + d if d else ''
+
+
+def ex_slot(slot):
+    def build(w, ctx):
+        if slot in ('praet', 'part', 'praes'):
+            return from_exercise(w, slot, w['word'])
+        if slot == 'refl':
+            return from_exercise(w, slot, w['word'] + (' (Dativ)' if w.get('reflexive') == 'dat' else ' (Akkusativ)'))
+        if slot.startswith('kasus'):
+            ex = next((e for e in w.get('exercises', []) if e['slot'] == slot), None)
+            c, n = ((ex or {}).get('form') or ':').split(':')
+            label = f"{CASE_DE.get(c, c)} {'Plural' if n == 'PLU' else 'Singular'}"
+            return from_exercise(w, slot, f'{label} · {w["word"]}')
+        if slot.startswith('adj'):
+            return from_exercise(w, slot, w['word'])
+        # Lücke n: preposition/conjunction (pc n) or construction (cx n). The word itself would
+        # give the answer away, so the hint is its meaning.
+        n = slot[-1]
+        return from_exercise(w, ('cx' if w.get('type') == 'construction' else 'pc') + n, meaning_hint(w))
+    return build
 
 
 def ex_nebensatz(w, ctx):
@@ -277,24 +296,6 @@ def ex_komma(w, ctx):
                     Antwort=strip_punct(vor[-1]) + ', ' + strip_punct(nach[0]),
                     Ganz=s, GanzEN=ex.get('en', ''),
                     Hinweis='Die zwei Wörter um das Komma')
-    return None
-
-
-def ex_adjektiv(w, ctx):
-    if w.get('type') != 'adj/adv':
-        return None
-    base = w['word'].lower()
-    for ex in w.get('examples', []):
-        toks = ex['de'].split()
-        for i, tok in enumerate(toks[:-1]):
-            cand, low = strip_punct(tok), strip_punct(tok).lower()
-            nxt = strip_punct(toks[i + 1])
-            if low.startswith(base) and len(low) > len(base) and nxt[:1].isupper():
-                ending = low[len(base):]
-                if 1 <= len(ending) <= 3:
-                    return dict(Frage=ex['de'].replace(cand, base + '___', 1),
-                                Antwort=ending, Ganz=ex['de'],
-                                GanzEN=ex.get('en', ''), Hinweis='Nur die Endung')
     return None
 
 
@@ -407,19 +408,29 @@ def ex_definition(w, ctx):
 # key, German label shown on the card, pill colour, builder, front hint
 
 EXERCISES = [
-    ('Konj',     'Konjugation',            'verb',   ex_konjugation, ''),
-    ('Kasus',    'Artikel und Kasus',      'noun',   ex_kasus,       'Welcher Artikel?'),
+    ('Praet',    'Präteritum',             'verb',   ex_slot('praet'),  ''),
+    ('Part',     'Partizip II',            'verb',   ex_slot('part'),   ''),
+    ('Praes',    'Präsens (er/sie/es)',    'verb',   ex_slot('praes'),  ''),
+    ('Refl',     'Reflexivpronomen',       'verb',   ex_slot('refl'),   ''),
+    ('Kasus1',   'Kasus',                  'noun',   ex_slot('kasus1'), ''),
+    ('Kasus2',   'Kasus 2',                'noun',   ex_slot('kasus2'), ''),
+    ('AdjArt',   'Adjektiv nach Artikel',  'adjadv', ex_slot('adj_art'), ''),
+    ('AdjDet',   'Adjektiv nach Begleiter', 'adjadv', ex_slot('adj_det'), ''),
+] + [
+    (f'Luecke{n}', f'Lücke {n}',          'other',  ex_slot(f'gap{n}'), '') for n in range(1, 7)
+] + [
     ('Praep',    'Präposition und Kasus',  'verb',   ex_praeposition, 'Lücken füllen'),
     ('Kontrast', 'Welches Wort passt?',    'other',  ex_kontrast,    ''),
     ('Neben',    'Nebensatz: Wortstellung', 'other', ex_nebensatz,   ''),
     ('Komma',    'Komma setzen',           'other',  ex_komma,       ''),
-    ('Adj',      'Adjektivendung',         'adjadv', ex_adjektiv,    ''),
     ('Defin',    'Definition',             'other',  ex_definition,  ''),
 ]
+# sentence exercises: the hint (word, case, meaning) is in the _Hinweis field, shown on the front
+SENTENCE_KEYS = {'Praet', 'Part', 'Praes', 'Refl', 'Kasus1', 'Kasus2', 'AdjArt', 'AdjDet'} | \
+                {f'Luecke{n}' for n in range(1, 7)}
 
 # card order in the deck: grammar first, then the two translation directions
-CARD_ORDER = ['Konj', 'Kasus', 'Praep', 'Kontrast', 'Neben', 'Komma', 'Adj',
-              'Defin', 'Produzieren', 'Bedeutung']
+CARD_ORDER = [k for k, *_ in EXERCISES] + ['Produzieren', 'Bedeutung']
 
 
 def all_fields():
@@ -550,17 +561,30 @@ def templates():
 
     for key, label, pill, _builder, hint in EXERCISES:
         F, A = f'{key}_Frage', f'{key}_Antwort'
-        G, GE, H = f'{key}_Ganz', f'{key}_GanzEN', f'{key}_Hinweis'
-        head = (f'<div class="kopf">{label} '
-                f'<span class="pill {pill}">{{{{{H}}}}}</span></div>'
-                if key in ('Konj',) else
-                f'<div class="kopf">{label}</div>')
+        G, GE, H, Q = f'{key}_Ganz', f'{key}_GanzEN', f'{key}_Hinweis', f'{key}_Quelle'
+        head = f'<div class="kopf">{label.rstrip(" 0123456789")} <span class="pill {pill}">{{{{Typ}}}}</span></div>' \
+            if key in SENTENCE_KEYS else f'<div class="kopf">{label}</div>'
+        if key in SENTENCE_KEYS:
+            front = ['{{#%s}}' % F, head, '<div class="satz">{{%s}}</div>' % F,
+                     '{{#%s}}<div class="en2">{{%s}}</div>{{/%s}}' % (GE, GE, GE),
+                     '<div class="hinweis">{{%s}}</div>' % H,
+                     '{{type:%s}}' % A, '{{/%s}}' % F]
+            back = [head, '<div class="wort">{{Wort}}</div>', '<hr id=answer>',
+                    '{{type:%s}}' % A,
+                    '<div class="satz">{{%s}}</div>' % G,
+                    '{{#%s}}<div class="en2">{{%s}}</div>{{/%s}}' % (GE, GE, GE),
+                    '<div class="en">{{Englisch}}</div>',
+                    word_block(with_second=False),
+                    '{{#%s}}<div class="quelle">{{%s}}</div>{{/%s}}' % (Q, Q, Q),
+                    tts(G)]
+            out[key] = ('\n'.join(front), '\n'.join(back))
+            continue
         front = ['{{#%s}}' % F, head, '<div class="satz">{{%s}}</div>' % F]
         if key in ('Kontrast', 'Defin'):
             front.append('{{#%s}}<div class="hinweis">{{%s}}</div>{{/%s}}' % (H, H, H))
         elif hint:
             front.append('<div class="hinweis">%s</div>' % hint)
-        if key not in ('Konj', 'Kontrast', 'Defin'):
+        if key not in ('Kontrast', 'Defin'):
             front.append('<div class="hinweis">{{Wort}}</div>')
         front += ['{{type:%s}}' % A, '{{/%s}}' % F]
 
@@ -571,30 +595,26 @@ def templates():
                 '{{#%s}}<div class="en2">{{%s}}</div>{{/%s}}' % (GE, GE, GE),
                 word_block(with_second=False),
                 tts(G)]
-        out[label if key != 'Kontrast' else 'Kontrast'] = ('\n'.join(front),
-                                                           '\n'.join(back))
+        out[key] = ('\n'.join(front), '\n'.join(back))
     return out
 
 
 def write_templates(path, fields):
     t = templates()
-    names = {'Konj': 'Konjugation', 'Kasus': 'Artikel und Kasus',
-             'Praep': 'Präposition und Kasus', 'Kontrast': 'Kontrast',
-             'Neben': 'Nebensatz: Wortstellung', 'Komma': 'Komma setzen',
-             'Adj': 'Adjektivendung', 'Defin': 'Definition'}
-    order = [(k, names.get(k, k)) for k in CARD_ORDER]
+    labels = {k: label for k, label, *_ in EXERCISES}
+    labels.update(Produzieren='Produzieren', Bedeutung='Bedeutung')
     with io.open(path, 'w', encoding='utf-8') as f:
         f.write('# Card templates (generated — do not edit by hand)\n\n')
         f.write('Note type: **Deutsch**. Create the %d fields in exactly this '
-                'order, then paste each template.\n\n' % len(fields))
+                'order, then one card type per section below, named as in the heading, '
+                'and paste its front and back.\n\n' % len(fields))
         f.write('## Fields\n\n```\n' + ', '.join(fields) + '\n```\n\n')
         f.write('Tags are column %d.\n\n' % (len(fields) + 1))
-        for i, (key, label) in enumerate(order, 1):
-            name = label if key in names else key
-            tpl = t.get(name) or t.get(key)
+        for i, key in enumerate(CARD_ORDER, 1):
+            tpl = t.get(key)
             if not tpl:
                 continue
-            f.write(f'## {i} — {name}\n\n**Front**\n```html\n{tpl[0]}\n```\n\n'
+            f.write(f'## {i} — {labels[key]}\n\n**Front**\n```html\n{tpl[0]}\n```\n\n'
                     f'**Back**\n```html\n{tpl[1]}\n```\n\n')
 
 
@@ -631,6 +651,9 @@ def write_css(path):
 .hinweis {{ font-family: -apple-system, Helvetica, sans-serif; font-size: 13px;
            color: {p['muted']}; margin-top: 8px; }}
 .loesung {{ color: {p['accent']}; font-weight: 600; }}
+.quelle {{ font-family: -apple-system, Helvetica, sans-serif; font-size: 11px;
+          color: {p['muted']}; margin-top: 10px; }}
+.quelle a {{ color: {p['muted']}; }}
 hr#answer {{ border: none; border-top: 1px solid {p['rule']}; margin: 18px 0; }}
 input#typeans {{ font-family: Georgia, serif; font-size: 20px;
                 padding: 6px 10px; border: 1px solid {p['rule']};
@@ -641,6 +664,34 @@ input#typeans {{ font-family: Georgia, serif; font-size: 20px;
 .typeMissed {{ background: #e9e4d6; color: #6a6356; }}
 """
     io.open(path, 'w', encoding='utf-8').write(css)
+    return css
+
+
+# ── output: a ready-to-import Anki package ────────────────────────────────────
+# Fixed ids: Anki recognises the note type and the deck again on every new import.
+MODEL_ID = 1728311904
+DECK_ID = 1728311905
+
+
+def write_apkg(path, rows, fields, css):
+    try:
+        import genanki
+    except ImportError:
+        return False
+    t = templates()
+    labels = {k: label for k, label, *_ in EXERCISES}
+    labels.update(Produzieren='Produzieren', Bedeutung='Bedeutung')
+    model = genanki.Model(
+        MODEL_ID, 'Deutsch',
+        fields=[{'name': f} for f in fields],
+        templates=[{'name': labels[k], 'qfmt': t[k][0], 'afmt': t[k][1]} for k in CARD_ORDER if k in t],
+        css=css)
+    deck = genanki.Deck(DECK_ID, 'Deutsch')
+    for r, tags in rows:
+        deck.add_note(genanki.Note(model=model, fields=[esc(r[c]) for c in fields],
+                                   tags=tags, guid=genanki.guid_for('deutsch', r['_id'])))
+    genanki.Package(deck).write_to_file(path)
+    return True
 
 
 # ── main ──────────────────────────────────────────────────────────────────────
@@ -664,6 +715,7 @@ def main():
         r, tags, made = build_note(w, ctx)
         for k in made:
             counts[k] += 1
+        r['_id'] = w['id']
         r['_topics'] = w.get('topics', [])
         r['_family'] = [w['family_root']] if w.get('family_root') else []
         r['_related'] = [x['word'] for x in w.get('related', []) if isinstance(x, dict)]
@@ -677,7 +729,8 @@ def main():
     data = os.path.join(args.out_dir, 'deutsch.txt')
     write_data(data, rows, fields)
     write_templates(os.path.join(args.out_dir, 'templates.md'), fields)
-    write_css(os.path.join(args.out_dir, 'styling.css'))
+    css = write_css(os.path.join(args.out_dir, 'styling.css'))
+    apkg = write_apkg(os.path.join(args.out_dir, 'deutsch.apkg'), rows, fields, css)
 
     base = len(rows) * 2
     print(f'{len(rows)} Notizen, {len(fields)} Felder, Tags = Spalte {len(fields)+1}')
@@ -685,7 +738,10 @@ def main():
     for key, label, *_ in EXERCISES:
         print(f'  {label:<24}: {counts[key]}')
     print(f'  insgesamt               : {base + sum(counts.values())}')
-    print(f'\ngeschrieben nach {args.out_dir}/: deutsch.txt, templates.md, styling.css')
+    print(f'\ngeschrieben nach {args.out_dir}/: ' + ('deutsch.apkg, ' if apkg else '')
+          + 'deutsch.txt, templates.md, styling.css')
+    if not apkg:
+        print('(für deutsch.apkg, das Anki direkt importiert: pip install genanki)')
 
 
 if __name__ == '__main__':
