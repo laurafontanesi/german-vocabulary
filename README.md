@@ -136,6 +136,7 @@ Each entry in `words.json` is a JSON object. All entries share these fields:
 | `notes` | string | One-sentence personal note, or null. Register goes here when it is not neutral (`Register: umgangssprachlich.`) |
 | `related` | list | `[{word, kind}]` — semantic links, always bidirectional. `kind` is one of `synonym`, `antonym`, `contrast` (easily confused), `derived` (same stem, other word class), `compound` (one word is part of the other). Verb families are **not** stored here; see `family_root`. |
 | `added` | string | Date added (YYYY-MM-DD) |
+| `exercises` | list | Gap-fill sentences for the practice cards: `[{slot, label, de, en, blanks, source}]`. `blanks` are character spans in `de` (`[[4, 8]]` hides *nahm* in "Ich nahm ein Taxi…"). `slot` says what is tested: `praet`, `part`, `praes` (only stem-changing verbs), `refl` (only reflexive verbs), `kasus1`/`kasus2` (noun with determiner in a case, with `form` such as `DAT:PLU`), `adj_art`/`adj_det` (inflected adjective after an article or after a possessive/dieser/kein), `pc1`…`pc6` (prepositions and conjunctions), `cx1`/`cx2` (constructions). `source` is `own`, `example`, `tatoeba:<sentence id>` or `generated`. Every generated sentence passed `exercise_check.py` |
 
 **Extra fields for nouns:**
 
@@ -269,7 +270,7 @@ java -cp "/path/to/LanguageTool-6.6/libs/*" morfologik.tools.DictDecompile \
 
 **German Wiktionary** (`data/de-extract.jsonl`, CC BY-SA, [kaikki.org/dewiktionary](https://kaikki.org/dewiktionary/)). `vocab.py add` looks up a German definition for each new word (about 15 s, with `grep`), and the file also holds pronunciation (IPA), synonyms, antonyms and idioms for later use.
 
-**Tatoeba sentences** (`data/deu-eng.tsv`, renamed from "Sentence pairs in German-English - <date>.tsv"; `data/deu_sentences.tsv`, CC BY 2.0 FR, [tatoeba.org/downloads](https://tatoeba.org/en/downloads)). Human-written example sentences, used as a source for exercise sentences. For English translations, the custom export "Sentence pairs" German to English.
+**Tatoeba sentences** (`data/deu-eng.tsv`, renamed from "Sentence pairs in German-English - <date>.tsv"; `data/deu_sentences.tsv`, CC BY 2.0 FR, [tatoeba.org/downloads](https://tatoeba.org/en/downloads)). Human-written example sentences, used as a source for exercise sentences. For English translations, the custom export "Sentence pairs" German to English. Exercise sentences taken from Tatoeba keep their sentence id (`source: "tatoeba:699936"`), which is the attribution the licence asks for: the sentence is at `https://tatoeba.org/en/sentences/show/699936`.
 
 ---
 
