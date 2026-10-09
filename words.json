@@ -13,7 +13,12 @@
     "reflexive": false,
     "family_root": "nehmen",
     "prefix": null,
-    "related": [],
+    "related": [
+      {
+        "word": "geben",
+        "kind": "antonym"
+      }
+    ],
     "definitions": [
       {
         "meaning": "to take, to get",
@@ -281,7 +286,15 @@
     "type": "adj/adv",
     "related": [
       {
+        "word": "freilich",
+        "kind": "contrast"
+      },
+      {
         "word": "deprimiert",
+        "kind": "antonym"
+      },
+      {
+        "word": "traurig",
         "kind": "antonym"
       },
       {
@@ -420,12 +433,20 @@
     "added": "2026-04-04",
     "related": [
       {
+        "word": "beenden",
+        "kind": "contrast"
+      },
+      {
         "word": "anfangen",
         "kind": "antonym"
       },
       {
         "word": "fortsetzen",
         "kind": "antonym"
+      },
+      {
+        "word": "aufgeben",
+        "kind": "synonym"
       }
     ]
   },
@@ -509,6 +530,10 @@
     "notes": "spüren = physical/instinctive sensation; empfinden = emotional/reflective feeling; fühlen = general feeling.",
     "added": "2026-04-04",
     "related": [
+      {
+        "word": "spülen",
+        "kind": "contrast"
+      },
       {
         "word": "empfinden",
         "kind": "synonym"
@@ -677,6 +702,10 @@
         "kind": "antonym"
       },
       {
+        "word": "fröhlich",
+        "kind": "antonym"
+      },
+      {
         "word": "glücklich",
         "kind": "antonym"
       }
@@ -794,6 +823,10 @@
       },
       {
         "word": "die Furcht",
+        "kind": "derived"
+      },
+      {
+        "word": "furchtbar",
         "kind": "derived"
       }
     ],
@@ -1110,6 +1143,10 @@
       {
         "word": "müde",
         "kind": "antonym"
+      },
+      {
+        "word": "schlafen",
+        "kind": "antonym"
       }
     ],
     "definitions": [
@@ -1323,6 +1360,10 @@
       {
         "word": "sich erholen",
         "kind": "contrast"
+      },
+      {
+        "word": "sich entspannen",
+        "kind": "synonym"
       }
     ],
     "definitions": [
@@ -1364,8 +1405,16 @@
     "preposition": "von + DAT",
     "related": [
       {
+        "word": "holen",
+        "kind": "contrast"
+      },
+      {
         "word": "sich ausruhen",
         "kind": "contrast"
+      },
+      {
+        "word": "genesen",
+        "kind": "synonym"
       }
     ],
     "definitions": [
@@ -1510,6 +1559,10 @@
       {
         "word": "übernachten",
         "kind": "contrast"
+      },
+      {
+        "word": "verbleiben",
+        "kind": "synonym"
       }
     ]
   },
@@ -1736,6 +1789,14 @@
     "family_root": "geben",
     "related": [
       {
+        "word": "bekommen",
+        "kind": "antonym"
+      },
+      {
+        "word": "nehmen",
+        "kind": "antonym"
+      },
+      {
         "word": "die Hingabe",
         "kind": "derived"
       }
@@ -1753,6 +1814,10 @@
     "is_separable": false,
     "reflexive": false,
     "related": [
+      {
+        "word": "geben",
+        "kind": "antonym"
+      },
       {
         "word": "erhalten",
         "kind": "synonym"
@@ -1799,6 +1864,10 @@
     "related": [
       {
         "word": "besorgen",
+        "kind": "contrast"
+      },
+      {
+        "word": "sich erholen",
         "kind": "contrast"
       }
     ],
@@ -1913,6 +1982,14 @@
       {
         "word": "denken",
         "kind": "contrast"
+      },
+      {
+        "word": "wissen",
+        "kind": "contrast"
+      },
+      {
+        "word": "zweifeln",
+        "kind": "antonym"
       }
     ],
     "definitions": [
@@ -1955,6 +2032,10 @@
       {
         "word": "glauben",
         "kind": "contrast"
+      },
+      {
+        "word": "überlegen",
+        "kind": "synonym"
       }
     ],
     "definitions": [
@@ -2135,6 +2216,10 @@
     "related": [
       {
         "word": "aussehen",
+        "kind": "contrast"
+      },
+      {
+        "word": "erscheinen",
         "kind": "contrast"
       },
       {
@@ -2458,7 +2543,12 @@
     "is_separable": true,
     "reflexive": false,
     "prefix": "zu-",
-    "related": [],
+    "related": [
+      {
+        "word": "zustimmen",
+        "kind": "contrast"
+      }
+    ],
     "definitions": [
       {
         "meaning": "to admit, to confess, to acknowledge",
@@ -3109,6 +3199,10 @@
     "type": "adj/adv",
     "related": [
       {
+        "word": "bereits",
+        "kind": "contrast"
+      },
+      {
         "word": "fertig",
         "kind": "contrast"
       }
@@ -3707,8 +3801,16 @@
     "reflexive": false,
     "related": [
       {
+        "word": "glauben",
+        "kind": "contrast"
+      },
+      {
         "word": "kennen",
         "kind": "contrast"
+      },
+      {
+        "word": "die Wissenschaft",
+        "kind": "derived"
       }
     ],
     "definitions": [
@@ -3789,6 +3891,10 @@
       {
         "word": "allein",
         "kind": "contrast"
+      },
+      {
+        "word": "einzigartig",
+        "kind": "contrast"
       }
     ],
     "definitions": [
@@ -3849,6 +3955,10 @@
     "notes": "unterschiedlich = different (within a group); verschieden = different (between objects); anders = different in a different way entirely.",
     "added": "2026-04-04",
     "related": [
+      {
+        "word": "die Ähnlichkeit",
+        "kind": "antonym"
+      },
       {
         "word": "der Höhenunterschied",
         "kind": "derived"
@@ -4414,6 +4524,10 @@
       {
         "word": "die Beziehung",
         "kind": "contrast"
+      },
+      {
+        "word": "sich verhalten",
+        "kind": "derived"
       }
     ],
     "definitions": [
@@ -4735,7 +4849,12 @@
     "verb_class": "irregular",
     "is_separable": false,
     "reflexive": "akk",
-    "related": [],
+    "related": [
+      {
+        "word": "der Verstand",
+        "kind": "derived"
+      }
+    ],
     "definitions": [
       {
         "meaning": "to get along (with someone), to understand each other",
@@ -4775,6 +4894,10 @@
     "related": [
       {
         "word": "anlügen",
+        "kind": "contrast"
+      },
+      {
+        "word": "liegen",
         "kind": "contrast"
       },
       {
@@ -5164,6 +5287,10 @@
       {
         "word": "die Stimme",
         "kind": "contrast"
+      },
+      {
+        "word": "stimmen",
+        "kind": "derived"
       }
     ]
   },
@@ -5277,6 +5404,10 @@
     "related": [
       {
         "word": "aufwachen",
+        "kind": "antonym"
+      },
+      {
+        "word": "wach",
         "kind": "antonym"
       }
     ]
@@ -5681,6 +5812,10 @@
         "kind": "contrast"
       },
       {
+        "word": "kauen",
+        "kind": "contrast"
+      },
+      {
         "word": "verkaufen",
         "kind": "antonym"
       }
@@ -5828,6 +5963,14 @@
         "kind": "contrast"
       },
       {
+        "word": "schieben",
+        "kind": "contrast"
+      },
+      {
+        "word": "ziehen",
+        "kind": "antonym"
+      },
+      {
         "word": "der Ausdruck",
         "kind": "derived"
       }
@@ -5928,6 +6071,10 @@
     "reflexive": false,
     "related": [
       {
+        "word": "vermeiden",
+        "kind": "contrast"
+      },
+      {
         "word": "mieten",
         "kind": "antonym"
       },
@@ -5996,7 +6143,12 @@
     "notes": null,
     "added": "2026-04-04",
     "family_root": "schwitzen",
-    "related": []
+    "related": [
+      {
+        "word": "frieren",
+        "kind": "antonym"
+      }
+    ]
   },
   {
     "id": "frühstücken",
@@ -6085,7 +6237,12 @@
     "reflexive": false,
     "prefix": "vor-",
     "family_root": "lesen",
-    "related": [],
+    "related": [
+      {
+        "word": "die Vorlesung",
+        "kind": "contrast"
+      }
+    ],
     "definitions": [
       {
         "meaning": "to read aloud (to someone)",
@@ -6144,6 +6301,10 @@
     "added": "2026-04-04",
     "family_root": "schreiben",
     "related": [
+      {
+        "word": "schreien",
+        "kind": "contrast"
+      },
       {
         "word": "die Aufschrift",
         "kind": "derived"
@@ -6328,7 +6489,16 @@
     "is_separable": false,
     "reflexive": false,
     "family_root": "ziehen",
-    "related": []
+    "related": [
+      {
+        "word": "drücken",
+        "kind": "antonym"
+      },
+      {
+        "word": "schieben",
+        "kind": "antonym"
+      }
+    ]
   },
   {
     "id": "stehen",
@@ -6376,6 +6546,10 @@
     "reflexive": false,
     "family_root": "stehen",
     "related": [
+      {
+        "word": "liegen",
+        "kind": "contrast"
+      },
       {
         "word": "stellen",
         "kind": "contrast"
@@ -6636,7 +6810,12 @@
     "added": "2026-04-05 19:06:00",
     "gender": "das",
     "plural": "die Ereignisse",
-    "related": []
+    "related": [
+      {
+        "word": "sich ereignen",
+        "kind": "derived"
+      }
+    ]
   },
   {
     "id": "sich-erweisen",
@@ -6967,6 +7146,10 @@
       {
         "word": "gespannt",
         "kind": "contrast"
+      },
+      {
+        "word": "sich ausruhen",
+        "kind": "synonym"
       },
       {
         "word": "entspannt",
@@ -7487,6 +7670,10 @@
     "notes": "die Feuchtigkeit = moisture, humidity. feuchtes Wetter = damp weather.",
     "related": [
       {
+        "word": "trocken",
+        "kind": "antonym"
+      },
+      {
         "word": "die Luftfeuchtigkeit",
         "kind": "derived"
       }
@@ -7642,7 +7829,12 @@
       "nature & weather"
     ],
     "notes": "Two uses: (1) es friert mich / ich friere = I'm cold; (2) es friert = it's freezing (water turns to ice). gefroren = frozen.",
-    "related": [],
+    "related": [
+      {
+        "word": "schwitzen",
+        "kind": "antonym"
+      }
+    ],
     "family_root": "frieren",
     "added": "2026-04-06 10:18:00"
   },
@@ -7749,6 +7941,14 @@
       {
         "word": "liegen",
         "kind": "contrast"
+      },
+      {
+        "word": "setzen",
+        "kind": "contrast"
+      },
+      {
+        "word": "stellen",
+        "kind": "contrast"
       }
     ],
     "added": "2026-04-06 11:02:00"
@@ -7786,7 +7986,12 @@
       "change & development"
     ],
     "notes": "Root of verschwinden (to disappear) and schwinden (to fade). More literary than verschwinden. Register: formell / gehoben.",
-    "related": [],
+    "related": [
+      {
+        "word": "wachsen",
+        "kind": "antonym"
+      }
+    ],
     "added": "2026-04-06 11:03:00"
   },
   {
@@ -7824,6 +8029,10 @@
     ],
     "notes": "Past participle verschwunden is also commonly used as an adjective: 'das verschwundene Kind' (the missing child).",
     "related": [
+      {
+        "word": "verschwenden",
+        "kind": "contrast"
+      },
       {
         "word": "auftauchen",
         "kind": "antonym"
@@ -8043,7 +8252,12 @@
       "body & health"
     ],
     "notes": "den Kopf schütteln = to shake one's head (disagreement). die Hand schütteln = to shake hands.",
-    "related": [],
+    "related": [
+      {
+        "word": "nicken",
+        "kind": "antonym"
+      }
+    ],
     "added": "2026-04-06 11:10:00"
   },
   {
@@ -8227,7 +8441,12 @@
       "body & health"
     ],
     "notes": "Opposite: den Kopf schütteln (to shake one's head = disagree).",
-    "related": [],
+    "related": [
+      {
+        "word": "schütteln",
+        "kind": "antonym"
+      }
+    ],
     "added": "2026-04-06 11:15:00"
   },
   {
@@ -8799,7 +9018,12 @@
       "nature & weather"
     ],
     "notes": "Onomatopoeic — sounds like what it describes. das Knistern = crackling/rustling (noun).",
-    "related": [],
+    "related": [
+      {
+        "word": "knittern",
+        "kind": "contrast"
+      }
+    ],
     "added": "2026-04-06 11:33:00"
   },
   {
@@ -9113,6 +9337,10 @@
     ],
     "notes": "spülen = to rinse/wash up by hand; abwaschen = same meaning. der Geschirrspüler = dishwasher.",
     "related": [
+      {
+        "word": "spüren",
+        "kind": "contrast"
+      },
       {
         "word": "die Spüle",
         "kind": "derived"
@@ -9652,6 +9880,10 @@
       {
         "word": "der Reiz",
         "kind": "contrast"
+      },
+      {
+        "word": "der Stimulus",
+        "kind": "synonym"
       }
     ],
     "added": "2026-04-06 12:10:00"
@@ -10169,6 +10401,10 @@
     "notes": "Opposite: arm (poor). reich an + DAT = rich in something. das Reich = empire/realm (different word).",
     "related": [
       {
+        "word": "reichen",
+        "kind": "contrast"
+      },
+      {
         "word": "arm",
         "kind": "antonym"
       },
@@ -10313,6 +10549,10 @@
     ],
     "notes": "das Geschenk = gift. schenken = to give as a gift (to a specific person); verschenken = to give away (sometimes implies giving something away for free/unnecessarily).",
     "related": [
+      {
+        "word": "schicken",
+        "kind": "contrast"
+      },
       {
         "word": "verschenken",
         "kind": "contrast"
@@ -10479,6 +10719,10 @@
     "related": [
       {
         "word": "dennoch",
+        "kind": "contrast"
+      },
+      {
+        "word": "trotzdem",
         "kind": "contrast"
       },
       {
@@ -11091,6 +11335,10 @@
       {
         "word": "das Verhalten",
         "kind": "derived"
+      },
+      {
+        "word": "das Verhältnis",
+        "kind": "derived"
       }
     ],
     "added": "2026-04-06 14:13:00"
@@ -11352,12 +11600,20 @@
     "notes": "stellen = to place upright (vs legen = flat, setzen = seat). Key phrases: eine Frage stellen = ask a question; sich vorstellen = introduce oneself; zur Verfügung stellen = to make available; sich stellen = to present oneself / turn oneself in.",
     "related": [
       {
+        "word": "legen",
+        "kind": "contrast"
+      },
+      {
         "word": "setzen",
         "kind": "contrast"
       },
       {
         "word": "stehen",
         "kind": "contrast"
+      },
+      {
+        "word": "die Stelle",
+        "kind": "derived"
       }
     ],
     "added": "2026-04-06 14:19:00"
@@ -11566,6 +11822,10 @@
       {
         "word": "die Stimme",
         "kind": "derived"
+      },
+      {
+        "word": "die Stimmung",
+        "kind": "derived"
       }
     ],
     "added": "2026-04-06 14:24:00"
@@ -11702,6 +11962,10 @@
         "kind": "contrast"
       },
       {
+        "word": "zugeben",
+        "kind": "contrast"
+      },
+      {
         "word": "widersprechen",
         "kind": "antonym"
       },
@@ -11787,6 +12051,10 @@
     ],
     "notes": "Three meanings: (1) linguistic expression/term; (2) facial expression; (3) printout. die Ausdrucksweise = way of expressing oneself.",
     "related": [
+      {
+        "word": "der Begriff",
+        "kind": "synonym"
+      },
       {
         "word": "drucken",
         "kind": "derived"
@@ -12651,6 +12919,14 @@
         "kind": "contrast"
       },
       {
+        "word": "betrachten",
+        "kind": "synonym"
+      },
+      {
+        "word": "gucken",
+        "kind": "synonym"
+      },
+      {
         "word": "schauen",
         "kind": "synonym"
       }
@@ -12844,6 +13120,10 @@
       {
         "word": "heißen",
         "kind": "contrast"
+      },
+      {
+        "word": "bezeichnen",
+        "kind": "synonym"
       }
     ],
     "added": "2026-04-07 10:22:00"
@@ -12965,6 +13245,10 @@
     ],
     "notes": "beenden = to finish/complete (implies a natural end); abschließen = to conclude/close; stoppen = to stop (abruptly).",
     "related": [
+      {
+        "word": "aufhören",
+        "kind": "contrast"
+      },
       {
         "word": "stoppen",
         "kind": "contrast"
@@ -13316,6 +13600,10 @@
       {
         "word": "die Begründung",
         "kind": "derived"
+      },
+      {
+        "word": "gründen",
+        "kind": "derived"
       }
     ],
     "added": "2026-04-07 10:33:00"
@@ -13413,6 +13701,10 @@
     "notes": "deshalb, deswegen, daher, darum — all mean 'therefore/that's why' and are largely interchangeable in everyday use.",
     "related": [
       {
+        "word": "trotzdem",
+        "kind": "contrast"
+      },
+      {
         "word": "weil",
         "kind": "contrast"
       },
@@ -13488,6 +13780,14 @@
     ],
     "notes": "trotzdem = nevertheless (adverb, main clause). trotz + GEN = despite (preposition). obwohl + verb-final clause = although (conjunction).",
     "related": [
+      {
+        "word": "deshalb",
+        "kind": "contrast"
+      },
+      {
+        "word": "deswegen",
+        "kind": "contrast"
+      },
       {
         "word": "obwohl",
         "kind": "contrast"
@@ -13583,7 +13883,16 @@
     ],
     "topics": [],
     "notes": "auf die lange Bank schieben = to procrastinate, to keep putting something off (idiom).",
-    "related": [],
+    "related": [
+      {
+        "word": "drücken",
+        "kind": "contrast"
+      },
+      {
+        "word": "ziehen",
+        "kind": "antonym"
+      }
+    ],
     "added": "2026-04-07 10:40:00"
   },
   {
@@ -14202,6 +14511,10 @@
     "notes": "weil + verb-final clause. Very common. Different from denn (which keeps normal word order). Colloquially, weil is sometimes used with normal word order: 'Ich bleibe zuhause, weil es regnet.' is correct; 'weil es regnet.' has verb at end.",
     "related": [
       {
+        "word": "aufgrund",
+        "kind": "contrast"
+      },
+      {
         "word": "da",
         "kind": "contrast"
       },
@@ -14211,6 +14524,10 @@
       },
       {
         "word": "deshalb",
+        "kind": "contrast"
+      },
+      {
+        "word": "obwohl",
         "kind": "contrast"
       },
       {
@@ -14256,6 +14573,10 @@
         "kind": "contrast"
       },
       {
+        "word": "trotz",
+        "kind": "contrast"
+      },
+      {
         "word": "weil",
         "kind": "contrast"
       }
@@ -14292,6 +14613,14 @@
       {
         "word": "wegen",
         "kind": "contrast"
+      },
+      {
+        "word": "weil",
+        "kind": "contrast"
+      },
+      {
+        "word": "infolge",
+        "kind": "synonym"
       }
     ],
     "added": "2026-04-07 10:58:00"
@@ -14396,6 +14725,10 @@
         "kind": "contrast"
       },
       {
+        "word": "aufgrund",
+        "kind": "synonym"
+      },
+      {
         "word": "die Folge",
         "kind": "derived"
       }
@@ -14431,6 +14764,10 @@
     "related": [
       {
         "word": "obwohl",
+        "kind": "contrast"
+      },
+      {
+        "word": "wegen",
         "kind": "contrast"
       },
       {
@@ -14473,6 +14810,10 @@
       },
       {
         "word": "trotzdem",
+        "kind": "contrast"
+      },
+      {
+        "word": "weil",
         "kind": "contrast"
       },
       {
@@ -14707,7 +15048,12 @@
       "quantity & comparison"
     ],
     "notes": null,
-    "related": [],
+    "related": [
+      {
+        "word": "knapp",
+        "kind": "synonym"
+      }
+    ],
     "added": "2026-04-07 12:04:00"
   },
   {
@@ -14751,7 +15097,16 @@
       "quantity & comparison"
     ],
     "notes": "'Es reicht!' = That's enough! / I've had enough! (can express frustration). reich = rich (different word, no relation).",
-    "related": [],
+    "related": [
+      {
+        "word": "reich",
+        "kind": "contrast"
+      },
+      {
+        "word": "riechen",
+        "kind": "contrast"
+      }
+    ],
     "added": "2026-04-07 12:05:00"
   },
   {
@@ -14975,6 +15330,10 @@
     "notes": "ähneln + DAT = to resemble. ähnlich sein + DAT = same meaning but adjectival.",
     "related": [
       {
+        "word": "ahnen",
+        "kind": "contrast"
+      },
+      {
         "word": "die Ähnlichkeit",
         "kind": "derived"
       },
@@ -15013,6 +15372,10 @@
     ],
     "notes": null,
     "related": [
+      {
+        "word": "der Unterschied",
+        "kind": "antonym"
+      },
       {
         "word": "ähneln",
         "kind": "derived"
@@ -15281,6 +15644,10 @@
     "topics": [],
     "notes": "die Verschwendung = waste. Wegwerfgesellschaft = throwaway society.",
     "related": [
+      {
+        "word": "verschwinden",
+        "kind": "contrast"
+      },
       {
         "word": "vergeuden",
         "kind": "synonym"
@@ -15656,7 +16023,12 @@
     ],
     "topics": [],
     "notes": "versinken implies complete submersion or total absorption. in Gedanken versinken = to be lost in thought.",
-    "related": [],
+    "related": [
+      {
+        "word": "versenken",
+        "kind": "contrast"
+      }
+    ],
     "added": "2026-04-07 12:27:00"
   },
   {
@@ -15700,6 +16072,10 @@
       {
         "word": "erhöhen",
         "kind": "antonym"
+      },
+      {
+        "word": "heben",
+        "kind": "antonym"
       }
     ],
     "added": "2026-04-07 12:28:00",
@@ -15740,7 +16116,12 @@
     ],
     "topics": [],
     "notes": "versenken = to sink something (transitive); versinken = to sink by itself (intransitive).",
-    "related": [],
+    "related": [
+      {
+        "word": "versinken",
+        "kind": "contrast"
+      }
+    ],
     "added": "2026-04-07 12:29:00"
   },
   {
@@ -16559,6 +16940,10 @@
     "notes": "witzig = funny/witty. lustig = funny/jolly (more about general fun). der Witz = joke.",
     "related": [
       {
+        "word": "winzig",
+        "kind": "contrast"
+      },
+      {
         "word": "ernst",
         "kind": "antonym"
       }
@@ -17028,7 +17413,12 @@
       "body & health"
     ],
     "notes": "die Wäsche waschen = to do the laundry. die Waschmaschine = washing machine.",
-    "related": [],
+    "related": [
+      {
+        "word": "wachsen",
+        "kind": "contrast"
+      }
+    ],
     "added": "2026-04-07 13:02:00"
   },
   {
@@ -17519,6 +17909,10 @@
     ],
     "notes": "Opposite: nass. trocknen = to dry (verb). abtrocknen = to dry off.",
     "related": [
+      {
+        "word": "feucht",
+        "kind": "antonym"
+      },
       {
         "word": "nass",
         "kind": "antonym"
@@ -18254,6 +18648,14 @@
       {
         "word": "legen",
         "kind": "contrast"
+      },
+      {
+        "word": "lügen",
+        "kind": "contrast"
+      },
+      {
+        "word": "stehen",
+        "kind": "contrast"
       }
     ],
     "added": "2026-04-07 14:22:00"
@@ -18492,6 +18894,10 @@
     "notes": "abfahren = to depart (scheduled transport). die Abfahrt = departure. Opposite: ankommen.",
     "related": [
       {
+        "word": "abreisen",
+        "kind": "contrast"
+      },
+      {
         "word": "aussteigen",
         "kind": "contrast"
       },
@@ -18541,6 +18947,10 @@
     ],
     "notes": "abreisen = to depart on a journey (people); abfahren = departure of transport. die Abreise = departure.",
     "related": [
+      {
+        "word": "abfahren",
+        "kind": "contrast"
+      },
       {
         "word": "anreisen",
         "kind": "antonym"
@@ -18742,7 +19152,12 @@
     ],
     "topics": [],
     "notes": "vermeiden = to avoid (transitive). unvermeidlich = unavoidable.",
-    "related": [],
+    "related": [
+      {
+        "word": "vermieten",
+        "kind": "contrast"
+      }
+    ],
     "added": "2026-04-07 14:34:00"
   },
   {
@@ -18883,6 +19298,10 @@
         "kind": "contrast"
       },
       {
+        "word": "vorletzte",
+        "kind": "contrast"
+      },
+      {
         "word": "nächste",
         "kind": "antonym"
       }
@@ -18916,6 +19335,10 @@
     ],
     "notes": null,
     "related": [
+      {
+        "word": "letzte",
+        "kind": "contrast"
+      },
       {
         "word": "übernächste",
         "kind": "contrast"
@@ -20650,6 +21073,10 @@
       {
         "word": "die Arbeit",
         "kind": "contrast"
+      },
+      {
+        "word": "stellen",
+        "kind": "derived"
       }
     ],
     "added": "2026-04-07 16:04:00"
@@ -21234,7 +21661,12 @@
       "science & academia"
     ],
     "notes": "die Vorlesung = university lecture (professor reads/presents). das Seminar = seminar. der Vortrag = talk/presentation.",
-    "related": [],
+    "related": [
+      {
+        "word": "vorlesen",
+        "kind": "contrast"
+      }
+    ],
     "added": "2026-04-07 16:20:00"
   },
   {
@@ -21497,6 +21929,10 @@
       {
         "word": "die Forschung",
         "kind": "contrast"
+      },
+      {
+        "word": "wissen",
+        "kind": "derived"
       }
     ],
     "added": "2026-04-07 16:28:00"
@@ -21806,6 +22242,10 @@
         "kind": "synonym"
       },
       {
+        "word": "die Untersuchung",
+        "kind": "synonym"
+      },
+      {
         "word": "erforschen",
         "kind": "derived"
       }
@@ -21899,6 +22339,10 @@
     ],
     "notes": null,
     "related": [
+      {
+        "word": "die Erforschung",
+        "kind": "synonym"
+      },
       {
         "word": "die Recherche",
         "kind": "synonym"
@@ -22107,6 +22551,10 @@
       {
         "word": "der Geist",
         "kind": "synonym"
+      },
+      {
+        "word": "sich verstehen",
+        "kind": "derived"
       }
     ],
     "added": "2026-04-07 16:43:00"
@@ -22527,7 +22975,12 @@
       "body & health"
     ],
     "notes": "das Gesicht wahren = to save face. das Gesicht verlieren = to lose face. der Gesichtsausdruck = facial expression.",
-    "related": [],
+    "related": [
+      {
+        "word": "das Gedicht",
+        "kind": "contrast"
+      }
+    ],
     "added": "2026-04-07 16:55:00"
   },
   {
@@ -23308,6 +23761,10 @@
     "notes": "zwängen = to squeeze/cram. sich zwängen = to squeeze oneself through. Not to be confused with zwingen (to force/compel).",
     "related": [
       {
+        "word": "zwingen",
+        "kind": "contrast"
+      },
+      {
         "word": "der Zwang",
         "kind": "derived"
       }
@@ -23468,7 +23925,12 @@
       "society & politics"
     ],
     "notes": "Krieg führen = to wage war. im Krieg = at war. der Weltkrieg = world war. der Krieger = warrior.",
-    "related": [],
+    "related": [
+      {
+        "word": "kriegen",
+        "kind": "contrast"
+      }
+    ],
     "added": "2026-04-07 17:21:00"
   },
   {
@@ -23540,6 +24002,10 @@
     ],
     "notes": "der Überlebende = survivor. überleben = to survive (transitive and intransitive).",
     "related": [
+      {
+        "word": "überlegen",
+        "kind": "contrast"
+      },
       {
         "word": "sterben",
         "kind": "antonym"
@@ -23822,6 +24288,10 @@
     "notes": "schicken and senden both mean to send. schicken is more everyday/colloquial; senden is slightly more formal.",
     "related": [
       {
+        "word": "schenken",
+        "kind": "contrast"
+      },
+      {
         "word": "senden",
         "kind": "synonym"
       }
@@ -23980,7 +24450,16 @@
       "change & development"
     ],
     "notes": "Takes sein. einer Sache gewachsen sein = to be equal to / up to something. das Wachstum = growth.",
-    "related": [],
+    "related": [
+      {
+        "word": "waschen",
+        "kind": "contrast"
+      },
+      {
+        "word": "schwinden",
+        "kind": "antonym"
+      }
+    ],
     "added": "2026-04-07 17:34:00"
   },
   {
@@ -24184,7 +24663,15 @@
     "notes": "furchtbar = terrible/awful. Also used as intensifier: furchtbar schön = terribly beautiful. die Furcht = fear (root word).",
     "related": [
       {
+        "word": "erschreckend",
+        "kind": "synonym"
+      },
+      {
         "word": "die Furcht",
+        "kind": "derived"
+      },
+      {
+        "word": "sich fürchten",
         "kind": "derived"
       }
     ],
@@ -24288,7 +24775,12 @@
       "language & communication"
     ],
     "notes": "die Beschreibung = description. beschreiben = to describe.",
-    "related": [],
+    "related": [
+      {
+        "word": "beschreiten",
+        "kind": "contrast"
+      }
+    ],
     "added": "2026-04-07 17:43:00"
   },
   {
@@ -24415,7 +24907,12 @@
       "emotions & character"
     ],
     "notes": "erschreckend = alarming/shocking. erschrecken = to frighten/startle. erschrocken = startled/shocked.",
-    "related": [],
+    "related": [
+      {
+        "word": "furchtbar",
+        "kind": "synonym"
+      }
+    ],
     "added": "2026-04-07 17:47:00"
   },
   {
@@ -24566,7 +25063,12 @@
     "is_separable": false,
     "reflexive": "akk",
     "family_root": "zeigen",
-    "related": []
+    "related": [
+      {
+        "word": "verstecken",
+        "kind": "antonym"
+      }
+    ]
   },
   {
     "id": "frappant",
@@ -24845,6 +25347,10 @@
     "family_root": "knittern",
     "related": [
       {
+        "word": "knistern",
+        "kind": "contrast"
+      },
+      {
         "word": "zerknittert",
         "kind": "derived"
       }
@@ -24969,7 +25475,12 @@
     "reflexive": "akk",
     "family_root": "eilen",
     "prefix": "be-",
-    "related": []
+    "related": [
+      {
+        "word": "zögern",
+        "kind": "antonym"
+      }
+    ]
   },
   {
     "id": "noetigen",
@@ -25013,6 +25524,10 @@
       {
         "word": "nötig",
         "kind": "contrast"
+      },
+      {
+        "word": "zwingen",
+        "kind": "synonym"
       }
     ]
   },
@@ -25830,7 +26345,12 @@
       "quantity & comparison"
     ],
     "notes": null,
-    "related": [],
+    "related": [
+      {
+        "word": "spärlich",
+        "kind": "synonym"
+      }
+    ],
     "added": "2026-04-10 10:02:00"
   },
   {
@@ -26167,7 +26687,12 @@
       "body & health"
     ],
     "notes": null,
-    "related": [],
+    "related": [
+      {
+        "word": "reichen",
+        "kind": "contrast"
+      }
+    ],
     "added": "2026-04-10 10:12:00",
     "auxiliary": "haben",
     "past_tense": "roch",
@@ -26203,7 +26728,12 @@
       "body & health"
     ],
     "notes": null,
-    "related": [],
+    "related": [
+      {
+        "word": "kaufen",
+        "kind": "contrast"
+      }
+    ],
     "added": "2026-04-10 10:13:00",
     "auxiliary": "haben",
     "past_tense": "kaute",
@@ -26281,7 +26811,12 @@
     ],
     "topics": [],
     "notes": null,
-    "related": [],
+    "related": [
+      {
+        "word": "senken",
+        "kind": "antonym"
+      }
+    ],
     "added": "2026-04-10 10:15:00",
     "auxiliary": "haben",
     "past_tense": "hob",
@@ -26669,6 +27204,14 @@
       {
         "word": "anschreien",
         "kind": "contrast"
+      },
+      {
+        "word": "schreiben",
+        "kind": "contrast"
+      },
+      {
+        "word": "flüstern",
+        "kind": "antonym"
       }
     ],
     "added": "2026-04-10 10:26:00",
@@ -26748,6 +27291,10 @@
     ],
     "notes": "Common in northern and central Germany; in southern Germany and Austria 'schauen' is preferred. Register: umgangssprachlich.",
     "related": [
+      {
+        "word": "anschauen",
+        "kind": "synonym"
+      },
       {
         "word": "schauen",
         "kind": "synonym"
@@ -27815,6 +28362,10 @@
     "notes": null,
     "related": [
       {
+        "word": "betrachten",
+        "kind": "contrast"
+      },
+      {
         "word": "der Beobachter",
         "kind": "derived"
       }
@@ -28043,7 +28594,12 @@
       "work & jobs"
     ],
     "notes": null,
-    "related": [],
+    "related": [
+      {
+        "word": "der Grund",
+        "kind": "derived"
+      }
+    ],
     "added": "2026-04-10 11:21:00",
     "auxiliary": "haben",
     "past_tense": "gründete",
@@ -28124,6 +28680,10 @@
     ],
     "notes": null,
     "related": [
+      {
+        "word": "nennen",
+        "kind": "synonym"
+      },
       {
         "word": "die Bezeichnung",
         "kind": "derived"
@@ -28245,6 +28805,10 @@
     "topics": [],
     "notes": "Very common in colloquial speech; in formal writing bekommen or erhalten are preferred. Register: umgangssprachlich.",
     "related": [
+      {
+        "word": "der Krieg",
+        "kind": "contrast"
+      },
       {
         "word": "bekommen",
         "kind": "synonym"
@@ -28368,6 +28932,10 @@
     ],
     "notes": null,
     "related": [
+      {
+        "word": "witzig",
+        "kind": "contrast"
+      },
       {
         "word": "riesig",
         "kind": "antonym"
@@ -29049,6 +29617,14 @@
       {
         "word": "geschehen",
         "kind": "synonym"
+      },
+      {
+        "word": "passieren",
+        "kind": "synonym"
+      },
+      {
+        "word": "das Ereignis",
+        "kind": "derived"
       }
     ]
   },
@@ -29185,7 +29761,12 @@
     "added": "2026-06-08 19:04:37",
     "gender": "die",
     "plural": "die Abgase",
-    "related": []
+    "related": [
+      {
+        "word": "die Abgabe",
+        "kind": "contrast"
+      }
+    ]
   },
   {
     "id": "es-ist-schon-besser-geworden",
@@ -29407,6 +29988,10 @@
     "preposition": "an + DAT",
     "family_root": "zweifeln",
     "related": [
+      {
+        "word": "glauben",
+        "kind": "antonym"
+      },
       {
         "word": "der Zweifel",
         "kind": "derived"
@@ -29683,8 +30268,16 @@
     "prefix": "er-",
     "related": [
       {
+        "word": "scheinen",
+        "kind": "contrast"
+      },
+      {
         "word": "verschwinden",
         "kind": "antonym"
+      },
+      {
+        "word": "auftauchen",
+        "kind": "synonym"
       }
     ]
   },
@@ -29901,7 +30494,12 @@
     "reflexive": false,
     "preposition": "auf + AKK",
     "family_root": "starren",
-    "related": []
+    "related": [
+      {
+        "word": "staunen",
+        "kind": "contrast"
+      }
+    ]
   },
   {
     "id": "basteln",
@@ -30773,7 +31371,12 @@
     "is_separable": false,
     "reflexive": false,
     "family_root": "keuchen",
-    "related": []
+    "related": [
+      {
+        "word": "schnaufen",
+        "kind": "synonym"
+      }
+    ]
   },
   {
     "id": "trommeln",
@@ -31025,6 +31628,10 @@
       {
         "word": "erkranken",
         "kind": "antonym"
+      },
+      {
+        "word": "sich erholen",
+        "kind": "synonym"
       }
     ]
   },
@@ -31067,6 +31674,10 @@
     "reflexive": false,
     "family_root": "ahnen",
     "related": [
+      {
+        "word": "ähneln",
+        "kind": "contrast"
+      },
       {
         "word": "die Ahnung",
         "kind": "derived"
@@ -31160,7 +31771,12 @@
     "is_separable": false,
     "reflexive": false,
     "family_root": "schnauben",
-    "related": []
+    "related": [
+      {
+        "word": "schnaufen",
+        "kind": "contrast"
+      }
+    ]
   },
   {
     "id": "der-unsinn",
@@ -31568,6 +32184,10 @@
     "prefix": "be-",
     "related": [
       {
+        "word": "beschreiben",
+        "kind": "contrast"
+      },
+      {
         "word": "betreten",
         "kind": "contrast"
       },
@@ -31617,6 +32237,14 @@
     "reflexive": false,
     "family_root": "zwingen",
     "related": [
+      {
+        "word": "zwängen",
+        "kind": "contrast"
+      },
+      {
+        "word": "nötigen",
+        "kind": "synonym"
+      },
       {
         "word": "der Zwang",
         "kind": "derived"
@@ -31750,7 +32378,20 @@
     "reflexive": false,
     "family_root": "geben",
     "prefix": "auf-",
-    "related": []
+    "related": [
+      {
+        "word": "aufheben",
+        "kind": "contrast"
+      },
+      {
+        "word": "fortsetzen",
+        "kind": "antonym"
+      },
+      {
+        "word": "aufhören",
+        "kind": "synonym"
+      }
+    ]
   },
   {
     "id": "die-ahnung",
@@ -31822,7 +32463,12 @@
     "notes": null,
     "added": "2026-06-10 09:54:49",
     "usage": "adverb only",
-    "related": []
+    "related": [
+      {
+        "word": "bereit",
+        "kind": "contrast"
+      }
+    ]
   },
   {
     "id": "der-lappen",
@@ -32111,6 +32757,10 @@
     "prefix": "ver-",
     "related": [
       {
+        "word": "sich zeigen",
+        "kind": "antonym"
+      },
+      {
         "word": "das Versteck",
         "kind": "derived"
       }
@@ -32329,7 +32979,12 @@
     "notes": "Often used to express concession while maintaining one's position in an argument.",
     "added": "2026-06-10 10:11:43",
     "usage": "adverb only",
-    "related": []
+    "related": [
+      {
+        "word": "fröhlich",
+        "kind": "contrast"
+      }
+    ]
   },
   {
     "id": "die-arbeitslosigkeit",
@@ -32441,7 +33096,12 @@
     "is_separable": false,
     "reflexive": false,
     "family_root": "flüstern",
-    "related": []
+    "related": [
+      {
+        "word": "schreien",
+        "kind": "antonym"
+      }
+    ]
   },
   {
     "id": "der-wecker",
@@ -32754,7 +33414,12 @@
     "reflexive": false,
     "family_root": "heben",
     "prefix": "auf-",
-    "related": []
+    "related": [
+      {
+        "word": "aufgeben",
+        "kind": "contrast"
+      }
+    ]
   },
   {
     "id": "offensichtlich",
@@ -32970,7 +33635,16 @@
     "is_separable": false,
     "reflexive": false,
     "family_root": "schnaufen",
-    "related": []
+    "related": [
+      {
+        "word": "schnauben",
+        "kind": "contrast"
+      },
+      {
+        "word": "keuchen",
+        "kind": "synonym"
+      }
+    ]
   },
   {
     "id": "die-ameise",
@@ -33192,7 +33866,16 @@
     "is_separable": false,
     "reflexive": false,
     "family_root": "betrachten",
-    "related": []
+    "related": [
+      {
+        "word": "beobachten",
+        "kind": "contrast"
+      },
+      {
+        "word": "anschauen",
+        "kind": "synonym"
+      }
+    ]
   },
   {
     "id": "staunen",
@@ -33233,7 +33916,12 @@
     "reflexive": false,
     "preposition": "über + AKK",
     "family_root": "staunen",
-    "related": []
+    "related": [
+      {
+        "word": "starren",
+        "kind": "contrast"
+      }
+    ]
   },
   {
     "id": "gedeihen",
@@ -33591,6 +34279,10 @@
     "family_root": "setzen",
     "related": [
       {
+        "word": "legen",
+        "kind": "contrast"
+      },
+      {
         "word": "stellen",
         "kind": "contrast"
       }
@@ -33634,6 +34326,10 @@
     "family_root": "setzen",
     "prefix": "fort-",
     "related": [
+      {
+        "word": "aufgeben",
+        "kind": "antonym"
+      },
       {
         "word": "aufhören",
         "kind": "antonym"
@@ -33755,7 +34451,16 @@
     "reflexive": false,
     "family_root": "legen",
     "prefix": "über-",
-    "related": []
+    "related": [
+      {
+        "word": "überleben",
+        "kind": "contrast"
+      },
+      {
+        "word": "denken",
+        "kind": "synonym"
+      }
+    ]
   },
   {
     "id": "einzigartig",
@@ -33788,7 +34493,12 @@
     "notes": null,
     "added": "2026-06-11 16:20:10",
     "usage": "both",
-    "related": []
+    "related": [
+      {
+        "word": "einzig",
+        "kind": "contrast"
+      }
+    ]
   },
   {
     "id": "erleben",
@@ -33902,7 +34612,12 @@
     "added": "2026-06-11 16:25:18",
     "gender": "das",
     "plural": "die Gedichte",
-    "related": []
+    "related": [
+      {
+        "word": "das Gesicht",
+        "kind": "contrast"
+      }
+    ]
   },
   {
     "id": "geeignet",
@@ -34668,7 +35383,12 @@
     "is_separable": false,
     "reflexive": false,
     "family_root": "zögern",
-    "related": []
+    "related": [
+      {
+        "word": "sich beeilen",
+        "kind": "antonym"
+      }
+    ]
   },
   {
     "id": "das-anliegen",
@@ -34827,6 +35547,10 @@
       {
         "word": "verschwinden",
         "kind": "antonym"
+      },
+      {
+        "word": "erscheinen",
+        "kind": "synonym"
       }
     ]
   },
@@ -34959,6 +35683,10 @@
     "related": [
       {
         "word": "geschehen",
+        "kind": "synonym"
+      },
+      {
+        "word": "sich ereignen",
         "kind": "synonym"
       }
     ]
@@ -35242,7 +35970,12 @@
     "reflexive": false,
     "family_root": "bleiben",
     "prefix": "ver-",
-    "related": []
+    "related": [
+      {
+        "word": "bleiben",
+        "kind": "synonym"
+      }
+    ]
   },
   {
     "id": "deutlich",
@@ -35430,6 +36163,10 @@
     "gender": "die",
     "plural": "die Abgaben",
     "related": [
+      {
+        "word": "die Abgase",
+        "kind": "contrast"
+      },
       {
         "word": "die Ausgabe",
         "kind": "contrast"
@@ -35687,6 +36424,10 @@
     "gender": "der",
     "plural": "die Begriffe",
     "related": [
+      {
+        "word": "der Ausdruck",
+        "kind": "synonym"
+      },
       {
         "word": "die Bezeichnung",
         "kind": "synonym"
@@ -36141,6 +36882,10 @@
     "related": [
       {
         "word": "der Reiz",
+        "kind": "synonym"
+      },
+      {
+        "word": "die Anregung",
         "kind": "synonym"
       }
     ]
