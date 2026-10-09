@@ -79,6 +79,9 @@ python vocab.py show aufhören
 # Show all members of a verb family
 python vocab.py family nehmen
 
+# Check a word's exercise sentences, fill empty ones, replace the ones you do not like
+python vocab.py exercises nehmen
+
 # Show all topics and word counts
 python vocab.py topics
 
@@ -103,6 +106,29 @@ Then the script calls the Claude API to suggest:
 You confirm or override each suggestion before saving. Related words are proposed from your own database only, and linked bidirectionally.
 
 If `data/` holds the reference files (see Data sources), the script also checks the model against them: verb forms against the lexicon (it asks when they disagree), noun gender and plural, and it fills `present_3sg`, `verb_class`, `imperative`, `konjunktiv_2` and the German definition by itself.
+
+### Exercise sentences
+
+Last, before the preview, the script fills the word's `exercises` (which ones a word gets: see the field in The data model). In this order:
+
+1. exercises the word already has, if they still fit (only when editing);
+2. **your own sentence**, if it contains a testable form (the Präteritum, a noun in a case…);
+3. the other example sentences;
+4. for whatever is still empty, one request to the API with the same rules as before (B1/B2, 6 to 14 words, the exact form, the gap marked in brackets).
+
+Every sentence goes through `exercise_check.py`: right verb form, a separable particle at the end of the main clause, *haben*/*sein* for the Perfekt, article + adjective + noun agreeing in case, number and gender, the case required by the preposition, current spelling, length. A generated sentence that fails is sent back once with the reason. Then you see the list:
+
+```
+  Exercises:
+    1. Präteritum                   Gestern [nahm] ich meinen Schirm nicht [mit].   (own)
+    2. Partizip II                  Hast du deinen Pass [mitgenommen]?   (generated)
+    3. Präsens, er/sie/es           Sie [nimmt] immer ein Buch in den Urlaub [mit].   (generated)
+  Enter to keep; numbers to replace or fill (e.g. 2,4):
+```
+
+Typing a number lets you write your own sentence, with the gap in [brackets] (it is checked too), or ask the API for a new one. Without an API key, or with `--manual`, steps 1 to 3 still run and you write the rest yourself or leave them empty.
+
+When you edit examples, verb forms, noun gender/plural or the word type, `vocab.py edit` offers to re-check the exercises: the ones that no longer fit the new forms are replaced. `python vocab.py exercises <word>` does the same at any time.
 
 ### API key setup
 

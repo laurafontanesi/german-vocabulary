@@ -363,6 +363,10 @@
         "en": "I need to memorise that.",
         "blanks": [
           [
+            17,
+            20
+          ],
+          [
             21,
             31
           ]
@@ -4165,15 +4169,15 @@
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Er behauptet, die Erde sei flach.",
-        "en": "He claims the earth is flat.",
+        "de": "Der Verkäufer hat behauptet, das Gerät sei ganz neu.",
+        "en": "The salesman claimed the device was brand new.",
         "blanks": [
           [
-            3,
-            12
+            18,
+            27
           ]
         ],
-        "source": "example"
+        "source": "generated"
       }
     ]
   },
@@ -4382,15 +4386,15 @@
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Benutzt du lieber den Zug oder das Auto?",
-        "en": "Do you prefer to use the train or the car?",
+        "de": "Hast du gestern mein Fahrrad benutzt, ohne mich zu fragen?",
+        "en": "Did you use my bike yesterday without asking me?",
         "blanks": [
           [
-            0,
-            7
+            29,
+            36
           ]
         ],
-        "source": "example"
+        "source": "generated"
       }
     ]
   },
@@ -7499,7 +7503,7 @@
       },
       {
         "slot": "kasus2",
-        "label": "DAT Plural",
+        "label": "AKK Plural",
         "de": "Der Begriff „Freundschaft“ ist auf diplomatische Beziehungen nicht anwendbar.",
         "en": "The concept of friendship is not applicable to diplomatic relationships.",
         "blanks": [
@@ -7509,7 +7513,7 @@
           ]
         ],
         "source": "tatoeba:3563225",
-        "form": "DAT:PLU"
+        "form": "AKK:PLU"
       }
     ]
   },
@@ -7665,15 +7669,15 @@
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Sie vertraut ihrer Intuition.",
-        "en": "She trusts her intuition.",
+        "de": "Ich habe ihr von Anfang an vertraut.",
+        "en": "I trusted her from the very beginning.",
         "blanks": [
           [
-            4,
-            12
+            27,
+            35
           ]
         ],
-        "source": "example"
+        "source": "generated"
       }
     ]
   },
@@ -8634,15 +8638,15 @@
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Er beschwert sich ständig über das Wetter.",
-        "en": "He's constantly complaining about the weather.",
+        "de": "Die Nachbarn haben sich über den Lärm beschwert.",
+        "en": "The neighbours complained about the noise.",
         "blanks": [
           [
-            3,
-            12
+            38,
+            47
           ]
         ],
-        "source": "example"
+        "source": "generated"
       },
       {
         "slot": "refl",
@@ -10286,15 +10290,15 @@
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Sie vermietet zwei Zimmer in ihrer Wohnung.",
-        "en": "She rents out two rooms in her flat.",
+        "de": "Wir haben unsere Wohnung im Sommer an Studenten vermietet.",
+        "en": "We rented out our flat to students in the summer.",
         "blanks": [
           [
-            4,
-            13
+            48,
+            57
           ]
         ],
-        "source": "example"
+        "source": "generated"
       }
     ]
   },
@@ -14544,15 +14548,15 @@
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Betreten verboten.",
-        "en": "No entry. / Do not enter.",
+        "de": "Seit dem Unfall hat niemand das alte Haus betreten.",
+        "en": "Since the accident, nobody has entered the old house.",
         "blanks": [
           [
-            0,
-            8
+            42,
+            50
           ]
         ],
-        "source": "example"
+        "source": "generated"
       },
       {
         "slot": "praes",
@@ -15202,6 +15206,10 @@
         "en": "In winter I go to the indoor pool.",
         "blanks": [
           [
+            19,
+            22
+          ],
+          [
             23,
             32
           ]
@@ -15525,15 +15533,19 @@
       {
         "slot": "kasus1",
         "label": "AKK Singular",
-        "de": "Die Firma gibt viel Geld für Werbung aus.",
-        "en": "The company spends a lot on advertising.",
+        "de": "Ich finde die Werbung im Fernsehen meistens nervig.",
+        "en": "I usually find the adverts on TV annoying.",
         "blanks": [
           [
-            29,
-            36
+            10,
+            13
+          ],
+          [
+            14,
+            21
           ]
         ],
-        "source": "example",
+        "source": "generated",
         "form": "AKK:SIN"
       },
       {
@@ -17692,6 +17704,10 @@
         "de": "Wir gehen morgen zur Ausstellung im Kunstmuseum.",
         "en": "We're going to the exhibition at the art museum tomorrow.",
         "blanks": [
+          [
+            17,
+            20
+          ],
           [
             21,
             32
@@ -21507,15 +21523,15 @@
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Sie beansprucht das Recht auf eine zweite Meinung.",
-        "en": "She claims the right to a second opinion.",
+        "de": "Der Bruder hat das ganze Erbe für sich beansprucht.",
+        "en": "The brother claimed the whole inheritance for himself.",
         "blanks": [
           [
-            4,
-            15
+            39,
+            50
           ]
         ],
-        "source": "example"
+        "source": "generated"
       }
     ]
   },
@@ -22581,15 +22597,19 @@
       {
         "slot": "praes",
         "label": "Präsens, er/sie/es",
-        "de": "Er erreicht alles, was er sich vornimmt zu tun.",
-        "en": "He accomplishes whatever he sets out to do.",
+        "de": "Für das neue Jahr nimmt er sich vor, früher aufzustehen.",
+        "en": "For the new year, he resolves to get up earlier.",
         "blanks": [
           [
-            31,
-            39
+            18,
+            23
+          ],
+          [
+            32,
+            35
           ]
         ],
-        "source": "tatoeba:566773"
+        "source": "generated"
       },
       {
         "slot": "refl",
@@ -23181,15 +23201,15 @@
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Die Arbeit vereinnahmt ihn völlig.",
-        "en": "Work completely absorbs him.",
+        "de": "Die neue Stelle hat sie in den ersten Monaten völlig vereinnahmt.",
+        "en": "The new job completely took over her life in the first months.",
         "blanks": [
           [
-            11,
-            22
+            53,
+            64
           ]
         ],
-        "source": "example"
+        "source": "generated"
       }
     ]
   },
@@ -25040,15 +25060,15 @@
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Gesucht: erfahrener Programmierer.",
-        "en": "Wanted: experienced programmer.",
+        "de": "Wir haben den ganzen Morgen nach dem Schlüssel gesucht.",
+        "en": "We looked for the key all morning.",
         "blanks": [
           [
-            0,
-            7
+            47,
+            54
           ]
         ],
-        "source": "example"
+        "source": "generated"
       }
     ]
   },
@@ -26886,15 +26906,15 @@
       {
         "slot": "pc6",
         "label": "Satz mit obwohl",
-        "de": "Ich kenne ihren Vater, obwohl ich sie nicht kenne.",
-        "en": "I know her father, though I know not her.",
+        "de": "Meine Kollegin fährt jeden Tag mit dem Rad ins Büro, obwohl es draußen sehr kalt ist.",
+        "en": "My colleague rides her bike to the office every day, even though it is very cold outside.",
         "blanks": [
           [
-            23,
-            29
+            53,
+            59
           ]
         ],
-        "source": "tatoeba:10298628"
+        "source": "generated"
       }
     ]
   },
@@ -28160,15 +28180,15 @@
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Sie verschwendet viel Geld für unnötige Dinge.",
-        "en": "She wastes a lot of money on unnecessary things.",
+        "de": "Ich habe gestern viel zu viel Zeit am Handy verschwendet.",
+        "en": "Yesterday I wasted far too much time on my phone.",
         "blanks": [
           [
-            4,
-            16
+            44,
+            56
           ]
         ],
-        "source": "example"
+        "source": "generated"
       }
     ]
   },
@@ -30646,15 +30666,15 @@
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Ich kann diesen Lärm nicht ertragen.",
-        "en": "I can't bear this noise.",
+        "de": "Sie hat die Schmerzen nach der Operation tapfer ertragen.",
+        "en": "She bravely endured the pain after the operation.",
         "blanks": [
           [
-            27,
-            35
+            48,
+            56
           ]
         ],
-        "source": "example"
+        "source": "generated"
       },
       {
         "slot": "praes",
@@ -35958,6 +35978,10 @@
         "en": "We'll meet at the agreed location.",
         "blanks": [
           [
+            16,
+            18
+          ],
+          [
             32,
             35
           ]
@@ -37786,15 +37810,15 @@
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Sie überarbeitet das Manuskript.",
-        "en": "She is revising the manuscript.",
+        "de": "Die Autorin hat das letzte Kapitel dreimal überarbeitet.",
+        "en": "The author revised the last chapter three times.",
         "blanks": [
           [
-            4,
-            16
+            43,
+            55
           ]
         ],
-        "source": "example"
+        "source": "generated"
       }
     ]
   },
@@ -40144,6 +40168,10 @@
         "en": "She works in the lab all day.",
         "blanks": [
           [
+            28,
+            30
+          ],
+          [
             31,
             36
           ]
@@ -40241,15 +40269,15 @@
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Sie erforscht die Auswirkungen von Stress auf das Gehirn.",
-        "en": "She researches the effects of stress on the brain.",
+        "de": "Das Team hat die Ursachen der Krankheit jahrelang erforscht.",
+        "en": "The team researched the causes of the disease for years.",
         "blanks": [
           [
-            4,
-            13
+            50,
+            59
           ]
         ],
-        "source": "example"
+        "source": "generated"
       }
     ]
   },
@@ -40404,15 +40432,15 @@
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Der Arzt untersucht den Patienten.",
-        "en": "The doctor examines the patient.",
+        "de": "Die Ärztin hat mein Knie gründlich untersucht.",
+        "en": "The doctor examined my knee thoroughly.",
         "blanks": [
           [
-            9,
-            19
+            35,
+            45
           ]
         ],
-        "source": "example"
+        "source": "generated"
       }
     ]
   },
@@ -42796,6 +42824,10 @@
         "en": "Basel has become home for me.",
         "blanks": [
           [
+            19,
+            22
+          ],
+          [
             23,
             29
           ]
@@ -43027,6 +43059,10 @@
         "de": "Sie arbeitet beim Bundesamt für Statistik.",
         "en": "She works at the Federal Statistical Office.",
         "blanks": [
+          [
+            13,
+            17
+          ],
           [
             18,
             27
@@ -45147,15 +45183,15 @@
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Er erzählt ihr eine Geschichte.",
-        "en": "He tells her a story.",
+        "de": "Mein Großvater hat uns oft von seiner Kindheit erzählt.",
+        "en": "My grandfather often told us about his childhood.",
         "blanks": [
           [
-            3,
-            10
+            47,
+            54
           ]
         ],
-        "source": "example"
+        "source": "generated"
       }
     ]
   },
@@ -46013,6 +46049,10 @@
         "de": "Ich muss zum Schalter gehen, um Geld zu wechseln.",
         "en": "I have to go to the counter to exchange money.",
         "blanks": [
+          [
+            9,
+            12
+          ],
           [
             13,
             21
@@ -47704,15 +47744,15 @@
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Wie sollen wir in diesem Fall verfahren?",
-        "en": "How should we proceed in this case?",
+        "de": "Bisher haben wir in solchen Fällen immer gleich verfahren.",
+        "en": "So far we have always proceeded the same way in such cases.",
         "blanks": [
           [
-            30,
-            39
+            48,
+            57
           ]
         ],
-        "source": "example"
+        "source": "generated"
       },
       {
         "slot": "praes",
@@ -48055,6 +48095,10 @@
         "en": "They set off at dawn.",
         "blanks": [
           [
+            12,
+            16
+          ],
+          [
             17,
             29
           ]
@@ -48312,6 +48356,10 @@
         "en": "The ground-floor flat has its own garden.",
         "blanks": [
           [
+            12,
+            14
+          ],
+          [
             15,
             26
           ]
@@ -48443,6 +48491,10 @@
         "de": "Wir trafen uns im alten Krug am Marktplatz.",
         "en": "We met at the old inn on the market square.",
         "blanks": [
+          [
+            15,
+            17
+          ],
           [
             24,
             28
@@ -48859,6 +48911,10 @@
         "en": "The wedding took place at the town hall.",
         "blanks": [
           [
+            18,
+            20
+          ],
+          [
             21,
             28
           ]
@@ -48922,6 +48978,10 @@
         "de": "Das Boot legte am anderen Ufer an.",
         "en": "The boat docked on the other bank.",
         "blanks": [
+          [
+            15,
+            17
+          ],
           [
             26,
             30
@@ -50737,15 +50797,15 @@
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Er fühlt sich durch den Vertrag gebunden.",
-        "en": "He feels bound by the contract.",
+        "de": "Sie hat die Blumen mit einer Schnur zu einem Strauß gebunden.",
+        "en": "She tied the flowers into a bouquet with a string.",
         "blanks": [
           [
-            32,
-            40
+            52,
+            60
           ]
         ],
-        "source": "example"
+        "source": "generated"
       }
     ]
   },
@@ -51362,15 +51422,15 @@
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Der Helm beschützt den Kopf beim Radfahren.",
-        "en": "The helmet protects your head when cycling.",
+        "de": "Der große Bruder hat die Kleine immer beschützt.",
+        "en": "The big brother always protected the little girl.",
         "blanks": [
           [
-            9,
-            18
+            38,
+            47
           ]
         ],
-        "source": "example"
+        "source": "generated"
       }
     ]
   },
@@ -51787,28 +51847,28 @@
       {
         "slot": "praet",
         "label": "Präteritum",
-        "de": "Bestimmte Wörter können ohne einen spezifischen Kontext verwendet werden.",
-        "en": "Certain words can be used without a specific context.",
+        "de": "Am Ende bestimmte die Mehrheit, wohin die Reise ging.",
+        "en": "In the end, the majority decided where the trip would go.",
         "blanks": [
           [
-            0,
-            9
+            8,
+            17
           ]
         ],
-        "source": "tatoeba:1794201"
+        "source": "generated"
       },
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Sie bestimmt, wann und wo wir uns treffen.",
-        "en": "She decides when and where we meet.",
+        "de": "Der Chef hat den Termin für die Sitzung bestimmt.",
+        "en": "The boss set the date for the meeting.",
         "blanks": [
           [
-            4,
-            12
+            40,
+            48
           ]
         ],
-        "source": "example"
+        "source": "generated"
       }
     ]
   },
@@ -52078,15 +52138,15 @@
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Man bezeichnet ihn als einen der besten Regisseure seiner Zeit.",
-        "en": "He is referred to as one of the best directors of his time.",
+        "de": "Die Zeitung hat ihn als großes Talent bezeichnet.",
+        "en": "The newspaper described him as a great talent.",
         "blanks": [
           [
-            4,
-            14
+            38,
+            48
           ]
         ],
-        "source": "example"
+        "source": "generated"
       }
     ]
   },
@@ -54319,17 +54379,21 @@
     "exercises": [
       {
         "slot": "kasus1",
-        "label": "AKK Singular",
-        "de": "Ohne Zweifel ist das die beste Lösung.",
-        "en": "Without doubt, this is the best solution.",
+        "label": "GEN Plural",
+        "de": "Trotz der Zweifel ihrer Freunde kündigte sie ihre Stelle.",
+        "en": "Despite her friends' doubts, she quit her job.",
         "blanks": [
           [
-            5,
-            12
+            6,
+            9
+          ],
+          [
+            10,
+            17
           ]
         ],
-        "source": "example",
-        "form": "AKK:SIN"
+        "source": "generated",
+        "form": "GEN:PLU"
       },
       {
         "slot": "kasus2",
@@ -54834,6 +54898,10 @@
         "en": "The children are playing in the hallway in front of the rooms.",
         "blanks": [
           [
+            19,
+            21
+          ],
+          [
             22,
             26
           ]
@@ -55075,15 +55143,15 @@
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Der Hund gehorcht seinem Herrchen aufs Wort.",
-        "en": "The dog obeys its master to the letter.",
+        "de": "Der junge Hund hat heute zum ersten Mal gehorcht.",
+        "en": "The young dog obeyed for the first time today.",
         "blanks": [
           [
-            9,
-            17
+            40,
+            48
           ]
         ],
-        "source": "example"
+        "source": "generated"
       }
     ]
   },
@@ -59210,15 +59278,15 @@
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Er versteckt das Geschenk unter dem Bett.",
-        "en": "He hides the gift under the bed.",
+        "de": "Die Kinder haben die Ostereier im Garten versteckt.",
+        "en": "The children hid the Easter eggs in the garden.",
         "blanks": [
           [
-            3,
-            12
+            41,
+            50
           ]
         ],
-        "source": "example"
+        "source": "generated"
       }
     ]
   },
@@ -61124,15 +61192,15 @@
       {
         "slot": "part",
         "label": "Partizip II",
-        "de": "Er betrachtet sie als seine beste Freundin.",
-        "en": "He considers her his best friend.",
+        "de": "Wir haben die Bilder in der Ausstellung lange betrachtet.",
+        "en": "We looked at the paintings in the exhibition for a long time.",
         "blanks": [
           [
-            3,
-            13
+            46,
+            56
           ]
         ],
-        "source": "example"
+        "source": "generated"
       }
     ]
   },
@@ -61319,6 +61387,10 @@
         "de": "Die Kinder spielten gerne im Schlamm am Seeufer.",
         "en": "The children enjoyed playing in the mud by the lakeside.",
         "blanks": [
+          [
+            26,
+            28
+          ],
           [
             29,
             36
@@ -65768,6 +65840,10 @@
         "de": "Sie arbeitet seit zehn Jahren im Gesundheitswesen.",
         "en": "She has worked in the healthcare sector for ten years.",
         "blanks": [
+          [
+            30,
+            32
+          ],
           [
             33,
             49
