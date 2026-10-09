@@ -1,0 +1,39 @@
+.card {
+  font-family: Georgia, 'Iowan Old Style', serif;
+  font-size: 20px; text-align: center;
+  background: #f7f5f0; color: #1a1a18; padding: 20px;
+}
+.card.nightMode, .nightMode .card { background: #f7f5f0; color: #1a1a18; }
+.kopf { font-family: -apple-system, Helvetica, sans-serif; font-size: 11px;
+        letter-spacing: .08em; text-transform: uppercase; color: #8a8a80;
+        margin-bottom: 18px; }
+.pill { display: inline-block; padding: 3px 10px; border-radius: 10px;
+        font-size: 11px; letter-spacing: .06em; }
+.verb   { background: #dce8f5;   color: #1a4a72; }
+.noun   { background: #f0e6c4;   color: #7a5800; }
+.adjadv { background: #d4eae8; color: #1a4a47; }
+.other  { background: #efe9de;  color: #4a4a44; }
+.wort   { font-size: 30px; font-weight: 600; }
+.satz   { font-size: 21px; line-height: 1.5; margin: 14px 0 2px 0; }
+.en     { color: #6b4ea8; font-size: 18px; }
+.en2    { color: #6b4ea8; font-size: 15px; opacity: .85;
+          margin-bottom: 10px; }
+.formen, .chips { margin-top: 12px; line-height: 2.1; }
+.chip   { display: inline-block;
+          font-family: ui-monospace, Menlo, monospace; font-size: 13px;
+          background: #efe9de; color: #4a4a44;
+          border: 1px solid #e2dccf; border-radius: 4px;
+          padding: 4px 9px; margin: 0 3px; }
+.notiz  { font-family: -apple-system, Helvetica, sans-serif; font-size: 13px;
+          color: #8a8a80; font-style: italic; margin-top: 10px; }
+.hinweis { font-family: -apple-system, Helvetica, sans-serif; font-size: 13px;
+           color: #8a8a80; margin-top: 8px; }
+.loesung { color: #c0392b; font-weight: 600; }
+hr#answer { border: none; border-top: 1px solid #d8d0c4; margin: 18px 0; }
+input#typeans { font-family: Georgia, serif; font-size: 20px;
+                padding: 6px 10px; border: 1px solid #d8d0c4;
+                border-radius: 4px; background: #fdfcf8; color: #1a1a18; }
+/* Anki's own diff colours — kept clear of the purple used for English */
+.typeGood   { background: #d4eae8; color: #1a4a47; }
+.typeBad    { background: #e8d5d0; color: #c0392b; }
+.typeMissed { background: #e9e4d6; color: #6a6356; }

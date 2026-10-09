@@ -1,2 +1,5 @@
 .env
 .DS_Store
+data/*
+anki/deutsch.txt
+__pycache__/

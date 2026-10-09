@@ -13,8 +13,19 @@ german_vocabulary/
 ├── words.json          ← vocabulary database (all entries)
 ├── index.html          ← the website (browse + practice)
 ├── vocab.py            ← CLI tool for adding/managing words
+├── lexicon.py          ← looks up word forms in the Morphy lexicon (see Data sources)
 ├── fix_related.py      ← utility to repair bidirectional links
-└── README.md           ← this file
+├── anki/
+│   ├── make_deck.py        builds the Anki deck from words.json
+│   ├── templates.md        note type fields + card templates (generated)
+│   ├── styling.css         card styling (generated)
+│   └── deutsch.txt         the import file (generated, not in git)
+├── README.md           ← this file
+└── data/               ← large reference files, NOT in git (see Data sources)
+    ├── dictionary.dump     Morphy / LanguageTool full-form lexicon (~250 MB)
+    ├── de-extract.jsonl    German Wiktionary, kaikki.org extract (~3 GB)
+    ├── deu-eng.tsv         Tatoeba German-English sentence pairs (~56 MB)
+    └── deu_sentences.tsv   Tatoeba German sentences (~48 MB, optional)
 ```
 
 ---
@@ -26,7 +37,7 @@ Open `index.html` in a browser, or visit the live GitHub Pages URL above.
 **Browsing:**
 - Filter by word type (verb, noun, adjective…) and topic in the left sidebar
 - Browse alphabetically using the letter grid
-- Search across words, definitions, examples, notes and tags — results are ranked by relevance
+- Search across words, definitions, examples and notes — results are ranked by relevance
 
 **Practice mode** (click the red Practice button):
 
@@ -60,7 +71,7 @@ python vocab.py list
 
 # Filter by type or topic
 python vocab.py list --type verb
-python vocab.py list --topic emotions
+python vocab.py list --topic emotions   # substring match, so 'emotions' finds 'emotions & character'
 
 # Show full entry for a word
 python vocab.py show aufhören
@@ -84,7 +95,8 @@ When you type a word, the script calls the Claude API to suggest:
 - Family root and prefix (for compound verbs)
 - English definitions with usage notes
 - Two natural example sentences
-- Topic and register
+- Topics (0 to 2 from a closed list, often none)
+- Notes, including register when it is not neutral
 
 You confirm or override each suggestion before saving. Related words in the database are detected automatically and linked bidirectionally.
 
@@ -110,11 +122,10 @@ Each entry in `words.json` is a JSON object. All entries share these fields:
 | `type` | string | `noun`, `verb`, `adj/adv`, `prep/conj`, `expression`, `construction`, `other` |
 | `definitions` | list | `[{meaning, note}]` — always in English |
 | `examples` | list | `[{de, en}]` — German sentence + translation |
-| `topics` | list | Thematic categories (see below) |
-| `tags` | list | Grammatical/learning tags e.g. `separable`, `similar to: X` |
-| `register` | string | `neutral`, `formal`, `informal`, `Swiss German` |
-| `notes` | string | One-sentence personal note, or null |
-| `related` | list | Related word forms (always bidirectional) |
+| `topics` | list | 0 to 2 entries from the closed list below; empty for core vocabulary |
+| `definition_de` | string | German definition from German Wiktionary, matched to the first English meaning; used by the *Definition* card. Optional |
+| `notes` | string | One-sentence personal note, or null. Register goes here when it is not neutral (`Register: umgangssprachlich.`) |
+| `related` | list | `[{word, kind}]` — semantic links, always bidirectional. `kind` is one of `synonym`, `antonym`, `contrast` (easily confused), `derived` (same stem, other word class). Verb families are **not** stored here; see `family_root`. |
 | `added` | string | Date added (YYYY-MM-DD) |
 
 **Extra fields for nouns:**
@@ -129,8 +140,12 @@ Each entry in `words.json` is a JSON object. All entries share these fields:
 | Field | Description |
 |---|---|
 | `auxiliary` | `haben` or `sein` |
-| `past_tense` | Simple past (Präteritum) |
-| `past_participle` | Past participle |
+| `past_tense` | Simple past (Präteritum), main-clause form, with `sich` for reflexive headwords (`nahm mit`, `freute sich`) |
+| `past_participle` | Past participle, without `sich` |
+| `present_3sg` | er/sie/es form, same format as `past_tense` (`nimmt mit`, `freut sich`). Shown on cards only when the stem changes (`nimmt`, `fährt`, `weiß`) |
+| `imperative` | du-imperative, only when the stem changes (`nimm mit`, `benimm dich`); `fahr!` is regular and not stored |
+| `konjunktiv_2` | one-word Konjunktiv II, only for the verbs where it is in everyday use (`käme`, `wüsste`, `bräuchte`; list in `lexicon.KONJ2_IN_USE`). Other verbs use *würde* + infinitive |
+| `verb_class` | `regular` (kaufte, gekauft), `irregular` (nahm, genommen) or `mixed` (dachte, gedacht: weak endings, changed stem) |
 | `is_separable` | `true` / `false` |
 | `reflexive` | `true` / `false` |
 | `preposition` | Fixed preposition + case e.g. `an + DAT` |
@@ -152,45 +167,95 @@ Each entry in `words.json` is a JSON object. All entries share these fields:
 
 ### Topics
 
-| Topic | What goes there |
+A topic says what a word is **about**. Rules:
+
+- 0 to 2 topics per word. Core vocabulary (*brauchen, bekommen, liegen, nötig*) has an empty list, and that is the correct answer, not a gap. About 100 words are deliberately without a topic.
+- The **first definition decides**. A secondary meaning (*drehen* "to shoot a film", *brechen* "to vomit") earns a topic only if one of the stored examples illustrates it.
+- The list is closed and lives in `vocab.py` (`TOPICS`), together with the definition the model sees when it proposes topics for a new word. `vocab.py topics` prints it with counts.
+- Register (formal, colloquial, Swiss) is not a topic and not a field: it goes into `notes`.
+
+| Topic | Definition and boundary |
 |---|---|
-| daily life | Everyday actions, routines, common verbs |
-| emotions | Feelings, moods, character traits |
-| people & relationships | Social interactions, trust, family |
-| body & mind | Health, memory, physical states |
-| work & academia | Research, jobs, university life |
-| nature & weather | Weather, landscape, environment |
-| travel & places | Transport, geography, directions |
-| time | Temporal expressions |
-| language & communication | Speaking, writing, expressions |
-| money & shopping | Buying, prices, finances |
-| culture & arts | Film, literature, art |
-| society & politics | Government, social issues |
-| grammar & structure | Constructions, patterns, connectors |
-| various | Anything that doesn't fit cleanly |
+| home & objects | Housing, rooms, furnishings, household objects, clothing, cleaning and domestic maintenance. Exclude general physical actions merely illustrated with a household object. |
+| food & drink | Food, beverages, preparation, eating, drinking and dining. Include verbs only when a food-related meaning is explicitly recorded. |
+| body & health | Anatomy, bodily functions, physical sensations, illness, treatment, hygiene, recovery, sport. Include physical exhaustion; distinguish it from emotional distress. |
+| thinking & perception | Knowledge, memory, attention, reasoning, judgement, decisions and sensory perception. Include looking and noticing; exclude general comparisons between objects. |
+| emotions & character | Feelings, moods, preferences, temperament and personal dispositions. Exclude general usefulness, size or quality unless the meaning concerns a person's character. |
+| people & relationships | Personal relationships, encounters, trust, cooperation, interpersonal behaviour and social interaction. Exclude actions simply because a person performs them. |
+| language & communication | Speaking, writing, listening, naming, conveying information, stance adverbs and conventional conversational acts. An idiom belongs here only when its function is communicative. |
+| work & jobs | Employment, occupations, workplace arrangements, professional responsibilities, vocational training and working conditions. Exclude generic effort, success or activity. |
+| science & academia | Research, academic study, scientific methods, evidence, and scholarly institutions or outputs. Exclude general concepts merely because researchers use them. |
+| technology & media | Devices, technical systems, digital tools, broadcasting, and media production or distribution. Not every act of reporting and not every artificial object. |
+| money & shopping | Prices, payment, wealth, ownership, buying, selling and economic transactions. Exclude general exchange, receipt or waste without a financial meaning. |
+| society & politics | Public institutions, law, governance, collective social structures, rights and public affairs. Distinguish from individual interpersonal relationships. |
+| culture & arts | Literature, visual and performing arts, creative practices, cultural works and their creators. Exclude general attractiveness or beauty. |
+| nature & weather | Animals, plants, landscapes, natural environments, weather and environmental processes. Exclude physical properties that apply equally to manufactured objects. |
+| travel & movement | Journeys, transport, routes, destinations, navigation, locomotion and directional movement. Exclude manipulating an object solely because the object moves. |
+| time | Temporal location, duration, frequency, sequence, deadlines and speed of occurrence. Exclude events merely because they occur in time. |
+| quantity & comparison | Amount, extent, sufficiency, scarcity, similarity, difference and comparative scale. |
+| materials & physical properties | Materials and observable physical characteristics: shape, texture, surface, structural integrity, physical force. Exclude generic handling actions. |
+| change & development | Alteration, growth, decline, increase, decrease, transformation and persistence of a state. Exclude mere movement to a different place. |
+| goals, effort & outcomes | Intentional aims, attempts, effort, obstacles, giving up, achievement and reward. Exclude ordinary actions, events, and evaluative adjectives such as useful or suitable. |
+| connectors & constructions | Connectives, discourse particles, prepositions and reusable grammatical patterns that relate clauses or sentence elements. A grammatical category; not abstract vocabulary. |
 
 ---
 
-## Fixing related word links — `fix_related.py`
+## Related words — what goes in, what stays out
 
-Related words are kept bidirectional automatically when adding via `vocab.py`. If you ever edit `words.json` by hand or notice a one-sided link, run:
+`related` holds **semantic** neighbours only, each with a kind:
 
-```bash
-# Preview what would change
-python fix_related.py --db words.json --dry-run
-
-# Apply fixes
-python fix_related.py --db words.json
+```json
+"related": [
+  {"word": "wissen",          "kind": "contrast"},
+  {"word": "kennenlernen",    "kind": "contrast"}
+]
 ```
 
-The script detects connections via:
-1. Shared `family_root` (verb family members, including cross-type)
-2. Existing `related` lists → makes them bidirectional
-3. Tags like `similar to: X` or `verb family: X`
-4. Negating/modifying prefix pairs (`un-`, `miss-`, `über-` etc.)
-5. `derived_from` field (participle-adjectives linked to their source verb)
+| kind | meaning | example |
+|---|---|---|
+| `contrast` | easily confused, worth telling apart | kennen / wissen |
+| `antonym` | opposite | billig / teuer |
+| `synonym` | same or near meaning | rasch / zügig |
+| `derived` | same stem, different word class | wählen / die Wahl |
 
-Safe to run multiple times — never duplicates links.
+Verb families (`nehmen`, `mitnehmen`, `teilnehmen`…) are deliberately **not** linked here.
+They are already encoded by `family_root`, and `vocab.py family nehmen` lists them.
+
+When you add a word, the AI proposes links drawn only from words already in the database,
+and you confirm or adjust them. `contrast` and `antonym` links feed the "Welches Wort passt?"
+cards in the Anki deck.
+
+### Keeping links consistent — `fix_related.py`
+
+```bash
+python fix_related.py --db words.json --dry-run   # report only
+python fix_related.py --db words.json             # drop dangling links, add back-links
+```
+
+Safe to run any time. It never invents links; it only removes broken ones and mirrors
+existing ones.
+
+---
+
+## Data sources
+
+Two large reference files live in `data/`. They are not part of the website, so `data/` is in `.gitignore`.
+
+**Morphy / LanguageTool lexicon** (`data/dictionary.dump`, CC BY-SA 4.0, [danielnaber.de/morphologie](https://danielnaber.de/morphologie/)). Every inflected form of about 400,000 German words, one per line: `nehmen_nimmt_VER:3:SIN:PRÄ:NON`. `lexicon.py` reads it; `vocab.py add` uses it to check verb forms, fill `present_3sg` and `verb_class`, and check noun gender and plural. Without the file, `vocab.py` works as before and trusts the model. To produce it (once; needs Java 8 or later):
+
+```bash
+# 1. download LanguageTool stand-alone (for its libs/ folder) and the german-pos-dict repo
+# 2. from the german-pos-dict folder:
+java -cp "/path/to/LanguageTool-6.6/libs/*" morfologik.tools.DictDecompile \
+     -i src/main/resources/org/languagetool/resource/de/german.dict -o dictionary.dump
+# 3. move dictionary.dump into data/
+```
+
+(The `export.sh` in the repo calls LanguageTool's own exporter, which needs Java 17. The command above uses the Morfologik decompiler directly and runs on older Java.)
+
+**German Wiktionary** (`data/de-extract.jsonl`, CC BY-SA, [kaikki.org/dewiktionary](https://kaikki.org/dewiktionary/)). `vocab.py add` looks up a German definition for each new word (about 15 s, with `grep`), and the file also holds pronunciation (IPA), synonyms, antonyms and idioms for later use.
+
+**Tatoeba sentences** (`data/deu-eng.tsv`, renamed from "Sentence pairs in German-English - <date>.tsv"; `data/deu_sentences.tsv`, CC BY 2.0 FR, [tatoeba.org/downloads](https://tatoeba.org/en/downloads)). Human-written example sentences, used as a source for exercise sentences. For English translations, the custom export "Sentence pairs" German to English.
 
 ---
 
@@ -204,11 +269,11 @@ git add words.json
 git commit -m "add: Schadenfreude, Weltschmerz"
 git push
 
-# After a batch of additions, also run fix_related:
+# After a batch of additions, check the links are consistent:
 python fix_related.py --db words.json
-git add words.json
-git commit -m "fix related links"
-git push
+
+# Rebuild the Anki import file (see anki/templates.md for the one-time note type setup):
+python anki/make_deck.py
 ```
 
 The live site updates within ~60 seconds of pushing.

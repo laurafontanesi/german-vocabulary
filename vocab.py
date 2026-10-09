@@ -22,12 +22,76 @@ import urllib.request
 import urllib.error
 from datetime import datetime
 
+try:                                   # optional: full-form lexicon, see README "Data sources"
+    from lexicon import Lexicon, changes_stem, german_definition
+    LEXICON = Lexicon()
+except ImportError:
+    LEXICON = None
+    german_definition = None
+VERB_CLASSES = ["regular", "irregular", "mixed"]
+
 DB_PATH  = os.path.join(os.path.dirname(__file__), "words.json")
 ENV_PATH = os.path.join(os.path.dirname(__file__), ".env")
 
 WORD_TYPES = ["noun", "verb", "adj/adv", "prep/conj", "expression", "construction", "other"]
 GENDERS    = ["der", "die", "das"]
-REGISTERS  = ["neutral", "formal", "informal", "Swiss German"]
+# Closed list of topics. A word gets 0 to 2 of them, and only when it is clearly
+# ABOUT the domain. Core vocabulary (brauchen, bekommen, liegen) has no topic;
+# "no topic" is a deliberate answer, not a gap. The FIRST definition decides; a
+# secondary meaning earns a topic only if one of the examples illustrates it.
+# The definitions below are what the model sees, so keep the exclusions sharp.
+TOPICS = {
+    "home & objects":
+        "Housing, rooms, furnishings, household objects, clothing, cleaning and domestic maintenance. Exclude general physical actions merely illustrated with a household object.",
+    "food & drink":
+        "Food, beverages, preparation, eating, drinking and dining. Include verbs only when a food-related meaning is explicitly recorded.",
+    "body & health":
+        "Anatomy, bodily functions, physical sensations, illness, treatment, hygiene, recovery, sport. Include physical exhaustion; distinguish it from emotional distress.",
+    "thinking & perception":
+        "Knowledge, memory, attention, reasoning, judgement, decisions and sensory perception. Include looking and noticing; exclude general comparisons between objects.",
+    "emotions & character":
+        "Feelings, moods, preferences, temperament and personal dispositions. Exclude general usefulness, size or quality unless the meaning concerns a person's character.",
+    "people & relationships":
+        "Personal relationships, encounters, trust, cooperation, interpersonal behaviour and social interaction. Exclude actions simply because a person performs them.",
+    "language & communication":
+        "Speaking, writing, listening, naming, conveying information, stance adverbs and conventional conversational acts. An idiom belongs here only when its function is communicative.",
+    "work & jobs":
+        "Employment, occupations, workplace arrangements, professional responsibilities, vocational training and working conditions. Exclude generic effort, success or activity.",
+    "science & academia":
+        "Research, academic study, scientific methods, evidence, and scholarly institutions or outputs. Exclude general concepts merely because researchers use them.",
+    "technology & media":
+        "Devices, technical systems, digital tools, broadcasting, and media production or distribution. Not every act of reporting and not every artificial object.",
+    "money & shopping":
+        "Prices, payment, wealth, ownership, buying, selling and economic transactions. Exclude general exchange, receipt or waste without a financial meaning.",
+    "society & politics":
+        "Public institutions, law, governance, collective social structures, rights and public affairs. Distinguish from individual interpersonal relationships.",
+    "culture & arts":
+        "Literature, visual and performing arts, creative practices, cultural works and their creators. Exclude general attractiveness or beauty.",
+    "nature & weather":
+        "Animals, plants, landscapes, natural environments, weather and environmental processes. Exclude physical properties that apply equally to manufactured objects.",
+    "travel & movement":
+        "Journeys, transport, routes, destinations, navigation, locomotion and directional movement. Exclude manipulating an object solely because the object moves.",
+    "time":
+        "Temporal location, duration, frequency, sequence, deadlines and speed of occurrence. Exclude events merely because they occur in time.",
+    "quantity & comparison":
+        "Amount, extent, sufficiency, scarcity, similarity, difference and comparative scale.",
+    "materials & physical properties":
+        "Materials and observable physical characteristics: shape, texture, surface, structural integrity, physical force. Exclude generic handling actions.",
+    "change & development":
+        "Alteration, growth, decline, increase, decrease, transformation and persistence of a state. Exclude mere movement to a different place.",
+    "goals, effort & outcomes":
+        "Intentional aims, attempts, effort, obstacles, giving up, achievement and reward. Exclude ordinary actions, events, and evaluative adjectives such as useful or suitable.",
+    "connectors & constructions":
+        "Connectives, discourse particles, prepositions and reusable grammatical patterns that relate clauses or sentence elements. A grammatical category; not abstract vocabulary.",
+}
+
+
+def clean_topics(raw) -> list:
+    """Keep only topics from the closed list, in canonical order, max 2."""
+    if isinstance(raw, str):
+        raw = [t.strip() for t in raw.split(",")]
+    wanted = {str(t).strip().lower() for t in (raw or [])}
+    return [t for t in TOPICS if t in wanted][:2]
 
 
 # ── env / api key ──────────────────────────────────────────────────────────────
@@ -46,12 +110,22 @@ def load_api_key() -> str | None:
 
 # ── AI enrichment ──────────────────────────────────────────────────────────────
 
-def ai_enrich(word: str, api_key: str, word_type: str = None) -> dict | None:
+def ai_enrich(word: str, api_key: str, word_type: str = None, vocabulary: list = None) -> dict | None:
     """
     Call Claude API to get structured info about a German word.
     Returns a dict with suggested fields, or None on failure.
+    `vocabulary` is the list of words already in the database; the model may
+    only propose related links to words in that list.
     """
+    topic_lines = "\n".join(f"- {t}: {d}" for t, d in TOPICS.items())
     type_hint = f"\n\nIMPORTANT: Treat this word strictly as a {word_type}. Fill in all fields accordingly." if word_type else ""
+    vocab_block = ""
+    if vocabulary:
+        vocab_block = ("\n\nMy database already contains these words. For the \"related\" field, "
+                       "choose ONLY from this list, and only words with a real semantic relationship "
+                       "to the new word. Do not list verb-family members (same root, different prefix) "
+                       "unless they are genuinely confusable in meaning.\n"
+                       + ", ".join(vocabulary))
     prompt = f"""You are a German language expert. I am learning German and want to add the word "{word}" to my vocabulary database.
 
 Please analyse this word and return a JSON object with the following fields. Be precise and use only English for definitions and translations (never Italian or German in the meaning field).
@@ -67,6 +141,8 @@ Return ONLY valid JSON, no explanation, no markdown, no code fences.{type_hint}
   "auxiliary": "haben or sein — only for verbs, else null",
   "past_tense": "simple past (Präteritum) e.g. 'erinnerte' — only for verbs, else null",
   "past_participle": "e.g. 'erinnert' — only for verbs, else null",
+  "present_3sg": "er/sie/es form in the present, in the same format as past_tense, e.g. 'nimmt mit', 'freut sich' — only for verbs, else null",
+  "verb_class": "regular (weak: kaufte, gekauft), irregular (strong: nahm, genommen) or mixed (weak endings with a changed stem: dachte, gedacht) — only for verbs, else null",
   "is_separable": true or false — only for verbs, else null,
   "reflexive": true or false — only for verbs, else null,
   "preposition": "e.g. 'an + AKK' if the verb requires a fixed preposition, else null",
@@ -81,16 +157,28 @@ Return ONLY valid JSON, no explanation, no markdown, no code fences.{type_hint}
     {{"de": "A natural German example sentence", "en": "English translation"}},
     {{"de": "A second example showing a different use", "en": "English translation"}}
   ],
-  "topics": ["suggested topic from: daily life, emotions, people & relationships, body & mind, work & academia, nature & weather, travel & places, time, language & communication, money & shopping, culture & arts, society & politics, grammar & structure, various"],
-  "register": "neutral, formal, informal, or Swiss German",
-  "notes": "one sentence max — only if there is something genuinely important to note, e.g. easy confusion with another word, or null"
+  "topics": ["0 to 2 topics from the list below, ONLY if the word is clearly about that domain; core vocabulary like brauchen or bekommen gets an empty list"],
+  "notes": "one sentence max — only if there is something genuinely important to note, e.g. easy confusion with another word, or a non-neutral register (umgangssprachlich, gehoben, Schweizerdeutsch), or null",
+  "related": [
+    {{"word": "an existing word from my list", "kind": "one of: synonym, antonym, contrast, derived"}}
+  ]
 }}
 
-Word to analyse: {word}{type_hint}"""
+"related" kinds: synonym = same meaning; antonym = opposite; contrast = easily confused,
+worth telling apart (e.g. kennen / wissen); derived = same stem, different word class
+(e.g. wählen / die Wahl). Return an empty list if nothing in my list fits.
+
+Topics (use the names exactly as written). Rules: 0 to 2 topics; the FIRST definition
+decides; a secondary meaning earns a topic only if one of your example sentences
+illustrates it; core vocabulary gets an empty list, which is the correct answer for
+words like brauchen, bekommen, liegen, nötig.
+{topic_lines}
+
+Word to analyse: {word}{type_hint}{vocab_block}"""
 
     payload = json.dumps({
-        "model": "claude-sonnet-5-5",
-        "max_tokens": 1000,
+        "model": "claude-sonnet-4-20250514",
+        "max_tokens": 1500,
         "messages": [{"role": "user", "content": prompt}]
     }).encode("utf-8")
 
@@ -207,19 +295,24 @@ def print_entry(w: dict):
         sep  = "separable" if w.get("is_separable") else "inseparable"
         ref  = " · reflexive" if w.get("reflexive") else ""
         prep = f" · {w['preposition']}" if w.get("preposition") else ""
-        print(f"  │  {aux} · {pt} · {pp}   ({sep}{ref}{prep})")
+        cls  = f"{w['verb_class']} · " if w.get("verb_class") else ""
+        p3   = f"er {w['present_3sg']} · " if w.get("present_3sg") else ""
+        print(f"  │  {cls}{p3}{aux} · {pt} · {pp}   ({sep}{ref}{prep})")
+        if w.get("imperative") or w.get("konjunktiv_2"):
+            bits = [w["imperative"] + "!" if w.get("imperative") else "", "Konj. II " + w["konjunktiv_2"] if w.get("konjunktiv_2") else ""]
+            print(f"  │  {' · '.join(b for b in bits if b)}")
         if w.get("family_root") and w["family_root"] != w["word"]:
             print(f"  │  family: {w['family_root']}  (prefix: {w.get('prefix','')})")
 
     if w.get("usage"):
         print(f"  │  usage: {w['usage']}")
-    if w.get("register") and w["register"] != "neutral":
-        print(f"  │  register: {w['register']}")
 
     print(f"  │")
     for i, d in enumerate(w.get("definitions", []), 1):
         note = f"  -> {d['note']}" if d.get("note") else ""
         print(f"  │  {i}. {d['meaning']}{note}")
+    if w.get("definition_de"):
+        print(f"  │  DE: {w['definition_de']}")
 
     if w.get("examples"):
         print(f"  │")
@@ -230,7 +323,9 @@ def print_entry(w: dict):
     if w.get("topics"):
         print(f"  │  topics:  {', '.join(w['topics'])}")
     if w.get("related"):
-        print(f"  │  related: {', '.join(w['related'])}")
+        rel = ", ".join(f"{r['word']} ({r['kind']})" if isinstance(r, dict) else str(r)
+                        for r in w["related"])
+        print(f"  │  related: {rel}")
     if w.get("notes"):
         print(f"  │  note: {w['notes']}")
 
@@ -246,142 +341,63 @@ def normalise(word: str) -> str:
     w = re.sub(r"^(der|die|das|sich|ein|eine|einen|einem)\s+", "", w)
     return w.strip()
 
-def auto_detect_related(words: list, new_entry: dict) -> list:
-    """
-    Scan the database and return a list of words that should be related
-    to the new entry, based on:
-      1. Shared family_root
-      2. New entry listed in existing word's related list
-      3. Tags like 'similar to: X' or 'verb family: X'
-    """
-    new_word = new_entry["word"]
-    new_norm = normalise(new_word)
-    new_id   = new_entry["id"]
-    new_family = new_entry.get("family_root", "")
-    new_related_norms = {normalise(r) for r in new_entry.get("related", [])}
+RELATED_KINDS = ["synonym", "antonym", "contrast", "derived"]
 
-    by_norm  = {normalise(w["word"]): w for w in words if w["id"] != new_id}
-    by_lower = {w["word"].lower(): w for w in words if w["id"] != new_id}
+def related_words(entry: dict) -> set:
+    return {r["word"] for r in entry.get("related", []) if isinstance(r, dict)}
 
-    found = set()
-
-    for w in words:
-        if w["id"] == new_id:
+def confirm_related(words: list, proposed: list) -> list:
+    """Show the AI's proposed links, keep only those that exist, let the user adjust."""
+    by_word = {w["word"]: w for w in words}
+    by_norm = {normalise(w["word"]): w for w in words}
+    kept = []
+    for r in proposed or []:
+        if not isinstance(r, dict):
             continue
-        w_norm = normalise(w["word"])
+        tgt = by_word.get(r.get("word", "")) or by_norm.get(normalise(r.get("word", "")))
+        kind = r.get("kind", "contrast")
+        if tgt and kind in RELATED_KINDS:
+            kept.append({"word": tgt["word"], "kind": kind})
+    if kept:
+        print("\n  Related words proposed:")
+        for i, r in enumerate(kept, 1):
+            print(f"    {i}. {r['word']:<26} ({r['kind']})")
+        print("  Enter to keep, numbers to drop (e.g. 2,3), or '+word:kind' to add.")
+    else:
+        print("\n  No related words proposed. Type '+word:kind' to add, or Enter to skip.")
+    while True:
+        val = input("  > ").strip()
+        if not val:
+            return kept
+        if val.startswith("+"):
+            name, _, kind = val[1:].partition(":")
+            tgt = by_word.get(name.strip()) or by_norm.get(normalise(name))
+            kind = (kind or "contrast").strip()
+            if not tgt:
+                print(f"    '{name}' is not in the database.")
+            elif kind not in RELATED_KINDS:
+                print(f"    kind must be one of {', '.join(RELATED_KINDS)}")
+            else:
+                kept.append({"word": tgt["word"], "kind": kind})
+                print(f"    added {tgt['word']} ({kind})")
+        else:
+            drop = {int(x) for x in re.findall(r"\d+", val)}
+            kept = [r for i, r in enumerate(kept, 1) if i not in drop]
+            print(f"    kept {len(kept)}")
 
-        # Signal 1: shared family_root
-        if new_family and w.get("family_root") == new_family:
-            found.add(w["word"])
-
-        # Signal 2: existing entry has new word in its related list
-        if new_norm in {normalise(r) for r in w.get("related", [])}:
-            found.add(w["word"])
-
-        # Signal 3: new entry's related list mentions this existing word
-        if w_norm in new_related_norms or w["word"].lower() in new_related_norms:
-            found.add(w["word"])
-
-        # Signal 4: new entry's family_root matches this word directly (but not itself)
-        if new_family and new_family.lower() != new_word.lower() and (normalise(new_family) == w_norm or new_family.lower() == w["word"].lower()):
-            found.add(w["word"])
-
-        # Signal 5: this word's family_root matches the new entry's word
-        w_family = w.get("family_root", "")
-        if w_family and (normalise(w_family) == new_norm or w_family.lower() == new_word.lower()):
-            found.add(w["word"])
-
-        # Signal 4: tags like 'similar to: X', 'verb family: X'
-        for tag in new_entry.get("tags", []):
-            if ":" in tag:
-                after = tag.split(":", 1)[1].strip().lower()
-                parts = [p.strip() for p in after.split(",")]
-                for p in parts:
-                    p_norm = re.sub(r"^(der|die|das|sich|ein|eine)\s+", "", p).strip()
-                    if p_norm and (p_norm == w_norm or p == w["word"].lower()):
-                        found.add(w["word"])
-
-        # Signal 5: derived_from field
-        derived = new_entry.get("derived_from", "")
-        if derived:
-            derived_norm = re.sub(r"^(der|die|das|sich|ein|eine)\s+", "", derived.lower()).strip()
-            if derived_norm == w_norm or derived.lower() == w["word"].lower():
-                found.add(w["word"])
-        # reverse: this word's derived_from points to new entry
-        w_derived = w.get("derived_from", "")
-        if w_derived:
-            w_derived_norm = re.sub(r"^(der|die|das|sich|ein|eine)\s+", "", w_derived.lower()).strip()
-            if w_derived_norm == new_norm or w_derived.lower() == new_word.lower():
-                found.add(w["word"])
-
-    # remove self-reference
-    found.discard(new_word)
-    found = {f for f in found if f.lower() != new_word.lower()}
-    return sorted(found)
-
-def link_related(words: list, new_entry: dict) -> int:
-    """
-    After adding a new entry, ensure all related links are bidirectional.
-    Uses the same signals as fix_related.py:
-      1. New entry's related list → link back from those words
-      2. Existing words whose related list mentions the new word
-      3. Shared family_root
-      4. Tags like 'similar to: X'
-    Returns count of existing entries updated.
-    """
-    new_word   = new_entry["word"]
-    new_id     = new_entry["id"]
-    new_norm   = normalise(new_word)
-    new_family = new_entry.get("family_root", "")
-    new_related_norms = {normalise(r) for r in new_entry.get("related", [])}
-
-    by_norm  = {normalise(w["word"]): w for w in words if w["id"] != new_id}
-    by_lower = {w["word"].lower(): w for w in words if w["id"] != new_id}
-
+def make_bidirectional(words: list, entry: dict) -> int:
+    """Ensure every link from `entry` also exists on the target, with the same kind."""
     updated = 0
-    for w in words:
-        if w["id"] == new_id:
+    by_word = {w["word"]: w for w in words}
+    for r in entry.get("related", []):
+        tgt = by_word.get(r["word"])
+        if not tgt or tgt["id"] == entry["id"]:
             continue
-
-        w_norm   = normalise(w["word"])
-        w_family = w.get("family_root", "")
-
-        should_link = False
-
-        # Signal 1: new entry's related list mentions this word
-        if w_norm in new_related_norms or w["word"].lower() in new_related_norms:
-            should_link = True
-
-        # Signal 2: this word's related list mentions the new entry
-        if new_norm in {normalise(r) for r in w.get("related", [])}:
-            should_link = True
-
-        # Signal 3: shared family_root
-        if new_family and w_family and new_family.lower() == w_family.lower():
-            if new_family.lower() != new_norm:  # don't link root to itself
-                should_link = True
-        if new_family and new_family.lower() != new_norm and normalise(new_family) == w_norm:
-            should_link = True
-        if w_family and w_family.lower() != w_norm and normalise(w_family) == new_norm:
-            should_link = True
-
-        # Signal 4: tags like 'similar to: X', 'verb family: X'
-        for tag in new_entry.get("tags", []):
-            if ":" in tag:
-                after = tag.split(":", 1)[1].strip().lower()
-                parts = [p.strip() for p in after.split(",")]
-                for p in parts:
-                    p_norm = re.sub(r"^(der|die|das|sich|ein|eine)\s+", "", p).strip()
-                    if p_norm and (p_norm == w_norm or p == w["word"].lower()):
-                        should_link = True
-
-        if should_link:
-            existing = w.get("related", [])
-            if new_word not in existing:
-                w["related"] = sorted(set(existing) | {new_word})
-                updated += 1
-
+        if entry["word"] not in related_words(tgt):
+            tgt.setdefault("related", []).append({"word": entry["word"], "kind": r["kind"]})
+            updated += 1
     return updated
+
 
 # ── commands ───────────────────────────────────────────────────────────────────
 
@@ -432,8 +448,12 @@ def cmd_topics(args):
         for t in w.get("topics", []):
             all_topics[t] = all_topics.get(t, 0) + 1
     print("\n  Topics in your vocabulary:\n")
+    for topic, desc in TOPICS.items():
+        print(f"  . {topic:<34} {all_topics.get(topic, 0):>4}   {desc.split('.')[0]}")
     for topic, count in sorted(all_topics.items()):
-        print(f"  . {topic:<30} ({count} words)")
+        if topic not in TOPICS:
+            print(f"  ! {topic:<28} {count:>4}   (not in the closed list)")
+    print(f"  . {'(no topic)':<28} {sum(1 for w in words if not w.get('topics')):>4}")
     print()
 
 
@@ -453,6 +473,70 @@ def cmd_family(args):
         meaning = m["definitions"][0]["meaning"] if m.get("definitions") else ""
         print(f"  {prefix:<12} {m['word']:<25} {meaning}")
     print()
+
+
+def lexicon_verb(entry: dict) -> None:
+    """Compare the verb forms in `entry` with the lexicon; fill present_3sg and verb_class.
+    The lexicon is right far more often than the model, but it cannot know which meaning
+    you mean when a verb has two conjugations (schaffte / schuf), so you decide."""
+    if not (LEXICON and LEXICON.ok):
+        return
+    v = LEXICON.verb(entry["word"], entry.get("prefix"), entry.get("is_separable"),
+                     entry.get("past_tense"), entry.get("past_participle"))
+    if not v:
+        print("  (lexicon: verb not found, keeping the forms above)")
+        return
+    for field in ("past_tense", "past_participle", "present_3sg", "verb_class"):
+        mine, lex = entry.get(field), v[field]
+        if not lex or (mine or "").replace("ß", "ss") == lex.replace("ß", "ss"):
+            entry[field] = mine or lex
+            continue
+        if not mine:
+            entry[field] = lex
+            continue
+        print(f"  ! {field}: you have '{mine}', the lexicon says '{lex}'")
+        entry[field] = lex if ask("    Use the lexicon form? (y/n)", "y").lower() == "y" else mine
+    # filled silently: both come straight from the lexicon and need no judgement
+    if v.get("imperative"):
+        entry["imperative"] = v["imperative"]
+    if v.get("konjunktiv_2_common"):
+        entry["konjunktiv_2"] = v["konjunktiv_2_common"]
+    if v["alternatives"]:
+        print(f"  (lexicon: also conjugated as {', '.join(v['alternatives'])} in another meaning)")
+    extra = "".join(f" · {x}" for x in (entry.get("imperative") and entry["imperative"] + "!",
+                                         entry.get("konjunktiv_2") and "Konj. II " + entry["konjunktiv_2"]) if x)
+    print(f"  lexicon: {entry['verb_class']} · er {entry['present_3sg']} · {entry['past_tense']} · {entry['past_participle']}{extra}")
+
+
+def wiktionary_definition(entry: dict) -> None:
+    """Look up a German definition (German Wiktionary) matching the English meaning."""
+    if not german_definition or entry.get("definition_de"):
+        return
+    meanings = [d["meaning"] for d in entry.get("definitions", [])]
+    print("  (looking up a German definition in Wiktionary…)")
+    g = german_definition(entry["word"], entry.get("type"), meanings)
+    if g:
+        g = confirm_or_edit("German definition (Enter to keep, '-' to drop)", g)
+        if g and g.strip() != "-":
+            entry["definition_de"] = g
+
+
+def lexicon_noun(entry: dict) -> None:
+    """Warn if gender or plural disagree with the lexicon."""
+    if not (LEXICON and LEXICON.ok):
+        return
+    n = LEXICON.noun(entry["word"])
+    if not n:
+        print("  (lexicon: noun not found)")
+        return
+    if entry.get("gender") and n["genders"] and entry["gender"] not in n["genders"]:
+        print(f"  ! gender: you have '{entry['gender']}', the lexicon says {' / '.join(n['genders'])}")
+        if ask("    Use the lexicon gender? (y/n)", "y").lower() == "y":
+            entry["gender"] = n["genders"][0]
+            entry["word"] = entry["gender"] + " " + re.sub(r"^(der|die|das)\s+", "", entry["word"])
+    pl = re.sub(r"^die\s+", "", entry.get("plural") or "")
+    if pl and n["plurals"] and pl not in n["plurals"]:
+        print(f"  ! plural: you have '{pl}', the lexicon has {' / '.join(n['plurals'])} (some nouns have two)")
 
 
 def cmd_add(args):
@@ -480,7 +564,8 @@ def cmd_add(args):
     suggestion = None
     if not manual and api_key:
         print(f"\n  Looking up '{word}' as {word_type} with AI...\n")
-        suggestion = ai_enrich(word, api_key, word_type=word_type)
+        suggestion = ai_enrich(word, api_key, word_type=word_type,
+                               vocabulary=[w["word"] for w in words])
         if suggestion:
             # override type from AI with what the user chose
             suggestion["type"] = word_type
@@ -519,8 +604,6 @@ def cmd_add(args):
         "definitions": [],
         "examples":    [],
         "topics":      [],
-        "tags":        [],
-        "register":    "neutral",
         "notes":       None,
         "added":       datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     }
@@ -533,12 +616,15 @@ def cmd_add(args):
         else:
             entry["gender"] = ask_choice("Gender", GENDERS)
             entry["plural"] = ask("Plural form (e.g. die Erinnerungen)")
+        lexicon_noun(entry)
 
     elif word_type == "verb":
         if suggestion:
             entry["auxiliary"]       = confirm_or_edit("Auxiliary", s.get("auxiliary"), ["haben", "sein"])
             entry["past_tense"]      = confirm_or_edit("Past tense", s.get("past_tense"))
             entry["past_participle"] = confirm_or_edit("Past participle", s.get("past_participle"))
+            entry["present_3sg"]     = s.get("present_3sg")
+            entry["verb_class"]      = s.get("verb_class") if s.get("verb_class") in VERB_CLASSES else None
             entry["is_separable"]    = confirm_or_edit("Separable?", s.get("is_separable", False))
             entry["reflexive"]       = confirm_or_edit("Reflexive?", s.get("reflexive", False))
             prep = confirm_or_edit("Preposition", s.get("preposition"))
@@ -556,6 +642,8 @@ def cmd_add(args):
             entry["auxiliary"]       = ask_choice("Auxiliary", ["haben", "sein"])
             entry["past_tense"]      = ask("Simple past (Präteritum)")
             entry["past_participle"] = ask("Past participle")
+            entry["present_3sg"]     = None
+            entry["verb_class"]      = None
             entry["is_separable"]    = ask("Separable? (y/n)", "n").lower() == "y"
             entry["reflexive"]       = ask("Reflexive? (y/n)", "n").lower() == "y"
             prep = ask("Preposition + case (or Enter to skip)")
@@ -569,6 +657,12 @@ def cmd_add(args):
                     entry["prefix"] = prefix
             else:
                 entry["family_root"] = word
+        # prefix is known only now, so the lexicon check comes last
+        lexicon_verb(entry)
+        if not entry.get("present_3sg"):
+            entry["present_3sg"] = ask("er/sie/es form, present (e.g. nimmt mit)")
+        if entry.get("verb_class") not in VERB_CLASSES:
+            entry["verb_class"] = ask_choice("Verb class", VERB_CLASSES, "regular")
 
     elif word_type == "adj/adv":
         USAGE_OPTIONS = ["both", "adjective only", "adverb only"]
@@ -706,21 +800,14 @@ def cmd_add(args):
             en = ask("  English")
             entry["examples"].append({"de": de, "en": en})
 
-    # ── topics, tags, register, notes ─────────────────────────────────────────
+    wiktionary_definition(entry)
+
+    # ── topics, notes ─────────────────────────────────────────
     print()
-    if suggestion and s.get("topics"):
-        entry["topics"] = confirm_or_edit("Topics", s["topics"])
-        if isinstance(entry["topics"], str):
-            entry["topics"] = [t.strip() for t in entry["topics"].split(",")]
-    else:
-        entry["topics"] = ask_list("Topics (e.g. work, states, grammar)")
-
-    entry["tags"] = ask_list("Tags (optional)")
-
-    if suggestion:
-        entry["register"] = confirm_or_edit("Register", s.get("register", "neutral"), REGISTERS)
-    else:
-        entry["register"] = ask_choice("Register", REGISTERS, "neutral")
+    proposed = clean_topics(s.get("topics")) if suggestion else []
+    entry["topics"] = clean_topics(confirm_or_edit("Topics (0-2, or 'none')", ", ".join(proposed) or "none"))
+    if suggestion and set(proposed) != set(entry["topics"]):
+        print(f"    (kept: {', '.join(entry['topics']) or 'none'})")
 
     sn = s.get("notes") if suggestion else None
     if sn and sn not in (None, "null", "None"):
@@ -730,23 +817,8 @@ def cmd_add(args):
         if n:
             entry["notes"] = n
 
-    # ── auto-detect related words from existing database ─────────────────────
-    detected = auto_detect_related(words, entry)
-    ai_related = entry.get("related", [])
-    merged = sorted(set(detected) | set(ai_related))
-
-    if merged:
-        print(f"  Auto-detected related words: {', '.join(merged)}")
-        extra = ask("  Add more? (comma-separated, or Enter to keep)")
-        if extra:
-            for e in [e.strip() for e in extra.split(",") if e.strip()]:
-                if e not in merged:
-                    merged.append(e)
-        entry["related"] = merged
-    else:
-        extra = ask_list("Related words (or Enter to skip)")
-        if extra:
-            entry["related"] = extra
+    # ── related words: typed semantic links proposed by the AI ───────────────
+    entry["related"] = confirm_related(words, s.get("related", []) if suggestion else [])
 
     # ── preview & save ────────────────────────────────────────────────────────
     print()
@@ -758,10 +830,9 @@ def cmd_add(args):
 
     words.append(entry)
 
-    # ── auto-link related words ───────────────────────────────────────────────
-    n_linked = link_related(words, entry)
+    n_linked = make_bidirectional(words, entry)
     if n_linked > 0:
-        print(f"  Auto-linked '{word}' to {n_linked} existing entry/entries.")
+        print(f"  Linked back from {n_linked} existing entry/entries.")
 
     save(words)
     print(f"  '{word}' added successfully!\n")
@@ -784,18 +855,16 @@ def cmd_edit(args):
     print("    2) examples")
     print("    3) notes")
     print("    4) topics")
-    print("    5) tags")
-    print("    6) related words")
-    print("    7) register")
+    print("    5) related words")
     if w["type"] == "noun":
-        print("    8) gender / plural")
+        print("    6) gender / plural")
     elif w["type"] == "verb":
-        print("    8) verb forms (past tense, participle, auxiliary…)")
+        print("    6) verb forms (past tense, participle, auxiliary…)")
     elif w["type"] == "adj/adv":
-        print("    8) usage (adjective only / adverb only / both)")
+        print("    6) usage (adjective only / adverb only / both)")
     elif w["type"] == "prep/conj":
-        print("    8) usage (preposition only / conjunction only / both)")
-    print("    9) word type")
+        print("    6) usage (preposition only / conjunction only / both)")
+    print("    7) word type")
     print("    0) cancel")
     print()
 
@@ -864,30 +933,17 @@ def cmd_edit(args):
     elif choice == "4":
         current = ", ".join(w.get("topics", []))
         print(f"\n  Current topics: {current or '—'}")
-        new_topics = ask("New topics (comma-separated)", current)
-        w["topics"] = [t.strip() for t in new_topics.split(",") if t.strip()]
+        print("  Allowed: " + ", ".join(TOPICS))
+        new_topics = ask("New topics (comma-separated, max 2)", current)
+        w["topics"] = clean_topics(new_topics)
 
     elif choice == "5":
-        current = ", ".join(w.get("tags", []))
-        print(f"\n  Current tags: {current or '—'}")
-        new_tags = ask("New tags (comma-separated)", current)
-        w["tags"] = [t.strip() for t in new_tags.split(",") if t.strip()]
+        w["related"] = confirm_related(words, w.get("related", []))
+        n_linked = make_bidirectional(words, w)
+        if n_linked > 0:
+            print(f"  Linked back from {n_linked} existing entry/entries.")
 
     elif choice == "6":
-        current = ", ".join(w.get("related", []))
-        print(f"\n  Current related: {current or '—'}")
-        new_related = ask("New related words (comma-separated)", current)
-        w["related"] = [r.strip() for r in new_related.split(",") if r.strip()]
-        # re-run bidirectional linking
-        n_linked = link_related(words, w)
-        if n_linked > 0:
-            print(f"  Auto-linked to {n_linked} existing entry/entries.")
-
-    elif choice == "7":
-        current = w.get("register", "neutral")
-        w["register"] = ask_choice("Register", REGISTERS, current)
-
-    elif choice == "8":
         if w["type"] == "noun":
             w["gender"] = ask_choice("Gender", GENDERS, w.get("gender", ""))
             w["plural"] = ask("Plural form", w.get("plural", "") or "")
@@ -895,6 +951,8 @@ def cmd_edit(args):
             w["auxiliary"]       = ask_choice("Auxiliary", ["haben", "sein"], w.get("auxiliary", "haben"))
             w["past_tense"]      = ask("Past tense", w.get("past_tense", "") or "")
             w["past_participle"] = ask("Past participle", w.get("past_participle", "") or "")
+            w["present_3sg"]     = ask("er/sie/es, present", w.get("present_3sg", "") or "")
+            w["verb_class"]      = ask_choice("Verb class", VERB_CLASSES, w.get("verb_class", "regular"))
             sep = ask("Separable? (y/n)", "y" if w.get("is_separable") else "n")
             w["is_separable"] = sep.lower() == "y"
             ref = ask("Reflexive? (y/n)", "y" if w.get("reflexive") else "n")
@@ -902,6 +960,7 @@ def cmd_edit(args):
             w["preposition"] = ask("Preposition + case (or Enter to clear)", w.get("preposition", "") or "") or None
             w["family_root"]    = ask("Family root", w.get("family_root", "") or "")
             w["prefix"]         = ask("Prefix (or Enter to clear)", w.get("prefix", "") or "") or None
+            lexicon_verb(w)
         elif w["type"] == "adj/adv":
             USAGE_OPTIONS = ["both", "adjective only", "adverb only"]
             w["usage"] = ask_choice("Usage", USAGE_OPTIONS, w.get("usage", "both"))
@@ -909,7 +968,7 @@ def cmd_edit(args):
             USAGE_OPTIONS = ["both", "preposition only", "conjunction only"]
             w["usage"] = ask_choice("Usage", USAGE_OPTIONS, w.get("usage", "both"))
 
-    elif choice == "9":
+    elif choice == "7":
         w["type"] = ask_choice("Word type", WORD_TYPES, w.get("type", "other"))
 
     else:
@@ -956,8 +1015,9 @@ def cmd_delete(args):
     # remove deleted word from all related lists
     cleaned = 0
     for entry in words:
-        if deleted_word in entry.get("related", []):
-            entry["related"] = [r for r in entry["related"] if r != deleted_word]
+        before = len(entry.get("related", []))
+        entry["related"] = [r for r in entry.get("related", []) if r.get("word") != deleted_word]
+        if len(entry["related"]) < before:
             cleaned += 1
 
     if cleaned:
