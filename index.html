@@ -1395,7 +1395,12 @@ function applyFilters() {
 
   syncSortButtons();
 
+  // "family: setzen" lists the verb family by its family_root field, not by text match
+  const fam = q.startsWith('family:') ? q.slice(7).trim() : null;
+
   filtered = allWords.filter(w => {
+    if (fam) return (w.family_root || '').toLowerCase() === fam
+                 || w.word.replace(/^sich\s+/i, '').toLowerCase() === fam;
     if (activeType && w.type !== activeType) return false;
     if (activeTopic && !(w.topics || []).includes(activeTopic)) return false;
     if (activeAlpha) {
@@ -1407,7 +1412,7 @@ function applyFilters() {
   });
 
   filtered.sort((a, b) => {
-    if (sortMode === 'relevance' && q) {
+    if (sortMode === 'relevance' && q && !fam) {
       const diff = scoreMatch(b, q) - scoreMatch(a, q);
       if (diff !== 0) return diff;
       return a.word.localeCompare(b.word, 'de');
@@ -1508,7 +1513,7 @@ function buildGrammarPills(w) {
     if (w.is_separable) pills.push('separable');
     if (w.reflexive) pills.push(w.reflexive === 'dat' ? 'sich + Dat.' : 'sich + Akk.');
     if (w.preposition) pills.push(w.preposition);
-    if (w.family_root) pills.push(`<span class="grammar-pill" style="cursor:pointer;color:var(--teal)" onclick="searchRelated('${w.family_root}',event)" title="Search verb family">family: ${w.family_root}</span>`);
+    if (w.family_root) pills.push(`<span class="grammar-pill" style="cursor:pointer;color:var(--teal)" onclick="searchFamily('${w.family_root}',event)" title="Show the verb family">family: ${w.family_root}</span>`);
   }
   if (w.usage) pills.push(usageLabel(w));
   if (w.derived_from) pills.push(`<span class="grammar-pill" style="cursor:pointer;color:var(--teal)" onclick="searchRelated('${w.derived_from}',event)" title="Search for source verb">from: ${w.derived_from}</span>`);
@@ -1520,6 +1525,13 @@ function toggleCard(id, event) {
   if (event.target.classList.contains('grammar-pill') && event.target.onclick) return;
   const card = document.getElementById('card-' + id);
   card.classList.toggle('open');
+}
+
+function searchFamily(root, event) {
+  event.stopPropagation();
+  document.getElementById('search').value = 'family: ' + root;
+  applyFilters();
+  window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
 function searchRelated(word, event) {
