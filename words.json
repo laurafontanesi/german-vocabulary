@@ -3738,9 +3738,9 @@
     "topics": [
       "people & relationships"
     ],
-    "notes": "allein = alone (physical); einsam = lonely (emotional). 'Ich mag das Alleinsein' = I like being by myself (neutral/positive).",
+    "notes": "allein = alone (physical); einsam = lonely (emotional). 'Ich mag das Alleinsein' = I like being by myself (neutral/positive). Not used before a noun: ich bin allein, but not *der alleine Mann.",
     "added": "2026-04-04",
-    "usage": "both"
+    "usage": "adverb only"
   },
   {
     "id": "kennen",
@@ -6534,7 +6534,7 @@
       }
     ],
     "topics": [],
-    "notes": "Uses 'haben' as auxiliary despite being a position verb, unlike most other position verbs which use 'sein'.",
+    "notes": "Perfekt with haben in northern German, like liegen and sitzen; in der Schweiz, Süddeutschland und Österreich with sein: ich bin gestanden.",
     "added": "2026-04-05 19:02:00",
     "auxiliary": "haben",
     "past_tense": "stand",
@@ -17653,7 +17653,7 @@
     "id": "durcheinander",
     "word": "durcheinander",
     "type": "adj/adv",
-    "usage": "both",
+    "usage": "adverb only",
     "definitions": [
       {
         "meaning": "confused, muddled, mixed up",
@@ -17678,7 +17678,7 @@
     "topics": [
       "emotions & character"
     ],
-    "notes": "durcheinander bringen = to confuse someone / to mess something up. das Durcheinander = chaos, confusion (noun).",
+    "notes": "durcheinander bringen = to confuse someone / to mess something up. das Durcheinander = chaos, confusion (noun). Not used before a noun: ich bin durcheinander, das Zimmer ist durcheinander.",
     "related": [
       {
         "word": "ordentlich",
@@ -18643,7 +18643,7 @@
       }
     ],
     "topics": [],
-    "notes": "liegen = to lie/be located (intransitive); legen = to lay (transitive — you place something). Takes haben in standard German (sein in Southern/Swiss German).",
+    "notes": "liegen = to lie / be located (no object); legen = to lay (you place something). Perfekt with haben; in der Schweiz, Süddeutschland und Österreich with sein: ich bin gelegen.",
     "related": [
       {
         "word": "legen",
@@ -30769,9 +30769,9 @@
     "topics": [
       "time"
     ],
-    "notes": "Often used with prepositions like 'an' in spatial contexts or as predicate adjective for temporal contexts.",
+    "notes": "Often used with prepositions like 'an' in spatial contexts or as predicate adjective for temporal contexts. Not used before a noun: der Sommer ist vorbei.",
     "added": "2026-06-08 19:59:27",
-    "usage": "both",
+    "usage": "adverb only",
     "related": [
       {
         "word": "weg",
@@ -33053,9 +33053,9 @@
     "topics": [
       "travel & movement"
     ],
-    "notes": null,
+    "notes": "Not used before a noun; the adjective is vordere (die vordere Reihe).",
     "added": "2026-06-10 10:15:08",
-    "usage": "both",
+    "usage": "adverb only",
     "related": []
   },
   {
@@ -36463,10 +36463,10 @@
       "body & health",
       "society & politics"
     ],
-    "notes": "Almost always used in the singular; compound of 'Gesundheit' (health) and 'Wesen' (here: system/institution), not to be confused with 'Gesundheitssystem', which is a near-synonym.",
+    "notes": "Almost always used in the singular; compound of 'Gesundheit' (health) and 'Wesen' (here: system/institution), not to be confused with 'Gesundheitssystem', which is a near-synonym. Only used in the singular.",
     "added": "2026-10-07 18:34:52",
     "gender": "das",
-    "plural": "die Gesundheitswesen (rare; usually used only in the singular)",
+    "plural": null,
     "related": []
   },
   {
