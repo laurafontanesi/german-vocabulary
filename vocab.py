@@ -194,13 +194,14 @@ Return ONLY valid JSON, no explanation, no markdown, no code fences.{type_hint}
   "topics": ["0 to 2 topics from the list below, ONLY if the word is clearly about that domain; core vocabulary like brauchen or bekommen gets an empty list"],
   "notes": "one sentence max — only if there is something genuinely important to note, e.g. easy confusion with another word, or a non-neutral register (umgangssprachlich, gehoben, Schweizerdeutsch), or null",
   "related": [
-    {{"word": "an existing word from my list", "kind": "one of: synonym, antonym, contrast, derived"}}
+    {{"word": "an existing word from my list", "kind": "one of: synonym, antonym, contrast, derived, compound"}}
   ]
 }}
 
 "related" kinds: synonym = same meaning; antonym = opposite; contrast = easily confused,
 worth telling apart (e.g. kennen / wissen); derived = same stem, different word class
-(e.g. wählen / die Wahl). Return an empty list if nothing in my list fits.
+(e.g. wählen / die Wahl); compound = one word is a part of the other (der Staub / der Staubsauger,
+das Bild / der Bildschirm). Return an empty list if nothing in my list fits.
 
 Topics (use the names exactly as written). Rules: 0 to 2 topics; the FIRST definition
 decides; a secondary meaning earns a topic only if one of your example sentences
@@ -375,7 +376,7 @@ def normalise(word: str) -> str:
     w = re.sub(r"^(der|die|das|sich|ein|eine|einen|einem)\s+", "", w)
     return w.strip()
 
-RELATED_KINDS = ["synonym", "antonym", "contrast", "derived"]
+RELATED_KINDS = ["synonym", "antonym", "contrast", "derived", "compound"]
 
 def related_words(entry: dict) -> set:
     return {r["word"] for r in entry.get("related", []) if isinstance(r, dict)}

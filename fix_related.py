@@ -3,7 +3,7 @@
 fix_related.py — keep the typed `related` links in words.json consistent.
 
 `related` is a list of {"word": ..., "kind": ...} with kind in
-synonym | antonym | contrast | derived.  Verb families are NOT stored here;
+synonym | antonym | contrast | derived | compound.  Verb families are NOT stored here;
 they are already encoded by `family_root`.
 
 This script:
@@ -21,7 +21,7 @@ import json
 import os
 import re
 
-KINDS = {'synonym', 'antonym', 'contrast', 'derived'}
+KINDS = {'synonym', 'antonym', 'contrast', 'derived', 'compound'}
 
 
 def normalise(word):
@@ -61,7 +61,7 @@ def main():
                 added.append((tgt['word'], w['word'], r['kind']))
 
     for w in db:
-        w['related'].sort(key=lambda x: (['contrast', 'antonym', 'synonym', 'derived']
+        w['related'].sort(key=lambda x: (['contrast', 'antonym', 'synonym', 'derived', 'compound']
                                          .index(x['kind']), x['word']))
 
     lonely = [w['word'] for w in db if not w['related']]

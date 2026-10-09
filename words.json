@@ -2651,6 +2651,10 @@
       {
         "word": "zeitgenössisch",
         "kind": "derived"
+      },
+      {
+        "word": "die Zeitschrift",
+        "kind": "compound"
       }
     ]
   },
@@ -3960,12 +3964,12 @@
         "kind": "antonym"
       },
       {
-        "word": "der Höhenunterschied",
+        "word": "verschieden",
         "kind": "derived"
       },
       {
-        "word": "verschieden",
-        "kind": "derived"
+        "word": "der Höhenunterschied",
+        "kind": "compound"
       }
     ]
   },
@@ -4445,7 +4449,7 @@
       },
       {
         "word": "der Abgabetermin",
-        "kind": "derived"
+        "kind": "compound"
       }
     ],
     "definitions": [
@@ -5053,7 +5057,7 @@
     "related": [
       {
         "word": "die Umgangssprache",
-        "kind": "derived"
+        "kind": "compound"
       }
     ]
   },
@@ -6680,7 +6684,7 @@
       },
       {
         "word": "die Felswand",
-        "kind": "derived"
+        "kind": "compound"
       }
     ]
   },
@@ -8368,7 +8372,7 @@
     "related": [
       {
         "word": "der Staubsauger",
-        "kind": "derived"
+        "kind": "compound"
       }
     ],
     "added": "2026-04-06 11:13:00"
@@ -8403,7 +8407,7 @@
     "related": [
       {
         "word": "der Staub",
-        "kind": "derived"
+        "kind": "compound"
       }
     ],
     "added": "2026-04-06 11:14:00"
@@ -9568,7 +9572,7 @@
       },
       {
         "word": "der Drehbuchautor",
-        "kind": "derived"
+        "kind": "compound"
       }
     ],
     "added": "2026-04-06 12:01:00"
@@ -9677,7 +9681,7 @@
       },
       {
         "word": "der Drehbuchautor",
-        "kind": "derived"
+        "kind": "compound"
       }
     ],
     "added": "2026-04-06 12:04:00"
@@ -9716,11 +9720,11 @@
       },
       {
         "word": "das Drehbuch",
-        "kind": "derived"
+        "kind": "compound"
       },
       {
         "word": "der Autor",
-        "kind": "derived"
+        "kind": "compound"
       }
     ],
     "added": "2026-04-06 12:05:00"
@@ -9925,8 +9929,12 @@
         "kind": "contrast"
       },
       {
+        "word": "der Bildhauer",
+        "kind": "compound"
+      },
+      {
         "word": "der Bildschirm",
-        "kind": "derived"
+        "kind": "compound"
       }
     ],
     "added": "2026-04-06 12:11:00"
@@ -10140,7 +10148,12 @@
       "culture & arts"
     ],
     "notes": "die Bildhauerin = female sculptor. Literally: 'image-hewer'. die Bildhauerei = sculpture (the art form).",
-    "related": [],
+    "related": [
+      {
+        "word": "das Bild",
+        "kind": "compound"
+      }
+    ],
     "added": "2026-04-06 12:17:00"
   },
   {
@@ -11187,16 +11200,16 @@
         "kind": "contrast"
       },
       {
-        "word": "das Entscheidungsverfahren",
+        "word": "sich entscheiden",
         "kind": "derived"
+      },
+      {
+        "word": "das Entscheidungsverfahren",
+        "kind": "compound"
       },
       {
         "word": "die Entscheidungsfindung",
-        "kind": "derived"
-      },
-      {
-        "word": "sich entscheiden",
-        "kind": "derived"
+        "kind": "compound"
       }
     ],
     "added": "2026-04-06 14:10:00"
@@ -20444,7 +20457,7 @@
     "related": [
       {
         "word": "der Unterschied",
-        "kind": "derived"
+        "kind": "compound"
       }
     ],
     "added": "2026-04-07 15:09:00"
@@ -20607,7 +20620,7 @@
       },
       {
         "word": "der Kiesweg",
-        "kind": "derived"
+        "kind": "compound"
       }
     ],
     "added": "2026-04-07 15:13:00"
@@ -21030,6 +21043,10 @@
       {
         "word": "arbeiten",
         "kind": "derived"
+      },
+      {
+        "word": "die Arbeitslosigkeit",
+        "kind": "compound"
       }
     ],
     "added": "2026-04-07 16:03:00"
@@ -21251,7 +21268,12 @@
       "technology & media"
     ],
     "notes": "die Fachzeitschrift = specialist/academic journal. die Zeitschrift ≠ die Zeitung (newspaper).",
-    "related": [],
+    "related": [
+      {
+        "word": "die Zeit",
+        "kind": "compound"
+      }
+    ],
     "added": "2026-04-07 16:09:00"
   },
   {
@@ -21288,11 +21310,11 @@
       },
       {
         "word": "der Termin",
-        "kind": "derived"
+        "kind": "compound"
       },
       {
         "word": "die Abgabe",
-        "kind": "derived"
+        "kind": "compound"
       }
     ],
     "added": "2026-04-07 16:10:00"
@@ -21595,6 +21617,10 @@
       {
         "word": "befristet",
         "kind": "derived"
+      },
+      {
+        "word": "die Abgabe",
+        "kind": "compound"
       }
     ],
     "added": "2026-04-07 16:18:00"
@@ -22685,7 +22711,7 @@
     "related": [
       {
         "word": "die Entscheidung",
-        "kind": "derived"
+        "kind": "compound"
       }
     ],
     "added": "2026-04-07 16:47:00"
@@ -22754,7 +22780,7 @@
     "related": [
       {
         "word": "die Entscheidung",
-        "kind": "derived"
+        "kind": "compound"
       }
     ],
     "added": "2026-04-07 16:49:00"
@@ -23571,8 +23597,12 @@
     "notes": "der Bund = federal government (Switzerland/Germany). der Bundesrat = Federal Council. das Bundesamt = federal office.",
     "related": [
       {
+        "word": "das Bundesamt",
+        "kind": "compound"
+      },
+      {
         "word": "der Bundesrat",
-        "kind": "contrast"
+        "kind": "compound"
       }
     ],
     "added": "2026-04-07 17:12:00"
@@ -23608,6 +23638,10 @@
       {
         "word": "der Bundesrat",
         "kind": "contrast"
+      },
+      {
+        "word": "der Bund",
+        "kind": "compound"
       }
     ],
     "added": "2026-04-07 17:13:00"
@@ -23646,7 +23680,7 @@
       },
       {
         "word": "der Bund",
-        "kind": "contrast"
+        "kind": "compound"
       }
     ],
     "added": "2026-04-07 17:14:00"
@@ -24522,7 +24556,7 @@
     "related": [
       {
         "word": "der Umgang",
-        "kind": "derived"
+        "kind": "compound"
       }
     ],
     "added": "2026-04-07 17:36:00"
@@ -32142,7 +32176,12 @@
     "added": "2026-06-09 09:09:51",
     "gender": "das",
     "plural": "die Wesen",
-    "related": []
+    "related": [
+      {
+        "word": "das Gesundheitswesen",
+        "kind": "compound"
+      }
+    ]
   },
   {
     "id": "beschreiten",
@@ -32538,12 +32577,12 @@
     "plural": "die Putzkräfte",
     "related": [
       {
-        "word": "die Kraft",
-        "kind": "contrast"
-      },
-      {
         "word": "putzen",
         "kind": "derived"
+      },
+      {
+        "word": "die Kraft",
+        "kind": "compound"
       }
     ]
   },
@@ -32585,16 +32624,16 @@
     "plural": "die Kräfte",
     "related": [
       {
-        "word": "die Putzkraft",
-        "kind": "contrast"
-      },
-      {
         "word": "die Wucht",
         "kind": "contrast"
       },
       {
         "word": "die Pflegekraft",
-        "kind": "derived"
+        "kind": "compound"
+      },
+      {
+        "word": "die Putzkraft",
+        "kind": "compound"
       }
     ]
   },
@@ -33022,6 +33061,10 @@
       {
         "word": "arbeiten",
         "kind": "derived"
+      },
+      {
+        "word": "die Arbeit",
+        "kind": "compound"
       }
     ]
   },
@@ -33327,7 +33370,7 @@
     "related": [
       {
         "word": "der Weg",
-        "kind": "derived"
+        "kind": "compound"
       }
     ]
   },
@@ -34756,11 +34799,11 @@
     "related": [
       {
         "word": "der Fels",
-        "kind": "derived"
+        "kind": "compound"
       },
       {
         "word": "die Wand",
-        "kind": "derived"
+        "kind": "compound"
       }
     ]
   },
@@ -34799,7 +34842,7 @@
     "related": [
       {
         "word": "die Felswand",
-        "kind": "derived"
+        "kind": "compound"
       }
     ]
   },
@@ -36177,7 +36220,11 @@
       },
       {
         "word": "der Abgabetermin",
-        "kind": "derived"
+        "kind": "compound"
+      },
+      {
+        "word": "die Abgabefrist",
+        "kind": "compound"
       }
     ]
   },
@@ -36467,7 +36514,12 @@
     "added": "2026-10-07 18:34:52",
     "gender": "das",
     "plural": null,
-    "related": []
+    "related": [
+      {
+        "word": "das Wesen",
+        "kind": "compound"
+      }
+    ]
   },
   {
     "id": "pflegen",
@@ -36575,6 +36627,10 @@
       {
         "word": "pflegen",
         "kind": "derived"
+      },
+      {
+        "word": "der/die Kranke",
+        "kind": "compound"
       }
     ]
   },
@@ -36619,6 +36675,10 @@
       {
         "word": "die Pflegekraft",
         "kind": "synonym"
+      },
+      {
+        "word": "der/die Kranke",
+        "kind": "compound"
       }
     ]
   },
@@ -36665,12 +36725,12 @@
         "kind": "synonym"
       },
       {
-        "word": "die Kraft",
+        "word": "pflegen",
         "kind": "derived"
       },
       {
-        "word": "pflegen",
-        "kind": "derived"
+        "word": "die Kraft",
+        "kind": "compound"
       }
     ]
   },
@@ -36709,6 +36769,14 @@
       {
         "word": "erkranken",
         "kind": "derived"
+      },
+      {
+        "word": "der Krankenpfleger",
+        "kind": "compound"
+      },
+      {
+        "word": "die Krankenschwester",
+        "kind": "compound"
       }
     ]
   },
@@ -36843,7 +36911,7 @@
       },
       {
         "word": "die Reizüberflutung",
-        "kind": "derived"
+        "kind": "compound"
       }
     ]
   },
@@ -36925,7 +36993,7 @@
     "related": [
       {
         "word": "der Reiz",
-        "kind": "derived"
+        "kind": "compound"
       }
     ]
   },
@@ -36963,12 +37031,12 @@
     "plural": "die Bildschirme",
     "related": [
       {
-        "word": "der Schirm",
-        "kind": "contrast"
+        "word": "das Bild",
+        "kind": "compound"
       },
       {
-        "word": "das Bild",
-        "kind": "derived"
+        "word": "der Schirm",
+        "kind": "compound"
       }
     ]
   },
@@ -37015,7 +37083,7 @@
     "related": [
       {
         "word": "der Bildschirm",
-        "kind": "contrast"
+        "kind": "compound"
       }
     ]
   },

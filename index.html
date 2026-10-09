@@ -563,6 +563,9 @@
   .related-chip.kind-antonym { border-color: var(--accent-soft); }
   .related-chip.kind-synonym { border-color: var(--teal-soft); }
   .related-chip.kind-derived { color: var(--ink-muted); }
+  .related-chip.kind-compound { color: var(--ink-muted); }
+  .related-group { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; margin: 0 0 6px; }
+  .related-label { font-size: 11px; color: var(--ink-muted); min-width: 92px; }
 
   .notes-box {
     margin-top: 10px;
@@ -1356,7 +1359,18 @@ function usageLabel(w) {
 }
 function relWord(r) { return typeof r === 'string' ? r : r.word; }
 function relKind(r) { return typeof r === 'string' ? '' : (r.kind || ''); }
-const KIND_SIGN = { contrast: '', antonym: '≠ ', synonym: '= ', derived: '← ' };
+const KIND_SIGN = { contrast: '', antonym: '≠ ', synonym: '= ', derived: '← ', compound: '+ ' };
+// Related words are shown grouped by kind, each group with a plain-language label.
+const KIND_ORDER = ['contrast', 'antonym', 'synonym', 'derived', 'compound'];
+const KIND_LABEL = { contrast: 'Easily confused', antonym: 'Opposite', synonym: 'Same meaning',
+                     derived: 'Same root', compound: 'Compound' };
+function relatedGroups(w, chip) {
+  const by = {};
+  (w.related || []).forEach(r => { (by[relKind(r)] = by[relKind(r)] || []).push(r); });
+  return KIND_ORDER.filter(k => by[k]).map(k =>
+    `<div class="related-group"><span class="related-label">${KIND_LABEL[k]}</span>${by[k].map(r => chip(r, k)).join('')}</div>`
+  ).join('');
+}
 
 function scoreMatch(w, q) {
   if (!q) return 1;
@@ -1469,9 +1483,8 @@ function cardHTML(w) {
     </div>`;
   }).join('');
   const topics = (w.topics || []).map(t => `<span class="tag">${t}</span>`).join('');
-  const related = (w.related || []).map(r =>
-    `<span class="related-chip kind-${relKind(r)}" title="${relKind(r)}" onclick="searchRelated('${relWord(r)}',event)">${KIND_SIGN[relKind(r)] || ''}${relWord(r)}</span>`
-  ).join('');
+  const related = relatedGroups(w, (r, kind) =>
+    `<span class="related-chip kind-${kind}" title="${KIND_LABEL[kind]}" onclick="searchRelated('${relWord(r)}',event)">${relWord(r)}</span>`);
   const notes = w.notes ? `<div class="notes-box">${w.notes}</div>` : '';
 
   return `<div class="word-card" id="card-${w.id}" onclick="toggleCard('${w.id}',event)">
@@ -1486,7 +1499,7 @@ function cardHTML(w) {
       ${defs ? `<div class="section-head">Meaning</div><ul class="def-list">${defs}</ul>` : ''}
       ${examples ? `<div class="section-head">Examples</div><div class="example-list">${examples}</div>` : ''}
       ${topics ? `<div class="section-head">Topics</div><div class="tags-row">${topics}</div>` : ''}
-      ${related ? `<div class="section-head">Related words</div><div class="related-row">${related}</div>` : ''}
+      ${related ? `<div class="section-head">Related words</div>${related}` : ''}
       ${notes}
     </div>
   </div>`;
@@ -1692,15 +1705,15 @@ function renderCardModal(w) {
   const topics = (w.topics || []).map(t => `<span class="tag">${t}</span>`).join('');
 
   // Related chips: navigate within the modal, push current word onto stack
-  const related = (w.related || []).map(r => {
-    const name = relWord(r), kind = relKind(r), label = (KIND_SIGN[kind] || '') + name;
+  const related = relatedGroups(w, (r, kind) => {
+    const name = relWord(r), label = name;
     const target = allWords.find(x => x.word === name || x.word.replace(/^(der|die|das|sich)\s+/i,'').toLowerCase() === name.toLowerCase());
     if (target) {
-      return `<span class="related-chip kind-${kind}" title="${kind}" onclick="cardModalNavigate('${w.id}', '${target.id}')">${label}</span>`;
+      return `<span class="related-chip kind-${kind}" title="${KIND_LABEL[kind]}" onclick="cardModalNavigate('${w.id}', '${target.id}')">${label}</span>`;
     }
     const esc = name.replace(/'/g, "\\'");
-    return `<span class="related-chip kind-${kind}" title="${kind}" onclick="closeCardModal(); searchRelated('${esc}', event)">${label}</span>`;
-  }).join('');
+    return `<span class="related-chip kind-${kind}" title="${KIND_LABEL[kind]}" onclick="closeCardModal(); searchRelated('${esc}', event)">${label}</span>`;
+  });
 
   const notes = w.notes ? `<div class="notes-box">${w.notes}</div>` : '';
 
@@ -1710,7 +1723,7 @@ function renderCardModal(w) {
       ${defs ? `<div class="section-head">Meaning</div><ul class="def-list">${defs}</ul>` : ''}
       ${examples ? `<div class="section-head">Examples</div><div class="example-list">${examples}</div>` : ''}
       ${topics ? `<div class="section-head">Topics</div><div class="tags-row">${topics}</div>` : ''}
-      ${related ? `<div class="section-head">Related words</div><div class="related-row">${related}</div>` : ''}
+      ${related ? `<div class="section-head">Related words</div>${related}` : ''}
       ${notes}
     </div>`;
 

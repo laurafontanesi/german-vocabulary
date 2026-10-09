@@ -442,7 +442,7 @@ def build_note(w, ctx):
     if len(exs) > 1:
         r['Beispiel2'] = exs[1].get('de', '')
         r['Beispiel2EN'] = exs[1].get('en', '')
-    KIND_MARK = {'contrast': '', 'antonym': '≠ ', 'synonym': '= ', 'derived': '← '}
+    KIND_MARK = {'contrast': 'vs. ', 'antonym': '≠ ', 'synonym': '= ', 'derived': '← ', 'compound': '+ '}
     r['Verwandt'] = chips([KIND_MARK.get(x['kind'], '') + x['word']
                            for x in w.get('related', []) if isinstance(x, dict)])
     r['Notiz'] = w.get('notes') or ''

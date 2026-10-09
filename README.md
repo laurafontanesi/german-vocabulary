@@ -133,7 +133,7 @@ Each entry in `words.json` is a JSON object. All entries share these fields:
 | `topics` | list | 0 to 2 entries from the closed list below; empty for core vocabulary |
 | `definition_de` | string | German definition from German Wiktionary, matched to the first English meaning; used by the *Definition* card. Optional |
 | `notes` | string | One-sentence personal note, or null. Register goes here when it is not neutral (`Register: umgangssprachlich.`) |
-| `related` | list | `[{word, kind}]` — semantic links, always bidirectional. `kind` is one of `synonym`, `antonym`, `contrast` (easily confused), `derived` (same stem, other word class). Verb families are **not** stored here; see `family_root`. |
+| `related` | list | `[{word, kind}]` — semantic links, always bidirectional. `kind` is one of `synonym`, `antonym`, `contrast` (easily confused), `derived` (same stem, other word class), `compound` (one word is part of the other). Verb families are **not** stored here; see `family_root`. |
 | `added` | string | Date added (YYYY-MM-DD) |
 
 **Extra fields for nouns:**
@@ -225,6 +225,11 @@ A topic says what a word is **about**. Rules:
 | `antonym` | opposite | billig / teuer |
 | `synonym` | same or near meaning | rasch / zügig |
 | `derived` | same stem, different word class | wählen / die Wahl |
+| `compound` | one word is a part of the other | das Bild / der Bildschirm |
+
+On the website the related words are grouped under these labels: *Easily confused*, *Opposite*, *Same meaning*, *Same root*, *Compound*. On the Anki cards they carry a sign instead: `vs.` contrast, `≠` antonym, `=` synonym, `←` derived, `+` compound.
+
+Verb family members are linked only when the link is the point: real opposites (abnehmen / zunehmen) or classic confusions (senken / sinken, suchen / versuchen).
 
 Verb families (`nehmen`, `mitnehmen`, `teilnehmen`…) are deliberately **not** linked here.
 They are already encoded by `family_root`, and `vocab.py family nehmen` lists them.
