@@ -53,12 +53,23 @@ def main():
             clean.append({'word': tgt['word'], 'kind': r['kind']})
         w['related'] = clean
 
+    # Some spellings belong to two entries (vermessen: verb and adjective). A link
+    # to such a spelling counts as mirrored if ANY entry with that spelling links back;
+    # if none does, the back-link is NOT guessed but reported for a manual decision.
+    all_by_word = {}
+    for w in db:
+        all_by_word.setdefault(w['word'], []).append(w)
+    ambiguous = []
     for w in db:
         for r in w['related']:
-            tgt = by_word[r['word']]
-            if w['word'] not in {x['word'] for x in tgt['related']}:
-                tgt['related'].append({'word': w['word'], 'kind': r['kind']})
-                added.append((tgt['word'], w['word'], r['kind']))
+            targets = all_by_word[r['word']]
+            if any(w['word'] in {x['word'] for x in t['related']} for t in targets):
+                continue
+            if len(targets) > 1:
+                ambiguous.append((w['word'], r['word'])); continue
+            tgt = targets[0]
+            tgt['related'].append({'word': w['word'], 'kind': r['kind']})
+            added.append((tgt['word'], w['word'], r['kind']))
 
     for w in db:
         w['related'].sort(key=lambda x: (['contrast', 'antonym', 'synonym', 'derived', 'compound']
@@ -71,6 +82,8 @@ def main():
     for a, b in dropped[:20]:
         print(f'      {a}  ->  {b}')
     print(f'  {len(added)} back-links added')
+    for a, b in ambiguous:
+        print(f'  ! {a} -> {b}: "{b}" is two entries; add the back-link by hand to the right one')
     print(f'  {len(lonely)} words without any related link')
 
     if args.dry_run:

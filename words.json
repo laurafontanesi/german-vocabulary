@@ -15491,15 +15491,7 @@
     "notes": "vermessen (verb) = to survey/measure. Not to be confused with vermessen (adj) = presumptuous.",
     "related": [
       {
-        "word": "messen",
-        "kind": "contrast"
-      },
-      {
         "word": "die Messung",
-        "kind": "derived"
-      },
-      {
-        "word": "sich anmaßen",
         "kind": "derived"
       }
     ],
@@ -15539,10 +15531,6 @@
       {
         "word": "sich anmaßen",
         "kind": "synonym"
-      },
-      {
-        "word": "die Messung",
-        "kind": "derived"
       }
     ],
     "added": "2026-04-07 12:15:00"
