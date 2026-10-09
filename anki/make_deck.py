@@ -335,14 +335,33 @@ def ex_kontrast(w, ctx):
             cand = strip_punct(tok)
             if len(cand) < 4 or not cand.lower().startswith(stem):
                 continue
-            if i > 0 and strip_punct(toks[i - 1]).lower() in DETERMINERS:
+            prev = strip_punct(toks[i - 1]) if i > 0 else ''
+            prev2 = strip_punct(toks[i - 2]) if i > 1 else ''
+            frage = None
+            if prev.lower() in DETERMINERS:
                 phrase = toks[i - 1] + ' ' + tok
-                antwort = strip_punct(toks[i - 1]) + ' ' + cand
+                antwort = prev + ' ' + cand
+            elif w.get('type') == 'noun' and prev[:1].islower() \
+                    and re.search(r'(e|en|em|er|es)$', prev) \
+                    and (prev2.lower() in DETERMINERS
+                         or prev.lower() in ('viele', 'vielen', 'wenige', 'einige', 'mehrere',
+                                             'andere', 'beide', 'alle', 'manche')):
+                # "ein ausgezeichnetes Gedächtnis": the adjective ending would give the
+                # gender away, so article + adjective + noun are blanked together and
+                # the adjective is shown in its base form.
+                base = re.sub(r'(en|em|er|es|e)$', '', prev)
+                start = i - 2 if prev2.lower() in DETERMINERS else i - 1
+                phrase = ' '.join(toks[start:i + 1])
+                antwort = ' '.join(strip_punct(t) for t in toks[start:i + 1])
+                blanks = '___ ' if start == i - 2 else ''
+                tail = tok[len(tok.rstrip('.,;:!?')):]          # keep "." after the noun
+                frage = ex['de'].replace(phrase, f'{blanks}({base}) ___{tail}', 1)
             else:
                 phrase, antwort = tok, cand
-            opts = [w['word'], partners[0]]
+            # options without articles: the article would be a second giveaway
+            opts = [bare(w['word']), bare(partners[0])]
             ctx['rng'].shuffle(opts)
-            return dict(Frage=blank_phrase(ex['de'], phrase), Antwort=antwort,
+            return dict(Frage=frage or blank_phrase(ex['de'], phrase), Antwort=antwort,
                         Ganz=ex['de'], GanzEN=ex.get('en', ''),
                         Hinweis='  /  '.join(opts))
     return None

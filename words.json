@@ -3717,10 +3717,6 @@
         "kind": "contrast"
       },
       {
-        "word": "gegenseitig",
-        "kind": "antonym"
-      },
-      {
         "word": "das Alleinsein",
         "kind": "derived"
       }
@@ -5144,12 +5140,7 @@
     "notes": "gegenseitig = mutual/reciprocal. sich gegenseitig helfen = to help each other. A very useful word for talking about relationships.",
     "added": "2026-04-04",
     "usage": "both",
-    "related": [
-      {
-        "word": "allein",
-        "kind": "antonym"
-      }
-    ]
+    "related": []
   },
   {
     "id": "sich-beschweren",
@@ -15004,8 +14995,8 @@
     ],
     "examples": [
       {
-        "de": "Das hängt davon ab, wie viel Zeit wir haben.",
-        "en": "That depends on how much time we have."
+        "de": "Ob wir mitkommen, ist davon abhängig, wie viel Zeit wir haben.",
+        "en": "Whether we come along depends on how much time we have."
       },
       {
         "de": "Sie ist finanziell von ihren Eltern abhängig.",
@@ -19259,10 +19250,6 @@
       {
         "word": "wegfahren",
         "kind": "synonym"
-      },
-      {
-        "word": "die Abreise",
-        "kind": "derived"
       }
     ],
     "added": "2026-04-07 14:28:00"
@@ -19429,10 +19416,6 @@
       {
         "word": "die Anreise",
         "kind": "antonym"
-      },
-      {
-        "word": "abfahren",
-        "kind": "derived"
       },
       {
         "word": "abreisen",
@@ -31296,10 +31279,6 @@
       {
         "meaning": "apparently, seemingly",
         "note": "expresses assumption based on observable evidence"
-      },
-      {
-        "meaning": "evidently, obviously",
-        "note": "indicates something that appears to be true"
       }
     ],
     "definition_de": "so wie es aussieht",
@@ -31309,8 +31288,8 @@
         "en": "He is apparently sick because he didn't come to work today."
       },
       {
-        "de": "Das anscheinend leere Haus war voller Überraschungen.",
-        "en": "The seemingly empty house was full of surprises."
+        "de": "Anscheinend hat er den Zug verpasst.",
+        "en": "He seems to have missed the train."
       }
     ],
     "topics": [
@@ -31318,7 +31297,7 @@
     ],
     "notes": "Often confused with 'scheinbar' which suggests false appearance rather than logical assumption.",
     "added": "2026-06-08 19:54:05",
-    "usage": "both",
+    "usage": "adverb only",
     "derived_from": "anscheinen",
     "related": [
       {
@@ -35102,7 +35081,7 @@
     "definition_de": "Gegenstand, der das Weiterkommen verhindert oder behindert",
     "examples": [
       {
-        "de": "Das umgestürzte Baumstamm war ein großes Hindernis auf der Straße.",
+        "de": "Der umgestürzte Baumstamm war ein großes Hindernis auf der Straße.",
         "en": "The fallen tree trunk was a big obstacle on the road."
       },
       {
@@ -36925,7 +36904,6 @@
         "note": "used for transferring goods or items"
       }
     ],
-    "definition_de": "Hinterlegen von Stoffen (bei Sammelstellen oder Verkaufsstellen)",
     "examples": [
       {
         "de": "Die Abgabe der Hausarbeit ist bis Freitag.",

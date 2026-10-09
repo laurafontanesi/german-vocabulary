@@ -377,7 +377,7 @@
     font-style: italic;
     margin-left: 4px;
   }
-  .def-de { margin: 2px 0 8px 22px; font-size: 0.9em; font-style: italic; color: var(--ink-soft); }
+  .def-de { margin: 3px 0 0 0; font-size: 0.9em; font-style: italic; color: var(--ink-soft); }
   .def-de::before { content: "DE: "; font-style: normal; font-weight: 600; }
 
   .example-list { display: flex; flex-direction: column; gap: 6px; }
@@ -1349,6 +1349,11 @@ function changesStem(w) {
   const form = w.present_3sg.split(' ')[0].replace(/(e?t|st)$/, '');
   return V(core) !== V(form);
 }
+// "both" alone is ambiguous: say which two
+function usageLabel(w) {
+  if (w.usage !== 'both') return w.usage;
+  return w.type === 'prep/conj' ? 'preposition and conjunction' : 'adjective and adverb';
+}
 function relWord(r) { return typeof r === 'string' ? r : r.word; }
 function relKind(r) { return typeof r === 'string' ? '' : (r.kind || ''); }
 const KIND_SIGN = { contrast: '', antonym: '≠ ', synonym: '= ', derived: '← ' };
@@ -1444,7 +1449,7 @@ function cardHTML(w) {
   const preview = (w.definitions || []).map(d => d.meaning).join(' · ');
   const grammarPills = buildGrammarPills(w);
   const defs = (w.definitions || []).map((d, i) =>
-    `<li><span class="def-num">${i+1}.</span><span>${d.meaning}${d.note ? `<span class="def-note">(${d.note})</span>` : ''}</span></li>`
+    `<li><span class="def-num">${i+1}.</span><span>${d.meaning}${d.note ? `<span class="def-note">(${d.note})</span>` : ''}${i === 0 && w.definition_de ? `<div class="def-de" title="German Wiktionary">${w.definition_de}</div>` : ''}</span></li>`
   ).join('');
   const examples = (w.examples || []).map(e => {
     const escaped = e.de.replace(/'/g, '&#39;');
@@ -1474,7 +1479,6 @@ function cardHTML(w) {
     <div class="card-body">
       ${grammarPills ? `<div class="grammar-row">${grammarPills}</div>` : ''}
       ${defs ? `<div class="section-head">Meaning</div><ul class="def-list">${defs}</ul>` : ''}
-      ${w.definition_de ? `<div class="def-de" title="German Wiktionary">${w.definition_de}</div>` : ''}
       ${examples ? `<div class="section-head">Examples</div><div class="example-list">${examples}</div>` : ''}
       ${topics ? `<div class="section-head">Topics</div><div class="tags-row">${topics}</div>` : ''}
       ${related ? `<div class="section-head">Related words</div><div class="related-row">${related}</div>` : ''}
@@ -1506,8 +1510,8 @@ function buildGrammarPills(w) {
     if (w.preposition) pills.push(w.preposition);
     if (w.family_root) pills.push(`<span class="grammar-pill" style="cursor:pointer;color:var(--teal)" onclick="searchRelated('${w.family_root}',event)" title="Search verb family">family: ${w.family_root}</span>`);
   }
-  if (w.usage) pills.push(w.usage);
-  if (w.derived_from) pills.push(`<span class="grammar-pill" style="cursor:pointer;color:var(--teal)" onclick="searchRelated('${w.derived_from}',event)" title="Search for source verb">pp: ${w.derived_from}</span>`);
+  if (w.usage) pills.push(usageLabel(w));
+  if (w.derived_from) pills.push(`<span class="grammar-pill" style="cursor:pointer;color:var(--teal)" onclick="searchRelated('${w.derived_from}',event)" title="Search for source verb">from: ${w.derived_from}</span>`);
   return pills.map(p => p.startsWith('<') ? p : `<span class="grammar-pill">${p}</span>`).join('');
 }
 
@@ -1661,7 +1665,7 @@ function renderCardModal(w) {
 
   const grammarPills = buildGrammarPills(w);
   const defs = (w.definitions || []).map((d, i) =>
-    `<li><span class="def-num">${i+1}.</span><span>${d.meaning}${d.note ? `<span class="def-note">(${d.note})</span>` : ''}</span></li>`
+    `<li><span class="def-num">${i+1}.</span><span>${d.meaning}${d.note ? `<span class="def-note">(${d.note})</span>` : ''}${i === 0 && w.definition_de ? `<div class="def-de" title="German Wiktionary">${w.definition_de}</div>` : ''}</span></li>`
   ).join('');
   const examples = (w.examples || []).map(e => {
     const esc = e.de.replace(/'/g, '&#39;');
@@ -1692,7 +1696,6 @@ function renderCardModal(w) {
     <div class="card-body">
       ${grammarPills ? `<div class="grammar-row">${grammarPills}</div>` : ''}
       ${defs ? `<div class="section-head">Meaning</div><ul class="def-list">${defs}</ul>` : ''}
-      ${w.definition_de ? `<div class="def-de" title="German Wiktionary">${w.definition_de}</div>` : ''}
       ${examples ? `<div class="section-head">Examples</div><div class="example-list">${examples}</div>` : ''}
       ${topics ? `<div class="section-head">Topics</div><div class="tags-row">${topics}</div>` : ''}
       ${related ? `<div class="section-head">Related words</div><div class="related-row">${related}</div>` : ''}
