@@ -88,7 +88,9 @@ python vocab.py delete aufhören
 
 ### AI-assisted add
 
-When you type a word, the script calls the Claude API to suggest:
+After the word and its type, you are asked for **your own sentence**: the one where you met the word (Enter to skip). It is sent along to the model, so the first definition follows the meaning the word has in *your* sentence; the model also checks it and offers a correction if needed. Your sentence becomes the first example, marked `"source": "own"`, and is preferred as an exercise sentence when it contains the right form.
+
+Then the script calls the Claude API to suggest:
 - Canonical form (gender for nouns, infinitive for verbs)
 - Word type, auxiliary, past tense, past participle
 - Whether it's separable, reflexive, or requires a preposition
@@ -98,7 +100,9 @@ When you type a word, the script calls the Claude API to suggest:
 - Topics (0 to 2 from a closed list, often none)
 - Notes, including register when it is not neutral
 
-You confirm or override each suggestion before saving. Related words in the database are detected automatically and linked bidirectionally.
+You confirm or override each suggestion before saving. Related words are proposed from your own database only, and linked bidirectionally.
+
+If `data/` holds the reference files (see Data sources), the script also checks the model against them: verb forms against the lexicon (it asks when they disagree), noun gender and plural, and it fills `present_3sg`, `verb_class`, `imperative`, `konjunktiv_2` and the German definition by itself.
 
 ### API key setup
 

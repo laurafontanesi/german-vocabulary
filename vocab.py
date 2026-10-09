@@ -118,13 +118,23 @@ def load_api_key() -> str | None:
 
 # ── AI enrichment ──────────────────────────────────────────────────────────────
 
-def ai_enrich(word: str, api_key: str, word_type: str = None, vocabulary: list = None) -> dict | None:
+def ai_enrich(word: str, api_key: str, word_type: str = None, vocabulary: list = None,
+              context: str = None) -> dict | None:
     """
     Call Claude API to get structured info about a German word.
     Returns a dict with suggested fields, or None on failure.
     `vocabulary` is the list of words already in the database; the model may
     only propose related links to words in that list.
     """
+    context_block = ""
+    if context:
+        context_block = (
+            f"\n\nI met this word in this sentence: \"{context}\"\n"
+            "Put the meaning the word has IN THIS SENTENCE first in \"definitions\". "
+            "Also add three fields: \"context_en\": an English translation of my sentence; "
+            "\"context_ok\": true if my sentence is correct, natural German, else false; "
+            "\"context_fix\": the corrected sentence if context_ok is false, else null. "
+            "Your two \"examples\" should show other uses than my sentence.")
     topic_lines = "\n".join(f"- {t}: {d}" for t, d in TOPICS.items())
     type_hint = f"\n\nIMPORTANT: Treat this word strictly as a {word_type}. Fill in all fields accordingly." if word_type else ""
     vocab_block = ""
@@ -182,7 +192,7 @@ illustrates it; core vocabulary gets an empty list, which is the correct answer 
 words like brauchen, bekommen, liegen, nötig.
 {topic_lines}
 
-Word to analyse: {word}{type_hint}{vocab_block}"""
+Word to analyse: {word}{type_hint}{context_block}{vocab_block}"""
 
     payload = json.dumps({
         "model": "claude-sonnet-4-20250514",
@@ -496,7 +506,9 @@ def lexicon_verb(entry: dict) -> None:
         return
     for field in ("past_tense", "past_participle", "present_3sg", "verb_class"):
         mine, lex = entry.get(field), v[field]
-        if not lex or (mine or "").replace("ß", "ss") == lex.replace("ß", "ss"):
+        # exact comparison: ß and ss are NOT interchangeable (vergaß, not vergass).
+        # The lexicon already prefers current spelling over old forms like schloß.
+        if not lex or (mine or "") == lex:
             entry[field] = mine or lex
             continue
         if not mine:
@@ -514,6 +526,21 @@ def lexicon_verb(entry: dict) -> None:
     extra = "".join(f" · {x}" for x in (entry.get("imperative") and entry["imperative"] + "!",
                                          entry.get("konjunktiv_2") and "Konj. II " + entry["konjunktiv_2"]) if x)
     print(f"  lexicon: {entry['verb_class']} · er {entry['present_3sg']} · {entry['past_tense']} · {entry['past_participle']}{extra}")
+
+
+def own_example(sentence: str, s: dict) -> dict | None:
+    """Turn the learner's sentence into the first example, marked source='own'.
+    If the model flagged it as incorrect, offer the corrected version."""
+    if not sentence:
+        return None
+    if s.get("context_ok") is False and s.get("context_fix"):
+        print(f"\n  Your sentence:   {sentence}")
+        print(f"  Suggested fix:   {s['context_fix']}")
+        if ask("  Use the corrected sentence? (y/n)", "y").lower() == "y":
+            sentence = s["context_fix"]
+    en = s.get("context_en") or ""
+    en = confirm_or_edit("English for your sentence", en) if en else ask("English for your sentence")
+    return {"de": sentence, "en": en, "source": "own"}
 
 
 def wiktionary_definition(entry: dict) -> None:
@@ -568,12 +595,18 @@ def cmd_add(args):
     print()
     word_type = ask_choice("Word type", WORD_TYPES)
 
+    # ── the learner's own sentence (optional) ───────────────────────────────
+    # Asked before the lookup, so the definition follows the meaning in YOUR sentence.
+    print()
+    my_sentence = ask("Your sentence with this word (where you met it; Enter to skip)")
+
     # ── AI enrichment ─────────────────────────────────────────────────────────
     suggestion = None
     if not manual and api_key:
         print(f"\n  Looking up '{word}' as {word_type} with AI...\n")
         suggestion = ai_enrich(word, api_key, word_type=word_type,
-                               vocabulary=[w["word"] for w in words])
+                               vocabulary=[w["word"] for w in words],
+                               context=my_sentence or None)
         if suggestion:
             # override type from AI with what the user chose
             suggestion["type"] = word_type
@@ -773,6 +806,7 @@ def cmd_add(args):
             entry["definitions"].append({"meaning": m, "note": n or None})
 
     # ── examples ──────────────────────────────────────────────────────────────
+    own = own_example(my_sentence, s if suggestion else {})
     if suggestion and s.get("examples"):
         print(f"\n  Example sentences:")
         for ex in s["examples"]:
@@ -807,6 +841,9 @@ def cmd_add(args):
                 break
             en = ask("  English")
             entry["examples"].append({"de": de, "en": en})
+
+    if own:
+        entry["examples"].insert(0, own)
 
     wiktionary_definition(entry)
 
