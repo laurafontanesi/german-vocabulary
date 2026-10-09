@@ -66,7 +66,8 @@ class Lexicon:
         return {l: self._cache.get(l, []) for l in lemmas}
 
     # ── verbs ────────────────────────────────────────────────────────────────
-    def verb(self, word, prefix=None, separable=False, hint_past=None, hint_participle=None):
+    def verb(self, word, prefix=None, separable=False, hint_past=None, hint_participle=None,
+             reflexive_case=None):
         """
         Returns {past_tense, past_participle, present_3sg, verb_class, alternatives,
                  imperative (du-form, only if the stem changes: "nimm mit"), konjunktiv_2 (all forms)}
@@ -145,7 +146,8 @@ class Lexicon:
                     or (VOWELS.findall(f) != stem_v and f.replace("ß", "ss") not in imps)), None)
         imperative = None
         if imp:
-            imperative = imp + (" dich" if reflexive else "") + ((" " + pfx) if pfx else "")
+            pron = " dir" if reflexive_case == "dat" else " dich"
+            imperative = imp + (pron if reflexive else "") + ((" " + pfx) if pfx else "")
         kj2 = sorted({f for f, t in src if re.match(r"VER:3:SIN:KJ2", t) and ":NEB" not in t
                       and f[:1].islower() and not ("ß" in f and f.replace("ß", "ss") in [g for g, _ in src])})
         k2 = KONJ2_IN_USE.get(lemma)

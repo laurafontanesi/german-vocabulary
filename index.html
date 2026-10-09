@@ -1506,7 +1506,7 @@ function buildGrammarPills(w) {
     if (w.past_participle) pills.push(w.past_participle);
     if (w.auxiliary) pills.push(`<span class="grammar-pill highlight">${w.auxiliary}</span>`);
     if (w.is_separable) pills.push('separable');
-    if (w.reflexive) pills.push('reflexive');
+    if (w.reflexive) pills.push(w.reflexive === 'dat' ? 'sich + Dat.' : 'sich + Akk.');
     if (w.preposition) pills.push(w.preposition);
     if (w.family_root) pills.push(`<span class="grammar-pill" style="cursor:pointer;color:var(--teal)" onclick="searchRelated('${w.family_root}',event)" title="Search verb family">family: ${w.family_root}</span>`);
   }

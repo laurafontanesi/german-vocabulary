@@ -142,7 +142,7 @@ def formen(w):
         if w.get('is_separable'):
             out.append('trennbar')
         if w.get('reflexive'):
-            out.append('reflexiv')
+            out.append({'dat': 'sich + Dat.'}.get(w['reflexive'], 'sich + Akk.'))
         if w.get('preposition'):
             out.append(w['preposition'])
         fam = (w.get('family_root') or '').strip()

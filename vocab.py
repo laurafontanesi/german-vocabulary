@@ -30,6 +30,22 @@ except ImportError:
     german_definition = None
 VERB_CLASSES = ["regular", "irregular", "mixed"]
 
+
+def norm_reflexive(v):
+    """Reflexive is "akk", "dat" or False. Accepts old booleans and typed answers."""
+    if v in (None, False, "", "no", "n", "false", "False", "—", "-"):
+        return False
+    v = str(v).strip().lower()
+    if v.startswith("d"):
+        return "dat"
+    if v.startswith(("a", "y", "t")):          # akk, yes, true -> accusative (the usual case)
+        return "akk"
+    return False
+
+
+def reflexive_label(v):
+    return {"akk": "sich + Akk.", "dat": "sich + Dat."}.get(norm_reflexive(v), "")
+
 DB_PATH  = os.path.join(os.path.dirname(__file__), "words.json")
 # The API key lives OUTSIDE the repo, in ../Claude_API/.env, so it can never be
 # committed or read by tools that only see this folder. A .env next to this file
@@ -162,7 +178,7 @@ Return ONLY valid JSON, no explanation, no markdown, no code fences.{type_hint}
   "present_3sg": "er/sie/es form in the present, in the same format as past_tense, e.g. 'nimmt mit', 'freut sich' — only for verbs, else null",
   "verb_class": "regular (weak: kaufte, gekauft), irregular (strong: nahm, genommen) or mixed (weak endings with a changed stem: dachte, gedacht) — only for verbs, else null",
   "is_separable": true or false — only for verbs, else null,
-  "reflexive": true or false — only for verbs, else null,
+  "reflexive": "akk" if the reflexive pronoun is accusative (ich freue mich), "dat" if dative (ich nehme mir etwas vor), false if the verb is not reflexive. Only verbs that cannot drop sich, or whose meaning changes with sich, are reflexive; waschen (sich waschen = wash oneself) is NOT. Only for verbs, else null,
   "preposition": "e.g. 'an + AKK' if the verb requires a fixed preposition, else null",
   "also_adverb": null,
   "family_root": "the root verb — for compounds e.g. 'nehmen' for 'mitnehmen'; for root verbs use the word itself e.g. 'schlafen' for 'schlafen' (never null for verbs)",
@@ -195,7 +211,7 @@ words like brauchen, bekommen, liegen, nötig.
 Word to analyse: {word}{type_hint}{context_block}{vocab_block}"""
 
     payload = json.dumps({
-        "model": "claude-sonnet-4-20250514",
+        "model": "claude-sonnet-5-5",
         "max_tokens": 1500,
         "messages": [{"role": "user", "content": prompt}]
     }).encode("utf-8")
@@ -311,7 +327,7 @@ def print_entry(w: dict):
         pt   = w.get("past_tense", "")
         pp   = w.get("past_participle", "")
         sep  = "separable" if w.get("is_separable") else "inseparable"
-        ref  = " · reflexive" if w.get("reflexive") else ""
+        ref  = f" · {reflexive_label(w.get('reflexive'))}" if w.get("reflexive") else ""
         prep = f" · {w['preposition']}" if w.get("preposition") else ""
         cls  = f"{w['verb_class']} · " if w.get("verb_class") else ""
         p3   = f"er {w['present_3sg']} · " if w.get("present_3sg") else ""
@@ -500,7 +516,8 @@ def lexicon_verb(entry: dict) -> None:
     if not (LEXICON and LEXICON.ok):
         return
     v = LEXICON.verb(entry["word"], entry.get("prefix"), entry.get("is_separable"),
-                     entry.get("past_tense"), entry.get("past_participle"))
+                     entry.get("past_tense"), entry.get("past_participle"),
+                     reflexive_case=norm_reflexive(entry.get("reflexive")))
     if not v:
         print("  (lexicon: verb not found, keeping the forms above)")
         return
@@ -667,7 +684,8 @@ def cmd_add(args):
             entry["present_3sg"]     = s.get("present_3sg")
             entry["verb_class"]      = s.get("verb_class") if s.get("verb_class") in VERB_CLASSES else None
             entry["is_separable"]    = confirm_or_edit("Separable?", s.get("is_separable", False))
-            entry["reflexive"]       = confirm_or_edit("Reflexive?", s.get("reflexive", False))
+            entry["reflexive"]       = norm_reflexive(confirm_or_edit(
+                "Reflexive (akk / dat / no)", norm_reflexive(s.get("reflexive")) or "no"))
             prep = confirm_or_edit("Preposition", s.get("preposition"))
             if prep and str(prep) not in ("—", "None", "null"):
                 entry["preposition"] = prep
@@ -686,7 +704,7 @@ def cmd_add(args):
             entry["present_3sg"]     = None
             entry["verb_class"]      = None
             entry["is_separable"]    = ask("Separable? (y/n)", "n").lower() == "y"
-            entry["reflexive"]       = ask("Reflexive? (y/n)", "n").lower() == "y"
+            entry["reflexive"]       = norm_reflexive(ask("Reflexive (akk / dat / no)", "no"))
             prep = ask("Preposition + case (or Enter to skip)")
             if prep:
                 entry["preposition"] = prep
@@ -1000,8 +1018,7 @@ def cmd_edit(args):
             w["verb_class"]      = ask_choice("Verb class", VERB_CLASSES, w.get("verb_class", "regular"))
             sep = ask("Separable? (y/n)", "y" if w.get("is_separable") else "n")
             w["is_separable"] = sep.lower() == "y"
-            ref = ask("Reflexive? (y/n)", "y" if w.get("reflexive") else "n")
-            w["reflexive"] = ref.lower() == "y"
+            w["reflexive"] = norm_reflexive(ask("Reflexive (akk / dat / no)", norm_reflexive(w.get("reflexive")) or "no"))
             w["preposition"] = ask("Preposition + case (or Enter to clear)", w.get("preposition", "") or "") or None
             w["family_root"]    = ask("Family root", w.get("family_root", "") or "")
             w["prefix"]         = ask("Prefix (or Enter to clear)", w.get("prefix", "") or "") or None

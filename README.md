@@ -155,7 +155,7 @@ Each entry in `words.json` is a JSON object. All entries share these fields:
 | `konjunktiv_2` | one-word Konjunktiv II, only for the verbs where it is in everyday use (`käme`, `wüsste`, `bräuchte`; list in `lexicon.KONJ2_IN_USE`). Other verbs use *würde* + infinitive |
 | `verb_class` | `regular` (kaufte, gekauft), `irregular` (nahm, genommen) or `mixed` (dachte, gedacht: weak endings, changed stem) |
 | `is_separable` | `true` / `false` |
-| `reflexive` | `true` / `false` |
+| `reflexive` | `"akk"` (ich freue **mich**), `"dat"` (ich nehme **mir** etwas vor) or `false`. Reflexive means the verb cannot drop *sich*, or changes meaning with it; those have *sich* in the headword. Verbs that merely *can* take *sich* (waschen, umdrehen) are not reflexive. When a verb has a second object, the pronoun moves to the dative (ich ziehe **mir** die Jacke an); that goes in the meaning's note |
 | `preposition` | Fixed preposition + case e.g. `an + DAT` |
 | `family_root` | Root verb (e.g. `nehmen` for `mitnehmen`) |
 | `prefix` | Separable prefix e.g. `mit-` |

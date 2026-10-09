@@ -120,7 +120,7 @@
         "kind": "contrast"
       },
       {
-        "word": "einprägen",
+        "word": "sich einprägen",
         "kind": "derived"
       },
       {
@@ -555,7 +555,7 @@
     "present_3sg": "freut sich",
     "verb_class": "regular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "definitions": [
       {
         "meaning": "to be happy, to be glad (about something)",
@@ -800,7 +800,7 @@
     "present_3sg": "fürchtet sich",
     "verb_class": "regular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "preposition": "vor + DAT",
     "definitions": [
       {
@@ -1380,7 +1380,7 @@
     "present_3sg": "ruht sich aus",
     "verb_class": "regular",
     "is_separable": true,
-    "reflexive": true,
+    "reflexive": "akk",
     "related": [
       {
         "word": "sich erholen",
@@ -1422,7 +1422,7 @@
     "present_3sg": "erholt sich",
     "verb_class": "regular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "preposition": "von + DAT",
     "related": [
       {
@@ -1642,7 +1642,7 @@
     "present_3sg": "verändert sich",
     "verb_class": "regular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "related": [
       {
         "word": "ändern",
@@ -1738,7 +1738,7 @@
     "present_3sg": "entscheidet sich",
     "verb_class": "irregular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "preposition": "für + AKK",
     "related": [
       {
@@ -2583,16 +2583,16 @@
     "present_3sg": "stellt sich vor",
     "verb_class": "regular",
     "is_separable": true,
-    "reflexive": true,
+    "reflexive": "dat",
     "prefix": "vor-",
     "definitions": [
       {
         "meaning": "to imagine, to picture",
-        "note": "sich (DAT) etw. vorstellen = to imagine something"
+        "note": "sich (Dat.) etwas vorstellen: Ich stelle mir das vor."
       },
       {
         "meaning": "to introduce oneself",
-        "note": "jmdn. vorstellen = to introduce someone to someone else"
+        "note": "sich (Akk.) vorstellen: Darf ich mich vorstellen?"
       }
     ],
     "definition_de": "sich ein Bild von etwas machen, anschaulich im Sinn haben, sich über etwas Gedanken machen",
@@ -4756,7 +4756,7 @@
     "present_3sg": "traut sich",
     "verb_class": "regular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "related": [
       {
         "word": "vertrauen",
@@ -4792,7 +4792,7 @@
       "emotions & character",
       "people & relationships"
     ],
-    "notes": "sich trauen = to dare (requires courage). Different from vertrauen (to trust). Also used colloquially: 'Trau dich!' = Go for it! / Don't be shy!",
+    "notes": "sich trauen = to dare (requires courage). Different from vertrauen (to trust). Also used colloquially: 'Trau dich!' = Go for it! / Don't be shy! Usually accusative (ich traue mich); ich traue mir also occurs, less often.",
     "added": "2026-04-04",
     "family_root": "trauen"
   },
@@ -4881,7 +4881,7 @@
     "present_3sg": "versteht sich",
     "verb_class": "irregular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "related": [],
     "definitions": [
       {
@@ -5152,7 +5152,7 @@
     "present_3sg": "beschwert sich",
     "verb_class": "regular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "preposition": "über + AKK",
     "definitions": [
       {
@@ -5542,7 +5542,7 @@
     "present_3sg": "zieht sich an",
     "verb_class": "irregular",
     "is_separable": true,
-    "reflexive": true,
+    "reflexive": "akk",
     "prefix": "an-",
     "family_root": "ziehen",
     "related": [
@@ -5554,7 +5554,7 @@
     "definitions": [
       {
         "meaning": "to get dressed, to put on clothes (process)",
-        "note": null
+        "note": "Akk. ohne Kleidungsstück (ich ziehe mich an), Dat. mit (ich ziehe mir die Jacke an)"
       }
     ],
     "definition_de": "ein bestimmtes Kleidungsstück anlegen",
@@ -6847,7 +6847,7 @@
     "present_3sg": "erweist sich",
     "verb_class": "irregular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "preposition": "als + NOM",
     "family_root": "weisen",
     "prefix": "er-",
@@ -7160,7 +7160,7 @@
     "present_3sg": "entspannt sich",
     "verb_class": "regular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "family_root": "spannen",
     "prefix": "ent-",
     "related": [
@@ -10889,7 +10889,7 @@
     "verb_class": "irregular",
     "konjunktiv_2": "hielte sich",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "family_root": "halten",
     "definitions": [
       {
@@ -11421,7 +11421,7 @@
     "present_3sg": "verhält sich",
     "verb_class": "irregular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "family_root": "halten",
     "prefix": "ver-",
     "definitions": [
@@ -11697,6 +11697,10 @@
       {
         "word": "zustimmen",
         "kind": "antonym"
+      },
+      {
+        "word": "sich widersetzen",
+        "kind": "contrast"
       }
     ],
     "added": "2026-04-06 14:18:00"
@@ -12525,7 +12529,7 @@
     "present_3sg": "maßt sich an",
     "verb_class": "regular",
     "is_separable": true,
-    "reflexive": true,
+    "reflexive": "dat",
     "family_root": "maßen",
     "prefix": "an-",
     "definitions": [
@@ -12707,17 +12711,17 @@
     "added": "2026-04-07 10:09:00"
   },
   {
-    "id": "vornehmen",
-    "word": "vornehmen",
+    "id": "sich-vornehmen",
+    "word": "sich vornehmen",
     "type": "verb",
     "auxiliary": "haben",
-    "past_tense": "nahm vor",
+    "past_tense": "nahm sich vor",
     "past_participle": "vorgenommen",
-    "present_3sg": "nimmt vor",
+    "present_3sg": "nimmt sich vor",
     "verb_class": "irregular",
-    "imperative": "nimm vor",
+    "imperative": "nimm dir vor",
     "is_separable": true,
-    "reflexive": true,
+    "reflexive": "dat",
     "family_root": "nehmen",
     "prefix": "vor-",
     "definitions": [
@@ -12870,7 +12874,7 @@
     "verb_class": "irregular",
     "imperative": "nimm dich zusammen",
     "is_separable": true,
-    "reflexive": true,
+    "reflexive": "akk",
     "family_root": "nehmen",
     "prefix": "zusammen-",
     "definitions": [
@@ -12913,7 +12917,7 @@
     "verb_class": "irregular",
     "imperative": "benimm dich",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "family_root": "nehmen",
     "prefix": "be-",
     "definitions": [
@@ -14189,16 +14193,16 @@
     "added": "2026-04-07 10:43:00"
   },
   {
-    "id": "einpraegen",
-    "word": "einprägen",
+    "id": "sich-einpraegen",
+    "word": "sich einprägen",
     "type": "verb",
     "auxiliary": "haben",
-    "past_tense": "prägte ein",
+    "past_tense": "prägte sich ein",
     "past_participle": "eingeprägt",
-    "present_3sg": "prägt ein",
+    "present_3sg": "prägt sich ein",
     "verb_class": "regular",
     "is_separable": true,
-    "reflexive": true,
+    "reflexive": "dat",
     "family_root": "prägen",
     "prefix": "ein-",
     "definitions": [
@@ -14273,7 +14277,7 @@
     "notes": "merken = to notice (intransitive); sich etw. merken = to remember/memorise (reflexive). die Bemerkung = remark (related root).",
     "related": [
       {
-        "word": "einprägen",
+        "word": "sich einprägen",
         "kind": "contrast"
       },
       {
@@ -16361,7 +16365,7 @@
     "present_3sg": "fühlt sich an",
     "verb_class": "regular",
     "is_separable": true,
-    "reflexive": true,
+    "reflexive": "akk",
     "family_root": "fühlen",
     "prefix": "an-",
     "definitions": [
@@ -16492,7 +16496,7 @@
     "present_3sg": "ängstigt sich",
     "verb_class": "regular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "family_root": "ängstigen",
     "definitions": [
       {
@@ -16910,7 +16914,7 @@
     "present_3sg": "interessiert sich",
     "verb_class": "regular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "family_root": "interessieren",
     "preposition": "für + AKK",
     "definitions": [
@@ -17055,7 +17059,7 @@
     "present_3sg": "hält sich zurück",
     "verb_class": "irregular",
     "is_separable": true,
-    "reflexive": true,
+    "reflexive": "akk",
     "family_root": "halten",
     "prefix": "zurück-",
     "definitions": [
@@ -17590,38 +17594,38 @@
     "added": "2026-04-07 13:00:00"
   },
   {
-    "id": "sich-putzen",
-    "word": "sich putzen",
+    "id": "putzen",
+    "word": "putzen",
     "type": "verb",
     "auxiliary": "haben",
-    "past_tense": "putzte sich",
+    "past_tense": "putzte",
     "past_participle": "geputzt",
-    "present_3sg": "putzt sich",
+    "present_3sg": "putzt",
     "verb_class": "regular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": false,
     "family_root": "putzen",
     "definitions": [
       {
-        "meaning": "to clean oneself, to groom oneself",
-        "note": "reflexive"
+        "meaning": "to clean",
+        "note": "sich (Dat.) die Zähne putzen = to brush one's teeth; die Katze putzt sich = the cat grooms itself"
       }
     ],
     "definition_de": "etwas von Schmutz befreien mit Bürste oder Lappen",
     "examples": [
       {
-        "de": "Die Katze putzt sich stundenlang.",
-        "en": "The cat grooms itself for hours."
-      },
-      {
         "de": "Vergiss nicht, dir die Zähne zu putzen.",
         "en": "Don't forget to brush your teeth."
+      },
+      {
+        "de": "Am Samstag putze ich die ganze Wohnung.",
+        "en": "On Saturday I clean the whole flat."
       }
     ],
     "topics": [
       "body & health"
     ],
-    "notes": "sich putzen = to groom/clean oneself. sich die Zähne putzen = to brush teeth. putzen = to clean (non-reflexive): die Schuhe putzen = to polish shoes.",
+    "notes": "putzen = to clean (rooms, shoes, teeth). die Putzkraft = cleaner.",
     "related": [
       {
         "word": "die Putzkraft",
@@ -17631,21 +17635,21 @@
     "added": "2026-04-07 13:01:00"
   },
   {
-    "id": "sich-waschen",
-    "word": "sich waschen",
+    "id": "waschen",
+    "word": "waschen",
     "type": "verb",
     "auxiliary": "haben",
-    "past_tense": "wusch sich",
+    "past_tense": "wusch",
     "past_participle": "gewaschen",
-    "present_3sg": "wäscht sich",
+    "present_3sg": "wäscht",
     "verb_class": "irregular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": false,
     "family_root": "waschen",
     "definitions": [
       {
-        "meaning": "to wash oneself",
-        "note": "reflexive"
+        "meaning": "to wash",
+        "note": "sich waschen = to wash oneself; sich (Dat.) die Hände waschen"
       }
     ],
     "definition_de": "mit Wasser oder einer anderen Flüssigkeit reinigen",
@@ -17662,7 +17666,7 @@
     "topics": [
       "body & health"
     ],
-    "notes": "sich waschen = to wash oneself. waschen = to wash (something): die Wäsche waschen = to do laundry. die Waschmaschine = washing machine.",
+    "notes": "die Wäsche waschen = to do the laundry. die Waschmaschine = washing machine.",
     "related": [],
     "added": "2026-04-07 13:02:00"
   },
@@ -18927,7 +18931,7 @@
     "present_3sg": "sonnt sich",
     "verb_class": "regular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "family_root": "sonnen",
     "definitions": [
       {
@@ -25713,7 +25717,7 @@
     "present_3sg": "zeigt sich",
     "verb_class": "regular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "family_root": "zeigen",
     "related": []
   },
@@ -26123,7 +26127,7 @@
     "present_3sg": "beeilt sich",
     "verb_class": "regular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "family_root": "eilen",
     "prefix": "be-",
     "related": []
@@ -26863,7 +26867,7 @@
     "present_3sg": "verfährt sich",
     "verb_class": "irregular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "family_root": "fahren",
     "prefix": "ver-",
     "related": [
@@ -28199,12 +28203,12 @@
     "type": "verb",
     "definitions": [
       {
-        "meaning": "to turn around, to turn over",
-        "note": "transitive: to turn something around"
+        "meaning": "to turn (something) over, to turn around",
+        "note": "etwas umdrehen: Er drehte die Münze um."
       },
       {
-        "meaning": "to turn around",
-        "note": "reflexive: sich umdrehen = to turn oneself around"
+        "meaning": "to turn around (oneself)",
+        "note": "sich umdrehen: Sie drehte sich um."
       }
     ],
     "definition_de": "die Bewegung von vollführen",
@@ -28237,7 +28241,7 @@
     "present_3sg": "dreht um",
     "verb_class": "regular",
     "is_separable": true,
-    "reflexive": true,
+    "reflexive": false,
     "family_root": "drehen",
     "prefix": "um-"
   },
@@ -29252,7 +29256,7 @@
     "topics": [
       "people & relationships"
     ],
-    "notes": null,
+    "notes": "Also reflexive with a direction: sich an jemanden kuscheln = to snuggle up to someone.",
     "related": [],
     "added": "2026-04-10 11:20:00",
     "auxiliary": "haben",
@@ -29261,7 +29265,7 @@
     "present_3sg": "kuschelt",
     "verb_class": "regular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": false,
     "family_root": "kuscheln"
   },
   {
@@ -30319,7 +30323,7 @@
     "present_3sg": "ereignet sich",
     "verb_class": "regular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "family_root": "ereignen",
     "related": [
       {
@@ -31060,7 +31064,12 @@
     "is_separable": false,
     "reflexive": false,
     "family_root": "horchen",
-    "related": []
+    "related": [
+      {
+        "word": "sich widersetzen",
+        "kind": "antonym"
+      }
+    ]
   },
   {
     "id": "schmieren",
@@ -31267,7 +31276,7 @@
     "present_3sg": "bückt sich",
     "verb_class": "regular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "family_root": "bücken",
     "related": []
   },
@@ -33250,7 +33259,7 @@
         "kind": "contrast"
       },
       {
-        "word": "sich putzen",
+        "word": "putzen",
         "kind": "derived"
       }
     ]
@@ -34481,7 +34490,7 @@
     "present_3sg": "schämt sich",
     "verb_class": "regular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "preposition": "für + AKK (optional)",
     "family_root": "schämen",
     "related": []
@@ -34838,7 +34847,7 @@
     "present_3sg": "entfaltet sich",
     "verb_class": "regular",
     "is_separable": false,
-    "reflexive": true,
+    "reflexive": "akk",
     "family_root": "falten",
     "prefix": "ent-",
     "related": []
@@ -37817,6 +37826,61 @@
     "related": [
       {
         "word": "der Bildschirm",
+        "kind": "contrast"
+      }
+    ]
+  },
+  {
+    "id": "sich-widersetzen",
+    "word": "sich widersetzen",
+    "type": "verb",
+    "definitions": [
+      {
+        "meaning": "to refuse to obey or comply with an order, instruction or rule; to defy",
+        "note": "used with a dative object (sich + DAT), e.g. sich einer Anweisung widersetzen"
+      },
+      {
+        "meaning": "to oppose or resist something or someone, e.g. a plan, a decision or an arrest",
+        "note": "more formal; often used with DAT objects such as Plan, Entscheidung, Festnahme"
+      }
+    ],
+    "examples": [
+      {
+        "de": "Sie widersetzte sich der Anweisung ihres Chefs.",
+        "en": "She defied her boss's instruction.",
+        "source": "own"
+      },
+      {
+        "de": "Die Demonstranten widersetzten sich der Festnahme.",
+        "en": "The demonstrators resisted arrest."
+      },
+      {
+        "de": "Er widersetzte sich dem Willen seiner Eltern und studierte Kunst.",
+        "en": "He defied his parents' wishes and studied art."
+      }
+    ],
+    "topics": [
+      "people & relationships"
+    ],
+    "notes": "Takes the dative (sich der Anweisung widersetzen) and is rather formal; the stress is on the stem syllable, and the prefix is inseparable.",
+    "added": "2026-10-09 12:39:22",
+    "auxiliary": "haben",
+    "past_tense": "widersetzte sich",
+    "past_participle": "widersetzt",
+    "present_3sg": "widersetzt sich",
+    "verb_class": "regular",
+    "is_separable": false,
+    "reflexive": "akk",
+    "family_root": "setzen",
+    "prefix": "wider-",
+    "definition_de": "einer Verhaltensaufforderung oder Regel nicht folgen, diese zurückweisen oder missachten",
+    "related": [
+      {
+        "word": "gehorchen",
+        "kind": "antonym"
+      },
+      {
+        "word": "widersprechen",
         "kind": "contrast"
       }
     ]
