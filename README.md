@@ -32,7 +32,7 @@ german_vocabulary/
 
 ## The website
 
-Open `index.html` in a browser, or visit the live GitHub Pages URL above.
+Visit the live GitHub Pages URL above. To try changes before pushing, run `python3 -m http.server` in this folder and open http://localhost:8000 (most browsers refuse to load `words.json` when `index.html` is opened straight from the disk).
 
 **Browsing:**
 - Filter by word type (verb, noun, adjective…) and topic in the left sidebar
@@ -45,8 +45,12 @@ Open `index.html` in a browser, or visit the live GitHub Pages URL above.
 |---|---|
 | DE → EN | See a German word, type the English meaning |
 | EN → DE | See an English meaning, type the German word |
-| Conjugation | See a verb + a sentence with a blank, type the conjugated form |
-| Articles | See a noun + a sentence with a blank, type the correct article/case |
+| Verb forms | A sentence with the Präteritum, Partizip II, er-form (stem-changing verbs) or reflexive pronoun missing |
+| Cases | A sentence with article + noun missing, in the accusative, dative or genitive shown |
+| Adjective endings | A sentence with the inflected adjective missing, after an article or after mein/dieser/kein |
+| Connectors | A sentence with the preposition, conjunction or construction missing; the card shows its meaning, not the word |
+
+The four sentence tasks use the `exercises` in `words.json`; each sentence is one item, with its English translation under it. When a sentence has two gaps (*nahm … mit*, *den Kindern*), type both in order in one box. Capitals and punctuation do not count. Sentences from Tatoeba link to their source after you answer.
 
 After each answer the word card is revealed (definitions, grammar, example sentence). A progress bar and percentage score track your session. Click **Summary** at any time to see all correct and incorrect answers from the current session.
 

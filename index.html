@@ -920,6 +920,29 @@
     vertical-align: bottom;
   }
 
+  .practice-sentence-en {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: var(--ink-muted);
+    margin-top: 6px;
+    line-height: 1.4;
+  }
+  .practice-label {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.02em;
+    color: var(--ink-soft);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 1px 8px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+  .practice-word-info .ex-de strong { font-style: normal; color: var(--ink); }
+  .practice-word-info .ex-source { font-size: 11px; color: var(--ink-muted); margin-top: 4px; }
+  .practice-word-info .ex-source a { color: inherit; }
+
   /* ── score bar ── */
   .practice-score {
     font-family: 'DM Mono', monospace;
@@ -1113,15 +1136,25 @@
           <div class="launcher-card-title">EN → DE</div>
           <div class="launcher-card-desc">Translate English to German</div>
         </button>
-        <button class="launcher-card" onclick="selectTask('conjugation', this)">
+        <button class="launcher-card" onclick="selectTask('ex-verbs', this)">
           <div class="launcher-card-icon">🔀</div>
-          <div class="launcher-card-title">Conjugation</div>
-          <div class="launcher-card-desc">Fill in the verb form</div>
+          <div class="launcher-card-title">Verb forms</div>
+          <div class="launcher-card-desc">Präteritum, Partizip II, er-Form, sich</div>
         </button>
-        <button class="launcher-card" onclick="selectTask('articles', this)">
+        <button class="launcher-card" onclick="selectTask('ex-cases', this)">
           <div class="launcher-card-icon">📖</div>
-          <div class="launcher-card-title">Articles</div>
-          <div class="launcher-card-desc">Fill in the right article</div>
+          <div class="launcher-card-title">Cases</div>
+          <div class="launcher-card-desc">Article + noun in Akk., Dat., Gen.</div>
+        </button>
+        <button class="launcher-card" onclick="selectTask('ex-adj', this)">
+          <div class="launcher-card-icon">✏️</div>
+          <div class="launcher-card-title">Adjective endings</div>
+          <div class="launcher-card-desc">das neu<b>e</b> Haus, mein neu<b>es</b> Haus</div>
+        </button>
+        <button class="launcher-card" onclick="selectTask('ex-connectors', this)">
+          <div class="launcher-card-icon">🔗</div>
+          <div class="launcher-card-title">Connectors</div>
+          <div class="launcher-card-desc">Prepositions, conjunctions, constructions</div>
         </button>
       </div>
     </div>
@@ -1775,8 +1808,69 @@ let sessionLog = [];   // {word, correct, yourAnswer, correctAnswer}
 let currentSpeakText = ''; // German text to read aloud in practice
 let isMuted = sessionStorage.getItem('practiceAudioMuted') === 'true';
 
-// ── article patterns to detect in sentences ──────────────────────────────────
-const ARTICLE_RE = /\b(der|die|das|ein|eine|einen|einem|einer|eines|den|dem|des)\b/gi;
+
+// ── exercise-sentence tasks (field `exercises` in words.json) ──────────────────
+// Each practice item is ONE exercise: a sentence with gaps. The answer is the hidden words in
+// order, typed in one box separated by spaces ("nahm mit", "den Kindern").
+const EX_TASKS = {
+  'ex-verbs':      { title: 'Verb forms',        slot: s => ['praet', 'part', 'praes', 'refl'].includes(s) },
+  'ex-cases':      { title: 'Cases',             slot: s => s.startsWith('kasus') },
+  'ex-adj':        { title: 'Adjective endings', slot: s => s.startsWith('adj_') },
+  'ex-connectors': { title: 'Connectors',        slot: s => s.startsWith('pc') || s.startsWith('cx') },
+};
+const CASE_NAME = { AKK: 'accusative', DAT: 'dative', GEN: 'genitive' };
+
+function exercisesFor(w, mode) {
+  return (w.exercises || []).filter(e => EX_TASKS[mode].slot(e.slot) && e.blanks && e.blanks.length);
+}
+function exAnswers(ex) {
+  return ex.blanks.map(([a, b]) => ex.de.slice(a, b));
+}
+function escHTML(t) {
+  return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+// the sentence with its gaps: as blanks (question) or with the answers in bold (after checking)
+function exSentenceHTML(ex, reveal) {
+  let out = '', last = 0;
+  ex.blanks.forEach(([a, b]) => {
+    out += escHTML(ex.de.slice(last, a));
+    out += reveal ? `<strong>${escHTML(ex.de.slice(a, b))}</strong>` : '<span class="blank">___</span>';
+    last = b;
+  });
+  return out + escHTML(ex.de.slice(last));
+}
+function exPlainBlanked(ex) {
+  let out = '', last = 0;
+  ex.blanks.forEach(([a, b]) => { out += ex.de.slice(last, a) + '___'; last = b; });
+  return out + ex.de.slice(last);
+}
+// what the card says above the sentence, and which word it shows
+function exPrompt(w, ex) {
+  const s = ex.slot;
+  if (s === 'praet') return { text: 'Präteritum:', word: w.word };
+  if (s === 'part')  return { text: 'Partizip II:', word: w.word };
+  if (s === 'praes') return { text: 'Präsens, er/sie/es:', word: w.word };
+  if (s === 'refl')  return { text: 'Reflexive pronoun (' + (w.reflexive === 'dat' ? 'dative' : 'accusative') + '):', word: w.word };
+  if (s.startsWith('kasus')) {
+    const [c, n] = (ex.form || ':').split(':');
+    return { text: `Article + noun, ${CASE_NAME[c] || c} ${n === 'PLU' ? 'plural' : 'singular'}:`, word: w.word };
+  }
+  if (s === 'adj_art' || s === 'adj_det') return { text: 'Adjective ending:', word: w.word };
+  // connectors: the German word would give the answer away, so the card shows the meaning
+  const meaning = (w.definitions && w.definitions[0]) ? w.definitions[0].meaning : '';
+  return { text: s.startsWith('cx') ? 'Construction:' : 'Preposition / conjunction:', word: meaning, hideSpeak: true };
+}
+function normAnswer(t) {
+  return t.toLowerCase().replace(/[.,;:!?…"„“()]/g, ' ').replace(/\s+/g, ' ').trim();
+}
+function ageBucket(w) {
+  if (!w.added) return 3;
+  const days = (new Date() - new Date(w.added.substring(0, 10))) / 86400000;
+  if (days <= 14)  return 0; // last 2 weeks
+  if (days <= 60)  return 1; // last 2 months
+  if (days <= 180) return 2; // last 6 months
+  return 3;                  // older
+}
 
 // ── launcher ──────────────────────────────────────────────────────────────────
 let selectedTask = 'de-en';
@@ -1809,7 +1903,8 @@ function goToStep1() {
 
 function selectTask(mode, btn) {
   selectedTask = mode;
-  const taskNames = {'de-en':'DE → EN','en-de':'EN → DE','conjugation':'Conjugation','articles':'Articles'};
+  const taskNames = {'de-en':'DE → EN','en-de':'EN → DE'};
+  Object.entries(EX_TASKS).forEach(([k, t]) => { taskNames[k] = t.title; });
   document.getElementById('step2-title').textContent = taskNames[mode] || mode;
 
   // build topic toggles from allWords filtered by task
@@ -1818,8 +1913,7 @@ function selectTask(mode, btn) {
   const topicCounts = {};
   allWords.forEach(w => {
     // only count topics relevant to this task
-    if (mode === 'conjugation' && w.type !== 'verb') return;
-    if (mode === 'articles' && w.type !== 'noun') return;
+    if (EX_TASKS[mode] && !exercisesFor(w, mode).length) return;
     (w.topics || []).forEach(t => { topicCounts[t] = (topicCounts[t] || 0) + 1; });
   });
   selectedTopics = new Set();
@@ -1863,10 +1957,8 @@ function startTask() {
       w.definitions && w.definitions.length > 0 &&
       w.type !== 'expression' && w.type !== 'construction'
     );
-  } else if (mode === 'conjugation') {
-    words = allWords.filter(w => w.type === 'verb' && buildConjugationTask(w) !== null);
-  } else if (mode === 'articles') {
-    words = allWords.filter(w => w.type === 'noun' && w.gender && buildArticleTask(w) !== null);
+  } else if (EX_TASKS[mode]) {
+    words = allWords.filter(w => exercisesFor(w, mode).length);
   }
 
   // apply topic filter
@@ -1875,17 +1967,13 @@ function startTask() {
   }
 
   // apply sort/priority
+  // exercise tasks: one item per exercise sentence (the word's fields plus _ex)
+  if (EX_TASKS[mode]) {
+    words = words.flatMap(w => exercisesFor(w, mode).map(ex => Object.assign({}, w, { _ex: ex })));
+  }
+
   if (selectedPriority === 'recent') {
     // Group into recency buckets, shuffle within each, so it's not perfectly chronological
-    const now = new Date();
-    function ageBucket(w) {
-      if (!w.added) return 3;
-      const days = (now - new Date(w.added.substring(0, 10))) / 86400000;
-      if (days <= 14)  return 0; // last 2 weeks
-      if (days <= 60)  return 1; // last 2 months
-      if (days <= 180) return 2; // last 6 months
-      return 3;                  // older
-    }
     words = words.slice().sort((a, b) => {
       const bucketDiff = ageBucket(a) - ageBucket(b);
       if (bucketDiff !== 0) return bucketDiff;
@@ -1900,76 +1988,6 @@ function startTask() {
   document.getElementById('launcher-overlay').classList.remove('open');
   document.getElementById('practice-overlay').classList.add('open');
   loadPracticeWord();
-}
-
-// ── task builders ─────────────────────────────────────────────────────────────
-function buildConjugationTask(w) {
-  // find an example sentence that contains a form of the verb
-  const infinitive = w.word.replace(/^sich\s+/i, '').toLowerCase();
-  for (const ex of (w.examples || [])) {
-    const sentence = ex.de;
-    // check past participle first
-    if (w.past_participle) {
-      const t = w.past_participle.toLowerCase();
-      const re = new RegExp('\\b(' + escapeRegex(t) + ')\\b', 'i');
-      if (re.test(sentence)) {
-        const blanked = sentence.replace(re, '___');
-        return { sentence, blanked, answer: t, translation: ex.en, tense: 'past participle' };
-      }
-    }
-    // check simple past (Präteritum)
-    if (w.past_tense) {
-      const t = w.past_tense.toLowerCase().split(' ')[0];
-      const re = new RegExp('\\b(' + escapeRegex(t) + ')\\b', 'i');
-      if (re.test(sentence)) {
-        const blanked = sentence.replace(re, '___');
-        return { sentence, blanked, answer: t, translation: ex.en, tense: 'simple past' };
-      }
-    }
-    // check if infinitive stem appears conjugated (regular verbs — present tense)
-    const stem = infinitive.replace(/(en|n)$/, '');
-    if (stem.length >= 3) {
-      const re = new RegExp('\\b(' + escapeRegex(stem) + '\\w*)\\b', 'i');
-      const m = sentence.match(re);
-      if (m && m[1].toLowerCase() !== infinitive) {
-        const blanked = sentence.replace(re, '___');
-        return { sentence, blanked, answer: m[1].toLowerCase(), translation: ex.en, tense: 'present' };
-      }
-    }
-  }
-  return null;
-}
-
-function buildArticleTask(w) {
-  const bare = w.word.replace(/^(der|die|das)\s+/i, '').toLowerCase();
-  const articleList = ['der','die','das','ein','eine','einen','einem','einer','eines','den','dem','des'];
-
-  for (const ex of (w.examples || [])) {
-    const sentence = ex.de;
-    const tokens = sentence.split(/\s+/);
-
-    for (let i = 0; i < tokens.length - 1; i++) {
-      const tok = tokens[i].replace(/[,.:;!?"""()]/g, '').toLowerCase();
-      if (!articleList.includes(tok)) continue;
-
-      // Check if one of the next 1–3 tokens is (a form of) the target noun
-      for (let j = i + 1; j <= Math.min(i + 3, tokens.length - 1); j++) {
-        const candidate = tokens[j].replace(/[,.:;!?"""()]/g, '').toLowerCase();
-        const stem = bare.substring(0, Math.min(bare.length, 5));
-        if (candidate.startsWith(stem) && candidate.length >= bare.length - 2) {
-          // Found the noun — blank out its article
-          const rawArticle = tokens[i].replace(/[,.:;!?"""()]/g, '');
-          const re = new RegExp('\\b' + escapeRegex(rawArticle) + '\\b');
-          const blanked = sentence.replace(re, '___');
-          if (blanked !== sentence) {
-            return { sentence, blanked, answer: tok, translation: ex.en };
-          }
-        }
-      }
-    }
-    // No adjacent article found for this example — try the next one
-  }
-  return null; // no valid task found for this noun — it will be excluded from the task pool
 }
 
 function escapeRegex(s) {
@@ -1997,6 +2015,7 @@ function loadPracticeWord() {
   // reset UI
   answered = false;
   document.getElementById('practice-input').value = '';
+  document.getElementById('practice-input').placeholder = 'Your answer…';
   document.getElementById('practice-input').readOnly = false;
   document.getElementById('practice-feedback').className = 'practice-feedback';
   document.getElementById('practice-feedback').textContent = '';
@@ -2026,29 +2045,22 @@ function loadPracticeWord() {
     wordEl.textContent = w.definitions[0].meaning;
     // no auto-play for EN→DE (prompt is English)
 
-  } else if (practiceMode === 'conjugation') {
-    const task = buildConjugationTask(w);
-    const tenseLabel = task.tense ? ` (${task.tense})` : '';
-    promptEl.textContent = `Fill in the correct form${tenseLabel}:`;
-    const esc = w.word.replace(/'/g, "\\'");
-    const speakIcon = `<button class="speak-btn" title="Read aloud" onclick="speakText('${esc}', this)">${SPEAK_SVG_LG}</button>`;
-    wordEl.innerHTML = `<div class="practice-word-wrap"><span>${w.word}</span>${speakIcon}</div>`;
-    sentenceEl.innerHTML = task.blanked.replace('___', '<span class="blank">___</span>');
+  } else if (EX_TASKS[practiceMode]) {
+    const ex = w._ex;
+    const pr = exPrompt(w, ex);
+    promptEl.textContent = pr.text;
+    const esc = pr.word.replace(/'/g, "\\'");
+    const speakIcon = pr.hideSpeak ? '' :
+      `<button class="speak-btn" title="Read aloud" onclick="speakText('${esc}', this)">${SPEAK_SVG_LG}</button>`;
+    const gaps = ex.blanks.length > 1 ? `<span class="practice-label">${ex.blanks.length} gaps</span>` : '';
+    wordEl.innerHTML = `<div class="practice-word-wrap"><span>${escHTML(pr.word)}</span>${speakIcon}${gaps}</div>`;
+    sentenceEl.innerHTML = exSentenceHTML(ex, false) +
+      (ex.en ? `<div class="practice-sentence-en">${escHTML(ex.en)}</div>` : '');
     wrapEl.style.display = 'flex';
-    currentAnswer = task.answer;
-    autoSpeakText = w.word;
-
-  } else if (practiceMode === 'articles') {
-    const task = buildArticleTask(w);
-    promptEl.textContent = 'Fill in the correct article:';
-    const bare = w.word.replace(/^(der|die|das)\s+/i, '');
-    const esc = bare.replace(/'/g, "\\'");
-    const speakIcon = `<button class="speak-btn" title="Read aloud" onclick="speakText('${esc}', this)">${SPEAK_SVG_LG}</button>`;
-    wordEl.innerHTML = `<div class="practice-word-wrap"><span>___ ${bare}</span>${speakIcon}</div>`;
-    sentenceEl.innerHTML = task.blanked.replace('___', '<span class="blank">___</span>');
-    wrapEl.style.display = 'flex';
-    currentAnswer = task.answer;
-    autoSpeakText = bare;
+    currentAnswer = exAnswers(ex).join(' ');
+    document.getElementById('practice-input').placeholder =
+      ex.blanks.length > 1 ? 'All gaps in order, e.g. nahm mit' : 'Your answer…';
+    autoSpeakText = pr.hideSpeak ? '' : pr.word;
   }
 
   // auto-play with a small delay so the UI has settled
@@ -2089,9 +2101,9 @@ function checkAnswer() {
       // also accept if they typed the article separately: "das buch" for "das Buch"
       input.replace(/\s+/g,' ').trim() === canonical;
     correctAnswer = w.word;
-  } else {
-    // conjugation or articles — exact match only
-    correct = input === currentAnswer;
+  } else if (EX_TASKS[practiceMode]) {
+    // the hidden words in order; capitals and punctuation do not count ("Obwohl" = "obwohl")
+    correct = normAnswer(input) === normAnswer(currentAnswer);
     correctAnswer = currentAnswer;
   }
 
@@ -2100,9 +2112,8 @@ function checkAnswer() {
   let prompt = '';
   if (practiceMode === 'de-en') prompt = w.word;
   else if (practiceMode === 'en-de') prompt = w.definitions[0].meaning;
-  else if (practiceMode === 'conjugation') prompt = w.word;
-  else if (practiceMode === 'articles') prompt = '___ ' + w.word.replace(/^(der|die|das)\s+/i, '');
-  sessionLog.push({ word: w.word, type: w.type, correct, prompt, yourAnswer: input, correctAnswer });
+  else if (EX_TASKS[practiceMode]) prompt = exPlainBlanked(w._ex);
+  sessionLog.push({ word: w.word, type: w.type, correct, prompt, yourAnswer: input, correctAnswer, item: w });
   const fb = document.getElementById('practice-feedback');
   if (correct) {
     scoreCorrect++;
@@ -2133,17 +2144,15 @@ function checkAnswer() {
 
   // for fill-in tasks, show the original full sentence; otherwise show first example
   let exHTML = '';
-  if ((practiceMode === 'conjugation' || practiceMode === 'articles') && currentAnswer) {
-    const task = practiceMode === 'conjugation' ? buildConjugationTask(w) : buildArticleTask(w);
-    if (task) {
-      const esc = task.sentence.replace(/'/g, '&#39;');
-      exHTML = `<div class="example-de-row">
-        <div class="ex-de">${task.sentence}</div>
-        <button class="speak-btn" title="Read aloud" onclick="speakText('${esc}', this)">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
-        </button>
-      </div><div class="ex-en">${task.translation}</div>`;
-    }
+  if (EX_TASKS[practiceMode]) {
+    const ex = w._ex;
+    const esc = ex.de.replace(/'/g, '&#39;');
+    const src = (ex.source || '').startsWith('tatoeba:')
+      ? `<div class="ex-source">Sentence from <a href="https://tatoeba.org/en/sentences/show/${ex.source.slice(8)}" target="_blank" rel="noopener">Tatoeba #${ex.source.slice(8)}</a> (CC BY 2.0 FR)</div>` : '';
+    exHTML = `<div class="example-de-row">
+      <div class="ex-de">${exSentenceHTML(ex, true)}</div>
+      <button class="speak-btn" title="Read aloud" onclick="speakText('${esc}', this)">${SPEAK_SVG}</button>
+    </div><div class="ex-en">${escHTML(ex.en || '')}</div>${src}`;
   } else if (w.examples && w.examples[0]) {
     const esc = w.examples[0].de.replace(/'/g, '&#39;');
     exHTML = `<div class="example-de-row">
@@ -2159,9 +2168,8 @@ function checkAnswer() {
 
   // auto-play the example sentence on reveal (Next will cancel it)
   let revealSpeakText = '';
-  if ((practiceMode === 'conjugation' || practiceMode === 'articles') && currentAnswer) {
-    const task = practiceMode === 'conjugation' ? buildConjugationTask(w) : buildArticleTask(w);
-    if (task) revealSpeakText = task.sentence;
+  if (EX_TASKS[practiceMode]) {
+    revealSpeakText = w._ex.de;
   } else if (w.examples && w.examples[0]) {
     revealSpeakText = w.examples[0].de;
   }
@@ -2227,6 +2235,11 @@ function retryMistakes() {
   const seen = new Set();
   const mistakeWords = [];
   wrong.forEach(e => {
+    if (e.item && e.item._ex) {                     // exercise task: retry the same sentence
+      const key = e.item.id + '|' + e.item._ex.slot;
+      if (!seen.has(key)) { seen.add(key); mistakeWords.push(e.item); }
+      return;
+    }
     const w = allWords.find(w => w.word === e.word);
     if (w && !seen.has(w.id)) { seen.add(w.id); mistakeWords.push(w); }
   });
