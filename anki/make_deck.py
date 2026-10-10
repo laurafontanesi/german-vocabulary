@@ -100,8 +100,8 @@ def strip_punct(tok):
     return tok.strip(PUNCT)
 
 
-def chips(items):
-    return ' '.join('<span class="chip">%s</span>' % str(c).replace('&', '&amp;')
+def chips(items, cls='chip'):
+    return ' '.join('<span class="%s">%s</span>' % (cls, str(c).replace('&', '&amp;'))
                     for c in items if c)
 
 
@@ -223,6 +223,11 @@ def from_exercise(w, slot, hint):
     if not ex:
         return None
     frage, answers = gaps(ex)
+    ganz, last = '', 0
+    for a, b in ex['blanks']:
+        ganz += ex['de'][last:a] + '<span class="hl">' + ex['de'][a:b] + '</span>'
+        last = b
+    ganz += ex['de'][last:]
     if len(answers) > 1:
         hint = (hint + ' · ' if hint else '') + f'{len(answers)} Lücken, mit Leerzeichen'
     src = ex.get('source', '')
@@ -231,7 +236,7 @@ def from_exercise(w, slot, hint):
         sid = src.split(':', 1)[1]
         quelle = (f'Satz von <a href="https://tatoeba.org/en/sentences/show/{sid}">Tatoeba #{sid}</a> '
                   '(CC BY 2.0 FR)')
-    return dict(Frage=frage, Antwort=' '.join(answers), Ganz=ex['de'], GanzEN=ex.get('en', ''),
+    return dict(Frage=frage, Antwort=' '.join(answers), Ganz=ganz, GanzEN=ex.get('en', ''),
                 Hinweis=hint, Quelle=quelle)
 
 
@@ -458,7 +463,7 @@ def build_note(w, ctx):
         r['Beispiel2EN'] = exs[1].get('en', '')
     KIND_MARK = {'contrast': 'vs. ', 'antonym': '≠ ', 'synonym': '= ', 'derived': '← ', 'compound': '+ '}
     r['Verwandt'] = chips([KIND_MARK.get(x['kind'], '') + x['word']
-                           for x in w.get('related', []) if isinstance(x, dict)])
+                           for x in w.get('related', []) if isinstance(x, dict)], 'chip rel')
     r['Notiz'] = w.get('notes') or ''
 
     made = []
@@ -466,6 +471,8 @@ def build_note(w, ctx):
         got = builder(w, ctx)
         if not got:
             continue
+        if key in ('Kontrast', 'Praep') and got.get('Antwort') and 'class="hl"' not in got.get('Ganz', ''):
+            got['Ganz'] = got['Ganz'].replace(got['Antwort'], f'<span class="hl">{got["Antwort"]}</span>', 1)
         for slot in SLOTS:
             r[f'{key}_{slot}'] = got.get(slot, '')
         made.append(key)
@@ -512,90 +519,82 @@ def tts(field):
     return '{{tts de_DE voices=%s:%s}}' % (VOICES, field)
 
 
-def word_block(with_second=True):
-    """The shared bottom of every back template."""
-    b = ['<div class="formen">{{Formen}}</div>']
-    if with_second:
-        b += ['<div class="satz">{{Beispiel}}</div>',
-              '{{#BeispielEN}}<div class="en2">{{BeispielEN}}</div>{{/BeispielEN}}',
-              '{{#Beispiel2}}<div class="satz">{{Beispiel2}}</div>{{/Beispiel2}}',
-              '{{#Beispiel2EN}}<div class="en2">{{Beispiel2EN}}</div>{{/Beispiel2EN}}']
-    b += ['{{#Verwandt}}<div class="chips">{{Verwandt}}</div>{{/Verwandt}}',
-          '{{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}']
+def block(label, inner, field=None):
+    """A labelled section of the back; with `field`, only shown when that field has content."""
+    b = f'<div class="block"><div class="label">{label}</div>{inner}</div>'
+    return '{{#%s}}%s{{/%s}}' % (field, b, field) if field else b
+
+
+def word_block(with_examples=True, with_meaning=True):
+    """The shared lower part of every back: meaning, forms, examples, related words, note."""
+    b = []
+    if with_meaning:
+        b.append(block('Bedeutung', '<div class="en">{{Englisch}}</div>', 'Englisch'))
+    b.append(block('Formen', '<div class="chips">{{Formen}}</div>', 'Formen'))
+    if with_examples:
+        b.append(block('Beispiele',
+                       '<div class="bsp">{{Beispiel}} ' + tts('Beispiel') + '</div>'
+                       '{{#BeispielEN}}<div class="en2">{{BeispielEN}}</div>{{/BeispielEN}}'
+                       '{{#Beispiel2}}<div class="bsp">{{Beispiel2}} ' + tts('Beispiel2') + '</div>{{/Beispiel2}}'
+                       '{{#Beispiel2EN}}<div class="en2">{{Beispiel2EN}}</div>{{/Beispiel2EN}}', 'Beispiel'))
+    b.append(block('Verwandt', '<div class="chips">{{Verwandt}}</div>', 'Verwandt'))
+    b.append('{{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}')
     return '\n'.join(b)
+
+
+def card(*parts):
+    return '<div class="karte">\n' + '\n'.join(parts) + '\n</div>'
 
 
 def templates():
     out = {}
 
     out['Bedeutung'] = (
-        '\n'.join([
-            '<div class="kopf">Bedeutung <span class="pill other">{{Typ}}</span></div>',
-            '<div class="wort">{{Wort}}</div>',
-            '<div class="hinweis">Kurze englische Bedeutung</div>',
-            '{{type:EnglischKurz}}']),
-        '\n'.join([
-            '<div class="kopf">Bedeutung</div>',
-            '<div class="wort">{{Wort}}</div>',
-            '<hr id=answer>',
-            '{{type:EnglischKurz}}',
-            '<div class="en">{{Englisch}}</div>',
-            word_block(),
-            tts('Beispiel'),
-            '{{#Beispiel2}}' + tts('Beispiel2') + '{{/Beispiel2}}']))
+        card('<div class="kopf">Bedeutung <span class="pill other">{{Typ}}</span></div>',
+             '<div class="wort">{{Wort}}</div>',
+             '<div class="hinweis">kurze englische Bedeutung</div>',
+             '{{type:EnglischKurz}}'),
+        card('<div class="kopf">Bedeutung <span class="pill other">{{Typ}}</span></div>',
+             '<div class="wort">{{Wort}}</div>',
+             '<hr id=answer>',
+             '{{type:EnglischKurz}}',
+             word_block()))
 
     out['Produzieren'] = (
-        '\n'.join([
-            '<div class="kopf">Produzieren <span class="pill other">{{Typ}}</span></div>',
-            '<div class="en">{{Englisch}}</div>',
-            '<div class="hinweis">Bei Nomen mit Artikel</div>',
-            '{{type:Wort}}']),
-        '\n'.join([
-            '<div class="kopf">Produzieren</div>',
-            '<div class="en">{{Englisch}}</div>',
-            '<hr id=answer>',
-            '{{type:Wort}}',
-            word_block(),
-            tts('Beispiel'),
-            '{{#Beispiel2}}' + tts('Beispiel2') + '{{/Beispiel2}}']))
+        card('<div class="kopf">Produzieren <span class="pill other">{{Typ}}</span></div>',
+             '<div class="en gross">{{Englisch}}</div>',
+             '<div class="hinweis">Nomen mit Artikel</div>',
+             '{{type:Wort}}'),
+        card('<div class="kopf">Produzieren <span class="pill other">{{Typ}}</span></div>',
+             '<div class="en gross">{{Englisch}}</div>',
+             '<hr id=answer>',
+             '{{type:Wort}}',
+             word_block(with_meaning=False)))
 
     for key, label, pill, _builder, hint in EXERCISES:
         F, A = f'{key}_Frage', f'{key}_Antwort'
         G, GE, H, Q = f'{key}_Ganz', f'{key}_GanzEN', f'{key}_Hinweis', f'{key}_Quelle'
-        head = f'<div class="kopf">{label.rstrip(" 0123456789")} <span class="pill {pill}">{{{{Typ}}}}</span></div>' \
-            if key in SENTENCE_KEYS else f'<div class="kopf">{label}</div>'
-        if key in SENTENCE_KEYS:
-            front = ['{{#%s}}' % F, head, '<div class="satz">{{%s}}</div>' % F,
-                     '{{#%s}}<div class="en2">{{%s}}</div>{{/%s}}' % (GE, GE, GE),
-                     '<div class="hinweis">{{%s}}</div>' % H,
-                     '{{type:%s}}' % A, '{{/%s}}' % F]
-            back = [head, '<div class="wort">{{Wort}}</div>', '<hr id=answer>',
-                    '{{type:%s}}' % A,
-                    '<div class="satz">{{%s}}</div>' % G,
-                    '{{#%s}}<div class="en2">{{%s}}</div>{{/%s}}' % (GE, GE, GE),
-                    '<div class="en">{{Englisch}}</div>',
-                    word_block(with_second=False),
-                    '{{#%s}}<div class="quelle">{{%s}}</div>{{/%s}}' % (Q, Q, Q),
-                    tts(G)]
-            out[key] = ('\n'.join(front), '\n'.join(back))
-            continue
+        title = label.rstrip(' 0123456789') if key in SENTENCE_KEYS else label
+        head = f'<div class="kopf">{title} <span class="pill {pill}">{{{{Typ}}}}</span></div>'
+        en_front = '{{#%s}}<div class="en2">{{%s}}</div>{{/%s}}' % (GE, GE, GE)
+        # front: what is asked, then the hint, then the box
         front = ['{{#%s}}' % F, head, '<div class="satz">{{%s}}</div>' % F]
-        if key in ('Kontrast', 'Defin'):
+        if key in SENTENCE_KEYS:
+            front += [en_front, '<div class="hinweis">{{%s}}</div>' % H]
+        elif key in ('Kontrast', 'Defin'):
             front.append('{{#%s}}<div class="hinweis">{{%s}}</div>{{/%s}}' % (H, H, H))
-        elif hint:
-            front.append('<div class="hinweis">%s</div>' % hint)
-        if key not in ('Kontrast', 'Defin'):
+        else:
+            if hint:
+                front.append('<div class="hinweis">%s</div>' % hint)
             front.append('<div class="hinweis">{{Wort}}</div>')
         front += ['{{type:%s}}' % A, '{{/%s}}' % F]
-
-        back = [head, '<div class="wort">{{Wort}}</div>', '<hr id=answer>',
-                '{{type:%s}}' % A,
-                '<div class="en">{{Englisch}}</div>',
-                '<div class="satz">{{%s}}</div>' % G,
-                '{{#%s}}<div class="en2">{{%s}}</div>{{/%s}}' % (GE, GE, GE),
-                word_block(with_second=False),
-                tts(G)]
-        out[key] = ('\n'.join(front), '\n'.join(back))
+        # back: the word, the typed answer, the full sentence with the answer marked, then the rest
+        back = [head, '<div class="wort">{{Wort}}</div>', '<hr id=answer>', '{{type:%s}}' % A,
+                '<div class="satz">{{%s}} %s</div>' % (G, tts(G)),
+                en_front,
+                word_block(with_examples=False),
+                '{{#%s}}<div class="quelle">{{%s}}</div>{{/%s}}' % (Q, Q, Q)]
+        out[key] = (card(*front), card(*back))
     return out
 
 
@@ -622,46 +621,70 @@ def write_css(path):
     p = PALETTE
     css = f""".card {{
   font-family: Georgia, 'Iowan Old Style', serif;
-  font-size: 20px; text-align: center;
-  background: {p['paper']}; color: {p['ink']}; padding: 20px;
+  font-size: 20px; text-align: center; line-height: 1.45;
+  background: {p['paper']}; color: {p['ink']}; padding: 24px 16px;
 }}
 .card.nightMode, .nightMode .card {{ background: {p['paper']}; color: {p['ink']}; }}
+.karte {{ max-width: 620px; margin: 0 auto; }}
+
+/* header: what kind of card, and the word type */
 .kopf {{ font-family: -apple-system, Helvetica, sans-serif; font-size: 11px;
-        letter-spacing: .08em; text-transform: uppercase; color: {p['muted']};
-        margin-bottom: 18px; }}
-.pill {{ display: inline-block; padding: 3px 10px; border-radius: 10px;
-        font-size: 11px; letter-spacing: .06em; }}
+        letter-spacing: .1em; text-transform: uppercase; color: {p['muted']};
+        margin-bottom: 20px; }}
+.pill {{ display: inline-block; padding: 2px 9px; border-radius: 10px; margin-left: 6px;
+        font-size: 10px; letter-spacing: .08em; }}
 .verb   {{ background: {p['verb'][0]};   color: {p['verb'][1]}; }}
 .noun   {{ background: {p['noun'][0]};   color: {p['noun'][1]}; }}
 .adjadv {{ background: {p['adjadv'][0]}; color: {p['adjadv'][1]}; }}
 .other  {{ background: {p['other'][0]};  color: {p['other'][1]}; }}
-.wort   {{ font-size: 30px; font-weight: 600; }}
-.satz   {{ font-size: 21px; line-height: 1.5; margin: 14px 0 2px 0; }}
-.en     {{ color: {p['english']}; font-size: 18px; }}
-.en2    {{ color: {p['english']}; font-size: 15px; opacity: .85;
-          margin-bottom: 10px; }}
-.formen, .chips {{ margin-top: 12px; line-height: 2.1; }}
+
+/* the main content */
+.wort   {{ font-size: 32px; font-weight: 600; letter-spacing: -.01em; }}
+.satz   {{ font-size: 22px; line-height: 1.5; margin: 16px 0 4px 0; }}
+.hl     {{ font-weight: 600; color: {p['ink']};
+          border-bottom: 2px solid {p['accent']}; padding: 0 1px; }}
+.en2    {{ color: {p['english']}; font-size: 15px; font-style: italic; opacity: .9;
+          margin-bottom: 6px; }}
+.en     {{ color: {p['english']}; font-size: 16px; line-height: 1.5; }}
+.en.gross {{ font-size: 22px; line-height: 1.4; }}
+.hinweis {{ font-family: -apple-system, Helvetica, sans-serif; font-size: 13px;
+           color: {p['muted']}; margin: 10px 0 14px 0; }}
+hr#answer {{ border: none; border-top: 1px solid {p['rule']}; margin: 20px 0 16px 0; }}
+
+/* the typed answer and Anki's comparison */
+input#typeans {{ font-family: ui-monospace, Menlo, monospace; font-size: 18px; text-align: center;
+                width: 80%; max-width: 360px; padding: 8px 10px; border: 1px solid {p['rule']};
+                border-radius: 6px; background: #fdfcf8; color: {p['ink']}; }}
+code#typeans {{ font-family: ui-monospace, Menlo, monospace; font-size: 18px; }}
+.typeGood   {{ background: #d4eae8; color: #1a4a47; }}
+.typeBad    {{ background: #e8d5d0; color: #c0392b; }}
+.typeMissed {{ background: #e9e4d6; color: #6a6356; }}
+
+/* the lower part of the back: labelled sections */
+.block  {{ margin-top: 18px; padding-top: 12px; border-top: 1px solid {p['chip_br']}; }}
+.label  {{ font-family: -apple-system, Helvetica, sans-serif; font-size: 10px;
+          letter-spacing: .12em; text-transform: uppercase; color: {p['muted']};
+          margin-bottom: 8px; }}
+.chips  {{ line-height: 2.2; }}
 .chip   {{ display: inline-block;
           font-family: ui-monospace, Menlo, monospace; font-size: 13px;
           background: {p['chip_bg']}; color: {p['ink2']};
           border: 1px solid {p['chip_br']}; border-radius: 4px;
-          padding: 4px 9px; margin: 0 3px; }}
+          padding: 3px 8px; margin: 0 2px; }}
+.chip.rel {{ font-family: Georgia, serif; font-size: 14px; background: transparent;
+            border-radius: 12px; border-color: {p['rule']}; }}
+.bsp    {{ font-size: 17px; line-height: 1.5; margin-top: 4px; }}
 .notiz  {{ font-family: -apple-system, Helvetica, sans-serif; font-size: 13px;
-          color: {p['muted']}; font-style: italic; margin-top: 10px; }}
-.hinweis {{ font-family: -apple-system, Helvetica, sans-serif; font-size: 13px;
-           color: {p['muted']}; margin-top: 8px; }}
-.loesung {{ color: {p['accent']}; font-weight: 600; }}
+          color: {p['muted']}; font-style: italic; margin-top: 16px; }}
 .quelle {{ font-family: -apple-system, Helvetica, sans-serif; font-size: 11px;
           color: {p['muted']}; margin-top: 10px; }}
 .quelle a {{ color: {p['muted']}; }}
-hr#answer {{ border: none; border-top: 1px solid {p['rule']}; margin: 18px 0; }}
-input#typeans {{ font-family: Georgia, serif; font-size: 20px;
-                padding: 6px 10px; border: 1px solid {p['rule']};
-                border-radius: 4px; background: #fdfcf8; color: {p['ink']}; }}
-/* Anki's own diff colours — kept clear of the purple used for English */
-.typeGood   {{ background: #d4eae8; color: #1a4a47; }}
-.typeBad    {{ background: #e8d5d0; color: #c0392b; }}
-.typeMissed {{ background: #e9e4d6; color: #6a6356; }}
+.loesung {{ color: {p['accent']}; font-weight: 600; }}
+
+/* Anki's play button: small, next to the sentence */
+.replay-button svg {{ width: 22px; height: 22px; vertical-align: -3px; }}
+.replay-button svg circle {{ fill: {p['chip_bg']}; stroke: {p['rule']}; }}
+.replay-button svg path {{ fill: {p['ink2']}; }}
 """
     io.open(path, 'w', encoding='utf-8').write(css)
     return css

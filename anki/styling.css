@@ -1,42 +1,66 @@
 .card {
   font-family: Georgia, 'Iowan Old Style', serif;
-  font-size: 20px; text-align: center;
-  background: #f7f5f0; color: #1a1a18; padding: 20px;
+  font-size: 20px; text-align: center; line-height: 1.45;
+  background: #f7f5f0; color: #1a1a18; padding: 24px 16px;
 }
 .card.nightMode, .nightMode .card { background: #f7f5f0; color: #1a1a18; }
+.karte { max-width: 620px; margin: 0 auto; }
+
+/* header: what kind of card, and the word type */
 .kopf { font-family: -apple-system, Helvetica, sans-serif; font-size: 11px;
-        letter-spacing: .08em; text-transform: uppercase; color: #8a8a80;
-        margin-bottom: 18px; }
-.pill { display: inline-block; padding: 3px 10px; border-radius: 10px;
-        font-size: 11px; letter-spacing: .06em; }
+        letter-spacing: .1em; text-transform: uppercase; color: #8a8a80;
+        margin-bottom: 20px; }
+.pill { display: inline-block; padding: 2px 9px; border-radius: 10px; margin-left: 6px;
+        font-size: 10px; letter-spacing: .08em; }
 .verb   { background: #dce8f5;   color: #1a4a72; }
 .noun   { background: #f0e6c4;   color: #7a5800; }
 .adjadv { background: #d4eae8; color: #1a4a47; }
 .other  { background: #efe9de;  color: #4a4a44; }
-.wort   { font-size: 30px; font-weight: 600; }
-.satz   { font-size: 21px; line-height: 1.5; margin: 14px 0 2px 0; }
-.en     { color: #6b4ea8; font-size: 18px; }
-.en2    { color: #6b4ea8; font-size: 15px; opacity: .85;
-          margin-bottom: 10px; }
-.formen, .chips { margin-top: 12px; line-height: 2.1; }
+
+/* the main content */
+.wort   { font-size: 32px; font-weight: 600; letter-spacing: -.01em; }
+.satz   { font-size: 22px; line-height: 1.5; margin: 16px 0 4px 0; }
+.hl     { font-weight: 600; color: #1a1a18;
+          border-bottom: 2px solid #c0392b; padding: 0 1px; }
+.en2    { color: #6b4ea8; font-size: 15px; font-style: italic; opacity: .9;
+          margin-bottom: 6px; }
+.en     { color: #6b4ea8; font-size: 16px; line-height: 1.5; }
+.en.gross { font-size: 22px; line-height: 1.4; }
+.hinweis { font-family: -apple-system, Helvetica, sans-serif; font-size: 13px;
+           color: #8a8a80; margin: 10px 0 14px 0; }
+hr#answer { border: none; border-top: 1px solid #d8d0c4; margin: 20px 0 16px 0; }
+
+/* the typed answer and Anki's comparison */
+input#typeans { font-family: ui-monospace, Menlo, monospace; font-size: 18px; text-align: center;
+                width: 80%; max-width: 360px; padding: 8px 10px; border: 1px solid #d8d0c4;
+                border-radius: 6px; background: #fdfcf8; color: #1a1a18; }
+code#typeans { font-family: ui-monospace, Menlo, monospace; font-size: 18px; }
+.typeGood   { background: #d4eae8; color: #1a4a47; }
+.typeBad    { background: #e8d5d0; color: #c0392b; }
+.typeMissed { background: #e9e4d6; color: #6a6356; }
+
+/* the lower part of the back: labelled sections */
+.block  { margin-top: 18px; padding-top: 12px; border-top: 1px solid #e2dccf; }
+.label  { font-family: -apple-system, Helvetica, sans-serif; font-size: 10px;
+          letter-spacing: .12em; text-transform: uppercase; color: #8a8a80;
+          margin-bottom: 8px; }
+.chips  { line-height: 2.2; }
 .chip   { display: inline-block;
           font-family: ui-monospace, Menlo, monospace; font-size: 13px;
           background: #efe9de; color: #4a4a44;
           border: 1px solid #e2dccf; border-radius: 4px;
-          padding: 4px 9px; margin: 0 3px; }
+          padding: 3px 8px; margin: 0 2px; }
+.chip.rel { font-family: Georgia, serif; font-size: 14px; background: transparent;
+            border-radius: 12px; border-color: #d8d0c4; }
+.bsp    { font-size: 17px; line-height: 1.5; margin-top: 4px; }
 .notiz  { font-family: -apple-system, Helvetica, sans-serif; font-size: 13px;
-          color: #8a8a80; font-style: italic; margin-top: 10px; }
-.hinweis { font-family: -apple-system, Helvetica, sans-serif; font-size: 13px;
-           color: #8a8a80; margin-top: 8px; }
-.loesung { color: #c0392b; font-weight: 600; }
+          color: #8a8a80; font-style: italic; margin-top: 16px; }
 .quelle { font-family: -apple-system, Helvetica, sans-serif; font-size: 11px;
           color: #8a8a80; margin-top: 10px; }
 .quelle a { color: #8a8a80; }
-hr#answer { border: none; border-top: 1px solid #d8d0c4; margin: 18px 0; }
-input#typeans { font-family: Georgia, serif; font-size: 20px;
-                padding: 6px 10px; border: 1px solid #d8d0c4;
-                border-radius: 4px; background: #fdfcf8; color: #1a1a18; }
-/* Anki's own diff colours — kept clear of the purple used for English */
-.typeGood   { background: #d4eae8; color: #1a4a47; }
-.typeBad    { background: #e8d5d0; color: #c0392b; }
-.typeMissed { background: #e9e4d6; color: #6a6356; }
+.loesung { color: #c0392b; font-weight: 600; }
+
+/* Anki's play button: small, next to the sentence */
+.replay-button svg { width: 22px; height: 22px; vertical-align: -3px; }
+.replay-button svg circle { fill: #efe9de; stroke: #d8d0c4; }
+.replay-button svg path { fill: #4a4a44; }
