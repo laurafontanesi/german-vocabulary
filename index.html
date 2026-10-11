@@ -1139,7 +1139,7 @@
         <button class="launcher-card" onclick="selectTask('ex-verbs', this)">
           <div class="launcher-card-icon">🔀</div>
           <div class="launcher-card-title">Verb forms</div>
-          <div class="launcher-card-desc">Präteritum, Partizip II, er-Form, sich</div>
+          <div class="launcher-card-desc">Präteritum, Partizip II, er-Form, sich, Präposition</div>
         </button>
         <button class="launcher-card" onclick="selectTask('ex-cases', this)">
           <div class="launcher-card-icon">📖</div>
@@ -1154,7 +1154,7 @@
         <button class="launcher-card" onclick="selectTask('ex-connectors', this)">
           <div class="launcher-card-icon">🔗</div>
           <div class="launcher-card-title">Connectors</div>
-          <div class="launcher-card-desc">Prepositions, conjunctions, constructions</div>
+          <div class="launcher-card-desc">Prepositions and conjunctions in a sentence</div>
         </button>
       </div>
     </div>
@@ -1813,10 +1813,10 @@ let isMuted = sessionStorage.getItem('practiceAudioMuted') === 'true';
 // Each practice item is ONE exercise: a sentence with gaps. The answer is the hidden words in
 // order, typed in one box separated by spaces ("nahm mit", "den Kindern").
 const EX_TASKS = {
-  'ex-verbs':      { title: 'Verb forms',        slot: s => ['praet', 'part', 'praes', 'refl'].includes(s) },
+  'ex-verbs':      { title: 'Verb forms',        slot: s => ['praet', 'part', 'praes', 'refl'].includes(s) || s.startsWith('prep') },
   'ex-cases':      { title: 'Cases',             slot: s => s.startsWith('kasus') },
   'ex-adj':        { title: 'Adjective endings', slot: s => s.startsWith('adj_') },
-  'ex-connectors': { title: 'Connectors',        slot: s => s.startsWith('pc') || s.startsWith('cx') },
+  'ex-connectors': { title: 'Connectors',        slot: s => s.startsWith('pc') },
 };
 const CASE_NAME = { AKK: 'accusative', DAT: 'dative', GEN: 'genitive' };
 
@@ -1850,6 +1850,10 @@ function exPrompt(w, ex) {
   if (s === 'praet') return { text: 'Präteritum:', word: w.word };
   if (s === 'part')  return { text: 'Partizip II:', word: w.word };
   if (s === 'praes') return { text: 'Präsens, er/sie/es:', word: w.word };
+  if (s.startsWith('prep')) {
+    const c = (ex.form || '').split('+')[1] || '';
+    return { text: `Preposition + article (${CASE_NAME[c.trim()] || ''}):`, word: w.word };
+  }
   if (s === 'refl')  return { text: 'Reflexive pronoun (' + (w.reflexive === 'dat' ? 'dative' : 'accusative') + '):', word: w.word };
   if (s.startsWith('kasus')) {
     const [c, n] = (ex.form || ':').split(':');

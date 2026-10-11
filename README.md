@@ -45,10 +45,10 @@ Visit the live GitHub Pages URL above. To try changes before pushing, run `pytho
 |---|---|
 | DE → EN | See a German word, type the English meaning |
 | EN → DE | See an English meaning, type the German word |
-| Verb forms | A sentence with the Präteritum, Partizip II, er-form (stem-changing verbs) or reflexive pronoun missing |
+| Verb forms | A sentence with the Präteritum, Partizip II, er-form (stem-changing verbs), reflexive pronoun, or the verb's preposition + article (*Ich denke oft __ __ Großmutter*) missing |
 | Cases | A sentence with article + noun missing, in the accusative, dative or genitive shown |
 | Adjective endings | A sentence with the inflected adjective missing, after an article or after mein/dieser/kein |
-| Connectors | A sentence with the preposition, conjunction or construction missing; the card shows its meaning, not the word |
+| Connectors | A sentence with the preposition or conjunction missing; the card shows its meaning, not the word |
 
 The four sentence tasks use the `exercises` in `words.json`; each sentence is one item, with its English translation under it. When a sentence has two gaps (*nahm … mit*, *den Kindern*), type both in order in one box. Capitals and punctuation do not count. Sentences from Tatoeba link to their source after you answer.
 
@@ -162,11 +162,11 @@ Each entry in `words.json` is a JSON object. All entries share these fields:
 | `examples` | list | `[{de, en}]` — German sentence + translation |
 | `topics` | list | 0 to 2 entries from the closed list below; empty for core vocabulary |
 | `compound_parts` | list | Optional, for compound nouns and adjectives: the parts in order, nouns with article, linking elements as their own item: `["die Kündigung", "-s-", "die Frist"]`. Shown as one chip (Kündigung + -s- + Frist); parts that are in the database are clickable and get a `compound` link. Source: German Wiktionary's word-formation notes |
-| `definition_de` | string | German definition from German Wiktionary, matched to the first English meaning; used by the *Definition* card. Optional |
+| `definition_de` | string | German definition from German Wiktionary, matched to the first English meaning; shown on the website card. Optional |
 | `notes` | string | One-sentence personal note, or null. Register goes here when it is not neutral (`Register: umgangssprachlich.`) |
 | `related` | list | `[{word, kind}]` — semantic links, always bidirectional. `kind` is one of `synonym`, `antonym`, `contrast` (easily confused), `derived` (same stem, other word class), `compound` (one word is part of the other). Verb families are **not** stored here; see `family_root`. |
 | `added` | string | Date added (YYYY-MM-DD) |
-| `exercises` | list | Gap-fill sentences for the practice cards: `[{slot, label, de, en, blanks, source}]`. `blanks` are character spans in `de` (`[[4, 8]]` hides *nahm* in "Ich nahm ein Taxi…"). `slot` says what is tested: `praet`, `part`, `praes` (only stem-changing verbs), `refl` (only reflexive verbs), `kasus1`/`kasus2` (noun with determiner in a case, with `form` such as `DAT:PLU`), `adj_art`/`adj_det` (inflected adjective after an article or after a possessive/dieser/kein), `pc1`…`pc6` (prepositions and conjunctions), `cx1`/`cx2` (constructions). `source` is `own`, `example`, `tatoeba:<sentence id>` or `generated`. Every generated sentence passed `exercise_check.py` |
+| `exercises` | list | Gap-fill sentences for the practice cards: `[{slot, label, de, en, blanks, source}]`. `blanks` are character spans in `de` (`[[4, 8]]` hides *nahm* in "Ich nahm ein Taxi…"). `slot` says what is tested: `praet`, `part`, `praes` (only stem-changing verbs), `refl` (only reflexive verbs), `prep1`/`prep2` (the verb's fixed preposition + article, with `form` such as `auf + AKK`), `kasus1`/`kasus2` (noun with determiner in a case, with `form` such as `DAT:PLU`), `adj_art`/`adj_det` (inflected adjective after an article or after a possessive/dieser/kein), `pc1`…`pc4` (prepositions and conjunctions). A verb whose root verb is also in the dictionary (vornehmen, with nehmen) gets only `part` (and `refl`, `prep`): its Präteritum and Präsens repeat the root's. Constructions have no sentence exercise. `source` is `own`, `example`, `tatoeba:<sentence id>` or `generated`. Every generated sentence passed `exercise_check.py` |
 
 **Extra fields for nouns:**
 
@@ -188,7 +188,7 @@ Each entry in `words.json` is a JSON object. All entries share these fields:
 | `verb_class` | `regular` (kaufte, gekauft), `irregular` (nahm, genommen) or `mixed` (dachte, gedacht: weak endings, changed stem) |
 | `is_separable` | `true` / `false` |
 | `reflexive` | `"akk"` (ich freue **mich**), `"dat"` (ich nehme **mir** etwas vor) or `false`. Reflexive means the verb cannot drop *sich*, or changes meaning with it; those have *sich* in the headword. Verbs that merely *can* take *sich* (waschen, umdrehen) are not reflexive. When a verb has a second object, the pronoun moves to the dative (ich ziehe **mir** die Jacke an); that goes in the meaning's note |
-| `preposition` | Fixed preposition + case e.g. `an + DAT` |
+| `preposition` | Fixed preposition + case, e.g. `an + DAT`; several separated by ` / ` (`auf + AKK / über + AKK` for *sich freuen*). Each one gets a `prep` exercise. A bare case (`DAT` for *vertrauen*) is kept as information but gets no exercise |
 | `family_root` | Root verb (e.g. `nehmen` for `mitnehmen`) |
 | `prefix` | Separable prefix e.g. `mit-` |
 

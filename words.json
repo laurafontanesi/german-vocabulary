@@ -122,23 +122,6 @@
     "added": "2024-01-01",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Er nahm meinen Regenschirm mit, ohne wenigstens zu fragen.",
-        "en": "He took my umbrella without so much as asking.",
-        "blanks": [
-          [
-            3,
-            7
-          ],
-          [
-            27,
-            30
-          ]
-        ],
-        "source": "tatoeba:8828088"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Ich habe mein Fahrrad mitgenommen.",
@@ -150,23 +133,6 @@
           ]
         ],
         "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Sie nimmt ihre Oma immer auf einen Spaziergang mit.",
-        "en": "She always takes her grandmother for a walk.",
-        "blanks": [
-          [
-            4,
-            9
-          ],
-          [
-            47,
-            50
-          ]
-        ],
-        "source": "tatoeba:10680135"
       }
     ]
   },
@@ -204,23 +170,6 @@
     "added": "2024-01-01",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Keiner von ihnen nahm an der Sitzung teil.",
-        "en": "None of them took part in the meeting.",
-        "blanks": [
-          [
-            17,
-            21
-          ],
-          [
-            37,
-            41
-          ]
-        ],
-        "source": "tatoeba:2193278"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Ich habe an einer Konferenz über Neurowissenschaften teilgenommen.",
@@ -234,21 +183,22 @@
         "source": "example"
       },
       {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Sie nimmt an vielen Schulveranstaltungen teil.",
-        "en": "She takes part in many school activities.",
+        "slot": "prep1",
+        "label": "Verb + an + Dat.",
+        "form": "an + DAT",
+        "de": "Nächste Woche nehme ich an einem Sprachkurs in Zürich teil.",
+        "en": "Next week I am taking part in a language course in Zurich.",
         "blanks": [
           [
-            4,
-            9
+            24,
+            26
           ],
           [
-            41,
-            45
+            27,
+            32
           ]
         ],
-        "source": "tatoeba:6910971"
+        "source": "generated"
       }
     ]
   },
@@ -687,43 +637,7 @@
       "connectors & constructions"
     ],
     "notes": "Pattern: je + comparative + verb-final clause, desto + comparative + main clause.",
-    "added": "2024-01-01",
-    "exercises": [
-      {
-        "slot": "cx1",
-        "label": "Satz mit je … desto …",
-        "de": "Je früher ich meinen Artikel abgebe, desto besser.",
-        "en": "The sooner I hand in my article, the better.",
-        "blanks": [
-          [
-            0,
-            2
-          ],
-          [
-            37,
-            42
-          ]
-        ],
-        "source": "example"
-      },
-      {
-        "slot": "cx2",
-        "label": "Satz mit je … desto …",
-        "de": "Je mehr gute Kunst Menschen aufnehmen, desto genauer lernen sie sehen.",
-        "en": "The more high-quality art people absorb, the more precisely they learn to see.",
-        "blanks": [
-          [
-            0,
-            2
-          ],
-          [
-            39,
-            44
-          ]
-        ],
-        "source": "example"
-      }
-    ]
+    "added": "2024-01-01"
   },
   {
     "id": "aufhoeren",
@@ -1051,8 +965,45 @@
           ]
         ],
         "source": "example"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + auf + Akk.",
+        "form": "auf + AKK",
+        "de": "Ich freue mich schon sehr auf den Urlaub in Sizilien.",
+        "en": "I am already really looking forward to the holiday in Sicily.",
+        "blanks": [
+          [
+            26,
+            29
+          ],
+          [
+            30,
+            33
+          ]
+        ],
+        "source": "generated"
+      },
+      {
+        "slot": "prep2",
+        "label": "Verb + über + Akk.",
+        "form": "über + AKK",
+        "de": "Sie hat sich riesig über das Geschenk ihrer Kollegen gefreut.",
+        "en": "She was really happy about the present from her colleagues.",
+        "blanks": [
+          [
+            20,
+            24
+          ],
+          [
+            25,
+            28
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "auf + AKK / über + AKK"
   },
   {
     "id": "die-freude",
@@ -1459,6 +1410,24 @@
           [
             34,
             38
+          ]
+        ],
+        "source": "generated"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + vor + Dat.",
+        "form": "vor + DAT",
+        "de": "Mein kleiner Bruder fürchtet sich vor dem großen Hund der Nachbarn.",
+        "en": "My little brother is afraid of the neighbours' big dog.",
+        "blanks": [
+          [
+            34,
+            37
+          ],
+          [
+            38,
+            41
           ]
         ],
         "source": "generated"
@@ -2498,6 +2467,24 @@
           ]
         ],
         "source": "example"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + von + Dat.",
+        "form": "von + DAT",
+        "de": "Nach drei Tagen im Bett habe ich mich von der Grippe erholt.",
+        "en": "After three days in bed I recovered from the flu.",
+        "blanks": [
+          [
+            38,
+            41
+          ],
+          [
+            42,
+            45
+          ]
+        ],
+        "source": "generated"
       }
     ]
   },
@@ -2827,19 +2814,6 @@
     "prefix": "ver-",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "In Boston veränderte sich unser Leben völlig.",
-        "en": "Our life absolutely changed in Boston.",
-        "blanks": [
-          [
-            10,
-            20
-          ]
-        ],
-        "source": "tatoeba:6679361"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Die Situation hat sich überhaupt nicht verändert.",
@@ -2942,6 +2916,24 @@
           ]
         ],
         "source": "example"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + zwischen + Dat.",
+        "form": "zwischen + DAT",
+        "de": "Am Ende musste sie zwischen den beiden Stellenangeboten wählen.",
+        "en": "In the end she had to choose between the two job offers.",
+        "blanks": [
+          [
+            19,
+            27
+          ],
+          [
+            28,
+            31
+          ]
+        ],
+        "source": "generated"
       }
     ]
   },
@@ -3029,6 +3021,24 @@
           ]
         ],
         "source": "example"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + für + Akk.",
+        "form": "für + AKK",
+        "de": "Nach langem Überlegen hat er sich für das günstigere Auto entschieden.",
+        "en": "After thinking it over for a long time, he decided on the cheaper car.",
+        "blanks": [
+          [
+            34,
+            37
+          ],
+          [
+            38,
+            41
+          ]
+        ],
+        "source": "generated"
       }
     ]
   },
@@ -3175,19 +3185,6 @@
     "prefix": "be-",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Gestern bekam ich einen Brief von einem alten Freund.",
-        "en": "Yesterday I received a letter from an old friend.",
-        "blanks": [
-          [
-            8,
-            13
-          ]
-        ],
-        "source": "tatoeba:773797"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Ich habe viele Geschenke zu meinem Geburtstag bekommen.",
@@ -3311,23 +3308,6 @@
     "added": "2026-04-04",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Sami holte Layla vom Flughafen ab.",
-        "en": "Sami picked Layla up at the airport.",
-        "blanks": [
-          [
-            5,
-            10
-          ],
-          [
-            31,
-            33
-          ]
-        ],
-        "source": "tatoeba:8809250"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Wohin gehe ich, wenn ich mein Gepäck abgeholt habe?",
@@ -3379,19 +3359,6 @@
     "notes": "Note: NOT separable (wiederholen), unlike abholen. Die Wiederholung = repetition/revision.",
     "added": "2026-04-04",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Im Laufe jenes Abends wiederholte ich die Unterrichtsstunde dreimal.",
-        "en": "In the course of that evening I revised the lesson three times.",
-        "blanks": [
-          [
-            22,
-            33
-          ]
-        ],
-        "source": "tatoeba:3025922"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -3481,8 +3448,27 @@
           ]
         ],
         "source": "tatoeba:3755410"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + an + Akk.",
+        "form": "an + AKK",
+        "de": "Trotz aller Probleme glaubt er immer noch an seinen Erfolg.",
+        "en": "Despite all the problems, he still believes in his success.",
+        "blanks": [
+          [
+            42,
+            44
+          ],
+          [
+            45,
+            51
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "an + AKK"
   },
   {
     "id": "denken",
@@ -3556,6 +3542,24 @@
           [
             45,
             52
+          ]
+        ],
+        "source": "generated"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + an + Akk.",
+        "form": "an + AKK",
+        "de": "Ich denke oft an meine Großmutter in Italien.",
+        "en": "I often think of my grandmother in Italy.",
+        "blanks": [
+          [
+            14,
+            16
+          ],
+          [
+            17,
+            22
           ]
         ],
         "source": "generated"
@@ -3719,8 +3723,27 @@
           ]
         ],
         "source": "example"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + über + Akk.",
+        "form": "über + AKK",
+        "de": "Morgen sprechen wir im Kurs über die Geschichte der Walser.",
+        "en": "Tomorrow in class we will talk about the history of the Walser.",
+        "blanks": [
+          [
+            28,
+            32
+          ],
+          [
+            33,
+            36
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "über + AKK"
   },
   {
     "id": "reden",
@@ -3792,8 +3815,27 @@
           ]
         ],
         "source": "example"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + über + Akk.",
+        "form": "über + AKK",
+        "de": "Wir haben lange über den Film von gestern Abend geredet.",
+        "en": "We talked for a long time about the film from last night.",
+        "blanks": [
+          [
+            16,
+            20
+          ],
+          [
+            21,
+            24
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "über + AKK"
   },
   {
     "id": "scheinen",
@@ -3918,23 +3960,6 @@
     "added": "2026-04-04",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Er sah aus, als ob er gleich weinen müsste.",
-        "en": "He looked like he was going to cry.",
-        "blanks": [
-          [
-            3,
-            6
-          ],
-          [
-            7,
-            10
-          ]
-        ],
-        "source": "tatoeba:12293744"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Es machte mir Sorge, dass sie blass ausgesehen hat.",
@@ -3946,23 +3971,6 @@
           ]
         ],
         "source": "tatoeba:5240542"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Er sieht aus, als ob er nicht geschlafen hätte.",
-        "en": "He looks as if he hasn't slept.",
-        "blanks": [
-          [
-            3,
-            8
-          ],
-          [
-            9,
-            12
-          ]
-        ],
-        "source": "example"
       }
     ]
   },
@@ -4219,23 +4227,6 @@
     "related": [],
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Sie schlug dem Kunden vor, eine blaue Krawatte zu kaufen.",
-        "en": "She suggested that the customer buy a blue tie.",
-        "blanks": [
-          [
-            4,
-            10
-          ],
-          [
-            22,
-            25
-          ]
-        ],
-        "source": "tatoeba:616999"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Er hat einen Kompromiss vorgeschlagen.",
@@ -4247,19 +4238,6 @@
           ]
         ],
         "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Du bist nicht der erste, der das vorschlägt.",
-        "en": "You're not the first to suggest that.",
-        "blanks": [
-          [
-            33,
-            43
-          ]
-        ],
-        "source": "tatoeba:7590255"
       }
     ]
   },
@@ -4371,19 +4349,6 @@
     "prefix": "be-",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Meine Großmutter benutzte ihre Nähmaschine viel, als sie jünger war.",
-        "en": "My grandmother used to use her sewing machine a lot when she was younger.",
-        "blanks": [
-          [
-            17,
-            25
-          ]
-        ],
-        "source": "tatoeba:7525682"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Hast du gestern mein Fahrrad benutzt, ohne mich zu fragen?",
@@ -4442,23 +4407,6 @@
     "family_root": "geben",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Ich gab zu, weder ein noch aus zu wissen.",
-        "en": "I admitted that I didn't know what to do.",
-        "blanks": [
-          [
-            4,
-            7
-          ],
-          [
-            8,
-            10
-          ]
-        ],
-        "source": "tatoeba:6964888"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Du hast nie zugegeben, dass du im Unrecht warst.",
@@ -4470,23 +4418,6 @@
           ]
         ],
         "source": "tatoeba:2793463"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Sie gibt nicht zu, dass sie Unrecht hat.",
-        "en": "She doesn't admit that she is wrong.",
-        "blanks": [
-          [
-            4,
-            8
-          ],
-          [
-            15,
-            17
-          ]
-        ],
-        "source": "tatoeba:871053"
       }
     ]
   },
@@ -4536,23 +4467,6 @@
       }
     ],
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Das Mädchen stellte sich vor, Ärztin zu sein.",
-        "en": "The girl imagines that she is a doctor.",
-        "blanks": [
-          [
-            12,
-            19
-          ],
-          [
-            25,
-            28
-          ]
-        ],
-        "source": "tatoeba:12387755"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -5386,8 +5300,7 @@
     "topics": [],
     "notes": "bereit = ready/prepared (for an upcoming action); fertig = finished (a process is complete). Classic confusion for learners.",
     "added": "2026-04-04",
-    "usage": "both",
-    "exercises": []
+    "usage": "both"
   },
   {
     "id": "die-gewohnheit",
@@ -5789,42 +5702,6 @@
       {
         "word": "obwohl",
         "kind": "contrast"
-      }
-    ],
-    "exercises": [
-      {
-        "slot": "cx1",
-        "label": "Satz mit zwar … aber …",
-        "de": "Ich habe zwar wenig geschlafen, aber ich habe viel Energie.",
-        "en": "I haven't slept much, but I have lots of energy.",
-        "blanks": [
-          [
-            9,
-            13
-          ],
-          [
-            32,
-            36
-          ]
-        ],
-        "source": "example"
-      },
-      {
-        "slot": "cx2",
-        "label": "Satz mit zwar … aber …",
-        "de": "Das ist zwar teuer, aber es lohnt sich.",
-        "en": "It's true that it's expensive, but it's worth it.",
-        "blanks": [
-          [
-            8,
-            12
-          ],
-          [
-            20,
-            24
-          ]
-        ],
-        "source": "example"
       }
     ]
   },
@@ -6712,23 +6589,6 @@
     "family_root": "wandern",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Seine Familie wanderte in die Vereinigten Staaten aus.",
-        "en": "His family emigrated to the United States.",
-        "blanks": [
-          [
-            14,
-            22
-          ],
-          [
-            50,
-            53
-          ]
-        ],
-        "source": "tatoeba:1848921"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Viele Deutsche sind im 19. Jahrhundert nach Amerika ausgewandert.",
@@ -6790,23 +6650,6 @@
     "family_root": "ziehen",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Ich zog vor einem Jahr nach Kopenhagen um.",
-        "en": "I moved to Copenhagen a year ago.",
-        "blanks": [
-          [
-            4,
-            7
-          ],
-          [
-            39,
-            41
-          ]
-        ],
-        "source": "tatoeba:1716976"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Ich bin letztes Jahr nach Basel umgezogen.",
@@ -6864,19 +6707,6 @@
     "prefix": "er-",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Aus dem Brief erfuhr ich die Wahrheit.",
-        "en": "I learned the truth from the letter.",
-        "blanks": [
-          [
-            14,
-            20
-          ]
-        ],
-        "source": "tatoeba:806728"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Ich habe gerade erfahren, dass sie gekündigt hat.",
@@ -6888,19 +6718,6 @@
           ]
         ],
         "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Seinen Gesichtsausdruck will ich sehen, wenn er es erfährt.",
-        "en": "I'd love to see the expression on his face when he finds out.",
-        "blanks": [
-          [
-            51,
-            58
-          ]
-        ],
-        "source": "tatoeba:11695126"
       }
     ]
   },
@@ -7177,19 +6994,6 @@
     "family_root": "suchen",
     "prefix": "be-",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Mein Onkel, der in Osaka lebt, besuchte uns gestern.",
-        "en": "My uncle, who lives in Osaka, visited us yesterday.",
-        "blanks": [
-          [
-            31,
-            39
-          ]
-        ],
-        "source": "tatoeba:1822004"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -7654,19 +7458,6 @@
     "prefix": "ver-",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Der Mann, dem ich vertraute, hat mich betrogen.",
-        "en": "The man I trusted betrayed me.",
-        "blanks": [
-          [
-            18,
-            27
-          ]
-        ],
-        "source": "tatoeba:829038"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Ich habe ihr von Anfang an vertraut.",
@@ -7816,23 +7607,6 @@
     "family_root": "vertrauen",
     "prefix": "an-",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Sie vertraute ihrem Mann einen Brief an.",
-        "en": "She entrusted her husband with a letter.",
-        "blanks": [
-          [
-            4,
-            13
-          ],
-          [
-            37,
-            39
-          ]
-        ],
-        "source": "tatoeba:3207267"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -8077,6 +7851,24 @@
           ]
         ],
         "source": "generated"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + auf + Akk.",
+        "form": "auf + AKK",
+        "de": "In schwierigen Zeiten kann ich immer auf meine Schwester zählen.",
+        "en": "In difficult times I can always count on my sister.",
+        "blanks": [
+          [
+            37,
+            40
+          ],
+          [
+            41,
+            46
+          ]
+        ],
+        "source": "generated"
       }
     ]
   },
@@ -8123,19 +7915,6 @@
     "prefix": "ver-",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Er verstand sich gut mit meinem verstorbenen Vater.",
-        "en": "He was on good terms with my deceased father.",
-        "blanks": [
-          [
-            3,
-            11
-          ]
-        ],
-        "source": "tatoeba:10298904"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Ich habe mich mit ihr nicht gut verstanden.",
@@ -8160,8 +7939,27 @@
           ]
         ],
         "source": "example"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + mit + Dat.",
+        "form": "mit + DAT",
+        "de": "Ich verstehe mich sehr gut mit meiner neuen Mitbewohnerin.",
+        "en": "I get on very well with my new flatmate.",
+        "blanks": [
+          [
+            27,
+            30
+          ],
+          [
+            31,
+            37
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "mit + DAT"
   },
   {
     "id": "luegen",
@@ -8363,19 +8161,6 @@
     "notes": "anlügen = to lie TO someone (direct object); lügen = to lie in general. Er lügt = he lies. Er lügt mich an = he lies to me.",
     "added": "2026-04-04",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Tom hatte den Verdacht, dass Mary ihn anlog.",
-        "en": "Tom suspected that Mary was lying to him.",
-        "blanks": [
-          [
-            38,
-            43
-          ]
-        ],
-        "source": "tatoeba:3193146"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -8660,6 +8445,24 @@
           ]
         ],
         "source": "example"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + über + Akk.",
+        "form": "über + AKK",
+        "de": "Die Gäste haben sich über das kalte Essen beschwert.",
+        "en": "The guests complained about the cold food.",
+        "blanks": [
+          [
+            21,
+            25
+          ],
+          [
+            26,
+            29
+          ]
+        ],
+        "source": "generated"
       }
     ]
   },
@@ -9022,6 +8825,24 @@
           ]
         ],
         "source": "tatoeba:3766499"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + von + Dat.",
+        "form": "von + DAT",
+        "de": "Sie träumt schon lange von einem Haus am See.",
+        "en": "She has long dreamed of a house by the lake.",
+        "blanks": [
+          [
+            23,
+            26
+          ],
+          [
+            27,
+            32
+          ]
+        ],
+        "source": "generated"
       }
     ]
   },
@@ -9304,23 +9125,6 @@
     "notes": "sich anziehen = to get dressed (process); tragen = to wear (state). ausziehen = to take off / undress (opposite). umziehen = to change clothes.",
     "added": "2026-04-04",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Sie zog sich wie ein Junge an.",
-        "en": "She dressed like a boy.",
-        "blanks": [
-          [
-            4,
-            7
-          ],
-          [
-            27,
-            29
-          ]
-        ],
-        "source": "tatoeba:1918609"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -9757,23 +9561,6 @@
     "family_root": "kaufen",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Am Samstag kaufte sie auf dem Wochenmarkt ein.",
-        "en": "On Saturday, she did her shopping at the farmers' market.",
-        "blanks": [
-          [
-            11,
-            17
-          ],
-          [
-            42,
-            45
-          ]
-        ],
-        "source": "generated"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Hast du schon eingekauft?",
@@ -9974,19 +9761,6 @@
     "related": [],
     "prefix": "be-",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Ich bestellte nur einen Kaffee, denn ich hatte keinen Hunger.",
-        "en": "I just ordered a coffee, because I was not hungry.",
-        "blanks": [
-          [
-            4,
-            13
-          ]
-        ],
-        "source": "tatoeba:1877016"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -10275,19 +10049,6 @@
     "prefix": "ver-",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Letztes Jahr vermietete ich mein Gästezimmer an eine Studentin.",
-        "en": "Last year, I rented out my guest room to a student.",
-        "blanks": [
-          [
-            13,
-            23
-          ]
-        ],
-        "source": "generated"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Wir haben unsere Wohnung im Sommer an Studenten vermietet.",
@@ -10557,23 +10318,6 @@
     "added": "2026-04-04",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Ich las meinen Kindern eine Geschichte vor.",
-        "en": "I read a story to my children.",
-        "blanks": [
-          [
-            4,
-            7
-          ],
-          [
-            39,
-            42
-          ]
-        ],
-        "source": "tatoeba:13622606"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Mein Vater hat mir vor dem Einschlafen immer etwas vorgelesen.",
@@ -10585,23 +10329,6 @@
           ]
         ],
         "source": "tatoeba:1813450"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Sie liest ihren Kindern jeden Abend vor.",
-        "en": "She reads to her children every evening.",
-        "blanks": [
-          [
-            4,
-            9
-          ],
-          [
-            36,
-            39
-          ]
-        ],
-        "source": "example"
       }
     ]
   },
@@ -10811,19 +10538,6 @@
     "family_root": "kommen",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Sobald ich am Ziel ankam, rief ich ihn an.",
-        "en": "As soon as I arrived at the destination, I called him.",
-        "blanks": [
-          [
-            19,
-            24
-          ]
-        ],
-        "source": "tatoeba:1561918"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Ich bin gestern spät angekommen.",
@@ -10886,23 +10600,6 @@
     ],
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Der Bus hielt an, aber niemand stieg aus.",
-        "en": "The bus stopped, but nobody got off.",
-        "blanks": [
-          [
-            31,
-            36
-          ],
-          [
-            37,
-            40
-          ]
-        ],
-        "source": "tatoeba:2515617"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Er ist aus dem Geschäft ausgestiegen.",
@@ -10914,6 +10611,24 @@
           ]
         ],
         "source": "example"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + aus + Dat.",
+        "form": "aus + DAT",
+        "de": "Als ich aus dem Bus ausstieg, fing es an zu regnen.",
+        "en": "When I got off the bus, it started to rain.",
+        "blanks": [
+          [
+            8,
+            11
+          ],
+          [
+            12,
+            15
+          ]
+        ],
+        "source": "generated"
       }
     ]
   },
@@ -11585,19 +11300,6 @@
     ],
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Der Verdacht erwies sich als unbegründet.",
-        "en": "The suspicion proved to be unfounded.",
-        "blanks": [
-          [
-            13,
-            19
-          ]
-        ],
-        "source": "example"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Er hat mir einen großen Dienst erwiesen.",
@@ -11924,32 +11626,6 @@
           ]
         ],
         "source": "tatoeba:851114"
-      },
-      {
-        "slot": "pc5",
-        "label": "Satz mit seitdem",
-        "de": "Seitdem hat er nicht mehr mit mir gesprochen.",
-        "en": "He hasn't talked to me since.",
-        "blanks": [
-          [
-            0,
-            7
-          ]
-        ],
-        "source": "tatoeba:1815796"
-      },
-      {
-        "slot": "pc6",
-        "label": "Satz mit seitdem",
-        "de": "Seitdem habe ich nie wieder von ihm gehört.",
-        "en": "I have never heard of him since then.",
-        "blanks": [
-          [
-            0,
-            7
-          ]
-        ],
-        "source": "tatoeba:675891"
       }
     ]
   },
@@ -12043,32 +11719,6 @@
           ]
         ],
         "source": "tatoeba:5637689"
-      },
-      {
-        "slot": "pc5",
-        "label": "Satz mit während",
-        "de": "Viele junge Leute gehen während ihrer Sommerferien ins Ausland.",
-        "en": "Many young people go abroad during summer vacation.",
-        "blanks": [
-          [
-            24,
-            31
-          ]
-        ],
-        "source": "tatoeba:1005062"
-      },
-      {
-        "slot": "pc6",
-        "label": "Satz mit während",
-        "de": "Arzt zu sein, half mir während der Reise sehr.",
-        "en": "Being a doctor helped me greatly during the journey.",
-        "blanks": [
-          [
-            23,
-            30
-          ]
-        ],
-        "source": "tatoeba:8809339"
       }
     ]
   },
@@ -12202,19 +11852,6 @@
       }
     ],
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Nach dem langen Arbeitstag entspannte ich mich bei Musik.",
-        "en": "After the long workday, I relaxed while listening to music.",
-        "blanks": [
-          [
-            27,
-            37
-          ]
-        ],
-        "source": "generated"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -13957,19 +13594,6 @@
     "added": "2026-04-06 11:04:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Er verschwand ohne ein Wort zu sagen.",
-        "en": "He disappeared without saying a word.",
-        "blanks": [
-          [
-            3,
-            13
-          ]
-        ],
-        "source": "example"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Meine Schlüssel sind verschwunden — hast du sie gesehen?",
@@ -14073,32 +13697,6 @@
           ]
         ],
         "source": "tatoeba:12042681"
-      },
-      {
-        "slot": "pc5",
-        "label": "Satz mit neben",
-        "de": "Wie viele Leute saßen an dem Tisch neben deinem?",
-        "en": "How many people were sitting at the table next to yours?",
-        "blanks": [
-          [
-            35,
-            40
-          ]
-        ],
-        "source": "tatoeba:12843545"
-      },
-      {
-        "slot": "pc6",
-        "label": "Satz mit neben",
-        "de": "Die Mutter lag neben ihrem Kind auf dem Bett.",
-        "en": "The mother lay beside her baby on the bed.",
-        "blanks": [
-          [
-            15,
-            20
-          ]
-        ],
-        "source": "tatoeba:1816794"
       }
     ]
   },
@@ -15424,8 +15022,27 @@
           ]
         ],
         "source": "tatoeba:12026490"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + über + Akk.",
+        "form": "über + AKK",
+        "de": "Mein Vater schimpft jeden Morgen über das schlechte Wetter.",
+        "en": "My father grumbles about the bad weather every morning.",
+        "blanks": [
+          [
+            33,
+            37
+          ],
+          [
+            38,
+            41
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "über + AKK"
   },
   {
     "id": "der-donner",
@@ -18192,32 +17809,6 @@
           ]
         ],
         "source": "tatoeba:842357"
-      },
-      {
-        "slot": "pc5",
-        "label": "Satz mit laut",
-        "de": "Was haben wir laut deiner Liste heute alles zu erledigen?",
-        "en": "What's on your list of things that we need to do today?",
-        "blanks": [
-          [
-            14,
-            18
-          ]
-        ],
-        "source": "tatoeba:11592806"
-      },
-      {
-        "slot": "pc6",
-        "label": "Satz mit laut",
-        "de": "Laut Radio wird es morgen regnen.",
-        "en": "According to the radio, it will rain tomorrow.",
-        "blanks": [
-          [
-            0,
-            4
-          ]
-        ],
-        "source": "tatoeba:345356"
       }
     ]
   },
@@ -18894,19 +18485,6 @@
     "added": "2026-04-06 13:09:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Zum Umzug verschenkte sie ihre alten Bücher an Freunde.",
-        "en": "When moving house, she gave her old books away to friends.",
-        "blanks": [
-          [
-            10,
-            21
-          ]
-        ],
-        "source": "generated"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Ich hatte mal einen Basketballschläger, aber den habe ich verschenkt.",
@@ -19217,8 +18795,27 @@
           ]
         ],
         "source": "example"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + für + Akk.",
+        "form": "für + AKK",
+        "de": "Ich halte das für eine sehr gute Idee.",
+        "en": "I think that is a very good idea.",
+        "blanks": [
+          [
+            14,
+            17
+          ],
+          [
+            18,
+            22
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "für + AKK"
   },
   {
     "id": "sich-halten",
@@ -19323,8 +18920,27 @@
           ]
         ],
         "source": "example"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + an + Akk.",
+        "form": "an + AKK",
+        "de": "Bitte haltet euch im Schwimmbad an die Regeln.",
+        "en": "Please stick to the rules at the swimming pool.",
+        "blanks": [
+          [
+            32,
+            34
+          ],
+          [
+            35,
+            38
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "an + AKK"
   },
   {
     "id": "erhalten",
@@ -19371,19 +18987,6 @@
     "added": "2026-04-06 14:03:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Als er keine Antwort erhielt, schrieb er ihr nochmal.",
-        "en": "Not having received a reply, he wrote to her again.",
-        "blanks": [
-          [
-            21,
-            28
-          ]
-        ],
-        "source": "tatoeba:677926"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Ich habe Ihren Brief erhalten, vielen Dank.",
@@ -19395,19 +18998,6 @@
           ]
         ],
         "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Wen man auch fragt — man erhält keine zufriedenstellende Antwort.",
-        "en": "No matter who you ask, you won't be able to get a satisfactory answer.",
-        "blanks": [
-          [
-            25,
-            31
-          ]
-        ],
-        "source": "tatoeba:1987907"
       }
     ]
   },
@@ -19457,19 +19047,6 @@
     ],
     "added": "2026-04-06 14:04:00",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Das Auto überholte den LKW mit 160 km/h.",
-        "en": "The car overtook the truck at 160 km/h.",
-        "blanks": [
-          [
-            9,
-            18
-          ]
-        ],
-        "source": "example"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -19531,23 +19108,6 @@
     ],
     "added": "2026-04-06 14:05:00",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Er holte den Führenden im letzten Kilometer ein.",
-        "en": "He caught up with the leader in the last kilometre.",
-        "blanks": [
-          [
-            3,
-            8
-          ],
-          [
-            44,
-            47
-          ]
-        ],
-        "source": "example"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -19755,19 +19315,6 @@
     ],
     "added": "2026-04-06 14:08:00",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Ich habe einen großen Fehler begangen, als ich meine Frau auswählte.",
-        "en": "I made a big mistake when choosing my wife.",
-        "blanks": [
-          [
-            58,
-            67
-          ]
-        ],
-        "source": "tatoeba:3297007"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -20034,8 +19581,27 @@
           ]
         ],
         "source": "tatoeba:12088937"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + von + Dat.",
+        "form": "von + DAT",
+        "de": "Der Film handelt von einer Familie, die nach Kanada auswandert.",
+        "en": "The film is about a family that emigrates to Canada.",
+        "blanks": [
+          [
+            17,
+            20
+          ],
+          [
+            21,
+            26
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "von + DAT"
   },
   {
     "id": "das-handeln",
@@ -20163,19 +19729,6 @@
     "added": "2026-04-06 14:13:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Jane verhielt sich immer so, als wenn sie reich wäre.",
-        "en": "Jane always behaved like she was very rich.",
-        "blanks": [
-          [
-            5,
-            13
-          ]
-        ],
-        "source": "tatoeba:1797057"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Sie verhalten sich, als ob nichts passiert wäre.",
@@ -20187,19 +19740,6 @@
           ]
         ],
         "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Sie verhält sich anders, seit sie berühmt ist.",
-        "en": "She behaves differently since she became famous.",
-        "blanks": [
-          [
-            4,
-            11
-          ]
-        ],
-        "source": "tatoeba:13886932"
       },
       {
         "slot": "refl",
@@ -20354,8 +19894,27 @@
           ]
         ],
         "source": "tatoeba:4474939"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + auf + Akk.",
+        "form": "auf + AKK",
+        "de": "Nach der langen Trockenheit hoffen die Bauern auf einen regnerischen Sommer.",
+        "en": "After the long drought, the farmers are hoping for a rainy summer.",
+        "blanks": [
+          [
+            46,
+            49
+          ],
+          [
+            50,
+            55
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "auf + AKK"
   },
   {
     "id": "bewusst",
@@ -20553,19 +20112,6 @@
     "added": "2026-04-06 14:18:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Er widersprach sich in seiner Aussage mehrfach selbst.",
-        "en": "He contradicted himself several times in his testimony.",
-        "blanks": [
-          [
-            3,
-            14
-          ]
-        ],
-        "source": "tatoeba:2309266"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Er wird wütend, wenn ihm widersprochen wird.",
@@ -20577,19 +20123,6 @@
           ]
         ],
         "source": "tatoeba:2309203"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Er widerspricht ihr immer, egal was sie sagt.",
-        "en": "He always contradicts her, no matter what she says.",
-        "blanks": [
-          [
-            3,
-            15
-          ]
-        ],
-        "source": "example"
       }
     ]
   },
@@ -21102,23 +20635,6 @@
     "added": "2026-04-06 14:25:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Nach dem Essen stimmte jemand ein Lied an.",
-        "en": "After dinner someone struck up a song.",
-        "blanks": [
-          [
-            15,
-            22
-          ],
-          [
-            39,
-            41
-          ]
-        ],
-        "source": "example"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Tom hat das Lied angestimmt, und wir alle haben mitgesungen.",
@@ -21184,23 +20700,6 @@
     "added": "2026-04-06 14:26:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Nach kurzer Diskussion stimmte die Gruppe über den Vorschlag ab.",
-        "en": "After a brief discussion, the group voted on the proposal.",
-        "blanks": [
-          [
-            23,
-            30
-          ],
-          [
-            61,
-            63
-          ]
-        ],
-        "source": "generated"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Wir haben über den Vorschlag abgestimmt.",
@@ -21212,8 +20711,27 @@
           ]
         ],
         "source": "example"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + über + Akk.",
+        "form": "über + AKK",
+        "de": "Am Sonntag stimmt die Schweiz über das neue Gesetz ab.",
+        "en": "On Sunday Switzerland votes on the new law.",
+        "blanks": [
+          [
+            30,
+            34
+          ],
+          [
+            35,
+            38
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "über + AKK"
   },
   {
     "id": "zustimmen",
@@ -21270,23 +20788,6 @@
     ],
     "added": "2026-04-06 14:27:00",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Er stimmte der Hochzeit seiner Tochter nicht zu.",
-        "en": "He did not consent to his daughter's marriage.",
-        "blanks": [
-          [
-            3,
-            10
-          ],
-          [
-            45,
-            47
-          ]
-        ],
-        "source": "tatoeba:414505"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -21668,23 +21169,6 @@
     "added": "2026-04-07 10:00:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Während der Wanderferien nahm er ganz ohne Diät zwei Kilo ab.",
-        "en": "During his hiking holiday, he lost two kilos without dieting.",
-        "blanks": [
-          [
-            25,
-            29
-          ],
-          [
-            58,
-            60
-          ]
-        ],
-        "source": "generated"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Sie hat fünf Kilo abgenommen.",
@@ -21693,23 +21177,6 @@
           [
             18,
             28
-          ]
-        ],
-        "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Die Zahl der Fälle nimmt ab.",
-        "en": "The number of cases is decreasing.",
-        "blanks": [
-          [
-            19,
-            24
-          ],
-          [
-            25,
-            27
           ]
         ],
         "source": "example"
@@ -21764,23 +21231,6 @@
     "added": "2026-04-07 10:01:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Ich nahm letzten Sommer viel an Gewicht zu.",
-        "en": "I gained a lot of weight last summer.",
-        "blanks": [
-          [
-            4,
-            8
-          ],
-          [
-            40,
-            42
-          ]
-        ],
-        "source": "tatoeba:12289583"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Ich habe über die Feiertage zugenommen.",
@@ -21789,23 +21239,6 @@
           [
             28,
             38
-          ]
-        ],
-        "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Der Verkehr nimmt ständig zu.",
-        "en": "Traffic is constantly increasing.",
-        "blanks": [
-          [
-            12,
-            17
-          ],
-          [
-            26,
-            28
           ]
         ],
         "source": "example"
@@ -21853,19 +21286,6 @@
     "added": "2026-04-07 10:02:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Er übernahm die Firma von seinem Vater.",
-        "en": "He took over the business from his father.",
-        "blanks": [
-          [
-            3,
-            11
-          ]
-        ],
-        "source": "tatoeba:677035"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Sie hat die Firma von ihrem Vater übernommen.",
@@ -21874,19 +21294,6 @@
           [
             34,
             44
-          ]
-        ],
-        "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Er übernimmt die Verantwortung für das Projekt.",
-        "en": "He's taking on responsibility for the project.",
-        "blanks": [
-          [
-            3,
-            12
           ]
         ],
         "source": "example"
@@ -21940,23 +21347,6 @@
     "added": "2026-04-07 10:03:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Nach dem Frühstück nahm sie ihre Tablette mit Wasser ein.",
-        "en": "After breakfast, she took her tablet with water.",
-        "blanks": [
-          [
-            19,
-            23
-          ],
-          [
-            53,
-            56
-          ]
-        ],
-        "source": "generated"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Das Medikament muss alle sechs Stunden eingenommen werden.",
@@ -21968,23 +21358,6 @@
           ]
         ],
         "source": "tatoeba:2324900"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Jeden Morgen nimmt der Patient seine Medikamente mit Wasser ein.",
-        "en": "Every morning, the patient takes his medication with water.",
-        "blanks": [
-          [
-            13,
-            18
-          ],
-          [
-            60,
-            63
-          ]
-        ],
-        "source": "generated"
       }
     ]
   },
@@ -22029,23 +21402,6 @@
     "added": "2026-04-07 10:04:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Tom nahm sein Mobiltelefon heraus, um einen Schnappschuss von sich zu machen.",
-        "en": "Tom took out his cell phone so that he could take a selfie.",
-        "blanks": [
-          [
-            4,
-            8
-          ],
-          [
-            27,
-            33
-          ]
-        ],
-        "source": "tatoeba:4109417"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Jemand hat das ganze Geld aus dem Safe herausgenommen.",
@@ -22057,23 +21413,6 @@
           ]
         ],
         "source": "tatoeba:9033148"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Nach dem Backen nimmt sie das heiße Blech vorsichtig aus dem Ofen heraus.",
-        "en": "After baking, she carefully takes the hot tray out of the oven.",
-        "blanks": [
-          [
-            16,
-            21
-          ],
-          [
-            66,
-            72
-          ]
-        ],
-        "source": "generated"
       }
     ]
   },
@@ -22219,23 +21558,6 @@
     "added": "2026-04-07 10:06:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Ich nahm es einfach hin.",
-        "en": "I just accepted it.",
-        "blanks": [
-          [
-            4,
-            8
-          ],
-          [
-            20,
-            23
-          ]
-        ],
-        "source": "tatoeba:5168553"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Die Gäste haben die lange Wartezeit ohne Beschwerde hingenommen.",
@@ -22247,23 +21569,6 @@
           ]
         ],
         "source": "generated"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Sie nimmt viel hin, ohne sich zu beschweren.",
-        "en": "She puts up with a lot without complaining.",
-        "blanks": [
-          [
-            4,
-            9
-          ],
-          [
-            15,
-            18
-          ]
-        ],
-        "source": "example"
       }
     ]
   },
@@ -22306,23 +21611,6 @@
     "added": "2026-04-07 10:07:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Die Polizei nahm ihn wegen Trunkenheit am Steuer fest.",
-        "en": "The police arrested him for drinking and driving.",
-        "blanks": [
-          [
-            12,
-            16
-          ],
-          [
-            49,
-            53
-          ]
-        ],
-        "source": "tatoeba:1676817"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Die Polizei hat den Verdächtigen festgenommen.",
@@ -22334,23 +21622,6 @@
           ]
         ],
         "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Die Polizei nimmt den Dieb fest.",
-        "en": "The police arrest the thief.",
-        "blanks": [
-          [
-            12,
-            17
-          ],
-          [
-            27,
-            31
-          ]
-        ],
-        "source": "tatoeba:2800181"
       }
     ]
   },
@@ -22391,23 +21662,6 @@
     "added": "2026-04-07 10:08:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Sie nahm ihm das Glas weg.",
-        "en": "She took the drink away from him.",
-        "blanks": [
-          [
-            4,
-            8
-          ],
-          [
-            22,
-            25
-          ]
-        ],
-        "source": "tatoeba:12450572"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Der Junge hat seiner kleinen Schwester das Spielzeug weggenommen.",
@@ -22419,23 +21673,6 @@
           ]
         ],
         "source": "tatoeba:4245162"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Das Gebäude nimmt viel Licht weg.",
-        "en": "The building blocks a lot of light.",
-        "blanks": [
-          [
-            12,
-            17
-          ],
-          [
-            29,
-            32
-          ]
-        ],
-        "source": "example"
       }
     ]
   },
@@ -22478,23 +21715,6 @@
     "added": "2026-04-07 10:09:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Er nahm seine Aussage zurück.",
-        "en": "He retracted his statement.",
-        "blanks": [
-          [
-            3,
-            7
-          ],
-          [
-            22,
-            28
-          ]
-        ],
-        "source": "example"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Ich habe alles, was ich gesagt habe, zurückgenommen.",
@@ -22506,23 +21726,6 @@
           ]
         ],
         "source": "tatoeba:4945048"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Nach der Beschwerde nimmt der Händler die Ware zurück.",
-        "en": "After the complaint, the retailer takes the goods back.",
-        "blanks": [
-          [
-            20,
-            25
-          ],
-          [
-            47,
-            53
-          ]
-        ],
-        "source": "generated"
       }
     ]
   },
@@ -22565,23 +21768,6 @@
     "added": "2026-04-07 10:10:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Ich nahm mir vor, ihn ihr vorzustellen.",
-        "en": "I planned to introduce him to her.",
-        "blanks": [
-          [
-            4,
-            8
-          ],
-          [
-            13,
-            16
-          ]
-        ],
-        "source": "tatoeba:1070507"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Ich habe mir vorgenommen, mehr Sport zu machen.",
@@ -22593,23 +21779,6 @@
           ]
         ],
         "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Für das neue Jahr nimmt er sich vor, früher aufzustehen.",
-        "en": "For the new year, he resolves to get up earlier.",
-        "blanks": [
-          [
-            18,
-            23
-          ],
-          [
-            32,
-            35
-          ]
-        ],
-        "source": "generated"
       },
       {
         "slot": "refl",
@@ -22663,19 +21832,6 @@
     "added": "2026-04-07 10:11:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Er unternahm noch nicht einmal den Versuch, mich zu küssen.",
-        "en": "He never even tried to kiss me.",
-        "blanks": [
-          [
-            3,
-            12
-          ]
-        ],
-        "source": "tatoeba:6698920"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Sie haben einen Ausflug unternommen.",
@@ -22687,19 +21843,6 @@
           ]
         ],
         "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Egal was er unternimmt, für mich macht es keinen Unterschied.",
-        "en": "Whatever he does, it makes no difference to me.",
-        "blanks": [
-          [
-            12,
-            22
-          ]
-        ],
-        "source": "tatoeba:1805297"
       }
     ]
   },
@@ -22750,23 +21893,6 @@
     "added": "2026-04-07 10:12:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Nach dem Angeln nahm er den Fisch am Fluss aus.",
-        "en": "After fishing, he gutted the fish beside the river.",
-        "blanks": [
-          [
-            16,
-            20
-          ],
-          [
-            43,
-            46
-          ]
-        ],
-        "source": "generated"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Alle waren eingeladen, mich ausgenommen.",
@@ -22775,23 +21901,6 @@
           [
             28,
             39
-          ]
-        ],
-        "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Er nimmt sich selbst immer aus.",
-        "en": "He always excludes himself.",
-        "blanks": [
-          [
-            3,
-            8
-          ],
-          [
-            27,
-            30
           ]
         ],
         "source": "example"
@@ -22913,23 +22022,6 @@
     "added": "2026-04-07 10:14:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Vor dem schwierigen Gespräch nahm ich mich noch einmal zusammen.",
-        "en": "Before the difficult conversation, I pulled myself together once more.",
-        "blanks": [
-          [
-            29,
-            33
-          ],
-          [
-            55,
-            63
-          ]
-        ],
-        "source": "generated"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Für die Präsentation habe ich mich trotz Nervosität zusammengenommen.",
@@ -22938,23 +22030,6 @@
           [
             52,
             68
-          ]
-        ],
-        "source": "generated"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Vor der Prüfung nimmt sie sich bewusst zusammen.",
-        "en": "Before the exam, she makes a conscious effort to pull herself together.",
-        "blanks": [
-          [
-            16,
-            21
-          ],
-          [
-            39,
-            47
           ]
         ],
         "source": "generated"
@@ -23013,19 +22088,6 @@
     "added": "2026-04-07 10:15:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Jane benahm sich immer, als ob sie reich wäre.",
-        "en": "Jane always behaved like she was very rich.",
-        "blanks": [
-          [
-            5,
-            11
-          ]
-        ],
-        "source": "tatoeba:1976629"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Ich werde deinem Vater erzählen, wie du dich benommen hast!",
@@ -23037,19 +22099,6 @@
           ]
         ],
         "source": "tatoeba:3575569"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Er benimmt sich immer vorbildlich.",
-        "en": "He always behaves exemplarily.",
-        "blanks": [
-          [
-            3,
-            10
-          ]
-        ],
-        "source": "example"
       },
       {
         "slot": "refl",
@@ -23109,19 +22158,6 @@
     "added": "2026-04-07 10:16:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Er vernahm ein leises Geräusch.",
-        "en": "He heard a faint noise.",
-        "blanks": [
-          [
-            3,
-            10
-          ]
-        ],
-        "source": "example"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Der Zeuge wurde von der Polizei vernommen.",
@@ -23133,19 +22169,6 @@
           ]
         ],
         "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Aus dem Nachbarzimmer vernimmt sie ein leises Klopfen.",
-        "en": "She hears a soft knocking from the next room.",
-        "blanks": [
-          [
-            22,
-            30
-          ]
-        ],
-        "source": "generated"
       }
     ]
   },
@@ -23267,23 +22290,6 @@
     ],
     "added": "2026-04-07 10:18:00",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Er nahm einen Spiegel und schaute sich seine Zunge an.",
-        "en": "He picked up a mirror and looked at his tongue.",
-        "blanks": [
-          [
-            26,
-            33
-          ],
-          [
-            51,
-            53
-          ]
-        ],
-        "source": "tatoeba:501311"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -23515,23 +22521,6 @@
     "added": "2026-04-07 10:21:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Das Kind sah seiner Mutter beim Kochen zu.",
-        "en": "The kid watched her mother cook.",
-        "blanks": [
-          [
-            9,
-            12
-          ],
-          [
-            39,
-            41
-          ]
-        ],
-        "source": "tatoeba:4756506"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Ich habe nur zugesehen, wie er kochte.",
@@ -23543,19 +22532,6 @@
           ]
         ],
         "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Du weißt nie, wer zusieht.",
-        "en": "You never know who's watching.",
-        "blanks": [
-          [
-            18,
-            25
-          ]
-        ],
-        "source": "tatoeba:1907502"
       }
     ]
   },
@@ -24070,23 +23046,6 @@
     "added": "2026-04-07 10:28:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Ich hielt mich nur wenige Monate in Japan auf.",
-        "en": "I stayed in Japan only a few months.",
-        "blanks": [
-          [
-            4,
-            9
-          ],
-          [
-            42,
-            45
-          ]
-        ],
-        "source": "tatoeba:1839319"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Ich habe mich nicht lange in Wien aufgehalten.",
@@ -24098,23 +23057,6 @@
           ]
         ],
         "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Er hält sich im Moment in Paris auf.",
-        "en": "He is now staying in Paris.",
-        "blanks": [
-          [
-            3,
-            7
-          ],
-          [
-            32,
-            35
-          ]
-        ],
-        "source": "tatoeba:455347"
       }
     ]
   },
@@ -24978,19 +23920,6 @@
     "prefix": "ver-",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Was er auch versuchte: er konnte die Tür nicht öffnen.",
-        "en": "Try as he might, he couldn't get the door open.",
-        "blanks": [
-          [
-            12,
-            21
-          ]
-        ],
-        "source": "tatoeba:2296139"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Du kannst nicht sagen, ich hätte es nicht versucht.",
@@ -25069,8 +23998,27 @@
           ]
         ],
         "source": "generated"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + nach + Dat.",
+        "form": "nach + DAT",
+        "de": "Ich suche seit Wochen nach einer günstigen Wohnung in Basel.",
+        "en": "I have been looking for an affordable flat in Basel for weeks.",
+        "blanks": [
+          [
+            22,
+            26
+          ],
+          [
+            27,
+            32
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "nach + DAT"
   },
   {
     "id": "probieren",
@@ -25367,8 +24315,27 @@
           ]
         ],
         "source": "tatoeba:8021556"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + über + Akk.",
+        "form": "über + AKK",
+        "de": "Man sollte nicht über einen Menschen urteilen, den man kaum kennt.",
+        "en": "You should not judge a person you hardly know.",
+        "blanks": [
+          [
+            17,
+            21
+          ],
+          [
+            22,
+            27
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "über + AKK"
   },
   {
     "id": "teilen",
@@ -25490,19 +24457,6 @@
     "added": "2026-04-07 10:48:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Der Lehrer beurteilte unsere Präsentation anhand klarer Kriterien.",
-        "en": "The teacher assessed our presentation using clear criteria.",
-        "blanks": [
-          [
-            11,
-            21
-          ]
-        ],
-        "source": "generated"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Frauen werden oft ihrem Aussehen nach beurteilt.",
@@ -25563,19 +24517,6 @@
     ],
     "added": "2026-04-07 10:49:00",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Die internationale Gemeinschaft verurteilte den Angriff.",
-        "en": "The international community condemned the attack.",
-        "blanks": [
-          [
-            32,
-            43
-          ]
-        ],
-        "source": "example"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -25689,43 +24630,7 @@
         "kind": "contrast"
       }
     ],
-    "added": "2026-04-07 10:51:00",
-    "exercises": [
-      {
-        "slot": "cx1",
-        "label": "Satz mit sein + zu + Infinitiv",
-        "de": "Das Problem ist leicht zu lösen.",
-        "en": "The problem is easy to solve. (= can be solved)",
-        "blanks": [
-          [
-            12,
-            15
-          ],
-          [
-            23,
-            25
-          ]
-        ],
-        "source": "example"
-      },
-      {
-        "slot": "cx2",
-        "label": "Satz mit sein + zu + Infinitiv",
-        "de": "Der Fehler ist nicht zu übersehen.",
-        "en": "The mistake is impossible to miss. (= cannot be overlooked)",
-        "blanks": [
-          [
-            11,
-            14
-          ],
-          [
-            21,
-            23
-          ]
-        ],
-        "source": "example"
-      }
-    ]
+    "added": "2026-04-07 10:51:00"
   },
   {
     "id": "haben-zu-infinitiv",
@@ -25761,43 +24666,7 @@
         "kind": "contrast"
       }
     ],
-    "added": "2026-04-07 10:52:00",
-    "exercises": [
-      {
-        "slot": "cx1",
-        "label": "Satz mit haben + zu + Infinitiv",
-        "de": "Du hast dich zu benehmen.",
-        "en": "You have to behave yourself.",
-        "blanks": [
-          [
-            3,
-            7
-          ],
-          [
-            13,
-            15
-          ]
-        ],
-        "source": "example"
-      },
-      {
-        "slot": "cx2",
-        "label": "Satz mit haben + zu + Infinitiv",
-        "de": "Ich habe heute noch viel zu erledigen.",
-        "en": "I still have a lot to do today.",
-        "blanks": [
-          [
-            4,
-            8
-          ],
-          [
-            25,
-            27
-          ]
-        ],
-        "source": "example"
-      }
-    ]
+    "added": "2026-04-07 10:52:00"
   },
   {
     "id": "nicht-brauchen-zu-infinitiv",
@@ -25829,47 +24698,7 @@
         "kind": "contrast"
       }
     ],
-    "added": "2026-04-07 10:53:00",
-    "exercises": [
-      {
-        "slot": "cx1",
-        "label": "Satz mit nicht brauchen + zu + Infinitiv",
-        "de": "Du brauchst das nicht zu tun.",
-        "en": "You don't need to do that.",
-        "blanks": [
-          [
-            3,
-            11
-          ],
-          [
-            16,
-            21
-          ],
-          [
-            22,
-            24
-          ]
-        ],
-        "source": "example"
-      },
-      {
-        "slot": "cx2",
-        "label": "Satz mit nicht brauchen + zu + Infinitiv",
-        "de": "Sie braucht sich keine Sorgen zu machen.",
-        "en": "She doesn't need to worry.",
-        "blanks": [
-          [
-            4,
-            11
-          ],
-          [
-            30,
-            32
-          ]
-        ],
-        "source": "example"
-      }
-    ]
+    "added": "2026-04-07 10:53:00"
   },
   {
     "id": "zu-ende-bringen",
@@ -26043,32 +24872,6 @@
           ]
         ],
         "source": "tatoeba:1775380"
-      },
-      {
-        "slot": "pc5",
-        "label": "Satz mit weil",
-        "de": "Weil es sehr kalt war, blieben sie zu Hause.",
-        "en": "It being very cold, they stayed at home.",
-        "blanks": [
-          [
-            0,
-            4
-          ]
-        ],
-        "source": "tatoeba:1775398"
-      },
-      {
-        "slot": "pc6",
-        "label": "Satz mit weil",
-        "de": "Ich habe das nur getan, weil ich gezwungen wurde.",
-        "en": "I only did that because I was forced to.",
-        "blanks": [
-          [
-            24,
-            28
-          ]
-        ],
-        "source": "tatoeba:12406923"
       }
     ]
   },
@@ -26169,32 +24972,6 @@
           ]
         ],
         "source": "tatoeba:1677907"
-      },
-      {
-        "slot": "pc5",
-        "label": "Satz mit wegen",
-        "de": "Wegen der Hitze sind die Geschäfte am Nachmittag geschlossen.",
-        "en": "Stores are closed in the afternoon because of the heat.",
-        "blanks": [
-          [
-            0,
-            5
-          ]
-        ],
-        "source": "tatoeba:3965070"
-      },
-      {
-        "slot": "pc6",
-        "label": "Satz mit wegen",
-        "de": "Sie war wegen einer Erkältung nicht in der Schule.",
-        "en": "She was absent from school with a cold.",
-        "blanks": [
-          [
-            8,
-            13
-          ]
-        ],
-        "source": "tatoeba:2046014"
       }
     ]
   },
@@ -26291,32 +25068,6 @@
           ]
         ],
         "source": "tatoeba:4915206"
-      },
-      {
-        "slot": "pc5",
-        "label": "Satz mit aufgrund",
-        "de": "Das Spiel musste aufgrund der Kälte abgesagt werden.",
-        "en": "The game had to be cancelled because of the cold weather.",
-        "blanks": [
-          [
-            17,
-            25
-          ]
-        ],
-        "source": "tatoeba:403405"
-      },
-      {
-        "slot": "pc6",
-        "label": "Satz mit aufgrund",
-        "de": "Aufgrund der Lichter der Stadt kann man die Sterne nicht sehen.",
-        "en": "Because of the city lights, you can't see the stars.",
-        "blanks": [
-          [
-            0,
-            8
-          ]
-        ],
-        "source": "tatoeba:13708397"
       }
     ]
   },
@@ -26405,32 +25156,6 @@
           ]
         ],
         "source": "tatoeba:546210"
-      },
-      {
-        "slot": "pc5",
-        "label": "Satz mit denn",
-        "de": "Ich bin hungrig, denn ich hatte nichts zum Frühstück.",
-        "en": "I am hungry because I did not have breakfast.",
-        "blanks": [
-          [
-            17,
-            21
-          ]
-        ],
-        "source": "tatoeba:3233682"
-      },
-      {
-        "slot": "pc6",
-        "label": "Satz mit denn",
-        "de": "Ich gehe viel zu Fuß, denn das ist gesund.",
-        "en": "I walk a lot, since it's healthy.",
-        "blanks": [
-          [
-            22,
-            26
-          ]
-        ],
-        "source": "tatoeba:2623038"
       }
     ]
   },
@@ -26516,32 +25241,6 @@
           [
             32,
             34
-          ]
-        ],
-        "source": "generated"
-      },
-      {
-        "slot": "pc5",
-        "label": "Satz mit da",
-        "de": "Da wir morgen früh aufstehen müssen, gehen wir jetzt schlafen.",
-        "en": "As we have to get up early tomorrow, we're going to bed now.",
-        "blanks": [
-          [
-            0,
-            2
-          ]
-        ],
-        "source": "generated"
-      },
-      {
-        "slot": "pc6",
-        "label": "Satz mit da",
-        "de": "Ich nehme einen Regenschirm mit, da Gewitter vorhergesagt wurden.",
-        "en": "I'm taking an umbrella because thunderstorms have been forecast.",
-        "blanks": [
-          [
-            33,
-            35
           ]
         ],
         "source": "generated"
@@ -26641,32 +25340,6 @@
           ]
         ],
         "source": "tatoeba:368269"
-      },
-      {
-        "slot": "pc5",
-        "label": "Satz mit infolge",
-        "de": "Infolge des Unfalls kamen mehrere Passagiere ums Leben.",
-        "en": "As a result of the accident, several passengers were killed.",
-        "blanks": [
-          [
-            0,
-            7
-          ]
-        ],
-        "source": "tatoeba:12447636"
-      },
-      {
-        "slot": "pc6",
-        "label": "Satz mit infolge",
-        "de": "Infolge des Krieges starben viele Menschen.",
-        "en": "As a result of the war, many people died.",
-        "blanks": [
-          [
-            0,
-            7
-          ]
-        ],
-        "source": "tatoeba:1964259"
       }
     ]
   },
@@ -26763,32 +25436,6 @@
           ]
         ],
         "source": "tatoeba:1275454"
-      },
-      {
-        "slot": "pc5",
-        "label": "Satz mit trotz",
-        "de": "Er sieht trotz seiner Brille nicht sehr gut.",
-        "en": "He doesn't see very well despite his glasses.",
-        "blanks": [
-          [
-            9,
-            14
-          ]
-        ],
-        "source": "tatoeba:341593"
-      },
-      {
-        "slot": "pc6",
-        "label": "Satz mit trotz",
-        "de": "Trotz des Regens sind die Kinder in die Schule gegangen.",
-        "en": "The children went to school in spite of the rain.",
-        "blanks": [
-          [
-            0,
-            5
-          ]
-        ],
-        "source": "tatoeba:139101"
       }
     ]
   },
@@ -26889,32 +25536,6 @@
           ]
         ],
         "source": "tatoeba:10325501"
-      },
-      {
-        "slot": "pc5",
-        "label": "Satz mit obwohl",
-        "de": "Das Mädchen geht zur Schule, obwohl sie schlafen möchte.",
-        "en": "The girl is going to school, even though she wants to sleep.",
-        "blanks": [
-          [
-            29,
-            35
-          ]
-        ],
-        "source": "tatoeba:10711801"
-      },
-      {
-        "slot": "pc6",
-        "label": "Satz mit obwohl",
-        "de": "Meine Kollegin fährt jeden Tag mit dem Rad ins Büro, obwohl es draußen sehr kalt ist.",
-        "en": "My colleague rides her bike to the office every day, even though it is very cold outside.",
-        "blanks": [
-          [
-            53,
-            59
-          ]
-        ],
-        "source": "generated"
       }
     ]
   },
@@ -27816,8 +26437,27 @@
           ]
         ],
         "source": "example"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + mit + Dat.",
+        "form": "mit + DAT",
+        "de": "Beim Stadtlauf misst sie sich mit den besten Läuferinnen des Landes.",
+        "en": "At the city run she competes with the best runners in the country.",
+        "blanks": [
+          [
+            30,
+            33
+          ],
+          [
+            34,
+            37
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "mit + DAT"
   },
   {
     "id": "vermessen-verb",
@@ -27867,19 +26507,6 @@
     "added": "2026-04-07 12:14:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Vor dem Hausbau vermaß der Techniker das gesamte Grundstück.",
-        "en": "Before construction began, the technician surveyed the entire plot.",
-        "blanks": [
-          [
-            16,
-            22
-          ]
-        ],
-        "source": "generated"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Das Grundstück wurde neu vermessen.",
@@ -27891,19 +26518,6 @@
           ]
         ],
         "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Vermisst du deine Mutter nicht?",
-        "en": "Don't you miss your mother?",
-        "blanks": [
-          [
-            0,
-            8
-          ]
-        ],
-        "source": "tatoeba:12069113"
       }
     ]
   },
@@ -28829,19 +27443,6 @@
     "added": "2026-04-07 12:27:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Das Dorf versank in den Fluten.",
-        "en": "The village was submerged in the floods.",
-        "blanks": [
-          [
-            9,
-            16
-          ]
-        ],
-        "source": "example"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Die schweren Stiefel sind im weichen Schlamm versunken.",
@@ -28977,19 +27578,6 @@
     ],
     "added": "2026-04-07 12:29:00",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Das U-Boot versenkte das Schiff.",
-        "en": "The submarine sank the ship.",
-        "blanks": [
-          [
-            11,
-            20
-          ]
-        ],
-        "source": "example"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -29128,23 +27716,6 @@
     ],
     "added": "2026-04-07 12:31:00",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Es fühlte sich wie eine halbe Ewigkeit an.",
-        "en": "It felt like forever.",
-        "blanks": [
-          [
-            3,
-            9
-          ],
-          [
-            39,
-            41
-          ]
-        ],
-        "source": "tatoeba:12358353"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -30106,6 +28677,24 @@
           ]
         ],
         "source": "example"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + für + Akk.",
+        "form": "für + AKK",
+        "de": "Meine Tochter interessiert sich sehr für die Geschichte der Schweiz.",
+        "en": "My daughter is very interested in the history of Switzerland.",
+        "blanks": [
+          [
+            37,
+            40
+          ],
+          [
+            41,
+            44
+          ]
+        ],
+        "source": "generated"
       }
     ]
   },
@@ -30363,23 +28952,6 @@
     "added": "2026-04-07 12:48:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Ich wollte einen Hamburger, aber ich hielt mich zurück.",
-        "en": "I wanted a hamburger, but I restrained myself.",
-        "blanks": [
-          [
-            37,
-            42
-          ],
-          [
-            48,
-            54
-          ]
-        ],
-        "source": "tatoeba:365320"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Bei der Diskussion habe ich mich mit Kritik bewusst zurückgehalten.",
@@ -30393,23 +28965,6 @@
         "source": "generated"
       },
       {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Er hält sich mit seiner Meinung zurück.",
-        "en": "He holds back his opinion.",
-        "blanks": [
-          [
-            3,
-            7
-          ],
-          [
-            32,
-            38
-          ]
-        ],
-        "source": "example"
-      },
-      {
         "slot": "refl",
         "label": "Reflexivpronomen (Akk.)",
         "de": "Ich musste mich sehr zurückhalten, um nichts zu sagen.",
@@ -30421,8 +28976,27 @@
           ]
         ],
         "source": "example"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + mit + Dat.",
+        "form": "mit + DAT",
+        "de": "In der Sitzung hielt sie sich mit ihrer Kritik zurück.",
+        "en": "In the meeting she held back with her criticism.",
+        "blanks": [
+          [
+            30,
+            33
+          ],
+          [
+            34,
+            39
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "mit + DAT"
   },
   {
     "id": "doof",
@@ -30651,19 +29225,6 @@
     "added": "2026-04-07 12:52:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Ich ertrug sein unhöfliches Verhalten nicht.",
-        "en": "I couldn't put up with his rudeness.",
-        "blanks": [
-          [
-            4,
-            10
-          ]
-        ],
-        "source": "tatoeba:1608884"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Sie hat die Schmerzen nach der Operation tapfer ertragen.",
@@ -30675,19 +29236,6 @@
           ]
         ],
         "source": "generated"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Tom erträgt es nicht, Maria so glücklich zu sehen.",
-        "en": "Tom can't stand seeing Mary so happy.",
-        "blanks": [
-          [
-            4,
-            11
-          ]
-        ],
-        "source": "tatoeba:1973421"
       }
     ]
   },
@@ -31645,43 +30193,7 @@
         "kind": "derived"
       }
     ],
-    "added": "2026-04-07 13:06:00",
-    "exercises": [
-      {
-        "slot": "cx1",
-        "label": "Satz mit ich … lieber … als …",
-        "de": "Ich trinke lieber Tee als Kaffee.",
-        "en": "I prefer tea to coffee.",
-        "blanks": [
-          [
-            11,
-            17
-          ],
-          [
-            22,
-            25
-          ]
-        ],
-        "source": "example"
-      },
-      {
-        "slot": "cx2",
-        "label": "Satz mit ich … lieber … als …",
-        "de": "Ich gehe lieber spazieren als fernzusehen.",
-        "en": "I'd rather go for a walk than watch TV.",
-        "blanks": [
-          [
-            9,
-            15
-          ],
-          [
-            26,
-            29
-          ]
-        ],
-        "source": "example"
-      }
-    ]
+    "added": "2026-04-07 13:06:00"
   },
   {
     "id": "lieblings",
@@ -31708,35 +30220,7 @@
     ],
     "notes": "Lieblings- is a prefix added to nouns: Lieblingsessen, Lieblingsfilm, Lieblingsfarbe, Lieblingsort. Always written as one compound word.",
     "related": [],
-    "added": "2026-04-07 13:07:00",
-    "exercises": [
-      {
-        "slot": "cx1",
-        "label": "Satz mit Lieblings-",
-        "de": "Was ist dein Lieblingsessen?",
-        "en": "What is your favourite food?",
-        "blanks": [
-          [
-            13,
-            22
-          ]
-        ],
-        "source": "example"
-      },
-      {
-        "slot": "cx2",
-        "label": "Satz mit Lieblings-",
-        "de": "Das ist mein Lieblingsfilm.",
-        "en": "That is my favourite film.",
-        "blanks": [
-          [
-            13,
-            22
-          ]
-        ],
-        "source": "example"
-      }
-    ]
+    "added": "2026-04-07 13:07:00"
   },
   {
     "id": "das-geht-mir-auf-die-nerven",
@@ -32347,23 +30831,6 @@
     "added": "2026-04-07 14:06:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Sie trocknete sich das Gesicht mit einem Handtuch ab.",
-        "en": "She dried her face on a towel.",
-        "blanks": [
-          [
-            4,
-            13
-          ],
-          [
-            50,
-            52
-          ]
-        ],
-        "source": "tatoeba:3481829"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Sie hat ihre nassen Haare mit einem Tuch abgetrocknet.",
@@ -32793,19 +31260,6 @@
     "added": "2026-04-07 14:12:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Sie verreiste mit ihrer Freundin.",
-        "en": "She went travelling with her friend.",
-        "blanks": [
-          [
-            4,
-            13
-          ]
-        ],
-        "source": "tatoeba:11528688"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Er ist gerade verreist.",
@@ -32933,23 +31387,6 @@
     "added": "2026-04-07 14:14:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Nach der medizinischen Beratung trieb die Patientin schließlich ab.",
-        "en": "After medical counseling, the patient ultimately had an abortion.",
-        "blanks": [
-          [
-            32,
-            37
-          ],
-          [
-            64,
-            66
-          ]
-        ],
-        "source": "generated"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Das Boot wurde vom Sturm abgetrieben.",
@@ -33001,19 +31438,6 @@
     "related": [],
     "added": "2026-04-07 14:15:00",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Sie bestieg den Gipfel nach sechs Stunden.",
-        "en": "She reached the summit after six hours.",
-        "blanks": [
-          [
-            4,
-            11
-          ]
-        ],
-        "source": "example"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -33596,23 +32020,6 @@
     "added": "2026-04-07 14:23:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Dort gab es ein Konzert, deshalb fuhr ich am Abend hin.",
-        "en": "There was a concert there, so I drove over that evening.",
-        "blanks": [
-          [
-            33,
-            37
-          ],
-          [
-            51,
-            54
-          ]
-        ],
-        "source": "generated"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Wie bist du hingefahren?",
@@ -33624,19 +32031,6 @@
           ]
         ],
         "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Ein fremdes Land lernt man am besten kennen, indem man hinfährt.",
-        "en": "The good way to know a foreign country is to go there.",
-        "blanks": [
-          [
-            55,
-            63
-          ]
-        ],
-        "source": "tatoeba:8791457"
       }
     ]
   },
@@ -33682,23 +32076,6 @@
     "added": "2026-04-07 14:24:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Für unser Treffen fuhr sie extra aus Bern her.",
-        "en": "She came all the way from Bern for our meeting.",
-        "blanks": [
-          [
-            18,
-            22
-          ],
-          [
-            42,
-            45
-          ]
-        ],
-        "source": "generated"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Wie bist du hergefahren?",
@@ -33710,23 +32087,6 @@
           ]
         ],
         "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Jeden Freitag fährt mein Bruder aus Luzern her.",
-        "en": "My brother comes here from Lucerne every Friday.",
-        "blanks": [
-          [
-            14,
-            19
-          ],
-          [
-            43,
-            46
-          ]
-        ],
-        "source": "generated"
       }
     ]
   },
@@ -33768,23 +32128,6 @@
     "added": "2026-04-07 14:25:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Ohne Navi fuhr ich eine Stunde in der Altstadt herum.",
-        "en": "Without navigation, I drove around the old town for an hour.",
-        "blanks": [
-          [
-            10,
-            14
-          ],
-          [
-            47,
-            52
-          ]
-        ],
-        "source": "generated"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Wir sind durch die Stadt herumgefahren.",
@@ -33793,23 +32136,6 @@
           [
             25,
             38
-          ]
-        ],
-        "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Er fährt den ganzen Tag herum.",
-        "en": "He drives around all day.",
-        "blanks": [
-          [
-            3,
-            8
-          ],
-          [
-            24,
-            29
           ]
         ],
         "source": "example"
@@ -33859,19 +32185,6 @@
     "added": "2026-04-07 14:26:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Wir sahen, wie der Wagen losfuhr.",
-        "en": "We saw the car start.",
-        "blanks": [
-          [
-            25,
-            32
-          ]
-        ],
-        "source": "tatoeba:2351712"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Er ist früh morgens losgefahren.",
@@ -33883,19 +32196,6 @@
           ]
         ],
         "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Es ist wichtig, dass sie sofort losfährt.",
-        "en": "It is important that she should leave at once.",
-        "blanks": [
-          [
-            32,
-            40
-          ]
-        ],
-        "source": "tatoeba:11942748"
       }
     ]
   },
@@ -33937,19 +32237,6 @@
     "added": "2026-04-07 14:27:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Tom sah zu, wie Maria wegfuhr.",
-        "en": "Tom watched as Mary drove away.",
-        "blanks": [
-          [
-            22,
-            29
-          ]
-        ],
-        "source": "tatoeba:3506159"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Er ist einfach weggefahren ohne ein Wort.",
@@ -33961,19 +32248,6 @@
           ]
         ],
         "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Geh und sag ihm „Auf Wiedersehen“, bevor er wegfährt.",
-        "en": "Go and say goodbye to him before he leaves.",
-        "blanks": [
-          [
-            44,
-            52
-          ]
-        ],
-        "source": "tatoeba:2999366"
       }
     ]
   },
@@ -34032,19 +32306,6 @@
     "added": "2026-04-07 14:28:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Wir kamen am Bahnhof an, als der Zug gerade abfuhr.",
-        "en": "We arrived at the station as the train was leaving.",
-        "blanks": [
-          [
-            44,
-            50
-          ]
-        ],
-        "source": "tatoeba:366485"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Der Zug ist pünktlich abgefahren.",
@@ -34056,23 +32317,6 @@
           ]
         ],
         "source": "tatoeba:5381473"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Der Zug fährt um 10 Uhr ab.",
-        "en": "The train departs at 10 o'clock.",
-        "blanks": [
-          [
-            8,
-            13
-          ],
-          [
-            24,
-            26
-          ]
-        ],
-        "source": "example"
       }
     ]
   },
@@ -34126,23 +32370,6 @@
     ],
     "added": "2026-04-07 14:29:00",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Er reiste trotz des Sturms ab.",
-        "en": "He departed in spite of the storm.",
-        "blanks": [
-          [
-            3,
-            9
-          ],
-          [
-            27,
-            29
-          ]
-        ],
-        "source": "tatoeba:1982982"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -34204,23 +32431,6 @@
     ],
     "added": "2026-04-07 14:30:00",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Für die Konferenz reiste meine Kollegin schon am Vorabend an.",
-        "en": "My colleague arrived the evening before for the conference.",
-        "blanks": [
-          [
-            18,
-            24
-          ],
-          [
-            58,
-            60
-          ]
-        ],
-        "source": "generated"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -35293,32 +33503,6 @@
           ]
         ],
         "source": "tatoeba:12551999"
-      },
-      {
-        "slot": "pc5",
-        "label": "Satz mit vor",
-        "de": "Mein Onkel ist vor zwei Jahren an Krebs gestorben.",
-        "en": "My uncle died of cancer two years ago.",
-        "blanks": [
-          [
-            15,
-            18
-          ]
-        ],
-        "source": "tatoeba:621679"
-      },
-      {
-        "slot": "pc6",
-        "label": "Satz mit vor",
-        "de": "Ich habe sie erst vor ein paar Stunden gesehen.",
-        "en": "I saw her just a few hours ago.",
-        "blanks": [
-          [
-            18,
-            21
-          ]
-        ],
-        "source": "tatoeba:14016543"
       }
     ]
   },
@@ -35411,32 +33595,6 @@
           ]
         ],
         "source": "tatoeba:2040112"
-      },
-      {
-        "slot": "pc5",
-        "label": "Satz mit seit",
-        "de": "Das haben wir seit einem Monat nicht mehr gemacht.",
-        "en": "We haven't done that in a month.",
-        "blanks": [
-          [
-            14,
-            18
-          ]
-        ],
-        "source": "tatoeba:8604372"
-      },
-      {
-        "slot": "pc6",
-        "label": "Satz mit seit",
-        "de": "Zehn Jahre sind vergangen, seit mein Vater gestorben ist.",
-        "en": "Ten years have gone by since my father died.",
-        "blanks": [
-          [
-            27,
-            31
-          ]
-        ],
-        "source": "tatoeba:799189"
       }
     ]
   },
@@ -37348,23 +35506,6 @@
     "added": "2026-04-07 15:15:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Sie sah gerade fern, als ich nach Hause kam.",
-        "en": "She was watching TV when I got home.",
-        "blanks": [
-          [
-            4,
-            7
-          ],
-          [
-            15,
-            19
-          ]
-        ],
-        "source": "tatoeba:12459788"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Ich bin einfach zu Hause geblieben und habe ferngesehen.",
@@ -37376,23 +35517,6 @@
           ]
         ],
         "source": "tatoeba:12378058"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Mein Hund sitzt neben mir und sieht fern.",
-        "en": "My dog sits next to me and watches television.",
-        "blanks": [
-          [
-            30,
-            35
-          ],
-          [
-            36,
-            40
-          ]
-        ],
-        "source": "tatoeba:12287753"
       }
     ]
   },
@@ -37426,43 +35550,7 @@
         "kind": "contrast"
       }
     ],
-    "added": "2026-04-07 15:16:00",
-    "exercises": [
-      {
-        "slot": "cx1",
-        "label": "Satz mit X ist aus Y",
-        "de": "Die Ohrringe sind aus Silber.",
-        "en": "The earrings are made of silver.",
-        "blanks": [
-          [
-            13,
-            17
-          ],
-          [
-            18,
-            21
-          ]
-        ],
-        "source": "example"
-      },
-      {
-        "slot": "cx2",
-        "label": "Satz mit X ist aus Y",
-        "de": "Der Tisch ist aus Holz.",
-        "en": "The table is made of wood.",
-        "blanks": [
-          [
-            10,
-            13
-          ],
-          [
-            14,
-            17
-          ]
-        ],
-        "source": "example"
-      }
-    ]
+    "added": "2026-04-07 15:16:00"
   },
   {
     "id": "x-wird-aus-y-gemacht",
@@ -37494,51 +35582,7 @@
         "kind": "contrast"
       }
     ],
-    "added": "2026-04-07 15:17:00",
-    "exercises": [
-      {
-        "slot": "cx1",
-        "label": "Satz mit X wird aus Y gemacht",
-        "de": "Wein wird aus Trauben gemacht.",
-        "en": "Wine is made from grapes.",
-        "blanks": [
-          [
-            5,
-            9
-          ],
-          [
-            10,
-            13
-          ],
-          [
-            22,
-            29
-          ]
-        ],
-        "source": "example"
-      },
-      {
-        "slot": "cx2",
-        "label": "Satz mit X wird aus Y gemacht",
-        "de": "Papier wird aus Holz gemacht.",
-        "en": "Paper is made from wood.",
-        "blanks": [
-          [
-            7,
-            11
-          ],
-          [
-            12,
-            15
-          ],
-          [
-            21,
-            28
-          ]
-        ],
-        "source": "example"
-      }
-    ]
+    "added": "2026-04-07 15:17:00"
   },
   {
     "id": "gerne",
@@ -37608,51 +35652,7 @@
         "kind": "antonym"
       }
     ],
-    "added": "2026-04-07 15:19:00",
-    "exercises": [
-      {
-        "slot": "cx1",
-        "label": "Satz mit in der Nähe",
-        "de": "Das Hotel liegt in der Nähe des Bahnhofs.",
-        "en": "The hotel is near the train station.",
-        "blanks": [
-          [
-            16,
-            18
-          ],
-          [
-            19,
-            22
-          ],
-          [
-            23,
-            27
-          ]
-        ],
-        "source": "example"
-      },
-      {
-        "slot": "cx2",
-        "label": "Satz mit in der Nähe",
-        "de": "Gibt es ein Restaurant in der Nähe?",
-        "en": "Is there a restaurant nearby?",
-        "blanks": [
-          [
-            23,
-            25
-          ],
-          [
-            26,
-            29
-          ],
-          [
-            30,
-            34
-          ]
-        ],
-        "source": "example"
-      }
-    ]
+    "added": "2026-04-07 15:19:00"
   },
   {
     "id": "gassi-gehen",
@@ -37795,19 +35795,6 @@
     "added": "2026-04-07 16:01:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Vor der Abgabe überarbeitete ich den Bericht noch einmal gründlich.",
-        "en": "Before submitting it, I thoroughly revised the report once more.",
-        "blanks": [
-          [
-            15,
-            28
-          ]
-        ],
-        "source": "generated"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Die Autorin hat das letzte Kapitel dreimal überarbeitet.",
@@ -37896,8 +35883,27 @@
           ]
         ],
         "source": "tatoeba:5320700"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + an + Dat.",
+        "form": "an + DAT",
+        "de": "Er arbeitet gerade an einem neuen Buch.",
+        "en": "He's currently working on a new book.",
+        "blanks": [
+          [
+            19,
+            21
+          ],
+          [
+            22,
+            27
+          ]
+        ],
+        "source": "example"
       }
-    ]
+    ],
+    "preposition": "an + DAT"
   },
   {
     "id": "die-arbeit",
@@ -38944,23 +36950,6 @@
     "added": "2026-04-07 16:17:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Der Drachen blieb im Baum hängen.",
-        "en": "The kite got caught in the tree.",
-        "blanks": [
-          [
-            12,
-            17
-          ],
-          [
-            26,
-            32
-          ]
-        ],
-        "source": "tatoeba:2068539"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Ich bin bei dieser Aufgabe hängengeblieben.",
@@ -38972,8 +36961,23 @@
           ]
         ],
         "source": "example"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + an + Dat.",
+        "form": "an + DAT",
+        "de": "Beim Aussteigen ist mein Ärmel am Türgriff hängengeblieben.",
+        "en": "As I was getting out, my sleeve got caught on the door handle.",
+        "blanks": [
+          [
+            31,
+            33
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "an + DAT"
   },
   {
     "id": "die-abgabefrist",
@@ -40416,19 +38420,6 @@
     "added": "2026-04-07 16:37:00",
     "prefix": "unter-",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "An diesem Tag untersuchte der Doktor mehr als 50 Patienten.",
-        "en": "The doctor examined over fifty patients that day.",
-        "blanks": [
-          [
-            14,
-            25
-          ]
-        ],
-        "source": "tatoeba:1262359"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -43541,8 +41532,27 @@
           ]
         ],
         "source": "example"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + an + Dat.",
+        "form": "an + DAT",
+        "de": "Im Winter erkranken viele Menschen an der Grippe.",
+        "en": "In winter many people fall ill with the flu.",
+        "blanks": [
+          [
+            35,
+            37
+          ],
+          [
+            38,
+            41
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "an + DAT"
   },
   {
     "id": "anstecken",
@@ -43590,23 +41600,6 @@
     ],
     "added": "2026-04-07 17:20:00",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Er steckte mich mit seiner Erkältung an.",
-        "en": "He gave me a cold.",
-        "blanks": [
-          [
-            3,
-            10
-          ],
-          [
-            37,
-            39
-          ]
-        ],
-        "source": "tatoeba:1824858"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -43921,8 +41914,27 @@
           ]
         ],
         "source": "tatoeba:2152927"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + an + Dat.",
+        "form": "an + DAT",
+        "de": "Ihr Großvater ist vor zwei Jahren an einem Herzinfarkt gestorben.",
+        "en": "Her grandfather died of a heart attack two years ago.",
+        "blanks": [
+          [
+            34,
+            36
+          ],
+          [
+            37,
+            42
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "an + DAT"
   },
   {
     "id": "toeten",
@@ -44030,19 +42042,6 @@
     "added": "2026-04-07 17:26:00",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Er verlor seine Glaubwürdigkeit, weil er einen Freund verriet.",
-        "en": "He lost his credibility because he betrayed a friend.",
-        "blanks": [
-          [
-            54,
-            61
-          ]
-        ],
-        "source": "tatoeba:797640"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Er hat seine Freunde verraten.",
@@ -44054,19 +42053,6 @@
           ]
         ],
         "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Irgendwie verrät das, was wir sagen, immer, was wir fühlen.",
-        "en": "Somehow, what we say always reveals what we feel.",
-        "blanks": [
-          [
-            10,
-            16
-          ]
-        ],
-        "source": "tatoeba:11737338"
       }
     ]
   },
@@ -44179,19 +42165,6 @@
     "added": "2026-04-07 17:28:00",
     "prefix": "zer-",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Das Feuer zerstörte das ganze Haus.",
-        "en": "The fire destroyed the entire house.",
-        "blanks": [
-          [
-            10,
-            19
-          ]
-        ],
-        "source": "example"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -44841,19 +42814,6 @@
     "prefix": "über-",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Sie übersetzte den Brief aus dem Japanischen ins Französische.",
-        "en": "She translated the letter from Japanese into French.",
-        "blanks": [
-          [
-            4,
-            14
-          ]
-        ],
-        "source": "tatoeba:688428"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Das Buch wurde in zwanzig Sprachen übersetzt.",
@@ -45192,8 +43152,27 @@
           ]
         ],
         "source": "generated"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + von + Dat.",
+        "form": "von + DAT",
+        "de": "Meine Oma erzählt gern von ihrer Kindheit auf dem Bauernhof.",
+        "en": "My grandma likes to talk about her childhood on the farm.",
+        "blanks": [
+          [
+            23,
+            26
+          ],
+          [
+            27,
+            32
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "von + DAT"
   },
   {
     "id": "beschreiben",
@@ -45237,19 +43216,6 @@
     ],
     "added": "2026-04-07 17:43:00",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Die Polizei beschrieb, wie der Fall behandelt würde.",
-        "en": "The police described how the case would be handled.",
-        "blanks": [
-          [
-            12,
-            21
-          ]
-        ],
-        "source": "tatoeba:2300455"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -46398,32 +44364,6 @@
           ]
         ],
         "source": "tatoeba:2058690"
-      },
-      {
-        "slot": "pc5",
-        "label": "Satz mit sobald",
-        "de": "Sobald sie mich sah, fing sie zu weinen an.",
-        "en": "As soon as she saw me, she began to weep.",
-        "blanks": [
-          [
-            0,
-            6
-          ]
-        ],
-        "source": "tatoeba:941470"
-      },
-      {
-        "slot": "pc6",
-        "label": "Satz mit sobald",
-        "de": "Ich komme, sobald ich kann, wieder und helfe dir.",
-        "en": "I'm going to come back and help you as soon as I can.",
-        "blanks": [
-          [
-            11,
-            17
-          ]
-        ],
-        "source": "tatoeba:13565465"
       }
     ]
   },
@@ -46886,23 +44826,6 @@
     ],
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Der Bus hielt plötzlich mitten auf der Straße an.",
-        "en": "The bus stopped suddenly in the middle of the street.",
-        "blanks": [
-          [
-            8,
-            13
-          ],
-          [
-            46,
-            48
-          ]
-        ],
-        "source": "tatoeba:3248991"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Wir haben angehalten, um ein paar Fotos zu machen.",
@@ -46914,23 +44837,6 @@
           ]
         ],
         "source": "tatoeba:13431198"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Das schöne Wetter hält noch eine Woche an.",
-        "en": "The nice weather continues for another week.",
-        "blanks": [
-          [
-            18,
-            22
-          ],
-          [
-            39,
-            41
-          ]
-        ],
-        "source": "example"
       }
     ]
   },
@@ -47316,19 +45222,6 @@
     "related": [],
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Tom erstellte eine neue Datei auf seinem Rechner.",
-        "en": "Tom created a new file on his computer.",
-        "blanks": [
-          [
-            4,
-            13
-          ]
-        ],
-        "source": "tatoeba:7274133"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Der Architekt hat die Baupläne bereits erstellt.",
@@ -47465,23 +45358,6 @@
     ],
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Der Junge gab bei allen mit seinem neuen Fahrrad an.",
-        "en": "The boy showed off his new bicycle to everyone.",
-        "blanks": [
-          [
-            10,
-            13
-          ],
-          [
-            49,
-            51
-          ]
-        ],
-        "source": "tatoeba:8560813"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Er hat mit seinem neuen Wagen angegeben.",
@@ -47493,23 +45369,6 @@
           ]
         ],
         "source": "tatoeba:8564781"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Er gibt immer mit seinem neuen Auto an.",
-        "en": "He always shows off with his new car.",
-        "blanks": [
-          [
-            3,
-            7
-          ],
-          [
-            36,
-            38
-          ]
-        ],
-        "source": "example"
       }
     ]
   },
@@ -47641,19 +45500,6 @@
     ],
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Tom verfuhr sich, weil die Strecke nicht ausgeschildert war.",
-        "en": "Tom got lost because the route wasn't signposted.",
-        "blanks": [
-          [
-            4,
-            11
-          ]
-        ],
-        "source": "tatoeba:7809374"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Wir haben uns verfahren und sind zu spät angekommen.",
@@ -47665,19 +45511,6 @@
           ]
         ],
         "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Tom verfährt sich jedes Mal, wenn er keine Karte dabei hat.",
-        "en": "Tom always gets lost if he doesn't carry a map.",
-        "blanks": [
-          [
-            4,
-            12
-          ]
-        ],
-        "source": "tatoeba:1554764"
       },
       {
         "slot": "refl",
@@ -47729,19 +45562,6 @@
     ],
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Bei der Reklamation verfuhr die Mitarbeiterin nach den internen Richtlinien.",
-        "en": "The employee followed the internal guidelines when handling the complaint.",
-        "blanks": [
-          [
-            20,
-            27
-          ]
-        ],
-        "source": "generated"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Bisher haben wir in solchen Fällen immer gleich verfahren.",
@@ -47750,19 +45570,6 @@
           [
             48,
             57
-          ]
-        ],
-        "source": "generated"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Bei jeder Beschwerde verfährt unsere Abteilung nach demselben Verfahren.",
-        "en": "Our department follows the same procedure for every complaint.",
-        "blanks": [
-          [
-            21,
-            29
           ]
         ],
         "source": "generated"
@@ -48659,8 +46466,27 @@
           ]
         ],
         "source": "tatoeba:3245944"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + nach + Dat.",
+        "form": "nach + DAT",
+        "de": "Seine Jacke riecht noch nach dem Rauch vom Lagerfeuer.",
+        "en": "His jacket still smells of the smoke from the campfire.",
+        "blanks": [
+          [
+            24,
+            28
+          ],
+          [
+            29,
+            32
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "nach + DAT"
   },
   {
     "id": "kauen",
@@ -49467,23 +47293,6 @@
     "prefix": "ab-",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Sein Reisepass lief bereits im vergangenen Monat ab.",
-        "en": "His passport expired last month.",
-        "blanks": [
-          [
-            15,
-            19
-          ],
-          [
-            49,
-            51
-          ]
-        ],
-        "source": "generated"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Die Veranstaltung ist reibungslos abgelaufen.",
@@ -49492,23 +47301,6 @@
           [
             34,
             44
-          ]
-        ],
-        "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Mein Visum läuft nächsten Monat ab.",
-        "en": "My visa expires next month.",
-        "blanks": [
-          [
-            11,
-            16
-          ],
-          [
-            32,
-            34
           ]
         ],
         "source": "example"
@@ -49578,8 +47370,27 @@
           ]
         ],
         "source": "tatoeba:2299477"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + an + Akk.",
+        "form": "an + AKK",
+        "de": "Jemand klopft an die Tür, kannst du bitte aufmachen?",
+        "en": "Someone is knocking at the door, can you open it, please?",
+        "blanks": [
+          [
+            14,
+            16
+          ],
+          [
+            17,
+            20
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "an + AKK"
   },
   {
     "id": "schreien",
@@ -49699,23 +47510,6 @@
     "family_root": "schreien",
     "prefix": "an-",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Meine Mutter wurde böse und schrie mich an.",
-        "en": "My mom got mad and yelled at me.",
-        "blanks": [
-          [
-            28,
-            34
-          ],
-          [
-            40,
-            42
-          ]
-        ],
-        "source": "tatoeba:6392457"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -50267,23 +48061,6 @@
     "prefix": "um-",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Er drehte die Münze um, um die andere Seite zu sehen.",
-        "en": "He turned the coin over to see the other side.",
-        "blanks": [
-          [
-            3,
-            9
-          ],
-          [
-            20,
-            22
-          ]
-        ],
-        "source": "example"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Sie hat sich plötzlich umgedreht, um ihn anzusehen.",
@@ -50558,23 +48335,6 @@
     "prefix": "aus-",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Er schaltete das Licht in seinem Büro aus.",
-        "en": "He turned off the light in his office.",
-        "blanks": [
-          [
-            3,
-            12
-          ],
-          [
-            38,
-            41
-          ]
-        ],
-        "source": "tatoeba:12978827"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Ich habe das Licht nicht ausgeschaltet.",
@@ -50716,19 +48476,6 @@
     "prefix": "ver-",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Die Polizei verfolgte den Verdächtigen durch die Stadt.",
-        "en": "The police pursued the suspect through the city.",
-        "blanks": [
-          [
-            12,
-            21
-          ]
-        ],
-        "source": "example"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Das junge Mädchen wurde von dem alten Mann verfolgt.",
@@ -50848,19 +48595,6 @@
     "family_root": "binden",
     "prefix": "ent-",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Der Chef entband ihn von seiner Aufgabe.",
-        "en": "The boss released him from his duty.",
-        "blanks": [
-          [
-            9,
-            16
-          ]
-        ],
-        "source": "example"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -51109,23 +48843,6 @@
     "prefix": "vor-",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Er warf ihr vor, unehrlich zu sein.",
-        "en": "He accused her of being dishonest.",
-        "blanks": [
-          [
-            3,
-            7
-          ],
-          [
-            12,
-            15
-          ]
-        ],
-        "source": "example"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Ihr wurde vorgeworfen, eine Lüge erzählt zu haben.",
@@ -51137,23 +48854,6 @@
           ]
         ],
         "source": "tatoeba:1915027"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Man wirft uns Diebstahl vor.",
-        "en": "We've been accused of theft.",
-        "blanks": [
-          [
-            4,
-            9
-          ],
-          [
-            24,
-            27
-          ]
-        ],
-        "source": "tatoeba:11028979"
       }
     ]
   },
@@ -51298,8 +48998,27 @@
           ]
         ],
         "source": "tatoeba:1104271"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + über + Akk.",
+        "form": "über + AKK",
+        "de": "Die Zeitung berichtete ausführlich über den Streik der Lokführer.",
+        "en": "The newspaper reported in detail on the train drivers' strike.",
+        "blanks": [
+          [
+            35,
+            39
+          ],
+          [
+            40,
+            43
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "über + AKK"
   },
   {
     "id": "die-ausschreitung",
@@ -51844,19 +49563,6 @@
     "family_root": "stimmen",
     "prefix": "be-",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Am Ende bestimmte die Mehrheit, wohin die Reise ging.",
-        "en": "In the end, the majority decided where the trip would go.",
-        "blanks": [
-          [
-            8,
-            17
-          ]
-        ],
-        "source": "generated"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -53169,23 +50875,6 @@
     "prefix": "an-",
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Sie schlug eine Bekanntmachung am schwarzen Brett an.",
-        "en": "She posted an announcement on the noticeboard.",
-        "blanks": [
-          [
-            4,
-            10
-          ],
-          [
-            50,
-            52
-          ]
-        ],
-        "source": "example"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Warum haben die Hunde heute Nacht nicht angeschlagen, als der Einbrecher im Haus war?",
@@ -53197,23 +50886,6 @@
           ]
         ],
         "source": "tatoeba:1251291"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Die Hausmeisterin schlägt den neuen Wochenplan am Eingang an.",
-        "en": "The caretaker puts up the new weekly schedule at the entrance.",
-        "blanks": [
-          [
-            18,
-            25
-          ],
-          [
-            58,
-            60
-          ]
-        ],
-        "source": "generated"
       }
     ]
   },
@@ -54490,6 +52162,24 @@
           ]
         ],
         "source": "tatoeba:4018960"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + an + Dat.",
+        "form": "an + DAT",
+        "de": "Niemand im Team zweifelt an ihrer Ehrlichkeit.",
+        "en": "Nobody on the team doubts her honesty.",
+        "blanks": [
+          [
+            25,
+            27
+          ],
+          [
+            28,
+            33
+          ]
+        ],
+        "source": "generated"
       }
     ]
   },
@@ -54681,8 +52371,27 @@
           ]
         ],
         "source": "tatoeba:13655654"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + nach + Dat.",
+        "form": "nach + DAT",
+        "de": "Das klingt nach einem guten Plan für das Wochenende.",
+        "en": "That sounds like a good plan for the weekend.",
+        "blanks": [
+          [
+            11,
+            15
+          ],
+          [
+            16,
+            21
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "nach + DAT"
   },
   {
     "id": "ausgeben",
@@ -54736,23 +52445,6 @@
     ],
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Sie gab nicht weniger als tausend Dollar für ihre Kleidung aus.",
-        "en": "She spent no less than 1,000 dollars on her clothes.",
-        "blanks": [
-          [
-            4,
-            7
-          ],
-          [
-            59,
-            62
-          ]
-        ],
-        "source": "tatoeba:1835563"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Wie viel Geld hast du für dein Auto ausgegeben?",
@@ -54766,23 +52458,25 @@
         "source": "tatoeba:1390529"
       },
       {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Der Lehrer gibt die Arbeitsblätter aus.",
-        "en": "The teacher hands out the worksheets.",
+        "slot": "prep1",
+        "label": "Verb + für + Akk.",
+        "form": "für + AKK",
+        "de": "Wir geben fast die Hälfte unseres Lohns für die Miete aus.",
+        "en": "We spend almost half of our salary on rent.",
         "blanks": [
           [
-            11,
-            15
+            40,
+            43
           ],
           [
-            35,
-            38
+            44,
+            47
           ]
         ],
-        "source": "example"
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "für + AKK"
   },
   {
     "id": "die-pleite",
@@ -54985,19 +52679,6 @@
       }
     ],
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Plötzlich erschien ein Mann vor der Tür.",
-        "en": "Suddenly a man appeared at the door.",
-        "blanks": [
-          [
-            10,
-            18
-          ]
-        ],
-        "source": "example"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -55370,6 +53051,24 @@
           ]
         ],
         "source": "tatoeba:10303805"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + auf + Akk.",
+        "form": "auf + AKK",
+        "de": "Er starrte die ganze Zeit auf sein Handy, statt zuzuhören.",
+        "en": "He stared at his phone the whole time instead of listening.",
+        "blanks": [
+          [
+            26,
+            29
+          ],
+          [
+            30,
+            34
+          ]
+        ],
+        "source": "generated"
       }
     ]
   },
@@ -55438,8 +53137,27 @@
           ]
         ],
         "source": "tatoeba:941161"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + an + Dat.",
+        "form": "an + DAT",
+        "de": "Er bastelt schon seit Stunden an seinem Computer.",
+        "en": "He has been tinkering with his computer for hours.",
+        "blanks": [
+          [
+            30,
+            32
+          ],
+          [
+            33,
+            39
+          ]
+        ],
+        "source": "example"
       }
-    ]
+    ],
+    "preposition": "an + DAT"
   },
   {
     "id": "sich-buecken",
@@ -57218,8 +54936,7 @@
     "added": "2026-06-08 21:10:07",
     "gender": "der",
     "plural": null,
-    "related": [],
-    "exercises": []
+    "related": []
   },
   {
     "id": "genesen",
@@ -58042,23 +55759,6 @@
     "related": [],
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Wegen meiner Krankheit brach ich nicht auf.",
-        "en": "Because of my illness, I didn't leave.",
-        "blanks": [
-          [
-            23,
-            28
-          ],
-          [
-            39,
-            42
-          ]
-        ],
-        "source": "tatoeba:631431"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Gleich nachdem sie angerufen hatte, waren sie aufgebrochen.",
@@ -58070,23 +55770,6 @@
           ]
         ],
         "source": "tatoeba:1239498"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Er bricht morgen nach China auf.",
-        "en": "He will set out for China tomorrow.",
-        "blanks": [
-          [
-            3,
-            9
-          ],
-          [
-            28,
-            31
-          ]
-        ],
-        "source": "tatoeba:414009"
       }
     ]
   },
@@ -58391,8 +56074,27 @@
           ]
         ],
         "source": "tatoeba:1805535"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + zu + Dat.",
+        "form": "zu + DAT",
+        "de": "Der starke Regen zwang uns zu einer Pause in der Hütte.",
+        "en": "The heavy rain forced us to take a break in the hut.",
+        "blanks": [
+          [
+            27,
+            29
+          ],
+          [
+            30,
+            35
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "zu + DAT"
   },
   {
     "id": "uebertreiben",
@@ -58435,19 +56137,6 @@
     "prefix": "über-",
     "related": [],
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Als ich jung war, übertrieb ich es mit den Beatles.",
-        "en": "I went overboard about the Beatles when I was young.",
-        "blanks": [
-          [
-            18,
-            27
-          ]
-        ],
-        "source": "tatoeba:783335"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -58593,19 +56282,6 @@
     ],
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Ich kenne den Grund, weshalb sie ihre Stelle aufgab.",
-        "en": "I know the reason that she quit her job.",
-        "blanks": [
-          [
-            45,
-            51
-          ]
-        ],
-        "source": "tatoeba:520037"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Sie hat den Brief auf der Post aufgegeben.",
@@ -58614,23 +56290,6 @@
           [
             31,
             41
-          ]
-        ],
-        "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Der Lehrer gibt den Schülern viele Hausaufgaben auf.",
-        "en": "The teacher assigns a lot of homework to the students.",
-        "blanks": [
-          [
-            11,
-            15
-          ],
-          [
-            48,
-            51
           ]
         ],
         "source": "example"
@@ -59263,19 +56922,6 @@
     ],
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Ich habe gesehen, wie sie etwas versteckte.",
-        "en": "I saw her hide something.",
-        "blanks": [
-          [
-            32,
-            42
-          ]
-        ],
-        "source": "tatoeba:4538599"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Die Kinder haben die Ostereier im Garten versteckt.",
@@ -59625,8 +57271,27 @@
           ]
         ],
         "source": "generated"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + an + Dat.",
+        "form": "an + DAT",
+        "de": "Das Kind lutscht an seinem Daumen.",
+        "en": "The child is sucking its thumb.",
+        "blanks": [
+          [
+            17,
+            19
+          ],
+          [
+            20,
+            26
+          ]
+        ],
+        "source": "example"
       }
-    ]
+    ],
+    "preposition": "an + DAT"
   },
   {
     "id": "freilich",
@@ -60374,23 +58039,6 @@
     ],
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Er hob etwas Weißes von der Straße auf.",
-        "en": "He picked up something white on the street.",
-        "blanks": [
-          [
-            3,
-            6
-          ],
-          [
-            35,
-            38
-          ]
-        ],
-        "source": "tatoeba:11990171"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Das Gesetz wurde vom Parlament aufgehoben.",
@@ -60987,6 +58635,24 @@
           ]
         ],
         "source": "example"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + für + Akk.",
+        "form": "für + AKK",
+        "de": "Sie schämte sich für ihr unhöfliches Verhalten am Vortag.",
+        "en": "She was ashamed of her rude behaviour the day before.",
+        "blanks": [
+          [
+            17,
+            20
+          ],
+          [
+            21,
+            24
+          ]
+        ],
+        "source": "generated"
       }
     ]
   },
@@ -61031,19 +58697,6 @@
     "related": [],
     "prefix": "be-",
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Seine Großzügigkeit beschämte mich.",
-        "en": "His generosity put me to shame.",
-        "blanks": [
-          [
-            20,
-            29
-          ]
-        ],
-        "source": "example"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -61272,6 +58925,24 @@
           [
             49,
             57
+          ]
+        ],
+        "source": "generated"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + über + Akk.",
+        "form": "über + AKK",
+        "de": "Die Kinder staunten über die riesigen Dinosaurier im Museum.",
+        "en": "The children marvelled at the huge dinosaurs in the museum.",
+        "blanks": [
+          [
+            20,
+            24
+          ],
+          [
+            25,
+            28
           ]
         ],
         "source": "generated"
@@ -61736,32 +59407,6 @@
           ]
         ],
         "source": "tatoeba:3754623"
-      },
-      {
-        "slot": "pc5",
-        "label": "Satz mit entgegen",
-        "de": "Tom hat mich entgegen seinem Versprechen nicht zum Mittagessen eingeladen.",
-        "en": "Tom didn't buy me lunch like he said he would.",
-        "blanks": [
-          [
-            13,
-            21
-          ]
-        ],
-        "source": "tatoeba:9525685"
-      },
-      {
-        "slot": "pc6",
-        "label": "Satz mit entgegen",
-        "de": "Sie stimmte entgegen der Parteilinie für Herrn Nishioka.",
-        "en": "She voted for Mr Nishioka irrespective of party lines.",
-        "blanks": [
-          [
-            12,
-            20
-          ]
-        ],
-        "source": "tatoeba:2191986"
       }
     ]
   },
@@ -62029,23 +59674,6 @@
     ],
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Nach der Pause setzte er seine Rede fort.",
-        "en": "After the break, he resumed his speech.",
-        "blanks": [
-          [
-            15,
-            21
-          ],
-          [
-            36,
-            40
-          ]
-        ],
-        "source": "example"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Der Kurs wird um neun fortgesetzt.",
@@ -62252,19 +59880,6 @@
       }
     ],
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Sie überlegte lange, bevor sie eine Entscheidung traf.",
-        "en": "She thought for a long time before making a decision.",
-        "blanks": [
-          [
-            4,
-            13
-          ]
-        ],
-        "source": "example"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -63246,8 +60861,27 @@
           ]
         ],
         "source": "tatoeba:13245906"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + auf + Akk.",
+        "form": "auf + AKK",
+        "de": "Sie wusste nicht, was sie auf seine Frage erwidern sollte.",
+        "en": "She did not know what to reply to his question.",
+        "blanks": [
+          [
+            26,
+            29
+          ],
+          [
+            30,
+            35
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "auf + AKK"
   },
   {
     "id": "nieder",
@@ -63280,8 +60914,7 @@
     "notes": "Mainly used in literary or formal contexts, more commonly found in compound words like niederreißen or Niederlage. Register: formell / gehoben.",
     "added": "2026-06-11 17:03:33",
     "usage": "both",
-    "related": [],
-    "exercises": []
+    "related": []
   },
   {
     "id": "annehmen",
@@ -63330,23 +60963,6 @@
     "related": [],
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Er nahm an, dass der Zug pünktlich sein würde.",
-        "en": "He assumed that the train would be on time.",
-        "blanks": [
-          [
-            3,
-            7
-          ],
-          [
-            8,
-            10
-          ]
-        ],
-        "source": "tatoeba:10390715"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Ich bin überrascht, dass er das Angebot angenommen hat.",
@@ -63358,23 +60974,6 @@
           ]
         ],
         "source": "tatoeba:4377426"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Sie nimmt Kritik von allen außer ihren Eltern an.",
-        "en": "She accepts criticism from anyone but her parents.",
-        "blanks": [
-          [
-            4,
-            9
-          ],
-          [
-            46,
-            48
-          ]
-        ],
-        "source": "tatoeba:12281785"
       }
     ]
   },
@@ -63663,6 +61262,24 @@
           ]
         ],
         "source": "tatoeba:2997753"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + auf + Akk.",
+        "form": "auf + AKK",
+        "de": "Du musst auf den Verkehr achten.",
+        "en": "You have to pay attention to the traffic.",
+        "blanks": [
+          [
+            9,
+            12
+          ],
+          [
+            13,
+            16
+          ]
+        ],
+        "source": "example"
       }
     ]
   },
@@ -64717,8 +62334,27 @@
           ]
         ],
         "source": "tatoeba:2523259"
+      },
+      {
+        "slot": "prep1",
+        "label": "Verb + für + Akk.",
+        "form": "für + AKK",
+        "de": "Die Firma belohnte das Team für seinen Einsatz mit einem Ausflug.",
+        "en": "The company rewarded the team for its commitment with an outing.",
+        "blanks": [
+          [
+            28,
+            31
+          ],
+          [
+            32,
+            38
+          ]
+        ],
+        "source": "generated"
       }
-    ]
+    ],
+    "preposition": "für + AKK"
   },
   {
     "id": "die-belohnung",
@@ -64915,19 +62551,6 @@
       }
     ],
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Er verblieb in seinem Job.",
-        "en": "He stuck to his job.",
-        "blanks": [
-          [
-            3,
-            11
-          ]
-        ],
-        "source": "tatoeba:1315475"
-      },
       {
         "slot": "part",
         "label": "Partizip II",
@@ -65673,19 +63296,6 @@
     "related": [],
     "exercises": [
       {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Sie versprach, sich mit ihm im Café zu treffen.",
-        "en": "She promised to meet him at the coffee shop.",
-        "blanks": [
-          [
-            4,
-            13
-          ]
-        ],
-        "source": "tatoeba:8093183"
-      },
-      {
         "slot": "part",
         "label": "Partizip II",
         "de": "Entschuldigung, ich habe mich versprochen.",
@@ -65697,19 +63307,6 @@
           ]
         ],
         "source": "example"
-      },
-      {
-        "slot": "praes",
-        "label": "Präsens, er/sie/es",
-        "de": "Wenn man etwas verspricht, muss man es auch halten.",
-        "en": "If you make a promise, you should keep it.",
-        "blanks": [
-          [
-            15,
-            25
-          ]
-        ],
-        "source": "tatoeba:11983275"
       }
     ]
   },
@@ -66937,19 +64534,6 @@
       }
     ],
     "exercises": [
-      {
-        "slot": "praet",
-        "label": "Präteritum",
-        "de": "Sie widersetzte sich der Anweisung ihres Chefs.",
-        "en": "She defied her boss's instruction.",
-        "blanks": [
-          [
-            4,
-            15
-          ]
-        ],
-        "source": "own"
-      },
       {
         "slot": "part",
         "label": "Partizip II",

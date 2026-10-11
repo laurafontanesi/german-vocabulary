@@ -146,6 +146,8 @@ def with_suffixes(forms):
 
 
 _DMN = {("DAT", "SIN", "MAS"), ("DAT", "SIN", "NEU")}
+CONTRACTION_PREP = {"zum": "zu", "zur": "zu", "im": "in", "am": "an", "vom": "von", "beim": "bei",
+                    "ins": "in", "ans": "an", "aufs": "auf"}
 CONTRACTIONS = {"zum": _DMN, "im": _DMN, "am": _DMN, "vom": _DMN, "beim": _DMN,
                 "zur": {("DAT", "SIN", "FEM")},
                 "ins": {("AKK", "SIN", "NEU")}, "ans": {("AKK", "SIN", "NEU")}, "aufs": {("AKK", "SIN", "NEU")}}
@@ -489,6 +491,45 @@ def check(entry, slot, form, answer, morph, used=(), min_words=5):
                     elif len({c for c, n in fits if n == num and (not gs or c in gs)}) > 1:
                         warnings.append("case depends on the verb: check by eye")
 
+    elif slot.startswith("prep"):
+        prep, case = [x.strip() for x in form.split("+")]
+        low = [m.lower() for m in marked]
+        k = None
+        if len(marked) == 1 and low[0] in CONTRACTIONS and CONTRACTION_PREP[low[0]] == prep:
+            dets, k = CONTRACTIONS[low[0]], idx[0]           # [am] Türgriff
+        elif len(marked) == 2 and low[0] == prep and idx[1] == idx[0] + 1:
+            dets, k = det_readings(morph, ts[idx[1]])[0], idx[1]
+            if not dets:
+                problems.append(f"«{marked[1]}» is not an article or determiner")
+        else:
+            problems.append(f"brackets {marked}: expected the preposition «{prep}» and its article, "
+                            f"e.g. [{prep}] [den], or a contraction like [am]")
+        if k is not None and not problems:
+            n = k + 1
+            while n < len(ts) and ts[n][:1].islower() and adj_ending(ts[n]):
+                n += 1
+            noun = ts[n] if n < len(ts) and ts[n][:1].isupper() else None
+            reads = noun_readings(morph, noun) if noun else set()
+            if noun and reads:
+                if len(marked) == 1:                       # contraction: its article is der/das (weak adjectives)
+                    norm = lambda rs: {(c, x, "*" if x == "PLU" else g) for c, x, g in rs}
+                    agree = norm(reads) & norm(dets)
+                    for a in ts[k + 1:n]:
+                        agree &= norm(adj_readings(morph, a, "DEF"))
+                else:
+                    agree, _ = np_agreement(morph, ts[k], ts[k + 1:n], noun, noun_reads=reads)
+                cases = {c for c, _, _ in agree}
+            else:
+                cases = {c for c, _, _ in dets}
+                warnings.append("noun not recognised: case checked on the article only")
+            if case not in cases:
+                problems.append(f"«{prep}» takes the {CASE_NAME.get(case, case).lower()} here, "
+                                f"but the phrase is {'/'.join(sorted(cases)) or 'not readable'}")
+            elif len(cases) > 1:
+                warnings.append("the article fits more than one case: check by eye")
+            if sum(1 for t in ts if t.lower() == prep) > 1:
+                warnings.append(f"«{prep}» appears twice")
+
     elif slot.startswith("pc"):
         if [m.lower() for m in marked] != [word.lower()]:
             problems.append(f"brackets {marked}, expected «{word}»")
@@ -513,23 +554,50 @@ NUM_NAME = {"SIN": "singular", "PLU": "plural"}
 ADVERB_SENSE = {"gerade", "unbedingt", "nieder"}     # tagged "both", but the recorded meaning is the adverb
 
 
-def slots_for(entry, stem_changes=None):
+PREP_OBJ = re.compile(r"^\s*(an|auf|aus|bei|für|gegen|in|mit|nach|über|um|unter|von|vor|zu|zwischen)\s*\+\s*(AKK|DAT)\b", re.I)
+
+
+def verb_preps(entry):
+    """Fixed prepositions of a verb from its `preposition` field: 'auf + AKK / über + AKK' ->
+    [('auf', 'AKK'), ('über', 'AKK')]. A bare case ('DAT') is not a preposition and gives nothing."""
+    out = []
+    for part in re.split(r"\s*/\s*|\s*,\s*|\s*;\s*", entry.get("preposition") or ""):
+        m = PREP_OBJ.match(part)
+        if m:
+            out.append((m.group(1).lower(), m.group(2).upper()))
+    return out
+
+
+def has_root_in(entry, roots):
+    """A family member (vornehmen, bekommen) whose root verb (nehmen, kommen) is also in the dictionary."""
+    fam = re.sub(r"^sich\s+", "", (entry.get("family_root") or "").strip())
+    word = re.sub(r"^sich\s+", "", entry.get("word", "").strip())
+    return bool(roots) and fam and fam != word and (fam in roots or "sich " + fam in roots)
+
+
+def slots_for(entry, stem_changes=None, roots=None):
     """[{slot, label, form}] for one word. `stem_changes(entry)` says whether the present tense changes
-    the stem (lexicon.changes_stem); without it, the Präsens slot is left out."""
+    the stem (lexicon.changes_stem); without it, the Präsens slot is left out. `roots` is the set of
+    words in the dictionary: a verb whose root verb is among them keeps only the Partizip II (ge- or
+    not, haben or sein), since its Präteritum and Präsens repeat the root's."""
     t, word = entry.get("type"), entry.get("word", "")
     out = []
     if t == "verb":
-        if entry.get("past_tense"):
+        derived = has_root_in(entry, roots)
+        if entry.get("past_tense") and not derived:
             out.append(dict(slot="praet", label="Präteritum", form=entry["past_tense"]))
         pa = (entry.get("past_participle") or "").split("/")[0].strip()
         if pa:
             out.append(dict(slot="part", label="Partizip II", form=pa))
-        if entry.get("present_3sg") and stem_changes and stem_changes(entry):
+        if entry.get("present_3sg") and stem_changes and stem_changes(entry) and not derived:
             out.append(dict(slot="praes", label="Präsens, er/sie/es", form=entry["present_3sg"]))
         r = entry.get("reflexive")
         if r in ("akk", "dat"):
             out.append(dict(slot="refl", label=f"Reflexivpronomen ({'Dat.' if r == 'dat' else 'Akk.'})",
                             form="mir/dir" if r == "dat" else "mich/dich"))
+        for n, (prep, case) in enumerate(verb_preps(entry), 1):
+            out.append(dict(slot=f"prep{n}", label=f"Verb + {prep} + {'Akk.' if case == 'AKK' else 'Dat.'}",
+                            form=f"{prep} + {case}"))
     elif t == "noun":
         out += [dict(slot="kasus1", label="", form=None), dict(slot="kasus2", label="", form=None)]
     elif t == "adj/adv" and entry.get("usage") != "adverb only" and " " not in word \
@@ -537,9 +605,8 @@ def slots_for(entry, stem_changes=None):
         out += [dict(slot="adj_art", label="Artikel + Adjektiv + Nomen", form=word),
                 dict(slot="adj_det", label="Begleiter + Adjektiv + Nomen", form=word)]
     elif t == "prep/conj":
-        out += [dict(slot=f"pc{n}", label=f"Satz mit {word}", form=word) for n in range(1, 7)]
-    elif t == "construction":
-        out += [dict(slot=f"cx{n}", label=f"Satz mit {word}", form=word) for n in range(1, 3)]
+        out += [dict(slot=f"pc{n}", label=f"Satz mit {word}", form=word) for n in range(1, 5)]
+    # constructions have no sentence exercise: the translation cards are enough
     return out
 
 
@@ -661,6 +728,13 @@ def find_in(entry, spec, plain, en, morph, used=()):
         if not r or (form and r[0] != form):
             return None
         form, picks = r
+    elif slot.startswith("prep"):
+        prep = form.split("+")[0].strip()
+        # only preposition + separate article: a contraction in an existing sentence is too often a
+        # time or place phrase rather than the verb's object ("Die Kinder basteln [am] Wochenende")
+        for k, t in enumerate(ts):
+            if t.lower() == prep and k + 1 < len(ts) and det_readings(morph, ts[k + 1])[0]:
+                picks = [k, k + 1]; break
     elif slot.startswith("pc"):
         ks = [k for k, t in enumerate(ts) if t.lower() == word.lower()]
         picks = ks if len(ks) == 1 else None
@@ -719,6 +793,11 @@ def task_text(entry, spec):
                 f"leave any adjective in between unmarked."
                 + (" If the plural sounds unnatural, use the singular in the same case and add "
                    "\"note\": \"singular\"." if n == "PLU" else ""))
+    if slot.startswith("prep"):
+        prep, case = [x.strip() for x in form.split("+")]
+        return (f"The verb «{word}» with its fixed preposition «{prep}» + {CASE_NAME[case]} (any tense, any person), "
+                f"followed by a noun with an article or possessive. Mark the preposition and the article "
+                f"separately, e.g. [{prep}] [den], or a contraction alone, e.g. [am]. No da-compounds (darauf).")
     if slot.startswith("pc"):
         return f"A sentence using «{word}» in the meaning given. Mark only the word."
     if slot.startswith("cx"):

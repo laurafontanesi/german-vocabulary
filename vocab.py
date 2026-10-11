@@ -188,7 +188,7 @@ Return ONLY valid JSON, no explanation, no markdown, no code fences.{type_hint}
   "verb_class": "regular (weak: kaufte, gekauft), irregular (strong: nahm, genommen) or mixed (weak endings with a changed stem: dachte, gedacht) — only for verbs, else null",
   "is_separable": true or false — only for verbs, else null,
   "reflexive": "akk" if the reflexive pronoun is accusative (ich freue mich), "dat" if dative (ich nehme mir etwas vor), false if the verb is not reflexive. Only verbs that cannot drop sich, or whose meaning changes with sich, are reflexive; waschen (sich waschen = wash oneself) is NOT. Only for verbs, else null,
-  "preposition": "e.g. 'an + AKK' if the verb requires a fixed preposition, else null",
+  "preposition": "the verb's fixed preposition with its case, e.g. 'an + AKK' (denken an); several separated by ' / ' (sich freuen: 'auf + AKK / über + AKK'); only real prepositional objects, not places or times; else null",
   "also_adverb": null,
   "family_root": "the root verb — for compounds e.g. 'nehmen' for 'mitnehmen'; for root verbs use the word itself e.g. 'schlafen' for 'schlafen' (never null for verbs)",
   "prefix": "the prefix e.g. 'mit-' for 'mitnehmen', else null",
@@ -290,7 +290,7 @@ def _spec_form(entry: dict, slot: str, form=None):
         return (entry.get("past_participle") or "").split("/")[0].strip()
     if slot == "refl":
         return "mir/dir" if entry.get("reflexive") == "dat" else "mich/dich"
-    if slot.startswith("kasus"):
+    if slot.startswith(("kasus", "prep")):
         return form
     return entry["word"]
 
@@ -301,6 +301,8 @@ def _exercise(spec: dict, r: dict, source: str) -> dict:
     if spec["slot"].startswith("kasus"):
         ex["form"] = spec["form"]
         ex["label"] = EX.kasus_label(spec["form"])
+    elif spec["slot"].startswith("prep"):
+        ex["form"] = spec["form"]
     return ex
 
 
@@ -350,12 +352,14 @@ def _own_exercise(entry, spec, morph, used):
         return _exercise(spec, r, "own")
 
 
-def build_exercises(entry: dict, api_key: str | None, interactive: bool = True) -> None:
-    """Fill entry["exercises"]: keep what still fits, use your sentences, generate the rest, let you review."""
+def build_exercises(entry: dict, api_key: str | None, interactive: bool = True, words: list | None = None) -> None:
+    """Fill entry["exercises"]: keep what still fits, use your sentences, generate the rest, let you review.
+    `words` (the whole dictionary) tells whether a verb's root verb is in it: then only its Partizip II
+    is practised."""
     if not EX_OK:
         print("  (exercises skipped: exercise_check.py or data/dictionary.dump not found)")
         return
-    specs = EX.slots_for(entry, stem_changes)
+    specs = EX.slots_for(entry, stem_changes, {w["word"] for w in (words or []) if w is not entry})
     if not specs:
         entry.pop("exercises", None)
         return
@@ -371,7 +375,7 @@ def build_exercises(entry: dict, api_key: str | None, interactive: bool = True) 
         spec = next((s for s in specs if s["slot"] == e["slot"]), None)
         if not spec:
             continue
-        form = e.get("form") if e["slot"].startswith("kasus") else _spec_form(entry, e["slot"])
+        form = e.get("form") if e["slot"].startswith("kasus") else _spec_form(entry, e["slot"], spec["form"])
         r = EX.check(entry, e["slot"], form, {"de": EX.show(e), "en": e.get("en") or "-"}, morph, min_words=3)
         if r["status"] in ("ok", "check"):
             chosen[e["slot"]] = e
@@ -1118,7 +1122,7 @@ def cmd_add(args):
     entry["related"] = confirm_related(words, s.get("related", []) if suggestion else [])
 
     # ── exercise sentences: yours first, then the examples, then generated ───
-    build_exercises(entry, api_key if not manual else None)
+    build_exercises(entry, api_key if not manual else None, words=words)
 
     # ── preview & save ────────────────────────────────────────────────────────
     print()
@@ -1272,7 +1276,7 @@ def cmd_edit(args):
         w["type"] = ask_choice("Word type", WORD_TYPES, w.get("type", "other"))
 
     elif choice == "8":
-        build_exercises(w, load_api_key())
+        build_exercises(w, load_api_key(), words=words)
 
     else:
         print("  Invalid choice.")
@@ -1281,7 +1285,7 @@ def cmd_edit(args):
     # examples, forms and word type decide the exercises: re-check them
     if choice in ("2", "6", "7") and EX_OK:
         if ask("Update the exercise sentences too? (y/n)", "y").lower() == "y":
-            build_exercises(w, load_api_key())
+            build_exercises(w, load_api_key(), words=words)
 
     print()
     print_entry(w)
@@ -1345,7 +1349,7 @@ def cmd_exercises(args):
     if not w:
         print(f"  X '{' '.join(args)}' not found.")
         return
-    build_exercises(w, load_api_key())
+    build_exercises(w, load_api_key(), words=words)
     if ask("Save? (y/n)", "y").lower() == "y":
         save(words)
 

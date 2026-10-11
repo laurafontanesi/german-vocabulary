@@ -258,10 +258,13 @@ def ex_slot(slot):
             return from_exercise(w, slot, f'{label} · {w["word"]}')
         if slot.startswith('adj'):
             return from_exercise(w, slot, w['word'])
-        # Lücke n: preposition/conjunction (pc n) or construction (cx n). The word itself would
-        # give the answer away, so the hint is its meaning.
-        n = slot[-1]
-        return from_exercise(w, ('cx' if w.get('type') == 'construction' else 'pc') + n, meaning_hint(w))
+        if slot.startswith('prep'):
+            ex = next((e for e in w.get('exercises', []) if e['slot'] == slot), None)
+            case = ((ex or {}).get('form') or '+').split('+')[1].strip()
+            return from_exercise(w, slot, f"{w['word']} · Präposition + Artikel ({CASE_DE.get(case, case)})")
+        # Lücke n: preposition/conjunction. The word itself would give the answer away, so the hint
+        # is its meaning.
+        return from_exercise(w, 'pc' + slot[-1], meaning_hint(w))
     return build
 
 
@@ -302,31 +305,6 @@ def ex_komma(w, ctx):
                     Ganz=s, GanzEN=ex.get('en', ''),
                     Hinweis='Die zwei Wörter um das Komma')
     return None
-
-
-def ex_praeposition(w, ctx):
-    """Blank preposition + following article, so the case is typed, not named."""
-    p = w.get('preposition')
-    if not p:
-        return None
-    prep = p.split('+')[0].strip()
-    fallback = None
-    for ex in w.get('examples', []):
-        toks = ex['de'].split()
-        for i, tok in enumerate(toks[:-1]):
-            if strip_punct(tok).lower() != prep.lower():
-                continue
-            nxt = strip_punct(toks[i + 1])
-            if nxt.lower() in DETERMINERS:
-                phrase = tok + ' ' + toks[i + 1]
-                return dict(Frage=blank_phrase(ex['de'], phrase),
-                            Antwort=strip_punct(tok) + ' ' + nxt,
-                            Ganz=ex['de'], GanzEN=ex.get('en', ''), Hinweis=p)
-            if fallback is None:
-                fallback = dict(Frage=blank_phrase(ex['de'], tok),
-                                Antwort=strip_punct(tok), Ganz=ex['de'],
-                                GanzEN=ex.get('en', ''), Hinweis=p)
-    return fallback
 
 
 def ex_kontrast(w, ctx):
@@ -376,39 +354,6 @@ def ex_kontrast(w, ctx):
     return None
 
 
-SUFFIXES = ('lichkeit', 'igkeit', 'keit', 'heit', 'schaft', 'ung', 'lich', 'isch', 'ig',
-            'lang', 'sam', 'bar', 'haft', 'end', 'en', 'er', 'el', 'e', 'n', 't')
-
-
-def word_roots(word):
-    """Roots used to mask a definition: the word, then the word with derivational
-    suffixes peeled off one at a time (glücklich -> glück, stundenlang -> stund).
-    Roots shorter than 4 letters are not used."""
-    w, roots = word.lower(), []
-    while len(w) >= 4:
-        roots.append(w)
-        for s in SUFFIXES:
-            if w.endswith(s) and len(w) - len(s) >= 4:
-                w = w[:-len(s)]
-                break
-        else:
-            break
-    return sorted(set(roots), key=len)[:1]   # the shortest root covers the longer ones
-
-
-def ex_definition(w, ctx):
-    """German definition (from German Wiktionary) -> type the word.
-    Words sharing the headword's stem are masked so the definition does not give it away."""
-    d = w.get('definition_de')
-    if not d:
-        return None
-    masked = d
-    for stem in word_roots(bare(w['word'])):
-        masked = re.sub(r'\b\w*' + re.escape(stem) + r'\w*', '…', masked, flags=re.I)
-    return dict(Frage=masked, Antwort=w['word'], Ganz=d, GanzEN='',
-                Hinweis='Bei Nomen mit Artikel' if w.get('type') == 'noun' else '')
-
-
 # ── the registry ──────────────────────────────────────────────────────────────
 # key, German label shown on the card, pill colour, builder, front hint
 
@@ -421,18 +366,18 @@ EXERCISES = [
     ('Kasus2',   'Kasus 2',                'noun',   ex_slot('kasus2'), ''),
     ('AdjArt',   'Adjektiv nach Artikel',  'adjadv', ex_slot('adj_art'), ''),
     ('AdjDet',   'Adjektiv nach Begleiter', 'adjadv', ex_slot('adj_det'), ''),
+    ('Praep1',   'Verb + Präposition',     'verb',   ex_slot('prep1'),  ''),
+    ('Praep2',   'Verb + Präposition 2',   'verb',   ex_slot('prep2'),  ''),
 ] + [
-    (f'Luecke{n}', f'Lücke {n}',          'other',  ex_slot(f'gap{n}'), '') for n in range(1, 7)
+    (f'Luecke{n}', f'Lücke {n}',          'other',  ex_slot(f'gap{n}'), '') for n in range(1, 5)
 ] + [
-    ('Praep',    'Präposition und Kasus',  'verb',   ex_praeposition, 'Lücken füllen'),
     ('Kontrast', 'Welches Wort passt?',    'other',  ex_kontrast,    ''),
     ('Neben',    'Nebensatz: Wortstellung', 'other', ex_nebensatz,   ''),
     ('Komma',    'Komma setzen',           'other',  ex_komma,       ''),
-    ('Defin',    'Definition',             'other',  ex_definition,  ''),
 ]
 # sentence exercises: the hint (word, case, meaning) is in the _Hinweis field, shown on the front
-SENTENCE_KEYS = {'Praet', 'Part', 'Praes', 'Refl', 'Kasus1', 'Kasus2', 'AdjArt', 'AdjDet'} | \
-                {f'Luecke{n}' for n in range(1, 7)}
+SENTENCE_KEYS = {'Praet', 'Part', 'Praes', 'Refl', 'Kasus1', 'Kasus2', 'AdjArt', 'AdjDet',
+                 'Praep1', 'Praep2'} | {f'Luecke{n}' for n in range(1, 5)}
 
 # card order in the deck: grammar first, then the two translation directions
 CARD_ORDER = [k for k, *_ in EXERCISES] + ['Produzieren', 'Bedeutung']
@@ -471,7 +416,7 @@ def build_note(w, ctx):
         got = builder(w, ctx)
         if not got:
             continue
-        if key in ('Kontrast', 'Praep') and got.get('Antwort') and 'class="hl"' not in got.get('Ganz', ''):
+        if key == 'Kontrast' and got.get('Antwort') and 'class="hl"' not in got.get('Ganz', ''):
             got['Ganz'] = got['Ganz'].replace(got['Antwort'], f'<span class="hl">{got["Antwort"]}</span>', 1)
         for slot in SLOTS:
             r[f'{key}_{slot}'] = got.get(slot, '')
@@ -581,7 +526,7 @@ def templates():
         front = ['{{#%s}}' % F, head, '<div class="satz">{{%s}}</div>' % F]
         if key in SENTENCE_KEYS:
             front += [en_front, '<div class="hinweis">{{%s}}</div>' % H]
-        elif key in ('Kontrast', 'Defin'):
+        elif key == 'Kontrast':
             front.append('{{#%s}}<div class="hinweis">{{%s}}</div>{{/%s}}' % (H, H, H))
         else:
             if hint:
