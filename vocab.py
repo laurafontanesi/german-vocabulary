@@ -13,6 +13,8 @@ Usage:
   python vocab.py topics                show all topics
   python vocab.py family nehmen         show a verb family
   python vocab.py exercises nehmen      check / fill / replace the exercise sentences of a word
+  python vocab.py confusables           words with the same English meaning that are not linked yet
+                                        (the ones you mark as not confusable go to not_confusables.txt)
 """
 
 import json
@@ -702,6 +704,111 @@ def make_bidirectional(words: list, entry: dict) -> int:
     return updated
 
 
+# ── words with the same English meaning ───────────────────────────────────────
+# bieten / anbieten, da / seit: the same translation hides a difference worth practising. They are
+# linked as "contrast", which puts them in the same learning unit and gives a "Welches Wort passt?" card.
+
+def meaning_keys(entry: dict) -> list:
+    """The alternatives of the first English meaning, normalised: 'to offer, to provide' -> [offer, provide]."""
+    defs = entry.get("definitions") or []
+    m = (defs[0].get("meaning") or "") if defs else ""
+    m = re.sub(r"\([^)]*\)", "", m.lower())
+    m = re.split(r"\s[—–]\s|:\s", m)[-1]                 # 'sorgen für: to look after' -> 'to look after'
+    keys = []
+    for alt in re.split(r"[,;/]", m):
+        alt = re.sub(r"^\s*(to|a|an|the)\s+", "", alt.strip()).strip(" .!?")
+        if len(alt) > 2 and alt not in keys:
+            keys.append(alt)
+    return keys
+
+
+NOT_CONFUSABLE_PATH = os.path.join(_HERE, "not_confusables.txt")
+
+
+def load_not_confusable() -> set:
+    """Pairs you decided are not easily confused (not_confusables.txt, one 'word | word' per line)."""
+    out = set()
+    if os.path.exists(NOT_CONFUSABLE_PATH):
+        with open(NOT_CONFUSABLE_PATH, encoding="utf-8") as f:
+            for line in f:
+                if "|" in line and not line.lstrip().startswith("#"):
+                    a, b = (x.strip() for x in line.split("|", 1))
+                    out.add(frozenset((a, b)))
+    return out
+
+
+def same_meaning(words: list, entry: dict, strict: bool = False) -> list:
+    """Words of the same type, not linked yet, whose first translation is the same (strict), or whose
+    first translation appears among the new word's first alternatives (when adding: a few more)."""
+    keys, linked, skip = meaning_keys(entry), related_words(entry), load_not_confusable()
+    out = []
+    for w in words:
+        if w is entry or w.get("type") != entry.get("type") or w["word"] in linked or not keys:
+            continue
+        if frozenset((w["word"], entry["word"])) in skip:
+            continue
+        other = meaning_keys(w)
+        if other and (other[0] == keys[0] or (not strict and (keys[0] in other or other[0] in keys))):
+            out.append(w)
+    return out
+
+
+def ask_confusables(words: list, entry: dict) -> None:
+    """Offer to link the words with the same English meaning; an optional note goes on both."""
+    cands = same_meaning(words, entry)
+    if not cands:
+        return
+    print("\n  Same English meaning as words you already have:")
+    for i, w in enumerate(cands, 1):
+        print(f"    {i}. {w['word']:<26} {w['definitions'][0]['meaning']}")
+    val = input("  Link as easily confused (numbers, e.g. 1,2; Enter to skip): ").strip()
+    chosen = [cands[int(x) - 1] for x in re.findall(r"\d+", val) if 1 <= int(x) <= len(cands)]
+    for w in chosen:
+        entry.setdefault("related", []).insert(0, {"word": w["word"], "kind": "contrast"})
+        note = ask(f"One line on the difference to {w['word']} (goes on both; Enter to skip)")
+        if note:
+            for x in (entry, w):
+                x["notes"] = ((x.get("notes") or "") + " " + note).strip()
+        print(f"    linked with {w['word']}")
+
+
+def cmd_confusables(args):
+    """List pairs of words with the same English meaning that are not linked, and offer to link them."""
+    words = load()
+    seen, pairs = set(), []
+    for w in words:
+        for o in same_meaning(words, w, strict=True):
+            key = tuple(sorted((w["word"], o["word"])))
+            if key not in seen:
+                seen.add(key)
+                pairs.append((w, o))
+    if not pairs:
+        print("  No unlinked words with the same English meaning.")
+        return
+    print(f"\n  {len(pairs)} pair(s) with the same English meaning, not linked:")
+    for i, (a, b) in enumerate(pairs, 1):
+        print(f"    {i:>2}. {a['word']} / {b['word']}   ({a['definitions'][0]['meaning']} | {b['definitions'][0]['meaning']})")
+    val = input("  Link as easily confused (numbers, e.g. 1,4; Enter to skip): ").strip()
+    n, linked = 0, set()
+    for x in re.findall(r"\d+", val):
+        if 1 <= int(x) <= len(pairs):
+            a, b = pairs[int(x) - 1]
+            a.setdefault("related", []).append({"word": b["word"], "kind": "contrast"})
+            make_bidirectional(words, a)
+            linked.add(int(x))
+            n += 1
+    if n:
+        save(words)
+        print(f"  {n} pair(s) linked. Add a note on the difference with: python vocab.py edit <word>")
+    val = input("  Not confusable, stop listing them (numbers; Enter to skip): ").strip()
+    skip = [pairs[int(x) - 1] for x in re.findall(r"\d+", val) if 1 <= int(x) <= len(pairs) and int(x) not in linked]
+    if skip:
+        with open(NOT_CONFUSABLE_PATH, "a", encoding="utf-8") as f:
+            for a, b in skip:
+                f.write(f"{a['word']} | {b['word']}\n")
+        print(f"  {len(skip)} pair(s) noted in not_confusables.txt")
+
+
 # ── commands ───────────────────────────────────────────────────────────────────
 
 def cmd_list(args):
@@ -1156,6 +1263,7 @@ def cmd_add(args):
 
     # ── related words: typed semantic links proposed by the AI ───────────────
     entry["related"] = confirm_related(words, s.get("related", []) if suggestion else [])
+    ask_confusables(words, entry)
 
     # ── exercise sentences: yours first, then the examples, then generated ───
     build_exercises(entry, api_key if not manual else None, words=words)
@@ -1403,6 +1511,7 @@ COMMANDS = {
     "topics": cmd_topics,
     "family": cmd_family,
     "exercises": cmd_exercises,
+    "confusables": cmd_confusables,
 }
 
 def main():

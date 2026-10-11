@@ -315,8 +315,6 @@ wedeln
 wuchern
 
 ## travel & movement 1
-brechen
-aufbrechen
 das Fahrrad
 das Gebiet
 die Landschaft
@@ -339,9 +337,9 @@ weg
 die Abreise
 die Anreise
 die Ausrüstung
+die Landkarte
 
 ## travel & movement 2
-die Landkarte
 dorther
 dorthin
 drehen
@@ -358,6 +356,8 @@ abfahren
 abreisen
 ankommen
 anreisen
+brechen
+aufbrechen
 steigen
 erhöhen
 sinken
@@ -527,9 +527,6 @@ auswandern
 umziehen
 
 ## emotions & character 1
-allein
-einsam
-einzig
 angenehm
 beeindrucken
 beeindruckend
@@ -550,11 +547,11 @@ froh
 fröhlich
 glücklich
 traurig
-
-## emotions & character 2
 der Spaß
 die Enttäuschung
 die Freude
+
+## emotions & character 2
 der Trost
 die Angst
 die Furcht
@@ -575,11 +572,11 @@ witzig
 erschreckend
 furchtbar
 es reicht
-
-## emotions & character 3
 gefallen
 faul
 fleißig
+
+## emotions & character 3
 sich freuen
 sich fürchten
 sich ängstigen
@@ -600,11 +597,11 @@ annehmen
 hinnehmen
 in Kauf nehmen
 neugierig
-
-## emotions & character 4
 oberflächlich
 tiefgründig
 rührend
+
+## emotions & character 4
 sich schämen
 beschämen
 sensibel
@@ -831,7 +828,10 @@ zerbrechlich
 ## quantity & comparison
 ahnen
 ähneln
+allein
 bloß
+einsam
+einzig
 fast
 kaum
 ungefähr

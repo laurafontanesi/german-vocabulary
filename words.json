@@ -650,7 +650,7 @@
       }
     ],
     "topics": [],
-    "notes": "Often used with 'mit' + dative when specifying what you're stopping or quitting. aufhören = to stop doing something, to come to an end (mit dem Rauchen aufhören; der Regen hört auf). anhalten = to (make) stop moving (Der Bus hält an; ein Auto anhalten), but also to continue, to last (Der Regen hält an!). aufhalten = to hold up, to delay someone (Ich will Sie nicht aufhalten); sich aufhalten = to stay somewhere.",
+    "notes": "Often used with 'mit' + dative when specifying what you're stopping or quitting. aufhören = to stop doing something, to come to an end (mit dem Rauchen aufhören; der Regen hört auf). anhalten = to (make) stop moving (Der Bus hält an; ein Auto anhalten), but also to continue, to last (Der Regen hält an!). aufhalten = to hold up, to delay someone (Ich will Sie nicht aufhalten); sich aufhalten = to stay somewhere. aufhören = to stop doing something, to come to an end (mit dem Rauchen aufhören; der Regen hört auf). stoppen = to stop, to come or bring to a standstill: a vehicle, a person, a process (Der Zug stoppt; die Polizei stoppte den Wagen); also to time with a stopwatch. Stopp! = Stop it!",
     "added": "2026-04-04",
     "related": [
       {
@@ -675,6 +675,10 @@
       },
       {
         "word": "aufhalten",
+        "kind": "contrast"
+      },
+      {
+        "word": "stoppen",
         "kind": "contrast"
       }
     ],
@@ -6149,6 +6153,10 @@
       {
         "word": "einzigartig",
         "kind": "compound"
+      },
+      {
+        "word": "bloß",
+        "kind": "contrast"
       }
     ],
     "definitions": [
@@ -6157,7 +6165,7 @@
         "note": "used before a noun: the only one"
       }
     ],
-    "definition_de": "nur einmal vorhanden",
+    "definition_de": "nur einmal vorhanden, nur einer; nur (einzig und allein)",
     "examples": [
       {
         "de": "Das ist die einzige Möglichkeit.",
@@ -6176,7 +6184,7 @@
     "topics": [
       "quantity & comparison"
     ],
-    "notes": "einzig = only/sole (the one and only); einig = united/agreed; einsam = lonely. Three similar-looking words with very different meanings!",
+    "notes": "einzig = only/sole (the one and only); einig = united/agreed; einsam = lonely. Three similar-looking words with very different meanings! einzig = the only one, single (ihr einziger Sohn, der einzige Grund); also only, in einzig und allein. bloß = only, merely (Er denkt bloß an sich), and as an adjective bare (mit bloßen Händen); it also strengthens a request: Lass das bloß!",
     "added": "2026-04-04",
     "usage": "both",
     "exercises": [
@@ -22615,7 +22623,7 @@
         "note": null
       }
     ],
-    "definition_de": "zum Stehen bringen oder zum Stehen gebracht werden",
+    "definition_de": "zum Stillstand kommen; etw., jmdn. zum Stillstand bringen; mit der Stoppuhr messen",
     "examples": [
       {
         "de": "Der Fahrer stoppte das Auto plötzlich.",
@@ -22627,8 +22635,12 @@
       }
     ],
     "topics": [],
-    "notes": "stoppen = to stop (abrupt/forceful); aufhalten = to stop/hold back (prevent from continuing).",
+    "notes": "stoppen = to stop (abrupt/forceful); aufhalten = to stop/hold back (prevent from continuing). aufhören = to stop doing something, to come to an end (mit dem Rauchen aufhören; der Regen hört auf). stoppen = to stop, to come or bring to a standstill: a vehicle, a person, a process (Der Zug stoppt; die Polizei stoppte den Wagen); also to time with a stopwatch. Stopp! = Stop it!",
     "related": [
+      {
+        "word": "aufhören",
+        "kind": "contrast"
+      },
       {
         "word": "aufhalten",
         "kind": "contrast"
@@ -31659,7 +31671,7 @@
         "note": null
       }
     ],
-    "definition_de": "anfangen, sich fahrend (irgendwohin) zu bewegen; anfangen zu fahren",
+    "definition_de": "sich fahrend in Bewegung setzen, zu fahren beginnen",
     "examples": [
       {
         "de": "Wann fahren wir los?",
@@ -31673,11 +31685,15 @@
     "topics": [
       "travel & movement"
     ],
-    "notes": "losfahren = to set off (by vehicle). losgehen = to set off on foot. los! = let's go! / go!",
+    "notes": "losfahren = to set off (by vehicle). losgehen = to set off on foot. los! = let's go! / go! losfahren = to drive off, to start moving in a vehicle (Wann fahren wir los?). aufbrechen = to set off, to leave, also on foot or for a long trip (im Morgengrauen zu einer Bergtour aufbrechen); with haben, to break open (eine Tür aufbrechen).",
     "related": [
       {
         "word": "abfahren",
         "kind": "synonym"
+      },
+      {
+        "word": "aufbrechen",
+        "kind": "contrast"
       }
     ],
     "added": "2026-04-07 14:26:00",
@@ -49493,7 +49509,7 @@
         "note": "adjectival: mit bloßen Händen = with bare hands"
       }
     ],
-    "definition_de": "ohne alles andere, Ergänzende, nichts Weiteres als das Bezeichnete",
+    "definition_de": "nur, allein; nackt, unbedeckt (mit bloßen Händen)",
     "examples": [
       {
         "de": "Ich wollte bloß kurz fragen.",
@@ -49507,8 +49523,12 @@
     "topics": [
       "connectors & constructions"
     ],
-    "notes": null,
+    "notes": "einzig = the only one, single (ihr einziger Sohn, der einzige Grund); also only, in einzig und allein. bloß = only, merely (Er denkt bloß an sich), and as an adjective bare (mit bloßen Händen); it also strengthens a request: Lass das bloß!",
     "related": [
+      {
+        "word": "einzig",
+        "kind": "contrast"
+      },
       {
         "word": "kaum",
         "kind": "contrast"
@@ -52925,7 +52945,7 @@
         "note": null
       }
     ],
-    "definition_de": "die benötigte Energie oder Arbeit, um eine Handlung durchzuführen oder etwas herzustellen",
+    "definition_de": "das Aufwenden (von Zeit, Kraft, Geld); die Ausgaben",
     "examples": [
       {
         "de": "Der Aufwand für die Renovierung war größer als erwartet.",
@@ -52939,7 +52959,7 @@
     "topics": [
       "goals, effort & outcomes"
     ],
-    "notes": null,
+    "notes": "der Aufwand = effort as a cost in time, energy or money (Der Aufwand lohnt sich nicht; mit großem Aufwand). das Bemühen = the effort of trying to reach something (trotz aller Bemühungen); the verb is sich bemühen.",
     "added": "2026-06-08 20:04:46",
     "gender": "der",
     "plural": "die Aufwände",
@@ -52947,6 +52967,10 @@
       {
         "word": "die Mühe",
         "kind": "synonym"
+      },
+      {
+        "word": "das Bemühen",
+        "kind": "contrast"
       }
     ],
     "exercises": [
@@ -54966,7 +54990,7 @@
         "note": "uses auxiliary haben"
       }
     ],
-    "definition_de": "etwas, das verschlossen ist, mit Gewalt öffnen",
+    "definition_de": "fortgehen, sich aufmachen; etw. Verschlossenes gewaltsam öffnen",
     "examples": [
       {
         "de": "Wir brechen morgen früh zu unserer Reise auf.",
@@ -54975,12 +54999,16 @@
       {
         "de": "Die Einbrecher brachen den Safe auf.",
         "en": "The burglars broke open the safe."
+      },
+      {
+        "de": "Nach dem Frühstück wollen wir zu Fuß zum See aufbrechen.",
+        "en": "After breakfast we want to set off on foot to the lake."
       }
     ],
     "topics": [
       "travel & movement"
     ],
-    "notes": "Uses sein when meaning to depart, haben when meaning to break open.",
+    "notes": "Uses sein when meaning to depart, haben when meaning to break open. losfahren = to drive off, to start moving in a vehicle (Wann fahren wir los?). aufbrechen = to set off, to leave, also on foot or for a long trip (im Morgengrauen zu einer Bergtour aufbrechen); with haben, to break open (eine Tür aufbrechen).",
     "added": "2026-06-09 09:07:03",
     "auxiliary": "sein",
     "past_tense": "brach auf",
@@ -54992,7 +55020,12 @@
     "reflexive": false,
     "family_root": "brechen",
     "prefix": "auf-",
-    "related": [],
+    "related": [
+      {
+        "word": "losfahren",
+        "kind": "contrast"
+      }
+    ],
     "exercises": [
       {
         "slot": "part",
@@ -61320,25 +61353,29 @@
         "note": null
       }
     ],
-    "definition_de": "Vorgang, bei dem man etwas unter Mühe und Anstrengung zu erreichen versucht",
+    "definition_de": "das Sich-Bemühen, die Anstrengung, etw. zu erreichen",
     "examples": [
-      {
-        "de": "Trotz aller Bemühungen konnte er das Problem nicht lösen.",
-        "en": "Despite all efforts, he could not solve the problem."
-      },
       {
         "de": "Ihr Bemühen um eine friedliche Lösung war vergeblich.",
         "en": "Her endeavor for a peaceful solution was in vain."
+      },
+      {
+        "de": "Trotz aller Bemühungen konnte er das Problem nicht lösen.",
+        "en": "Despite all efforts, he could not solve the problem."
       }
     ],
     "topics": [
       "goals, effort & outcomes"
     ],
-    "notes": null,
+    "notes": "der Aufwand = effort as a cost in time, energy or money (Der Aufwand lohnt sich nicht; mit großem Aufwand). das Bemühen = the effort of trying to reach something (trotz aller Bemühungen); the verb is sich bemühen.",
     "added": "2026-06-11 17:55:44",
     "gender": "das",
     "plural": "die Bemühungen",
     "related": [
+      {
+        "word": "der Aufwand",
+        "kind": "contrast"
+      },
       {
         "word": "die Mühe",
         "kind": "synonym"

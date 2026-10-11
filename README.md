@@ -86,6 +86,10 @@ python vocab.py family nehmen
 # Check a word's exercise sentences, fill empty ones, replace the ones you do not like
 python vocab.py exercises nehmen
 
+# Words with the same English meaning that are not linked yet (bieten / anbieten): pick the ones to link,
+# and mark the ones that are not confusable (they go to not_confusables.txt and are not listed again)
+python vocab.py confusables
+
 # Show all topics and word counts
 python vocab.py topics
 
@@ -107,7 +111,7 @@ Then the script calls the Claude API to suggest:
 - Topics (0 to 2 from a closed list, often none)
 - Notes, including register when it is not neutral
 
-You confirm or override each suggestion before saving. Related words are proposed from your own database only, and linked bidirectionally.
+You confirm or override each suggestion before saving. Related words are proposed from your own database only, and linked bidirectionally. If words you already have share the new word's English translation (anbieten for bieten, seit for da), the script lists them and offers to link them as easily confused, with an optional one-line note on the difference that goes on both. Linked words land in the same Anki learning unit and get a "Welches Wort passt?" card.
 
 If `data/` holds the reference files (see Data sources), the script also checks the model against them: verb forms against the lexicon (it asks when they disagree), noun gender and plural, and it fills `present_3sg`, `verb_class`, `imperative`, `konjunktiv_2` and the German definition by itself.
 
