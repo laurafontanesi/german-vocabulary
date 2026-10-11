@@ -37254,8 +37254,8 @@
     "plural": "die Forschungen",
     "definitions": [
       {
-        "meaning": "research",
-        "note": null
+        "meaning": "research (as an activity or a field)",
+        "note": "in der Forschung arbeiten = to work in research"
       }
     ],
     "definition_de": "Suche nach Lösungen zu wissenschaftlichen Problemstellungen",
@@ -37265,22 +37265,22 @@
         "en": "She conducts research in the field of neuroscience."
       },
       {
-        "de": "Die Forschungsergebnisse wurden veröffentlicht.",
-        "en": "The research results were published."
+        "de": "Nach dem Studium möchte sie in der Forschung arbeiten.",
+        "en": "After her studies she wants to work in research."
       }
     ],
     "topics": [
       "science & academia"
     ],
-    "notes": "Forschung betreiben = to conduct research. theoretische und angewandte Forschung = theoretical and applied research. die Forschungsgruppe = research group.",
+    "notes": "die Forschung = research in general, the activity or the field. die Erforschung = the study of one specific thing, almost always with a genitive (die Erforschung des Weltraums). Forschung betreiben = to conduct research. die Forschungsgruppe = research group.",
     "related": [
       {
-        "word": "die Wissenschaft",
+        "word": "die Erforschung",
         "kind": "contrast"
       },
       {
-        "word": "die Erforschung",
-        "kind": "synonym"
+        "word": "die Wissenschaft",
+        "kind": "contrast"
       },
       {
         "word": "erforschen",
@@ -37615,8 +37615,8 @@
     "plural": null,
     "definitions": [
       {
-        "meaning": "the investigation, exploration, researching of (something)",
-        "note": "no plural"
+        "meaning": "exploration, study (of one specific thing)",
+        "note": "with a genitive: die Erforschung des Weltraums; no plural"
       }
     ],
     "definition_de": "das Forschen in einer bestimmten Sache",
@@ -37633,11 +37633,11 @@
     "topics": [
       "science & academia"
     ],
-    "notes": null,
+    "notes": "Noun of erforschen. Names what is being explored (die Erforschung + GEN). Without naming it, say die Forschung: Sie arbeitet in der Forschung.",
     "related": [
       {
         "word": "die Forschung",
-        "kind": "synonym"
+        "kind": "contrast"
       },
       {
         "word": "die Untersuchung",
