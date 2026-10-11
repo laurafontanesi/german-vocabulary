@@ -170,7 +170,33 @@ def main():
                 break
     units = [(t, u) for t, u in units if u]
 
-    # 5. write
+    # 5. moving roots can leave very small or very large units: fold a small one into the one before,
+    #    split a large one at linked-group boundaries (a group stays together, order is kept)
+    tidy = []
+    for t, u in units:
+        if tidy and len(u) < 8 and len(tidy[-1][1]) + len(u) <= UNIT_SIZE + 15:
+            tidy[-1] = (tidy[-1][0], tidy[-1][1] + u)
+        else:
+            tidy.append((t, u))
+    units = []
+    for t, u in tidy:
+        parts = max(1, round(len(u) / UNIT_SIZE)) if len(u) > UNIT_SIZE + 12 else 1
+        if parts == 1:
+            units.append((t, u))
+            continue
+        cuts = [i for i in range(1, len(u))                      # no linked group on both sides
+                if not {find(x['id']) for x in u[:i]} & {find(x['id']) for x in u[i:]}]
+        start = 0
+        for k in range(1, parts):
+            target = round(k * len(u) / parts)
+            cut = min((c for c in cuts if c > start), key=lambda c: abs(c - target), default=None)
+            if cut is None:
+                break
+            units.append((t, u[start:cut]))
+            start = cut
+        units.append((t, u[start:]))
+
+    # 6. write
     dup = {k for k, v in by_word.items() if len(v) > 1}
     count = collections.Counter(t for t, _ in units)
     seen = collections.Counter()

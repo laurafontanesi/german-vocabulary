@@ -9,7 +9,6 @@
 bedingt
 unbedingt
 betroffen
-bewahren
 bieten
 anbieten
 binden
@@ -23,14 +22,16 @@ sich eignen
 eine Rolle spielen
 fallen
 fangen
-fassen
 fügen
 hinzufügen
 geeignet
 großartig
 herrlich
+halten
+sich halten
 
 ## home & objects 1
+bewahren
 aufbewahren
 das Erdgeschoss
 das Geschirr
@@ -52,17 +53,17 @@ der Staubsauger
 der Stift
 der Wecker
 der Zettel
-die Mauer
-die Wand
 
 ## home & objects 2
+die Mauer
+die Wand
 die Schüssel
 die Spüle
 falten
 gemütlich
 kehren
-mieten
 meiden
+mieten
 vermeiden
 vermieten
 nebenan
@@ -78,6 +79,8 @@ schließen
 abschließen
 machen
 aufmachen
+
+## home & objects + food & drink 1
 schmutzig
 schmücken
 trocknen
@@ -90,8 +93,6 @@ schieben
 drucken
 sich anziehen
 tragen
-
-## food & drink
 bereit
 bereits
 fertig
@@ -101,18 +102,35 @@ die Kneipe
 frühstücken
 kochen
 lutschen
+
+## home & objects + food & drink 2
 nehmen
+gespannt
+entspannt
+sich ausruhen
+holen
+sich erholen
 geben
 kommen
 bekommen
-halten
-sich halten
+kaufen
+einkaufen
+verkaufen
+spannen
+sich entspannen
+sorgen
+sich kümmern
+besorgen
 erhalten
+erkranken
+stecken
+anstecken
 der Krieg
+kauen
 kriegen
+genesen
 ausnehmen
 die Ausnahme
-rühren
 schlürfen
 schmieren
 
@@ -136,6 +154,7 @@ prägen
 retten
 schlagen
 schleppen
+speziell
 
 ## body & health 1
 atmen
@@ -182,38 +201,16 @@ nüchtern
 pflegen
 putzen
 runzeln
+rühren
 berühren
 schlucken
 schnarchen
 seufzen
-
-## body & health 3
-stecken
-anstecken
-sich ausruhen
-sorgen
-sich kümmern
-besorgen
-kaufen
-einkaufen
-spannen
-sich entspannen
-entspannt
-holen
-sich erholen
-erkranken
-genesen
-gespannt
-kauen
-verkaufen
 tauchen
 treiben
 abtreiben
-träumen
-verletzen
 
 ## Alltag 3
-speziell
 verstecken
 sich zeigen
 lügen
@@ -225,15 +222,15 @@ liegen
 setzen
 erstellen
 streifen
-stärken
-treten
 trüben
 wachen
 werfen
 zufällig
 zünden
 
-## body & health 4
+## body & health 3
+träumen
+verletzen
 aufwachen
 erschöpft
 munter
@@ -377,6 +374,17 @@ verfahren
 ## travel & movement 3
 wegfahren
 abholen
+anfangen
+anhalten
+aufgeben
+aufhalten
+aufheben
+hören
+aufhören
+beenden
+fortsetzen
+stoppen
+vollenden
 einholen
 überholen
 irgendwo
@@ -386,6 +394,8 @@ nieder
 verpassen
 rammen
 schleichen
+
+## travel & movement 4
 schreiben
 schreien
 anschreien
@@ -393,6 +403,7 @@ flüstern
 beschreiben
 schreiten
 beschreiten
+treten
 betreten
 sich sonnen
 spazieren
@@ -489,11 +500,11 @@ die Ehe
 die Lüge
 die Wahrheit
 gegenseitig
-handeln
-sich verhalten
 heiraten
 kuscheln
 sich benehmen
+handeln
+sich verhalten
 raten
 verraten
 Rücksicht nehmen auf
@@ -585,6 +596,7 @@ nerven
 stören
 sich ärgern
 mutig
+annehmen
 hinnehmen
 in Kauf nehmen
 neugierig
@@ -667,6 +679,7 @@ bestellen
 
 ## language & communication 1
 überarbeiten
+beanspruchen
 behaupten
 berichten
 Bescheid geben / sagen
@@ -694,9 +707,9 @@ der Bericht
 der Quatsch
 der Unsinn
 die Aufschrift
-die Auskunft
 
 ## language & communication 2
+die Auskunft
 die Begründung
 die Bemerkung
 die Äußerung
@@ -720,9 +733,9 @@ offenbar
 offensichtlich
 wiederholen
 hör zu
-ich drücke dir die Daumen
 
 ## language & communication 3
+ich drücke dir die Daumen
 klingen
 kritzeln
 mach's gut
@@ -739,7 +752,7 @@ vorschlagen
 übersetzen
 versprechen
 
-## language & communication + technology & media
+## language & communication + technology & media 1
 stimmen
 abstimmen
 horchen
@@ -749,23 +762,6 @@ widersprechen
 zugeben
 zustimmen
 bestimmen
-auftauchen
-schauen
-anschauen
-sehen
-zusehen
-gucken
-beobachten
-betrachten
-aussehen
-scheinen
-erscheinen
-vergeuden
-verschwenden
-schwinden
-waschen
-wachsen
-verschwinden
 übertreiben
 weisen
 vorwerfen
@@ -776,7 +772,26 @@ zum Ausdruck bringen
 zählen
 erzählen
 der Bildschirm
+
+## language & communication + technology & media 2
 die Werbung
+scheinen
+sehen
+aussehen
+schwinden
+waschen
+wachsen
+verschwinden
+schauen
+anschauen
+zusehen
+vergeuden
+verschwenden
+gucken
+beobachten
+erscheinen
+betrachten
+auftauchen
 fernsehen
 
 ## culture & arts
@@ -851,6 +866,7 @@ gestiegen
 sich gewöhnen
 versenken
 versinken
+stärken
 verstärken
 zerstören
 zerstört
@@ -889,24 +905,23 @@ die Kognition
 die Prämisse
 eine Entscheidung treffen
 einfallen
+fassen
 erfassen
 fühlen
 sich anfühlen
 empfinden
 spülen
 spüren
-hören
-annehmen
 vernehmen
 sich einprägen
 sich erinnern
 merken
-
-## thinking & perception 3
 sichtbar
 starren
 staunen
 sich vorstellen
+
+## thinking & perception 3
 suchen
 versuchen
 probieren
@@ -929,7 +944,7 @@ wählen
 sich entscheiden
 auswählen
 
-## goals, effort & outcomes 1
+## goals, effort & outcomes
 anstrengend
 behindern
 erleichtern
@@ -949,18 +964,6 @@ die Herausforderung
 die Untätigkeit
 erfolgreich
 etwas zu Ende bringen
-
-## goals, effort & outcomes 2
-anfangen
-anhalten
-aufgeben
-aufhalten
-aufheben
-aufhören
-beenden
-fortsetzen
-stoppen
-vollenden
 gelingen
 schaffen
 sich lohnen
@@ -969,7 +972,6 @@ verzichten
 vollendet
 
 ## society & politics 1
-beanspruchen
 das Anliegen
 das Bedürfnis
 der Anspruch
@@ -992,9 +994,9 @@ die Anstalt
 die Arbeitslosigkeit
 die Besatzung
 die Entfremdung
+die Gesellschaft
 
 ## society & politics 2
-die Gesellschaft
 die Grenze
 die Klimaerwärmung
 die Regelung
@@ -1045,6 +1047,7 @@ sich erweisen
 allerdings
 also
 aufgrund
+bevor
 da
 denn
 dennoch
@@ -1053,31 +1056,32 @@ deswegen
 einerseits … andererseits …
 infolge
 jedoch
-obwohl
-trotz
-trotzdem
-wegen
-weil
-zwar … aber …
-als ob + Konjunktiv II
-außerdem
-ebenfalls
-
-## connectors & constructions 2
-bevor
 nachdem
+obwohl
 seit
 seitdem
 sobald
 solange
+trotz
+trotzdem
 vor
+wegen
+weil
+wobei
 während
+zwar … aber …
+
+## connectors & constructions 2
+als ob + Konjunktiv II
+außerdem
+ebenfalls
 da- / wo- + Präposition
 damit
 sodass
 stattdessen
 um / ohne / (an)statt … zu + Infinitiv
 eigentlich
+tatsächlich
 entgegen
 entweder … oder …
 weder … noch …
@@ -1086,11 +1090,11 @@ falls
 haben + zu + Infinitiv
 nicht brauchen + zu + Infinitiv
 sein + zu + Infinitiv
-
-## connectors & constructions 3
 abhängen
 das kommt darauf an
 je nachdem (ob / wie …)
+
+## connectors & constructions 3
 immerhin
 jedenfalls
 zumindest
@@ -1104,7 +1108,5 @@ sowohl … als auch …
 sogar
 sonst
 sowieso
-tatsächlich
-wobei
 X ist aus Y
 X wird aus Y gemacht

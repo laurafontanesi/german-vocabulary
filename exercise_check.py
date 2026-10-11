@@ -165,12 +165,16 @@ def det_readings(morph, det):
                 out.add((t[2], t[3], t[4]))
                 lem = lemma.lower()
                 kind = "DEF" if (lem in DER_TYPE or t[1] == "DEF") else ("IND" if lem in EIN_TYPE else kind)
-    if not out:
-        for lemma, tag in morph.get(det):               # viele, einige, zwei...
-            t = tag.split(":")
-            if t[0] in ("ADJ", "ZAL") and (lemma.lower() in QUANT or lemma.lower() == "solch"):
-                if len(t) >= 4 and t[1] in ("NOM", "AKK", "DAT", "GEN"):
-                    out.add((t[1], t[2], t[3])); kind = "SOL"
+    had_pro = bool(out)
+    for lemma, tag in morph.get(det):                   # viele, einige, zwei...
+        t = tag.split(":")
+        if t[0] in ("ADJ", "ZAL") and (lemma.lower() in QUANT or lemma.lower() == "solch"):
+            # with pronoun readings as well (einigen: DAT PLU), add only the strong singular ones
+            # (einigen Trost, viel Geld) so they are not lost
+            if had_pro and not tag.endswith(":SOL"):
+                continue
+            if len(t) >= 4 and t[1] in ("NOM", "AKK", "DAT", "GEN"):
+                out.add((t[1], t[2], t[3])); kind = kind or "SOL"
         if det.lower() in QUANT:
             kind = "SOL"
     return out, kind
@@ -289,6 +293,12 @@ def governing_cases(tokens, i):
     if i == 0:
         return None
     p = tokens[i - 1].lower()
+    # not a preposition here: "um … zu" + infinitive (um dem Verkehr auszuweichen), and the second
+    # part of von … aus / an / her (von Natur aus ein großzügiger Mensch)
+    if p == "um" and any(t.lower() == "zu" or re.match(r"^[a-zäöü]+zu[a-zäöü]+en$", t) for t in tokens[i:]):
+        return None
+    if p in ("aus", "an", "her", "auf") and "von" in [t.lower() for t in tokens[max(0, i - 4):i - 1]]:
+        return None
     for preps, cases in ((PREP_DAT, {"DAT"}), (PREP_AKK, {"AKK"}), (PREP_GEN, {"GEN"}),
                          (PREP_TWO_WAY, {"DAT", "AKK"})):
         if p in preps:

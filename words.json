@@ -634,7 +634,7 @@
         "note": "when referring to habits or activities"
       }
     ],
-    "definition_de": "mit einer Handlung oder Handlungsweise nicht weitermachen",
+    "definition_de": "ein Ende haben; mit einer Tätigkeit nicht mehr weitermachen",
     "examples": [
       {
         "de": "Es hat aufgehört zu regnen.",
@@ -643,12 +643,20 @@
       {
         "de": "Ich höre mit dem Rauchen auf.",
         "en": "I'm quitting smoking."
+      },
+      {
+        "de": "Kannst du bitte aufhören, so laut zu reden?",
+        "en": "Can you please stop talking so loudly?"
       }
     ],
     "topics": [],
-    "notes": "Often used with 'mit' + dative when specifying what you're stopping or quitting.",
+    "notes": "Often used with 'mit' + dative when specifying what you're stopping or quitting. aufhören = to stop doing something, to come to an end (mit dem Rauchen aufhören; der Regen hört auf). anhalten = to (make) stop moving (Der Bus hält an; ein Auto anhalten), but also to continue, to last (Der Regen hält an!). aufhalten = to hold up, to delay someone (Ich will Sie nicht aufhalten); sich aufhalten = to stay somewhere.",
     "added": "2026-04-04",
     "related": [
+      {
+        "word": "anhalten",
+        "kind": "contrast"
+      },
       {
         "word": "beenden",
         "kind": "contrast"
@@ -664,6 +672,10 @@
       {
         "word": "aufgeben",
         "kind": "synonym"
+      },
+      {
+        "word": "aufhalten",
+        "kind": "contrast"
       }
     ],
     "exercises": [
@@ -2674,7 +2686,7 @@
         "note": "transitive — you change something external"
       }
     ],
-    "definition_de": "anders machen",
+    "definition_de": "bewirken, dass etw. anders ist als zuvor",
     "examples": [
       {
         "de": "Ich muss meinen Plan ändern.",
@@ -2733,6 +2745,10 @@
     "reflexive": "akk",
     "related": [
       {
+        "word": "wechseln",
+        "kind": "contrast"
+      },
+      {
         "word": "ändern",
         "kind": "contrast"
       }
@@ -2743,7 +2759,7 @@
         "note": "intransitive — a person or situation changes"
       }
     ],
-    "definition_de": "etwas in seiner Art oder Beschaffenheit ändern",
+    "definition_de": "anders werden, sich umwandeln",
     "examples": [
       {
         "de": "Die Situation hat sich überhaupt nicht verändert.",
@@ -2757,7 +2773,7 @@
     "topics": [
       "change & development"
     ],
-    "notes": "sich verändern = to change (intransitive); ändern = to change something (transitive). Common source of confusion.",
+    "notes": "sich verändern = to change (intransitive); ändern = to change something (transitive). Common source of confusion. wechseln = to change one thing for another of the same kind (den Job, die Wohnung, das Thema wechseln; Geld wechseln). sich verändern = to become different (Die Stadt hat sich verändert). ändern = to change something, to modify (einen Plan ändern).",
     "added": "2026-04-04",
     "family_root": "ändern",
     "prefix": "ver-",
@@ -3102,6 +3118,10 @@
     "reflexive": false,
     "related": [
       {
+        "word": "besorgen",
+        "kind": "contrast"
+      },
+      {
         "word": "geben",
         "kind": "antonym"
       },
@@ -3120,7 +3140,7 @@
         "note": null
       }
     ],
-    "definition_de": "etwas empfangen, etwas erhalten, etwas erlangen; in seinen Besitz übernehmen",
+    "definition_de": "in den Besitz von etw. kommen, etw. erhalten",
     "examples": [
       {
         "de": "Ich habe viele Geschenke zu meinem Geburtstag bekommen.",
@@ -3132,7 +3152,7 @@
       }
     ],
     "topics": [],
-    "notes": "False friend! bekommen ≠ 'to become' (= werden). bekommen = to receive/get. erhalten = same but more formal.",
+    "notes": "False friend! bekommen ≠ 'to become' (= werden). bekommen = to receive/get. erhalten = same but more formal. bekommen = to get, to receive: something comes to you (einen Brief, ein Geschenk bekommen). besorgen = to get, to obtain: you go and get it (Tickets, Brot besorgen); also to take care of errands. bekommen is not to become (that is werden).",
     "added": "2026-04-04",
     "family_root": "kommen",
     "prefix": "be-",
@@ -3236,14 +3256,19 @@
     "reflexive": false,
     "family_root": "holen",
     "prefix": "ab-",
-    "related": [],
+    "related": [
+      {
+        "word": "aufheben",
+        "kind": "contrast"
+      }
+    ],
     "definitions": [
       {
         "meaning": "to pick up (a person or thing)",
         "note": null
       }
     ],
-    "definition_de": "von einem Ort nehmen, um es (mit sich) an einen anderen zu bringen",
+    "definition_de": "etw. Bereitliegendes mitnehmen; jmdn. an einem vereinbarten Ort treffen und begleiten",
     "examples": [
       {
         "de": "Kannst du mich bitte vom Bahnhof abholen?",
@@ -3257,7 +3282,7 @@
     "topics": [
       "travel & movement"
     ],
-    "notes": null,
+    "notes": "abholen = to pick up, to collect (jmdn. vom Bahnhof abholen; ein Paket abholen). aufheben = to pick up from the floor (den Ball aufheben); also to keep (Briefe aufheben) and to abolish (ein Gesetz aufheben).",
     "added": "2026-04-04",
     "exercises": [
       {
@@ -3887,6 +3912,10 @@
     "prefix": "aus-",
     "related": [
       {
+        "word": "schauen",
+        "kind": "contrast"
+      },
+      {
         "word": "scheinen",
         "kind": "contrast"
       }
@@ -3897,7 +3926,7 @@
         "note": null
       }
     ],
-    "definition_de": "ein Bild nach außen abgeben",
+    "definition_de": "ein bestimmtes Aussehen haben; etw. vermuten lassen (es sieht nach Regen aus)",
     "examples": [
       {
         "de": "Du siehst heute gut aus!",
@@ -3906,10 +3935,14 @@
       {
         "de": "Er sieht aus, als ob er nicht geschlafen hätte.",
         "en": "He looks as if he hasn't slept."
+      },
+      {
+        "de": "In dem neuen Kleid wirst du toll aussehen.",
+        "en": "You will look great in the new dress."
       }
     ],
     "topics": [],
-    "notes": "aussehen wie + noun: Er sieht aus wie ein Gespenst. aussehen als ob + verb: Er sieht aus, als ob... Both patterns are very common.",
+    "notes": "aussehen wie + noun: Er sieht aus wie ein Gespenst. aussehen als ob + verb: Er sieht aus, als ob... Both patterns are very common. aussehen = to look (appearance): Du siehst müde aus; Es sieht nach Regen aus. schauen = to look (with your eyes): aus dem Fenster schauen; mostly southern German, Austrian and Swiss (elsewhere: sehen, gucken).",
     "added": "2026-04-04",
     "exercises": [
       {
@@ -4089,14 +4122,19 @@
     "verb_class": "regular",
     "is_separable": false,
     "reflexive": false,
-    "related": [],
+    "related": [
+      {
+        "word": "beanspruchen",
+        "kind": "contrast"
+      }
+    ],
     "definitions": [
       {
         "meaning": "to claim, to assert",
         "note": "implies stating something without proof"
       }
     ],
-    "definition_de": "etwas sagen, was nicht stimmen muss oder gar unglaubwürdig ist",
+    "definition_de": "etw. ohne Beweis mit Bestimmtheit für wahr erklären",
     "examples": [
       {
         "de": "Er behauptet, die Erde sei flach.",
@@ -4110,7 +4148,7 @@
     "topics": [
       "language & communication"
     ],
-    "notes": "behaupten implies asserting something without justification — slightly sceptical connotation. Often followed by Konjunktiv I in reported speech.",
+    "notes": "behaupten implies asserting something without justification — slightly sceptical connotation. Often followed by Konjunktiv I in reported speech. behaupten = to claim that something is true, without proof (Er behauptet, dass …); sich behaupten = to hold one's own. beanspruchen = to claim something as one's right (Urlaub, Schadenersatz beanspruchen), or to take up (Platz, Zeit).",
     "added": "2026-04-04",
     "family_root": "behaupten",
     "exercises": [
@@ -10196,6 +10234,10 @@
     "prefix": "an-",
     "related": [
       {
+        "word": "anreisen",
+        "kind": "contrast"
+      },
+      {
         "word": "abfahren",
         "kind": "antonym"
       }
@@ -10206,7 +10248,7 @@
         "note": null
       }
     ],
-    "definition_de": "einen Ort, ein Ziel erreichen",
+    "definition_de": "anlangen, eintreffen",
     "examples": [
       {
         "de": "Wann kommt der Zug an?",
@@ -10215,12 +10257,16 @@
       {
         "de": "Ich bin gestern spät angekommen.",
         "en": "I arrived late yesterday."
+      },
+      {
+        "de": "Der Zug wird mit zehn Minuten Verspätung ankommen.",
+        "en": "The train will arrive ten minutes late."
       }
     ],
     "topics": [
       "travel & movement"
     ],
-    "notes": "ankommen (sein) = to arrive. die Ankunft = the arrival. abfahren = to depart (opposite).",
+    "notes": "ankommen (sein) = to arrive. die Ankunft = the arrival. abfahren = to depart (opposite). ankommen = to arrive, to reach a place (Der Zug kommt um 8 an). anreisen = to travel to a place for a stay or an event (Die Gäste reisen am Freitag an); its opposite is abreisen.",
     "added": "2026-04-04",
     "family_root": "kommen",
     "exercises": [
@@ -13795,11 +13841,15 @@
     "prefix": "be-",
     "definitions": [
       {
-        "meaning": "to enter, to step into (a place)",
-        "note": "formal"
+        "meaning": "to enter (a room, a building)",
+        "note": "with a direct object"
+      },
+      {
+        "meaning": "to set foot on, to walk on",
+        "note": "festen Boden betreten; Rasen betreten verboten"
       }
     ],
-    "definition_de": "in einen Raum gehen",
+    "definition_de": "seinen Fuß auf, in etw. setzen; in einen Raum, Ort hineingehen",
     "examples": [
       {
         "de": "Betreten verboten.",
@@ -13813,8 +13863,12 @@
     "topics": [
       "travel & movement"
     ],
-    "notes": "'Betreten verboten' = No entry (common on signs). More formal than 'reingehen'. The past participle 'betreten' also means embarrassed as an adjective. Register: formell / gehoben.",
+    "notes": "Betreten verboten = no entry. More formal than hineingehen. As an adjective, betreten = embarrassed (ein betretenes Schweigen). betreten = to enter or set foot on, with a direct object (den Raum betreten). treten = to step, with a preposition (ins Zimmer treten, auf die Bremse treten); jmdn. treten = to kick someone.",
     "related": [
+      {
+        "word": "treten",
+        "kind": "contrast"
+      },
       {
         "word": "beschreiten",
         "kind": "contrast"
@@ -15851,7 +15905,7 @@
         "note": "to go and get something"
       }
     ],
-    "definition_de": "etwas beschaffen",
+    "definition_de": "etw. beschaffen; etw. erledigen; sich um jmdn., etw. kümmern",
     "examples": [
       {
         "de": "Kannst du mir ein Brot besorgen?",
@@ -15865,7 +15919,7 @@
     "topics": [
       "money & shopping"
     ],
-    "notes": "besorgen = to go and get/obtain something; sich besorgen = to worry (reflexive, different meaning!). besorgt = worried (adjective).",
+    "notes": "besorgen = to go and get/obtain something; besorgt sein = to be worried (to worry = sich sorgen). sich etw. besorgen = to get oneself something. bekommen = to get, to receive: something comes to you (einen Brief, ein Geschenk bekommen). besorgen = to get, to obtain: you go and get it (Tickets, Brot besorgen); also to take care of errands. bekommen is not to become (that is werden).",
     "related": [
       {
         "word": "holen",
@@ -15873,6 +15927,10 @@
       },
       {
         "word": "kaufen",
+        "kind": "contrast"
+      },
+      {
+        "word": "bekommen",
         "kind": "contrast"
       }
     ],
@@ -15908,7 +15966,7 @@
         "note": "as adjective: der tatsächliche Grund"
       }
     ],
-    "definition_de": "(manchmal auch wider Erwarten) wahrheitsgemäß, wirklich",
+    "definition_de": "den Tatsachen, der Wirklichkeit entsprechend; wirklich",
     "examples": [
       {
         "de": "Er hat es tatsächlich geschafft!",
@@ -15922,8 +15980,13 @@
     "topics": [
       "connectors & constructions"
     ],
-    "notes": "Often used to express mild surprise that something is true. Similar to 'wirklich' but with more emphasis on factual reality.",
-    "related": [],
+    "notes": "Often used to express mild surprise that something is true. Similar to 'wirklich' but with more emphasis on factual reality. tatsächlich = really, indeed: confirms that something is true, often with surprise (Er hat es tatsächlich geschafft!). eigentlich = actually, in principle: what would be true or planned, often followed by aber (Eigentlich wollte ich früh schlafen, aber …); in questions, by the way (Wo warst du eigentlich?).",
+    "related": [
+      {
+        "word": "eigentlich",
+        "kind": "contrast"
+      }
+    ],
     "added": "2026-04-06 11:47:00",
     "exercises": [
       {
@@ -18795,7 +18858,7 @@
         "note": null
       }
     ],
-    "definition_de": "Eines gegen etwas Anderes tauschen",
+    "definition_de": "etw. durch etw. anderes derselben Art ersetzen; Geld umtauschen",
     "examples": [
       {
         "de": "Ich muss das Thema wechseln.",
@@ -18809,7 +18872,7 @@
     "topics": [
       "change & development"
     ],
-    "notes": "wechseln = to change/switch/exchange. Geld wechseln = to change money. den Job wechseln = to change jobs.",
+    "notes": "wechseln = to change/switch/exchange. Geld wechseln = to change money. den Job wechseln = to change jobs. wechseln = to change one thing for another of the same kind (den Job, die Wohnung, das Thema wechseln; Geld wechseln). sich verändern = to become different (Die Stadt hat sich verändert). ändern = to change something, to modify (einen Plan ändern).",
     "related": [
       {
         "word": "ändern",
@@ -18818,6 +18881,10 @@
       {
         "word": "der Wechsel",
         "kind": "derived"
+      },
+      {
+        "word": "sich verändern",
+        "kind": "contrast"
       }
     ],
     "added": "2026-04-06 14:07:00",
@@ -19278,8 +19345,12 @@
         "note": null
       }
     ],
-    "definition_de": "sich benehmen",
+    "definition_de": "eine bestimmte Haltung einnehmen, ein bestimmtes Benehmen zeigen",
     "examples": [
+      {
+        "de": "Wir wissen noch nicht, wie sich das Material bei hohen Temperaturen verhalten wird.",
+        "en": "We do not know yet how the material will behave at high temperatures."
+      },
       {
         "de": "Sie verhalten sich, als ob nichts passiert wäre.",
         "en": "They behave as if nothing had happened."
@@ -19292,8 +19363,12 @@
     "topics": [
       "people & relationships"
     ],
-    "notes": "sich verhalten = to behave (reflexive); das Verhalten = behaviour (noun). sich gut/schlecht verhalten = to behave well/badly.",
+    "notes": "sich verhalten = to behave (reflexive); das Verhalten = behaviour (noun). sich gut/schlecht verhalten = to behave well/badly. sich benehmen = to behave in terms of manners (sich gut / schlecht benehmen; Benimm dich!). sich verhalten = to behave, to act in a situation, more neutral (sich ruhig, vorsichtig, richtig verhalten); also of things: Wie verhält es sich mit …? = What about …?",
     "related": [
+      {
+        "word": "sich benehmen",
+        "kind": "contrast"
+      },
       {
         "word": "handeln",
         "kind": "contrast"
@@ -20573,7 +20648,7 @@
         "note": "das beansprucht viel Zeit"
       }
     ],
-    "definition_de": "einen Anspruch erheben; eine Forderung stellen",
+    "definition_de": "etw. (mit Recht) fordern, auf etw. einen Anspruch erheben",
     "examples": [
       {
         "de": "Sie beansprucht das Recht auf eine zweite Meinung.",
@@ -20585,11 +20660,15 @@
       }
     ],
     "topics": [],
-    "notes": "beanspruchen = to claim (formally) or to take up (time/resources). der Anspruch = claim, entitlement. Register: formell / gehoben.",
+    "notes": "beanspruchen = to claim (formally) or to take up (time/resources). der Anspruch = claim, entitlement. Register: formell / gehoben. behaupten = to claim that something is true, without proof (Er behauptet, dass …); sich behaupten = to hold one's own. beanspruchen = to claim something as one's right (Urlaub, Schadenersatz beanspruchen), or to take up (Platz, Zeit).",
     "related": [
       {
         "word": "der Anspruch",
         "kind": "derived"
+      },
+      {
+        "word": "behaupten",
+        "kind": "contrast"
       }
     ],
     "added": "2026-04-06 14:30:00",
@@ -21134,15 +21213,23 @@
       {
         "de": "Sie nimmt viel hin, ohne sich zu beschweren.",
         "en": "She puts up with a lot without complaining."
+      },
+      {
+        "de": "Diese Beleidigung kann ich nicht einfach hinnehmen.",
+        "en": "I cannot simply put up with this insult."
       }
     ],
     "topics": [
       "emotions & character"
     ],
-    "notes": "hinnehmen implies reluctant acceptance — you put up with something you don't like.",
+    "notes": "hinnehmen implies reluctant acceptance — you put up with something you don't like. annehmen = to accept something offered (ein Geschenk, eine Einladung, ein Angebot annehmen), and to assume (Ich nehme an, dass …). hinnehmen = to accept something you cannot change or do not like, to put up with (eine Niederlage, Kritik hinnehmen).",
     "related": [
       {
         "word": "in Kauf nehmen",
+        "kind": "contrast"
+      },
+      {
+        "word": "annehmen",
         "kind": "contrast"
       }
     ],
@@ -21662,7 +21749,7 @@
         "note": "reflexive"
       }
     ],
-    "definition_de": "sich verhalten, sich auf bestimmte Weise in der Umwelt zeigen",
+    "definition_de": "sich in einer bestimmten Art in seiner Umwelt bewegen, sich betragen",
     "examples": [
       {
         "de": "Benimm dich!",
@@ -21676,8 +21763,13 @@
     "topics": [
       "people & relationships"
     ],
-    "notes": "das Benehmen = behaviour, manners. 'Kein Benehmen haben' = to have no manners.",
-    "related": [],
+    "notes": "das Benehmen = behaviour, manners. 'Kein Benehmen haben' = to have no manners. sich benehmen = to behave in terms of manners (sich gut / schlecht benehmen; Benimm dich!). sich verhalten = to behave, to act in a situation, more neutral (sich ruhig, vorsichtig, richtig verhalten); also of things: Wie verhält es sich mit …? = What about …?",
+    "related": [
+      {
+        "word": "sich verhalten",
+        "kind": "contrast"
+      }
+    ],
     "added": "2026-04-07 10:15:00",
     "exercises": [
       {
@@ -21917,7 +22009,7 @@
         "note": "Southern German/Swiss alternative to sehen"
       }
     ],
-    "definition_de": "mehr aktiv als passiv mit den Augen wahrnehmen (also oft willentlich, aus eigenem Bestreben heraus/ durch eigenes Zutun herbeigeführt)",
+    "definition_de": "die Augen bewusst auf etw. richten, blicken (süddeutsch, österreichisch)",
     "examples": [
       {
         "de": "Schau mal!",
@@ -21931,7 +22023,7 @@
     "topics": [
       "thinking & perception"
     ],
-    "notes": "schauen = look/watch (Swiss/Austrian/South German). sehen = see/watch (standard German). fernschauen = to watch TV (Swiss). fernsehen = standard.",
+    "notes": "schauen = look/watch (Swiss/Austrian/South German). sehen = see/watch (standard German). fernschauen = to watch TV (Swiss). fernsehen = standard. aussehen = to look (appearance): Du siehst müde aus; Es sieht nach Regen aus. schauen = to look (with your eyes): aus dem Fenster schauen; mostly southern German, Austrian and Swiss (elsewhere: sehen, gucken).",
     "related": [
       {
         "word": "sehen",
@@ -21944,6 +22036,10 @@
       {
         "word": "gucken",
         "kind": "synonym"
+      },
+      {
+        "word": "aussehen",
+        "kind": "contrast"
       }
     ],
     "added": "2026-04-07 10:19:00",
@@ -22459,7 +22555,7 @@
         "note": "einen Vertrag abschließen = to conclude a contract"
       }
     ],
-    "definition_de": "das Öffnen durch Unbefugte mit einem Verschließmechanismus blockieren",
+    "definition_de": "etw. mit einem Schlüssel zuschließen; etw. beenden, zum Abschluss bringen",
     "examples": [
       {
         "de": "Hast du die Tür abgeschlossen?",
@@ -22473,8 +22569,12 @@
     "topics": [
       "home & objects"
     ],
-    "notes": "abschließen = to lock OR to formally conclude. einen Vertrag/eine Versicherung abschließen = to take out a contract/insurance.",
+    "notes": "schließen = to close (Schließ bitte das Fenster); it can also mean to lock. abschließen = to lock with a key (Ich schließe die Tür ab), and to finish or conclude (das Studium, einen Vertrag abschließen). In Switzerland written schliessen / abschliessen. einen Vertrag, eine Versicherung abschließen = to take out a contract, an insurance.",
     "related": [
+      {
+        "word": "schließen",
+        "kind": "contrast"
+      },
       {
         "word": "aufmachen",
         "kind": "antonym"
@@ -22595,7 +22695,7 @@
         "note": "reflexive"
       }
     ],
-    "definition_de": "jemanden/etwas nicht weitergehen/weiterfortschreiten lassen",
+    "definition_de": "jmdn., etw. zurückhalten, am Fortkommen hindern; (sich) irgendwo sein",
     "examples": [
       {
         "de": "Nichts kann ihn aufhalten.",
@@ -22609,8 +22709,12 @@
     "topics": [
       "travel & movement"
     ],
-    "notes": "aufhalten = to stop/delay (someone); sich aufhalten = to stay/be located somewhere.",
+    "notes": "aufhalten = to stop/delay (someone); sich aufhalten = to stay/be located somewhere. aufhören = to stop doing something, to come to an end (mit dem Rauchen aufhören; der Regen hört auf). anhalten = to (make) stop moving (Der Bus hält an; ein Auto anhalten), but also to continue, to last (Der Regen hält an!). aufhalten = to hold up, to delay someone (Ich will Sie nicht aufhalten); sich aufhalten = to stay somewhere.",
     "related": [
+      {
+        "word": "aufhören",
+        "kind": "contrast"
+      },
       {
         "word": "anhalten",
         "kind": "contrast"
@@ -22985,6 +23089,10 @@
         "de": "Ich will auch noch aus anderen Gründen hierbleiben.",
         "en": "That isn't the only reason why I want to stay here.",
         "blanks": [
+          [
+            23,
+            30
+          ],
           [
             31,
             38
@@ -24695,8 +24803,12 @@
     "topics": [
       "connectors & constructions"
     ],
-    "notes": "As conjunction: da (= since/because) is more formal than weil and often starts the sentence. As adverb: da = there/then. Don't confuse with 'da' as a filler in colloquial German.",
+    "notes": "As conjunction: da (= since/because) is more formal than weil and often starts the sentence. As adverb: da = there/then. Don't confuse with 'da' as a filler in colloquial German. da (conjunction) = because, as: Da es regnet, bleiben wir zu Hause. seit = since, for (time): seit drei Jahren (preposition + DAT), seit er hier wohnt (conjunction). English since covers both, German does not.",
     "related": [
+      {
+        "word": "seit",
+        "kind": "contrast"
+      },
       {
         "word": "weil",
         "kind": "contrast"
@@ -24961,7 +25073,7 @@
         "note": "verb-final clause"
       }
     ],
-    "definition_de": "leitet einen Nebensatz (Konzessivsatz) ein, der einen Gegengrund zu der Hauptaussage nennt",
+    "definition_de": "obgleich; leitet einen konzessiven Nebensatz ein",
     "examples": [
       {
         "de": "Obwohl es regnete, gingen wir spazieren.",
@@ -24975,7 +25087,7 @@
     "topics": [
       "connectors & constructions"
     ],
-    "notes": "obwohl + verb-final clause = although (concessive conjunction). trotz + GEN = despite (preposition). trotzdem = nevertheless (adverb). All three express concession.",
+    "notes": "obwohl + verb-final clause = although (concessive conjunction). trotz + GEN = despite (preposition). trotzdem = nevertheless (adverb). All three express concession. obwohl = although: a concession (Obwohl es regnete, gingen wir spazieren). wobei = though, while: adds a restriction or a side remark after the main clause (Das Hotel war schön, wobei das Frühstück teuer war).",
     "related": [
       {
         "word": "trotz",
@@ -24991,6 +25103,10 @@
       },
       {
         "word": "zwar … aber …",
+        "kind": "contrast"
+      },
+      {
+        "word": "wobei",
         "kind": "contrast"
       }
     ],
@@ -26786,8 +26902,13 @@
     "topics": [
       "change & development"
     ],
-    "notes": "verstärken = to strengthen/intensify (transitive); sich verstärken = to intensify (intransitive/reflexive).",
-    "related": [],
+    "notes": "stärken = to make stronger, to give strength (Sport stärkt den Körper; das Selbstvertrauen stärken); sich stärken = to have a bite to eat. verstärken = to make something thicker, more intense or more in number (eine Wand, den Ton, eine Mannschaft verstärken); sich verstärken = to grow stronger (Der Sturm verstärkt sich).",
+    "related": [
+      {
+        "word": "stärken",
+        "kind": "contrast"
+      }
+    ],
     "added": "2026-04-07 12:25:00",
     "exercises": [
       {
@@ -26804,7 +26925,7 @@
         "source": "example"
       }
     ],
-    "definition_de": "etw. stärker machen"
+    "definition_de": "etw. stärker machen: dicker, zahlenmäßig größer oder intensiver"
   },
   {
     "id": "sinken",
@@ -28035,9 +28156,13 @@
       {
         "meaning": "to move, to affect (emotionally)",
         "note": null
+      },
+      {
+        "meaning": "to touch on, to mention briefly (a topic)",
+        "note": null
       }
     ],
-    "definition_de": "mit dem Äußeren seines Körpers mit einer Sache oder einer Person in Kontakt kommen",
+    "definition_de": "mit einer Körperoberfläche eine Verbindung herstellen; jmdn. innerlich bewegen",
     "examples": [
       {
         "de": "Bitte nicht berühren!",
@@ -28051,8 +28176,12 @@
     "topics": [
       "body & health"
     ],
-    "notes": "berühren = to touch (physically) or to move (emotionally). berührt = touched/moved (adjective). berühmt = famous (different word!)",
+    "notes": "rühren = to stir; gerührt sein = to be moved, often to tears; das ist rührend von dir = that is sweet of you; sich nicht rühren = not to move. berühren = to touch (physically), to move (Das hat mich tief berührt), or to touch on a topic. Not to be confused with berühmt (famous).",
     "related": [
+      {
+        "word": "rühren",
+        "kind": "contrast"
+      },
       {
         "word": "rührend",
         "kind": "derived"
@@ -31773,7 +31902,7 @@
         "note": null
       }
     ],
-    "definition_de": "an einem bestimmten Ort ankommen",
+    "definition_de": "an einen Ort reisen und dort eintreffen; Gegenteil: abreisen",
     "examples": [
       {
         "de": "Wir reisen am Freitag an.",
@@ -31787,7 +31916,7 @@
     "topics": [
       "travel & movement"
     ],
-    "notes": "anreisen = to arrive/travel to a place. die Anreise = journey there/arrival.",
+    "notes": "anreisen = to arrive/travel to a place. die Anreise = journey there/arrival. ankommen = to arrive, to reach a place (Der Zug kommt um 8 an). anreisen = to travel to a place for a stay or an event (Die Gäste reisen am Freitag an); its opposite is abreisen.",
     "related": [
       {
         "word": "abreisen",
@@ -31796,6 +31925,10 @@
       {
         "word": "die Anreise",
         "kind": "derived"
+      },
+      {
+        "word": "ankommen",
+        "kind": "contrast"
       }
     ],
     "added": "2026-04-07 14:30:00",
@@ -32056,11 +32189,11 @@
     "prefix": "ver-",
     "definitions": [
       {
-        "meaning": "to avoid",
+        "meaning": "to avoid (that something happens), to prevent",
         "note": null
       }
     ],
-    "definition_de": "etwas wenn möglich nicht tun; so handeln, dass etwas möglichst nicht passiert",
+    "definition_de": "es nicht zu etw. kommen lassen, einer Sache ausweichen",
     "examples": [
       {
         "de": "Er versucht, Konflikte zu vermeiden.",
@@ -32072,8 +32205,12 @@
       }
     ],
     "topics": [],
-    "notes": "vermeiden = to avoid (transitive). unvermeidlich = unavoidable.",
+    "notes": "meiden = to keep away from a person, a place or a thing (Er meidet seine Nachbarn; fette Speisen meiden). vermeiden = not to let something happen (Fehler, Streit vermeiden; vermeiden, dass …). They partly overlap. unvermeidlich = unavoidable.",
     "related": [
+      {
+        "word": "meiden",
+        "kind": "contrast"
+      },
       {
         "word": "vermieten",
         "kind": "contrast"
@@ -32883,7 +33020,7 @@
         "note": "+ DAT; action started in past and continues"
       }
     ],
-    "definition_de": "von … an, ausgehend von … (Zeitpunkt)",
+    "definition_de": "von einem bestimmten Zeitpunkt an bis jetzt (mit Dativ); von dem Zeitpunkt an, da (Konjunktion)",
     "examples": [
       {
         "de": "Ich wohne seit drei Jahren in Basel.",
@@ -32897,8 +33034,12 @@
     "topics": [
       "connectors & constructions"
     ],
-    "notes": "seit + DAT = since/for (ongoing). Always with present tense in German (not perfect like in English). seit wann? = since when? / how long?",
+    "notes": "seit + DAT = since/for (ongoing). Always with present tense in German (not perfect like in English). seit wann? = since when? / how long? da (conjunction) = because, as: Da es regnet, bleiben wir zu Hause. seit = since, for (time): seit drei Jahren (preposition + DAT), seit er hier wohnt (conjunction). English since covers both, German does not.",
     "related": [
+      {
+        "word": "da",
+        "kind": "contrast"
+      },
       {
         "word": "seitdem",
         "kind": "contrast"
@@ -36852,7 +36993,7 @@
     "prefix": "an-",
     "definitions": [
       {
-        "meaning": "to offer, to provide",
+        "meaning": "to offer (something to someone)",
         "note": "jmdm. etw. anbieten"
       }
     ],
@@ -36868,8 +37009,13 @@
       }
     ],
     "topics": [],
-    "notes": "das Angebot = offer/supply. anbieten = to offer. sich anbieten = to present itself as an option.",
-    "related": [],
+    "notes": "das Angebot = offer/supply. anbieten = to offer. sich anbieten = to present itself as an option. anbieten = to offer something to someone (Darf ich Ihnen einen Kaffee anbieten?). bieten = to provide, to have to offer, often with a thing as subject (Die Stadt bietet viele Möglichkeiten). sich bieten = to arise (eine Gelegenheit bietet sich).",
+    "related": [
+      {
+        "word": "bieten",
+        "kind": "contrast"
+      }
+    ],
     "added": "2026-04-07 16:25:00",
     "exercises": [
       {
@@ -37258,7 +37404,7 @@
         "note": "in der Forschung arbeiten = to work in research"
       }
     ],
-    "definition_de": "Suche nach Lösungen zu wissenschaftlichen Problemstellungen",
+    "definition_de": "systematisches Untersuchen mit dem Ziel neuer Erkenntnisse; die Forschung auf einem Gebiet insgesamt",
     "examples": [
       {
         "de": "Sie betreibt Forschung auf dem Gebiet der Neurowissenschaften.",
@@ -37272,7 +37418,7 @@
     "topics": [
       "science & academia"
     ],
-    "notes": "die Forschung = research in general, the activity or the field. die Erforschung = the study of one specific thing, almost always with a genitive (die Erforschung des Weltraums). Forschung betreiben = to conduct research. die Forschungsgruppe = research group.",
+    "notes": "die Forschung = research in general, the activity or the field. die Erforschung = the study of one specific thing, almost always with a genitive (die Erforschung des Weltraums). Forschung betreiben = to conduct research. die Forschungsgruppe = research group. die Forschung = (scientific) research, to gain new knowledge. die Recherche = looking up and checking information (journalism, the police, a literature search); often plural: Recherchen.",
     "related": [
       {
         "word": "die Erforschung",
@@ -37285,6 +37431,10 @@
       {
         "word": "erforschen",
         "kind": "derived"
+      },
+      {
+        "word": "die Recherche",
+        "kind": "contrast"
       }
     ],
     "added": "2026-04-07 16:31:00",
@@ -37553,11 +37703,11 @@
     "prefix": "er-",
     "definitions": [
       {
-        "meaning": "to research, to investigate, to explore",
-        "note": null
+        "meaning": "to research, to investigate, to explore (something)",
+        "note": "with a direct object"
       }
     ],
-    "definition_de": "mit wissenschaftlichen Methoden genau untersuchen",
+    "definition_de": "etw. (wissenschaftlich) forschend ergründen",
     "examples": [
       {
         "de": "Sie erforscht die Auswirkungen von Stress auf das Gehirn.",
@@ -37571,8 +37721,12 @@
     "topics": [
       "science & academia"
     ],
-    "notes": "erforschen = to research/explore thoroughly. die Erforschung = the act of researching.",
+    "notes": "forschen has no direct object (forschen an / über; nach etw. forschen = to search for); erforschen has one (das Gehirn, den Kosmos erforschen). die Erforschung = the study of one specific thing.",
     "related": [
+      {
+        "word": "forschen",
+        "kind": "contrast"
+      },
       {
         "word": "untersuchen",
         "kind": "synonym"
@@ -37861,7 +38015,7 @@
         "note": null
       }
     ],
-    "definition_de": "Informationen beschaffen, Nachforschungen betreiben",
+    "definition_de": "nachforschen, etw. zu ermitteln suchen",
     "examples": [
       {
         "de": "Der Journalist recherchierte wochenlang für den Artikel.",
@@ -37875,7 +38029,7 @@
     "topics": [
       "science & academia"
     ],
-    "notes": "recherchieren = to research/investigate (often journalistic). die Literaturrecherche = literature review.",
+    "notes": "recherchieren = to research/investigate (often journalistic). die Literaturrecherche = literature review. forschen = to do (scientific) research. recherchieren = to look into, to look up, to find out (für einen Artikel recherchieren; im Internet recherchieren).",
     "related": [
       {
         "word": "untersuchen",
@@ -37884,6 +38038,10 @@
       {
         "word": "die Recherche",
         "kind": "derived"
+      },
+      {
+        "word": "forschen",
+        "kind": "contrast"
       }
     ],
     "added": "2026-04-07 16:39:00",
@@ -37928,7 +38086,7 @@
         "note": null
       }
     ],
-    "definition_de": "Ermittlung, Untersuchung",
+    "definition_de": "Nachforschung, Ermittlung, Untersuchung",
     "examples": [
       {
         "de": "Die Recherche hat viel Zeit gekostet.",
@@ -37942,7 +38100,7 @@
     "topics": [
       "language & communication"
     ],
-    "notes": null,
+    "notes": "die Forschung = (scientific) research, to gain new knowledge. die Recherche = looking up and checking information (journalism, the police, a literature search); often plural: Recherchen.",
     "related": [
       {
         "word": "die Untersuchung",
@@ -37951,6 +38109,10 @@
       {
         "word": "recherchieren",
         "kind": "derived"
+      },
+      {
+        "word": "die Forschung",
+        "kind": "contrast"
       }
     ],
     "added": "2026-04-07 16:40:00",
@@ -43647,15 +43809,11 @@
     "type": "verb",
     "definitions": [
       {
-        "meaning": "to hurry, to rush",
-        "note": null
-      },
-      {
-        "meaning": "to make haste",
-        "note": null
+        "meaning": "to hurry (up), to be quick",
+        "note": "Beeil dich!"
       }
     ],
-    "definition_de": "(die Geschwindigkeit erhöhen), sich schneller bewegen, schneller machen",
+    "definition_de": "sich eilen, schnell machen",
     "examples": [
       {
         "de": "Wir müssen uns beeilen, sonst verpassen wir den Zug.",
@@ -43669,7 +43827,7 @@
     "topics": [
       "time"
     ],
-    "notes": null,
+    "notes": "sich beeilen = to hurry up, to be quick (Beeil dich!). eilen = to rush somewhere (Sie ist zum Bahnhof geeilt); es eilt = it is urgent (Es eilt nicht = there is no hurry).",
     "added": "2026-04-08 08:37:52",
     "auxiliary": "haben",
     "past_tense": "beeilte sich",
@@ -43681,6 +43839,10 @@
     "family_root": "eilen",
     "prefix": "be-",
     "related": [
+      {
+        "word": "eilen",
+        "kind": "contrast"
+      },
       {
         "word": "zögern",
         "kind": "antonym"
@@ -44019,7 +44181,7 @@
         "note": "physical contact or pressure"
       }
     ],
-    "definition_de": "etwas, jemanden zum Stillstand bringen, stoppen",
+    "definition_de": "etw., jmdn. zum Stillstand bringen; stehen bleiben; andauern",
     "examples": [
       {
         "de": "Der Bus hält an der nächsten Haltestelle an.",
@@ -44028,12 +44190,16 @@
       {
         "de": "Das schöne Wetter hält noch eine Woche an.",
         "en": "The nice weather continues for another week."
+      },
+      {
+        "de": "Der Fahrer musste plötzlich anhalten.",
+        "en": "The driver suddenly had to stop."
       }
     ],
     "topics": [
       "travel & movement"
     ],
-    "notes": "Can mean both 'to stop' and 'to continue' depending on context.",
+    "notes": "Can mean both 'to stop' and 'to continue' depending on context. aufhören = to stop doing something, to come to an end (mit dem Rauchen aufhören; der Regen hört auf). anhalten = to (make) stop moving (Der Bus hält an; ein Auto anhalten), but also to continue, to last (Der Regen hält an!). aufhalten = to hold up, to delay someone (Ich will Sie nicht aufhalten); sich aufhalten = to stay somewhere.",
     "added": "2026-04-08 08:54:34",
     "auxiliary": "haben",
     "past_tense": "hielt an",
@@ -44047,6 +44213,10 @@
     "related": [
       {
         "word": "aufhalten",
+        "kind": "contrast"
+      },
+      {
+        "word": "aufhören",
         "kind": "contrast"
       },
       {
@@ -44485,7 +44655,7 @@
         "note": null
       }
     ],
-    "definition_de": "ergreifen, mitreißen; meistens durch ein vorbeikommendes Fahrzeug",
+    "definition_de": "etw. begreifen, verstehen; Personen, Daten ermitteln und registrieren",
     "examples": [
       {
         "de": "Ich habe den Sinn des Satzes nicht sofort erfasst.",
@@ -44499,7 +44669,7 @@
     "topics": [
       "thinking & perception"
     ],
-    "notes": null,
+    "notes": "Both can mean to grasp, by hand or in the mind. erfassen: to understand something fully (den Sinn erfassen), and to record (Daten erfassen). fassen: in fixed phrases (einen Entschluss fassen, Mut fassen, in Worte fassen); Ich kann es nicht fassen = I cannot believe it.",
     "added": "2026-04-08 09:21:20",
     "auxiliary": "haben",
     "past_tense": "erfasste",
@@ -44510,7 +44680,12 @@
     "reflexive": false,
     "family_root": "fassen",
     "prefix": "er-",
-    "related": [],
+    "related": [
+      {
+        "word": "fassen",
+        "kind": "contrast"
+      }
+    ],
     "exercises": [
       {
         "slot": "part",
@@ -46172,7 +46347,7 @@
         "note": "adjectival: der eigentliche Grund = the real reason"
       }
     ],
-    "definition_de": "in Wahrheit",
+    "definition_de": "in Wirklichkeit; an und für sich, im Grunde genommen",
     "examples": [
       {
         "de": "Eigentlich wollte ich früher schlafen gehen.",
@@ -46186,8 +46361,13 @@
     "topics": [
       "connectors & constructions"
     ],
-    "notes": "Very common filler/hedging word in spoken German, similar to 'actually'.",
-    "related": [],
+    "notes": "Very common filler/hedging word in spoken German, similar to 'actually'. tatsächlich = really, indeed: confirms that something is true, often with surprise (Er hat es tatsächlich geschafft!). eigentlich = actually, in principle: what would be true or planned, often followed by aber (Eigentlich wollte ich früh schlafen, aber …); in questions, by the way (Wo warst du eigentlich?).",
+    "related": [
+      {
+        "word": "tatsächlich",
+        "kind": "contrast"
+      }
+    ],
     "added": "2026-04-10 10:20:00",
     "exercises": [
       {
@@ -57014,7 +57194,7 @@
         "note": "formal/legal contexts"
       }
     ],
-    "definition_de": "etwas nehmen, aufnehmen (was auf dem Boden liegt)",
+    "definition_de": "etw. vom Boden hochheben; etw. aufbewahren; etw. abschaffen",
     "examples": [
       {
         "de": "Kannst du bitte das Spielzeug aufheben?",
@@ -57030,7 +57210,7 @@
       }
     ],
     "topics": [],
-    "notes": "This verb has three distinct meanings that are context-dependent and commonly used in different situations.",
+    "notes": "This verb has three distinct meanings that are context-dependent and commonly used in different situations. abholen = to pick up, to collect (jmdn. vom Bahnhof abholen; ein Paket abholen). aufheben = to pick up from the floor (den Ball aufheben); also to keep (Briefe aufheben) and to abolish (ein Gesetz aufheben).",
     "added": "2026-06-10 10:25:39",
     "auxiliary": "haben",
     "past_tense": "hob auf",
@@ -57044,6 +57224,10 @@
     "related": [
       {
         "word": "aufgeben",
+        "kind": "contrast"
+      },
+      {
+        "word": "abholen",
         "kind": "contrast"
       }
     ],
@@ -59885,7 +60069,7 @@
         "note": "used for children, customs, or habits"
       }
     ],
-    "definition_de": "in Empfang nehmen",
+    "definition_de": "etw. Angebotenes entgegennehmen; etw. vermuten",
     "examples": [
       {
         "de": "Ich nehme das Angebot an.",
@@ -59899,7 +60083,7 @@
     "topics": [
       "thinking & perception"
     ],
-    "notes": null,
+    "notes": "annehmen = to accept something offered (ein Geschenk, eine Einladung, ein Angebot annehmen), and to assume (Ich nehme an, dass …). hinnehmen = to accept something you cannot change or do not like, to put up with (eine Niederlage, Kritik hinnehmen).",
     "added": "2026-06-11 17:06:11",
     "auxiliary": "haben",
     "past_tense": "nahm an",
@@ -59911,7 +60095,12 @@
     "reflexive": false,
     "family_root": "nehmen",
     "prefix": "an-",
-    "related": [],
+    "related": [
+      {
+        "word": "hinnehmen",
+        "kind": "contrast"
+      }
+    ],
     "exercises": [
       {
         "slot": "part",
@@ -62118,15 +62307,11 @@
     "type": "verb",
     "definitions": [
       {
-        "meaning": "to store, to keep, to preserve",
-        "note": null
-      },
-      {
-        "meaning": "to safeguard, to maintain in a safe place",
+        "meaning": "to store, to keep (in a place)",
         "note": null
       }
     ],
-    "definition_de": "etwas an einem geeigneten Ort (zur späteren Verwendung) verwahren",
+    "definition_de": "etw. (für künftige Zeiten) in Verwahrung nehmen, aufheben",
     "examples": [
       {
         "de": "Ich bewahre wichtige Dokumente im Safe auf.",
@@ -62140,7 +62325,7 @@
     "topics": [
       "home & objects"
     ],
-    "notes": null,
+    "notes": "aufbewahren = to store, to keep in a place (Dokumente im Schrank aufbewahren). bewahren = to keep, to preserve a quality (die Ruhe, einen kühlen Kopf bewahren) or to protect from (jmdn. vor etw. bewahren). Gott bewahre! = God forbid!",
     "added": "2026-06-14 19:25:58",
     "auxiliary": "haben",
     "past_tense": "bewahrte auf",
@@ -62151,7 +62336,12 @@
     "reflexive": false,
     "family_root": "bewahren",
     "prefix": "auf-",
-    "related": [],
+    "related": [
+      {
+        "word": "bewahren",
+        "kind": "contrast"
+      }
+    ],
     "exercises": [
       {
         "slot": "part",
@@ -63869,7 +64059,12 @@
     "reflexive": false,
     "family_root": "bewahren",
     "prefix": null,
-    "related": [],
+    "related": [
+      {
+        "word": "aufbewahren",
+        "kind": "contrast"
+      }
+    ],
     "definitions": [
       {
         "meaning": "to keep, to preserve, to maintain",
@@ -63880,7 +64075,7 @@
         "note": null
       }
     ],
-    "definition_de": "etwas Positives auch in einer schwierigen Situation beibehalten",
+    "definition_de": "etw. auch weiterhin beibehalten, wahren; jmdn., etw. vor etw. beschützen",
     "examples": [
       {
         "de": "Trotz des Stresses bewahrte sie die Ruhe.",
@@ -63889,10 +64084,14 @@
       {
         "de": "Das Dorf hat seine alte Sprache lange bewahrt.",
         "en": "The village preserved its old language for a long time."
+      },
+      {
+        "de": "Bitte bewahren Sie Ruhe!",
+        "en": "Please stay calm!"
       }
     ],
     "topics": [],
-    "notes": null,
+    "notes": "aufbewahren = to store, to keep in a place (Dokumente im Schrank aufbewahren). bewahren = to keep, to preserve a quality (die Ruhe, einen kühlen Kopf bewahren) or to protect from (jmdn. vor etw. bewahren). Gott bewahre! = God forbid!",
     "added": "2026-10-11",
     "exercises": [
       {
@@ -63936,11 +64135,16 @@
     "reflexive": false,
     "family_root": "bieten",
     "prefix": null,
-    "related": [],
+    "related": [
+      {
+        "word": "anbieten",
+        "kind": "contrast"
+      }
+    ],
     "definitions": [
       {
-        "meaning": "to offer, to provide",
-        "note": null
+        "meaning": "to offer, to provide (a possibility, a view, comfort)",
+        "note": "often with a thing as subject"
       },
       {
         "meaning": "to bid (at an auction)",
@@ -63956,10 +64160,14 @@
       {
         "de": "Das Hotel hat seinen Gästen viel Komfort geboten.",
         "en": "The hotel offered its guests a lot of comfort."
+      },
+      {
+        "de": "Die Stadt bietet viele Möglichkeiten für junge Familien.",
+        "en": "The city offers many opportunities for young families."
       }
     ],
     "topics": [],
-    "notes": null,
+    "notes": "anbieten = to offer something to someone (Darf ich Ihnen einen Kaffee anbieten?). bieten = to provide, to have to offer, often with a thing as subject (Die Stadt bietet viele Möglichkeiten). sich bieten = to arise (eine Gelegenheit bietet sich).",
     "added": "2026-10-11",
     "exercises": [
       {
@@ -64072,18 +64280,23 @@
     "reflexive": false,
     "family_root": "eilen",
     "prefix": null,
-    "related": [],
+    "related": [
+      {
+        "word": "sich beeilen",
+        "kind": "contrast"
+      }
+    ],
     "definitions": [
       {
-        "meaning": "to hurry, to rush",
-        "note": null
+        "meaning": "to rush, to hurry (somewhere)",
+        "note": "with sein"
       },
       {
         "meaning": "es eilt: it is urgent",
-        "note": null
+        "note": "with haben"
       }
     ],
-    "definition_de": "schnell gehen, um ein Ziel möglichst schnell zu erreichen",
+    "definition_de": "sich in Eile fortbewegen; (etw. eilt) schnell erledigt werden müssen",
     "examples": [
       {
         "de": "Nach der Arbeit eilte sie zum Bahnhof.",
@@ -64097,7 +64310,7 @@
     "topics": [
       "time"
     ],
-    "notes": null,
+    "notes": "sich beeilen = to hurry up, to be quick (Beeil dich!). eilen = to rush somewhere (Sie ist zum Bahnhof geeilt); es eilt = it is urgent (Es eilt nicht = there is no hurry).",
     "added": "2026-10-11",
     "exercises": [
       {
@@ -64282,22 +64495,35 @@
     "reflexive": false,
     "family_root": "fassen",
     "prefix": null,
-    "related": [],
+    "related": [
+      {
+        "word": "erfassen",
+        "kind": "contrast"
+      }
+    ],
     "definitions": [
       {
         "meaning": "to grasp, to take hold of",
         "note": null
       },
       {
+        "meaning": "to grasp, to take in (mentally)",
+        "note": "Ich kann es nicht fassen = I cannot believe it"
+      },
+      {
         "meaning": "einen Entschluss fassen: to make a decision",
         "note": null
       },
       {
-        "meaning": "to take in, to comprehend",
+        "meaning": "to hold (a number of people or things)",
+        "note": "Der Saal fasst 200 Personen"
+      },
+      {
+        "meaning": "sich fassen: to compose oneself",
         "note": null
       }
     ],
-    "definition_de": "mit der Hand ergreifen und festhalten",
+    "definition_de": "nach etw. greifen und es festhalten; etw. verstehen, begreifen",
     "examples": [
       {
         "de": "Er fasste das Kind an der Hand.",
@@ -64306,10 +64532,14 @@
       {
         "de": "Nach langem Überlegen hat sie einen Entschluss gefasst.",
         "en": "After thinking for a long time, she made a decision."
+      },
+      {
+        "de": "Ich kann es nicht fassen, dass du schon zwanzig bist!",
+        "en": "I cannot believe you are already twenty!"
       }
     ],
     "topics": [],
-    "notes": null,
+    "notes": "Both can mean to grasp, by hand or in the mind. erfassen: to understand something fully (den Sinn erfassen), and to record (Daten erfassen). fassen: in fixed phrases (einen Entschluss fassen, Mut fassen, in Worte fassen); Ich kann es nicht fassen = I cannot believe it.",
     "added": "2026-10-11",
     "exercises": [
       {
@@ -64353,18 +64583,27 @@
     "reflexive": false,
     "family_root": "forschen",
     "prefix": null,
-    "related": [],
+    "related": [
+      {
+        "word": "erforschen",
+        "kind": "contrast"
+      },
+      {
+        "word": "recherchieren",
+        "kind": "contrast"
+      }
+    ],
     "definitions": [
       {
         "meaning": "to research, to do research",
-        "note": null
+        "note": "no direct object: forschen an / über"
       },
       {
         "meaning": "forschen nach: to search for, to look into",
         "note": null
       }
     ],
-    "definition_de": "sich intensiv um wissenschaftliche Erkenntnis bemühen",
+    "definition_de": "gründlich, systematisch nach (wissenschaftlicher) Erkenntnis suchen",
     "examples": [
       {
         "de": "Sie forschte drei Jahre lang an einem neuen Impfstoff.",
@@ -64373,12 +64612,16 @@
       {
         "de": "Er hat lange nach der Herkunft seiner Familie geforscht.",
         "en": "He searched for a long time for his family's origins."
+      },
+      {
+        "de": "An der Universität forscht sie über Datenvisualisierung.",
+        "en": "At the university she does research on data visualisation."
       }
     ],
     "topics": [
       "science & academia"
     ],
-    "notes": null,
+    "notes": "forschen has no direct object (forschen an / über; nach etw. forschen = to search for); erforschen has one (das Gehirn, den Kosmos erforschen). die Forschung = research; der Forscher = researcher. forschen = to do (scientific) research. recherchieren = to look into, to look up, to find out (für einen Artikel recherchieren; im Internet recherchieren).",
     "added": "2026-10-11",
     "exercises": [
       {
@@ -64826,14 +65069,19 @@
     "reflexive": false,
     "family_root": "meiden",
     "prefix": null,
-    "related": [],
+    "related": [
+      {
+        "word": "vermeiden",
+        "kind": "contrast"
+      }
+    ],
     "definitions": [
       {
-        "meaning": "to avoid, to keep away from",
+        "meaning": "to keep away from, to shun (a person, a place, a thing)",
         "note": null
       }
     ],
-    "definition_de": "etwas dafür tun, einer Person oder Sache nicht zu begegnen",
+    "definition_de": "sich von etw., jmdm. fernhalten, sich bemühen, mit etw., jmdm. nicht in Berührung zu kommen",
     "examples": [
       {
         "de": "Nach dem Streit mied er seine Nachbarn.",
@@ -64842,10 +65090,14 @@
       {
         "de": "Ich habe Zucker eine Woche lang ganz gemieden.",
         "en": "I avoided sugar completely for a week."
+      },
+      {
+        "de": "Im Sommer meide ich über Mittag die Sonne.",
+        "en": "In summer I keep out of the midday sun."
       }
     ],
     "topics": [],
-    "notes": null,
+    "notes": "meiden = to keep away from a person, a place or a thing (Er meidet seine Nachbarn; fette Speisen meiden). vermeiden = not to let something happen (Fehler, Streit vermeiden; vermeiden, dass …). They partly overlap.",
     "added": "2026-10-11",
     "exercises": [
       {
@@ -65023,7 +65275,12 @@
     "reflexive": false,
     "family_root": "rühren",
     "prefix": null,
-    "related": [],
+    "related": [
+      {
+        "word": "berühren",
+        "kind": "contrast"
+      }
+    ],
     "definitions": [
       {
         "meaning": "to stir",
@@ -65031,10 +65288,14 @@
       },
       {
         "meaning": "to move, to touch (emotionally)",
-        "note": null
+        "note": "gerührt sein = to be moved"
+      },
+      {
+        "meaning": "sich rühren: to move (a little)",
+        "note": "Niemand rührte sich."
       }
     ],
-    "definition_de": "eine Masse durch eine Kreisbewegung durchmischen",
+    "definition_de": "eine Masse (mit einem Löffel) kreisend bewegen; jmdn. innerlich bewegen",
     "examples": [
       {
         "de": "Sie rührte langsam die Soße im Topf.",
@@ -65043,13 +65304,17 @@
       {
         "de": "Seine Rede hat alle Gäste zu Tränen gerührt.",
         "en": "His speech moved all the guests to tears."
+      },
+      {
+        "de": "Sie rührt den Teig mit einem Holzlöffel.",
+        "en": "She stirs the dough with a wooden spoon."
       }
     ],
     "topics": [
       "food & drink",
       "emotions & character"
     ],
-    "notes": null,
+    "notes": "rühren = to stir; gerührt sein = to be moved, often to tears; das ist rührend von dir = that is sweet of you; sich nicht rühren = not to move. berühren = to touch (physically), to move (Das hat mich tief berührt), or to touch on a topic.",
     "added": "2026-10-11",
     "exercises": [
       {
@@ -65093,7 +65358,12 @@
     "reflexive": false,
     "family_root": "schließen",
     "prefix": null,
-    "related": [],
+    "related": [
+      {
+        "word": "abschließen",
+        "kind": "contrast"
+      }
+    ],
     "definitions": [
       {
         "meaning": "to close, to shut",
@@ -65104,7 +65374,7 @@
         "note": null
       }
     ],
-    "definition_de": "eine Öffnung oder den Verschluss einer solchen zumachen",
+    "definition_de": "etw. Geöffnetes zumachen; mit einem Schlüssel zuschließen; etw. beenden",
     "examples": [
       {
         "de": "Wegen des Regens schloss sie alle Fenster.",
@@ -65113,10 +65383,14 @@
       {
         "de": "Die Bäckerei hat heute schon um drei Uhr geschlossen.",
         "en": "The bakery closed at three o'clock today."
+      },
+      {
+        "de": "Schließ bitte das Fenster, es zieht.",
+        "en": "Please close the window, there is a draught."
       }
     ],
     "topics": [],
-    "notes": null,
+    "notes": "schließen = to close (Schließ bitte das Fenster); it can also mean to lock. abschließen = to lock with a key (Ich schließe die Tür ab), and to finish or conclude (das Studium, einen Vertrag abschließen). In Switzerland written schliessen / abschliessen.",
     "added": "2026-10-11",
     "exercises": [
       {
@@ -65396,14 +65670,23 @@
     "reflexive": false,
     "family_root": "stärken",
     "prefix": null,
-    "related": [],
-    "definitions": [
+    "related": [
       {
-        "meaning": "to strengthen",
-        "note": null
+        "word": "verstärken",
+        "kind": "contrast"
       }
     ],
-    "definition_de": "stark, belastbar machen; kräftiger, leistungsfähiger machen",
+    "definitions": [
+      {
+        "meaning": "to strengthen, to make stronger (body, confidence, a team)",
+        "note": null
+      },
+      {
+        "meaning": "sich stärken: to have something to eat or drink",
+        "note": "before or after an effort"
+      }
+    ],
+    "definition_de": "jmdn., etw. stark machen; jmdm. innere Kraft verleihen",
     "examples": [
       {
         "de": "Das Training stärkte seine Rückenmuskeln.",
@@ -65412,10 +65695,14 @@
       {
         "de": "Der Erfolg hat ihr Selbstvertrauen gestärkt.",
         "en": "The success boosted her self-confidence."
+      },
+      {
+        "de": "Sport stärkt das Immunsystem.",
+        "en": "Exercise strengthens the immune system."
       }
     ],
     "topics": [],
-    "notes": null,
+    "notes": "stärken = to make stronger, to give strength (Sport stärkt den Körper; das Selbstvertrauen stärken); sich stärken = to have a bite to eat. verstärken = to make something thicker, more intense or more in number (eine Wand, den Ton, eine Mannschaft verstärken); sich verstärken = to grow stronger (Der Sturm verstärkt sich).",
     "added": "2026-10-11",
     "exercises": [
       {
@@ -65525,7 +65812,12 @@
     "reflexive": false,
     "family_root": "treten",
     "prefix": null,
-    "related": [],
+    "related": [
+      {
+        "word": "betreten",
+        "kind": "contrast"
+      }
+    ],
     "definitions": [
       {
         "meaning": "to step",
@@ -65536,7 +65828,7 @@
         "note": null
       }
     ],
-    "definition_de": "mit der Fußsohle berühren, wobei meist das Körpergewicht darauf lastet",
+    "definition_de": "sich mit einem Schritt in eine bestimmte Richtung begeben; jmdn. mit dem Fuß stoßen",
     "examples": [
       {
         "de": "Vorsichtig trat sie auf das dünne Eis.",
@@ -65545,10 +65837,14 @@
       {
         "de": "Er ist aus Versehen in eine Pfütze getreten.",
         "en": "He accidentally stepped into a puddle."
+      },
+      {
+        "de": "Bitte treten Sie näher!",
+        "en": "Please come closer!"
       }
     ],
     "topics": [],
-    "notes": null,
+    "notes": "betreten = to enter or set foot on, with a direct object (den Raum betreten). treten = to step, with a preposition (ins Zimmer treten, auf die Bremse treten); jmdn. treten = to kick someone.",
     "added": "2026-10-11",
     "exercises": [
       {
@@ -68364,8 +68660,13 @@
     "topics": [
       "connectors & constructions"
     ],
-    "notes": "Adds a restriction or a side remark: Das Essen war gut, wobei die Portionen etwas klein waren. Also: during which (Er fiel vom Fahrrad, wobei er sich verletzte).",
-    "related": [],
+    "notes": "Adds a restriction or a side remark: Das Essen war gut, wobei die Portionen etwas klein waren. Also: during which (Er fiel vom Fahrrad, wobei er sich verletzte). obwohl = although: a concession (Obwohl es regnete, gingen wir spazieren). wobei = though, while: adds a restriction or a side remark after the main clause (Das Hotel war schön, wobei das Frühstück teuer war).",
+    "related": [
+      {
+        "word": "obwohl",
+        "kind": "contrast"
+      }
+    ],
     "added": "2026-10-11",
     "exercises": [
       {

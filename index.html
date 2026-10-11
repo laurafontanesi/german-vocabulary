@@ -1880,7 +1880,7 @@ function wordForms(w) {
   if (tok) {
     let ends = ['e','en','er','es','em'], stems = [tok];
     if (w.type === 'verb') {
-      ends = ['e','st','t','en','et','est','te','test','ten','tet','end'];
+      ends = ['','e','st','t','en','et','est','te','test','ten','tet','end'];
       stems = [tok.replace(/e?n$/, '')];
       const pfx = w.is_separable ? (w.prefix || '').replace(/-/g, '').toLowerCase() : '';
       if (pfx && tok.startsWith(pfx)) { stems.push(tok.slice(pfx.length).replace(/e?n$/, '')); forms.add(pfx + 'zu' + tok.slice(pfx.length)); }

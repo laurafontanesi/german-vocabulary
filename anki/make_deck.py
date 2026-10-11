@@ -199,7 +199,7 @@ def word_forms(w):
                 stems.add(re.sub(r'e?n$', '', tok[len(pfx):]))
                 forms.add(pfx + 'zu' + tok[len(pfx):])
             for st in stems:
-                forms |= {st + e for e in ('e', 'st', 't', 'en', 'et', 'est', 'te', 'test', 'ten', 'tet', 'end')}
+                forms |= {st + e for e in ('', 'e', 'st', 't', 'en', 'et', 'est', 'te', 'test', 'ten', 'tet', 'end')}
         elif t == 'noun':
             forms |= {tok + e for e in ('s', 'es', 'n', 'en', 'e', 'er', 'ern')}
         else:
