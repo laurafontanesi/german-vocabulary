@@ -1,76 +1,65 @@
 # Card templates (generated — do not edit by hand)
 
-Note type: **Deutsch**. Create the 113 fields in exactly this order, then one card type per section below, named as in the heading, and paste its front and back.
+Note type: **Deutsch**. Create the 114 fields in exactly this order, then one card type per section below, named as in the heading, and paste its front and back.
 
 ## Fields
 
 ```
-Wort, Typ, Formen, Englisch, EnglischKurz, Beispiel, BeispielEN, Beispiel2, Beispiel2EN, Verwandt, Notiz, Praet_Frage, Praet_Antwort, Praet_Ganz, Praet_GanzEN, Praet_Hinweis, Praet_Quelle, Part_Frage, Part_Antwort, Part_Ganz, Part_GanzEN, Part_Hinweis, Part_Quelle, Praes_Frage, Praes_Antwort, Praes_Ganz, Praes_GanzEN, Praes_Hinweis, Praes_Quelle, Refl_Frage, Refl_Antwort, Refl_Ganz, Refl_GanzEN, Refl_Hinweis, Refl_Quelle, Kasus1_Frage, Kasus1_Antwort, Kasus1_Ganz, Kasus1_GanzEN, Kasus1_Hinweis, Kasus1_Quelle, Kasus2_Frage, Kasus2_Antwort, Kasus2_Ganz, Kasus2_GanzEN, Kasus2_Hinweis, Kasus2_Quelle, AdjArt_Frage, AdjArt_Antwort, AdjArt_Ganz, AdjArt_GanzEN, AdjArt_Hinweis, AdjArt_Quelle, AdjDet_Frage, AdjDet_Antwort, AdjDet_Ganz, AdjDet_GanzEN, AdjDet_Hinweis, AdjDet_Quelle, Praep1_Frage, Praep1_Antwort, Praep1_Ganz, Praep1_GanzEN, Praep1_Hinweis, Praep1_Quelle, Praep2_Frage, Praep2_Antwort, Praep2_Ganz, Praep2_GanzEN, Praep2_Hinweis, Praep2_Quelle, Luecke1_Frage, Luecke1_Antwort, Luecke1_Ganz, Luecke1_GanzEN, Luecke1_Hinweis, Luecke1_Quelle, Luecke2_Frage, Luecke2_Antwort, Luecke2_Ganz, Luecke2_GanzEN, Luecke2_Hinweis, Luecke2_Quelle, Luecke3_Frage, Luecke3_Antwort, Luecke3_Ganz, Luecke3_GanzEN, Luecke3_Hinweis, Luecke3_Quelle, Luecke4_Frage, Luecke4_Antwort, Luecke4_Ganz, Luecke4_GanzEN, Luecke4_Hinweis, Luecke4_Quelle, Kontrast_Frage, Kontrast_Antwort, Kontrast_Ganz, Kontrast_GanzEN, Kontrast_Hinweis, Kontrast_Quelle, Neben_Frage, Neben_Antwort, Neben_Ganz, Neben_GanzEN, Neben_Hinweis, Neben_Quelle, Komma_Frage, Komma_Antwort, Komma_Ganz, Komma_GanzEN, Komma_Hinweis, Komma_Quelle
+Wort, Typ, Formen, Englisch, EnglischFrage, EnglischKurz, Beispiel, BeispielEN, Beispiel2, Beispiel2EN, Verwandt, Notiz, Praet_Frage, Praet_Antwort, Praet_Ganz, Praet_GanzEN, Praet_Hinweis, Praet_Quelle, Part_Frage, Part_Antwort, Part_Ganz, Part_GanzEN, Part_Hinweis, Part_Quelle, Praes_Frage, Praes_Antwort, Praes_Ganz, Praes_GanzEN, Praes_Hinweis, Praes_Quelle, Refl_Frage, Refl_Antwort, Refl_Ganz, Refl_GanzEN, Refl_Hinweis, Refl_Quelle, Kasus1_Frage, Kasus1_Antwort, Kasus1_Ganz, Kasus1_GanzEN, Kasus1_Hinweis, Kasus1_Quelle, Kasus2_Frage, Kasus2_Antwort, Kasus2_Ganz, Kasus2_GanzEN, Kasus2_Hinweis, Kasus2_Quelle, AdjArt_Frage, AdjArt_Antwort, AdjArt_Ganz, AdjArt_GanzEN, AdjArt_Hinweis, AdjArt_Quelle, AdjDet_Frage, AdjDet_Antwort, AdjDet_Ganz, AdjDet_GanzEN, AdjDet_Hinweis, AdjDet_Quelle, Praep1_Frage, Praep1_Antwort, Praep1_Ganz, Praep1_GanzEN, Praep1_Hinweis, Praep1_Quelle, Praep2_Frage, Praep2_Antwort, Praep2_Ganz, Praep2_GanzEN, Praep2_Hinweis, Praep2_Quelle, Luecke1_Frage, Luecke1_Antwort, Luecke1_Ganz, Luecke1_GanzEN, Luecke1_Hinweis, Luecke1_Quelle, Luecke2_Frage, Luecke2_Antwort, Luecke2_Ganz, Luecke2_GanzEN, Luecke2_Hinweis, Luecke2_Quelle, Luecke3_Frage, Luecke3_Antwort, Luecke3_Ganz, Luecke3_GanzEN, Luecke3_Hinweis, Luecke3_Quelle, Luecke4_Frage, Luecke4_Antwort, Luecke4_Ganz, Luecke4_GanzEN, Luecke4_Hinweis, Luecke4_Quelle, Kontrast_Frage, Kontrast_Antwort, Kontrast_Ganz, Kontrast_GanzEN, Kontrast_Hinweis, Kontrast_Quelle, Neben_Frage, Neben_Antwort, Neben_Ganz, Neben_GanzEN, Neben_Hinweis, Neben_Quelle, Komma_Frage, Komma_Antwort, Komma_Ganz, Komma_GanzEN, Komma_Hinweis, Komma_Quelle
 ```
 
-Tags are column 114.
+Tags are column 115.
 
-## 1 — Präteritum
+## 1 — Bedeutung
 
 **Front**
 ```html
 <div class="karte">
-{{#Praet_Frage}}
-<div class="kopf">Präteritum <span class="pill verb">{{Typ}}</span></div>
-<div class="satz">{{Praet_Frage}}</div>
-{{#Praet_GanzEN}}<div class="en2">{{Praet_GanzEN}}</div>{{/Praet_GanzEN}}
-<div class="hinweis">{{Praet_Hinweis}}</div>
-{{type:Praet_Antwort}}
-{{/Praet_Frage}}
+<div class="kopf">Bedeutung <span class="pill other">{{Typ}}</span></div>
+<div class="wort">{{Wort}}</div>
+<div class="hinweis">kurze englische Bedeutung</div>
+{{type:EnglischKurz}}
 </div>
 ```
 
 **Back**
 ```html
 <div class="karte">
-<div class="kopf">Präteritum <span class="pill verb">{{Typ}}</span></div>
+<div class="kopf">Bedeutung <span class="pill other">{{Typ}}</span></div>
 <div class="wort">{{Wort}}</div>
 <hr id=answer>
-{{type:Praet_Antwort}}
-<div class="satz">{{Praet_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Praet_Ganz}}</div>
-{{#Praet_GanzEN}}<div class="en2">{{Praet_GanzEN}}</div>{{/Praet_GanzEN}}
+{{type:EnglischKurz}}
 {{#Englisch}}<div class="block"><div class="label">Bedeutung</div><div class="en">{{Englisch}}</div></div>{{/Englisch}}
 {{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
+{{#Beispiel}}<div class="block"><div class="label">Beispiele</div><div class="bsp">{{Beispiel}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Beispiel}}</div>{{#BeispielEN}}<div class="en2">{{BeispielEN}}</div>{{/BeispielEN}}{{#Beispiel2}}<div class="bsp">{{Beispiel2}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Beispiel2}}</div>{{/Beispiel2}}{{#Beispiel2EN}}<div class="en2">{{Beispiel2EN}}</div>{{/Beispiel2EN}}</div>{{/Beispiel}}
 {{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
 {{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
-{{#Praet_Quelle}}<div class="quelle">{{Praet_Quelle}}</div>{{/Praet_Quelle}}
 </div>
 ```
 
-## 2 — Partizip II
+## 2 — Produzieren
 
 **Front**
 ```html
 <div class="karte">
-{{#Part_Frage}}
-<div class="kopf">Partizip II <span class="pill verb">{{Typ}}</span></div>
-<div class="satz">{{Part_Frage}}</div>
-{{#Part_GanzEN}}<div class="en2">{{Part_GanzEN}}</div>{{/Part_GanzEN}}
-<div class="hinweis">{{Part_Hinweis}}</div>
-{{type:Part_Antwort}}
-{{/Part_Frage}}
+<div class="kopf">Produzieren <span class="pill other">{{Typ}}</span></div>
+<div class="en gross">{{EnglischFrage}}</div>
+<div class="hinweis">Nomen mit Artikel</div>
+{{type:Wort}}
 </div>
 ```
 
 **Back**
 ```html
 <div class="karte">
-<div class="kopf">Partizip II <span class="pill verb">{{Typ}}</span></div>
-<div class="wort">{{Wort}}</div>
+<div class="kopf">Produzieren <span class="pill other">{{Typ}}</span></div>
+<div class="en gross">{{Englisch}}</div>
 <hr id=answer>
-{{type:Part_Antwort}}
-<div class="satz">{{Part_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Part_Ganz}}</div>
-{{#Part_GanzEN}}<div class="en2">{{Part_GanzEN}}</div>{{/Part_GanzEN}}
-{{#Englisch}}<div class="block"><div class="label">Bedeutung</div><div class="en">{{Englisch}}</div></div>{{/Englisch}}
+{{type:Wort}}
 {{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
+{{#Beispiel}}<div class="block"><div class="label">Beispiele</div><div class="bsp">{{Beispiel}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Beispiel}}</div>{{#BeispielEN}}<div class="en2">{{BeispielEN}}</div>{{/BeispielEN}}{{#Beispiel2}}<div class="bsp">{{Beispiel2}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Beispiel2}}</div>{{/Beispiel2}}{{#Beispiel2EN}}<div class="en2">{{Beispiel2EN}}</div>{{/Beispiel2EN}}</div>{{/Beispiel}}
 {{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
 {{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
-{{#Part_Quelle}}<div class="quelle">{{Part_Quelle}}</div>{{/Part_Quelle}}
 </div>
 ```
 
@@ -138,135 +127,7 @@ Tags are column 114.
 </div>
 ```
 
-## 5 — Kasus
-
-**Front**
-```html
-<div class="karte">
-{{#Kasus1_Frage}}
-<div class="kopf">Kasus <span class="pill noun">{{Typ}}</span></div>
-<div class="satz">{{Kasus1_Frage}}</div>
-{{#Kasus1_GanzEN}}<div class="en2">{{Kasus1_GanzEN}}</div>{{/Kasus1_GanzEN}}
-<div class="hinweis">{{Kasus1_Hinweis}}</div>
-{{type:Kasus1_Antwort}}
-{{/Kasus1_Frage}}
-</div>
-```
-
-**Back**
-```html
-<div class="karte">
-<div class="kopf">Kasus <span class="pill noun">{{Typ}}</span></div>
-<div class="wort">{{Wort}}</div>
-<hr id=answer>
-{{type:Kasus1_Antwort}}
-<div class="satz">{{Kasus1_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Kasus1_Ganz}}</div>
-{{#Kasus1_GanzEN}}<div class="en2">{{Kasus1_GanzEN}}</div>{{/Kasus1_GanzEN}}
-{{#Englisch}}<div class="block"><div class="label">Bedeutung</div><div class="en">{{Englisch}}</div></div>{{/Englisch}}
-{{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
-{{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
-{{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
-{{#Kasus1_Quelle}}<div class="quelle">{{Kasus1_Quelle}}</div>{{/Kasus1_Quelle}}
-</div>
-```
-
-## 6 — Kasus 2
-
-**Front**
-```html
-<div class="karte">
-{{#Kasus2_Frage}}
-<div class="kopf">Kasus <span class="pill noun">{{Typ}}</span></div>
-<div class="satz">{{Kasus2_Frage}}</div>
-{{#Kasus2_GanzEN}}<div class="en2">{{Kasus2_GanzEN}}</div>{{/Kasus2_GanzEN}}
-<div class="hinweis">{{Kasus2_Hinweis}}</div>
-{{type:Kasus2_Antwort}}
-{{/Kasus2_Frage}}
-</div>
-```
-
-**Back**
-```html
-<div class="karte">
-<div class="kopf">Kasus <span class="pill noun">{{Typ}}</span></div>
-<div class="wort">{{Wort}}</div>
-<hr id=answer>
-{{type:Kasus2_Antwort}}
-<div class="satz">{{Kasus2_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Kasus2_Ganz}}</div>
-{{#Kasus2_GanzEN}}<div class="en2">{{Kasus2_GanzEN}}</div>{{/Kasus2_GanzEN}}
-{{#Englisch}}<div class="block"><div class="label">Bedeutung</div><div class="en">{{Englisch}}</div></div>{{/Englisch}}
-{{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
-{{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
-{{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
-{{#Kasus2_Quelle}}<div class="quelle">{{Kasus2_Quelle}}</div>{{/Kasus2_Quelle}}
-</div>
-```
-
-## 7 — Adjektiv nach Artikel
-
-**Front**
-```html
-<div class="karte">
-{{#AdjArt_Frage}}
-<div class="kopf">Adjektiv nach Artikel <span class="pill adjadv">{{Typ}}</span></div>
-<div class="satz">{{AdjArt_Frage}}</div>
-{{#AdjArt_GanzEN}}<div class="en2">{{AdjArt_GanzEN}}</div>{{/AdjArt_GanzEN}}
-<div class="hinweis">{{AdjArt_Hinweis}}</div>
-{{type:AdjArt_Antwort}}
-{{/AdjArt_Frage}}
-</div>
-```
-
-**Back**
-```html
-<div class="karte">
-<div class="kopf">Adjektiv nach Artikel <span class="pill adjadv">{{Typ}}</span></div>
-<div class="wort">{{Wort}}</div>
-<hr id=answer>
-{{type:AdjArt_Antwort}}
-<div class="satz">{{AdjArt_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:AdjArt_Ganz}}</div>
-{{#AdjArt_GanzEN}}<div class="en2">{{AdjArt_GanzEN}}</div>{{/AdjArt_GanzEN}}
-{{#Englisch}}<div class="block"><div class="label">Bedeutung</div><div class="en">{{Englisch}}</div></div>{{/Englisch}}
-{{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
-{{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
-{{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
-{{#AdjArt_Quelle}}<div class="quelle">{{AdjArt_Quelle}}</div>{{/AdjArt_Quelle}}
-</div>
-```
-
-## 8 — Adjektiv nach Begleiter
-
-**Front**
-```html
-<div class="karte">
-{{#AdjDet_Frage}}
-<div class="kopf">Adjektiv nach Begleiter <span class="pill adjadv">{{Typ}}</span></div>
-<div class="satz">{{AdjDet_Frage}}</div>
-{{#AdjDet_GanzEN}}<div class="en2">{{AdjDet_GanzEN}}</div>{{/AdjDet_GanzEN}}
-<div class="hinweis">{{AdjDet_Hinweis}}</div>
-{{type:AdjDet_Antwort}}
-{{/AdjDet_Frage}}
-</div>
-```
-
-**Back**
-```html
-<div class="karte">
-<div class="kopf">Adjektiv nach Begleiter <span class="pill adjadv">{{Typ}}</span></div>
-<div class="wort">{{Wort}}</div>
-<hr id=answer>
-{{type:AdjDet_Antwort}}
-<div class="satz">{{AdjDet_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:AdjDet_Ganz}}</div>
-{{#AdjDet_GanzEN}}<div class="en2">{{AdjDet_GanzEN}}</div>{{/AdjDet_GanzEN}}
-{{#Englisch}}<div class="block"><div class="label">Bedeutung</div><div class="en">{{Englisch}}</div></div>{{/Englisch}}
-{{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
-{{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
-{{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
-{{#AdjDet_Quelle}}<div class="quelle">{{AdjDet_Quelle}}</div>{{/AdjDet_Quelle}}
-</div>
-```
-
-## 9 — Verb + Präposition
+## 5 — Verb + Präposition
 
 **Front**
 ```html
@@ -298,7 +159,7 @@ Tags are column 114.
 </div>
 ```
 
-## 10 — Verb + Präposition 2
+## 6 — Verb + Präposition 2
 
 **Front**
 ```html
@@ -330,7 +191,199 @@ Tags are column 114.
 </div>
 ```
 
-## 11 — Lücke 1
+## 7 — Partizip II
+
+**Front**
+```html
+<div class="karte">
+{{#Part_Frage}}
+<div class="kopf">Partizip II <span class="pill verb">{{Typ}}</span></div>
+<div class="satz">{{Part_Frage}}</div>
+{{#Part_GanzEN}}<div class="en2">{{Part_GanzEN}}</div>{{/Part_GanzEN}}
+<div class="hinweis">{{Part_Hinweis}}</div>
+{{type:Part_Antwort}}
+{{/Part_Frage}}
+</div>
+```
+
+**Back**
+```html
+<div class="karte">
+<div class="kopf">Partizip II <span class="pill verb">{{Typ}}</span></div>
+<div class="wort">{{Wort}}</div>
+<hr id=answer>
+{{type:Part_Antwort}}
+<div class="satz">{{Part_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Part_Ganz}}</div>
+{{#Part_GanzEN}}<div class="en2">{{Part_GanzEN}}</div>{{/Part_GanzEN}}
+{{#Englisch}}<div class="block"><div class="label">Bedeutung</div><div class="en">{{Englisch}}</div></div>{{/Englisch}}
+{{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
+{{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
+{{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
+{{#Part_Quelle}}<div class="quelle">{{Part_Quelle}}</div>{{/Part_Quelle}}
+</div>
+```
+
+## 8 — Präteritum
+
+**Front**
+```html
+<div class="karte">
+{{#Praet_Frage}}
+<div class="kopf">Präteritum <span class="pill verb">{{Typ}}</span></div>
+<div class="satz">{{Praet_Frage}}</div>
+{{#Praet_GanzEN}}<div class="en2">{{Praet_GanzEN}}</div>{{/Praet_GanzEN}}
+<div class="hinweis">{{Praet_Hinweis}}</div>
+{{type:Praet_Antwort}}
+{{/Praet_Frage}}
+</div>
+```
+
+**Back**
+```html
+<div class="karte">
+<div class="kopf">Präteritum <span class="pill verb">{{Typ}}</span></div>
+<div class="wort">{{Wort}}</div>
+<hr id=answer>
+{{type:Praet_Antwort}}
+<div class="satz">{{Praet_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Praet_Ganz}}</div>
+{{#Praet_GanzEN}}<div class="en2">{{Praet_GanzEN}}</div>{{/Praet_GanzEN}}
+{{#Englisch}}<div class="block"><div class="label">Bedeutung</div><div class="en">{{Englisch}}</div></div>{{/Englisch}}
+{{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
+{{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
+{{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
+{{#Praet_Quelle}}<div class="quelle">{{Praet_Quelle}}</div>{{/Praet_Quelle}}
+</div>
+```
+
+## 9 — Kasus
+
+**Front**
+```html
+<div class="karte">
+{{#Kasus1_Frage}}
+<div class="kopf">Kasus <span class="pill noun">{{Typ}}</span></div>
+<div class="satz">{{Kasus1_Frage}}</div>
+{{#Kasus1_GanzEN}}<div class="en2">{{Kasus1_GanzEN}}</div>{{/Kasus1_GanzEN}}
+<div class="hinweis">{{Kasus1_Hinweis}}</div>
+{{type:Kasus1_Antwort}}
+{{/Kasus1_Frage}}
+</div>
+```
+
+**Back**
+```html
+<div class="karte">
+<div class="kopf">Kasus <span class="pill noun">{{Typ}}</span></div>
+<div class="wort">{{Wort}}</div>
+<hr id=answer>
+{{type:Kasus1_Antwort}}
+<div class="satz">{{Kasus1_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Kasus1_Ganz}}</div>
+{{#Kasus1_GanzEN}}<div class="en2">{{Kasus1_GanzEN}}</div>{{/Kasus1_GanzEN}}
+{{#Englisch}}<div class="block"><div class="label">Bedeutung</div><div class="en">{{Englisch}}</div></div>{{/Englisch}}
+{{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
+{{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
+{{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
+{{#Kasus1_Quelle}}<div class="quelle">{{Kasus1_Quelle}}</div>{{/Kasus1_Quelle}}
+</div>
+```
+
+## 10 — Kasus 2
+
+**Front**
+```html
+<div class="karte">
+{{#Kasus2_Frage}}
+<div class="kopf">Kasus <span class="pill noun">{{Typ}}</span></div>
+<div class="satz">{{Kasus2_Frage}}</div>
+{{#Kasus2_GanzEN}}<div class="en2">{{Kasus2_GanzEN}}</div>{{/Kasus2_GanzEN}}
+<div class="hinweis">{{Kasus2_Hinweis}}</div>
+{{type:Kasus2_Antwort}}
+{{/Kasus2_Frage}}
+</div>
+```
+
+**Back**
+```html
+<div class="karte">
+<div class="kopf">Kasus <span class="pill noun">{{Typ}}</span></div>
+<div class="wort">{{Wort}}</div>
+<hr id=answer>
+{{type:Kasus2_Antwort}}
+<div class="satz">{{Kasus2_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Kasus2_Ganz}}</div>
+{{#Kasus2_GanzEN}}<div class="en2">{{Kasus2_GanzEN}}</div>{{/Kasus2_GanzEN}}
+{{#Englisch}}<div class="block"><div class="label">Bedeutung</div><div class="en">{{Englisch}}</div></div>{{/Englisch}}
+{{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
+{{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
+{{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
+{{#Kasus2_Quelle}}<div class="quelle">{{Kasus2_Quelle}}</div>{{/Kasus2_Quelle}}
+</div>
+```
+
+## 11 — Adjektiv nach Artikel
+
+**Front**
+```html
+<div class="karte">
+{{#AdjArt_Frage}}
+<div class="kopf">Adjektiv nach Artikel <span class="pill adjadv">{{Typ}}</span></div>
+<div class="satz">{{AdjArt_Frage}}</div>
+{{#AdjArt_GanzEN}}<div class="en2">{{AdjArt_GanzEN}}</div>{{/AdjArt_GanzEN}}
+<div class="hinweis">{{AdjArt_Hinweis}}</div>
+{{type:AdjArt_Antwort}}
+{{/AdjArt_Frage}}
+</div>
+```
+
+**Back**
+```html
+<div class="karte">
+<div class="kopf">Adjektiv nach Artikel <span class="pill adjadv">{{Typ}}</span></div>
+<div class="wort">{{Wort}}</div>
+<hr id=answer>
+{{type:AdjArt_Antwort}}
+<div class="satz">{{AdjArt_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:AdjArt_Ganz}}</div>
+{{#AdjArt_GanzEN}}<div class="en2">{{AdjArt_GanzEN}}</div>{{/AdjArt_GanzEN}}
+{{#Englisch}}<div class="block"><div class="label">Bedeutung</div><div class="en">{{Englisch}}</div></div>{{/Englisch}}
+{{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
+{{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
+{{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
+{{#AdjArt_Quelle}}<div class="quelle">{{AdjArt_Quelle}}</div>{{/AdjArt_Quelle}}
+</div>
+```
+
+## 12 — Adjektiv nach Begleiter
+
+**Front**
+```html
+<div class="karte">
+{{#AdjDet_Frage}}
+<div class="kopf">Adjektiv nach Begleiter <span class="pill adjadv">{{Typ}}</span></div>
+<div class="satz">{{AdjDet_Frage}}</div>
+{{#AdjDet_GanzEN}}<div class="en2">{{AdjDet_GanzEN}}</div>{{/AdjDet_GanzEN}}
+<div class="hinweis">{{AdjDet_Hinweis}}</div>
+{{type:AdjDet_Antwort}}
+{{/AdjDet_Frage}}
+</div>
+```
+
+**Back**
+```html
+<div class="karte">
+<div class="kopf">Adjektiv nach Begleiter <span class="pill adjadv">{{Typ}}</span></div>
+<div class="wort">{{Wort}}</div>
+<hr id=answer>
+{{type:AdjDet_Antwort}}
+<div class="satz">{{AdjDet_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:AdjDet_Ganz}}</div>
+{{#AdjDet_GanzEN}}<div class="en2">{{AdjDet_GanzEN}}</div>{{/AdjDet_GanzEN}}
+{{#Englisch}}<div class="block"><div class="label">Bedeutung</div><div class="en">{{Englisch}}</div></div>{{/Englisch}}
+{{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
+{{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
+{{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
+{{#AdjDet_Quelle}}<div class="quelle">{{AdjDet_Quelle}}</div>{{/AdjDet_Quelle}}
+</div>
+```
+
+## 13 — Lücke 1
 
 **Front**
 ```html
@@ -362,7 +415,7 @@ Tags are column 114.
 </div>
 ```
 
-## 12 — Lücke 2
+## 14 — Lücke 2
 
 **Front**
 ```html
@@ -394,7 +447,7 @@ Tags are column 114.
 </div>
 ```
 
-## 13 — Lücke 3
+## 15 — Lücke 3
 
 **Front**
 ```html
@@ -426,7 +479,7 @@ Tags are column 114.
 </div>
 ```
 
-## 14 — Lücke 4
+## 16 — Lücke 4
 
 **Front**
 ```html
@@ -458,7 +511,7 @@ Tags are column 114.
 </div>
 ```
 
-## 15 — Welches Wort passt?
+## 17 — Welches Wort passt?
 
 **Front**
 ```html
@@ -489,7 +542,7 @@ Tags are column 114.
 </div>
 ```
 
-## 16 — Nebensatz: Wortstellung
+## 18 — Nebensatz: Wortstellung
 
 **Front**
 ```html
@@ -520,7 +573,7 @@ Tags are column 114.
 </div>
 ```
 
-## 17 — Komma setzen
+## 19 — Komma setzen
 
 **Front**
 ```html
@@ -548,59 +601,6 @@ Tags are column 114.
 {{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
 {{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
 {{#Komma_Quelle}}<div class="quelle">{{Komma_Quelle}}</div>{{/Komma_Quelle}}
-</div>
-```
-
-## 18 — Produzieren
-
-**Front**
-```html
-<div class="karte">
-<div class="kopf">Produzieren <span class="pill other">{{Typ}}</span></div>
-<div class="en gross">{{Englisch}}</div>
-<div class="hinweis">Nomen mit Artikel</div>
-{{type:Wort}}
-</div>
-```
-
-**Back**
-```html
-<div class="karte">
-<div class="kopf">Produzieren <span class="pill other">{{Typ}}</span></div>
-<div class="en gross">{{Englisch}}</div>
-<hr id=answer>
-{{type:Wort}}
-{{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
-{{#Beispiel}}<div class="block"><div class="label">Beispiele</div><div class="bsp">{{Beispiel}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Beispiel}}</div>{{#BeispielEN}}<div class="en2">{{BeispielEN}}</div>{{/BeispielEN}}{{#Beispiel2}}<div class="bsp">{{Beispiel2}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Beispiel2}}</div>{{/Beispiel2}}{{#Beispiel2EN}}<div class="en2">{{Beispiel2EN}}</div>{{/Beispiel2EN}}</div>{{/Beispiel}}
-{{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
-{{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
-</div>
-```
-
-## 19 — Bedeutung
-
-**Front**
-```html
-<div class="karte">
-<div class="kopf">Bedeutung <span class="pill other">{{Typ}}</span></div>
-<div class="wort">{{Wort}}</div>
-<div class="hinweis">kurze englische Bedeutung</div>
-{{type:EnglischKurz}}
-</div>
-```
-
-**Back**
-```html
-<div class="karte">
-<div class="kopf">Bedeutung <span class="pill other">{{Typ}}</span></div>
-<div class="wort">{{Wort}}</div>
-<hr id=answer>
-{{type:EnglischKurz}}
-{{#Englisch}}<div class="block"><div class="label">Bedeutung</div><div class="en">{{Englisch}}</div></div>{{/Englisch}}
-{{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
-{{#Beispiel}}<div class="block"><div class="label">Beispiele</div><div class="bsp">{{Beispiel}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Beispiel}}</div>{{#BeispielEN}}<div class="en2">{{BeispielEN}}</div>{{/BeispielEN}}{{#Beispiel2}}<div class="bsp">{{Beispiel2}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Beispiel2}}</div>{{/Beispiel2}}{{#Beispiel2EN}}<div class="en2">{{Beispiel2EN}}</div>{{/Beispiel2EN}}</div>{{/Beispiel}}
-{{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
-{{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
 </div>
 ```
 

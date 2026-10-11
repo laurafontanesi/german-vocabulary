@@ -1513,7 +1513,7 @@ function cardHTML(w) {
   const preview = (w.definitions || []).map(d => d.meaning).join(' · ');
   const grammarPills = buildGrammarPills(w);
   const defs = (w.definitions || []).map((d, i) =>
-    `<li><span class="def-num">${i+1}.</span><span>${d.meaning}${d.note ? `<span class="def-note">(${d.note})</span>` : ''}${i === 0 && w.definition_de ? `<div class="def-de" title="German Wiktionary">${w.definition_de}</div>` : ''}</span></li>`
+    `<li><span class="def-num">${i+1}.</span><span>${d.meaning}${d.note ? `<span class="def-note">(${d.note})</span>` : ''}${i === 0 && w.definition_de ? `<div class="def-de" title="German definition (Wiktionary or DWDS)">${w.definition_de}</div>` : ''}</span></li>`
   ).join('');
   const examples = (w.examples || []).map(e => {
     const escaped = e.de.replace(/'/g, '&#39;');
@@ -1736,7 +1736,7 @@ function renderCardModal(w) {
 
   const grammarPills = buildGrammarPills(w);
   const defs = (w.definitions || []).map((d, i) =>
-    `<li><span class="def-num">${i+1}.</span><span>${d.meaning}${d.note ? `<span class="def-note">(${d.note})</span>` : ''}${i === 0 && w.definition_de ? `<div class="def-de" title="German Wiktionary">${w.definition_de}</div>` : ''}</span></li>`
+    `<li><span class="def-num">${i+1}.</span><span>${d.meaning}${d.note ? `<span class="def-note">(${d.note})</span>` : ''}${i === 0 && w.definition_de ? `<div class="def-de" title="German definition (Wiktionary or DWDS)">${w.definition_de}</div>` : ''}</span></li>`
   ).join('');
   const examples = (w.examples || []).map(e => {
     const esc = e.de.replace(/'/g, '&#39;');
@@ -1861,8 +1861,41 @@ function exPrompt(w, ex) {
   }
   if (s === 'adj_art' || s === 'adj_det') return { text: 'Adjective ending:', word: w.word };
   // connectors: the German word would give the answer away, so the card shows the meaning
-  const meaning = (w.definitions && w.definitions[0]) ? w.definitions[0].meaning : '';
+  const meaning = meaningPrompt(w);
   return { text: s.startsWith('cx') ? 'Construction:' : 'Preposition / conjunction:', word: meaning, hideSpeak: true };
+}
+// The German word must not give itself away on the English side (EN→DE): in a meaning like
+// "den Tisch decken: to set the table" the German part before ":" / "—" / "=" hides the word (and its
+// forms) as ___. Plain English meanings are left alone. Same rule as anki/make_deck.py.
+const HIDE_SMALL = new Set(['auf','an','aus','bei','für','mit','nach','über','um','von','vor','zu','in','ab','ein',
+  'der','die','das','den','dem','des','sich','etw','jmdn','jmdm','jdn','jdm','es']);
+function wordForms(w) {
+  const tokOf = s => (String(s || '').toLowerCase().match(/[\wäöüß]+/g) || []);
+  const base = w.word.trim().replace(/^(sich|der|die|das)\s+/i, '');
+  const toks = tokOf(base).filter(t => !HIDE_SMALL.has(t) && t.length > 2);
+  for (const k of ['past_tense', 'past_participle', 'present_3sg', 'imperative', 'plural'])
+    for (const v of tokOf(w[k])) if (v.length > 2 && !HIDE_SMALL.has(v)) toks.push(v);
+  const forms = new Set(toks);
+  const tok = toks[0];
+  if (tok) {
+    let ends = ['e','en','er','es','em'], stems = [tok];
+    if (w.type === 'verb') {
+      ends = ['e','st','t','en','et','est','te','test','ten','tet','end'];
+      stems = [tok.replace(/e?n$/, '')];
+      const pfx = w.is_separable ? (w.prefix || '').replace(/-/g, '').toLowerCase() : '';
+      if (pfx && tok.startsWith(pfx)) { stems.push(tok.slice(pfx.length).replace(/e?n$/, '')); forms.add(pfx + 'zu' + tok.slice(pfx.length)); }
+    } else if (w.type === 'noun') ends = ['s','es','n','en','e','er','ern'];
+    for (const st of stems) for (const e of ends) forms.add(st + e);
+  }
+  return forms;
+}
+function hideWord(text, forms) {
+  return text.replace(/[\wäöüß]+/g, m => forms.has(m.toLowerCase()) ? '___' : m);
+}
+function meaningPrompt(w) {
+  const m = (w.definitions && w.definitions[0]) ? w.definitions[0].meaning : '';
+  const sep = m.search(/\s[—–]\s|:\s|\s=\s/);
+  return sep < 0 ? m : hideWord(m.slice(0, sep), wordForms(w)) + m.slice(sep);
 }
 function normAnswer(t) {
   return t.toLowerCase().replace(/[.,;:!?…"„“()]/g, ' ').replace(/\s+/g, ' ').trim();
@@ -2046,7 +2079,7 @@ function loadPracticeWord() {
 
   } else if (practiceMode === 'en-de') {
     promptEl.textContent = 'Translate into German:';
-    wordEl.textContent = w.definitions[0].meaning;
+    wordEl.textContent = meaningPrompt(w);
     // no auto-play for EN→DE (prompt is English)
 
   } else if (EX_TASKS[practiceMode]) {
@@ -2115,7 +2148,7 @@ function checkAnswer() {
   // capture the prompt that was shown to the user
   let prompt = '';
   if (practiceMode === 'de-en') prompt = w.word;
-  else if (practiceMode === 'en-de') prompt = w.definitions[0].meaning;
+  else if (practiceMode === 'en-de') prompt = meaningPrompt(w);
   else if (EX_TASKS[practiceMode]) prompt = exPlainBlanked(w._ex);
   sessionLog.push({ word: w.word, type: w.type, correct, prompt, yourAnswer: input, correctAnswer, item: w });
   const fb = document.getElementById('practice-feedback');

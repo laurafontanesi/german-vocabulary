@@ -470,6 +470,42 @@ def build_exercises(entry: dict, api_key: str | None, interactive: bool = True, 
     print(f"  {len(entry['exercises'])} exercise(s)" + (f", {empty} without a sentence" if empty else ""))
 
 
+def family_members(words: list, verb: dict) -> list:
+    """Verbs in the dictionary whose root verb is `verb` (aufräumen, einräumen for räumen)."""
+    if verb.get("type") != "verb":
+        return []
+    root = re.sub(r"^sich\s+", "", verb["word"]).strip()
+    return [w for w in words if w is not verb and w.get("type") == "verb"
+            and re.sub(r"^sich\s+", "", (w.get("family_root") or "")).strip() == root
+            and re.sub(r"^sich\s+", "", w["word"]).strip() != root]
+
+
+def root_added(words: list, verb: dict) -> None:
+    """A new root verb: its family members now only practise the Partizip II (their Präteritum and
+    Präsens repeat the root's), so those exercises are removed from them."""
+    for m in family_members(words, verb):
+        before = len(m.get("exercises", []))
+        m["exercises"] = [e for e in m.get("exercises", []) if e["slot"] not in ("praet", "praes")]
+        if len(m["exercises"]) < before:
+            print(f"  {m['word']}: Präteritum/Präsens exercises removed (its root {verb['word']} is now in the dictionary)")
+
+
+def root_removed(words: list, verb: dict, api_key: str | None) -> None:
+    """A deleted root verb: its family members need their own Präteritum and Präsens again."""
+    members = family_members(words, verb)
+    if not members:
+        return
+    names = ", ".join(m["word"] for m in members)
+    print(f"  {verb['word']} was the root of: {names}. They need their own Präteritum/Präsens exercises again.")
+    if EX_OK and ask("Write them now? (y/n)", "y").lower() == "y":
+        rest = [w for w in words if w is not verb]
+        for m in members:
+            print(f"\n  -- {m['word']}")
+            build_exercises(m, api_key, interactive=True, words=rest)
+    else:
+        print(f"  Later: python vocab.py exercises <word> for each of them.")
+
+
 # ── helpers ────────────────────────────────────────────────────────────────────
 
 def load() -> list:
@@ -1133,6 +1169,7 @@ def cmd_add(args):
         return
 
     words.append(entry)
+    root_added(words, entry)
 
     n_linked = make_bidirectional(words, entry)
     if n_linked > 0:
@@ -1322,6 +1359,7 @@ def cmd_delete(args):
         return
 
     deleted_word = w["word"]
+    root_removed(words, w, load_api_key())
     words = [x for x in words if x["id"] != w["id"]]
 
     # remove deleted word from all related lists

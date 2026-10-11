@@ -1,0 +1,1110 @@
+# Learning units for the Anki deck (written by make_units.py; edit freely).
+# make_deck.py introduces the words unit by unit, in this order. Within a unit: first all
+# Bedeutung cards, then Produzieren, then the grammar, and last the consolidation cards
+# (Welches Wort passt?, Nebensatz, Komma). Move a line to move a word; a line starting with
+# "## " starts a unit (the text after it is only a name). Words missing here come at the end.
+# Words that share a spelling are written "word | id".
+
+## Alltag 1
+bedingt
+unbedingt
+betroffen
+bewahren
+bieten
+anbieten
+binden
+entbinden
+blasen
+brauchen
+die Beschränkung
+die Lage
+die Verschwendung
+sich eignen
+eine Rolle spielen
+fallen
+fangen
+fassen
+fügen
+hinzufügen
+geeignet
+großartig
+herrlich
+
+## home & objects 1
+aufbewahren
+das Erdgeschoss
+das Geschirr
+decken
+der Anzug
+der Fahrstuhl
+der Fleck
+der Flur
+der Fußboden
+der Klotz
+der Krug
+der Lappen
+der Mieter
+der Vermieter
+der Schalter
+der Schirm
+der Staub
+der Staubsauger
+der Stift
+der Wecker
+der Zettel
+die Mauer
+die Wand
+
+## home & objects 2
+die Schüssel
+die Spüle
+falten
+gemütlich
+kehren
+mieten
+meiden
+vermeiden
+vermieten
+nebenan
+renovieren
+räumen
+aufräumen
+ausräumen
+einräumen
+umräumen
+schalten
+ausschalten
+schließen
+abschließen
+machen
+aufmachen
+schmutzig
+schmücken
+trocknen
+abtrocknen
+wischen
+zerknittert
+drücken
+ziehen
+schieben
+drucken
+sich anziehen
+tragen
+
+## food & drink
+bereit
+bereits
+fertig
+satt
+der Kellner
+die Kneipe
+frühstücken
+kochen
+lutschen
+nehmen
+geben
+kommen
+bekommen
+halten
+sich halten
+erhalten
+der Krieg
+kriegen
+ausnehmen
+die Ausnahme
+rühren
+schlürfen
+schmieren
+
+## Alltag 2
+klopfen
+lassen
+leben
+leise
+lernen
+herausnehmen
+mitnehmen
+teilnehmen
+unternehmen
+wegnehmen
+übernehmen
+nutzen
+benutzen
+nützlich
+passen
+prägen
+retten
+schlagen
+schleppen
+
+## body & health 1
+atmen
+ausatmen
+sich bücken
+das Gedicht
+das Gesicht
+das Gesundheitswesen
+das Hallenbad
+das Hindernis
+die Behinderung
+dehydriert
+der Alptraum
+der Krankenpfleger
+die Krankenschwester
+die Pflegekraft
+der Muskelkater
+der Speichel
+der/die Kranke
+die Augenbraue
+die Fallzahlen
+die Kraft
+die Wucht
+die Narbe
+die Reizüberflutung
+
+## body & health 2
+fahl
+frieren
+schwitzen
+grinsen
+gähnen
+hinken
+keuchen
+schnauben
+schnaufen
+kraulen
+abnehmen
+zunehmen
+einnehmen
+nicken
+schütteln
+nüchtern
+pflegen
+putzen
+runzeln
+berühren
+schlucken
+schnarchen
+seufzen
+
+## body & health 3
+stecken
+anstecken
+sich ausruhen
+sorgen
+sich kümmern
+besorgen
+kaufen
+einkaufen
+spannen
+sich entspannen
+entspannt
+holen
+sich erholen
+erkranken
+genesen
+gespannt
+kauen
+verkaufen
+tauchen
+treiben
+abtreiben
+träumen
+verletzen
+
+## Alltag 3
+speziell
+verstecken
+sich zeigen
+lügen
+anlügen
+stehen
+legen
+stellen
+liegen
+setzen
+erstellen
+streifen
+stärken
+treten
+trüben
+wachen
+werfen
+zufällig
+zünden
+
+## body & health 4
+aufwachen
+erschöpft
+munter
+müde
+schlafen
+wach
+wecken
+überarbeitet
+Wo tut es weh?
+zucken
+
+## nature & weather 1
+bellen
+das Erdbeben
+das Fell
+das Gewitter
+das Morgengrauen
+die Dämmerung
+das Rudel
+das Ufer
+das Versteck
+der Unterschlupf
+der Affe
+der Brand
+der Donner
+der Fels
+der Gipfel
+der Grad
+der Hagel
+der Höhenunterschied
+der Nebel
+der Schatten
+der Schlamm
+der Teich
+der Tropfen
+
+## nature & weather 2
+der Zweig
+die Abgabe
+die Abgase
+die Ausgabe
+die Hingabe
+die Ameise
+die Ebene
+die Felswand
+die Hitze
+die Kälte
+die Luftfeuchtigkeit
+die Neigung
+die Pfote
+die Schlucht
+die Temperatur
+die Wettervorhersage
+die Wiese
+die Wurzel
+die Überschwemmung
+feucht
+nass
+trocken
+
+## nature & weather 3
+flach
+glatt
+hügelig
+rau
+steil
+funkeln
+gedeihen
+glitzern
+heulen
+knistern
+knittern
+knurren
+regnen
+regnerisch
+schneien
+strahlen
+tropfen
+trüb
+verseuchen
+wedeln
+wuchern
+
+## travel & movement 1
+brechen
+aufbrechen
+das Fahrrad
+das Gebiet
+die Landschaft
+das Schiff
+das Zelt
+der Aufenthalt
+der Ausblick
+der Fernblick
+die Aussicht
+der Kiesweg
+der Ort
+der Platz
+der Schritt
+der Spaziergang
+die Wanderung
+der Verkehr
+der Weg
+vorbei
+weg
+die Abreise
+die Anreise
+die Ausrüstung
+
+## travel & movement 2
+die Landkarte
+dorther
+dorthin
+drehen
+umdrehen
+umkehren
+einheimisch
+entfernen
+entfernt
+in der Nähe
+fahren
+reisen
+verreisen
+abfahren
+abreisen
+ankommen
+anreisen
+steigen
+erhöhen
+sinken
+senken
+heben
+aussteigen
+losfahren
+herfahren
+hinfahren
+herumfahren
+sich verfahren
+verfahren
+
+## travel & movement 3
+wegfahren
+abholen
+einholen
+überholen
+irgendwo
+nirgends
+laufen
+nieder
+verpassen
+rammen
+schleichen
+schreiben
+schreien
+anschreien
+flüstern
+beschreiben
+schreiten
+beschreiten
+betreten
+sich sonnen
+spazieren
+wandern
+besteigen
+umgekehrt
+von Weitem
+vorne
+vorwärts
+überqueren
+
+## time 1
+bald
+damals
+demnächst
+ehemalig
+früher
+jetzig
+letzt
+nächst
+vergangen
+vorletzt
+zukünftig
+übernächst
+das Ereignis
+dauern
+der Unterlass
+der Wendepunkt
+die Gewohnheit
+die Weile
+die Zeit
+dringend
+eilen
+sich beeilen
+zögern
+
+## time 2
+endlich
+schließlich
+sich ereignen
+geschehen
+passieren
+gerade
+gerne
+vor Kurzem
+vorhin
+gewohnt
+gewöhnlich
+meistens
+gleichzeitig
+häufig
+manchmal
+selten
+ständig
+immer noch
+noch
+irgendwann
+ablaufen
+mittlerweile
+plötzlich
+pünktlich
+unpünktlich
+rasch
+zügig
+sofort
+stundenlang
+
+## people & relationships 1
+abhängig
+sich anmaßen
+messen
+vermessen | vermessen-verb
+vermessen | vermessen-adj
+sich beschweren
+beschwerlich
+beschützen
+das Enkelkind
+das Handeln
+das Verhalten
+das Treffen
+der Termin
+die Besprechung
+die Verabredung
+das Verhältnis
+die Beziehung
+das Vertrauen
+das Zutrauen
+das Wesen
+der Kompromiss
+der Umgang
+die Ehe
+
+## people & relationships 2
+die Lüge
+die Wahrheit
+gegenseitig
+handeln
+sich verhalten
+heiraten
+kuscheln
+sich benehmen
+raten
+verraten
+Rücksicht nehmen auf
+schenken
+schicken
+senden
+verschenken
+
+## people & relationships 3
+sich verstehen
+teilen
+umarmen
+unterstützen
+vereinnahmen
+sich trauen
+vertrauen
+anvertrauen
+sich verlassen
+auswandern
+umziehen
+
+## emotions & character 1
+allein
+einsam
+einzig
+angenehm
+beeindrucken
+beeindruckend
+gelangweilt
+langweilig
+bereuen
+bevorzugen
+ich … lieber … als …
+durcheinanderbringen
+das Alleinsein
+die Einsamkeit
+das geht mir auf die Nerven
+das Glück
+depressiv
+deprimiert
+freilich
+froh
+fröhlich
+glücklich
+traurig
+
+## emotions & character 2
+der Spaß
+die Enttäuschung
+die Freude
+der Trost
+die Angst
+die Furcht
+die Sorge
+die Geduld
+die Laune
+die Stimme
+die Stimmung
+die Vorsicht
+die Überraschung
+doof
+durcheinander
+ordentlich
+ernst
+riesig
+winzig
+witzig
+erschreckend
+furchtbar
+es reicht
+
+## emotions & character 3
+gefallen
+faul
+fleißig
+sich freuen
+sich fürchten
+sich ängstigen
+geizig
+großzügig
+gestresst
+grausam
+sich zurückhalten
+sich zusammennehmen
+hoffen
+sich interessieren
+irritieren
+nerven
+stören
+sich ärgern
+mutig
+hinnehmen
+in Kauf nehmen
+neugierig
+
+## emotions & character 4
+oberflächlich
+tiefgründig
+rührend
+sich schämen
+beschämen
+sensibel
+sinnvoll
+unvernünftig
+vernünftig
+ertragen
+betrüben
+unerträglich
+verrückt
+wahnsinnig
+vorsichtig
+warmherzig
+würdig
+wütend
+zaubern
+verzaubern
+überraschen
+
+## work & jobs
+arbeiten
+befristet
+fest
+beruflich
+sich beschäftigen
+beschäftigt
+sich bewerben
+das Praktikum
+der Abgabetermin
+die Abgabefrist
+der Beruf
+die Arbeit
+die Stelle
+die Tätigkeit
+der Unterricht
+der Urlaub
+die Reise
+die Ausbildung
+die Bedingung
+die Voraussetzung
+die Beratung
+die Kündigungsfrist
+die Putzkraft
+
+## work & jobs + money & shopping
+die Verantwortung
+feuern
+geschult
+gründen
+schulen
+verantworten
+verantwortlich
+zur Verfügung stehen
+arm
+reich
+reichen
+riechen
+vermögend
+billig
+kostbar
+teuer
+das Geld
+das Geschenk
+das Geschäft
+der Eigentümer
+die Genossenschaft
+die Münze
+die Pleite
+die Wirtschaft
+ausgeben
+bestellen
+
+## language & communication 1
+überarbeiten
+behaupten
+berichten
+Bescheid geben / sagen
+bestimmt
+betonen
+der Künstler
+der Artist
+künstlerisch
+künstlich
+streichen
+der Maler
+unterstreichen
+bezeichnen
+heißen
+nennen
+das geht nicht
+das Gespräch
+das Schweigen
+das stimmt nicht
+der Anruf
+der Ausdruck
+der Begriff
+die Bezeichnung
+der Bericht
+der Quatsch
+der Unsinn
+die Aufschrift
+die Auskunft
+
+## language & communication 2
+die Begründung
+die Bemerkung
+die Äußerung
+die Neuigkeit
+die Redewendung
+die Umgangssprache
+die Vorlesung
+lesen
+vorlesen
+die Zeile
+ehrlich gesagt
+erwidern
+erfahren
+erleben
+frappant
+angeben
+angeblich
+anscheinend
+deutlich
+offenbar
+offensichtlich
+wiederholen
+hör zu
+ich drücke dir die Daumen
+
+## language & communication 3
+klingen
+kritzeln
+mach's gut
+machst du Witze?
+meinetwegen
+zurücknehmen
+Pass auf!
+provokativ
+reden
+sagen
+sprechen
+schimpfen
+vorschlagen
+übersetzen
+versprechen
+
+## language & communication + technology & media
+stimmen
+abstimmen
+horchen
+gehorchen
+sich widersetzen
+widersprechen
+zugeben
+zustimmen
+bestimmen
+auftauchen
+schauen
+anschauen
+sehen
+zusehen
+gucken
+beobachten
+betrachten
+aussehen
+scheinen
+erscheinen
+vergeuden
+verschwenden
+schwinden
+waschen
+wachsen
+verschwinden
+übertreiben
+weisen
+vorwerfen
+wörtlich
+würdigen
+zeigen
+zum Ausdruck bringen
+zählen
+erzählen
+der Bildschirm
+die Werbung
+fernsehen
+
+## culture & arts
+basteln
+berühmt
+gefeiert
+das Bild
+das Gemälde
+das Drehbuch
+der Spielfilm
+das Geheimnis
+das Rätsel
+der Autor
+der Schriftsteller
+der Bildhauer
+der Drehbuchautor
+der Regisseur
+der Hauptdarsteller
+der Held
+der Zauber
+
+## culture & arts + materials & physical properties
+die Ausstellung
+die Geschichte
+die Hauptfigur
+hübsch
+anstimmen
+trommeln
+zeitgenössisch
+das Eisen
+das Loch
+der Stahl
+die Gestalt
+die Oberfläche
+zerbrechlich
+
+## quantity & comparison
+ahnen
+ähneln
+bloß
+fast
+kaum
+ungefähr
+der Anteil
+der Teil
+der Mangel
+der Unterschied
+die Ähnlichkeit
+die Menge
+eher
+einzigartig
+insgesamt
+knapp
+spärlich
+verschieden
+ähnlich
+ziemlich
+übrig
+übrigens
+
+## change & development
+bleiben
+verbleiben
+übernachten
+hängenbleiben
+der Anstieg
+der Rückgang
+der Wechsel
+die Entwicklung
+sich entfalten
+gestiegen
+sich gewöhnen
+versenken
+versinken
+verstärken
+zerstören
+zerstört
+ändern
+sich verändern
+wechseln
+
+## thinking & perception 1
+achten
+bewusst
+das Bewusstsein
+die Kenntnis
+das Gedächtnis
+die Erinnerung
+das Gehirn
+das Gespenst
+der Geist
+der Verstand
+entdecken
+der Eindruck
+der Erkenntnisprozess
+der Reiz
+der Stimulus
+die Anregung
+der Zusammenhang
+der Zweifel
+die Achtsamkeit
+die Ahnung
+die Einstellung
+die Entscheidung
+die Wahl
+
+## thinking & perception 2
+die Entscheidungsfindung
+die Kognition
+die Prämisse
+eine Entscheidung treffen
+einfallen
+erfassen
+fühlen
+sich anfühlen
+empfinden
+spülen
+spüren
+hören
+annehmen
+vernehmen
+sich einprägen
+sich erinnern
+merken
+
+## thinking & perception 3
+sichtbar
+starren
+staunen
+sich vorstellen
+suchen
+versuchen
+probieren
+besuchen
+denken
+glauben
+kennen
+kennenlernen
+sterben
+treffen
+wissen
+zweifeln
+überleben
+überlegen
+unkonzentriert
+urteilen
+beurteilen
+verurteilen
+wählen
+sich entscheiden
+auswählen
+
+## goals, effort & outcomes 1
+anstrengend
+behindern
+erleichtern
+belohnen
+sich bemühen
+das Bemühen
+der Aufwand
+die Mühe
+das Ziel
+der Zweck
+die Absicht
+der Nachteil
+der Vorteil
+die Belohnung
+die Gelegenheit
+die Herausforderung
+die Untätigkeit
+erfolgreich
+etwas zu Ende bringen
+
+## goals, effort & outcomes 2
+anfangen
+anhalten
+aufgeben
+aufhalten
+aufheben
+aufhören
+beenden
+fortsetzen
+stoppen
+vollenden
+gelingen
+schaffen
+sich lohnen
+sich vornehmen
+verzichten
+vollendet
+
+## society & politics 1
+beanspruchen
+das Anliegen
+das Bedürfnis
+der Anspruch
+das Bundesamt
+der Bundesrat
+das Entscheidungsverfahren
+das Geschlecht
+das Heim
+die Heimat
+das Opfer
+das Rathaus
+das Vorurteil
+der Ausländer
+der Fremde
+der Beobachter
+der Bund
+der Treibhauseffekt
+der Zwang
+die Anstalt
+die Arbeitslosigkeit
+die Besatzung
+die Entfremdung
+
+## society & politics 2
+die Gesellschaft
+die Grenze
+die Klimaerwärmung
+die Regelung
+die Wertvorstellung
+folgen
+verfolgen
+festnehmen
+nötig
+nötigen
+zwingen
+zwängen
+anschlagen
+der Angriff
+der Anschlag
+die Ausschreitung
+töten
+verteidigen
+vertuschen
+
+## science & academia
+das Ergebnis
+der Grund
+die Auswirkung
+die Folge
+die Ursache
+das Labor
+das Studium
+der Faktor
+der Forscher
+der Vortrag
+die Erforschung
+die Forschung
+die Recherche
+die Untersuchung
+die Wissenschaft
+die Messung
+die Promotion
+die Zeitschrift
+erwiesen
+forschen
+erforschen
+recherchieren
+untersuchen
+veröffentlichen
+sich erweisen
+
+## connectors & constructions 1
+allerdings
+also
+aufgrund
+da
+denn
+dennoch
+deshalb
+deswegen
+einerseits … andererseits …
+infolge
+jedoch
+obwohl
+trotz
+trotzdem
+wegen
+weil
+zwar … aber …
+als ob + Konjunktiv II
+außerdem
+ebenfalls
+
+## connectors & constructions 2
+bevor
+nachdem
+seit
+seitdem
+sobald
+solange
+vor
+während
+da- / wo- + Präposition
+damit
+sodass
+stattdessen
+um / ohne / (an)statt … zu + Infinitiv
+eigentlich
+entgegen
+entweder … oder …
+weder … noch …
+es geht um + Akk.
+falls
+haben + zu + Infinitiv
+nicht brauchen + zu + Infinitiv
+sein + zu + Infinitiv
+
+## connectors & constructions 3
+abhängen
+das kommt darauf an
+je nachdem (ob / wie …)
+immerhin
+jedenfalls
+zumindest
+indem
+je … desto …
+laut
+Lieblings-
+neben
+nicht nur … sondern auch …
+sowohl … als auch …
+sogar
+sonst
+sowieso
+tatsächlich
+wobei
+X ist aus Y
+X wird aus Y gemacht

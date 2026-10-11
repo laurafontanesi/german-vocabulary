@@ -67,7 +67,7 @@ PALETTE = {
     'other':   ('#efe9de', '#4a4a44'),
 }
 
-CORE_FIELDS = ['Wort', 'Typ', 'Formen', 'Englisch', 'EnglischKurz',
+CORE_FIELDS = ['Wort', 'Typ', 'Formen', 'Englisch', 'EnglischFrage', 'EnglischKurz',
                'Beispiel', 'BeispielEN', 'Beispiel2', 'Beispiel2EN',
                'Verwandt', 'Notiz']
 
@@ -173,6 +173,59 @@ def englisch(w):
         n = d.get('note')
         lines.append((f'{i}. ' if len(defs) > 1 else '')
                      + m + (f' <i>({n})</i>' if n else ''))
+    return '<br>'.join(lines)
+
+
+GAP = '<span class="gap">___</span>'
+SMALL = {'auf', 'an', 'aus', 'bei', 'für', 'mit', 'nach', 'über', 'um', 'von', 'vor', 'zu', 'in', 'ab', 'ein',
+         'der', 'die', 'das', 'den', 'dem', 'des', 'sich', 'etw', 'jmdn', 'jmdm', 'jdn', 'jdm', 'es'}
+
+
+def word_forms(w):
+    """Lower-case spellings of the word itself (endings included), to hide it on the English side."""
+    base = re.sub(r'^(sich|der|die|das)\s+', '', w['word'].strip(), flags=re.I)
+    toks = [t for t in re.findall(r"[\wäöüß]+", base.lower()) if t not in SMALL and len(t) > 2]
+    for k in ('past_tense', 'past_participle', 'present_3sg', 'imperative', 'plural'):
+        for v in re.split(r'[\s/,]+', str(w.get(k) or '').lower()):
+            if len(v) > 2 and v not in SMALL and v != '-':
+                toks.append(v.lstrip('-'))
+    forms = set(toks)
+    t = w.get('type')
+    for tok in toks[:1] if toks else []:
+        if t == 'verb':
+            pfx = (w.get('prefix') or '').strip('-').lower() if w.get('is_separable') else ''
+            stems = {re.sub(r'e?n$', '', tok)}
+            if pfx and tok.startswith(pfx):
+                stems.add(re.sub(r'e?n$', '', tok[len(pfx):]))
+                forms.add(pfx + 'zu' + tok[len(pfx):])
+            for st in stems:
+                forms |= {st + e for e in ('e', 'st', 't', 'en', 'et', 'est', 'te', 'test', 'ten', 'tet', 'end')}
+        elif t == 'noun':
+            forms |= {tok + e for e in ('s', 'es', 'n', 'en', 'e', 'er', 'ern')}
+        else:
+            forms |= {tok + e for e in ('e', 'en', 'er', 'es', 'em')}
+    return {f for f in forms if len(f) > 2}
+
+
+def hide_word(text, forms):
+    return re.sub(r"[\wäöüß]+", lambda m: GAP if m.group().lower() in forms else m.group(), text)
+
+
+def englisch_frage(w):
+    """Englisch for the Produzieren front: the German word itself is hidden (___) where it appears in
+    a German phrase of a meaning ("den Tisch decken: to set the table") or in a note
+    ("e.g. Ich bin gerade zurückgekommen"). Plain English meanings are left alone (stehen: "to stand")."""
+    forms = word_forms(w)
+    defs = w.get('definitions', [])
+    lines = []
+    for i, d in enumerate(defs, 1):
+        m = (d.get('meaning') or '').strip()
+        sep = re.search(r'\s[—–]\s|:\s|\s=\s', m)
+        if sep:
+            m = hide_word(m[:sep.start()], forms) + m[sep.start():]
+        n = d.get('note')
+        lines.append((f'{i}. ' if len(defs) > 1 else '')
+                     + m + (f' <i>({hide_word(n, forms)})</i>' if n else ''))
     return '<br>'.join(lines)
 
 
@@ -379,8 +432,13 @@ EXERCISES = [
 SENTENCE_KEYS = {'Praet', 'Part', 'Praes', 'Refl', 'Kasus1', 'Kasus2', 'AdjArt', 'AdjDet',
                  'Praep1', 'Praep2'} | {f'Luecke{n}' for n in range(1, 5)}
 
-# card order in the deck: grammar first, then the two translation directions
-CARD_ORDER = [k for k, *_ in EXERCISES] + ['Produzieren', 'Bedeutung']
+# card order within a word: first recognise it (Bedeutung), then produce it (Produzieren), then
+# its grammar, and last the cards that need it to be known well (contrast, word order, comma)
+CARD_ORDER = ['Bedeutung', 'Produzieren',
+              'Praes', 'Refl', 'Praep1', 'Praep2', 'Part', 'Praet',
+              'Kasus1', 'Kasus2', 'AdjArt', 'AdjDet', 'Luecke1', 'Luecke2', 'Luecke3', 'Luecke4',
+              'Kontrast', 'Neben', 'Komma']
+assert sorted(CARD_ORDER) == sorted([k for k, *_ in EXERCISES] + ['Bedeutung', 'Produzieren'])
 
 
 def all_fields():
@@ -399,6 +457,7 @@ def build_note(w, ctx):
     r['Typ'] = w.get('type', '')
     r['Formen'] = formen(w)
     r['Englisch'] = englisch(w)
+    r['EnglischFrage'] = englisch_frage(w)
     r['EnglischKurz'] = englisch_kurz(w)
     if exs:
         r['Beispiel'] = exs[0].get('de', '')
@@ -507,7 +566,7 @@ def templates():
 
     out['Produzieren'] = (
         card('<div class="kopf">Produzieren <span class="pill other">{{Typ}}</span></div>',
-             '<div class="en gross">{{Englisch}}</div>',
+             '<div class="en gross">{{EnglischFrage}}</div>',
              '<div class="hinweis">Nomen mit Artikel</div>',
              '{{type:Wort}}'),
         card('<div class="kopf">Produzieren <span class="pill other">{{Typ}}</span></div>',
@@ -592,6 +651,7 @@ def write_css(path):
           margin-bottom: 6px; }}
 .en     {{ color: {p['english']}; font-size: 16px; line-height: 1.5; }}
 .en.gross {{ font-size: 22px; line-height: 1.4; }}
+.gap    {{ font-style: normal; color: {p['muted']}; letter-spacing: .05em; }}
 .hinweis {{ font-family: -apple-system, Helvetica, sans-serif; font-size: 13px;
            color: {p['muted']}; margin: 10px 0 14px 0; }}
 hr#answer {{ border: none; border-top: 1px solid {p['rule']}; margin: 20px 0 16px 0; }}
@@ -662,6 +722,89 @@ def write_apkg(path, rows, fields, css):
     return True
 
 
+# ── introduction order: learning units (anki/units.txt) ───────────────────────
+# New cards are shown in the order of their position ("due" in Anki). Words in units.txt are
+# introduced unit by unit; within a unit first all Bedeutung cards, then all Produzieren cards,
+# then the grammar (in CARD_ORDER), and last the consolidation cards. A contrast card waits until
+# both words of the pair have been introduced. Words not in units.txt (added later) follow, in
+# the same pattern, in groups of 20.
+
+CONSOLIDATION = ['Kontrast', 'Neben', 'Komma']
+
+
+def read_units(path, db):
+    """{word id: (unit number, place in unit)} from units.txt; words are matched by spelling,
+    or by id after '|' when a spelling is shared."""
+    if not os.path.exists(path):
+        return {}, 0
+    by_word = {}
+    for w in db:
+        by_word.setdefault(w['word'], []).append(w['id'])
+    ids = {w['id'] for w in db}
+    out, unit, place = {}, -1, 0
+    for line in io.open(path, encoding='utf-8'):
+        line = line.rstrip('\n')
+        if line.startswith('## '):
+            unit += 1; place = 0
+            continue
+        if not line.strip() or line.startswith('#') or unit < 0:
+            continue
+        word, _, wid = [x.strip() for x in line.partition('|')]
+        wid = wid if wid in ids else (by_word.get(word) or [None])[0]
+        if wid and wid not in out:
+            out[wid] = (unit, place); place += 1
+        elif not wid:
+            print(f'  units.txt: "{word}" is not in words.json, skipped')
+    return out, unit + 1
+
+
+def card_positions(rows, units, n_units):
+    """{(word id, card key): position}, for every card a note will have."""
+    unit_of = dict(units)
+    extra = [r['_id'] for r, _ in rows if r['_id'] not in unit_of]
+    for i, wid in enumerate(extra):                    # later additions: groups of 20 after the units
+        unit_of[wid] = (n_units + i // 20, i % 20)
+    order = {k: i for i, k in enumerate(CARD_ORDER)}
+    keys = []
+    for r, _ in rows:
+        u, place = unit_of[r['_id']]
+        for k in CARD_ORDER:
+            if k in ('Bedeutung', 'Produzieren'):
+                phase, uu = (0 if k == 'Bedeutung' else 1), u
+            elif k in CONSOLIDATION:
+                phase, uu = 3, u
+                if k == 'Kontrast' and r.get('_partner') in unit_of:
+                    uu = max(u, unit_of[r['_partner']][0])
+            else:
+                phase, uu = 2, u
+            keys.append(((uu, phase, order[k], place), (r['_id'], k)))
+    return {card: i for i, (_, card) in enumerate(sorted(keys))}
+
+
+def set_positions(path, rows, positions):
+    """Write the positions into the package: it is a zip with an SQLite collection inside."""
+    import sqlite3, tempfile, zipfile, hashlib
+    keys = [k for k in CARD_ORDER if k in templates()]
+    tmp = tempfile.mkdtemp()
+    with zipfile.ZipFile(path) as z:
+        names = z.namelist()
+        z.extractall(tmp)
+    db = sqlite3.connect(os.path.join(tmp, 'collection.anki2'))
+    guid_of = {}
+    import genanki
+    for r, _ in rows:
+        guid_of[genanki.guid_for('deutsch', r['_id'])] = r['_id']
+    nid_to_id = {nid: guid_of.get(g) for nid, g in db.execute('select id, guid from notes')}
+    for cid, nid, ord_ in db.execute('select id, nid, ord from cards').fetchall():
+        pos = positions.get((nid_to_id.get(nid), keys[ord_]))
+        if pos is not None:
+            db.execute('update cards set due = ? where id = ?', (pos, cid))
+    db.commit(); db.close()
+    with zipfile.ZipFile(path, 'w', zipfile.ZIP_DEFLATED) as z:
+        for n in names:
+            z.write(os.path.join(tmp, n), n)
+
+
 # ── main ──────────────────────────────────────────────────────────────────────
 
 def main():
@@ -684,6 +827,10 @@ def main():
         for k in made:
             counts[k] += 1
         r['_id'] = w['id']
+        partners = [x['word'] for x in w.get('related', [])
+                    if isinstance(x, dict) and x['kind'] in ('contrast', 'antonym')
+                    and ctx['by_word'].get(x['word'], {}).get('type') == w.get('type')]
+        r['_partner'] = ctx['by_word'][partners[0]]['id'] if partners else None
         r['_topics'] = w.get('topics', [])
         r['_family'] = [w['family_root']] if w.get('family_root') else []
         r['_related'] = [x['word'] for x in w.get('related', []) if isinstance(x, dict)]
@@ -699,6 +846,12 @@ def main():
     write_templates(os.path.join(args.out_dir, 'templates.md'), fields)
     css = write_css(os.path.join(args.out_dir, 'styling.css'))
     apkg = write_apkg(os.path.join(args.out_dir, 'deutsch.apkg'), rows, fields, css)
+    units, n_units = read_units(os.path.join(HERE, 'units.txt'), db)
+    if apkg:
+        set_positions(os.path.join(args.out_dir, 'deutsch.apkg'), rows,
+                      card_positions(rows, units, n_units))
+        print(f'Reihenfolge: {n_units} Lerneinheiten aus units.txt'
+              + (f', {sum(1 for r, _ in rows if r["_id"] not in units)} weitere Wörter danach' if units else ''))
 
     base = len(rows) * 2
     print(f'{len(rows)} Notizen, {len(fields)} Felder, Tags = Spalte {len(fields)+1}')

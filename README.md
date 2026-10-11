@@ -158,15 +158,15 @@ Each entry in `words.json` is a JSON object. All entries share these fields:
 | `id` | string | URL-safe identifier (auto-generated) |
 | `word` | string | The German word in canonical form |
 | `type` | string | `noun`, `verb`, `adj/adv`, `prep/conj`, `expression`, `construction`, `other` |
-| `definitions` | list | `[{meaning, note}]` — always in English |
+| `definitions` | list | `[{meaning, note}]` — always in English. A meaning may start with a German phrase (`den Tisch decken: to set the table`); where English is the prompt (Anki *Produzieren*, website EN → DE), the word itself is shown as ___ in that German part and in the notes, so it does not give the answer away |
 | `examples` | list | `[{de, en}]` — German sentence + translation |
 | `topics` | list | 0 to 2 entries from the closed list below; empty for core vocabulary |
 | `compound_parts` | list | Optional, for compound nouns and adjectives: the parts in order, nouns with article, linking elements as their own item: `["die Kündigung", "-s-", "die Frist"]`. Shown as one chip (Kündigung + -s- + Frist); parts that are in the database are clickable and get a `compound` link. Source: German Wiktionary's word-formation notes |
-| `definition_de` | string | German definition from German Wiktionary, matched to the first English meaning; shown on the website card. Optional |
+| `definition_de` | string | German definition matched to the first English meaning: from German Wiktionary (added automatically by `vocab.py add`), or from [DWDS](https://www.dwds.de) or written by hand when Wiktionary has no matching sense. Shown on the website card. Optional |
 | `notes` | string | One-sentence personal note, or null. Register goes here when it is not neutral (`Register: umgangssprachlich.`) |
 | `related` | list | `[{word, kind}]` — semantic links, always bidirectional. `kind` is one of `synonym`, `antonym`, `contrast` (easily confused), `derived` (same stem, other word class), `compound` (one word is part of the other). Verb families are **not** stored here; see `family_root`. |
 | `added` | string | Date added (YYYY-MM-DD) |
-| `exercises` | list | Gap-fill sentences for the practice cards: `[{slot, label, de, en, blanks, source}]`. `blanks` are character spans in `de` (`[[4, 8]]` hides *nahm* in "Ich nahm ein Taxi…"). `slot` says what is tested: `praet`, `part`, `praes` (only stem-changing verbs), `refl` (only reflexive verbs), `prep1`/`prep2` (the verb's fixed preposition + article, with `form` such as `auf + AKK`), `kasus1`/`kasus2` (noun with determiner in a case, with `form` such as `DAT:PLU`), `adj_art`/`adj_det` (inflected adjective after an article or after a possessive/dieser/kein), `pc1`…`pc4` (prepositions and conjunctions). A verb whose root verb is also in the dictionary (vornehmen, with nehmen) gets only `part` (and `refl`, `prep`): its Präteritum and Präsens repeat the root's. Constructions have no sentence exercise. `source` is `own`, `example`, `tatoeba:<sentence id>` or `generated`. Every generated sentence passed `exercise_check.py` |
+| `exercises` | list | Gap-fill sentences for the practice cards: `[{slot, label, de, en, blanks, source}]`. `blanks` are character spans in `de` (`[[4, 8]]` hides *nahm* in "Ich nahm ein Taxi…"). `slot` says what is tested: `praet`, `part`, `praes` (only stem-changing verbs), `refl` (only reflexive verbs), `prep1`/`prep2` (the verb's fixed preposition + article, with `form` such as `auf + AKK`), `kasus1`/`kasus2` (noun with determiner in a case, with `form` such as `DAT:PLU`), `adj_art`/`adj_det` (inflected adjective after an article or after a possessive/dieser/kein), `pc1`…`pc4` (prepositions and conjunctions). A verb whose root verb is also in the dictionary (vornehmen, with nehmen) gets only `part` (and `refl`, `prep`): its Präteritum and Präsens repeat the root's. Constructions have no sentence exercise. `vocab.py` keeps this in sync: adding a root verb removes the Präteritum/Präsens exercises of its family members, and deleting one offers to write them again. `source` is `own`, `example`, `tatoeba:<sentence id>` or `generated`. Every generated sentence passed `exercise_check.py` |
 
 **Extra fields for nouns:**
 
@@ -319,6 +319,11 @@ python fix_related.py --db words.json
 
 # Rebuild the Anki deck (needs once: pip install genanki), then double-click anki/deutsch.apkg:
 python anki/make_deck.py
+# The order in which words are introduced comes from anki/units.txt (learning units by topic,
+# edit it by hand; python anki/make_units.py writes it from scratch). In Anki, set the deck's
+# Display Order to: gather "Ascending position", sort "Order gathered", Bury new siblings off.
+# Words added later with vocab.py are not in units.txt: they come after all units. Add a line
+# to units.txt by hand to place one earlier (make_units.py would overwrite your edits).
 ```
 
 The live site updates within ~60 seconds of pushing.
