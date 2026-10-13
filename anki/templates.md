@@ -1,14 +1,14 @@
 # Card templates (generated — do not edit by hand)
 
-Note type: **Deutsch**. Create the 114 fields in exactly this order, then one card type per section below, named as in the heading, and paste its front and back.
+Note type: **Deutsch**. Create the 96 fields in exactly this order, then one card type per section below, named as in the heading, and paste its front and back.
 
 ## Fields
 
 ```
-Wort, Typ, Formen, Englisch, EnglischFrage, EnglischKurz, Beispiel, BeispielEN, Beispiel2, Beispiel2EN, Verwandt, Notiz, Praet_Frage, Praet_Antwort, Praet_Ganz, Praet_GanzEN, Praet_Hinweis, Praet_Quelle, Part_Frage, Part_Antwort, Part_Ganz, Part_GanzEN, Part_Hinweis, Part_Quelle, Praes_Frage, Praes_Antwort, Praes_Ganz, Praes_GanzEN, Praes_Hinweis, Praes_Quelle, Refl_Frage, Refl_Antwort, Refl_Ganz, Refl_GanzEN, Refl_Hinweis, Refl_Quelle, Kasus1_Frage, Kasus1_Antwort, Kasus1_Ganz, Kasus1_GanzEN, Kasus1_Hinweis, Kasus1_Quelle, Kasus2_Frage, Kasus2_Antwort, Kasus2_Ganz, Kasus2_GanzEN, Kasus2_Hinweis, Kasus2_Quelle, AdjArt_Frage, AdjArt_Antwort, AdjArt_Ganz, AdjArt_GanzEN, AdjArt_Hinweis, AdjArt_Quelle, AdjDet_Frage, AdjDet_Antwort, AdjDet_Ganz, AdjDet_GanzEN, AdjDet_Hinweis, AdjDet_Quelle, Praep1_Frage, Praep1_Antwort, Praep1_Ganz, Praep1_GanzEN, Praep1_Hinweis, Praep1_Quelle, Praep2_Frage, Praep2_Antwort, Praep2_Ganz, Praep2_GanzEN, Praep2_Hinweis, Praep2_Quelle, Luecke1_Frage, Luecke1_Antwort, Luecke1_Ganz, Luecke1_GanzEN, Luecke1_Hinweis, Luecke1_Quelle, Luecke2_Frage, Luecke2_Antwort, Luecke2_Ganz, Luecke2_GanzEN, Luecke2_Hinweis, Luecke2_Quelle, Luecke3_Frage, Luecke3_Antwort, Luecke3_Ganz, Luecke3_GanzEN, Luecke3_Hinweis, Luecke3_Quelle, Luecke4_Frage, Luecke4_Antwort, Luecke4_Ganz, Luecke4_GanzEN, Luecke4_Hinweis, Luecke4_Quelle, Kontrast_Frage, Kontrast_Antwort, Kontrast_Ganz, Kontrast_GanzEN, Kontrast_Hinweis, Kontrast_Quelle, Neben_Frage, Neben_Antwort, Neben_Ganz, Neben_GanzEN, Neben_Hinweis, Neben_Quelle, Komma_Frage, Komma_Antwort, Komma_Ganz, Komma_GanzEN, Komma_Hinweis, Komma_Quelle
+Wort, Typ, Formen, Englisch, EnglischFrage, EnglischKurz, Beispiel, BeispielEN, Beispiel2, Beispiel2EN, Verwandt, Notiz, Praet_Frage, Praet_Antwort, Praet_Ganz, Praet_GanzEN, Praet_Hinweis, Praet_Quelle, Part_Frage, Part_Antwort, Part_Ganz, Part_GanzEN, Part_Hinweis, Part_Quelle, Praes_Frage, Praes_Antwort, Praes_Ganz, Praes_GanzEN, Praes_Hinweis, Praes_Quelle, Refl_Frage, Refl_Antwort, Refl_Ganz, Refl_GanzEN, Refl_Hinweis, Refl_Quelle, Dekl_Frage, Dekl_Antwort, Dekl_Ganz, Dekl_GanzEN, Dekl_Hinweis, Dekl_Quelle, DeklPl_Frage, DeklPl_Antwort, DeklPl_Ganz, DeklPl_GanzEN, DeklPl_Hinweis, DeklPl_Quelle, Praep1_Frage, Praep1_Antwort, Praep1_Ganz, Praep1_GanzEN, Praep1_Hinweis, Praep1_Quelle, Praep2_Frage, Praep2_Antwort, Praep2_Ganz, Praep2_GanzEN, Praep2_Hinweis, Praep2_Quelle, Konnektor1_Frage, Konnektor1_Antwort, Konnektor1_Ganz, Konnektor1_GanzEN, Konnektor1_Hinweis, Konnektor1_Quelle, Konnektor2_Frage, Konnektor2_Antwort, Konnektor2_Ganz, Konnektor2_GanzEN, Konnektor2_Hinweis, Konnektor2_Quelle, Konnektor3_Frage, Konnektor3_Antwort, Konnektor3_Ganz, Konnektor3_GanzEN, Konnektor3_Hinweis, Konnektor3_Quelle, Konnektor4_Frage, Konnektor4_Antwort, Konnektor4_Ganz, Konnektor4_GanzEN, Konnektor4_Hinweis, Konnektor4_Quelle, Kontrast_Frage, Kontrast_Antwort, Kontrast_Ganz, Kontrast_GanzEN, Kontrast_Hinweis, Kontrast_Quelle, Neben_Frage, Neben_Antwort, Neben_Ganz, Neben_GanzEN, Neben_Hinweis, Neben_Quelle
 ```
 
-Tags are column 115.
+Tags are column 97.
 
 ## 1 — Bedeutung
 
@@ -127,13 +127,13 @@ Tags are column 115.
 </div>
 ```
 
-## 5 — Verb + Präposition
+## 5 — Präposition
 
 **Front**
 ```html
 <div class="karte">
 {{#Praep1_Frage}}
-<div class="kopf">Verb + Präposition <span class="pill verb">{{Typ}}</span></div>
+<div class="kopf">Präposition <span class="pill other">{{Typ}}</span></div>
 <div class="satz">{{Praep1_Frage}}</div>
 {{#Praep1_GanzEN}}<div class="en2">{{Praep1_GanzEN}}</div>{{/Praep1_GanzEN}}
 <div class="hinweis">{{Praep1_Hinweis}}</div>
@@ -145,7 +145,7 @@ Tags are column 115.
 **Back**
 ```html
 <div class="karte">
-<div class="kopf">Verb + Präposition <span class="pill verb">{{Typ}}</span></div>
+<div class="kopf">Präposition <span class="pill other">{{Typ}}</span></div>
 <div class="wort">{{Wort}}</div>
 <hr id=answer>
 {{type:Praep1_Antwort}}
@@ -159,13 +159,13 @@ Tags are column 115.
 </div>
 ```
 
-## 6 — Verb + Präposition 2
+## 6 — Präposition 2
 
 **Front**
 ```html
 <div class="karte">
 {{#Praep2_Frage}}
-<div class="kopf">Verb + Präposition <span class="pill verb">{{Typ}}</span></div>
+<div class="kopf">Präposition <span class="pill other">{{Typ}}</span></div>
 <div class="satz">{{Praep2_Frage}}</div>
 {{#Praep2_GanzEN}}<div class="en2">{{Praep2_GanzEN}}</div>{{/Praep2_GanzEN}}
 <div class="hinweis">{{Praep2_Hinweis}}</div>
@@ -177,7 +177,7 @@ Tags are column 115.
 **Back**
 ```html
 <div class="karte">
-<div class="kopf">Verb + Präposition <span class="pill verb">{{Typ}}</span></div>
+<div class="kopf">Präposition <span class="pill other">{{Typ}}</span></div>
 <div class="wort">{{Wort}}</div>
 <hr id=answer>
 {{type:Praep2_Antwort}}
@@ -191,13 +191,13 @@ Tags are column 115.
 </div>
 ```
 
-## 7 — Partizip II
+## 7 — Perfekt
 
 **Front**
 ```html
 <div class="karte">
 {{#Part_Frage}}
-<div class="kopf">Partizip II <span class="pill verb">{{Typ}}</span></div>
+<div class="kopf">Perfekt <span class="pill verb">{{Typ}}</span></div>
 <div class="satz">{{Part_Frage}}</div>
 {{#Part_GanzEN}}<div class="en2">{{Part_GanzEN}}</div>{{/Part_GanzEN}}
 <div class="hinweis">{{Part_Hinweis}}</div>
@@ -209,7 +209,7 @@ Tags are column 115.
 **Back**
 ```html
 <div class="karte">
-<div class="kopf">Partizip II <span class="pill verb">{{Typ}}</span></div>
+<div class="kopf">Perfekt <span class="pill verb">{{Typ}}</span></div>
 <div class="wort">{{Wort}}</div>
 <hr id=answer>
 {{type:Part_Antwort}}
@@ -255,263 +255,199 @@ Tags are column 115.
 </div>
 ```
 
-## 9 — Kasus
+## 9 — Deklination
 
 **Front**
 ```html
 <div class="karte">
-{{#Kasus1_Frage}}
-<div class="kopf">Kasus <span class="pill noun">{{Typ}}</span></div>
-<div class="satz">{{Kasus1_Frage}}</div>
-{{#Kasus1_GanzEN}}<div class="en2">{{Kasus1_GanzEN}}</div>{{/Kasus1_GanzEN}}
-<div class="hinweis">{{Kasus1_Hinweis}}</div>
-{{type:Kasus1_Antwort}}
-{{/Kasus1_Frage}}
+{{#Dekl_Frage}}
+<div class="kopf">Deklination <span class="pill noun">{{Typ}}</span></div>
+<div class="satz">{{Dekl_Frage}}</div>
+{{#Dekl_GanzEN}}<div class="en2">{{Dekl_GanzEN}}</div>{{/Dekl_GanzEN}}
+<div class="hinweis">{{Dekl_Hinweis}}</div>
+{{type:Dekl_Antwort}}
+{{/Dekl_Frage}}
 </div>
 ```
 
 **Back**
 ```html
 <div class="karte">
-<div class="kopf">Kasus <span class="pill noun">{{Typ}}</span></div>
+<div class="kopf">Deklination <span class="pill noun">{{Typ}}</span></div>
 <div class="wort">{{Wort}}</div>
 <hr id=answer>
-{{type:Kasus1_Antwort}}
-<div class="satz">{{Kasus1_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Kasus1_Ganz}}</div>
-{{#Kasus1_GanzEN}}<div class="en2">{{Kasus1_GanzEN}}</div>{{/Kasus1_GanzEN}}
+{{type:Dekl_Antwort}}
+<div class="satz">{{Dekl_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Dekl_Ganz}}</div>
+{{#Dekl_GanzEN}}<div class="en2">{{Dekl_GanzEN}}</div>{{/Dekl_GanzEN}}
 {{#Englisch}}<div class="block"><div class="label">Bedeutung</div><div class="en">{{Englisch}}</div></div>{{/Englisch}}
 {{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
 {{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
 {{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
-{{#Kasus1_Quelle}}<div class="quelle">{{Kasus1_Quelle}}</div>{{/Kasus1_Quelle}}
+{{#Dekl_Quelle}}<div class="quelle">{{Dekl_Quelle}}</div>{{/Dekl_Quelle}}
 </div>
 ```
 
-## 10 — Kasus 2
+## 10 — Deklination Plural
 
 **Front**
 ```html
 <div class="karte">
-{{#Kasus2_Frage}}
-<div class="kopf">Kasus <span class="pill noun">{{Typ}}</span></div>
-<div class="satz">{{Kasus2_Frage}}</div>
-{{#Kasus2_GanzEN}}<div class="en2">{{Kasus2_GanzEN}}</div>{{/Kasus2_GanzEN}}
-<div class="hinweis">{{Kasus2_Hinweis}}</div>
-{{type:Kasus2_Antwort}}
-{{/Kasus2_Frage}}
+{{#DeklPl_Frage}}
+<div class="kopf">Deklination Plural <span class="pill noun">{{Typ}}</span></div>
+<div class="satz">{{DeklPl_Frage}}</div>
+{{#DeklPl_GanzEN}}<div class="en2">{{DeklPl_GanzEN}}</div>{{/DeklPl_GanzEN}}
+<div class="hinweis">{{DeklPl_Hinweis}}</div>
+{{type:DeklPl_Antwort}}
+{{/DeklPl_Frage}}
 </div>
 ```
 
 **Back**
 ```html
 <div class="karte">
-<div class="kopf">Kasus <span class="pill noun">{{Typ}}</span></div>
+<div class="kopf">Deklination Plural <span class="pill noun">{{Typ}}</span></div>
 <div class="wort">{{Wort}}</div>
 <hr id=answer>
-{{type:Kasus2_Antwort}}
-<div class="satz">{{Kasus2_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Kasus2_Ganz}}</div>
-{{#Kasus2_GanzEN}}<div class="en2">{{Kasus2_GanzEN}}</div>{{/Kasus2_GanzEN}}
+{{type:DeklPl_Antwort}}
+<div class="satz">{{DeklPl_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:DeklPl_Ganz}}</div>
+{{#DeklPl_GanzEN}}<div class="en2">{{DeklPl_GanzEN}}</div>{{/DeklPl_GanzEN}}
 {{#Englisch}}<div class="block"><div class="label">Bedeutung</div><div class="en">{{Englisch}}</div></div>{{/Englisch}}
 {{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
 {{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
 {{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
-{{#Kasus2_Quelle}}<div class="quelle">{{Kasus2_Quelle}}</div>{{/Kasus2_Quelle}}
+{{#DeklPl_Quelle}}<div class="quelle">{{DeklPl_Quelle}}</div>{{/DeklPl_Quelle}}
 </div>
 ```
 
-## 11 — Adjektiv nach Artikel
+## 11 — Konnektor 1
 
 **Front**
 ```html
 <div class="karte">
-{{#AdjArt_Frage}}
-<div class="kopf">Adjektiv nach Artikel <span class="pill adjadv">{{Typ}}</span></div>
-<div class="satz">{{AdjArt_Frage}}</div>
-{{#AdjArt_GanzEN}}<div class="en2">{{AdjArt_GanzEN}}</div>{{/AdjArt_GanzEN}}
-<div class="hinweis">{{AdjArt_Hinweis}}</div>
-{{type:AdjArt_Antwort}}
-{{/AdjArt_Frage}}
+{{#Konnektor1_Frage}}
+<div class="kopf">Konnektor <span class="pill other">{{Typ}}</span></div>
+<div class="satz">{{Konnektor1_Frage}}</div>
+{{#Konnektor1_GanzEN}}<div class="en2">{{Konnektor1_GanzEN}}</div>{{/Konnektor1_GanzEN}}
+<div class="hinweis">{{Konnektor1_Hinweis}}</div>
+{{type:Konnektor1_Antwort}}
+{{/Konnektor1_Frage}}
 </div>
 ```
 
 **Back**
 ```html
 <div class="karte">
-<div class="kopf">Adjektiv nach Artikel <span class="pill adjadv">{{Typ}}</span></div>
+<div class="kopf">Konnektor <span class="pill other">{{Typ}}</span></div>
 <div class="wort">{{Wort}}</div>
 <hr id=answer>
-{{type:AdjArt_Antwort}}
-<div class="satz">{{AdjArt_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:AdjArt_Ganz}}</div>
-{{#AdjArt_GanzEN}}<div class="en2">{{AdjArt_GanzEN}}</div>{{/AdjArt_GanzEN}}
+{{type:Konnektor1_Antwort}}
+<div class="satz">{{Konnektor1_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Konnektor1_Ganz}}</div>
+{{#Konnektor1_GanzEN}}<div class="en2">{{Konnektor1_GanzEN}}</div>{{/Konnektor1_GanzEN}}
 {{#Englisch}}<div class="block"><div class="label">Bedeutung</div><div class="en">{{Englisch}}</div></div>{{/Englisch}}
 {{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
 {{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
 {{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
-{{#AdjArt_Quelle}}<div class="quelle">{{AdjArt_Quelle}}</div>{{/AdjArt_Quelle}}
+{{#Konnektor1_Quelle}}<div class="quelle">{{Konnektor1_Quelle}}</div>{{/Konnektor1_Quelle}}
 </div>
 ```
 
-## 12 — Adjektiv nach Begleiter
+## 12 — Konnektor 2
 
 **Front**
 ```html
 <div class="karte">
-{{#AdjDet_Frage}}
-<div class="kopf">Adjektiv nach Begleiter <span class="pill adjadv">{{Typ}}</span></div>
-<div class="satz">{{AdjDet_Frage}}</div>
-{{#AdjDet_GanzEN}}<div class="en2">{{AdjDet_GanzEN}}</div>{{/AdjDet_GanzEN}}
-<div class="hinweis">{{AdjDet_Hinweis}}</div>
-{{type:AdjDet_Antwort}}
-{{/AdjDet_Frage}}
+{{#Konnektor2_Frage}}
+<div class="kopf">Konnektor <span class="pill other">{{Typ}}</span></div>
+<div class="satz">{{Konnektor2_Frage}}</div>
+{{#Konnektor2_GanzEN}}<div class="en2">{{Konnektor2_GanzEN}}</div>{{/Konnektor2_GanzEN}}
+<div class="hinweis">{{Konnektor2_Hinweis}}</div>
+{{type:Konnektor2_Antwort}}
+{{/Konnektor2_Frage}}
 </div>
 ```
 
 **Back**
 ```html
 <div class="karte">
-<div class="kopf">Adjektiv nach Begleiter <span class="pill adjadv">{{Typ}}</span></div>
+<div class="kopf">Konnektor <span class="pill other">{{Typ}}</span></div>
 <div class="wort">{{Wort}}</div>
 <hr id=answer>
-{{type:AdjDet_Antwort}}
-<div class="satz">{{AdjDet_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:AdjDet_Ganz}}</div>
-{{#AdjDet_GanzEN}}<div class="en2">{{AdjDet_GanzEN}}</div>{{/AdjDet_GanzEN}}
+{{type:Konnektor2_Antwort}}
+<div class="satz">{{Konnektor2_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Konnektor2_Ganz}}</div>
+{{#Konnektor2_GanzEN}}<div class="en2">{{Konnektor2_GanzEN}}</div>{{/Konnektor2_GanzEN}}
 {{#Englisch}}<div class="block"><div class="label">Bedeutung</div><div class="en">{{Englisch}}</div></div>{{/Englisch}}
 {{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
 {{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
 {{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
-{{#AdjDet_Quelle}}<div class="quelle">{{AdjDet_Quelle}}</div>{{/AdjDet_Quelle}}
+{{#Konnektor2_Quelle}}<div class="quelle">{{Konnektor2_Quelle}}</div>{{/Konnektor2_Quelle}}
 </div>
 ```
 
-## 13 — Lücke 1
+## 13 — Konnektor 3
 
 **Front**
 ```html
 <div class="karte">
-{{#Luecke1_Frage}}
-<div class="kopf">Lücke <span class="pill other">{{Typ}}</span></div>
-<div class="satz">{{Luecke1_Frage}}</div>
-{{#Luecke1_GanzEN}}<div class="en2">{{Luecke1_GanzEN}}</div>{{/Luecke1_GanzEN}}
-<div class="hinweis">{{Luecke1_Hinweis}}</div>
-{{type:Luecke1_Antwort}}
-{{/Luecke1_Frage}}
+{{#Konnektor3_Frage}}
+<div class="kopf">Konnektor <span class="pill other">{{Typ}}</span></div>
+<div class="satz">{{Konnektor3_Frage}}</div>
+{{#Konnektor3_GanzEN}}<div class="en2">{{Konnektor3_GanzEN}}</div>{{/Konnektor3_GanzEN}}
+<div class="hinweis">{{Konnektor3_Hinweis}}</div>
+{{type:Konnektor3_Antwort}}
+{{/Konnektor3_Frage}}
 </div>
 ```
 
 **Back**
 ```html
 <div class="karte">
-<div class="kopf">Lücke <span class="pill other">{{Typ}}</span></div>
+<div class="kopf">Konnektor <span class="pill other">{{Typ}}</span></div>
 <div class="wort">{{Wort}}</div>
 <hr id=answer>
-{{type:Luecke1_Antwort}}
-<div class="satz">{{Luecke1_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Luecke1_Ganz}}</div>
-{{#Luecke1_GanzEN}}<div class="en2">{{Luecke1_GanzEN}}</div>{{/Luecke1_GanzEN}}
+{{type:Konnektor3_Antwort}}
+<div class="satz">{{Konnektor3_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Konnektor3_Ganz}}</div>
+{{#Konnektor3_GanzEN}}<div class="en2">{{Konnektor3_GanzEN}}</div>{{/Konnektor3_GanzEN}}
 {{#Englisch}}<div class="block"><div class="label">Bedeutung</div><div class="en">{{Englisch}}</div></div>{{/Englisch}}
 {{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
 {{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
 {{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
-{{#Luecke1_Quelle}}<div class="quelle">{{Luecke1_Quelle}}</div>{{/Luecke1_Quelle}}
+{{#Konnektor3_Quelle}}<div class="quelle">{{Konnektor3_Quelle}}</div>{{/Konnektor3_Quelle}}
 </div>
 ```
 
-## 14 — Lücke 2
+## 14 — Konnektor 4
 
 **Front**
 ```html
 <div class="karte">
-{{#Luecke2_Frage}}
-<div class="kopf">Lücke <span class="pill other">{{Typ}}</span></div>
-<div class="satz">{{Luecke2_Frage}}</div>
-{{#Luecke2_GanzEN}}<div class="en2">{{Luecke2_GanzEN}}</div>{{/Luecke2_GanzEN}}
-<div class="hinweis">{{Luecke2_Hinweis}}</div>
-{{type:Luecke2_Antwort}}
-{{/Luecke2_Frage}}
+{{#Konnektor4_Frage}}
+<div class="kopf">Konnektor <span class="pill other">{{Typ}}</span></div>
+<div class="satz">{{Konnektor4_Frage}}</div>
+{{#Konnektor4_GanzEN}}<div class="en2">{{Konnektor4_GanzEN}}</div>{{/Konnektor4_GanzEN}}
+<div class="hinweis">{{Konnektor4_Hinweis}}</div>
+{{type:Konnektor4_Antwort}}
+{{/Konnektor4_Frage}}
 </div>
 ```
 
 **Back**
 ```html
 <div class="karte">
-<div class="kopf">Lücke <span class="pill other">{{Typ}}</span></div>
+<div class="kopf">Konnektor <span class="pill other">{{Typ}}</span></div>
 <div class="wort">{{Wort}}</div>
 <hr id=answer>
-{{type:Luecke2_Antwort}}
-<div class="satz">{{Luecke2_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Luecke2_Ganz}}</div>
-{{#Luecke2_GanzEN}}<div class="en2">{{Luecke2_GanzEN}}</div>{{/Luecke2_GanzEN}}
+{{type:Konnektor4_Antwort}}
+<div class="satz">{{Konnektor4_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Konnektor4_Ganz}}</div>
+{{#Konnektor4_GanzEN}}<div class="en2">{{Konnektor4_GanzEN}}</div>{{/Konnektor4_GanzEN}}
 {{#Englisch}}<div class="block"><div class="label">Bedeutung</div><div class="en">{{Englisch}}</div></div>{{/Englisch}}
 {{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
 {{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
 {{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
-{{#Luecke2_Quelle}}<div class="quelle">{{Luecke2_Quelle}}</div>{{/Luecke2_Quelle}}
+{{#Konnektor4_Quelle}}<div class="quelle">{{Konnektor4_Quelle}}</div>{{/Konnektor4_Quelle}}
 </div>
 ```
 
-## 15 — Lücke 3
-
-**Front**
-```html
-<div class="karte">
-{{#Luecke3_Frage}}
-<div class="kopf">Lücke <span class="pill other">{{Typ}}</span></div>
-<div class="satz">{{Luecke3_Frage}}</div>
-{{#Luecke3_GanzEN}}<div class="en2">{{Luecke3_GanzEN}}</div>{{/Luecke3_GanzEN}}
-<div class="hinweis">{{Luecke3_Hinweis}}</div>
-{{type:Luecke3_Antwort}}
-{{/Luecke3_Frage}}
-</div>
-```
-
-**Back**
-```html
-<div class="karte">
-<div class="kopf">Lücke <span class="pill other">{{Typ}}</span></div>
-<div class="wort">{{Wort}}</div>
-<hr id=answer>
-{{type:Luecke3_Antwort}}
-<div class="satz">{{Luecke3_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Luecke3_Ganz}}</div>
-{{#Luecke3_GanzEN}}<div class="en2">{{Luecke3_GanzEN}}</div>{{/Luecke3_GanzEN}}
-{{#Englisch}}<div class="block"><div class="label">Bedeutung</div><div class="en">{{Englisch}}</div></div>{{/Englisch}}
-{{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
-{{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
-{{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
-{{#Luecke3_Quelle}}<div class="quelle">{{Luecke3_Quelle}}</div>{{/Luecke3_Quelle}}
-</div>
-```
-
-## 16 — Lücke 4
-
-**Front**
-```html
-<div class="karte">
-{{#Luecke4_Frage}}
-<div class="kopf">Lücke <span class="pill other">{{Typ}}</span></div>
-<div class="satz">{{Luecke4_Frage}}</div>
-{{#Luecke4_GanzEN}}<div class="en2">{{Luecke4_GanzEN}}</div>{{/Luecke4_GanzEN}}
-<div class="hinweis">{{Luecke4_Hinweis}}</div>
-{{type:Luecke4_Antwort}}
-{{/Luecke4_Frage}}
-</div>
-```
-
-**Back**
-```html
-<div class="karte">
-<div class="kopf">Lücke <span class="pill other">{{Typ}}</span></div>
-<div class="wort">{{Wort}}</div>
-<hr id=answer>
-{{type:Luecke4_Antwort}}
-<div class="satz">{{Luecke4_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Luecke4_Ganz}}</div>
-{{#Luecke4_GanzEN}}<div class="en2">{{Luecke4_GanzEN}}</div>{{/Luecke4_GanzEN}}
-{{#Englisch}}<div class="block"><div class="label">Bedeutung</div><div class="en">{{Englisch}}</div></div>{{/Englisch}}
-{{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
-{{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
-{{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
-{{#Luecke4_Quelle}}<div class="quelle">{{Luecke4_Quelle}}</div>{{/Luecke4_Quelle}}
-</div>
-```
-
-## 17 — Welches Wort passt?
+## 15 — Welches Wort passt?
 
 **Front**
 ```html
@@ -542,7 +478,7 @@ Tags are column 115.
 </div>
 ```
 
-## 18 — Nebensatz: Wortstellung
+## 16 — Nebensatz: Wortstellung
 
 **Front**
 ```html
@@ -570,37 +506,6 @@ Tags are column 115.
 {{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
 {{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
 {{#Neben_Quelle}}<div class="quelle">{{Neben_Quelle}}</div>{{/Neben_Quelle}}
-</div>
-```
-
-## 19 — Komma setzen
-
-**Front**
-```html
-<div class="karte">
-{{#Komma_Frage}}
-<div class="kopf">Komma setzen <span class="pill other">{{Typ}}</span></div>
-<div class="satz">{{Komma_Frage}}</div>
-<div class="hinweis">{{Wort}}</div>
-{{type:Komma_Antwort}}
-{{/Komma_Frage}}
-</div>
-```
-
-**Back**
-```html
-<div class="karte">
-<div class="kopf">Komma setzen <span class="pill other">{{Typ}}</span></div>
-<div class="wort">{{Wort}}</div>
-<hr id=answer>
-{{type:Komma_Antwort}}
-<div class="satz">{{Komma_Ganz}} {{tts de_DE voices=Apple_Anna_(Premium),com.google.android.tts-de-de-x-nfh-local:Komma_Ganz}}</div>
-{{#Komma_GanzEN}}<div class="en2">{{Komma_GanzEN}}</div>{{/Komma_GanzEN}}
-{{#Englisch}}<div class="block"><div class="label">Bedeutung</div><div class="en">{{Englisch}}</div></div>{{/Englisch}}
-{{#Formen}}<div class="block"><div class="label">Formen</div><div class="chips">{{Formen}}</div></div>{{/Formen}}
-{{#Verwandt}}<div class="block"><div class="label">Verwandt</div><div class="chips">{{Verwandt}}</div></div>{{/Verwandt}}
-{{#Notiz}}<div class="notiz">{{Notiz}}</div>{{/Notiz}}
-{{#Komma_Quelle}}<div class="quelle">{{Komma_Quelle}}</div>{{/Komma_Quelle}}
 </div>
 ```
 
