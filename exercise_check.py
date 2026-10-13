@@ -25,7 +25,8 @@ Also here: which exercises a word gets (slots_for), finding them in sentences th
 (find_in), and the instructions for generating the missing ones (generation_prompt). vocab.py uses all
 of it. Needs data/dictionary.dump (see README, "Data sources").
 
-The one-time backfill used an older copy with a command line for answer files: backfill/exercise_check.py.
+The one-time backfill of 2026-10-09 used an older copy with a command line for answer files:
+backfill/exercises_oct09/exercise_check.py.
 """
 import collections
 import json
