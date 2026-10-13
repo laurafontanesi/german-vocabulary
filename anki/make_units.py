@@ -203,7 +203,7 @@ def main():
     out = ['# Learning units for the Anki deck (written by make_units.py; edit freely).',
            '# make_deck.py introduces the words unit by unit, in this order. Within a unit: first all',
            '# Bedeutung cards, then Produzieren, then the grammar, and last the consolidation cards',
-           '# (Welches Wort passt?, Nebensatz, Komma). Move a line to move a word; a line starting with',
+           '# (Welches Wort passt?, Nebensatz). Move a line to move a word; a line starting with',
            '# "## " starts a unit (the text after it is only a name). Words missing here come at the end.',
            '# Words that share a spelling are written "word | id".', '']
     for t, u in units:

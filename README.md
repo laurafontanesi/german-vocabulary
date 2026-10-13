@@ -45,12 +45,12 @@ Visit the live GitHub Pages URL above. To try changes before pushing, run `pytho
 |---|---|
 | DE → EN | See a German word, type the English meaning |
 | EN → DE | See an English meaning, type the German word |
-| Verb forms | A sentence with the Präteritum, Partizip II, er-form (stem-changing verbs), reflexive pronoun, or the verb's preposition + article (*Ich denke oft __ __ Großmutter*) missing |
-| Cases | A sentence with article + noun missing, in the accusative, dative or genitive shown |
-| Adjective endings | A sentence with the inflected adjective missing, after an article or after mein/dieser/kein |
+| Verb forms | A sentence with the Präteritum, the Perfekt (auxiliary + participle: *ist … gereist*), the er-form (stem-changing verbs) or the reflexive pronoun missing |
+| Declension | A sentence with a whole noun phrase missing (*mit __ über den Bodensee*: *dem großen Schiff*); the card gives the case and number, the noun and the adjective |
+| Fixed prepositions | A sentence with the preposition + article of a verb, noun or adjective missing (*Ich denke oft __ __ Großmutter*, *Angst __ __ Hund*) |
 | Connectors | A sentence with the preposition or conjunction missing; the card shows its meaning, not the word |
 
-The four sentence tasks use the `exercises` in `words.json`; each sentence is one item, with its English translation under it. When a sentence has two gaps (*nahm … mit*, *den Kindern*), type both in order in one box. Capitals and punctuation do not count. Sentences from Tatoeba link to their source after you answer.
+The four sentence tasks use the `exercises` in `words.json`; each sentence is one item, with its English translation under it. When a sentence has two gaps (*nahm … mit*, *ist … gereist*), type both in order in one box. Capitals and punctuation do not count. Sentences from Tatoeba link to their source after you answer.
 
 After each answer the word card is revealed (definitions, grammar, example sentence). A progress bar and percentage score track your session. Click **Summary** at any time to see all correct and incorrect answers from the current session.
 
@@ -124,12 +124,12 @@ Last, before the preview, the script fills the word's `exercises` (which ones a 
 3. the other example sentences;
 4. for whatever is still empty, one request to the API with the same rules as before (B1/B2, 6 to 14 words, the exact form, the gap marked in brackets).
 
-Every sentence goes through `exercise_check.py`: right verb form, a separable particle at the end of the main clause, *haben*/*sein* for the Perfekt, article + adjective + noun agreeing in case, number and gender, the case required by the preposition, current spelling, length. A generated sentence that fails is sent back once with the reason. Then you see the list:
+Every sentence goes through `exercise_check.py`: right verb form, a separable particle at the end of the main clause, the right auxiliary (*haben*/*sein*) for the Perfekt, determiner + adjective + noun agreeing in the case and number asked, the case required by the preposition, current spelling, length. A generated sentence that fails is sent back once with the reason. Then you see the list:
 
 ```
   Exercises:
     1. Präteritum                   Gestern [nahm] ich meinen Schirm nicht [mit].   (own)
-    2. Partizip II                  Hast du deinen Pass [mitgenommen]?   (generated)
+    2. Perfekt                      [Hast] du deinen Pass [mitgenommen]?   (generated)
     3. Präsens, er/sie/es           Sie [nimmt] immer ein Buch in den Urlaub [mit].   (generated)
   Enter to keep; numbers to replace or fill (e.g. 2,4):
 ```
@@ -170,7 +170,7 @@ Each entry in `words.json` is a JSON object. All entries share these fields:
 | `notes` | string | One-sentence personal note, or null. Register goes here when it is not neutral (`Register: umgangssprachlich.`) |
 | `related` | list | `[{word, kind}]` — semantic links, always bidirectional. `kind` is one of `synonym`, `antonym`, `contrast` (easily confused), `derived` (same stem, other word class), `compound` (one word is part of the other). Verb families are **not** stored here; see `family_root`. |
 | `added` | string | Date added (YYYY-MM-DD) |
-| `exercises` | list | Gap-fill sentences for the practice cards: `[{slot, label, de, en, blanks, source}]`. `blanks` are character spans in `de` (`[[4, 8]]` hides *nahm* in "Ich nahm ein Taxi…"). `slot` says what is tested: `praet`, `part`, `praes` (only stem-changing verbs), `refl` (only reflexive verbs), `prep1`/`prep2` (the verb's fixed preposition + article, with `form` such as `auf + AKK`), `kasus1`/`kasus2` (noun with determiner in a case, with `form` such as `DAT:PLU`), `adj_art`/`adj_det` (inflected adjective after an article or after a possessive/dieser/kein), `pc1`…`pc4` (prepositions and conjunctions). A verb whose root verb is also in the dictionary (vornehmen, with nehmen) gets only `part` (and `refl`, `prep`): its Präteritum and Präsens repeat the root's. Constructions have no sentence exercise. `vocab.py` keeps this in sync: adding a root verb removes the Präteritum/Präsens exercises of its family members, and deleting one offers to write them again. `source` is `own`, `example`, `tatoeba:<sentence id>` or `generated`. Every generated sentence passed `exercise_check.py` |
+| `exercises` | list | Gap-fill sentences for the practice cards: `[{slot, label, de, en, blanks, source}]`. `blanks` are character spans in `de` (`[[4, 8]]` hides *nahm* in "Ich nahm ein Taxi…"). Only what cannot be predicted from a rule is practised. `slot` says what is tested: `praet` (irregular and mixed verbs: *nahm*, *dachte*), `part` (auxiliary + participle, *[ist] … [gereist]*; irregular and mixed verbs, and every verb with *sein*; regular verbs with *haben* get no Perfekt card), `praes` (only stem-changing verbs), `refl` (only reflexive verbs), `prep1`/`prep2` (the fixed preposition + article of a verb, noun or adjective, with `form` such as `auf + AKK`), `dekl` (one noun phrase, determiner + adjective + noun, as one gap; `form` is the case and number, `DAT:SIN`, and `adj` the adjective's base form shown in the hint), `dekl_pl` (the same in the plural, only for irregular plurals: *Wände*, *Bilder*, *Autoren*; and for plural-only nouns), `pc1`…`pc4` (prepositions and conjunctions). A verb whose root verb is also in the dictionary (vornehmen, with nehmen) gets only `part` (and `refl`, `prep`): its Präteritum and Präsens repeat the root's. Adjectives and constructions have no sentence exercise of their own (adjectives are practised inside the `dekl` phrases). `vocab.py` keeps this in sync: adding a root verb removes the Präteritum/Präsens exercises of its family members, and deleting one offers to write them again. `source` is `own`, `example`, `tatoeba:<sentence id>` or `generated`. Every generated sentence passed `exercise_check.py` |
 
 **Extra fields for nouns:**
 
@@ -178,6 +178,9 @@ Each entry in `words.json` is a JSON object. All entries share these fields:
 |---|---|
 | `gender` | `der`, `die`, or `das` |
 | `plural` | Plural form with article |
+| `preposition` | Fixed preposition + case (`vor + DAT` for *die Angst*), or absent. Gets a `prep` exercise |
+| `plural_card` | `false` when an irregular plural should not get its own card: rare (*die Aufwände*), with another meaning (*die Mängel* = defects), or a pattern another noun already practises (*die Putzkräfte* next to *die Kräfte*). `vocab.py` asks when you add a noun with an irregular plural |
+| `dekl_card` | `false` for a noun that only lives in a fixed phrase (*ohne Unterlass*): no Deklination card |
 
 **Extra fields for verbs:**
 
@@ -192,7 +195,7 @@ Each entry in `words.json` is a JSON object. All entries share these fields:
 | `verb_class` | `regular` (kaufte, gekauft), `irregular` (nahm, genommen) or `mixed` (dachte, gedacht: weak endings, changed stem) |
 | `is_separable` | `true` / `false` |
 | `reflexive` | `"akk"` (ich freue **mich**), `"dat"` (ich nehme **mir** etwas vor) or `false`. Reflexive means the verb cannot drop *sich*, or changes meaning with it; those have *sich* in the headword. Verbs that merely *can* take *sich* (waschen, umdrehen) are not reflexive. When a verb has a second object, the pronoun moves to the dative (ich ziehe **mir** die Jacke an); that goes in the meaning's note |
-| `preposition` | Fixed preposition + case, e.g. `an + DAT`; several separated by ` / ` (`auf + AKK / über + AKK` for *sich freuen*). Each one gets a `prep` exercise. A bare case (`DAT` for *vertrauen*) is kept as information but gets no exercise |
+| `preposition` | Fixed preposition + case, e.g. `an + DAT`; several separated by ` / ` (`auf + AKK / über + AKK` for *sich freuen*). Each one gets a `prep` exercise. A bare case (`DAT` for *vertrauen*) is kept as information but gets no exercise. A verb with a fixed preposition is stored as the verb alone (*zählen*, `auf + AKK`), not as *zählen auf* |
 | `family_root` | Root verb (e.g. `nehmen` for `mitnehmen`) |
 | `prefix` | Separable prefix e.g. `mit-` |
 
@@ -202,6 +205,9 @@ Each entry in `words.json` is a JSON object. All entries share these fields:
 |---|---|
 | `usage` | `both`, `adjective only`, or `adverb only` |
 | `derived_from` | source verb for participle-adjectives e.g. `entspannen` for *entspannt* |
+| `preposition` | Fixed preposition + case (`auf + AKK` for *neugierig*), or absent. Gets a `prep` exercise |
+
+Adjectives are stored in their base form, without an ending (*bedingt*, not *bedingte*).
 
 **Extra fields for prep/conj:**
 

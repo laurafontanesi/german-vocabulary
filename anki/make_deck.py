@@ -208,7 +208,20 @@ def word_forms(w):
 
 
 def hide_word(text, forms):
-    return re.sub(r"[\wäöüß]+", lambda m: GAP if m.group().lower() in forms else m.group(), text)
+    """The word, its forms, and the word inside a longer word (krankheits___, Regen___, die ___in)."""
+    longer = sorted((f for f in forms if len(f) >= 4), key=len, reverse=True)
+
+    def rep(m):
+        t = m.group()
+        low = t.lower()
+        if low in forms:
+            return GAP
+        for f in longer:
+            i = low.find(f)
+            if i >= 0 and len(low) > len(f) + 1:
+                return t[:i] + GAP + t[i + len(f):]
+        return t
+    return re.sub(r"[\wäöüß]+", rep, text)
 
 
 def englisch_frage(w):
@@ -258,7 +271,7 @@ def englisch_kurz(w):
 # Sentence exercises come from the `exercises` field of words.json (checked by exercise_check.py);
 # these builders only turn one of them into card fields.
 
-CASE_DE = {'AKK': 'Akkusativ', 'DAT': 'Dativ', 'GEN': 'Genitiv'}
+CASE_DE = {'NOM': 'Nominativ', 'AKK': 'Akkusativ', 'DAT': 'Dativ', 'GEN': 'Genitiv'}
 
 
 def gaps(ex):
@@ -300,23 +313,29 @@ def meaning_hint(w):
 
 def ex_slot(slot):
     def build(w, ctx):
-        if slot in ('praet', 'part', 'praes'):
+        if slot in ('praet', 'praes'):
             return from_exercise(w, slot, w['word'])
+        if slot == 'part':                         # auxiliary and participle: [ist] … [gereist]
+            return from_exercise(w, slot, w['word'] + ' · Hilfsverb + Partizip II')
         if slot == 'refl':
             return from_exercise(w, slot, w['word'] + (' (Dativ)' if w.get('reflexive') == 'dat' else ' (Akkusativ)'))
-        if slot.startswith('kasus'):
+        if slot.startswith('dekl'):
+            # the whole phrase (determiner + adjective + noun) is one gap; the hint gives the case
+            # and number, the noun and the adjective in their dictionary forms
             ex = next((e for e in w.get('exercises', []) if e['slot'] == slot), None)
             c, n = ((ex or {}).get('form') or ':').split(':')
             label = f"{CASE_DE.get(c, c)} {'Plural' if n == 'PLU' else 'Singular'}"
-            return from_exercise(w, slot, f'{label} · {w["word"]}')
-        if slot.startswith('adj'):
-            return from_exercise(w, slot, w['word'])
+            adj = (ex or {}).get('adj') or ''
+            got = from_exercise(w, slot, f'{label} · {w["word"]}' + (f' · {adj}' if adj else ''))
+            if got:
+                got['Frage'] = got['Frage'].replace('___', '______', 1)       # a longer gap for a phrase
+            return got
         if slot.startswith('prep'):
             ex = next((e for e in w.get('exercises', []) if e['slot'] == slot), None)
             case = ((ex or {}).get('form') or '+').split('+')[1].strip()
             return from_exercise(w, slot, f"{w['word']} · Präposition + Artikel ({CASE_DE.get(case, case)})")
-        # Lücke n: preposition/conjunction. The word itself would give the answer away, so the hint
-        # is its meaning.
+        # Konnektor n: preposition/conjunction. The word itself would give the answer away, so the
+        # hint is its meaning.
         return from_exercise(w, 'pc' + slot[-1], meaning_hint(w))
     return build
 
@@ -338,25 +357,6 @@ def ex_nebensatz(w, ctx):
                 break
         return dict(Frage=' / '.join(shuffled), Antwort=clause, Ganz=s,
                     GanzEN=ex.get('en', ''), Hinweis='Wo steht das Verb?')
-    return None
-
-
-def ex_komma(w, ctx):
-    for ex in w.get('examples', []):
-        s = ex['de']
-        if s.count(',') != 1:
-            continue
-        if not re.search(r'\b(' + '|'.join(SUB_CONJ) + r'|der|die|das|den|dem)\b',
-                         s, re.I):
-            continue
-        i = s.find(',')
-        vor, nach = s[:i].split(), s[i + 1:].split()
-        if not vor or not nach:
-            continue
-        return dict(Frage=s.replace(',', ''),
-                    Antwort=strip_punct(vor[-1]) + ', ' + strip_punct(nach[0]),
-                    Ganz=s, GanzEN=ex.get('en', ''),
-                    Hinweis='Die zwei Wörter um das Komma')
     return None
 
 
@@ -412,32 +412,29 @@ def ex_kontrast(w, ctx):
 
 EXERCISES = [
     ('Praet',    'Präteritum',             'verb',   ex_slot('praet'),  ''),
-    ('Part',     'Partizip II',            'verb',   ex_slot('part'),   ''),
+    ('Part',     'Perfekt',                'verb',   ex_slot('part'),   ''),
     ('Praes',    'Präsens (er/sie/es)',    'verb',   ex_slot('praes'),  ''),
     ('Refl',     'Reflexivpronomen',       'verb',   ex_slot('refl'),   ''),
-    ('Kasus1',   'Kasus',                  'noun',   ex_slot('kasus1'), ''),
-    ('Kasus2',   'Kasus 2',                'noun',   ex_slot('kasus2'), ''),
-    ('AdjArt',   'Adjektiv nach Artikel',  'adjadv', ex_slot('adj_art'), ''),
-    ('AdjDet',   'Adjektiv nach Begleiter', 'adjadv', ex_slot('adj_det'), ''),
-    ('Praep1',   'Verb + Präposition',     'verb',   ex_slot('prep1'),  ''),
-    ('Praep2',   'Verb + Präposition 2',   'verb',   ex_slot('prep2'),  ''),
+    ('Dekl',     'Deklination',            'noun',   ex_slot('dekl'),   ''),
+    ('DeklPl',   'Deklination Plural',     'noun',   ex_slot('dekl_pl'), ''),
+    ('Praep1',   'Präposition',            'other',  ex_slot('prep1'),  ''),
+    ('Praep2',   'Präposition 2',          'other',  ex_slot('prep2'),  ''),
 ] + [
-    (f'Luecke{n}', f'Lücke {n}',          'other',  ex_slot(f'gap{n}'), '') for n in range(1, 5)
+    (f'Konnektor{n}', f'Konnektor {n}',   'other',  ex_slot(f'gap{n}'), '') for n in range(1, 5)
 ] + [
     ('Kontrast', 'Welches Wort passt?',    'other',  ex_kontrast,    ''),
     ('Neben',    'Nebensatz: Wortstellung', 'other', ex_nebensatz,   ''),
-    ('Komma',    'Komma setzen',           'other',  ex_komma,       ''),
 ]
 # sentence exercises: the hint (word, case, meaning) is in the _Hinweis field, shown on the front
-SENTENCE_KEYS = {'Praet', 'Part', 'Praes', 'Refl', 'Kasus1', 'Kasus2', 'AdjArt', 'AdjDet',
-                 'Praep1', 'Praep2'} | {f'Luecke{n}' for n in range(1, 5)}
+SENTENCE_KEYS = {'Praet', 'Part', 'Praes', 'Refl', 'Dekl', 'DeklPl',
+                 'Praep1', 'Praep2'} | {f'Konnektor{n}' for n in range(1, 5)}
 
 # card order within a word: first recognise it (Bedeutung), then produce it (Produzieren), then
-# its grammar, and last the cards that need it to be known well (contrast, word order, comma)
+# its grammar, and last the cards that need it to be known well (contrast, word order)
 CARD_ORDER = ['Bedeutung', 'Produzieren',
               'Praes', 'Refl', 'Praep1', 'Praep2', 'Part', 'Praet',
-              'Kasus1', 'Kasus2', 'AdjArt', 'AdjDet', 'Luecke1', 'Luecke2', 'Luecke3', 'Luecke4',
-              'Kontrast', 'Neben', 'Komma']
+              'Dekl', 'DeklPl', 'Konnektor1', 'Konnektor2', 'Konnektor3', 'Konnektor4',
+              'Kontrast', 'Neben']
 assert sorted(CARD_ORDER) == sorted([k for k, *_ in EXERCISES] + ['Bedeutung', 'Produzieren'])
 
 
@@ -729,7 +726,7 @@ def write_apkg(path, rows, fields, css):
 # both words of the pair have been introduced. Words not in units.txt (added later) follow, in
 # the same pattern, in groups of 20.
 
-CONSOLIDATION = ['Kontrast', 'Neben', 'Komma']
+CONSOLIDATION = ['Kontrast', 'Neben']
 
 
 def read_units(path, db):

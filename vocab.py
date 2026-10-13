@@ -178,7 +178,7 @@ Please analyse this word and return a JSON object with the following fields. Be 
 Return ONLY valid JSON, no explanation, no markdown, no code fences.{type_hint}
 
 {{
-  "word": "the word in its canonical form (e.g. with gender for nouns: 'die Sehnsucht', infinitive for verbs: 'erinnern'; reflexive verbs MUST include 'sich': 'sich erinnern')",
+  "word": "the word in its canonical form (e.g. with gender for nouns: 'die Sehnsucht', infinitive for verbs: 'erinnern'; reflexive verbs MUST include 'sich': 'sich erinnern'; adjectives in the base form without ending: 'bedingt', not 'bedingte'; a verb with a fixed preposition is the verb alone, 'zählen', with the preposition in the \"preposition\" field, never 'zählen auf')",
   "type": "one of: noun, verb, adj/adv, prep/conj, expression, construction, other",
   "usage": "for adj/adv: adjective only, adverb only, or both; for prep/conj: preposition only, conjunction only, or both — else null",
   "gender": "der/die/das — only for nouns, else null",
@@ -190,7 +190,7 @@ Return ONLY valid JSON, no explanation, no markdown, no code fences.{type_hint}
   "verb_class": "regular (weak: kaufte, gekauft), irregular (strong: nahm, genommen) or mixed (weak endings with a changed stem: dachte, gedacht) — only for verbs, else null",
   "is_separable": true or false — only for verbs, else null,
   "reflexive": "akk" if the reflexive pronoun is accusative (ich freue mich), "dat" if dative (ich nehme mir etwas vor), false if the verb is not reflexive. Only verbs that cannot drop sich, or whose meaning changes with sich, are reflexive; waschen (sich waschen = wash oneself) is NOT. Only for verbs, else null,
-  "preposition": "the verb's fixed preposition with its case, e.g. 'an + AKK' (denken an); several separated by ' / ' (sich freuen: 'auf + AKK / über + AKK'); only real prepositional objects, not places or times; else null",
+  "preposition": "the fixed preposition with its case, of a verb (denken: 'an + AKK'), a noun (die Angst: 'vor + DAT') or an adjective (stolz: 'auf + AKK'); several separated by ' / ' (sich freuen: 'auf + AKK / über + AKK'); only real prepositional objects that belong to the word, not places or times; else null",
   "also_adverb": null,
   "family_root": "the root verb — for compounds e.g. 'nehmen' for 'mitnehmen'; for root verbs use the word itself e.g. 'schlafen' for 'schlafen' (never null for verbs)",
   "prefix": "the prefix e.g. 'mit-' for 'mitnehmen', else null",
@@ -202,6 +202,7 @@ Return ONLY valid JSON, no explanation, no markdown, no code fences.{type_hint}
     {{"de": "A natural German example sentence", "en": "English translation"}},
     {{"de": "A second example showing a different use", "en": "English translation"}}
   ],
+  (for a separable verb, one of the two examples uses the infinitive, with zu or a modal verb: "Ich muss morgen früh aufstehen.")
   "compound_parts": "for a compound noun or adjective, its parts in order as a list, nouns with article, linking elements as separate items: [\"die Kündigung\", \"-s-\", \"die Frist\"]; null if not a compound",
   "topics": ["0 to 2 topics from the list below, ONLY if the word is clearly about that domain; core vocabulary like brauchen or bekommen gets an empty list"],
   "notes": "one sentence max — only if there is something genuinely important to note, e.g. easy confusion with another word, or a non-neutral register (umgangssprachlich, gehoben, Schweizerdeutsch), or null",
@@ -292,17 +293,18 @@ def _spec_form(entry: dict, slot: str, form=None):
         return (entry.get("past_participle") or "").split("/")[0].strip()
     if slot == "refl":
         return "mir/dir" if entry.get("reflexive") == "dat" else "mich/dich"
-    if slot.startswith(("kasus", "prep")):
+    if slot.startswith(("dekl", "prep")):
         return form
     return entry["word"]
 
 
-def _exercise(spec: dict, r: dict, source: str) -> dict:
+def _exercise(spec: dict, r: dict, source: str, adj: str = None) -> dict:
     ex = {"slot": spec["slot"], "label": spec["label"], "de": r["de"], "en": r["en"],
           "blanks": r["blanks"], "source": source}
-    if spec["slot"].startswith("kasus"):
+    if spec["slot"].startswith("dekl"):
         ex["form"] = spec["form"]
-        ex["label"] = EX.kasus_label(spec["form"])
+        ex["label"] = EX.dekl_label(spec["form"])
+        ex["adj"] = adj or ""
     elif spec["slot"].startswith("prep"):
         ex["form"] = spec["form"]
     return ex
@@ -325,11 +327,9 @@ def _generate(entry, specs, morph, api_key, used, feedback=None):
             problems[spec["slot"]] = [f"skipped: {a['skip']}"]
             continue
         sp = dict(spec)
-        if sp["slot"].startswith("kasus") and a.get("note") in ("singular", "plural"):
-            sp["form"] = sp["form"].split(":")[0] + (":SIN" if a["note"] == "singular" else ":PLU")
         r = EX.check(entry, sp["slot"], _spec_form(entry, sp["slot"], sp["form"]), a, morph, used)
         if r["status"] in ("ok", "check"):
-            got[spec["slot"]] = _exercise(sp, r, "generated")
+            got[spec["slot"]] = _exercise(sp, r, "generated", a.get("adj"))
             used.append(r["de"])
         else:
             problems[spec["slot"]] = r["problems"]
@@ -342,22 +342,23 @@ def _own_exercise(entry, spec, morph, used):
         de = input("    your sentence with [brackets] (Enter: skip): ").strip()
         if not de:
             return None
+        adj = ask("    the adjective in its base form (e.g. groß)") if spec["slot"].startswith("dekl") else None
         morph.load(EX.with_suffixes(set(EX.toks(de.replace("[", "").replace("]", "")))))
-        r = EX.check(entry, spec["slot"], _spec_form(entry, spec["slot"], spec["form"]), {"de": de, "en": "-"},
-                     morph, used, min_words=3)
+        r = EX.check(entry, spec["slot"], _spec_form(entry, spec["slot"], spec["form"]),
+                     {"de": de, "en": "-", "adj": adj}, morph, used, min_words=3)
         if r["status"] not in ("ok", "check"):
             print("    ✗ " + "; ".join(r["problems"]))
             continue
         if r["problems"]:
             print("    (note: " + "; ".join(r["problems"]) + ")")
         r["en"] = ask("  English")
-        return _exercise(spec, r, "own")
+        return _exercise(spec, r, "own", adj)
 
 
 def build_exercises(entry: dict, api_key: str | None, interactive: bool = True, words: list | None = None) -> None:
     """Fill entry["exercises"]: keep what still fits, use your sentences, generate the rest, let you review.
-    `words` (the whole dictionary) tells whether a verb's root verb is in it: then only its Partizip II
-    is practised."""
+    `words` (the whole dictionary) tells whether a verb's root verb is in it: then only its Perfekt
+    is practised (EX.slots_for says which exercises a word gets)."""
     if not EX_OK:
         print("  (exercises skipped: exercise_check.py or data/dictionary.dump not found)")
         return
@@ -377,8 +378,9 @@ def build_exercises(entry: dict, api_key: str | None, interactive: bool = True, 
         spec = next((s for s in specs if s["slot"] == e["slot"]), None)
         if not spec:
             continue
-        form = e.get("form") if e["slot"].startswith("kasus") else _spec_form(entry, e["slot"], spec["form"])
-        r = EX.check(entry, e["slot"], form, {"de": EX.show(e), "en": e.get("en") or "-"}, morph, min_words=3)
+        form = e.get("form") if e["slot"].startswith("dekl") else _spec_form(entry, e["slot"], spec["form"])
+        r = EX.check(entry, e["slot"], form, {"de": EX.show(e), "en": e.get("en") or "-", "adj": e.get("adj")},
+                     morph, min_words=3)
         if r["status"] in ("ok", "check"):
             chosen[e["slot"]] = e
             used.append(e["de"])
@@ -393,34 +395,23 @@ def build_exercises(entry: dict, api_key: str | None, interactive: bool = True, 
             if ex["de"] in used:
                 continue
             sp = dict(spec)
-            if sp["slot"].startswith("kasus"):
-                other = next((c for k, c in chosen.items() if k.startswith("kasus")), None)
-                r = EX.find_in(entry, sp, ex["de"], ex.get("en", ""), morph, used)
-                if not r or (other and r["form"] == other.get("form")):
-                    continue
-                sp["form"] = r["form"]
-            else:
-                r = EX.find_in(entry, sp, ex["de"], ex.get("en", ""), morph, used)
-                if not r:
-                    continue
+            r = EX.find_in(entry, sp, ex["de"], ex.get("en", ""), morph, used)
+            if not r:
+                continue
             chosen[spec["slot"]] = _exercise(sp, r, "own" if ex.get("source") == "own" else "example")
             used.append(ex["de"])
             break
 
-    # 3. noun slots still empty get a random case (not one already used)
+    # 3. Deklination cards: the case of the one kept, or a random one (mostly accusative and dative)
     rnd = random.Random(entry["id"])
     for spec in specs:
-        if spec["slot"].startswith("kasus"):
-            if spec["slot"] in chosen:
-                spec["form"] = chosen[spec["slot"]].get("form")
-            else:
-                taken = {c.get("form", ":").split(":")[0] for k, c in chosen.items() if k.startswith("kasus")}
-                spec["form"] = EX.kasus_options(entry, taken, rnd)
-            if spec["form"]:
-                spec["label"] = EX.kasus_label(spec["form"])
+        if spec["slot"].startswith("dekl"):
+            spec["form"] = chosen[spec["slot"]].get("form") if spec["slot"] in chosen \
+                else EX.dekl_option(entry, spec["slot"], rnd)
+            spec["label"] = EX.dekl_label(spec["form"])
 
     # 4. the API writes the rest; one retry for the ones that fail the check
-    missing = [s for s in specs if s["slot"] not in chosen and (not s["slot"].startswith("kasus") or s["form"])]
+    missing = [s for s in specs if s["slot"] not in chosen]
     problems = {}
     if missing and api_key:
         print(f"  Writing {len(missing)} exercise sentence(s) with AI…")
@@ -454,8 +445,6 @@ def build_exercises(entry: dict, api_key: str | None, interactive: bool = True, 
             break
         for n in sorted({int(x) for x in re.findall(r"\d+", val) if 1 <= int(x) <= len(specs)}):
             spec = specs[n - 1]
-            if spec["slot"].startswith("kasus") and not spec["form"]:
-                continue
             print(f"  {n}. {spec['label']}")
             e = _own_exercise(entry, spec, morph, used)
             if not e and api_key and input("    generate a new one with AI instead? (y/n) [y]: ").strip().lower() in ("", "y"):
@@ -483,7 +472,7 @@ def family_members(words: list, verb: dict) -> list:
 
 
 def root_added(words: list, verb: dict) -> None:
-    """A new root verb: its family members now only practise the Partizip II (their Präteritum and
+    """A new root verb: its family members now only practise the Perfekt (their Präteritum and
     Präsens repeat the root's), so those exercises are removed from them."""
     for m in family_members(words, verb):
         before = len(m.get("exercises", []))
@@ -588,7 +577,8 @@ def print_entry(w: dict):
     print(f"  ┌─ {w['word']}  [{w['type']}]")
 
     if w["type"] == "noun":
-        print(f"  │  gender: {w.get('gender','?')}   plural: {w.get('plural','?')}")
+        print(f"  │  gender: {w.get('gender','?')}   plural: {w.get('plural','?')}"
+              + (f"   · {w['preposition']}" if w.get("preposition") else ""))
     elif w["type"] == "verb":
         aux  = w.get("auxiliary", "")
         pt   = w.get("past_tense", "")
@@ -606,7 +596,8 @@ def print_entry(w: dict):
             print(f"  │  family: {w['family_root']}  (prefix: {w.get('prefix','')})")
 
     if w.get("usage"):
-        print(f"  │  usage: {w['usage']}")
+        print(f"  │  usage: {w['usage']}" + (f"   · {w['preposition']}" if w["type"] == "adj/adv"
+                                              and w.get("preposition") else ""))
 
     print(f"  │")
     for i, d in enumerate(w.get("definitions", []), 1):
@@ -967,6 +958,25 @@ def lexicon_noun(entry: dict) -> None:
         print(f"  ! plural: you have '{pl}', the lexicon has {' / '.join(n['plurals'])} (some nouns have two)")
 
 
+def ask_preposition(entry: dict, suggested=None) -> None:
+    """Nouns and adjectives with a fixed preposition (die Angst vor + DAT, stolz auf + AKK) get the
+    preposition card that verbs have."""
+    if suggested and str(suggested) not in ("—", "None", "null"):
+        prep = confirm_or_edit("Fixed preposition", suggested)
+    else:
+        prep = ask("Fixed preposition + case, e.g. vor + DAT (or Enter for none)")
+    if prep and str(prep) not in ("—", "None", "null"):
+        entry["preposition"] = prep
+
+
+def ask_plural_card(entry: dict) -> None:
+    """An irregular plural (die Wände, die Bilder) gets its own Deklination card; ask whether it is
+    worth one when the plural is rare or means something else (die Mängel = defects)."""
+    if EX_OK and EX.plural_kind(entry) == "irregular":
+        if ask(f"Irregular plural ({entry.get('plural')}): practise it on its own card? (y/n)", "y").lower() != "y":
+            entry["plural_card"] = False
+
+
 def cmd_add(args):
     manual  = "--manual" in args
     words   = load()
@@ -1051,6 +1061,8 @@ def cmd_add(args):
             entry["gender"] = ask_choice("Gender", GENDERS)
             entry["plural"] = ask("Plural form (e.g. die Erinnerungen)")
         lexicon_noun(entry)
+        ask_preposition(entry, s.get("preposition") if suggestion else None)
+        ask_plural_card(entry)
 
     elif word_type == "verb":
         if suggestion:
@@ -1155,6 +1167,7 @@ def cmd_add(args):
 
         if derived_from:
             entry["derived_from"] = derived_from
+        ask_preposition(entry, s.get("preposition") if suggestion else None)
 
     elif word_type == "prep/conj":
         USAGE_OPTIONS = ["both", "preposition only", "conjunction only"]
@@ -1397,6 +1410,10 @@ def cmd_edit(args):
         if w["type"] == "noun":
             w["gender"] = ask_choice("Gender", GENDERS, w.get("gender", ""))
             w["plural"] = ask("Plural form", w.get("plural", "") or "")
+            w.pop("plural_card", None)
+            ask_plural_card(w)
+            w["preposition"] = ask("Fixed preposition + case, e.g. vor + DAT (or Enter for none)",
+                                   w.get("preposition", "") or "") or None
         elif w["type"] == "verb":
             w["auxiliary"]       = ask_choice("Auxiliary", ["haben", "sein"], w.get("auxiliary", "haben"))
             w["past_tense"]      = ask("Past tense", w.get("past_tense", "") or "")
@@ -1413,9 +1430,13 @@ def cmd_edit(args):
         elif w["type"] == "adj/adv":
             USAGE_OPTIONS = ["both", "adjective only", "adverb only"]
             w["usage"] = ask_choice("Usage", USAGE_OPTIONS, w.get("usage", "both"))
+            w["preposition"] = ask("Fixed preposition + case, e.g. auf + AKK (or Enter for none)",
+                                   w.get("preposition", "") or "") or None
         elif w["type"] == "prep/conj":
             USAGE_OPTIONS = ["both", "preposition only", "conjunction only"]
             w["usage"] = ask_choice("Usage", USAGE_OPTIONS, w.get("usage", "both"))
+        if w.get("preposition") is None:
+            w.pop("preposition", None)
 
     elif choice == "7":
         w["type"] = ask_choice("Word type", WORD_TYPES, w.get("type", "other"))

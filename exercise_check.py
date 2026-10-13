@@ -9,11 +9,13 @@ sentences it generates for each new word. Each sentence comes with the hidden wo
 What is checked, per slot:
   praet / praes   the bracketed words are exactly the stored verb form; a separable particle closes its clause;
                   a verb without particle is not followed by a clause-final particle (that would be another verb)
-  part            the participle as stored, with an auxiliary in the sentence
+  part            the auxiliary (a form of haben or sein, as the verb takes) and the participle as stored,
+                  both bracketed, in the same clause
   refl            mich/dich (accusative) or mir/dir (dative), with ich/du as subject in the same clause
-  adj_art/adj_det the adjective is a form of the word, between a determiner of the right kind and a noun, and
-                  determiner + adjective + noun agree in case, number and gender (Morphy full-form lexicon)
-  kasus           determiner + noun of this word, agreeing with each other in the requested case and number
+  dekl / dekl_pl  one bracket around determiner (or none) + adjective + this noun; the adjective is a form of
+                  the base given in "adj"; the phrase agrees in the requested case and number (Morphy
+                  full-form lexicon) and fits a preposition directly before it
+  prep            preposition + article of a verb, noun or adjective with a fixed preposition
   pc              the word appears once and is the only thing bracketed
   all             length, current spelling, unsuitable content, English present, not a copy of a used sentence
 
@@ -51,7 +53,6 @@ PARTICLES = {"ab", "an", "auf", "aus", "bei", "ein", "fest", "fort", "her", "hin
 DER_TYPE = {"der", "die", "das", "dies", "jen", "jed", "welch", "manch", "solch"}
 EIN_TYPE = {"ein", "kein", "mein", "dein", "sein", "ihr", "unser", "euer"}
 QUANT = {"viel", "wenig", "einig", "mehrer", "zwei", "drei", "vier", "fünf"}
-ARTICLES = {"der", "die", "das", "ein"}                    # for adj_art; the rest are adj_det determiners
 
 SUBORD = {"dass", "weil", "wenn", "ob", "als", "obwohl", "nachdem", "bevor", "während", "seit", "seitdem",
           "sobald", "damit", "falls", "da", "bis", "indem", "sodass", "solange", "wie", "wo", "warum"}
@@ -201,7 +202,7 @@ def adj_stems(word):
     if re.search(r"([^aeiouäöü]|eu|au)e[lr]$", w):
         out.add(w[:-2] + w[-1])
     if w.endswith("ch") and w[:-2].endswith("o"):
-        out.add(w[:-1] + "h")                            # hoch -> hoh
+        out.add(w[:-2] + "h")                            # hoch -> hoh
     return out
 
 
@@ -306,6 +307,115 @@ def governing_cases(tokens, i):
     return None
 
 
+# ── Perfekt and Deklination helpers ──────────────────────────────────────────
+
+def aux_forms(entry):
+    """Forms of the verb's auxiliary that a Perfekt card accepts: the one in words.json, as in German
+    German (hat gestanden; the Swiss "ist gestanden" is mentioned in the word's note only)."""
+    return AUX_SEIN if (entry.get("auxiliary") or "haben").lower().startswith("sein") else AUX_HABEN
+
+
+# adjectives that never take an ending: lila, rosa, prima, and city/country adjectives in -er
+INDECLINABLE = {"lila", "rosa", "prima", "orange", "beige", "super"}
+
+
+def indeclinable(tok):
+    return tok.lower() in INDECLINABLE or (tok[:1].isupper() and tok.endswith("er"))
+
+
+def plural_kind(entry):
+    """'none', 'only' (plural-only noun), 'regular' (predictable from gender and ending) or 'irregular'."""
+    word, pl = entry.get("word", "").strip(), (entry.get("plural") or "").strip()
+    if not pl or pl in ("-", "—"):
+        return "none"
+    if pl == word:
+        return "only"
+    m = re.match(r"(der|die|das)\s+(.+)", word)
+    s, p = (m.group(2) if m else word), bare(pl)
+    gen = m.group(1) if m else ""
+    if (gen == "die" and (p in (s + "n", s + "en") or (s.endswith("in") and p == s + "nen"))) \
+            or (s.endswith("nis") and p == s + "se") \
+            or (gen in ("der", "das") and p == s + "e") \
+            or (gen in ("der", "das") and re.search(r"(er|el|en|chen|lein)$", s) and p == s) \
+            or (gen == "der" and s.endswith("e") and p == s + "n"):
+        return "regular"
+    return "irregular"
+
+
+NUMBERS = {"zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun", "zehn", "zwölf", "hundert"}
+
+
+def check_dekl(entry, slot, form, adj, plain, ts, spans, marked, morph, warnings):
+    """Determiner (or none) + adjective(s) + this noun, in the requested case and number."""
+    problems = []
+    if not spans or len(spans) != 1:
+        return problems
+    case, num = form.split(":")
+    if (slot == "dekl_pl") != (num == "PLU"):
+        problems.append(f"{slot} needs the {'plural' if slot == 'dekl_pl' else 'singular'}")
+    k0 = token_index_at(plain, spans[0][0])
+    pt = toks(marked[0])
+    if pt[0].lower() in CONTRACTIONS:
+        return problems + [f"«{pt[0]}» contains the preposition: write it out or leave the preposition outside"]
+    noun = pt[-1]
+    if not noun[:1].isupper():
+        return problems + [f"«{noun}»: the phrase must end with the noun"]
+    if pt[0].lower() in NUMBERS:                           # zwei volle Krüge: like no determiner
+        det, middle = None, pt[1:-1]
+    else:
+        det = pt[0] if det_readings(morph, pt[0])[0] and not adj_ending_of_any(pt[0], adj) else None
+        middle = pt[1:-1] if det else pt[:-1]
+    if not middle:
+        return problems + ["no adjective in the phrase"]
+    bases = [b.strip() for b in adj.split(",") if b.strip()]
+    declined = []
+    for t in middle:
+        if indeclinable(t) and any(t.lower() == b.lower() for b in bases):
+            continue
+        if bases and not any(adj_ending(t, b) for b in bases):
+            problems.append(f"«{t}» is not a form of {' / '.join(bases) or 'the adjective'}")
+        elif not bases and not adj_ending(t):
+            problems.append(f"«{t}» is not an inflected adjective")
+        declined.append(t)
+    if not bases:
+        problems.append("the adjective's base form is missing (\"adj\")")
+    lemma = bare(entry["word"])
+    reads = noun_readings(morph, noun, lemma, suffixes=False) or entry_noun_readings(entry, noun) \
+        or noun_readings(morph, noun, lemma)
+    if lemma.endswith("e") and noun != lemma and adj_ending(noun.lower(), lemma[:-1].lower()) \
+            and is_adjective(morph, lemma[:-1].lower()):
+        # adjective used as a noun (der Fremde, ein Fremder): it declines like the adjective
+        gens = {"der": {"MAS"}, "die": {"FEM"}, "das": {"NEU"}}.get(entry["word"].split()[0], {"MAS", "FEM"})
+        reads = {(c, n, g) for c in CASES for n in ("SIN", "PLU") for g in gens}
+        declined.append(noun)
+    if not reads:
+        return problems + [f"«{noun}» is not a form of «{lemma}»"]
+    agree, _ = np_agreement(morph, det, declined, noun, lemma, reads)
+    fits = {(c, n) for c, n, _ in agree}
+    if not agree:
+        problems.append(f"«{marked[0]}» does not agree")
+    elif (case, num) not in fits:
+        problems.append(f"asked for {case} {num}, the phrase can only be "
+                        + ", ".join(f"{c} {n}" for c, n in sorted(fits)))
+    else:
+        gs = governing_cases(ts, k0)
+        if gs and case not in gs:
+            problems.append(f"«{ts[k0 - 1]}» requires {'/'.join(sorted(gs))}")
+        elif len({c for c, n in fits if n == num and (not gs or c in gs)}) > 1:
+            warnings.append("case depends on the verb: check by eye")
+    return problems
+
+
+def is_adjective(morph, form):
+    morph.load({form})
+    return any(t.startswith("ADJ") for _, t in morph.get(form))
+
+
+def adj_ending_of_any(tok, adj):
+    """True when `tok` is a form of one of the adjectives in `adj` (so it is not the determiner)."""
+    return any(adj_ending(tok, b.strip()) for b in adj.split(",") if b.strip())
+
+
 # ── the check ─────────────────────────────────────────────────────────────────
 
 def verb_parts(form):
@@ -342,7 +452,11 @@ def check(entry, slot, form, answer, morph, used=(), min_words=5):
     if plain.strip() in {u.strip() for u in used}:
         problems.append("same as a sentence already used")
     idx = [token_index_at(plain, a) for a, _ in spans]
-    if any(i is None for i in idx) or any(not re.fullmatch(TOKEN.pattern, m) for m in marked):
+    if slot.startswith("dekl"):                          # one bracket around the whole noun phrase
+        if len(spans) != 1 or idx[0] is None or not re.fullmatch(r"[A-Za-zÄÖÜäöüß]+( [A-Za-zÄÖÜäöüß]+)+",
+                                                                 marked[0]):
+            problems.append("mark the whole phrase (determiner, adjective, noun) with one pair of brackets")
+    elif any(i is None for i in idx) or any(not re.fullmatch(TOKEN.pattern, m) for m in marked):
         problems.append("a bracket does not hold exactly one word")
     if problems:
         return dict(status="error", problems=problems + warnings, de=plain, en=en, blanks=spans)
@@ -391,18 +505,21 @@ def check(entry, slot, form, answer, morph, used=(), min_words=5):
                 problems.append(f"«{ts[0]} {ts[1]}» at the start: an adjective, not the verb")
 
     elif slot == "part":
-        if [m.lower() for m in marked] != [form.lower()]:
-            problems.append(f"brackets {marked} but the participle is «{form}»")
-        low = {t.lower() for t in ts}
-        aux = (entry.get("auxiliary") or "haben").lower()
-        has_h, has_s = bool(low & AUX_HABEN), bool(low & AUX_SEIN)
-        if not (has_h or has_s or low & AUX_PASSIVE):
-            problems.append("no auxiliary verb: not a Perfekt")
-        elif aux.startswith("sein") and not has_s and not (low & AUX_PASSIVE) \
-                and not low & {"sich", "mich", "dich", "uns", "euch"}:
-            problems.append("verb takes «sein» but the sentence uses «haben»")
-        elif aux.startswith("haben") and not has_h and not (low & AUX_PASSIVE):
-            warnings.append("verb takes «haben» but no form of haben found (Zustandspassiv?)")
+        # the auxiliary and the participle are both hidden: [ist] … [gereist], or … gereist [ist]
+        low = [m.lower() for m in marked]
+        pk = [k for k, m in enumerate(low) if m == form.lower()]
+        if len(marked) != 2 or len(pk) != 1:
+            problems.append(f"brackets {marked}: expected the auxiliary and the participle «{form}», "
+                            f"e.g. [hat] … [{form}]")
+        else:
+            a = low[1 - pk[0]]
+            if a not in aux_forms(entry):
+                problems.append(f"«{marked[1 - pk[0]]}» is not a form of "
+                                f"«{entry.get('auxiliary') or 'haben'}» (Perfekt or Plusquamperfekt)")
+            elif clause_of_index(plain, idx[0]) != clause_of_index(plain, idx[1]):
+                problems.append("the auxiliary and the participle are not in the same clause")
+            if sum(1 for t in ts if t.lower() == form.lower()) != 1:
+                problems.append("the participle appears more than once")
 
     elif slot == "refl":
         allowed = {"mir": "ich", "dir": "du"} if entry.get("reflexive") == "dat" else {"mich": "ich", "dich": "du"}
@@ -413,93 +530,9 @@ def check(entry, slot, form, answer, morph, used=(), min_words=5):
             if allowed[marked[0]] not in {ts[k].lower() for k in clause}:
                 problems.append(f"«{marked[0]}» without «{allowed[marked[0]]}» as subject in the same clause")
 
-    elif slot in ("adj_art", "adj_det"):
-        if len(marked) != 1:
-            problems.append(f"brackets {marked}: only the adjective should be marked")
-        else:
-            k = idx[0]
-            a = ts[k]
-            if adj_ending(a, word) is None:
-                problems.append(f"«{a}» is not an inflected form of «{word}»")
-            # determiner before (possibly another adjective in between), noun after
-            j = k - 1
-            adjs = [a]
-            while j >= 0 and ts[j][:1].islower() and adj_ending(ts[j]) and not det_readings(morph, ts[j])[0]:
-                adjs.append(ts[j]); j -= 1
-            n = k + 1
-            while n < len(ts) and ts[n][:1].islower() and adj_ending(ts[n]):
-                adjs.append(ts[n]); n += 1
-            if j < 0 or not det_readings(morph, ts[j])[0]:
-                problems.append("no determiner before the adjective")
-            elif n >= len(ts) or not ts[n][:1].isupper():
-                problems.append("no noun after the adjective")
-            else:
-                det = ts[j]
-                lem = {l.lower() for l, t in morph.get(det) if t.startswith(("ART", "PRO"))}
-                is_article = bool(lem & ARTICLES)
-                if slot == "adj_art" and not is_article:
-                    problems.append(f"«{det}» is not an article (task: article + adjective + noun)")
-                if slot == "adj_det" and is_article:
-                    problems.append(f"«{det}» is an article (task: possessive/dieser/jeder/kein + adjective + noun)")
-                agree, kind = np_agreement(morph, det, adjs, ts[n])
-                if not noun_readings(morph, ts[n]):
-                    warnings.append(f"«{ts[n]}» not in the lexicon: agreement not checked")
-                elif not agree:
-                    problems.append(f"«{det} {a} {ts[n]}»: the ending does not agree")
-                else:
-                    gs = governing_cases(ts, j)
-                    cases = {c for c, _, _ in agree}
-                    if gs and not gs & cases:
-                        problems.append(f"«{ts[j - 1]}» requires {'/'.join(sorted(gs))}, "
-                                        f"but the phrase is {'/'.join(sorted(cases))}")
-
-    elif slot.startswith("kasus"):
-        case, num = form.split(":")
-        if answer.get("note") in ("singular", "plural"):
-            new = "SIN" if answer["note"] == "singular" else "PLU"
-            if new != num:
-                warnings.append(f"{answer['note']} instead of {'plural' if num == 'PLU' else 'singular'} (noted)")
-            num = new
-        noun = bare(word)
-        dk = nk = None
-        if len(marked) == 2:
-            dk, nk = idx
-        elif len(marked) == 1:                             # no determiner: mit bunten [Stiften], vor [Gewittern]
-            nk = idx[0]
-            j = nk - 1
-            while j >= 0 and ts[j][:1].islower() and adj_ending(ts[j]) and not det_readings(morph, ts[j])[0]:
-                j -= 1
-            if j >= 0 and (det_readings(morph, ts[j])[0] or ts[j].lower() in CONTRACTIONS):
-                problems.append(f"«{ts[j]}» belongs to the noun phrase: mark it too")
-                nk = None
-            dk = j + 1
-        else:
-            problems.append(f"brackets {marked}: expected determiner and noun")
-        if nk is not None:
-            det = ts[dk] if len(marked) == 2 else None
-            nn = ts[nk]
-            adjs = ts[dk + 1:nk] if det else ts[dk:nk]
-            # the lexicon itself, then article/plural from words.json, then the compound's last element
-            reads = noun_readings(morph, nn, noun, suffixes=False) or entry_noun_readings(entry, nn) \
-                or noun_readings(morph, nn, noun)
-            agree, _ = np_agreement(morph, det, adjs, nn, noun, reads)
-            if not reads:
-                problems.append(f"«{nn}» is not a form of «{noun}»")
-            elif not agree:
-                problems.append(f"«{' '.join(ts[dk:nk + 1])}» does not agree")
-            elif not det and num != "PLU":
-                problems.append("a singular noun without determiner shows no case")
-            else:
-                fits = {(c, n) for c, n, _ in agree}
-                if (case, num) not in fits:
-                    problems.append(f"asked for {case} {num}, the phrase can only be "
-                                    + ", ".join(f"{c} {n}" for c, n in sorted(fits)))
-                else:
-                    gs = governing_cases(ts, dk)
-                    if gs and case not in gs:
-                        problems.append(f"«{ts[dk - 1]}» requires {'/'.join(sorted(gs))}")
-                    elif len({c for c, n in fits if n == num and (not gs or c in gs)}) > 1:
-                        warnings.append("case depends on the verb: check by eye")
+    elif slot.startswith("dekl"):
+        problems += check_dekl(entry, slot, form, answer.get("adj") or "", plain, ts, spans, marked, morph,
+                               warnings)
 
     elif slot.startswith("prep"):
         prep, case = [x.strip() for x in form.split("+")]
@@ -588,50 +621,81 @@ def has_root_in(entry, roots):
 def slots_for(entry, stem_changes=None, roots=None):
     """[{slot, label, form}] for one word. `stem_changes(entry)` says whether the present tense changes
     the stem (lexicon.changes_stem); without it, the Präsens slot is left out. `roots` is the set of
-    words in the dictionary: a verb whose root verb is among them keeps only the Partizip II (ge- or
-    not, haben or sein), since its Präteritum and Präsens repeat the root's."""
+    words in the dictionary: a verb whose root verb is among them keeps only the Perfekt card, since
+    its Präteritum and Präsens repeat the root's.
+
+    Only what cannot be predicted is practised: Präteritum for irregular and mixed verbs (nahm,
+    dachte), Perfekt (auxiliary + participle) for those and for verbs with «sein» (ist gereist);
+    regular verbs with «haben» (machte, hat gemacht) get neither. Nouns get one Deklination card
+    (determiner + adjective + noun in a case) and a second one in the plural only when the plural is
+    irregular (die Wände, die Bilder, die Autoren). Nouns and adjectives with a fixed preposition
+    (die Angst vor, stolz auf) get the preposition card that verbs have."""
     t, word = entry.get("type"), entry.get("word", "")
     out = []
     if t == "verb":
         derived = has_root_in(entry, roots)
-        if entry.get("past_tense") and not derived:
+        irregular = entry.get("verb_class") != "regular"
+        with_sein = (entry.get("auxiliary") or "").lower().startswith("sein")
+        if entry.get("past_tense") and not derived and irregular:
             out.append(dict(slot="praet", label="Präteritum", form=entry["past_tense"]))
         pa = (entry.get("past_participle") or "").split("/")[0].strip()
-        if pa:
-            out.append(dict(slot="part", label="Partizip II", form=pa))
+        if pa and (irregular or with_sein):
+            out.append(dict(slot="part", label="Perfekt", form=pa))
         if entry.get("present_3sg") and stem_changes and stem_changes(entry) and not derived:
             out.append(dict(slot="praes", label="Präsens, er/sie/es", form=entry["present_3sg"]))
         r = entry.get("reflexive")
         if r in ("akk", "dat"):
             out.append(dict(slot="refl", label=f"Reflexivpronomen ({'Dat.' if r == 'dat' else 'Akk.'})",
                             form="mir/dir" if r == "dat" else "mich/dich"))
-        for n, (prep, case) in enumerate(verb_preps(entry), 1):
-            out.append(dict(slot=f"prep{n}", label=f"Verb + {prep} + {'Akk.' if case == 'AKK' else 'Dat.'}",
-                            form=f"{prep} + {case}"))
     elif t == "noun":
-        out += [dict(slot="kasus1", label="", form=None), dict(slot="kasus2", label="", form=None)]
-    elif t == "adj/adv" and entry.get("usage") != "adverb only" and " " not in word \
-            and entry.get("id") not in ADVERB_SENSE:
-        out += [dict(slot="adj_art", label="Artikel + Adjektiv + Nomen", form=word),
-                dict(slot="adj_det", label="Begleiter + Adjektiv + Nomen", form=word)]
+        kind = plural_kind(entry)
+        # "dekl_card": false for nouns that only live in a fixed phrase (ohne Unterlass)
+        if kind != "only" and entry.get("dekl_card", True):
+            out.append(dict(slot="dekl", label="Deklination", form=None))
+        # "plural_card": false for plurals that are rare, mean something else (die Mängel = defects) or
+        # repeat a pattern another noun already practises (die Putzkräfte next to die Kräfte)
+        if kind == "only" or (kind == "irregular" and entry.get("plural_card", True)):
+            out.append(dict(slot="dekl_pl", label="Deklination Plural", form=None))
     elif t == "prep/conj":
         out += [dict(slot=f"pc{n}", label=f"Satz mit {word}", form=word) for n in range(1, 5)]
+    if t in ("verb", "noun", "adj/adv"):
+        kind = {"verb": "Verb", "noun": "Nomen", "adj/adv": "Adjektiv"}[t]
+        for n, (prep, case) in enumerate(verb_preps(entry), 1):
+            out.append(dict(slot=f"prep{n}", label=f"{kind} + {prep} + {'Akk.' if case == 'AKK' else 'Dat.'}",
+                            form=f"{prep} + {case}"))
     # constructions have no sentence exercise: the translation cards are enough
     return out
 
 
-def kasus_label(form):
+DEKL_CASES = {"dekl": ("NOM", "AKK", "AKK", "DAT", "DAT", "DAT", "GEN"),
+              "dekl_pl": ("NOM", "AKK", "AKK", "DAT", "DAT", "DAT", "GEN")}
+
+
+def dekl_label(form):
     c, n = form.split(":")
-    return f"{c} {'Plural' if n == 'PLU' else 'Singular'}"
+    return f"{CASE_DE[c]} {'Plural' if n == 'PLU' else 'Singular'}"
 
 
-def kasus_options(entry, taken_cases, rnd):
-    """A random (case:number) for a noun slot: not nominative, not a case already used, plural only if
-    the noun has one, and only plural for plural-only nouns (die Fallzahlen)."""
-    plural_only = (entry.get("plural") or "").strip() == entry.get("word", "").strip()
-    nums = ["PLU"] if plural_only else (["SIN", "PLU"] if entry.get("plural") else ["SIN"])
-    options = [f"{c}:{n}" for c in ("AKK", "DAT", "GEN") for n in nums if c not in taken_cases]
-    return rnd.choice(options) if options else None
+CASE_DE = {"NOM": "Nominativ", "AKK": "Akkusativ", "DAT": "Dativ", "GEN": "Genitiv"}
+
+
+def dekl_option(entry, slot, rnd):
+    """A case for a new noun's Deklination card: mostly accusative and dative; never the nominative
+    for weak nouns (der Held, den Helden), where the other cases are the point."""
+    cases = [c for c in DEKL_CASES[slot] if not (c == "NOM" and weak_noun(entry))]
+    return f"{rnd.choice(cases)}:{'PLU' if slot == 'dekl_pl' else 'SIN'}"
+
+
+def weak_noun(entry):
+    """n-Deklination: a masculine noun whose plural is the singular + (e)n and that is a person or
+    animal ending in -e, -ent, -ant, -ist, -oge, or one of the short ones (Held, Mensch, Nachbar...)."""
+    m = re.match(r"der\s+(\S+)$", entry.get("word", ""))
+    if not m:
+        return False
+    s, p = m.group(1), bare(entry.get("plural") or "")
+    return p in (s + "n", s + "en") and (re.search(r"(e|ent|ant|ist|oge|at)$", s) is not None
+                                          or s in {"Held", "Mensch", "Nachbar", "Bär", "Fürst", "Graf",
+                                                   "Herr", "Prinz"})
 
 
 # construction slots: which words to hide. Verb parts of a pattern match any form of that verb.
@@ -675,36 +739,6 @@ def bracket(plain, picks):
     return out + plain[last:]
 
 
-def noun_case_in(entry, plain, morph):
-    """(case:number, token picks) when the sentence has this noun with a determiner in exactly one
-    possible case other than the nominative; else None."""
-    ts = toks(plain)
-    noun = bare(entry["word"])
-    hits = []
-    for i, t in enumerate(ts):
-        if t[:1].isupper() and i > 0:
-            reads = noun_readings(morph, t, noun, suffixes=False) or entry_noun_readings(entry, t)
-            if reads:
-                hits.append((i, reads))
-    if len(hits) != 1:
-        return None
-    i, reads = hits[0]
-    j = i - 1
-    while j >= 0 and ts[j][:1].islower() and adj_ending(ts[j]) and not det_readings(morph, ts[j])[0]:
-        j -= 1
-    if j < 0 or not det_readings(morph, ts[j])[0]:
-        return None
-    agree, _ = np_agreement(morph, ts[j], ts[j + 1:i], ts[i], noun, reads)
-    fits = {(c, n) for c, n, _ in agree}
-    gs = governing_cases(ts, j)
-    if gs:
-        fits = {(c, n) for c, n in fits if c in gs}
-    if len(fits) != 1:
-        return None
-    c, n = next(iter(fits))
-    return (f"{c}:{n}", [j, i]) if c != "NOM" else None
-
-
 def find_in(entry, spec, plain, en, morph, used=()):
     """Can this existing sentence serve the exercise `spec`? Returns a checked exercise or None."""
     ts = toks(plain)
@@ -725,19 +759,16 @@ def find_in(entry, spec, plain, en, morph, used=()):
             break
     elif slot == "part":
         ks = [k for k, t in enumerate(ts) if t.lower() == form.lower()]
-        picks = ks if len(ks) == 1 else None
+        if len(ks) == 1:
+            clause = clause_of_index(plain, ks[0])
+            aux = [k for k in clause if ts[k].lower() in aux_forms(entry)]
+            picks = sorted([aux[-1] if aux[-1] < ks[0] else aux[0], ks[0]]) if aux else None
     elif slot == "refl":
         prons = ("mir", "dir") if form == "mir/dir" else ("mich", "dich")
         ks = [k for k, t in enumerate(ts) if t in prons]
         picks = ks if len(ks) == 1 else None
-    elif slot in ("adj_art", "adj_det"):
-        ks = [k for k, t in enumerate(ts) if adj_ending(t, word)]
-        picks = ks if len(ks) == 1 else None
-    elif slot.startswith("kasus"):
-        r = noun_case_in(entry, plain, morph)
-        if not r or (form and r[0] != form):
-            return None
-        form, picks = r
+    elif slot.startswith("dekl"):
+        return None                                      # always written for the card (case and adjective chosen)
     elif slot.startswith("prep"):
         prep = form.split("+")[0].strip()
         # only preposition + separate article: a contraction in an existing sentence is too often a
@@ -783,29 +814,25 @@ def task_text(entry, spec):
                     f"Mark only [{parts[0]}].")
         return what.format(f=parts[0]) + f".{note} Mark only [{parts[0]}]."
     if slot == "part":
-        return (f"Perfekt or Plusquamperfekt with «{entry.get('auxiliary') or 'haben'}», participle «{form}». "
-                f"Mark only [{form}].")
+        aux = entry.get("auxiliary") or "haben"
+        return (f"Perfekt or Plusquamperfekt with «{aux}», participle «{form}» (active voice, not passive). "
+                f"Mark the form of {aux} and the participle, e.g. [{'ist' if aux == 'sein' else 'hat'}] ... [{form}].")
     if slot == "refl":
         case = "dative (mir/dir)" if form == "mir/dir" else "accusative (mich/dich)"
         return (f"Reflexive verb, pronoun in the {case}. Use ich or du as subject so the pronoun is not «sich». "
                 f"Mark only the reflexive pronoun, e.g. [mich].")
-    if slot == "adj_art":
-        return (f"Article (der/die/das/ein/eine, any case) + inflected «{word}» + noun. "
-                f"Mark only the inflected adjective.")
-    if slot == "adj_det":
-        return (f"Possessive (mein, dein, sein, ihr, unser, euer), dieser, jeder or kein + inflected «{word}» "
-                f"+ noun. Mark only the inflected adjective.")
-    if slot.startswith("kasus"):
+    if slot.startswith("dekl"):
         c, n = form.split(":")
-        return (f"The noun in the {CASE_NAME[c]} {NUM_NAME[n]} (sg. {word}, pl. {entry.get('plural') or 'no plural'}) "
-                f"with a determiner (article, possessive, dieser, kein...). The case must be clearly required by a "
-                f"preposition or the verb. Mark the determiner and the noun separately, e.g. [den] [Kindern]; "
-                f"leave any adjective in between unmarked."
-                + (" If the plural sounds unnatural, use the singular in the same case and add "
-                   "\"note\": \"singular\"." if n == "PLU" else ""))
+        return (f"A noun phrase with «{word}» in the {CASE_NAME[c]} {NUM_NAME[n]}"
+                f"{' (plural: ' + entry['plural'] + ')' if n == 'PLU' and entry.get('plural') else ''}: "
+                f"a determiner (der/die/das, dieser, jeder, ein, kein, a possessive; in the plural also viele, "
+                f"einige, or none) + one fitting everyday adjective + the noun. Without a determiner only where "
+                f"it sounds natural (mit großer Geduld). The case must be clearly required by a preposition or "
+                f"the verb. The phrase does not start with a contraction (im, zum, beim). Mark the whole phrase with ONE pair of "
+                f"brackets, e.g. mit [dem großen Schiff], and add \"adj\": the adjective's base form (groß).")
     if slot.startswith("prep"):
         prep, case = [x.strip() for x in form.split("+")]
-        return (f"The verb «{word}» with its fixed preposition «{prep}» + {CASE_NAME[case]} (any tense, any person), "
+        return (f"«{word}» with its fixed preposition «{prep}» + {CASE_NAME[case]} (any tense, any person), "
                 f"followed by a noun with an article or possessive. Mark the preposition and the article "
                 f"separately, e.g. [{prep}] [den], or a contraction alone, e.g. [am]. No da-compounds (darauf).")
     if slot.startswith("pc"):
@@ -849,7 +876,7 @@ Tasks:
 {chr(10).join(lines)}{fb}
 
 Return ONLY JSON Lines, one line per task, in the same order, nothing else:
-{{"id": "<task id>", "de": "German sentence with [brackets]", "en": "English translation"}}"""
+{{"id": "<task id>", "de": "German sentence with [brackets]", "en": "English translation"}} (Deklination tasks also "adj")"""
 
 
 def read_answers_text(s):

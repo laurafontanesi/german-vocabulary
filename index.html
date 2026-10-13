@@ -1139,17 +1139,17 @@
         <button class="launcher-card" onclick="selectTask('ex-verbs', this)">
           <div class="launcher-card-icon">🔀</div>
           <div class="launcher-card-title">Verb forms</div>
-          <div class="launcher-card-desc">Präteritum, Partizip II, er-Form, sich, Präposition</div>
+          <div class="launcher-card-desc">Präteritum, Perfekt (ist gereist), er-Form, sich</div>
         </button>
         <button class="launcher-card" onclick="selectTask('ex-cases', this)">
           <div class="launcher-card-icon">📖</div>
-          <div class="launcher-card-title">Cases</div>
-          <div class="launcher-card-desc">Article + noun in Akk., Dat., Gen.</div>
+          <div class="launcher-card-title">Declension</div>
+          <div class="launcher-card-desc">mit d<b>em</b> groß<b>en</b> Schiff, viel<b>e</b> schön<b>e</b> Plätz<b>e</b></div>
         </button>
-        <button class="launcher-card" onclick="selectTask('ex-adj', this)">
+        <button class="launcher-card" onclick="selectTask('ex-preps', this)">
           <div class="launcher-card-icon">✏️</div>
-          <div class="launcher-card-title">Adjective endings</div>
-          <div class="launcher-card-desc">das neu<b>e</b> Haus, mein neu<b>es</b> Haus</div>
+          <div class="launcher-card-title">Fixed prepositions</div>
+          <div class="launcher-card-desc">denken an, Angst vor, stolz auf + article</div>
         </button>
         <button class="launcher-card" onclick="selectTask('ex-connectors', this)">
           <div class="launcher-card-icon">🔗</div>
@@ -1561,6 +1561,7 @@ function buildGrammarPills(w) {
     if (w.plural) pills.push(`Pl: ${w.plural}`);
   }
   if (w.compound_parts) pills.push(compoundPill(w));
+  if (w.type !== 'verb' && w.preposition) pills.push(w.preposition);
   if (w.type === 'verb') {
     if (w.verb_class) pills.push(`<span class="grammar-pill highlight">${VERB_CLASS_LABEL[w.verb_class] || w.verb_class}</span>`);
     if (changesStem(w)) pills.push(`er ${w.present_3sg}`);
@@ -1813,12 +1814,12 @@ let isMuted = sessionStorage.getItem('practiceAudioMuted') === 'true';
 // Each practice item is ONE exercise: a sentence with gaps. The answer is the hidden words in
 // order, typed in one box separated by spaces ("nahm mit", "den Kindern").
 const EX_TASKS = {
-  'ex-verbs':      { title: 'Verb forms',        slot: s => ['praet', 'part', 'praes', 'refl'].includes(s) || s.startsWith('prep') },
-  'ex-cases':      { title: 'Cases',             slot: s => s.startsWith('kasus') },
-  'ex-adj':        { title: 'Adjective endings', slot: s => s.startsWith('adj_') },
+  'ex-verbs':      { title: 'Verb forms',         slot: s => ['praet', 'part', 'praes', 'refl'].includes(s) },
+  'ex-cases':      { title: 'Declension',         slot: s => s.startsWith('dekl') },
+  'ex-preps':      { title: 'Fixed prepositions', slot: s => s.startsWith('prep') },
   'ex-connectors': { title: 'Connectors',        slot: s => s.startsWith('pc') },
 };
-const CASE_NAME = { AKK: 'accusative', DAT: 'dative', GEN: 'genitive' };
+const CASE_NAME = { NOM: 'nominative', AKK: 'accusative', DAT: 'dative', GEN: 'genitive' };
 
 function exercisesFor(w, mode) {
   return (w.exercises || []).filter(e => EX_TASKS[mode].slot(e.slot) && e.blanks && e.blanks.length);
@@ -1848,18 +1849,19 @@ function exPlainBlanked(ex) {
 function exPrompt(w, ex) {
   const s = ex.slot;
   if (s === 'praet') return { text: 'Präteritum:', word: w.word };
-  if (s === 'part')  return { text: 'Partizip II:', word: w.word };
+  if (s === 'part')  return { text: 'Auxiliary + Partizip II:', word: w.word };
   if (s === 'praes') return { text: 'Präsens, er/sie/es:', word: w.word };
   if (s.startsWith('prep')) {
     const c = (ex.form || '').split('+')[1] || '';
     return { text: `Preposition + article (${CASE_NAME[c.trim()] || ''}):`, word: w.word };
   }
   if (s === 'refl')  return { text: 'Reflexive pronoun (' + (w.reflexive === 'dat' ? 'dative' : 'accusative') + '):', word: w.word };
-  if (s.startsWith('kasus')) {
+  if (s.startsWith('dekl')) {
+    // the whole phrase is one gap: determiner + adjective + noun, in the case and number asked
     const [c, n] = (ex.form || ':').split(':');
-    return { text: `Article + noun, ${CASE_NAME[c] || c} ${n === 'PLU' ? 'plural' : 'singular'}:`, word: w.word };
+    return { text: `Whole phrase, ${CASE_NAME[c] || c} ${n === 'PLU' ? 'plural' : 'singular'}:`,
+             word: w.word + (ex.adj ? ' · ' + ex.adj : ''), speak: w.word };
   }
-  if (s === 'adj_art' || s === 'adj_det') return { text: 'Adjective ending:', word: w.word };
   // connectors: the German word would give the answer away, so the card shows the meaning
   const meaning = meaningPrompt(w);
   return { text: s.startsWith('cx') ? 'Construction:' : 'Preposition / conjunction:', word: meaning, hideSpeak: true };
@@ -1890,7 +1892,17 @@ function wordForms(w) {
   return forms;
 }
 function hideWord(text, forms) {
-  return text.replace(/[\wäöüß]+/g, m => forms.has(m.toLowerCase()) ? '___' : m);
+  // the word, its forms, and the word inside a longer word (krankheits___, Regen___, die ___in)
+  const longer = [...forms].filter(f => f.length >= 4).sort((a, b) => b.length - a.length);
+  return text.replace(/[\wäöüß]+/g, m => {
+    const low = m.toLowerCase();
+    if (forms.has(low)) return '___';
+    for (const f of longer) {
+      const i = low.indexOf(f);
+      if (i >= 0 && low.length > f.length + 1) return m.slice(0, i) + '___' + m.slice(i + f.length);
+    }
+    return m;
+  });
 }
 function meaningPrompt(w) {
   const m = (w.definitions && w.definitions[0]) ? w.definitions[0].meaning : '';
@@ -2086,7 +2098,8 @@ function loadPracticeWord() {
     const ex = w._ex;
     const pr = exPrompt(w, ex);
     promptEl.textContent = pr.text;
-    const esc = pr.word.replace(/'/g, "\\'");
+    const say = pr.speak || pr.word;                 // Declension: say the noun, not the hint
+    const esc = say.replace(/'/g, "\\'");
     const speakIcon = pr.hideSpeak ? '' :
       `<button class="speak-btn" title="Read aloud" onclick="speakText('${esc}', this)">${SPEAK_SVG_LG}</button>`;
     const gaps = ex.blanks.length > 1 ? `<span class="practice-label">${ex.blanks.length} gaps</span>` : '';
@@ -2097,7 +2110,7 @@ function loadPracticeWord() {
     currentAnswer = exAnswers(ex).join(' ');
     document.getElementById('practice-input').placeholder =
       ex.blanks.length > 1 ? 'All gaps in order, e.g. nahm mit' : 'Your answer…';
-    autoSpeakText = pr.hideSpeak ? '' : pr.word;
+    autoSpeakText = pr.hideSpeak ? '' : say;
   }
 
   // auto-play with a small delay so the UI has settled
