@@ -336,4 +336,19 @@ python anki/make_deck.py
 # to units.txt by hand to place one earlier (make_units.py would overwrite your edits).
 ```
 
+**Updating the deck without losing your progress.** Each note's id comes from the word's id in
+`words.json`, so importing a new `deutsch.apkg` updates the notes you already study and keeps their
+review history, as long as the *note type* stays the same (its fields, card types and style, written
+to `anki/templates.md` and `anki/styling.css`). `make_deck.py` says at the end whether the note
+type changed. Then:
+
+- Content changes are safe: meanings, examples, notes, exercise sentences, links, new words
+  (they arrive as new cards). A word's id never changes when you edit it with `vocab.py edit`.
+- A deleted word stays in Anki; delete its note there by hand.
+- Changing fields or card types (a new exercise type, a renamed card) means Anki cannot update the
+  existing notes: either merge note types when importing (Anki 23.10 or later), or do a fresh
+  import, which loses the review history. Plan such changes in one batch.
+- Before importing: File > Create Backup in Anki. In the import dialog, leave "Import any
+  learning progress" unticked and keep "Update notes" on its default ("if newer").
+
 The live site updates within ~60 seconds of pushing.

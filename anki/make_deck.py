@@ -254,6 +254,8 @@ def englisch_kurz(w):
     m = re.sub(r'\s*\([^)]*\)?\s*$', '', m)
     m = re.sub(r'\s*\([^)]*\)\s*', ' ', m)
     m = re.split(r'\s+[—–-]\s+', m)[0]
+    if ': ' in m:                                 # "sich fügen: to comply" -> the English part
+        m = m.split(': ', 1)[1]
     m = re.split(r'[,;/]|\s+or\s+', m)[0].strip()
     if w.get('type') == 'verb':
         m = re.sub(r'^to\s+', '', m, flags=re.I)
@@ -840,8 +842,14 @@ def main():
 
     data = os.path.join(args.out_dir, 'deutsch.txt')
     write_data(data, rows, fields)
-    write_templates(os.path.join(args.out_dir, 'templates.md'), fields)
-    css = write_css(os.path.join(args.out_dir, 'styling.css'))
+    # templates.md and styling.css describe the note type (fields, card types, style). If they
+    # change, Anki cannot update the notes you already study when you import the new deck.
+    note_type_files = [os.path.join(args.out_dir, f) for f in ('templates.md', 'styling.css')]
+    before = [io.open(p, encoding='utf-8').read() if os.path.exists(p) else None for p in note_type_files]
+    write_templates(note_type_files[0], fields)
+    css = write_css(note_type_files[1])
+    after = [io.open(p, encoding='utf-8').read() for p in note_type_files]
+    note_type_changed = any(b is not None and b != a for b, a in zip(before, after))
     apkg = write_apkg(os.path.join(args.out_dir, 'deutsch.apkg'), rows, fields, css)
     units, n_units = read_units(os.path.join(HERE, 'units.txt'), db)
     if apkg:
@@ -858,6 +866,13 @@ def main():
     print(f'  insgesamt               : {base + sum(counts.values())}')
     print(f'\ngeschrieben nach {args.out_dir}/: ' + ('deutsch.apkg, ' if apkg else '')
           + 'deutsch.txt, templates.md, styling.css')
+    if note_type_changed:
+        print('\n!! ACHTUNG: the note type changed (fields, card types or style; see git diff of\n'
+              '   anki/templates.md and anki/styling.css). Importing this deck will NOT update the\n'
+              '   notes you already study. Undo the change, or plan a fresh import (which loses\n'
+              '   the review history).')
+    else:
+        print('\nThe note type is unchanged: importing updates your notes and keeps your progress.')
     if not apkg:
         print('(für deutsch.apkg, das Anki direkt importiert: pip install genanki)')
 

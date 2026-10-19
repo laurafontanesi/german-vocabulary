@@ -50228,27 +50228,31 @@
     "related": [],
     "definitions": [
       {
-        "meaning": "sich fügen: to comply, to give in (to)",
-        "note": null
+        "meaning": "to join, to fit together",
+        "note": "etw. an / in / zu etw. fügen = to attach, to insert, to add; in everyday German mostly anfügen, einfügen, hinzufügen"
       },
       {
-        "meaning": "to join, to fit together",
-        "note": null
+        "meaning": "sich fügen: to comply, to give in (to)",
+        "note": "+ DAT: sich jmdm. / einer Sache fügen; sich in etw. fügen = to resign oneself to something (sich in sein Schicksal fügen)"
+      },
+      {
+        "meaning": "es fügt sich, dass …: it so happens that …",
+        "note": "gehoben"
       }
     ],
     "definition_de": "Dinge so aneinandersetzen, miteinander in einen Zusammenhang bringen, dass daraus ein Ganzes wird",
     "examples": [
       {
-        "de": "Am Ende fügte er sich dem Wunsch seiner Eltern.",
-        "en": "In the end he gave in to his parents' wishes."
+        "de": "Der Maurer fügte sorgfältig einen Stein an den anderen.",
+        "en": "The bricklayer carefully set one stone against the next."
       },
       {
-        "de": "Wir haben uns den neuen Regeln gefügt.",
-        "en": "We complied with the new rules."
+        "de": "Am Ende fügte er sich dem Wunsch seiner Eltern.",
+        "en": "In the end he gave in to his parents' wishes."
       }
     ],
     "topics": [],
-    "notes": null,
+    "notes": "Meanings from DWDS (dwds.de/wb/fügen): 1 join, 2 add on or insert, 3 sich fügen (comply), 4 gehoben: es fügt sich.",
     "added": "2026-10-11"
   },
   {
