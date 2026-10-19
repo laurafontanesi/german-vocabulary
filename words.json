@@ -14630,10 +14630,14 @@
       }
     ],
     "topics": [],
-    "notes": "sich halten an + AKK = to stick to/follow. sich halten = to keep/stay fresh (food). Different from halten (non-reflexive).",
+    "notes": "sich halten an + AKK = to stick to/follow. sich halten = to keep/stay fresh (food). Different from halten (non-reflexive). Not sich verhalten (to behave): Ich halte mich an die Regeln / Ich verhalte mich ruhig.",
     "related": [
       {
         "word": "halten",
+        "kind": "contrast"
+      },
+      {
+        "word": "sich verhalten",
         "kind": "contrast"
       }
     ],
@@ -15318,7 +15322,7 @@
     "topics": [
       "people & relationships"
     ],
-    "notes": "sich verhalten = to behave (reflexive); das Verhalten = behaviour (noun). sich gut/schlecht verhalten = to behave well/badly. sich benehmen = to behave in terms of manners (sich gut / schlecht benehmen; Benimm dich!). sich verhalten = to behave, to act in a situation, more neutral (sich ruhig, vorsichtig, richtig verhalten); also of things: Wie verhält es sich mit …? = What about …?",
+    "notes": "sich verhalten = to behave (reflexive); das Verhalten = behaviour (noun). sich gut/schlecht verhalten = to behave well/badly. sich benehmen = to behave in terms of manners (sich gut / schlecht benehmen; Benimm dich!). sich verhalten = to behave, to act in a situation, more neutral (sich ruhig, vorsichtig, richtig verhalten); also of things: Wie verhält es sich mit …? = What about …? Not sich halten an (to stick to): Ich verhalte mich ruhig / Ich halte mich an die Regeln.",
     "related": [
       {
         "word": "sich benehmen",
@@ -15335,6 +15339,10 @@
       {
         "word": "das Verhältnis",
         "kind": "derived"
+      },
+      {
+        "word": "sich halten",
+        "kind": "contrast"
       }
     ],
     "added": "2026-04-06 14:13:00",
@@ -16349,6 +16357,10 @@
       {
         "word": "beanspruchen",
         "kind": "derived"
+      },
+      {
+        "word": "die Anforderung",
+        "kind": "contrast"
       }
     ],
     "added": "2026-04-06 14:31:00",
@@ -29369,10 +29381,14 @@
       {
         "de": "Darf ich Ihnen etwas zu trinken anbieten?",
         "en": "May I offer you something to drink?"
+      },
+      {
+        "de": "Sie hat mir sofort ihre Hilfe angeboten.",
+        "en": "She immediately offered me her help."
       }
     ],
     "topics": [],
-    "notes": "das Angebot = offer/supply. anbieten = to offer. sich anbieten = to present itself as an option. anbieten = to offer something to someone (Darf ich Ihnen einen Kaffee anbieten?). bieten = to provide, to have to offer, often with a thing as subject (Die Stadt bietet viele Möglichkeiten). sich bieten = to arise (eine Gelegenheit bietet sich).",
+    "notes": "das Angebot = offer/supply. anbieten = to offer. sich anbieten = to present itself as an option. anbieten = to offer something to someone (Darf ich Ihnen einen Kaffee anbieten?). bieten = to provide, to have to offer, often with a thing as subject (Die Stadt bietet viele Möglichkeiten). sich bieten = to arise (eine Gelegenheit bietet sich). To offer someone help: jmdm. Hilfe anbieten. Hilfe bieten is used for organisations that provide help (Die Beratungsstelle bietet Hilfe an / bietet Hilfe für Betroffene).",
     "related": [
       {
         "word": "bieten",
@@ -37528,8 +37544,13 @@
       }
     ],
     "topics": [],
-    "notes": null,
-    "related": [],
+    "notes": "Opposite in the sense of an obligation: jmdn. (an etw.) binden / jmdn. von etw. entbinden. To untie a knot or a rope: losbinden, aufbinden.",
+    "related": [
+      {
+        "word": "entbinden",
+        "kind": "antonym"
+      }
+    ],
     "added": "2026-04-10 11:04:00",
     "auxiliary": "haben",
     "past_tense": "band",
@@ -37578,15 +37599,15 @@
     "type": "verb",
     "definitions": [
       {
-        "meaning": "to release, to free from an obligation",
-        "note": "jemanden von etwas entbinden"
+        "meaning": "to release, to free (from an obligation)",
+        "note": "gehoben: jmdn. von etw. entbinden (von einem Auftrag, einer Pflicht); also + GEN: jmdn. seines Versprechens entbinden"
       },
       {
-        "meaning": "to deliver a baby, to give birth",
-        "note": "medical context"
+        "meaning": "to give birth, to deliver (a baby)",
+        "note": "die Mutter hat entbunden; often passive: sie wurde von einem gesunden Jungen entbunden = she gave birth to a healthy boy"
       }
     ],
-    "definition_de": "ein Kind zur Welt bringen",
+    "definition_de": "jmdn. von etw. lossprechen, befreien (gehoben); ein Kind zur Welt bringen",
     "examples": [
       {
         "de": "Der Chef entband ihn von seiner Aufgabe.",
@@ -37598,8 +37619,13 @@
       }
     ],
     "topics": [],
-    "notes": null,
-    "related": [],
+    "notes": "Opposite of binden only in the sense of an obligation, and formal (vom Vertrag gebunden / von der Pflicht entbunden). To untie a knot or a rope: losbinden, aufbinden. Meanings from DWDS (dwds.de/wb/entbinden).",
+    "related": [
+      {
+        "word": "binden",
+        "kind": "antonym"
+      }
+    ],
     "added": "2026-04-10 11:05:00",
     "auxiliary": "haben",
     "past_tense": "entband",
@@ -39682,7 +39708,7 @@
     "topics": [
       "time"
     ],
-    "notes": "More formal than 'passieren' or 'geschehen' and often used for serious or significant events. Register: formell / gehoben.",
+    "notes": "More formal than 'passieren' or 'geschehen' and often used for serious or significant events. Register: formell / gehoben. Not sich eignen (to be suitable, geeignet): Der Unfall ereignete sich gestern / Der Weg eignet sich für Kinder.",
     "added": "2026-06-01 11:33:45",
     "auxiliary": "haben",
     "past_tense": "ereignete sich",
@@ -39704,6 +39730,10 @@
       {
         "word": "das Ereignis",
         "kind": "derived"
+      },
+      {
+        "word": "sich eignen",
+        "kind": "contrast"
       }
     ]
   },
@@ -42141,6 +42171,10 @@
     "related": [
       {
         "word": "das Versteck",
+        "kind": "contrast"
+      },
+      {
+        "word": "die Unterkunft",
         "kind": "contrast"
       }
     ],
@@ -49822,6 +49856,10 @@
       {
         "meaning": "to bid (at an auction)",
         "note": null
+      },
+      {
+        "meaning": "sich bieten: to arise, to present itself",
+        "note": "eine Gelegenheit bietet sich = an opportunity arises"
       }
     ],
     "definition_de": "kundtun, dass man etwas zu leisten bereit ist",
@@ -52630,6 +52668,10 @@
       {
         "word": "geeignet",
         "kind": "derived"
+      },
+      {
+        "word": "sich ereignen",
+        "kind": "contrast"
       }
     ],
     "definitions": [
@@ -52650,7 +52692,7 @@
       }
     ],
     "topics": [],
-    "notes": "geeignet sein für = to be suitable for (more common in speech). sich eignen als = to be suitable as.",
+    "notes": "geeignet sein für = to be suitable for (more common in speech). sich eignen als = to be suitable as. Not sich ereignen (to happen, das Ereignis): Der Weg eignet sich für Kinder / Der Unfall ereignete sich gestern.",
     "added": "2026-10-11",
     "exercises": [
       {
@@ -54233,6 +54275,10 @@
       {
         "word": "die Bedingung",
         "kind": "contrast"
+      },
+      {
+        "word": "die Anforderung",
+        "kind": "contrast"
       }
     ],
     "added": "2026-10-11",
@@ -54774,6 +54820,156 @@
         "source": "generated",
         "form": "AKK:SIN",
         "adj": "vernünftig"
+      }
+    ]
+  },
+  {
+    "id": "die-anforderung",
+    "word": "die Anforderung",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Anforderungen",
+    "definitions": [
+      {
+        "meaning": "requirement",
+        "note": "mostly plural: bestimmte Anforderungen erfüllen = to meet certain requirements"
+      },
+      {
+        "meaning": "demand",
+        "note": "Anforderungen an jmdn. stellen = to make demands on someone"
+      }
+    ],
+    "definition_de": "Eigenschaft oder Fähigkeit, die zur Bewältigung bestimmter Aufgaben vorhanden sein muss",
+    "examples": [
+      {
+        "de": "Meine Eltern stellten nie Anforderungen an mich.",
+        "en": "My parents never put demands on me."
+      },
+      {
+        "de": "Bewerber müssen bestimmte Anforderungen erfüllen.",
+        "en": "Applicants must meet certain requirements."
+      }
+    ],
+    "topics": [
+      "work & jobs"
+    ],
+    "notes": "die Anforderung = what is demanded of someone or something (Anforderungen erfüllen, stellen); die Voraussetzung = what must already be there beforehand (eine Voraussetzung für die Stelle); der Anspruch = a claim, or one's own high standards (hohe Ansprüche an sich selbst).",
+    "related": [
+      {
+        "word": "die Voraussetzung",
+        "kind": "contrast"
+      },
+      {
+        "word": "der Anspruch",
+        "kind": "contrast"
+      }
+    ],
+    "preposition": "an + AKK",
+    "added": "2026-10-19",
+    "exercises": [
+      {
+        "slot": "dekl",
+        "label": "Akkusativ Singular",
+        "de": "Unser Team hat jede einzelne Anforderung des Kunden erfüllt.",
+        "en": "Our team met every single one of the client's requirements.",
+        "blanks": [
+          [
+            15,
+            40
+          ]
+        ],
+        "source": "generated",
+        "form": "AKK:SIN",
+        "adj": "einzeln"
+      },
+      {
+        "slot": "prep1",
+        "label": "Nomen + an + Akk.",
+        "de": "Der neue Job stellt hohe Anforderungen an meine Geduld.",
+        "en": "The new job makes high demands on my patience.",
+        "blanks": [
+          [
+            39,
+            41
+          ],
+          [
+            42,
+            47
+          ]
+        ],
+        "source": "generated",
+        "form": "an + AKK"
+      }
+    ]
+  },
+  {
+    "id": "die-unterkunft",
+    "word": "die Unterkunft",
+    "type": "noun",
+    "gender": "die",
+    "plural": "die Unterkünfte",
+    "definitions": [
+      {
+        "meaning": "accommodation, lodging",
+        "note": "eine Unterkunft für die Nacht = somewhere to stay for the night"
+      },
+      {
+        "meaning": "housing, shelter",
+        "note": null
+      }
+    ],
+    "definition_de": "Ort oder Raum, in dem man vorübergehend wohnt oder übernachtet (own)",
+    "examples": [
+      {
+        "de": "Das alte Hotel wird jetzt als Unterkunft für Studenten genutzt.",
+        "en": "The old hotel is now used as student accommodation."
+      },
+      {
+        "de": "Wir suchten eine Unterkunft für die Nacht.",
+        "en": "We looked for somewhere to stay for the night."
+      }
+    ],
+    "topics": [
+      "travel & movement"
+    ],
+    "notes": "die Unterkunft = a place to stay (hotel, hostel, hut); der Unterschlupf = a shelter or hiding place, often improvised.",
+    "related": [
+      {
+        "word": "der Unterschlupf",
+        "kind": "contrast"
+      }
+    ],
+    "added": "2026-10-19",
+    "exercises": [
+      {
+        "slot": "dekl",
+        "label": "Akkusativ Singular",
+        "de": "Wir suchen noch eine günstige Unterkunft in Lugano.",
+        "en": "We are still looking for cheap accommodation in Lugano.",
+        "blanks": [
+          [
+            16,
+            40
+          ]
+        ],
+        "source": "generated",
+        "form": "AKK:SIN",
+        "adj": "günstig"
+      },
+      {
+        "slot": "dekl_pl",
+        "label": "Dativ Plural",
+        "de": "Auf der Wanderung übernachten wir in einfachen Unterkünften.",
+        "en": "On the hike we stay overnight in simple accommodation.",
+        "blanks": [
+          [
+            37,
+            59
+          ]
+        ],
+        "source": "generated",
+        "form": "DAT:PLU",
+        "adj": "einfach"
       }
     ]
   }

@@ -364,9 +364,11 @@ def ex_nebensatz(w, ctx):
 
 def ex_kontrast(w, ctx):
     """One confusable partner, the word blanked together with its determiner."""
+    # a partner spelled the same without sich (halten / sich halten) would give two equal options
     partners = [x['word'] for x in w.get('related', [])
                 if isinstance(x, dict) and x['kind'] in ('contrast', 'antonym')
-                and ctx['by_word'].get(x['word'], {}).get('type') == w.get('type')]
+                and ctx['by_word'].get(x['word'], {}).get('type') == w.get('type')
+                and bare(x['word']) != bare(w['word'])]
     if not partners:
         return None
 
@@ -828,7 +830,8 @@ def main():
         r['_id'] = w['id']
         partners = [x['word'] for x in w.get('related', [])
                     if isinstance(x, dict) and x['kind'] in ('contrast', 'antonym')
-                    and ctx['by_word'].get(x['word'], {}).get('type') == w.get('type')]
+                    and ctx['by_word'].get(x['word'], {}).get('type') == w.get('type')
+                    and bare(x['word']) != bare(w['word'])]
         r['_partner'] = ctx['by_word'][partners[0]]['id'] if partners else None
         r['_topics'] = w.get('topics', [])
         r['_family'] = [w['family_root']] if w.get('family_root') else []
